@@ -1,0 +1,44 @@
+[
+ {
+  "id": "extra2",
+  "latency_ms": 5.6230899999999995,
+  "gmac": null,
+  "anchor": null
+ },
+ {
+  "id": "extra1",
+  "latency_ms": 6.116819999999999,
+  "gmac": null,
+  "anchor": null
+ },
+ {
+  "id": "DR2.3",
+  "latency_ms": 6.610549999999999,
+  "gmac": 2.3318651790000002,
+  "anchor": "DR2.3"
+ },
+ {
+  "id": "DR2.5",
+  "latency_ms": 7.05869,
+  "gmac": 2.510039336,
+  "anchor": "DR2.5"
+ },
+ {
+  "id": "DR2.7",
+  "latency_ms": 7.568425,
+  "gmac": 2.714192758,
+  "anchor": "DR2.7"
+ },
+ {
+  "id": "DR2.9",
+  "latency_ms": 8.028205,
+  "gmac": 2.9102744240000002,
+  "anchor": "DR2.9"
+ },
+ {
+  "id": "DR3.1",
+  "latency_ms": 8.585469999999999,
+  "gmac": 3.1131684640000006,
+  "anchor": "DR3.1"
+ }
+]

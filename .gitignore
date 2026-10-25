@@ -1,0 +1,54 @@
+# Python
+__pycache__/
+*.py[cod]
+*.so
+*.egg-info/
+dist/
+build/
+.venv/
+venv/
+
+# Editors / OS
+.vscode/
+.idea/
+*.swp
+.DS_Store
+
+# Secrets and machine-specific agent notes
+.env
+AGENTS.md
+
+# Data: caches and downloads are rebuilt locally (leaf data download / leaf data cache); ReaL labels are tracked
+data/*
+!data/real/
+
+# Raw results of the paper's campaigns (about 7 GB, see results/README.md); only the summary is tracked
+results/*
+!results/README.md
+!results/SUMMARY.json
+# ... and the summary of the segmentation pilot (sealed plans, report, table, figure; raw runs stay local)
+!results/seg_comparison/
+results/seg_comparison/*
+!results/seg_comparison/seg_b_ade/
+results/seg_comparison/seg_b_ade/*
+!results/seg_comparison/seg_b_ade/plans.json
+!results/seg_comparison/seg_b_ade/report.json
+!results/seg_comparison/seg_b_ade/table.tex
+!results/seg_comparison/seg_b_ade/accuracy_latency.pdf
+!results/seg_comparison/seg_b_ade/accuracy_latency.png
+!results/seg_comparison/seg_b_ade/REPORT.md
+
+# Outputs of the command line
+runs/
+
+# Paper sources and builds are kept out of the repository
+paper/
+
+# Tensors and checkpoints
+*.pt
+*.pth
+*.npy
+*.npz
+!data/real/*.npy
+/second_device*.tar.gz
+/second_device*.bin

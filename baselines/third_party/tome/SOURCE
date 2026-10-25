@@ -1,0 +1,3 @@
+Source: https://github.com/facebookresearch/ToMe/blob/af95e4b1befa172dadccd8c81e223b10090f9579/tome/merge.py (unmodified)
+License: CC BY-NC 4.0 (LICENSE)
+The timm patch (tome/patch/timm.py, mae.py) is re-expressed in baselines/methods.py (ToMe): same per-block logic (attention -> bipartite_soft_matching on k.mean(1) -> merge_wavg -> MLP), proportional attention on DeiT/AugReg, off for MAE, size-weighted global pool for MAE.

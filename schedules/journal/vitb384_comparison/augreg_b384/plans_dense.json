@@ -1,0 +1,730 @@
+{
+ "backbone": "augreg_b384",
+ "jobs": {
+  "ref/baseline_dense/tome/r40i-0.60": {
+   "config": {
+    "kind": "tome",
+    "r": [
+     40,
+     -0.6
+    ]
+   },
+   "group": "baseline",
+   "pilot_ms": 63.303,
+   "config_sha": "272e09c06872156c"
+  },
+  "ref/baseline_dense/tome/r39i-0.38": {
+   "config": {
+    "kind": "tome",
+    "r": [
+     39,
+     -0.38
+    ]
+   },
+   "group": "baseline",
+   "pilot_ms": 69.586,
+   "config_sha": "a1d09f8513401d6a"
+  },
+  "ref/baseline_dense/tome/r32i-0.46": {
+   "config": {
+    "kind": "tome",
+    "r": [
+     32,
+     -0.46
+    ]
+   },
+   "group": "baseline",
+   "pilot_ms": 79.435,
+   "config_sha": "27ea6fcd25f22f1d"
+  },
+  "ref/baseline_dense/tome/r36i-0.08": {
+   "config": {
+    "kind": "tome",
+    "r": [
+     36,
+     -0.08
+    ]
+   },
+   "group": "baseline",
+   "pilot_ms": 79.987,
+   "config_sha": "db9380589279962a"
+  },
+  "ref/baseline_dense/tome/r39i+0.16": {
+   "config": {
+    "kind": "tome",
+    "r": [
+     39,
+     0.16
+    ]
+   },
+   "group": "baseline",
+   "pilot_ms": 80.031,
+   "config_sha": "f5fade79fe66634b"
+  },
+  "ref/baseline_dense/tome/r27i-0.44": {
+   "config": {
+    "kind": "tome",
+    "r": [
+     27,
+     -0.44
+    ]
+   },
+   "group": "baseline",
+   "pilot_ms": 87.75,
+   "config_sha": "2bd614dc06484642"
+  },
+  "ref/baseline_dense/tome/r31i-0.06": {
+   "config": {
+    "kind": "tome",
+    "r": [
+     31,
+     -0.06
+    ]
+   },
+   "group": "baseline",
+   "pilot_ms": 88.018,
+   "config_sha": "e25f762c415ca648"
+  },
+  "ref/baseline_dense/tome_m3/r40i-0.60": {
+   "config": {
+    "kind": "tome_m3",
+    "r": [
+     40,
+     -0.6
+    ]
+   },
+   "group": "baseline",
+   "pilot_ms": 61.045,
+   "config_sha": "1fab7e5473d5ee02"
+  },
+  "ref/baseline_dense/tome_m3/r40i-0.58": {
+   "config": {
+    "kind": "tome_m3",
+    "r": [
+     40,
+     -0.58
+    ]
+   },
+   "group": "baseline",
+   "pilot_ms": 61.614,
+   "config_sha": "388d5b81c7a071a8"
+  },
+  "ref/baseline_dense/tome_m3/r37i-0.42": {
+   "config": {
+    "kind": "tome_m3",
+    "r": [
+     37,
+     -0.42
+    ]
+   },
+   "group": "baseline",
+   "pilot_ms": 69.35,
+   "config_sha": "fd96d4f772b86cb3"
+  },
+  "ref/baseline_dense/tome_m3/r31i-0.40": {
+   "config": {
+    "kind": "tome_m3",
+    "r": [
+     31,
+     -0.4
+    ]
+   },
+   "group": "baseline",
+   "pilot_ms": 79.438,
+   "config_sha": "eda6da5e116c0fc7"
+  },
+  "ref/baseline_dense/tome_m3/r32i-0.28": {
+   "config": {
+    "kind": "tome_m3",
+    "r": [
+     32,
+     -0.28
+    ]
+   },
+   "group": "baseline",
+   "pilot_ms": 79.997,
+   "config_sha": "a117731dd5e785e6"
+  },
+  "ref/baseline_dense/tome_m3/r33i-0.18": {
+   "config": {
+    "kind": "tome_m3",
+    "r": [
+     33,
+     -0.18
+    ]
+   },
+   "group": "baseline",
+   "pilot_ms": 80.014,
+   "config_sha": "365f9c989323a227"
+  },
+  "ref/baseline_dense/tome_m3/r29i-0.02": {
+   "config": {
+    "kind": "tome_m3",
+    "r": [
+     29,
+     -0.02
+    ]
+   },
+   "group": "baseline",
+   "pilot_ms": 87.864,
+   "config_sha": "cddeab5ad53e72c0"
+  },
+  "ref/baseline_dense/tome_m3/r35i+0.44": {
+   "config": {
+    "kind": "tome_m3",
+    "r": [
+     35,
+     0.44
+    ]
+   },
+   "group": "baseline",
+   "pilot_ms": 88.615,
+   "config_sha": "64059a387adc8dd1"
+  },
+  "ref/baseline_dense/tofu/r40i-0.60": {
+   "config": {
+    "kind": "tofu",
+    "r": [
+     40,
+     -0.6
+    ]
+   },
+   "group": "baseline",
+   "pilot_ms": 59.865,
+   "config_sha": "4183eaced4f0913e"
+  },
+  "ref/baseline_dense/tofu/r39i-0.58": {
+   "config": {
+    "kind": "tofu",
+    "r": [
+     39,
+     -0.58
+    ]
+   },
+   "group": "baseline",
+   "pilot_ms": 61.245,
+   "config_sha": "cbc9abab0c30abc1"
+  },
+  "ref/baseline_dense/tofu/r34i-0.60": {
+   "config": {
+    "kind": "tofu",
+    "r": [
+     34,
+     -0.6
+    ]
+   },
+   "group": "baseline",
+   "pilot_ms": 69.008,
+   "config_sha": "87a142d5aa20e3d9"
+  },
+  "ref/baseline_dense/tofu/r40i-0.08": {
+   "config": {
+    "kind": "tofu",
+    "r": [
+     40,
+     -0.08
+    ]
+   },
+   "group": "baseline",
+   "pilot_ms": 69.99,
+   "config_sha": "31cc01a74cd613c1"
+  },
+  "ref/baseline_dense/tofu/r31i-0.28": {
+   "config": {
+    "kind": "tofu",
+    "r": [
+     31,
+     -0.28
+    ]
+   },
+   "group": "baseline",
+   "pilot_ms": 79.587,
+   "config_sha": "83459f8b1917a0fc"
+  },
+  "ref/baseline_dense/tofu/r34i+0.02": {
+   "config": {
+    "kind": "tofu",
+    "r": [
+     34,
+     0.02
+    ]
+   },
+   "group": "baseline",
+   "pilot_ms": 79.971,
+   "config_sha": "fb141baedd9eab1c"
+  },
+  "ref/baseline_dense/tofu/r37i+0.28": {
+   "config": {
+    "kind": "tofu",
+    "r": [
+     37,
+     0.28
+    ]
+   },
+   "group": "baseline",
+   "pilot_ms": 80.832,
+   "config_sha": "0e6ee27366ec67be"
+  },
+  "ref/baseline_dense/tofu/r28i-0.02": {
+   "config": {
+    "kind": "tofu",
+    "r": [
+     28,
+     -0.02
+    ]
+   },
+   "group": "baseline",
+   "pilot_ms": 88.001,
+   "config_sha": "d6622b95601f1a9f"
+  },
+  "ref/baseline_dense/tofu/r34i+0.46": {
+   "config": {
+    "kind": "tofu",
+    "r": [
+     34,
+     0.46
+    ]
+   },
+   "group": "baseline",
+   "pilot_ms": 88.526,
+   "config_sha": "5ed69d5396d1a3c2"
+  },
+  "ref/baseline_dense/rapid/r40i-0.60": {
+   "config": {
+    "kind": "rapid",
+    "r": [
+     40,
+     -0.6
+    ]
+   },
+   "group": "baseline",
+   "pilot_ms": 62.113,
+   "config_sha": "514e9cb8f6e4dd87"
+  },
+  "ref/baseline_dense/rapid/r40i-0.22": {
+   "config": {
+    "kind": "rapid",
+    "r": [
+     40,
+     -0.22
+    ]
+   },
+   "group": "baseline",
+   "pilot_ms": 69.996,
+   "config_sha": "2c35e5e92453c096"
+  },
+  "ref/baseline_dense/rapid/r34i-0.20": {
+   "config": {
+    "kind": "rapid",
+    "r": [
+     34,
+     -0.2
+    ]
+   },
+   "group": "baseline",
+   "pilot_ms": 79.795,
+   "config_sha": "469855a35dcff34a"
+  },
+  "ref/baseline_dense/rapid/r33i-0.26": {
+   "config": {
+    "kind": "rapid",
+    "r": [
+     33,
+     -0.26
+    ]
+   },
+   "group": "baseline",
+   "pilot_ms": 79.86,
+   "config_sha": "12759b8ab0e08588"
+  },
+  "ref/baseline_dense/rapid/r36i+0.02": {
+   "config": {
+    "kind": "rapid",
+    "r": [
+     36,
+     0.02
+    ]
+   },
+   "group": "baseline",
+   "pilot_ms": 80.049,
+   "config_sha": "7996628653b3b4e6"
+  },
+  "ref/baseline_dense/rapid/r30i-0.06": {
+   "config": {
+    "kind": "rapid",
+    "r": [
+     30,
+     -0.06
+    ]
+   },
+   "group": "baseline",
+   "pilot_ms": 87.91,
+   "config_sha": "47607e55108be401"
+  },
+  "ref/baseline_dense/rapid/r32i+0.14": {
+   "config": {
+    "kind": "rapid",
+    "r": [
+     32,
+     0.14
+    ]
+   },
+   "group": "baseline",
+   "pilot_ms": 88.393,
+   "config_sha": "5d161a257ed83ce8"
+  },
+  "ref/baseline_dense/pitome/ratio0.803": {
+   "config": {
+    "kind": "pitome",
+    "ratio": 0.803
+   },
+   "group": "baseline",
+   "pilot_ms": 44.372,
+   "config_sha": "c93be4c61671c410"
+  },
+  "ref/baseline_dense/pitome/ratio0.804": {
+   "config": {
+    "kind": "pitome",
+    "ratio": 0.804
+   },
+   "group": "baseline",
+   "pilot_ms": 44.784,
+   "config_sha": "d5869903b0581b9c"
+  },
+  "ref/baseline_dense/pitome/ratio0.84": {
+   "config": {
+    "kind": "pitome",
+    "ratio": 0.84
+   },
+   "group": "baseline",
+   "pilot_ms": 52.497,
+   "config_sha": "6bd0187e7bf6ab91"
+  },
+  "ref/baseline_dense/pitome/ratio0.841": {
+   "config": {
+    "kind": "pitome",
+    "ratio": 0.841
+   },
+   "group": "baseline",
+   "pilot_ms": 52.961,
+   "config_sha": "6f76e37ca93f42f6"
+  },
+  "ref/baseline_dense/pitome/ratio0.871": {
+   "config": {
+    "kind": "pitome",
+    "ratio": 0.871
+   },
+   "group": "baseline",
+   "pilot_ms": 61.223,
+   "config_sha": "c55d326be6fc0c3e"
+  },
+  "ref/baseline_dense/pitome/ratio0.872": {
+   "config": {
+    "kind": "pitome",
+    "ratio": 0.872
+   },
+   "group": "baseline",
+   "pilot_ms": 61.495,
+   "config_sha": "8ce94634a16a05d0"
+  },
+  "ref/baseline_dense/pitome/ratio0.895": {
+   "config": {
+    "kind": "pitome",
+    "ratio": 0.895
+   },
+   "group": "baseline",
+   "pilot_ms": 69.877,
+   "config_sha": "655c7040cf528011"
+  },
+  "ref/baseline_dense/pitome/ratio0.896": {
+   "config": {
+    "kind": "pitome",
+    "ratio": 0.896
+   },
+   "group": "baseline",
+   "pilot_ms": 70.335,
+   "config_sha": "163c2e9fb6a23c75"
+  },
+  "ref/baseline_dense/pitome/ratio0.919": {
+   "config": {
+    "kind": "pitome",
+    "ratio": 0.919
+   },
+   "group": "baseline",
+   "pilot_ms": 79.837,
+   "config_sha": "aba6ba148a1066b1"
+  },
+  "ref/baseline_dense/pitome/ratio0.92": {
+   "config": {
+    "kind": "pitome",
+    "ratio": 0.92
+   },
+   "group": "baseline",
+   "pilot_ms": 80.123,
+   "config_sha": "8beb7c0333345c1a"
+  },
+  "ref/baseline_dense/pitome/ratio0.935": {
+   "config": {
+    "kind": "pitome",
+    "ratio": 0.935
+   },
+   "group": "baseline",
+   "pilot_ms": 87.989,
+   "config_sha": "f54654c5f1630165"
+  },
+  "ref/baseline_dense/pitome/ratio0.936": {
+   "config": {
+    "kind": "pitome",
+    "ratio": 0.936
+   },
+   "group": "baseline",
+   "pilot_ms": 88.563,
+   "config_sha": "af461293fa28ba9b"
+  },
+  "ref/baseline_dense/evit/keep_rate0.26": {
+   "config": {
+    "kind": "evit",
+    "keep_rate": 0.26
+   },
+   "group": "baseline",
+   "pilot_ms": 44.425,
+   "config_sha": "c86fe81b19908f8d"
+  },
+  "ref/baseline_dense/evit/keep_rate0.265": {
+   "config": {
+    "kind": "evit",
+    "keep_rate": 0.265
+   },
+   "group": "baseline",
+   "pilot_ms": 44.664,
+   "config_sha": "7c6d4dca2d74d2da"
+  },
+  "ref/baseline_dense/evit/keep_rate0.43": {
+   "config": {
+    "kind": "evit",
+    "keep_rate": 0.43
+   },
+   "group": "baseline",
+   "pilot_ms": 52.673,
+   "config_sha": "636cc93d4c402973"
+  },
+  "ref/baseline_dense/evit/keep_rate0.435": {
+   "config": {
+    "kind": "evit",
+    "keep_rate": 0.435
+   },
+   "group": "baseline",
+   "pilot_ms": 52.807,
+   "config_sha": "321467dfec5caea1"
+  },
+  "ref/baseline_dense/evit/keep_rate0.55": {
+   "config": {
+    "kind": "evit",
+    "keep_rate": 0.55
+   },
+   "group": "baseline",
+   "pilot_ms": 60.902,
+   "config_sha": "0ac8819a5a62b531"
+  },
+  "ref/baseline_dense/evit/keep_rate0.555": {
+   "config": {
+    "kind": "evit",
+    "keep_rate": 0.555
+   },
+   "group": "baseline",
+   "pilot_ms": 61.611,
+   "config_sha": "0475ffdb418e6944"
+  },
+  "ref/baseline_dense/evit/keep_rate0.66": {
+   "config": {
+    "kind": "evit",
+    "keep_rate": 0.66
+   },
+   "group": "baseline",
+   "pilot_ms": 69.931,
+   "config_sha": "8096a1b9d9c047fb"
+  },
+  "ref/baseline_dense/evit/keep_rate0.665": {
+   "config": {
+    "kind": "evit",
+    "keep_rate": 0.665
+   },
+   "group": "baseline",
+   "pilot_ms": 72.11,
+   "config_sha": "1940f9f156cd9623"
+  },
+  "ref/baseline_dense/evit/keep_rate0.745": {
+   "config": {
+    "kind": "evit",
+    "keep_rate": 0.745
+   },
+   "group": "baseline",
+   "pilot_ms": 79.567,
+   "config_sha": "95dc6d52f8691d27"
+  },
+  "ref/baseline_dense/evit/keep_rate0.75": {
+   "config": {
+    "kind": "evit",
+    "keep_rate": 0.75
+   },
+   "group": "baseline",
+   "pilot_ms": 80.442,
+   "config_sha": "caa88e40912c21fe"
+  },
+  "ref/baseline_dense/evit/keep_rate0.81": {
+   "config": {
+    "kind": "evit",
+    "keep_rate": 0.81
+   },
+   "group": "baseline",
+   "pilot_ms": 87.534,
+   "config_sha": "d0afa34a996e3dd9"
+  },
+  "ref/baseline_dense/evit/keep_rate0.815": {
+   "config": {
+    "kind": "evit",
+    "keep_rate": 0.815
+   },
+   "group": "baseline",
+   "pilot_ms": 89.362,
+   "config_sha": "a9d72940fe578667"
+  },
+  "ref/baseline_dense/ppt/r178": {
+   "config": {
+    "kind": "ppt",
+    "r": 178
+   },
+   "group": "baseline",
+   "pilot_ms": 75.941,
+   "config_sha": "cf608f8bcd1451e0"
+  },
+  "ref/baseline_dense/ppt/r161": {
+   "config": {
+    "kind": "ppt",
+    "r": 161
+   },
+   "group": "baseline",
+   "pilot_ms": 79.127,
+   "config_sha": "fecba38694f8ba4a"
+  },
+  "ref/baseline_dense/ppt/r159": {
+   "config": {
+    "kind": "ppt",
+    "r": 159
+   },
+   "group": "baseline",
+   "pilot_ms": 80.406,
+   "config_sha": "e781fb700d3da62e"
+  },
+  "ref/baseline_dense/ppt/r131": {
+   "config": {
+    "kind": "ppt",
+    "r": 131
+   },
+   "group": "baseline",
+   "pilot_ms": 87.002,
+   "config_sha": "56446abb9979b4ae"
+  },
+  "ref/baseline_dense/ppt/r128": {
+   "config": {
+    "kind": "ppt",
+    "r": 128
+   },
+   "group": "baseline",
+   "pilot_ms": 89.279,
+   "config_sha": "5f1a9c0da91558d8"
+  },
+  "ref/baseline_dense/onemore/n5": {
+   "config": {
+    "kind": "onemore",
+    "n": 5
+   },
+   "group": "baseline",
+   "pilot_ms": 44.543,
+   "config_sha": "191e6d297ed2a401"
+  },
+  "ref/baseline_dense/onemore/n3": {
+   "config": {
+    "kind": "onemore",
+    "n": 3
+   },
+   "group": "baseline",
+   "pilot_ms": 44.78,
+   "config_sha": "a73c0166b8bfed1d"
+  },
+  "ref/baseline_dense/onemore/n4": {
+   "config": {
+    "kind": "onemore",
+    "n": 4
+   },
+   "group": "baseline",
+   "pilot_ms": 44.825,
+   "config_sha": "a40752d126a439c4"
+  },
+  "ref/baseline_dense/onemore/n159": {
+   "config": {
+    "kind": "onemore",
+    "n": 159
+   },
+   "group": "baseline",
+   "pilot_ms": 61.472,
+   "config_sha": "09736c78bc6832d0"
+  },
+  "ref/baseline_dense/onemore/n231": {
+   "config": {
+    "kind": "onemore",
+    "n": 231
+   },
+   "group": "baseline",
+   "pilot_ms": 70.137,
+   "config_sha": "ea57b9e1c1817780"
+  },
+  "ref/baseline_dense/onemore/n292": {
+   "config": {
+    "kind": "onemore",
+    "n": 292
+   },
+   "group": "baseline",
+   "pilot_ms": 79.564,
+   "config_sha": "e0de7811ed4799a4"
+  },
+  "ref/baseline_dense/onemore/n295": {
+   "config": {
+    "kind": "onemore",
+    "n": 295
+   },
+   "group": "baseline",
+   "pilot_ms": 80.046,
+   "config_sha": "53e07d8160b63470"
+  },
+  "ref/baseline_dense/onemore/n296": {
+   "config": {
+    "kind": "onemore",
+    "n": 296
+   },
+   "group": "baseline",
+   "pilot_ms": 80.208,
+   "config_sha": "69add3110786e069"
+  },
+  "ref/baseline_dense/onemore/n363": {
+   "config": {
+    "kind": "onemore",
+    "n": 363
+   },
+   "group": "baseline",
+   "pilot_ms": 88.126,
+   "config_sha": "fb07fbd113f8d708"
+  }
+ },
+ "sha": "b3b520890943c79d542dc3f3cf6bef0903e8d1dede869ed45024f0e9476794ae",
+ "time": 1792913885.8485377,
+ "targets_ms": [
+  44.635333333333335,
+  52.762,
+  61.44166666666666,
+  70.27333333333333,
+  80.002,
+  88.00333333333333
+ ],
+ "rule": "cost only: candidates nearest each LEAF latency by interpolated session-1 latency, one pilot timing (bs32), nearest pilot point on each side kept; sealed before any accuracy of these points"
+}

@@ -1,0 +1,2084 @@
+{
+ "backbone": "augreg_b384",
+ "timm_id": "vit_base_patch16_384.augreg_in21k_ft_in1k",
+ "jobs": {
+  "ref/dense": {
+   "config": {
+    "kind": "dense"
+   },
+   "group": "reference",
+   "config_sha": "7ae560d3b3fdeea9"
+  },
+  "leaf/latency/dense0.4": {
+   "config": {
+    "kind": "pda",
+    "prune_keep": [
+     577,
+     300,
+     577,
+     577,
+     228,
+     577,
+     577,
+     577,
+     124,
+     577,
+     577,
+     3
+    ],
+    "merge_keep": [
+     577,
+     300,
+     577,
+     577,
+     156,
+     577,
+     577,
+     577,
+     92,
+     577,
+     577,
+     3
+    ],
+    "groups": {
+     "1": [
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      10,
+      16,
+      7,
+      16,
+      16,
+      16,
+      6,
+      16,
+      16,
+      16,
+      16,
+      16,
+      6,
+      14,
+      16,
+      7,
+      13,
+      16,
+      16,
+      14,
+      14,
+      14,
+      16,
+      16,
+      7,
+      5,
+      13,
+      16,
+      14,
+      14,
+      16,
+      10,
+      10,
+      16,
+      14,
+      12,
+      14,
+      16,
+      16,
+      10,
+      7,
+      14,
+      14,
+      9,
+      5,
+      14,
+      8,
+      16,
+      10,
+      14,
+      16,
+      10,
+      12,
+      16,
+      16,
+      13,
+      16,
+      14,
+      16,
+      16,
+      12,
+      16,
+      1,
+      14,
+      12,
+      13,
+      16,
+      16,
+      10,
+      16,
+      10,
+      13,
+      16,
+      2,
+      9,
+      10,
+      15,
+      10,
+      16,
+      15,
+      10,
+      10,
+      1,
+      9,
+      12,
+      12,
+      1,
+      15,
+      15,
+      15,
+      12,
+      12,
+      16,
+      9,
+      10,
+      10,
+      3,
+      3,
+      4,
+      3,
+      3,
+      3,
+      3,
+      1,
+      3,
+      11,
+      3,
+      3
+     ],
+     "4": [
+      9,
+      9,
+      9,
+      9,
+      9,
+      9,
+      9,
+      9,
+      9,
+      9,
+      9,
+      9,
+      9,
+      9,
+      9,
+      9,
+      9,
+      9,
+      9,
+      9,
+      9,
+      9,
+      9,
+      9,
+      9,
+      9,
+      9,
+      9,
+      9,
+      9,
+      9,
+      9,
+      9,
+      9,
+      9,
+      9,
+      12,
+      11,
+      14,
+      11,
+      9,
+      10,
+      9,
+      9,
+      9,
+      9,
+      11,
+      10,
+      9,
+      10,
+      11,
+      11,
+      11,
+      11,
+      11,
+      9,
+      11,
+      11,
+      10,
+      10,
+      15,
+      3,
+      13,
+      11,
+      11,
+      10,
+      12,
+      4,
+      11,
+      5,
+      9,
+      9,
+      7,
+      1,
+      6,
+      2,
+      8,
+      1,
+      12,
+      1,
+      16,
+      1,
+      6,
+      1
+     ],
+     "8": [
+      10,
+      11,
+      6,
+      11,
+      11,
+      11,
+      7,
+      11,
+      10,
+      9,
+      12,
+      11,
+      16,
+      13,
+      7,
+      9,
+      11,
+      11,
+      4,
+      15,
+      11,
+      8,
+      11,
+      11,
+      1,
+      9,
+      1,
+      14,
+      1,
+      3,
+      5,
+      6,
+      1,
+      9,
+      2,
+      2
+     ]
+    },
+    "rank": 32,
+    "triton": true,
+    "fuse_merge": true,
+    "merge": {
+     "mode": "M3",
+     "kernel": "triton_norm"
+    },
+    "base": "pdm",
+    "alpha": {
+     "1": 1.0,
+     "4": 0.25,
+     "8": 0.75
+    }
+   },
+   "group": "leaf",
+   "budget": {
+    "kind": "latency",
+    "value": 44.010933333333334,
+    "id": "dense0.4"
+   },
+   "planner": {
+    "fhat": 0.1155808812775368,
+    "predicted_ms": 43.882963458713476,
+    "gmac": 20.194324992000002,
+    "seconds": 1.25
+   },
+   "config_sha": "699e8df9c5369581",
+   "gmac": 20.194324992000002
+  },
+  "leaf/latency/dense0.48": {
+   "config": {
+    "kind": "pda",
+    "prune_keep": [
+     577,
+     352,
+     577,
+     577,
+     288,
+     577,
+     224,
+     577,
+     577,
+     577,
+     577,
+     3
+    ],
+    "merge_keep": [
+     577,
+     352,
+     577,
+     577,
+     224,
+     577,
+     152,
+     577,
+     577,
+     577,
+     577,
+     3
+    ],
+    "groups": {
+     "1": [
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      10,
+      16,
+      7,
+      16,
+      16,
+      16,
+      6,
+      16,
+      16,
+      16,
+      16,
+      16,
+      6,
+      14,
+      16,
+      7,
+      13,
+      16,
+      16,
+      14,
+      14,
+      14,
+      16,
+      16,
+      7,
+      5,
+      13,
+      16,
+      14,
+      14,
+      16,
+      10,
+      10,
+      16,
+      14,
+      12,
+      14,
+      16,
+      16,
+      10,
+      7,
+      14,
+      14,
+      9,
+      5,
+      14,
+      8,
+      16,
+      10,
+      14,
+      16,
+      10,
+      12,
+      16,
+      16,
+      13,
+      16,
+      14,
+      16,
+      16,
+      12,
+      16,
+      1,
+      14,
+      12,
+      13,
+      16,
+      16,
+      10,
+      16,
+      10,
+      13,
+      16,
+      2,
+      9,
+      10,
+      15,
+      10,
+      16,
+      15,
+      10,
+      10,
+      1,
+      9,
+      12,
+      12,
+      1,
+      15,
+      15,
+      15,
+      12,
+      12,
+      16,
+      9,
+      10,
+      10,
+      3,
+      3,
+      4,
+      3,
+      3,
+      3,
+      3,
+      1,
+      3,
+      11,
+      3,
+      3
+     ],
+     "4": [
+      9,
+      9,
+      9,
+      9,
+      9,
+      9,
+      9,
+      9,
+      9,
+      9,
+      9,
+      9,
+      9,
+      9,
+      9,
+      9,
+      9,
+      9,
+      9,
+      9,
+      9,
+      9,
+      9,
+      9,
+      9,
+      9,
+      9,
+      9,
+      9,
+      9,
+      9,
+      9,
+      9,
+      9,
+      9,
+      9,
+      12,
+      11,
+      14,
+      11,
+      9,
+      10,
+      9,
+      9,
+      9,
+      9,
+      11,
+      10,
+      9,
+      10,
+      11,
+      11,
+      11,
+      11,
+      11,
+      9,
+      11,
+      11,
+      10,
+      10,
+      15,
+      3,
+      13,
+      11,
+      11,
+      10,
+      12,
+      4,
+      11,
+      5,
+      9,
+      9,
+      7,
+      1,
+      6,
+      2,
+      8,
+      1,
+      12,
+      1,
+      16,
+      1,
+      6,
+      1
+     ]
+    },
+    "rank": 32,
+    "triton": true,
+    "fuse_merge": true,
+    "merge": {
+     "mode": "M3",
+     "kernel": "triton_norm"
+    },
+    "base": "pdm",
+    "alpha": {
+     "1": 1.0,
+     "4": 0.3333333333333333
+    }
+   },
+   "group": "leaf",
+   "budget": {
+    "kind": "latency",
+    "value": 52.81312,
+    "id": "dense0.48"
+   },
+   "planner": {
+    "fhat": 0.059280314324756285,
+    "predicted_ms": 52.650664018022205,
+    "gmac": 23.784571391999997,
+    "seconds": 1.14
+   },
+   "config_sha": "f90e1a6ad6c1fef6",
+   "gmac": 23.784571391999997
+  },
+  "leaf/latency/dense0.56": {
+   "config": {
+    "kind": "pda",
+    "prune_keep": [
+     577,
+     434,
+     577,
+     366,
+     577,
+     577,
+     298,
+     577,
+     226,
+     577,
+     577,
+     3
+    ],
+    "merge_keep": [
+     577,
+     434,
+     577,
+     298,
+     577,
+     577,
+     226,
+     577,
+     154,
+     577,
+     577,
+     3
+    ],
+    "groups": {
+     "1": [
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      10,
+      16,
+      7,
+      16,
+      16,
+      16,
+      6,
+      16,
+      16,
+      16,
+      16,
+      16,
+      6,
+      14,
+      16,
+      7,
+      13,
+      16,
+      16,
+      14,
+      14,
+      14,
+      16,
+      16,
+      7,
+      5,
+      13,
+      16,
+      14,
+      14,
+      16,
+      10,
+      10,
+      16,
+      14,
+      12,
+      14,
+      16,
+      16,
+      10,
+      7,
+      14,
+      14,
+      9,
+      5,
+      14,
+      8,
+      16,
+      10,
+      14,
+      16,
+      10,
+      12,
+      16,
+      16,
+      13,
+      16,
+      14,
+      16,
+      16,
+      12,
+      16,
+      1,
+      14,
+      12,
+      13,
+      16,
+      16,
+      10,
+      16,
+      10,
+      13,
+      16,
+      2,
+      9,
+      10,
+      15,
+      10,
+      16,
+      15,
+      10,
+      10,
+      1,
+      9,
+      12,
+      12,
+      1,
+      15,
+      15,
+      15,
+      12,
+      12,
+      16,
+      9,
+      10,
+      10,
+      3,
+      3,
+      4,
+      3,
+      3,
+      3,
+      3,
+      1,
+      3,
+      11,
+      3,
+      3
+     ],
+     "6": [
+      9,
+      9,
+      9,
+      9,
+      9,
+      9,
+      9,
+      9,
+      9,
+      9,
+      9,
+      11,
+      14,
+      11,
+      10,
+      5,
+      9,
+      11,
+      9,
+      9,
+      11,
+      9,
+      11,
+      7,
+      12,
+      7,
+      13,
+      9,
+      9,
+      11,
+      5,
+      9,
+      11,
+      11,
+      8,
+      7,
+      16,
+      6,
+      6,
+      11,
+      9,
+      7,
+      14,
+      15,
+      9,
+      5,
+      9,
+      9,
+      1,
+      3,
+      1,
+      3,
+      1,
+      4,
+      14,
+      13,
+      2,
+      3,
+      1,
+      3
+     ],
+     "8": [
+      10,
+      11,
+      6,
+      11,
+      11,
+      11,
+      7,
+      11,
+      10,
+      9,
+      12,
+      11,
+      16,
+      13,
+      7,
+      9,
+      11,
+      11,
+      4,
+      15,
+      11,
+      8,
+      11,
+      11,
+      1,
+      9,
+      1,
+      14,
+      1,
+      3,
+      5,
+      6,
+      1,
+      9,
+      2,
+      2
+     ]
+    },
+    "rank": 32,
+    "triton": true,
+    "fuse_merge": true,
+    "merge": {
+     "mode": "M3",
+     "kernel": "triton_norm"
+    },
+    "base": "pdm",
+    "alpha": {
+     "1": 0.75,
+     "6": 0.25,
+     "8": 1.0
+    }
+   },
+   "group": "leaf",
+   "budget": {
+    "kind": "latency",
+    "value": 61.61530666666667,
+    "id": "dense0.56"
+   },
+   "planner": {
+    "fhat": 0.031460861129413584,
+    "predicted_ms": 61.47551759950551,
+    "gmac": 27.072536064000005,
+    "seconds": 1.15
+   },
+   "config_sha": "9bd4881898b4783b",
+   "gmac": 27.072536064000005
+  },
+  "leaf/latency/dense0.64": {
+   "config": {
+    "kind": "pda",
+    "prune_keep": [
+     577,
+     539,
+     577,
+     430,
+     577,
+     577,
+     358,
+     577,
+     577,
+     577,
+     577,
+     3
+    ],
+    "merge_keep": [
+     577,
+     501,
+     577,
+     358,
+     577,
+     577,
+     211,
+     577,
+     577,
+     577,
+     577,
+     3
+    ],
+    "groups": {
+     "1": [
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      10,
+      16,
+      7,
+      16,
+      16,
+      16,
+      6,
+      16,
+      16,
+      16,
+      16,
+      16,
+      6,
+      14,
+      16,
+      7,
+      13,
+      16,
+      16,
+      14,
+      14,
+      14,
+      16,
+      16,
+      7,
+      5,
+      13,
+      16,
+      14,
+      14,
+      16,
+      10,
+      10,
+      16,
+      14,
+      12,
+      14,
+      16,
+      16,
+      10,
+      7,
+      14,
+      14,
+      9,
+      5,
+      14,
+      8,
+      16,
+      10,
+      14,
+      16,
+      10,
+      12,
+      16,
+      16,
+      13,
+      16,
+      14,
+      16,
+      16,
+      12,
+      16,
+      1,
+      14,
+      12,
+      13,
+      16,
+      16,
+      10,
+      16,
+      10,
+      13,
+      16,
+      2,
+      9,
+      10,
+      15,
+      10,
+      16,
+      15,
+      10,
+      10,
+      1,
+      9,
+      12,
+      12,
+      1,
+      15,
+      15,
+      15,
+      12,
+      12,
+      16,
+      9,
+      10,
+      10,
+      3,
+      3,
+      4,
+      3,
+      3,
+      3,
+      3,
+      1,
+      3,
+      11,
+      3,
+      3
+     ],
+     "3": [
+      6,
+      6,
+      6,
+      2,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      2,
+      2,
+      6,
+      6,
+      6,
+      6,
+      3,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      2,
+      6,
+      6,
+      6,
+      6,
+      11,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      3,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      11,
+      13,
+      7,
+      13,
+      6,
+      4,
+      6,
+      6,
+      6,
+      6,
+      13,
+      4,
+      6,
+      4,
+      13,
+      16,
+      5,
+      13,
+      13,
+      4,
+      13,
+      13,
+      8,
+      4,
+      10,
+      3,
+      12,
+      13,
+      5,
+      10,
+      11,
+      3,
+      5,
+      14,
+      16,
+      6,
+      1,
+      16,
+      1,
+      15,
+      1,
+      16,
+      11,
+      15,
+      9,
+      15,
+      1,
+      16
+     ]
+    },
+    "rank": 32,
+    "triton": true,
+    "fuse_merge": true,
+    "merge": {
+     "mode": "M3",
+     "kernel": "triton_norm"
+    },
+    "base": "pdm",
+    "alpha": {
+     "1": 1.0,
+     "3": 0.3333333333333333
+    }
+   },
+   "group": "leaf",
+   "budget": {
+    "kind": "latency",
+    "value": 70.41749333333334,
+    "id": "dense0.64"
+   },
+   "planner": {
+    "fhat": 0.0181057180120011,
+    "predicted_ms": 70.26063680157432,
+    "gmac": 30.763467264000006,
+    "seconds": 1.14
+   },
+   "config_sha": "c27c7852f1f4bf59",
+   "gmac": 30.763467264000006
+  },
+  "leaf/latency/dense0.72": {
+   "config": {
+    "kind": "pda",
+    "prune_keep": [
+     577,
+     577,
+     577,
+     492,
+     577,
+     577,
+     408,
+     577,
+     577,
+     577,
+     577,
+     3
+    ],
+    "merge_keep": [
+     577,
+     577,
+     577,
+     408,
+     577,
+     577,
+     258,
+     577,
+     577,
+     577,
+     577,
+     3
+    ],
+    "groups": {
+     "3": [
+      6,
+      6,
+      6,
+      2,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      2,
+      2,
+      6,
+      6,
+      6,
+      6,
+      3,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      2,
+      6,
+      6,
+      6,
+      6,
+      11,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      3,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      11,
+      13,
+      7,
+      13,
+      6,
+      4,
+      6,
+      6,
+      6,
+      6,
+      13,
+      4,
+      6,
+      4,
+      13,
+      16,
+      5,
+      13,
+      13,
+      4,
+      13,
+      13,
+      8,
+      4,
+      10,
+      3,
+      12,
+      13,
+      5,
+      10,
+      11,
+      3,
+      5,
+      14,
+      16,
+      6,
+      1,
+      16,
+      1,
+      15,
+      1,
+      16,
+      11,
+      15,
+      9,
+      15,
+      1,
+      16
+     ]
+    },
+    "rank": 32,
+    "triton": true,
+    "fuse_merge": true,
+    "merge": {
+     "mode": "M3",
+     "kernel": "triton_norm"
+    },
+    "base": "pdm",
+    "alpha": {
+     "3": 0.5
+    }
+   },
+   "group": "leaf",
+   "budget": {
+    "kind": "latency",
+    "value": 79.21968,
+    "id": "dense0.72"
+   },
+   "planner": {
+    "fhat": 0.009164952943560628,
+    "predicted_ms": 79.0569006878387,
+    "gmac": 35.153026559999994,
+    "seconds": 1.12
+   },
+   "config_sha": "1ed08f641307ca54",
+   "gmac": 35.153026559999994
+  },
+  "leaf/latency/dense0.8": {
+   "config": {
+    "kind": "pda",
+    "prune_keep": [
+     577,
+     577,
+     577,
+     577,
+     577,
+     577,
+     432,
+     577,
+     577,
+     577,
+     577,
+     3
+    ],
+    "merge_keep": [
+     577,
+     577,
+     577,
+     577,
+     432,
+     577,
+     304,
+     577,
+     577,
+     577,
+     577,
+     3
+    ],
+    "groups": {
+     "4": [
+      9,
+      9,
+      9,
+      9,
+      9,
+      9,
+      9,
+      9,
+      9,
+      9,
+      9,
+      9,
+      9,
+      9,
+      9,
+      9,
+      9,
+      9,
+      9,
+      9,
+      9,
+      9,
+      9,
+      9,
+      9,
+      9,
+      9,
+      9,
+      9,
+      9,
+      9,
+      9,
+      9,
+      9,
+      9,
+      9,
+      12,
+      11,
+      14,
+      11,
+      9,
+      10,
+      9,
+      9,
+      9,
+      9,
+      11,
+      10,
+      9,
+      10,
+      11,
+      11,
+      11,
+      11,
+      11,
+      9,
+      11,
+      11,
+      10,
+      10,
+      15,
+      3,
+      13,
+      11,
+      11,
+      10,
+      12,
+      4,
+      11,
+      5,
+      9,
+      9,
+      7,
+      1,
+      6,
+      2,
+      8,
+      1,
+      12,
+      1,
+      16,
+      1,
+      6,
+      1
+     ]
+    },
+    "rank": 32,
+    "triton": true,
+    "fuse_merge": true,
+    "merge": {
+     "mode": "M3",
+     "kernel": "triton_norm"
+    },
+    "base": "pdm",
+    "alpha": {
+     "4": 0.6666666666666666
+    }
+   },
+   "group": "leaf",
+   "budget": {
+    "kind": "latency",
+    "value": 88.02186666666667,
+    "id": "dense0.8"
+   },
+   "planner": {
+    "fhat": 0.004140208012534969,
+    "predicted_ms": 87.85484022426432,
+    "gmac": 38.85530035200001,
+    "seconds": 1.11
+   },
+   "config_sha": "3f06e13c8d6c7c60",
+   "gmac": 38.85530035200001
+  },
+  "ref/baseline/tome/r12": {
+   "config": {
+    "kind": "tome",
+    "r": 12
+   },
+   "group": "baseline",
+   "config_sha": "26e28e39bfa02120"
+  },
+  "ref/baseline/tome/r18": {
+   "config": {
+    "kind": "tome",
+    "r": 18
+   },
+   "group": "baseline",
+   "config_sha": "635a07122ea46f13"
+  },
+  "ref/baseline/tome/r24": {
+   "config": {
+    "kind": "tome",
+    "r": 24
+   },
+   "group": "baseline",
+   "config_sha": "a06ca7ddd2858b2a"
+  },
+  "ref/baseline/tome/r29": {
+   "config": {
+    "kind": "tome",
+    "r": 29
+   },
+   "group": "baseline",
+   "config_sha": "3b588f559e635f9c"
+  },
+  "ref/baseline/tome/r35": {
+   "config": {
+    "kind": "tome",
+    "r": 35
+   },
+   "group": "baseline",
+   "config_sha": "05979b30c307190b"
+  },
+  "ref/baseline/tome/r38": {
+   "config": {
+    "kind": "tome",
+    "r": 38
+   },
+   "group": "baseline",
+   "config_sha": "0eff6d67b3b5d6e7"
+  },
+  "ref/baseline/tome/r41": {
+   "config": {
+    "kind": "tome",
+    "r": 41
+   },
+   "group": "baseline",
+   "config_sha": "316a07165dd05bbc"
+  },
+  "ref/baseline/tome/r47": {
+   "config": {
+    "kind": "tome",
+    "r": 47
+   },
+   "group": "baseline",
+   "config_sha": "01bbb6edd2c1ac76"
+  },
+  "ref/baseline/tome/r59": {
+   "config": {
+    "kind": "tome",
+    "r": 59
+   },
+   "group": "baseline",
+   "config_sha": "ee3a6476a64b33b5"
+  },
+  "ref/baseline/tome/r71": {
+   "config": {
+    "kind": "tome",
+    "r": 71
+   },
+   "group": "baseline",
+   "config_sha": "5d54047bfeb37cc1"
+  },
+  "ref/baseline/tome/r94": {
+   "config": {
+    "kind": "tome",
+    "r": 94
+   },
+   "group": "baseline",
+   "config_sha": "15b09b4a6f37bb80"
+  },
+  "ref/baseline/tome/r141": {
+   "config": {
+    "kind": "tome",
+    "r": 141
+   },
+   "group": "baseline",
+   "config_sha": "7ca47b275192a086"
+  },
+  "ref/baseline/tome_m3/r12": {
+   "config": {
+    "kind": "tome_m3",
+    "r": 12
+   },
+   "group": "baseline",
+   "config_sha": "4321b0a1d5921e7f"
+  },
+  "ref/baseline/tome_m3/r18": {
+   "config": {
+    "kind": "tome_m3",
+    "r": 18
+   },
+   "group": "baseline",
+   "config_sha": "e763e24b43ed9a39"
+  },
+  "ref/baseline/tome_m3/r24": {
+   "config": {
+    "kind": "tome_m3",
+    "r": 24
+   },
+   "group": "baseline",
+   "config_sha": "c984ef24f61cbf04"
+  },
+  "ref/baseline/tome_m3/r29": {
+   "config": {
+    "kind": "tome_m3",
+    "r": 29
+   },
+   "group": "baseline",
+   "config_sha": "16c713bdc351d341"
+  },
+  "ref/baseline/tome_m3/r35": {
+   "config": {
+    "kind": "tome_m3",
+    "r": 35
+   },
+   "group": "baseline",
+   "config_sha": "5fb4aa9090aac2cc"
+  },
+  "ref/baseline/tome_m3/r38": {
+   "config": {
+    "kind": "tome_m3",
+    "r": 38
+   },
+   "group": "baseline",
+   "config_sha": "0ba267eeb9d4f296"
+  },
+  "ref/baseline/tome_m3/r41": {
+   "config": {
+    "kind": "tome_m3",
+    "r": 41
+   },
+   "group": "baseline",
+   "config_sha": "1dd67846e2d99f76"
+  },
+  "ref/baseline/tome_m3/r47": {
+   "config": {
+    "kind": "tome_m3",
+    "r": 47
+   },
+   "group": "baseline",
+   "config_sha": "c5efb307ae3c2fd1"
+  },
+  "ref/baseline/tome_m3/r59": {
+   "config": {
+    "kind": "tome_m3",
+    "r": 59
+   },
+   "group": "baseline",
+   "config_sha": "90c6e0c3e520a718"
+  },
+  "ref/baseline/tome_m3/r71": {
+   "config": {
+    "kind": "tome_m3",
+    "r": 71
+   },
+   "group": "baseline",
+   "config_sha": "f0824467e12c2631"
+  },
+  "ref/baseline/tome_m3/r94": {
+   "config": {
+    "kind": "tome_m3",
+    "r": 94
+   },
+   "group": "baseline",
+   "config_sha": "0de212ecd5ab1b03"
+  },
+  "ref/baseline/tome_m3/r141": {
+   "config": {
+    "kind": "tome_m3",
+    "r": 141
+   },
+   "group": "baseline",
+   "config_sha": "a74a1941c8f5f1d3"
+  },
+  "ref/baseline/tofu/r12": {
+   "config": {
+    "kind": "tofu",
+    "r": 12
+   },
+   "group": "baseline",
+   "config_sha": "60d177c24b81e290"
+  },
+  "ref/baseline/tofu/r18": {
+   "config": {
+    "kind": "tofu",
+    "r": 18
+   },
+   "group": "baseline",
+   "config_sha": "1daae26bc5c1402a"
+  },
+  "ref/baseline/tofu/r24": {
+   "config": {
+    "kind": "tofu",
+    "r": 24
+   },
+   "group": "baseline",
+   "config_sha": "76a69dfed799a7b4"
+  },
+  "ref/baseline/tofu/r29": {
+   "config": {
+    "kind": "tofu",
+    "r": 29
+   },
+   "group": "baseline",
+   "config_sha": "8fb1fb260e0bed5d"
+  },
+  "ref/baseline/tofu/r35": {
+   "config": {
+    "kind": "tofu",
+    "r": 35
+   },
+   "group": "baseline",
+   "config_sha": "87d420863ee155e3"
+  },
+  "ref/baseline/tofu/r41": {
+   "config": {
+    "kind": "tofu",
+    "r": 41
+   },
+   "group": "baseline",
+   "config_sha": "c4329482b471a792"
+  },
+  "ref/baseline/tofu/r47": {
+   "config": {
+    "kind": "tofu",
+    "r": 47
+   },
+   "group": "baseline",
+   "config_sha": "5e1796d6f11846d8"
+  },
+  "ref/baseline/tofu/r59": {
+   "config": {
+    "kind": "tofu",
+    "r": 59
+   },
+   "group": "baseline",
+   "config_sha": "bdf30423c8d44985"
+  },
+  "ref/baseline/tofu/r71": {
+   "config": {
+    "kind": "tofu",
+    "r": 71
+   },
+   "group": "baseline",
+   "config_sha": "5de2e545358403ab"
+  },
+  "ref/baseline/tofu/r94": {
+   "config": {
+    "kind": "tofu",
+    "r": 94
+   },
+   "group": "baseline",
+   "config_sha": "cb61eb2b7b0a3476"
+  },
+  "ref/baseline/tofu/r141": {
+   "config": {
+    "kind": "tofu",
+    "r": 141
+   },
+   "group": "baseline",
+   "config_sha": "67f4e4c238798497"
+  },
+  "ref/baseline/rapid/r12": {
+   "config": {
+    "kind": "rapid",
+    "r": 12
+   },
+   "group": "baseline",
+   "config_sha": "ea53d2da19b8bfc3"
+  },
+  "ref/baseline/rapid/r18": {
+   "config": {
+    "kind": "rapid",
+    "r": 18
+   },
+   "group": "baseline",
+   "config_sha": "f7e0e62d9a1cea97"
+  },
+  "ref/baseline/rapid/r24": {
+   "config": {
+    "kind": "rapid",
+    "r": 24
+   },
+   "group": "baseline",
+   "config_sha": "262d3575f325e76c"
+  },
+  "ref/baseline/rapid/r29": {
+   "config": {
+    "kind": "rapid",
+    "r": 29
+   },
+   "group": "baseline",
+   "config_sha": "8850f7eb044204b6"
+  },
+  "ref/baseline/rapid/r35": {
+   "config": {
+    "kind": "rapid",
+    "r": 35
+   },
+   "group": "baseline",
+   "config_sha": "1fbe4d150f31d2b7"
+  },
+  "ref/baseline/rapid/r41": {
+   "config": {
+    "kind": "rapid",
+    "r": 41
+   },
+   "group": "baseline",
+   "config_sha": "e5b89d488cfab98f"
+  },
+  "ref/baseline/rapid/r47": {
+   "config": {
+    "kind": "rapid",
+    "r": 47
+   },
+   "group": "baseline",
+   "config_sha": "e11149256d35f268"
+  },
+  "ref/baseline/rapid/r59": {
+   "config": {
+    "kind": "rapid",
+    "r": 59
+   },
+   "group": "baseline",
+   "config_sha": "c89c7cac3e7efc6b"
+  },
+  "ref/baseline/rapid/r71": {
+   "config": {
+    "kind": "rapid",
+    "r": 71
+   },
+   "group": "baseline",
+   "config_sha": "fe432d4f7313ea34"
+  },
+  "ref/baseline/rapid/r94": {
+   "config": {
+    "kind": "rapid",
+    "r": 94
+   },
+   "group": "baseline",
+   "config_sha": "c4b96f3a0a241feb"
+  },
+  "ref/baseline/rapid/r141": {
+   "config": {
+    "kind": "rapid",
+    "r": 141
+   },
+   "group": "baseline",
+   "config_sha": "e0d8d29e4b24155f"
+  },
+  "ref/baseline/pitome/ratio0.8": {
+   "config": {
+    "kind": "pitome",
+    "ratio": 0.8
+   },
+   "group": "baseline",
+   "config_sha": "f0a1c18fefd91bd4"
+  },
+  "ref/baseline/pitome/ratio0.825": {
+   "config": {
+    "kind": "pitome",
+    "ratio": 0.825
+   },
+   "group": "baseline",
+   "config_sha": "19016e9788a7082a"
+  },
+  "ref/baseline/pitome/ratio0.85": {
+   "config": {
+    "kind": "pitome",
+    "ratio": 0.85
+   },
+   "group": "baseline",
+   "config_sha": "41837b7de603c064"
+  },
+  "ref/baseline/pitome/ratio0.875": {
+   "config": {
+    "kind": "pitome",
+    "ratio": 0.875
+   },
+   "group": "baseline",
+   "config_sha": "ccc073b722de2170"
+  },
+  "ref/baseline/pitome/ratio0.9": {
+   "config": {
+    "kind": "pitome",
+    "ratio": 0.9
+   },
+   "group": "baseline",
+   "config_sha": "fa7f77bca3b31851"
+  },
+  "ref/baseline/pitome/ratio0.925": {
+   "config": {
+    "kind": "pitome",
+    "ratio": 0.925
+   },
+   "group": "baseline",
+   "config_sha": "d9492e5dde03b8f1"
+  },
+  "ref/baseline/pitome/ratio0.95": {
+   "config": {
+    "kind": "pitome",
+    "ratio": 0.95
+   },
+   "group": "baseline",
+   "config_sha": "a2a05ad5bf654de7"
+  },
+  "ref/baseline/evit/keep_rate0.15": {
+   "config": {
+    "kind": "evit",
+    "keep_rate": 0.15
+   },
+   "group": "baseline",
+   "config_sha": "ad2a2b5200f5360e"
+  },
+  "ref/baseline/evit/keep_rate0.25": {
+   "config": {
+    "kind": "evit",
+    "keep_rate": 0.25
+   },
+   "group": "baseline",
+   "config_sha": "ec628b54691432a9"
+  },
+  "ref/baseline/evit/keep_rate0.35": {
+   "config": {
+    "kind": "evit",
+    "keep_rate": 0.35
+   },
+   "group": "baseline",
+   "config_sha": "b12113b02f8f40f3"
+  },
+  "ref/baseline/evit/keep_rate0.4": {
+   "config": {
+    "kind": "evit",
+    "keep_rate": 0.4
+   },
+   "group": "baseline",
+   "config_sha": "9792f52f51f2fdf7"
+  },
+  "ref/baseline/evit/keep_rate0.45": {
+   "config": {
+    "kind": "evit",
+    "keep_rate": 0.45
+   },
+   "group": "baseline",
+   "config_sha": "226b94a4d7126f12"
+  },
+  "ref/baseline/evit/keep_rate0.5": {
+   "config": {
+    "kind": "evit",
+    "keep_rate": 0.5
+   },
+   "group": "baseline",
+   "config_sha": "df22f4a9f36937b4"
+  },
+  "ref/baseline/evit/keep_rate0.6": {
+   "config": {
+    "kind": "evit",
+    "keep_rate": 0.6
+   },
+   "group": "baseline",
+   "config_sha": "b497a15a21b436c5"
+  },
+  "ref/baseline/evit/keep_rate0.7": {
+   "config": {
+    "kind": "evit",
+    "keep_rate": 0.7
+   },
+   "group": "baseline",
+   "config_sha": "caf9fdfe64c142f8"
+  },
+  "ref/baseline/evit/keep_rate0.8": {
+   "config": {
+    "kind": "evit",
+    "keep_rate": 0.8
+   },
+   "group": "baseline",
+   "config_sha": "e24918cea1950d2c"
+  },
+  "ref/baseline/evit/keep_rate0.9": {
+   "config": {
+    "kind": "evit",
+    "keep_rate": 0.9
+   },
+   "group": "baseline",
+   "config_sha": "837aff05d062fbb8"
+  },
+  "ref/baseline/ppt/r59": {
+   "config": {
+    "kind": "ppt",
+    "r": 59
+   },
+   "group": "baseline",
+   "config_sha": "c8f588b7fd35dd2c"
+  },
+  "ref/baseline/ppt/r88": {
+   "config": {
+    "kind": "ppt",
+    "r": 88
+   },
+   "group": "baseline",
+   "config_sha": "60b586c74f4d1bd3"
+  },
+  "ref/baseline/ppt/r118": {
+   "config": {
+    "kind": "ppt",
+    "r": 118
+   },
+   "group": "baseline",
+   "config_sha": "85ec38aa83c59e3e"
+  },
+  "ref/baseline/ppt/r147": {
+   "config": {
+    "kind": "ppt",
+    "r": 147
+   },
+   "group": "baseline",
+   "config_sha": "b8212c9234c16930"
+  },
+  "ref/baseline/ppt/r176": {
+   "config": {
+    "kind": "ppt",
+    "r": 176
+   },
+   "group": "baseline",
+   "config_sha": "499ae08229a925af"
+  },
+  "ref/baseline/mctf/r12": {
+   "config": {
+    "kind": "mctf",
+    "r": 12
+   },
+   "group": "baseline",
+   "config_sha": "c5928a4b7ecfc0a8"
+  },
+  "ref/baseline/mctf/r24": {
+   "config": {
+    "kind": "mctf",
+    "r": 24
+   },
+   "group": "baseline",
+   "config_sha": "872d2e149c6266e9"
+  },
+  "ref/baseline/mctf/r47": {
+   "config": {
+    "kind": "mctf",
+    "r": 47
+   },
+   "group": "baseline",
+   "config_sha": "ea08a579ac5bfefe"
+  },
+  "ref/baseline/onemore/n118": {
+   "config": {
+    "kind": "onemore",
+    "n": 118
+   },
+   "group": "baseline",
+   "config_sha": "6a33ac28c27576e3"
+  },
+  "ref/baseline/onemore/n206": {
+   "config": {
+    "kind": "onemore",
+    "n": 206
+   },
+   "group": "baseline",
+   "config_sha": "d9e05d9b18c8e928"
+  },
+  "ref/baseline/onemore/n294": {
+   "config": {
+    "kind": "onemore",
+    "n": 294
+   },
+   "group": "baseline",
+   "config_sha": "4c4e2cae8d0b66b7"
+  },
+  "ref/baseline/onemore/n382": {
+   "config": {
+    "kind": "onemore",
+    "n": 382
+   },
+   "group": "baseline",
+   "config_sha": "16a59ec99ea80453"
+  },
+  "ref/baseline/onemore/n470": {
+   "config": {
+    "kind": "onemore",
+    "n": 470
+   },
+   "group": "baseline",
+   "config_sha": "821413d777cb4a52"
+  },
+  "ref/baseline/onemore/n558": {
+   "config": {
+    "kind": "onemore",
+    "n": 558
+   },
+   "group": "baseline",
+   "config_sha": "c74908adc3979027"
+  }
+ },
+ "sha": "0563e393ab836a0eabe7614440c3ebc4c6e4e22a8ae20fd8c42c208d6d52b4af",
+ "time": 1792890739.950033,
+ "rules": {
+  "objective": "KL to the dense zero-shot ImageNet distribution on the 5,000 probe images",
+  "retrieval": "the same sealed schedules, no re-planning",
+  "diffrate": "DiffRate (none)",
+  "accuracy": "BF16 deterministic batch 32",
+  "timing": "one exclusive session, three interleaved rounds, bs8/bs32"
+ }
+}

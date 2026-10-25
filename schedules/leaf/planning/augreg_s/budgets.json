@@ -1,0 +1,44 @@
+[
+ {
+  "id": "dense0.5",
+  "latency_ms": 4.9517500000000005,
+  "gmac": null,
+  "anchor": null
+ },
+ {
+  "id": "dense0.56",
+  "latency_ms": 5.545960000000001,
+  "gmac": null,
+  "anchor": null
+ },
+ {
+  "id": "dense0.62",
+  "latency_ms": 6.14017,
+  "gmac": null,
+  "anchor": null
+ },
+ {
+  "id": "dense0.68",
+  "latency_ms": 6.734380000000002,
+  "gmac": null,
+  "anchor": null
+ },
+ {
+  "id": "dense0.74",
+  "latency_ms": 7.328590000000001,
+  "gmac": null,
+  "anchor": null
+ },
+ {
+  "id": "dense0.8",
+  "latency_ms": 7.922800000000001,
+  "gmac": null,
+  "anchor": null
+ },
+ {
+  "id": "dense0.86",
+  "latency_ms": 8.51701,
+  "gmac": null,
+  "anchor": null
+ }
+]

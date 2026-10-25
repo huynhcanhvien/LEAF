@@ -1,0 +1,70 @@
+{
+ "backbone": "augreg_b384",
+ "batch": 32,
+ "rounds": 3,
+ "device": "NVIDIA GeForce RTX 5060 Ti",
+ "anchors": "dense",
+ "factor": null,
+ "dense_fractions": [
+  0.4,
+  0.48,
+  0.56,
+  0.64,
+  0.72,
+  0.8
+ ],
+ "measured": {
+  "dense": {
+   "ms": 110.02733333333333,
+   "sd": 0.2268861682283264,
+   "rounds": [
+    109.766,
+    110.174,
+    110.142
+   ],
+   "gmac": null,
+   "config": {
+    "kind": "dense"
+   }
+  }
+ },
+ "budgets": [
+  {
+   "id": "dense0.4",
+   "latency_ms": 44.010933333333334,
+   "gmac": null,
+   "anchor": null
+  },
+  {
+   "id": "dense0.48",
+   "latency_ms": 52.81312,
+   "gmac": null,
+   "anchor": null
+  },
+  {
+   "id": "dense0.56",
+   "latency_ms": 61.61530666666667,
+   "gmac": null,
+   "anchor": null
+  },
+  {
+   "id": "dense0.64",
+   "latency_ms": 70.41749333333334,
+   "gmac": null,
+   "anchor": null
+  },
+  {
+   "id": "dense0.72",
+   "latency_ms": 79.21968,
+   "gmac": null,
+   "anchor": null
+  },
+  {
+   "id": "dense0.8",
+   "latency_ms": 88.02186666666667,
+   "gmac": null,
+   "anchor": null
+  }
+ ],
+ "time": 1792888441.9653835
+}

@@ -1,0 +1,58 @@
+{
+ "intercept": 0.16550049793364963,
+ "coef": [
+  1.8927512797287613,
+  0.015906605717940985,
+  0.0,
+  0.0,
+  2.107889676150046,
+  1.5154349027244698,
+  9.910358934109423,
+  0.2558228689245295
+ ],
+ "alpha": 0.1,
+ "formula": "station_rich",
+ "feature_names": [
+  "original_gmac",
+  "K",
+  "N_D",
+  "K_m3",
+  "station_io",
+  "merge_io",
+  "d_token",
+  "m3_io"
+ ],
+ "n": 48,
+ "groups": 40,
+ "tuning": [
+  {
+   "alpha": 0.0,
+   "mape": 0.49736585628703406
+  },
+  {
+   "alpha": 0.01,
+   "mape": 0.49113847949955036
+  },
+  {
+   "alpha": 0.1,
+   "mape": 0.4795981138748795
+  },
+  {
+   "alpha": 1.0,
+   "mape": 0.8077517825512904
+  },
+  {
+   "alpha": 10.0,
+   "mape": 3.921014804985733
+  },
+  {
+   "alpha": 100.0,
+   "mape": 10.531142523467844
+  }
+ ],
+ "backbone": "deit_b",
+ "timm_id": "deit_base_patch16_224.fb_in1k",
+ "batch": 32,
+ "device": "NVIDIA RTX 5060 Ti, BF16, CUDA graph",
+ "source": "results/salt_fit/cv/deit_b/station_rich.json"
+}

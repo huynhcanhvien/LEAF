@@ -1,0 +1,58 @@
+{
+ "intercept": -0.4513609794719322,
+ "coef": [
+  2.004123182132691,
+  0.0,
+  0.0,
+  0.0,
+  1.1892832556476403,
+  2.3060423327366806,
+  30.833428159980063,
+  0.24604747681768488
+ ],
+ "alpha": 0.1,
+ "formula": "station_rich",
+ "feature_names": [
+  "original_gmac",
+  "K",
+  "N_D",
+  "K_m3",
+  "station_io",
+  "merge_io",
+  "d_token",
+  "m3_io"
+ ],
+ "n": 27,
+ "groups": 18,
+ "tuning": [
+  {
+   "alpha": 0.0,
+   "mape": 0.43733793664946413
+  },
+  {
+   "alpha": 0.01,
+   "mape": 0.43563893391260816
+  },
+  {
+   "alpha": 0.1,
+   "mape": 0.4177755436527631
+  },
+  {
+   "alpha": 1.0,
+   "mape": 1.153490460434182
+  },
+  {
+   "alpha": 10.0,
+   "mape": 7.052214722780305
+  },
+  {
+   "alpha": 100.0,
+   "mape": 16.099643201860328
+  }
+ ],
+ "backbone": "augreg_b",
+ "timm_id": "vit_base_patch16_224.augreg2_in21k_ft_in1k",
+ "batch": 32,
+ "device": "NVIDIA RTX 5060 Ti, BF16, CUDA graph",
+ "source": "results/salt_fit/workload_cv/augreg_b/station_rich.json"
+}

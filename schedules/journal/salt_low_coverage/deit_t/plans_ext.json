@@ -1,0 +1,575 @@
+{
+ "backbone": "deit_t",
+ "jobs": {
+  "ext/low70": {
+   "budget_ms": 2.047733333333333,
+   "certificate": "fixed-multiplier DP exact; constrained multiplier search and ratio projection uncertified",
+   "config": {
+    "fuse_merge": true,
+    "groups": {
+     "1": [
+      7,
+      7,
+      7,
+      7,
+      7,
+      7,
+      6,
+      6,
+      7,
+      5,
+      5,
+      7,
+      7,
+      3,
+      7,
+      7,
+      15,
+      13,
+      1,
+      2,
+      16,
+      11,
+      8,
+      4,
+      12,
+      14,
+      9,
+      14,
+      14,
+      10
+     ]
+    },
+    "k": {
+     "1": 1.0
+    },
+    "kind": "pdm",
+    "merge": {
+     "kernel": "triton_norm",
+     "mode": "M3"
+    },
+    "merge_keep": [
+     197,
+     32,
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     197
+    ],
+    "prune_keep": [
+     197,
+     32,
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     197
+    ],
+    "rank": 32,
+    "triton": true
+   },
+   "config_sha": "5db7169a116415ca",
+   "fhat": 1.7238114476203918,
+   "gmac": 0.33096000000000014,
+   "n_candidates": 3,
+   "original": "full/latency/low70",
+   "original_config_sha": "a1fc2e11660e608e",
+   "predicted_ms": 1.9407856166893116,
+   "state": {
+    "counts": [
+     32
+    ],
+    "ks": [
+     1.0
+    ],
+    "sites": [
+     1
+    ],
+    "thetas": [
+     0.0
+    ]
+   },
+   "status": "planned"
+  },
+  "ext/low80": {
+   "budget_ms": 2.3402666666666665,
+   "certificate": "fixed-multiplier DP exact; constrained multiplier search and ratio projection uncertified",
+   "config": {
+    "fuse_merge": true,
+    "groups": {
+     "1": [
+      7,
+      7,
+      7,
+      7,
+      7,
+      7,
+      6,
+      6,
+      7,
+      5,
+      5,
+      7,
+      7,
+      3,
+      7,
+      7,
+      15,
+      13,
+      1,
+      2,
+      16,
+      11,
+      8,
+      4,
+      12,
+      14,
+      9,
+      14,
+      14,
+      10
+     ]
+    },
+    "k": {
+     "1": 2.0
+    },
+    "kind": "pdm",
+    "merge": {
+     "kernel": "triton_norm",
+     "mode": "M3"
+    },
+    "merge_keep": [
+     197,
+     77,
+     197,
+     197,
+     29,
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     3
+    ],
+    "prune_keep": [
+     197,
+     77,
+     197,
+     197,
+     77,
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     3
+    ],
+    "rank": 32,
+    "triton": true
+   },
+   "config_sha": "63828c1c383da14b",
+   "fhat": 0.5760100312836585,
+   "gmac": 0.37828531199999993,
+   "n_candidates": 4,
+   "original": "full/latency/low80",
+   "original_config_sha": "66a2381de4b4316a",
+   "predicted_ms": 2.2241463561810506,
+   "state": {
+    "counts": [
+     77,
+     29,
+     3
+    ],
+    "ks": [
+     2.0,
+     0.0,
+     0.0
+    ],
+    "sites": [
+     1,
+     4,
+     11
+    ],
+    "thetas": [
+     0.0,
+     1.0,
+     0.0
+    ]
+   },
+   "status": "planned"
+  },
+  "ext/low90": {
+   "budget_ms": 2.6328,
+   "certificate": "fixed-multiplier DP exact; constrained multiplier search and ratio projection uncertified",
+   "config": {
+    "fuse_merge": true,
+    "groups": {
+     "1": [
+      7,
+      7,
+      7,
+      7,
+      7,
+      7,
+      6,
+      6,
+      7,
+      5,
+      5,
+      7,
+      7,
+      3,
+      7,
+      7,
+      15,
+      13,
+      1,
+      2,
+      16,
+      11,
+      8,
+      4,
+      12,
+      14,
+      9,
+      14,
+      14,
+      10
+     ]
+    },
+    "k": {
+     "1": 2.0
+    },
+    "kind": "pdm",
+    "merge": {
+     "kernel": "triton_norm",
+     "mode": "M3"
+    },
+    "merge_keep": [
+     197,
+     101,
+     197,
+     197,
+     53,
+     197,
+     29,
+     197,
+     197,
+     197,
+     197,
+     3
+    ],
+    "prune_keep": [
+     197,
+     101,
+     197,
+     197,
+     101,
+     197,
+     53,
+     197,
+     197,
+     197,
+     197,
+     3
+    ],
+    "rank": 32,
+    "triton": true
+   },
+   "config_sha": "3fd9187084d67c4f",
+   "fhat": 0.3329237025536713,
+   "gmac": 0.438180096,
+   "n_candidates": 5,
+   "original": "full/latency/low90",
+   "original_config_sha": "30ec97a369e691f5",
+   "predicted_ms": 2.518516062427712,
+   "state": {
+    "counts": [
+     101,
+     53,
+     29,
+     3
+    ],
+    "ks": [
+     2.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "sites": [
+     1,
+     4,
+     6,
+     11
+    ],
+    "thetas": [
+     0.0,
+     1.0,
+     1.0,
+     0.0
+    ]
+   },
+   "status": "planned"
+  },
+  "full/latency/low70": {
+   "budget_ms": 2.047733333333333,
+   "config": {
+    "fuse_merge": true,
+    "groups": {
+     "1": [
+      7,
+      7,
+      7,
+      7,
+      7,
+      7,
+      6,
+      6,
+      7,
+      5,
+      5,
+      7,
+      7,
+      3,
+      7,
+      7,
+      15,
+      13,
+      1,
+      2,
+      16,
+      11,
+      8,
+      4,
+      12,
+      14,
+      9,
+      14,
+      14,
+      10
+     ]
+    },
+    "k": {
+     "1": 2.0
+    },
+    "kind": "pdm",
+    "merge": {
+     "kernel": "triton_norm",
+     "mode": "M3"
+    },
+    "merge_keep": [
+     197,
+     55,
+     197,
+     197,
+     30,
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     197
+    ],
+    "prune_keep": [
+     197,
+     55,
+     197,
+     197,
+     55,
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     197
+    ],
+    "rank": 32,
+    "triton": true
+   },
+   "config_sha": "a1fc2e11660e608e",
+   "group": "original",
+   "measured_ms_low_session": 2.061,
+   "predicted_frozen": 1.9434539666546597
+  },
+  "full/latency/low80": {
+   "budget_ms": 2.3402666666666665,
+   "config": {
+    "fuse_merge": true,
+    "groups": {
+     "1": [
+      7,
+      7,
+      7,
+      7,
+      7,
+      7,
+      6,
+      6,
+      7,
+      5,
+      5,
+      7,
+      7,
+      3,
+      7,
+      7,
+      15,
+      13,
+      1,
+      2,
+      16,
+      11,
+      8,
+      4,
+      12,
+      14,
+      9,
+      14,
+      14,
+      10
+     ]
+    },
+    "k": {
+     "1": 2.0
+    },
+    "kind": "pdm",
+    "merge": {
+     "kernel": "triton_norm",
+     "mode": "M3"
+    },
+    "merge_keep": [
+     197,
+     84,
+     197,
+     197,
+     35,
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     197
+    ],
+    "prune_keep": [
+     197,
+     84,
+     197,
+     197,
+     84,
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     197
+    ],
+    "rank": 32,
+    "triton": true
+   },
+   "config_sha": "66a2381de4b4316a",
+   "group": "original",
+   "measured_ms_low_session": 2.3546666666666667,
+   "predicted_frozen": 2.233991088998526
+  },
+  "full/latency/low90": {
+   "budget_ms": 2.6328,
+   "config": {
+    "fuse_merge": true,
+    "groups": {
+     "1": [
+      7,
+      7,
+      7,
+      7,
+      7,
+      7,
+      6,
+      6,
+      7,
+      5,
+      5,
+      7,
+      7,
+      3,
+      7,
+      7,
+      15,
+      13,
+      1,
+      2,
+      16,
+      11,
+      8,
+      4,
+      12,
+      14,
+      9,
+      14,
+      14,
+      10
+     ]
+    },
+    "k": {
+     "1": 2.0
+    },
+    "kind": "pdm",
+    "merge": {
+     "kernel": "triton_norm",
+     "mode": "M3"
+    },
+    "merge_keep": [
+     197,
+     100,
+     197,
+     197,
+     48,
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     3
+    ],
+    "prune_keep": [
+     197,
+     100,
+     197,
+     197,
+     100,
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     3
+    ],
+    "rank": 32,
+    "triton": true
+   },
+   "config_sha": "30ec97a369e691f5",
+   "group": "original",
+   "measured_ms_low_session": 2.551,
+   "predicted_frozen": 2.520714005860198
+  }
+ },
+ "time": 1792840759.691151
+}

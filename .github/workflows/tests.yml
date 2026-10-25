@@ -1,0 +1,34 @@
+name: tests
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  cpu:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+      - name: Install
+        run: |
+          pip install torch torchvision --index-url https://download.pytorch.org/whl/cpu
+          pip install triton            # the forecast and merge kernels import Triton (the CPU wheels of PyTorch do not bundle it)
+          pip install -e .
+      - name: Command line
+        run: |
+          leaf --help
+          leaf experiments list
+          leaf schedules schedules/leaf/deit_b.json
+      - name: CPU tests (no ImageNet, no raw results needed)
+        env:
+          CUDA_VISIBLE_DEVICES: ""
+        run: |
+          python tests/test_leaf_cli.py deit_t deit_s deit_b augreg_s augreg_b mae_b mae_l
+          python tests/test_planner.py
+          python tests/test_operator_aware_planning.py
+          python tests/test_gmac_planner.py
+          python tests/test_search_cli.py
+          python tests/test_schedule_books.py

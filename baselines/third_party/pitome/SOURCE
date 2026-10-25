@@ -1,0 +1,3 @@
+Source: https://github.com/hchautran/PiToMe/blob/550b5deed94aadfeac28bfbe381d87e672044a40/algo/pitome/merge.py; one change: torch.arange(B, device=metric.device) instead of torch.arange(B).to(metric.device) (same values; a CPU tensor cannot be copied during CUDA-graph capture)
+License: CC BY-NC 4.0 (LICENSE)
+The DeiT/timm patch (algo/pitome/patch/{deit,timm}.py) is re-expressed in baselines/methods.py (PiToMe): per-layer ratio, margins .75-.75*l/L, first ceil(L/2) layers use pitome_bsm, no proportional attention, merge_wavg.

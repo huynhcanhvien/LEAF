@@ -1,0 +1,497 @@
+{
+ "ref/diffrate_search/8.7": {
+  "source": "plans_dr_search.json",
+  "gmac": 8.70334464,
+  "prune_keep": [
+   197,
+   91,
+   197,
+   197,
+   197,
+   91,
+   197,
+   197,
+   197,
+   197,
+   197,
+   197
+  ],
+  "merge_keep": [
+   197,
+   91,
+   197,
+   197,
+   197,
+   83,
+   197,
+   197,
+   197,
+   197,
+   197,
+   197
+  ],
+  "stations": null
+ },
+ "ref/diffrate_search/10.0": {
+  "source": "plans_dr_search.json",
+  "gmac": 9.987932159999998,
+  "prune_keep": [
+   197,
+   121,
+   197,
+   197,
+   197,
+   99,
+   197,
+   197,
+   197,
+   197,
+   197,
+   197
+  ],
+  "merge_keep": [
+   197,
+   108,
+   197,
+   197,
+   197,
+   99,
+   197,
+   197,
+   197,
+   197,
+   197,
+   197
+  ],
+  "stations": null
+ },
+ "leaf/gmac/8.7033gmac": {
+  "source": "plans_dr_search.json",
+  "gmac": 8.6783616,
+  "prune_keep": [
+   197,
+   148,
+   197,
+   197,
+   148,
+   124,
+   76,
+   197,
+   197,
+   197,
+   197,
+   3
+  ],
+  "merge_keep": [
+   197,
+   148,
+   197,
+   197,
+   124,
+   76,
+   52,
+   197,
+   197,
+   197,
+   197,
+   3
+  ],
+  "stations": [
+   {
+    "block": 1,
+    "tokens_in": 197,
+    "after_prune": 148,
+    "after_merge": 148,
+    "alpha": 0.6666666666666666
+   },
+   {
+    "block": 4,
+    "tokens_in": 148,
+    "after_prune": 148,
+    "after_merge": 124,
+    "alpha": 1.0
+   },
+   {
+    "block": 5,
+    "tokens_in": 124,
+    "after_prune": 124,
+    "after_merge": 76,
+    "alpha": 0.6666666666666666
+   },
+   {
+    "block": 6,
+    "tokens_in": 76,
+    "after_prune": 76,
+    "after_merge": 52,
+    "alpha": 0.5
+   },
+   {
+    "block": 11,
+    "tokens_in": 52,
+    "after_prune": 3,
+    "after_merge": 3,
+    "alpha": 0.0
+   }
+  ]
+ },
+ "leaf/gmac/9.9879gmac": {
+  "source": "plans_dr_search.json",
+  "gmac": 9.986331647999998,
+  "prune_keep": [
+   197,
+   173,
+   149,
+   197,
+   149,
+   125,
+   101,
+   197,
+   197,
+   197,
+   197,
+   3
+  ],
+  "merge_keep": [
+   197,
+   173,
+   149,
+   197,
+   125,
+   101,
+   77,
+   197,
+   197,
+   197,
+   197,
+   3
+  ],
+  "stations": [
+   {
+    "block": 1,
+    "tokens_in": 197,
+    "after_prune": 173,
+    "after_merge": 173,
+    "alpha": 0.5
+   },
+   {
+    "block": 2,
+    "tokens_in": 173,
+    "after_prune": 149,
+    "after_merge": 149,
+    "alpha": 0.6666666666666666
+   },
+   {
+    "block": 4,
+    "tokens_in": 149,
+    "after_prune": 149,
+    "after_merge": 125,
+    "alpha": 1.0
+   },
+   {
+    "block": 5,
+    "tokens_in": 125,
+    "after_prune": 125,
+    "after_merge": 101,
+    "alpha": 0.75
+   },
+   {
+    "block": 6,
+    "tokens_in": 101,
+    "after_prune": 101,
+    "after_merge": 77,
+    "alpha": 0.6666666666666666
+   },
+   {
+    "block": 11,
+    "tokens_in": 77,
+    "after_prune": 3,
+    "after_merge": 3,
+    "alpha": 0.0
+   }
+  ]
+ },
+ "ref/diffrate_search/11.5": {
+  "source": "plans_dr_search2.json",
+  "gmac": 11.500752384,
+  "prune_keep": [
+   197,
+   123,
+   197,
+   197,
+   121,
+   197,
+   197,
+   197,
+   197,
+   197,
+   197,
+   197
+  ],
+  "merge_keep": [
+   197,
+   123,
+   197,
+   197,
+   121,
+   197,
+   197,
+   197,
+   197,
+   197,
+   197,
+   197
+  ],
+  "stations": null
+ },
+ "ref/diffrate_search/12.5": {
+  "source": "plans_dr_search2.json",
+  "gmac": 12.49624704,
+  "prune_keep": [
+   197,
+   157,
+   140,
+   136,
+   197,
+   132,
+   197,
+   197,
+   197,
+   197,
+   197,
+   197
+  ],
+  "merge_keep": [
+   197,
+   141,
+   137,
+   136,
+   197,
+   132,
+   197,
+   197,
+   197,
+   197,
+   197,
+   197
+  ],
+  "stations": null
+ },
+ "leaf/gmac/11.5008gmac": {
+  "source": "plans_dr_search2.json",
+  "gmac": 11.466401279999998,
+  "prune_keep": [
+   197,
+   197,
+   186,
+   197,
+   186,
+   164,
+   133,
+   104,
+   197,
+   197,
+   197,
+   3
+  ],
+  "merge_keep": [
+   197,
+   197,
+   186,
+   197,
+   164,
+   133,
+   104,
+   77,
+   197,
+   197,
+   197,
+   3
+  ],
+  "stations": [
+   {
+    "block": 2,
+    "tokens_in": 197,
+    "after_prune": 186,
+    "after_merge": 186,
+    "alpha": 0.5
+   },
+   {
+    "block": 4,
+    "tokens_in": 186,
+    "after_prune": 186,
+    "after_merge": 164,
+    "alpha": 0.6666666666666666
+   },
+   {
+    "block": 5,
+    "tokens_in": 164,
+    "after_prune": 164,
+    "after_merge": 133,
+    "alpha": 1.0
+   },
+   {
+    "block": 6,
+    "tokens_in": 133,
+    "after_prune": 133,
+    "after_merge": 104,
+    "alpha": 0.75
+   },
+   {
+    "block": 7,
+    "tokens_in": 104,
+    "after_prune": 104,
+    "after_merge": 77,
+    "alpha": 0.6666666666666666
+   },
+   {
+    "block": 11,
+    "tokens_in": 77,
+    "after_prune": 3,
+    "after_merge": 3,
+    "alpha": 0.0
+   }
+  ]
+ },
+ "leaf/gmac/12.4962gmac": {
+  "source": "plans_dr_search2.json",
+  "gmac": 12.481034496,
+  "prune_keep": [
+   197,
+   197,
+   189,
+   197,
+   189,
+   173,
+   148,
+   123,
+   197,
+   197,
+   197,
+   3
+  ],
+  "merge_keep": [
+   197,
+   197,
+   189,
+   197,
+   173,
+   148,
+   123,
+   99,
+   197,
+   197,
+   197,
+   3
+  ],
+  "stations": [
+   {
+    "block": 2,
+    "tokens_in": 197,
+    "after_prune": 189,
+    "after_merge": 189,
+    "alpha": 0.5
+   },
+   {
+    "block": 4,
+    "tokens_in": 189,
+    "after_prune": 189,
+    "after_merge": 173,
+    "alpha": 0.5
+   },
+   {
+    "block": 5,
+    "tokens_in": 173,
+    "after_prune": 173,
+    "after_merge": 148,
+    "alpha": 0.75
+   },
+   {
+    "block": 6,
+    "tokens_in": 148,
+    "after_prune": 148,
+    "after_merge": 123,
+    "alpha": 0.75
+   },
+   {
+    "block": 7,
+    "tokens_in": 123,
+    "after_prune": 123,
+    "after_merge": 99,
+    "alpha": 0.5
+   },
+   {
+    "block": 11,
+    "tokens_in": 99,
+    "after_prune": 3,
+    "after_merge": 3,
+    "alpha": 0.0
+   }
+  ]
+ },
+ "ref/diffrate_search/10.4": {
+  "source": "plans_dr_search3.json",
+  "gmac": 10.396586496,
+  "prune_keep": [
+   197,
+   144,
+   197,
+   197,
+   125,
+   97,
+   197,
+   197,
+   197,
+   197,
+   197,
+   197
+  ],
+  "merge_keep": [
+   197,
+   126,
+   197,
+   197,
+   122,
+   97,
+   197,
+   197,
+   197,
+   197,
+   197,
+   197
+  ],
+  "stations": null
+ },
+ "leaf/gmac/10.3966gmac": {
+  "source": "plans_dr_search3.json",
+  "gmac": 10.345211903999997,
+  "prune_keep": [
+   197,
+   173,
+   197,
+   161,
+   149,
+   197,
+   125,
+   197,
+   197,
+   197,
+   197,
+   3
+  ],
+  "merge_keep": [
+   197,
+   173,
+   197,
+   149,
+   125,
+   197,
+   77,
+   197,
+   197,
+   197,
+   197,
+   3
+  ],
+  "stations": null
+ }
+}

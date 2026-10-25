@@ -1,0 +1,304 @@
+{
+ "rule": "alpha = k/(1+k); score (1-alpha) z(log P) + alpha z(D) gives the legacy token order",
+ "files": [
+  {
+   "source": "schedules/kappa_form/gmac_planned/augreg_b.json",
+   "sha256": "20d8377f2dc9eb16a9129b9611babda22c6f0f75534a3f6ad3a328f6c6fc26df",
+   "alpha": "schedules/gmac_planned/augreg_b.json",
+   "configs": 21
+  },
+  {
+   "source": "schedules/kappa_form/gmac_planned/augreg_s.json",
+   "sha256": "1296a5bc73544ef48b6f6b327bc6c29253656190f3a44834813fe66a98ebf146",
+   "alpha": "schedules/gmac_planned/augreg_s.json",
+   "configs": 21
+  },
+  {
+   "source": "schedules/kappa_form/gmac_planned/deit_b.json",
+   "sha256": "68e7aa70b68837be3da1b875925fcf49260b0ea64d08bd5ec76e29f2a633ac3f",
+   "alpha": "schedules/gmac_planned/deit_b.json",
+   "configs": 21
+  },
+  {
+   "source": "schedules/kappa_form/gmac_planned/deit_s.json",
+   "sha256": "aad5742e16dbcd1a3c9c023e4ce8d0c0c3e159f4f6c826a5ae8863e680bc57d2",
+   "alpha": "schedules/gmac_planned/deit_s.json",
+   "configs": 21
+  },
+  {
+   "source": "schedules/kappa_form/gmac_planned/deit_t.json",
+   "sha256": "e31c17ee8c1cbc957f31012aed09aa6e2b53bf3a829a9cce7a8c346f886b4884",
+   "alpha": "schedules/gmac_planned/deit_t.json",
+   "configs": 21
+  },
+  {
+   "source": "schedules/kappa_form/gmac_planned/mae_b.json",
+   "sha256": "39cb1724ea8eb249a2681694f85610a10f626f3ff82f1a472a2d1b52f6aa870b",
+   "alpha": "schedules/gmac_planned/mae_b.json",
+   "configs": 18
+  },
+  {
+   "source": "schedules/kappa_form/gmac_planned/mae_l.json",
+   "sha256": "3011ae257420e4f5910cc7faccffbaf3f6cdbcd61f192ea456bc059ae2740cce",
+   "alpha": "schedules/gmac_planned/mae_l.json",
+   "configs": 21
+  },
+  {
+   "source": "schedules/kappa_form/horizon_norm_seed_ablation/augreg_s.json",
+   "sha256": "736c33781543f69dc1dde72aa93fa4b21a7f3af31860a64124a53fbd0be246ab",
+   "alpha": "schedules/horizon_norm_seed_ablation/augreg_s.json",
+   "configs": 24,
+   "stations": 168
+  },
+  {
+   "source": "schedules/kappa_form/horizon_norm_seed_ablation/deit_b.json",
+   "sha256": "955ab8343ac2be554dfcab2921c785d68626f497d6fbaaef3e597f3579864887",
+   "alpha": "schedules/horizon_norm_seed_ablation/deit_b.json",
+   "configs": 24,
+   "stations": 168
+  },
+  {
+   "source": "schedules/kappa_form/horizon_norm_seed_ablation/mae_b.json",
+   "sha256": "47cb7b56219a684b965435ce6badc92fb04d4ce7d6a87d06ab65f75309374e30",
+   "alpha": "schedules/horizon_norm_seed_ablation/mae_b.json",
+   "configs": 24,
+   "stations": 168
+  },
+  {
+   "source": "schedules/kappa_form/latency_pricing/deit_b.json",
+   "sha256": "22639161efd9925436d9711769df67a6d9fd60df2ed19541a4a4a855d9c9f2c0",
+   "alpha": "schedules/latency_pricing/deit_b.json",
+   "stations": 240,
+   "configs": 55
+  },
+  {
+   "source": "schedules/kappa_form/latency_pricing/deit_s.json",
+   "sha256": "ebea1089134520dbe9a47876195387319a76ade2b97656656da09d036217a576",
+   "alpha": "schedules/latency_pricing/deit_s.json",
+   "stations": 226,
+   "configs": 54
+  },
+  {
+   "source": "schedules/kappa_form/latency_pricing/mae_b.json",
+   "sha256": "5f09a16b3fb607933ef5125e1f6237798acbf8ca4e3bd749e0990da0b270bb3a",
+   "alpha": "schedules/latency_pricing/mae_b.json",
+   "stations": 165,
+   "configs": 44
+  },
+  {
+   "source": "schedules/kappa_form/leaf_m0/augreg_b.json",
+   "sha256": "cc829dfed8f694ff61bdbd5e46fd377372e816f74bdc9729f6ad59d3284beae8",
+   "alpha": "schedules/leaf_m0/augreg_b.json",
+   "stations": 31,
+   "configs": 7
+  },
+  {
+   "source": "schedules/kappa_form/leaf_m0/augreg_s.json",
+   "sha256": "bbf36cf391ef952003ad9919804475140043517b551ca73ddc3217b9de8f459c",
+   "alpha": "schedules/leaf_m0/augreg_s.json",
+   "stations": 28,
+   "configs": 7
+  },
+  {
+   "source": "schedules/kappa_form/leaf_m0/deit_b.json",
+   "sha256": "1262ecceb96640f246645cc342633c6946e8d9e07894c13cea64a31ec1ece776",
+   "alpha": "schedules/leaf_m0/deit_b.json",
+   "stations": 49,
+   "configs": 12
+  },
+  {
+   "source": "schedules/kappa_form/leaf_m0/deit_s.json",
+   "sha256": "f2ec9fdb21c6806d9c32094ddabde4da2b583b6d9b48200aa316b8e6c6eff4de",
+   "alpha": "schedules/leaf_m0/deit_s.json",
+   "stations": 50,
+   "configs": 12
+  },
+  {
+   "source": "schedules/kappa_form/leaf_m0/deit_t.json",
+   "sha256": "251e8d318fabb8973dd1cfcdc7dd9cdd8852e02f85b6299a0144d7358dcade8b",
+   "alpha": "schedules/leaf_m0/deit_t.json",
+   "stations": 40,
+   "configs": 12
+  },
+  {
+   "source": "schedules/kappa_form/leaf_m0/mae_b.json",
+   "sha256": "e9d8da45bc353db32dae1f5c2cb68da99d31eb6b8872388f651317cc3597c0a0",
+   "alpha": "schedules/leaf_m0/mae_b.json",
+   "stations": 34,
+   "configs": 10
+  },
+  {
+   "source": "schedules/kappa_form/leaf_m0/mae_l.json",
+   "sha256": "f22dd47f89663e139cd61ac96f1a33c0e71528d9f2010de1113e3f035bd4b35e",
+   "alpha": "schedules/leaf_m0/mae_l.json",
+   "stations": 66,
+   "configs": 12
+  },
+  {
+   "source": "schedules/kappa_form/low_budget_and_factorial/augreg_b.json",
+   "sha256": "09c0cae6eecb8cecddddc1247447b7db7d98bd9e6d3f4be0e664bfdeeb649f7f",
+   "alpha": "schedules/low_budget_and_factorial/augreg_b.json",
+   "configs": 8,
+   "stations": 96
+  },
+  {
+   "source": "schedules/kappa_form/low_budget_and_factorial/augreg_s.json",
+   "sha256": "33294733d4f78d6f5378d6b686e3005ff44d28fc0a816ce803ccff674a0705e0",
+   "alpha": "schedules/low_budget_and_factorial/augreg_s.json",
+   "configs": 29,
+   "stations": 348
+  },
+  {
+   "source": "schedules/kappa_form/low_budget_and_factorial/deit_b.json",
+   "sha256": "4d767a811d83db6bcdb5606c7eaf125ada5b2f6af8b20765dd759f073c831881",
+   "alpha": "schedules/low_budget_and_factorial/deit_b.json",
+   "configs": 34,
+   "stations": 408
+  },
+  {
+   "source": "schedules/kappa_form/low_budget_and_factorial/deit_s.json",
+   "sha256": "5500d45970a193b199826c13b2fa4c8365933ff7c4b2872725bf9b36f0394330",
+   "alpha": "schedules/low_budget_and_factorial/deit_s.json",
+   "configs": 13,
+   "stations": 156
+  },
+  {
+   "source": "schedules/kappa_form/low_budget_and_factorial/deit_t.json",
+   "sha256": "7833b84b7293e23111d3dab9b5b37370d522adab7b035fffce4327f583b41272",
+   "alpha": "schedules/low_budget_and_factorial/deit_t.json",
+   "configs": 13,
+   "stations": 156
+  },
+  {
+   "source": "schedules/kappa_form/low_budget_and_factorial/mae_b.json",
+   "sha256": "5735e795f5b5fd536d16c80407b2cb1f40dfa516c58ba10315a74f6435c44e41",
+   "alpha": "schedules/low_budget_and_factorial/mae_b.json",
+   "configs": 33,
+   "stations": 396
+  },
+  {
+   "source": "schedules/kappa_form/low_budget_and_factorial/mae_l.json",
+   "sha256": "2343e09e96bcfe7d5719d94ca4b8bb2c14617ce98e29adba2419931d489abf2e",
+   "alpha": "schedules/low_budget_and_factorial/mae_l.json",
+   "configs": 13,
+   "stations": 312
+  },
+  {
+   "source": "schedules/kappa_form/main_comparison/augreg_b.json",
+   "sha256": "5db5a44116513b192c466354ac9444d0e7a96d2bf8b0187b35ca3277c278e020",
+   "alpha": "schedules/main_comparison/augreg_b.json",
+   "stations": 31,
+   "configs": 7
+  },
+  {
+   "source": "schedules/kappa_form/main_comparison/augreg_s.json",
+   "sha256": "6e8b87d96742926f990905b9500c18f8beb16c9d1860f96c0a8219d71868456a",
+   "alpha": "schedules/main_comparison/augreg_s.json",
+   "stations": 68,
+   "configs": 21
+  },
+  {
+   "source": "schedules/kappa_form/main_comparison/deit_b.json",
+   "sha256": "561885d64dc35749330ea248351d323234eb96b015f99a3dee31eb32b163e844",
+   "alpha": "schedules/main_comparison/deit_b.json",
+   "stations": 230,
+   "configs": 63
+  },
+  {
+   "source": "schedules/kappa_form/main_comparison/deit_s.json",
+   "sha256": "76d3759a01c928ba068aa89acecb016901d7655307f88d01cbe985bb87f426da",
+   "alpha": "schedules/main_comparison/deit_s.json",
+   "stations": 22,
+   "configs": 7
+  },
+  {
+   "source": "schedules/kappa_form/main_comparison/deit_t.json",
+   "sha256": "5d292d30102bdbbdc3e16587bff305248c5d01837de5c9b1d4d1eae8d6c30840",
+   "alpha": "schedules/main_comparison/deit_t.json",
+   "stations": 16,
+   "configs": 7
+  },
+  {
+   "source": "schedules/kappa_form/main_comparison/mae_b.json",
+   "sha256": "dc285cea47397472e96f4457ec4872fb5a8a39cc6ba0fe3ebf4def8f829882a7",
+   "alpha": "schedules/main_comparison/mae_b.json",
+   "stations": 159,
+   "configs": 54
+  },
+  {
+   "source": "schedules/kappa_form/main_comparison/mae_l.json",
+   "sha256": "ec4928f3ead86e3746b223e8b413fee2c50f9831a78a41c469d9df6b426f08e3",
+   "alpha": "schedules/main_comparison/mae_l.json",
+   "stations": 35,
+   "configs": 7
+  },
+  {
+   "source": "schedules/kappa_form/merge_variants/deit_b.json",
+   "sha256": "7befc107fed43cd3757a4c5d501eaf2bc8093da051e5e903112b2297d052dc05",
+   "alpha": "schedules/merge_variants/deit_b.json",
+   "configs": 20,
+   "stations": 82
+  },
+  {
+   "source": "schedules/kappa_form/merge_variants/mae_b.json",
+   "sha256": "8bcb5e6f35d0a1ea0d35eec5fa0a14a4704eaa6cf572a58503c613e2474cfb11",
+   "alpha": "schedules/merge_variants/mae_b.json",
+   "configs": 16,
+   "stations": 57
+  },
+  {
+   "source": "results/main_comparison/augreg_b/plans.json",
+   "sha256": "1bd751c07e9c0ac7b27f44ccca617fc42ba3c8526768df465cd54a44b990c421",
+   "alpha": "schedules/main_comparison_plans/augreg_b.json",
+   "configs": 28,
+   "stations": 336
+  },
+  {
+   "source": "results/main_comparison/augreg_s/plans.json",
+   "sha256": "e29ed723071c6d1b4c95b5b5891525f1ce371c6d9165ce529ebe1c9c0d2bb86f",
+   "alpha": "schedules/main_comparison_plans/augreg_s.json",
+   "configs": 42,
+   "stations": 504
+  },
+  {
+   "source": "results/main_comparison/deit_b/plans.json",
+   "sha256": "35c8198f9e147fd80a0526738fde70a7fcdac7f5d9e20ba514b41ca19391a77a",
+   "alpha": "schedules/main_comparison_plans/deit_b.json",
+   "configs": 108,
+   "stations": 1128
+  },
+  {
+   "source": "results/main_comparison/deit_s/plans.json",
+   "sha256": "42964d8167f0a42a2200b0006b065faba4450b14b46a6cc73ca3319ca4201c25",
+   "alpha": "schedules/main_comparison_plans/deit_s.json",
+   "configs": 38,
+   "stations": 456
+  },
+  {
+   "source": "results/main_comparison/deit_t/plans.json",
+   "sha256": "984905291b10c8b1517083e12c33ecbed6178344f62f1a184f21eb7576c364a6",
+   "alpha": "schedules/main_comparison_plans/deit_t.json",
+   "configs": 38,
+   "stations": 456
+  },
+  {
+   "source": "results/main_comparison/mae_b/plans.json",
+   "sha256": "2ee5e5ebe772e30c372e9629119a3a36f8a87fb3416ded071d8dd122c8097ff0",
+   "alpha": "schedules/main_comparison_plans/mae_b.json",
+   "configs": 92,
+   "stations": 960
+  },
+  {
+   "source": "results/main_comparison/mae_l/plans.json",
+   "sha256": "005ce86182838a994247d220e1d6bc7613307faeb5527875c201965539e40eb0",
+   "alpha": "schedules/main_comparison_plans/mae_l.json",
+   "configs": 38,
+   "stations": 912
+  }
+ ],
+ "totals": {
+  "files": 43,
+  "configs": 1170,
+  "stations": 8757
+ }
+}

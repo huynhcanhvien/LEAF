@@ -1,0 +1,51 @@
+[project]
+name = "leaf"
+version = "1.0.0"
+description = "LEAF: Latency-Budgeted Exact Planning with Attention Forecasts, training-free token reduction for frozen ViTs"
+authors = [{ name = "Huynh Canh Vien" }, { name = "Phan Minh Nhat" }, { name = "Pham Nhat Khoa" }, { name = "Nguyen Van Hieu" }]
+keywords = ["vision transformer", "token reduction", "token merging", "efficient inference", "latency"]
+classifiers = ["Programming Language :: Python :: 3", "License :: OSI Approved :: Apache Software License",
+               "Topic :: Scientific/Engineering :: Artificial Intelligence"]
+readme = "README.md"
+license = { text = "Apache-2.0" }
+requires-python = ">=3.10"
+dependencies = [
+    "torch>=2.0.0",          # Triton (bundled with PyTorch on Linux) runs the forecast and merge kernels
+    "torchvision>=0.15.0",
+    "timm>=1.0.0",
+    "numpy>=1.24.0",
+    "scipy",
+    "Pillow>=9.5.0",
+    "huggingface_hub>=0.22.0",
+    "python-dotenv>=1.0.0",
+]
+
+[project.optional-dependencies]
+# leaf.reproduction (experiments, figures)
+paper = [
+    "matplotlib>=3.7.0",
+    "tqdm>=4.65.0",
+    "psutil>=5.9.0",
+]
+# CLIP backbones: text embeddings of the zero-shot classifier and the retrieval captions (leaf data clip-text)
+clip = [
+    "open_clip_torch>=2.24.0",
+]
+
+[project.scripts]
+leaf = "leaf.cli:main"
+
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+include = ["leaf*", "baselines*"]
+
+[tool.setuptools.package-data]
+"leaf" = ["backbones.json"]
+"leaf.planner" = ["diffrate_rates.json"]
+"baselines" = ["third_party/*/LICENSE", "third_party/*/SOURCE"]
+
+[project.urls]
+Repository = "https://github.com/huynhcanhvien/LEAF"

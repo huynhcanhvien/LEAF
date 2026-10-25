@@ -1,0 +1,1798 @@
+{
+ "backbone": "deit_t",
+ "timm_id": "deit_tiny_patch16_224.fb_in1k",
+ "method": "LEAF: stations scored by (1 - alpha) z(log P) + alpha z(D), prune -> M3 merge, planned by the Lagrangian DP under the station-rich SALT latency estimate",
+ "forecast": {
+  "G": 16,
+  "rank": 32
+ },
+ "operator": "M3",
+ "alpha_grid": [
+  0.0,
+  0.25,
+  0.3333333333333333,
+  0.5,
+  0.6666666666666666,
+  0.75,
+  1.0
+ ],
+ "theta_grid": [
+  0.0,
+  0.5,
+  1.0
+ ],
+ "hardware": "NVIDIA RTX 5060 Ti, BF16, CUDA graph, batch 32; latency = mean of three interleaved rounds",
+ "dense": {
+  "val": 72.158,
+  "v2": 60.13,
+  "ms_bs32": 4.519
+ },
+ "sources": {
+  "latency": "results/main_comparison_analysis/report_leaf.json",
+  "latency_plans": "results/ablation_and_alpha_grid/deit_t/plans/leaf.json",
+  "gmac": "results/main_comparison/deit_t/plans.json"
+ },
+ "schedules": {
+  "latency/extra2": {
+   "budget": {
+    "kind": "latency_ms_bs32",
+    "value": 2.9892975,
+    "anchor": null,
+    "id": "extra2"
+   },
+   "stations": [
+    {
+     "block": 1,
+     "tokens_after": 134,
+     "theta": 0.0,
+     "alpha": 0.6666666666666666,
+     "kappa": 2.0
+    },
+    {
+     "block": 4,
+     "tokens_after": 54,
+     "theta": 1.0,
+     "alpha": 0.0,
+     "kappa": 0.0
+    },
+    {
+     "block": 11,
+     "tokens_after": 3,
+     "theta": 0.0,
+     "alpha": 0.0,
+     "kappa": 0.0
+    }
+   ],
+   "config": {
+    "kind": "pda",
+    "prune_keep": [
+     197,
+     134,
+     197,
+     197,
+     134,
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     3
+    ],
+    "merge_keep": [
+     197,
+     134,
+     197,
+     197,
+     54,
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     3
+    ],
+    "groups": {
+     "1": [
+      7,
+      7,
+      7,
+      7,
+      7,
+      7,
+      6,
+      6,
+      7,
+      5,
+      5,
+      7,
+      7,
+      3,
+      7,
+      7,
+      15,
+      13,
+      1,
+      2,
+      16,
+      11,
+      8,
+      4,
+      12,
+      14,
+      9,
+      14,
+      14,
+      10
+     ]
+    },
+    "rank": 32,
+    "triton": true,
+    "fuse_merge": true,
+    "merge": {
+     "mode": "M3",
+     "kernel": "triton_norm"
+    },
+    "base": "pdm",
+    "alpha": {
+     "1": 0.6666666666666666
+    }
+   },
+   "config_sha": "4889a6d97ab9819e",
+   "planner": {
+    "fhat": 0.1612747723775101,
+    "predicted_ms": 2.8751883852886397,
+    "gmac": 0.551405952
+   },
+   "measured": {
+    "val": 68.056,
+    "v2": 56.03,
+    "ms_bs32": 2.882,
+    "sd": 0.003,
+    "latency_transfer": null,
+    "stations": 3
+   }
+  },
+  "gmac/extra2": {
+   "budget": {
+    "kind": "gmac",
+    "value": 0.483127872,
+    "id": "extra2",
+    "rule": "DR actual matrix MACs; extras extend mean DR GMAC gap"
+   },
+   "stations": [
+    {
+     "block": 1,
+     "tokens_after": 149,
+     "theta": 0.0,
+     "alpha": 0.6666666666666666,
+     "kappa": 2.0
+    },
+    {
+     "block": 2,
+     "tokens_after": 125,
+     "theta": 0.5,
+     "alpha": 0.5,
+     "kappa": 1.0
+    },
+    {
+     "block": 3,
+     "tokens_after": 101,
+     "theta": 0.5,
+     "alpha": 0.5,
+     "kappa": 1.0
+    },
+    {
+     "block": 4,
+     "tokens_after": 61,
+     "theta": 1.0,
+     "alpha": 0.0,
+     "kappa": 0.0
+    },
+    {
+     "block": 5,
+     "tokens_after": 53,
+     "theta": 1.0,
+     "alpha": 0.0,
+     "kappa": 0.0
+    },
+    {
+     "block": 6,
+     "tokens_after": 29,
+     "theta": 1.0,
+     "alpha": 0.0,
+     "kappa": 0.0
+    },
+    {
+     "block": 11,
+     "tokens_after": 3,
+     "theta": 0.0,
+     "alpha": 0.0,
+     "kappa": 0.0
+    }
+   ],
+   "config": {
+    "kind": "pda",
+    "prune_keep": [
+     197,
+     149,
+     137,
+     113,
+     101,
+     61,
+     53,
+     197,
+     197,
+     197,
+     197,
+     3
+    ],
+    "merge_keep": [
+     197,
+     149,
+     125,
+     101,
+     61,
+     53,
+     29,
+     197,
+     197,
+     197,
+     197,
+     3
+    ],
+    "groups": {
+     "1": [
+      7,
+      7,
+      7,
+      7,
+      7,
+      7,
+      6,
+      6,
+      7,
+      5,
+      5,
+      7,
+      7,
+      3,
+      7,
+      7,
+      15,
+      13,
+      1,
+      2,
+      16,
+      11,
+      8,
+      4,
+      12,
+      14,
+      9,
+      14,
+      14,
+      10
+     ],
+     "2": [
+      13,
+      13,
+      12,
+      13,
+      13,
+      13,
+      13,
+      13,
+      10,
+      10,
+      12,
+      13,
+      9,
+      1,
+      8,
+      15,
+      16,
+      14,
+      3,
+      11,
+      6,
+      5,
+      2,
+      7,
+      9,
+      5,
+      4
+     ],
+     "3": [
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      6,
+      5,
+      12,
+      3,
+      15,
+      1,
+      2,
+      16,
+      8,
+      7,
+      13,
+      9,
+      4,
+      10,
+      12,
+      14,
+      11
+     ]
+    },
+    "rank": 32,
+    "triton": true,
+    "fuse_merge": true,
+    "merge": {
+     "mode": "M3",
+     "kernel": "triton_norm"
+    },
+    "base": "pdm",
+    "alpha": {
+     "1": 0.6666666666666666,
+     "2": 0.5,
+     "3": 0.5
+    }
+   },
+   "evaluated_config_sha": "de209043c1a1e521",
+   "planner": {
+    "gmac": 0.48244300799999995
+   },
+   "measured": {
+    "val": 67.074,
+    "v2": 54.98,
+    "ms_bs32": 2.919,
+    "sd": 0.001
+   }
+  },
+  "latency/extra1": {
+   "budget": {
+    "kind": "latency_ms_bs32",
+    "value": 3.3010312500000003,
+    "anchor": null,
+    "id": "extra1"
+   },
+   "stations": [
+    {
+     "block": 1,
+     "tokens_after": 146,
+     "theta": 0.0,
+     "alpha": 0.6666666666666666,
+     "kappa": 2.0
+    },
+    {
+     "block": 4,
+     "tokens_after": 71,
+     "theta": 1.0,
+     "alpha": 0.0,
+     "kappa": 0.0
+    },
+    {
+     "block": 11,
+     "tokens_after": 3,
+     "theta": 0.0,
+     "alpha": 0.0,
+     "kappa": 0.0
+    }
+   ],
+   "config": {
+    "kind": "pda",
+    "prune_keep": [
+     197,
+     146,
+     197,
+     197,
+     146,
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     3
+    ],
+    "merge_keep": [
+     197,
+     146,
+     197,
+     197,
+     71,
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     3
+    ],
+    "groups": {
+     "1": [
+      7,
+      7,
+      7,
+      7,
+      7,
+      7,
+      6,
+      6,
+      7,
+      5,
+      5,
+      7,
+      7,
+      3,
+      7,
+      7,
+      15,
+      13,
+      1,
+      2,
+      16,
+      11,
+      8,
+      4,
+      12,
+      14,
+      9,
+      14,
+      14,
+      10
+     ]
+    },
+    "rank": 32,
+    "triton": true,
+    "fuse_merge": true,
+    "merge": {
+     "mode": "M3",
+     "kernel": "triton_norm"
+    },
+    "base": "pdm",
+    "alpha": {
+     "1": 0.6666666666666666
+    }
+   },
+   "config_sha": "8d952c9ceb19b33f",
+   "planner": {
+    "fhat": 0.10284980969299795,
+    "predicted_ms": 3.1892430786921966,
+    "gmac": 0.629778432
+   },
+   "measured": {
+    "val": 69.644,
+    "v2": 57.58,
+    "ms_bs32": 3.256,
+    "sd": 0.011,
+    "latency_transfer": null,
+    "stations": 3
+   }
+  },
+  "gmac/extra1": {
+   "budget": {
+    "kind": "gmac",
+    "value": 0.570171456,
+    "id": "extra1",
+    "rule": "DR actual matrix MACs; extras extend mean DR GMAC gap"
+   },
+   "stations": [
+    {
+     "block": 1,
+     "tokens_after": 148,
+     "theta": 0.0,
+     "alpha": 0.6666666666666666,
+     "kappa": 2.0
+    },
+    {
+     "block": 3,
+     "tokens_after": 124,
+     "theta": 1.0,
+     "alpha": 0.5,
+     "kappa": 1.0
+    },
+    {
+     "block": 4,
+     "tokens_after": 76,
+     "theta": 1.0,
+     "alpha": 0.0,
+     "kappa": 0.0
+    },
+    {
+     "block": 5,
+     "tokens_after": 52,
+     "theta": 1.0,
+     "alpha": 0.0,
+     "kappa": 0.0
+    },
+    {
+     "block": 11,
+     "tokens_after": 3,
+     "theta": 0.0,
+     "alpha": 0.0,
+     "kappa": 0.0
+    }
+   ],
+   "config": {
+    "kind": "pda",
+    "prune_keep": [
+     197,
+     148,
+     197,
+     148,
+     124,
+     76,
+     197,
+     197,
+     197,
+     197,
+     197,
+     3
+    ],
+    "merge_keep": [
+     197,
+     148,
+     197,
+     124,
+     76,
+     52,
+     197,
+     197,
+     197,
+     197,
+     197,
+     3
+    ],
+    "groups": {
+     "1": [
+      7,
+      7,
+      7,
+      7,
+      7,
+      7,
+      6,
+      6,
+      7,
+      5,
+      5,
+      7,
+      7,
+      3,
+      7,
+      7,
+      15,
+      13,
+      1,
+      2,
+      16,
+      11,
+      8,
+      4,
+      12,
+      14,
+      9,
+      14,
+      14,
+      10
+     ],
+     "3": [
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      6,
+      5,
+      12,
+      3,
+      15,
+      1,
+      2,
+      16,
+      8,
+      7,
+      13,
+      9,
+      4,
+      10,
+      12,
+      14,
+      11
+     ]
+    },
+    "rank": 32,
+    "triton": true,
+    "fuse_merge": true,
+    "merge": {
+     "mode": "M3",
+     "kernel": "triton_norm"
+    },
+    "base": "pdm",
+    "alpha": {
+     "1": 0.6666666666666666,
+     "3": 0.5
+    }
+   },
+   "evaluated_config_sha": "2650166e346e7f31",
+   "planner": {
+    "gmac": 0.5677820160000001
+   },
+   "measured": {
+    "val": 69.226,
+    "v2": 57.13,
+    "ms_bs32": 3.105,
+    "sd": 0.004
+   }
+  },
+  "latency/DR0.6": {
+   "budget": {
+    "kind": "latency_ms_bs32",
+    "value": 3.612765,
+    "anchor": "DR0.6",
+    "id": "DR0.6"
+   },
+   "stations": [
+    {
+     "block": 4,
+     "tokens_after": 70,
+     "theta": 1.0,
+     "alpha": 0.0,
+     "kappa": 0.0
+    },
+    {
+     "block": 11,
+     "tokens_after": 3,
+     "theta": 0.0,
+     "alpha": 0.0,
+     "kappa": 0.0
+    }
+   ],
+   "config": {
+    "kind": "pda",
+    "prune_keep": [
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     3
+    ],
+    "merge_keep": [
+     197,
+     197,
+     197,
+     197,
+     70,
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     3
+    ],
+    "groups": {},
+    "rank": null,
+    "triton": true,
+    "fuse_merge": true,
+    "merge": {
+     "mode": "M3",
+     "kernel": "triton_norm"
+    },
+    "base": "pdm",
+    "alpha": {}
+   },
+   "config_sha": "27904a11627bcae3",
+   "planner": {
+    "fhat": 0.06089358975441428,
+    "predicted_ms": 3.5113074233314308,
+    "gmac": 0.7140478080000001
+   },
+   "measured": {
+    "val": 70.636,
+    "v2": 58.64,
+    "ms_bs32": 3.488,
+    "sd": 0.008,
+    "latency_transfer": null,
+    "stations": 2
+   }
+  },
+  "gmac/DR0.6": {
+   "budget": {
+    "kind": "gmac",
+    "value": 0.65721504,
+    "id": "DR0.6",
+    "rule": "DR actual matrix MACs; extras extend mean DR GMAC gap"
+   },
+   "stations": [
+    {
+     "block": 1,
+     "tokens_after": 173,
+     "theta": 0.5,
+     "alpha": 0.75,
+     "kappa": 3.0
+    },
+    {
+     "block": 3,
+     "tokens_after": 149,
+     "theta": 1.0,
+     "alpha": 0.5,
+     "kappa": 1.0
+    },
+    {
+     "block": 4,
+     "tokens_after": 100,
+     "theta": 1.0,
+     "alpha": 0.0,
+     "kappa": 0.0
+    },
+    {
+     "block": 5,
+     "tokens_after": 76,
+     "theta": 1.0,
+     "alpha": 0.0,
+     "kappa": 0.0
+    },
+    {
+     "block": 6,
+     "tokens_after": 60,
+     "theta": 1.0,
+     "alpha": 0.0,
+     "kappa": 0.0
+    },
+    {
+     "block": 11,
+     "tokens_after": 3,
+     "theta": 0.0,
+     "alpha": 0.0,
+     "kappa": 0.0
+    }
+   ],
+   "config": {
+    "kind": "pda",
+    "prune_keep": [
+     197,
+     185,
+     197,
+     173,
+     149,
+     100,
+     76,
+     197,
+     197,
+     197,
+     197,
+     3
+    ],
+    "merge_keep": [
+     197,
+     173,
+     197,
+     149,
+     100,
+     76,
+     60,
+     197,
+     197,
+     197,
+     197,
+     3
+    ],
+    "groups": {
+     "1": [
+      7,
+      7,
+      7,
+      7,
+      7,
+      7,
+      6,
+      6,
+      7,
+      5,
+      5,
+      7,
+      7,
+      3,
+      7,
+      7,
+      15,
+      13,
+      1,
+      2,
+      16,
+      11,
+      8,
+      4,
+      12,
+      14,
+      9,
+      14,
+      14,
+      10
+     ],
+     "3": [
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      6,
+      5,
+      12,
+      3,
+      15,
+      1,
+      2,
+      16,
+      8,
+      7,
+      13,
+      9,
+      4,
+      10,
+      12,
+      14,
+      11
+     ]
+    },
+    "rank": 32,
+    "triton": true,
+    "fuse_merge": true,
+    "merge": {
+     "mode": "M3",
+     "kernel": "triton_norm"
+    },
+    "base": "pdm",
+    "alpha": {
+     "1": 0.75,
+     "3": 0.5
+    }
+   },
+   "evaluated_config_sha": "aef1e03a82412c9d",
+   "planner": {
+    "gmac": 0.6543511679999998
+   },
+   "measured": {
+    "val": 70.776,
+    "v2": 58.69,
+    "ms_bs32": 3.618,
+    "sd": 0.004
+   }
+  },
+  "latency/DR0.7": {
+   "budget": {
+    "kind": "latency_ms_bs32",
+    "value": 3.814525,
+    "anchor": "DR0.7",
+    "id": "DR0.7"
+   },
+   "stations": [
+    {
+     "block": 4,
+     "tokens_after": 85,
+     "theta": 1.0,
+     "alpha": 0.0,
+     "kappa": 0.0
+    },
+    {
+     "block": 11,
+     "tokens_after": 5,
+     "theta": 0.0,
+     "alpha": 0.0,
+     "kappa": 0.0
+    }
+   ],
+   "config": {
+    "kind": "pda",
+    "prune_keep": [
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     5
+    ],
+    "merge_keep": [
+     197,
+     197,
+     197,
+     197,
+     85,
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     5
+    ],
+    "groups": {},
+    "rank": null,
+    "triton": true,
+    "fuse_merge": true,
+    "merge": {
+     "mode": "M3",
+     "kernel": "triton_norm"
+    },
+    "base": "pdm",
+    "alpha": {}
+   },
+   "config_sha": "4dd852b82ebbdae7",
+   "planner": {
+    "fhat": 0.038309266666123554,
+    "predicted_ms": 3.7060713386197013,
+    "gmac": 0.7674769919999999
+   },
+   "measured": {
+    "val": 71.218,
+    "v2": 59.27,
+    "ms_bs32": 3.687,
+    "sd": 0.013,
+    "latency_transfer": null,
+    "stations": 2
+   }
+  },
+  "gmac/DR0.7": {
+   "budget": {
+    "kind": "gmac",
+    "value": 0.728712384,
+    "id": "DR0.7",
+    "rule": "DR actual matrix MACs; extras extend mean DR GMAC gap"
+   },
+   "stations": [
+    {
+     "block": 1,
+     "tokens_after": 189,
+     "theta": 0.5,
+     "alpha": 0.75,
+     "kappa": 3.0
+    },
+    {
+     "block": 3,
+     "tokens_after": 169,
+     "theta": 1.0,
+     "alpha": 0.0,
+     "kappa": 0.0
+    },
+    {
+     "block": 4,
+     "tokens_after": 101,
+     "theta": 1.0,
+     "alpha": 0.0,
+     "kappa": 0.0
+    },
+    {
+     "block": 5,
+     "tokens_after": 81,
+     "theta": 1.0,
+     "alpha": 0.0,
+     "kappa": 0.0
+    },
+    {
+     "block": 6,
+     "tokens_after": 77,
+     "theta": 1.0,
+     "alpha": 0.0,
+     "kappa": 0.0
+    },
+    {
+     "block": 11,
+     "tokens_after": 3,
+     "theta": 0.0,
+     "alpha": 0.0,
+     "kappa": 0.0
+    }
+   ],
+   "config": {
+    "kind": "pda",
+    "prune_keep": [
+     197,
+     193,
+     197,
+     189,
+     169,
+     101,
+     81,
+     197,
+     197,
+     197,
+     197,
+     3
+    ],
+    "merge_keep": [
+     197,
+     189,
+     197,
+     169,
+     101,
+     81,
+     77,
+     197,
+     197,
+     197,
+     197,
+     3
+    ],
+    "groups": {
+     "1": [
+      7,
+      7,
+      7,
+      7,
+      7,
+      7,
+      6,
+      6,
+      7,
+      5,
+      5,
+      7,
+      7,
+      3,
+      7,
+      7,
+      15,
+      13,
+      1,
+      2,
+      16,
+      11,
+      8,
+      4,
+      12,
+      14,
+      9,
+      14,
+      14,
+      10
+     ]
+    },
+    "rank": 32,
+    "triton": true,
+    "fuse_merge": true,
+    "merge": {
+     "mode": "M3",
+     "kernel": "triton_norm"
+    },
+    "base": "pdm",
+    "alpha": {
+     "1": 0.75
+    }
+   },
+   "evaluated_config_sha": "6f9ac9f96a08cc48",
+   "planner": {
+    "gmac": 0.7285724159999998
+   },
+   "measured": {
+    "val": 71.208,
+    "v2": 59.13,
+    "ms_bs32": 3.94,
+    "sd": 0.003
+   }
+  },
+  "latency/DR0.8": {
+   "budget": {
+    "kind": "latency_ms_bs32",
+    "value": 4.218044999999999,
+    "anchor": "DR0.8",
+    "id": "DR0.8"
+   },
+   "stations": [
+    {
+     "block": 4,
+     "tokens_after": 116,
+     "theta": 1.0,
+     "alpha": 0.0,
+     "kappa": 0.0
+    },
+    {
+     "block": 11,
+     "tokens_after": 3,
+     "theta": 0.0,
+     "alpha": 0.0,
+     "kappa": 0.0
+    }
+   ],
+   "config": {
+    "kind": "pda",
+    "prune_keep": [
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     3
+    ],
+    "merge_keep": [
+     197,
+     197,
+     197,
+     197,
+     116,
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     3
+    ],
+    "groups": {},
+    "rank": null,
+    "triton": true,
+    "fuse_merge": true,
+    "merge": {
+     "mode": "M3",
+     "kernel": "triton_norm"
+    },
+    "base": "pdm",
+    "alpha": {}
+   },
+   "config_sha": "d90b60ac153d3920",
+   "planner": {
+    "fhat": 0.015294808668841142,
+    "predicted_ms": 4.115607883865611,
+    "gmac": 0.8796478079999999
+   },
+   "measured": {
+    "val": 71.816,
+    "v2": 59.88,
+    "ms_bs32": 4.089,
+    "sd": 0.018,
+    "latency_transfer": null,
+    "stations": 2
+   }
+  },
+  "gmac/DR0.8": {
+   "budget": {
+    "kind": "gmac",
+    "value": 0.811083648,
+    "id": "DR0.8",
+    "rule": "DR actual matrix MACs; extras extend mean DR GMAC gap"
+   },
+   "stations": [
+    {
+     "block": 3,
+     "tokens_after": 173,
+     "theta": 1.0,
+     "alpha": 0.0,
+     "kappa": 0.0
+    },
+    {
+     "block": 4,
+     "tokens_after": 149,
+     "theta": 1.0,
+     "alpha": 0.0,
+     "kappa": 0.0
+    },
+    {
+     "block": 5,
+     "tokens_after": 125,
+     "theta": 1.0,
+     "alpha": 0.0,
+     "kappa": 0.0
+    },
+    {
+     "block": 6,
+     "tokens_after": 101,
+     "theta": 1.0,
+     "alpha": 0.6666666666666666,
+     "kappa": 2.0
+    },
+    {
+     "block": 7,
+     "tokens_after": 81,
+     "theta": 1.0,
+     "alpha": 0.5,
+     "kappa": 1.0
+    },
+    {
+     "block": 11,
+     "tokens_after": 3,
+     "theta": 0.0,
+     "alpha": 0.0,
+     "kappa": 0.0
+    }
+   ],
+   "config": {
+    "kind": "pda",
+    "prune_keep": [
+     197,
+     197,
+     197,
+     197,
+     173,
+     149,
+     125,
+     101,
+     197,
+     197,
+     197,
+     3
+    ],
+    "merge_keep": [
+     197,
+     197,
+     197,
+     173,
+     149,
+     125,
+     101,
+     81,
+     197,
+     197,
+     197,
+     3
+    ],
+    "groups": {
+     "6": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+     ],
+     "7": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+     ]
+    },
+    "rank": 32,
+    "triton": true,
+    "fuse_merge": true,
+    "merge": {
+     "mode": "M3",
+     "kernel": "triton_norm"
+    },
+    "base": "pdm",
+    "alpha": {
+     "6": 0.6666666666666666,
+     "7": 0.5
+    }
+   },
+   "evaluated_config_sha": "34d13b5a1e4bf2c6",
+   "planner": {
+    "gmac": 0.8099141760000002
+   },
+   "measured": {
+    "val": 71.92,
+    "v2": 59.72,
+    "ms_bs32": 4.266,
+    "sd": 0.008
+   }
+  },
+  "latency/DR0.9": {
+   "budget": {
+    "kind": "latency_ms_bs32",
+    "value": 4.614775,
+    "anchor": "DR0.9",
+    "id": "DR0.9"
+   },
+   "stations": [
+    {
+     "block": 6,
+     "tokens_after": 115,
+     "theta": 1.0,
+     "alpha": 0.6666666666666666,
+     "kappa": 2.0
+    },
+    {
+     "block": 11,
+     "tokens_after": 3,
+     "theta": 0.0,
+     "alpha": 0.0,
+     "kappa": 0.0
+    }
+   ],
+   "config": {
+    "kind": "pda",
+    "prune_keep": [
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     3
+    ],
+    "merge_keep": [
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     115,
+     197,
+     197,
+     197,
+     197,
+     3
+    ],
+    "groups": {
+     "6": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+     ]
+    },
+    "rank": 32,
+    "triton": true,
+    "fuse_merge": true,
+    "merge": {
+     "mode": "M3",
+     "kernel": "triton_norm"
+    },
+    "base": "pdm",
+    "alpha": {
+     "6": 0.6666666666666666
+    }
+   },
+   "config_sha": "532bb769da22012c",
+   "planner": {
+    "fhat": 0.005693940666484801,
+    "predicted_ms": 4.509944555506907,
+    "gmac": 0.9689155200000001
+   },
+   "measured": {
+    "val": 72.052,
+    "v2": 60.03,
+    "ms_bs32": 4.476,
+    "sd": 0.01,
+    "latency_transfer": 0.9746141641425068,
+    "stations": 2
+   }
+  },
+  "gmac/DR0.9": {
+   "budget": {
+    "kind": "gmac",
+    "value": 0.9041376000000001,
+    "id": "DR0.9",
+    "rule": "DR actual matrix MACs; extras extend mean DR GMAC gap"
+   },
+   "stations": [
+    {
+     "block": 3,
+     "tokens_after": 189,
+     "theta": 1.0,
+     "alpha": 0.0,
+     "kappa": 0.0
+    },
+    {
+     "block": 4,
+     "tokens_after": 173,
+     "theta": 1.0,
+     "alpha": 0.0,
+     "kappa": 0.0
+    },
+    {
+     "block": 5,
+     "tokens_after": 148,
+     "theta": 1.0,
+     "alpha": 0.5,
+     "kappa": 1.0
+    },
+    {
+     "block": 6,
+     "tokens_after": 123,
+     "theta": 1.0,
+     "alpha": 0.6666666666666666,
+     "kappa": 2.0
+    },
+    {
+     "block": 7,
+     "tokens_after": 103,
+     "theta": 1.0,
+     "alpha": 0.75,
+     "kappa": 3.0
+    },
+    {
+     "block": 11,
+     "tokens_after": 3,
+     "theta": 0.0,
+     "alpha": 0.0,
+     "kappa": 0.0
+    }
+   ],
+   "config": {
+    "kind": "pda",
+    "prune_keep": [
+     197,
+     197,
+     197,
+     197,
+     189,
+     173,
+     148,
+     123,
+     197,
+     197,
+     197,
+     3
+    ],
+    "merge_keep": [
+     197,
+     197,
+     197,
+     189,
+     173,
+     148,
+     123,
+     103,
+     197,
+     197,
+     197,
+     3
+    ],
+    "groups": {
+     "5": [
+      2,
+      1,
+      1,
+      3,
+      13,
+      4,
+      16,
+      15,
+      9,
+      6,
+      5,
+      12,
+      6,
+      14,
+      11,
+      10,
+      7,
+      8
+     ],
+     "6": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+     ],
+     "7": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+     ]
+    },
+    "rank": 32,
+    "triton": true,
+    "fuse_merge": true,
+    "merge": {
+     "mode": "M3",
+     "kernel": "triton_norm"
+    },
+    "base": "pdm",
+    "alpha": {
+     "5": 0.5,
+     "6": 0.6666666666666666,
+     "7": 0.75
+    }
+   },
+   "evaluated_config_sha": "fa1cb90e9285958a",
+   "planner": {
+    "gmac": 0.9027168
+   },
+   "measured": {
+    "val": 72.08,
+    "v2": 59.94,
+    "ms_bs32": 4.627,
+    "sd": 0.006
+   }
+  },
+  "latency/DR1.0": {
+   "budget": {
+    "kind": "latency_ms_bs32",
+    "value": 4.859699999999999,
+    "anchor": "DR1.0",
+    "id": "DR1.0"
+   },
+   "stations": [
+    {
+     "block": 6,
+     "tokens_after": 141,
+     "theta": 1.0,
+     "alpha": 0.5,
+     "kappa": 1.0
+    },
+    {
+     "block": 11,
+     "tokens_after": 3,
+     "theta": 0.0,
+     "alpha": 0.0,
+     "kappa": 0.0
+    }
+   ],
+   "config": {
+    "kind": "pda",
+    "prune_keep": [
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     3
+    ],
+    "merge_keep": [
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     141,
+     197,
+     197,
+     197,
+     197,
+     3
+    ],
+    "groups": {
+     "6": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+     ]
+    },
+    "rank": 32,
+    "triton": true,
+    "fuse_merge": true,
+    "merge": {
+     "mode": "M3",
+     "kernel": "triton_norm"
+    },
+    "base": "pdm",
+    "alpha": {
+     "6": 0.5
+    }
+   },
+   "config_sha": "6cc13fe2193a2e3c",
+   "planner": {
+    "fhat": 0.0021619639665004797,
+    "predicted_ms": 4.756874494314744,
+    "gmac": 1.0389333120000002
+   },
+   "measured": {
+    "val": 72.124,
+    "v2": 60.11,
+    "ms_bs32": 4.739,
+    "sd": 0.008,
+    "latency_transfer": null,
+    "stations": 2
+   }
+  },
+  "gmac/DR1.0": {
+   "budget": {
+    "kind": "gmac",
+    "value": 1.005389376,
+    "id": "DR1.0",
+    "rule": "DR actual matrix MACs; extras extend mean DR GMAC gap"
+   },
+   "stations": [
+    {
+     "block": 4,
+     "tokens_after": 184,
+     "theta": 1.0,
+     "alpha": 0.0,
+     "kappa": 0.0
+    },
+    {
+     "block": 6,
+     "tokens_after": 160,
+     "theta": 1.0,
+     "alpha": 0.5,
+     "kappa": 1.0
+    },
+    {
+     "block": 7,
+     "tokens_after": 126,
+     "theta": 1.0,
+     "alpha": 0.6666666666666666,
+     "kappa": 2.0
+    },
+    {
+     "block": 11,
+     "tokens_after": 3,
+     "theta": 0.0,
+     "alpha": 0.0,
+     "kappa": 0.0
+    }
+   ],
+   "config": {
+    "kind": "pda",
+    "prune_keep": [
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     184,
+     160,
+     197,
+     197,
+     197,
+     3
+    ],
+    "merge_keep": [
+     197,
+     197,
+     197,
+     197,
+     184,
+     197,
+     160,
+     126,
+     197,
+     197,
+     197,
+     3
+    ],
+    "groups": {
+     "6": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+     ],
+     "7": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+     ]
+    },
+    "rank": 32,
+    "triton": true,
+    "fuse_merge": true,
+    "merge": {
+     "mode": "M3",
+     "kernel": "triton_norm"
+    },
+    "base": "pdm",
+    "alpha": {
+     "6": 0.5,
+     "7": 0.6666666666666666
+    }
+   },
+   "evaluated_config_sha": "70ca3675677b7b7f",
+   "planner": {
+    "gmac": 1.002504
+   },
+   "measured": {
+    "val": 72.022,
+    "v2": 60.06,
+    "ms_bs32": 4.752,
+    "sd": 0.012
+   }
+  }
+ }
+}

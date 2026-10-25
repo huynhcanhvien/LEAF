@@ -1,0 +1,4 @@
+Source: https://github.com/xjwu1024/PPT/blob/706bcdd475b5652ee84117a88add7a3a49c6045b/ppt_deit.py (score_assignment_step verbatim in score.py)
+License: Apache-2.0 (LICENSE)
+The adaptive block (pp_block_adaptive.forward: per image, variance of the significance scores < threshold -> ToMe pooling, else prune the r lowest scores) is re-expressed in baselines/methods.py PPT. Both branches are computed for every image and selected per image with torch.where (same output as the official nonzero split, static shapes for CUDA graphs). ToMe matching uses the vendored tome/merge.py (PPT imports ToMe).
+Off-the-shelf reference (README): DeiT-S, r_tokens 50, pp_loc_list 3 6 9, threshold 7e-5 -> 79.498 top-1, 2.944 GMACs.

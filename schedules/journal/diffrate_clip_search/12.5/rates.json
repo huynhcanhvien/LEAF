@@ -1,0 +1,51 @@
+{
+ "budget": "12.5",
+ "prune_kept_num": [
+  197,
+  157,
+  140,
+  136,
+  136,
+  132,
+  136,
+  136,
+  136,
+  136,
+  136,
+  138
+ ],
+ "merge_kept_num": [
+  197,
+  141,
+  137,
+  136,
+  136,
+  136,
+  136,
+  136,
+  136,
+  136,
+  136,
+  138
+ ],
+ "gflops": 12.49345536,
+ "hp": {
+  "epochs": 3,
+  "arch_lr": 0.01,
+  "arch_min_lr": 0.001,
+  "global_batch": 1024,
+  "granularity": 4,
+  "lamb": 5.0,
+  "drop_path": 0.1,
+  "aa": "rand-m9-mstd0.5-inc1",
+  "color_jitter": 0.4,
+  "reprob": 0.25,
+  "mixup": 0.8,
+  "cutmix": 1.0,
+  "smoothing": 0.1,
+  "repeats": 3,
+  "images": 1281167
+ },
+ "commit": "91ae3e376e9c3f9f1e69f580fd902b61de5dfe0e",
+ "time": 1792754601.4638276
+}

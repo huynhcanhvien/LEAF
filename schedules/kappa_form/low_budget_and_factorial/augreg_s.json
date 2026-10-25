@@ -1,0 +1,8504 @@
+{
+ "backbone": "augreg_s",
+ "timm_id": "vit_small_patch16_224.augreg_in21k_ft_in1k",
+ "design_sha": "99d2f6247b4f7fd42510825cccb0f4db5254f15d8567935e8612f75686b114a0",
+ "jobs": {
+  "dense": {
+   "config": {
+    "kind": "dense"
+   },
+   "group": "reference",
+   "config_sha": "7ae560d3b3fdeea9",
+   "details": {}
+  },
+  "history/baseline/dense": {
+   "config": {
+    "kind": "dense"
+   },
+   "group": "baseline",
+   "historical": true,
+   "config_sha": "7ae560d3b3fdeea9",
+   "details": {}
+  },
+  "history/baseline/tome/r4": {
+   "config": {
+    "kind": "tome",
+    "r": 4
+   },
+   "group": "baseline",
+   "historical": true,
+   "config_sha": "6b8ebea9900c7068",
+   "details": {}
+  },
+  "history/tome_m3/r4": {
+   "config": {
+    "kind": "tome_m3",
+    "r": 4
+   },
+   "group": "baseline",
+   "historical": true,
+   "config_sha": "5b7330d8de36b864",
+   "details": {}
+  },
+  "history/baseline/tome/r6": {
+   "config": {
+    "kind": "tome",
+    "r": 6
+   },
+   "group": "baseline",
+   "historical": true,
+   "config_sha": "84bca71893a69d24",
+   "details": {}
+  },
+  "history/tome_m3/r6": {
+   "config": {
+    "kind": "tome_m3",
+    "r": 6
+   },
+   "group": "baseline",
+   "historical": true,
+   "config_sha": "5b048872848c209a",
+   "details": {}
+  },
+  "history/baseline/tome/r8": {
+   "config": {
+    "kind": "tome",
+    "r": 8
+   },
+   "group": "baseline",
+   "historical": true,
+   "config_sha": "7ffe90e82917a07e",
+   "details": {}
+  },
+  "history/tome_m3/r8": {
+   "config": {
+    "kind": "tome_m3",
+    "r": 8
+   },
+   "group": "baseline",
+   "historical": true,
+   "config_sha": "d63c747e588f7981",
+   "details": {}
+  },
+  "history/baseline/tome/r10": {
+   "config": {
+    "kind": "tome",
+    "r": 10
+   },
+   "group": "baseline",
+   "historical": true,
+   "config_sha": "ef24fc3b90a0a83f",
+   "details": {}
+  },
+  "history/tome_m3/r10": {
+   "config": {
+    "kind": "tome_m3",
+    "r": 10
+   },
+   "group": "baseline",
+   "historical": true,
+   "config_sha": "2fd9add1615c1abc",
+   "details": {}
+  },
+  "history/baseline/tome/r12": {
+   "config": {
+    "kind": "tome",
+    "r": 12
+   },
+   "group": "baseline",
+   "historical": true,
+   "config_sha": "26e28e39bfa02120",
+   "details": {}
+  },
+  "history/tome_m3/r12": {
+   "config": {
+    "kind": "tome_m3",
+    "r": 12
+   },
+   "group": "baseline",
+   "historical": true,
+   "config_sha": "4321b0a1d5921e7f",
+   "details": {}
+  },
+  "history/baseline/tome/r13": {
+   "config": {
+    "kind": "tome",
+    "r": 13
+   },
+   "group": "baseline",
+   "historical": true,
+   "config_sha": "e8eac18a4d4ef26a",
+   "details": {}
+  },
+  "history/tome_m3/r13": {
+   "config": {
+    "kind": "tome_m3",
+    "r": 13
+   },
+   "group": "baseline",
+   "historical": true,
+   "config_sha": "1181396fade71f87",
+   "details": {}
+  },
+  "history/baseline/tome/r14": {
+   "config": {
+    "kind": "tome",
+    "r": 14
+   },
+   "group": "baseline",
+   "historical": true,
+   "config_sha": "983c3b06d60c6159",
+   "details": {}
+  },
+  "history/tome_m3/r14": {
+   "config": {
+    "kind": "tome_m3",
+    "r": 14
+   },
+   "group": "baseline",
+   "historical": true,
+   "config_sha": "bc290dcc16280b72",
+   "details": {}
+  },
+  "history/baseline/tome/r16": {
+   "config": {
+    "kind": "tome",
+    "r": 16
+   },
+   "group": "baseline",
+   "historical": true,
+   "config_sha": "92cf875e1526cefc",
+   "details": {}
+  },
+  "history/tome_m3/r16": {
+   "config": {
+    "kind": "tome_m3",
+    "r": 16
+   },
+   "group": "baseline",
+   "historical": true,
+   "config_sha": "7b0ab2aa54735741",
+   "details": {}
+  },
+  "history/baseline/pitome/ratio0.95": {
+   "config": {
+    "kind": "pitome",
+    "ratio": 0.95
+   },
+   "group": "baseline",
+   "historical": true,
+   "config_sha": "a2a05ad5bf654de7",
+   "details": {}
+  },
+  "history/baseline/pitome/ratio0.925": {
+   "config": {
+    "kind": "pitome",
+    "ratio": 0.925
+   },
+   "group": "baseline",
+   "historical": true,
+   "config_sha": "d9492e5dde03b8f1",
+   "details": {}
+  },
+  "history/baseline/pitome/ratio0.9": {
+   "config": {
+    "kind": "pitome",
+    "ratio": 0.9
+   },
+   "group": "baseline",
+   "historical": true,
+   "config_sha": "fa7f77bca3b31851",
+   "details": {}
+  },
+  "history/baseline/pitome/ratio0.875": {
+   "config": {
+    "kind": "pitome",
+    "ratio": 0.875
+   },
+   "group": "baseline",
+   "historical": true,
+   "config_sha": "ccc073b722de2170",
+   "details": {}
+  },
+  "history/baseline/pitome/ratio0.85": {
+   "config": {
+    "kind": "pitome",
+    "ratio": 0.85
+   },
+   "group": "baseline",
+   "historical": true,
+   "config_sha": "41837b7de603c064",
+   "details": {}
+  },
+  "history/baseline/pitome/ratio0.825": {
+   "config": {
+    "kind": "pitome",
+    "ratio": 0.825
+   },
+   "group": "baseline",
+   "historical": true,
+   "config_sha": "19016e9788a7082a",
+   "details": {}
+  },
+  "history/baseline/pitome/ratio0.8": {
+   "config": {
+    "kind": "pitome",
+    "ratio": 0.8
+   },
+   "group": "baseline",
+   "historical": true,
+   "config_sha": "f0a1c18fefd91bd4",
+   "details": {}
+  },
+  "history/baseline/evit/keep_rate0.9": {
+   "config": {
+    "kind": "evit",
+    "keep_rate": 0.9
+   },
+   "group": "baseline",
+   "historical": true,
+   "config_sha": "837aff05d062fbb8",
+   "details": {}
+  },
+  "history/baseline/evit/keep_rate0.8": {
+   "config": {
+    "kind": "evit",
+    "keep_rate": 0.8
+   },
+   "group": "baseline",
+   "historical": true,
+   "config_sha": "e24918cea1950d2c",
+   "details": {}
+  },
+  "history/baseline/evit/keep_rate0.7": {
+   "config": {
+    "kind": "evit",
+    "keep_rate": 0.7
+   },
+   "group": "baseline",
+   "historical": true,
+   "config_sha": "caf9fdfe64c142f8",
+   "details": {}
+  },
+  "history/baseline/evit/keep_rate0.6": {
+   "config": {
+    "kind": "evit",
+    "keep_rate": 0.6
+   },
+   "group": "baseline",
+   "historical": true,
+   "config_sha": "b497a15a21b436c5",
+   "details": {}
+  },
+  "history/baseline/evit/keep_rate0.5": {
+   "config": {
+    "kind": "evit",
+    "keep_rate": 0.5
+   },
+   "group": "baseline",
+   "historical": true,
+   "config_sha": "df22f4a9f36937b4",
+   "details": {}
+  },
+  "history/baseline/evit/keep_rate0.4": {
+   "config": {
+    "kind": "evit",
+    "keep_rate": 0.4
+   },
+   "group": "baseline",
+   "historical": true,
+   "config_sha": "9792f52f51f2fdf7",
+   "details": {}
+  },
+  "history/baseline/mctf/r4": {
+   "config": {
+    "kind": "mctf",
+    "r": 4
+   },
+   "group": "baseline",
+   "historical": true,
+   "config_sha": "2773c636130e5db8",
+   "details": {}
+  },
+  "history/baseline/mctf/r6": {
+   "config": {
+    "kind": "mctf",
+    "r": 6
+   },
+   "group": "baseline",
+   "historical": true,
+   "config_sha": "9e4f64e55a695bbf",
+   "details": {}
+  },
+  "history/baseline/mctf/r8": {
+   "config": {
+    "kind": "mctf",
+    "r": 8
+   },
+   "group": "baseline",
+   "historical": true,
+   "config_sha": "a3b031ab0138ba8f",
+   "details": {}
+  },
+  "history/baseline/mctf/r10": {
+   "config": {
+    "kind": "mctf",
+    "r": 10
+   },
+   "group": "baseline",
+   "historical": true,
+   "config_sha": "dd56ef4a95fec3ff",
+   "details": {}
+  },
+  "history/baseline/mctf/r12": {
+   "config": {
+    "kind": "mctf",
+    "r": 12
+   },
+   "group": "baseline",
+   "historical": true,
+   "config_sha": "c5928a4b7ecfc0a8",
+   "details": {}
+  },
+  "history/baseline/mctf/r14": {
+   "config": {
+    "kind": "mctf",
+    "r": 14
+   },
+   "group": "baseline",
+   "historical": true,
+   "config_sha": "cddaf6600b1fd4b4",
+   "details": {}
+  },
+  "history/baseline/mctf/r16": {
+   "config": {
+    "kind": "mctf",
+    "r": 16
+   },
+   "group": "baseline",
+   "historical": true,
+   "config_sha": "63ad9e41371c522a",
+   "details": {}
+  },
+  "history/baseline/ppt/r20": {
+   "config": {
+    "kind": "ppt",
+    "r": 20,
+    "threshold": 7e-05
+   },
+   "group": "baseline",
+   "historical": true,
+   "config_sha": "b6f3643e8ca2aa71",
+   "details": {}
+  },
+  "history/baseline/ppt/r30": {
+   "config": {
+    "kind": "ppt",
+    "r": 30,
+    "threshold": 7e-05
+   },
+   "group": "baseline",
+   "historical": true,
+   "config_sha": "80245d557151d3ff",
+   "details": {}
+  },
+  "history/baseline/ppt/r40": {
+   "config": {
+    "kind": "ppt",
+    "r": 40,
+    "threshold": 7e-05
+   },
+   "group": "baseline",
+   "historical": true,
+   "config_sha": "ab071b4c6ebffa98",
+   "details": {}
+  },
+  "history/baseline/ppt/r50": {
+   "config": {
+    "kind": "ppt",
+    "r": 50,
+    "threshold": 7e-05
+   },
+   "group": "baseline",
+   "historical": true,
+   "config_sha": "5646b987898c6fc8",
+   "details": {}
+  },
+  "history/baseline/ppt/r60": {
+   "config": {
+    "kind": "ppt",
+    "r": 60,
+    "threshold": 7e-05
+   },
+   "group": "baseline",
+   "historical": true,
+   "config_sha": "2e36ed426419db74",
+   "details": {}
+  },
+  "baseline/tome/r16": {
+   "config": {
+    "kind": "tome",
+    "r": 16
+   },
+   "group": "baseline",
+   "grid": "low_budget_extension",
+   "config_sha": "92cf875e1526cefc",
+   "details": {}
+  },
+  "baseline/tome/r20": {
+   "config": {
+    "kind": "tome",
+    "r": 20
+   },
+   "group": "baseline",
+   "grid": "low_budget_extension",
+   "config_sha": "9bf27b2529aa8fbb",
+   "details": {}
+  },
+  "baseline/tome/r24": {
+   "config": {
+    "kind": "tome",
+    "r": 24
+   },
+   "group": "baseline",
+   "grid": "low_budget_extension",
+   "config_sha": "a06ca7ddd2858b2a",
+   "details": {}
+  },
+  "baseline/tome/r32": {
+   "config": {
+    "kind": "tome",
+    "r": 32
+   },
+   "group": "baseline",
+   "grid": "low_budget_extension",
+   "config_sha": "94ff2603241a2967",
+   "details": {}
+  },
+  "baseline/tome/r48": {
+   "config": {
+    "kind": "tome",
+    "r": 48
+   },
+   "group": "baseline",
+   "grid": "low_budget_extension",
+   "config_sha": "e3318f07a737e060",
+   "details": {}
+  },
+  "baseline/tome_m3/r16": {
+   "config": {
+    "kind": "tome_m3",
+    "r": 16
+   },
+   "group": "baseline",
+   "grid": "low_budget_extension",
+   "config_sha": "7b0ab2aa54735741",
+   "details": {}
+  },
+  "baseline/tome_m3/r20": {
+   "config": {
+    "kind": "tome_m3",
+    "r": 20
+   },
+   "group": "baseline",
+   "grid": "low_budget_extension",
+   "config_sha": "e6a338f13c33f45f",
+   "details": {}
+  },
+  "baseline/tome_m3/r24": {
+   "config": {
+    "kind": "tome_m3",
+    "r": 24
+   },
+   "group": "baseline",
+   "grid": "low_budget_extension",
+   "config_sha": "c984ef24f61cbf04",
+   "details": {}
+  },
+  "baseline/tome_m3/r32": {
+   "config": {
+    "kind": "tome_m3",
+    "r": 32
+   },
+   "group": "baseline",
+   "grid": "low_budget_extension",
+   "config_sha": "88b9e04dd2bbeaba",
+   "details": {}
+  },
+  "baseline/tome_m3/r48": {
+   "config": {
+    "kind": "tome_m3",
+    "r": 48
+   },
+   "group": "baseline",
+   "grid": "low_budget_extension",
+   "config_sha": "a017dd1be57c5940",
+   "details": {}
+  },
+  "baseline/tofu/r16": {
+   "config": {
+    "kind": "tofu",
+    "r": 16
+   },
+   "group": "baseline",
+   "grid": "low_budget_extension",
+   "config_sha": "d249a50564c5e569",
+   "details": {}
+  },
+  "baseline/tofu/r20": {
+   "config": {
+    "kind": "tofu",
+    "r": 20
+   },
+   "group": "baseline",
+   "grid": "low_budget_extension",
+   "config_sha": "726184f274ee8426",
+   "details": {}
+  },
+  "baseline/tofu/r24": {
+   "config": {
+    "kind": "tofu",
+    "r": 24
+   },
+   "group": "baseline",
+   "grid": "low_budget_extension",
+   "config_sha": "76a69dfed799a7b4",
+   "details": {}
+  },
+  "baseline/tofu/r32": {
+   "config": {
+    "kind": "tofu",
+    "r": 32
+   },
+   "group": "baseline",
+   "grid": "low_budget_extension",
+   "config_sha": "c74b4276bcc30788",
+   "details": {}
+  },
+  "baseline/tofu/r48": {
+   "config": {
+    "kind": "tofu",
+    "r": 48
+   },
+   "group": "baseline",
+   "grid": "low_budget_extension",
+   "config_sha": "14800acfada7b9c8",
+   "details": {}
+  },
+  "baseline/rapid/r16": {
+   "config": {
+    "kind": "rapid",
+    "r": 16
+   },
+   "group": "baseline",
+   "grid": "low_budget_extension",
+   "config_sha": "c7a4a926b1a95bf1",
+   "details": {}
+  },
+  "baseline/rapid/r20": {
+   "config": {
+    "kind": "rapid",
+    "r": 20
+   },
+   "group": "baseline",
+   "grid": "low_budget_extension",
+   "config_sha": "7c2923d81a906181",
+   "details": {}
+  },
+  "baseline/rapid/r24": {
+   "config": {
+    "kind": "rapid",
+    "r": 24
+   },
+   "group": "baseline",
+   "grid": "low_budget_extension",
+   "config_sha": "262d3575f325e76c",
+   "details": {}
+  },
+  "baseline/rapid/r32": {
+   "config": {
+    "kind": "rapid",
+    "r": 32
+   },
+   "group": "baseline",
+   "grid": "low_budget_extension",
+   "config_sha": "25a6d198d2eb7061",
+   "details": {}
+  },
+  "baseline/rapid/r48": {
+   "config": {
+    "kind": "rapid",
+    "r": 48
+   },
+   "group": "baseline",
+   "grid": "low_budget_extension",
+   "config_sha": "cf562611345fe22c",
+   "details": {}
+  },
+  "baseline/evit/kr0.15": {
+   "config": {
+    "kind": "evit",
+    "keep_rate": 0.15
+   },
+   "group": "baseline",
+   "grid": "low_budget_extension",
+   "config_sha": "ad2a2b5200f5360e",
+   "details": {}
+  },
+  "baseline/evit/kr0.25": {
+   "config": {
+    "kind": "evit",
+    "keep_rate": 0.25
+   },
+   "group": "baseline",
+   "grid": "low_budget_extension",
+   "config_sha": "ec628b54691432a9",
+   "details": {}
+  },
+  "baseline/evit/kr0.35": {
+   "config": {
+    "kind": "evit",
+    "keep_rate": 0.35
+   },
+   "group": "baseline",
+   "grid": "low_budget_extension",
+   "config_sha": "b12113b02f8f40f3",
+   "details": {}
+  },
+  "baseline/evit/kr0.45": {
+   "config": {
+    "kind": "evit",
+    "keep_rate": 0.45
+   },
+   "group": "baseline",
+   "grid": "low_budget_extension",
+   "config_sha": "226b94a4d7126f12",
+   "details": {}
+  },
+  "anchor/G0": {
+   "config": {
+    "kind": "pdm",
+    "prune_keep": [
+     197,
+     105,
+     197,
+     197,
+     105,
+     197,
+     42,
+     197,
+     197,
+     197,
+     197,
+     3
+    ],
+    "merge_keep": [
+     197,
+     105,
+     197,
+     197,
+     53,
+     197,
+     31,
+     197,
+     197,
+     197,
+     197,
+     3
+    ],
+    "k": {
+     "4": 2.0,
+     "6": 1.0
+    },
+    "groups": {
+     "4": [
+      3,
+      5,
+      4,
+      3,
+      6,
+      3,
+      3,
+      8,
+      8,
+      3,
+      3,
+      3,
+      13,
+      8,
+      12,
+      7,
+      8,
+      13,
+      11,
+      12,
+      12,
+      11,
+      12,
+      12,
+      11,
+      10,
+      11,
+      7,
+      9,
+      11,
+      14,
+      14,
+      15,
+      9,
+      16,
+      15,
+      1,
+      15,
+      1,
+      15,
+      15,
+      2
+     ],
+     "6": [
+      14,
+      8,
+      13,
+      12,
+      7,
+      13,
+      6,
+      13,
+      13,
+      7,
+      13,
+      13,
+      6,
+      13,
+      14,
+      4,
+      14,
+      7,
+      10,
+      11,
+      5,
+      15,
+      16,
+      8,
+      1,
+      12,
+      2,
+      9,
+      12,
+      3
+     ]
+    },
+    "rank": 32,
+    "triton": true,
+    "fuse_merge": true,
+    "merge": {
+     "mode": "M3",
+     "kernel": "triton_norm"
+    }
+   },
+   "group": "reference",
+   "historical_source": "results/salt_validation/augreg_s/plans.json",
+   "config_sha": "6b5affd49f80acdf",
+   "details": {
+    "token_path": [
+     {
+      "block": 0,
+      "n_in": 197,
+      "prune_keep": 197,
+      "merge_keep": 197,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "kappa": 0.0
+     },
+     {
+      "block": 1,
+      "n_in": 197,
+      "prune_keep": 105,
+      "merge_keep": 105,
+      "removed": 92,
+      "merged": 0,
+      "pruned": 92,
+      "theta": 0.0,
+      "kappa": 0.0
+     },
+     {
+      "block": 2,
+      "n_in": 105,
+      "prune_keep": 105,
+      "merge_keep": 105,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "kappa": 0.0
+     },
+     {
+      "block": 3,
+      "n_in": 105,
+      "prune_keep": 105,
+      "merge_keep": 105,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "kappa": 0.0
+     },
+     {
+      "block": 4,
+      "n_in": 105,
+      "prune_keep": 105,
+      "merge_keep": 53,
+      "removed": 52,
+      "merged": 52,
+      "pruned": 0,
+      "theta": 1.0,
+      "kappa": 2.0
+     },
+     {
+      "block": 5,
+      "n_in": 53,
+      "prune_keep": 53,
+      "merge_keep": 53,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "kappa": 0.0
+     },
+     {
+      "block": 6,
+      "n_in": 53,
+      "prune_keep": 42,
+      "merge_keep": 31,
+      "removed": 22,
+      "merged": 11,
+      "pruned": 11,
+      "theta": 0.5,
+      "kappa": 1.0
+     },
+     {
+      "block": 7,
+      "n_in": 31,
+      "prune_keep": 31,
+      "merge_keep": 31,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "kappa": 0.0
+     },
+     {
+      "block": 8,
+      "n_in": 31,
+      "prune_keep": 31,
+      "merge_keep": 31,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "kappa": 0.0
+     },
+     {
+      "block": 9,
+      "n_in": 31,
+      "prune_keep": 31,
+      "merge_keep": 31,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "kappa": 0.0
+     },
+     {
+      "block": 10,
+      "n_in": 31,
+      "prune_keep": 31,
+      "merge_keep": 31,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "kappa": 0.0
+     },
+     {
+      "block": 11,
+      "n_in": 31,
+      "prune_keep": 3,
+      "merge_keep": 3,
+      "removed": 28,
+      "merged": 0,
+      "pruned": 28,
+      "theta": 0.0,
+      "kappa": 0.0
+     }
+    ],
+    "K": 4,
+    "N_D": 2,
+    "final_tokens": 3,
+    "total_gmac": 1.6420588799999998,
+    "backbone_full_gmac": 1.6403016959999999,
+    "d_gmac": 0.001757184,
+    "station_scalar_gops_estimate": 0.000429046
+   },
+   "feature_extrapolation": {
+    "original_gmac": {
+     "value": 1.6114003199999998,
+     "historical_range": [
+      1.634409216,
+      3.923171328
+     ]
+    }
+   },
+   "prediction_main_ms": 4.672576681082775
+  },
+  "anchor/L0": {
+   "config": {
+    "kind": "pdm",
+    "prune_keep": [
+     197,
+     105,
+     197,
+     197,
+     105,
+     197,
+     42,
+     197,
+     197,
+     197,
+     197,
+     3
+    ],
+    "merge_keep": [
+     197,
+     105,
+     197,
+     197,
+     53,
+     197,
+     31,
+     197,
+     197,
+     197,
+     197,
+     3
+    ],
+    "k": {
+     "4": 2.0,
+     "6": 1.0
+    },
+    "groups": {
+     "4": [
+      3,
+      5,
+      4,
+      3,
+      6,
+      3,
+      3,
+      8,
+      8,
+      3,
+      3,
+      3,
+      13,
+      8,
+      12,
+      7,
+      8,
+      13,
+      11,
+      12,
+      12,
+      11,
+      12,
+      12,
+      11,
+      10,
+      11,
+      7,
+      9,
+      11,
+      14,
+      14,
+      15,
+      9,
+      16,
+      15,
+      1,
+      15,
+      1,
+      15,
+      15,
+      2
+     ],
+     "6": [
+      14,
+      8,
+      13,
+      12,
+      7,
+      13,
+      6,
+      13,
+      13,
+      7,
+      13,
+      13,
+      6,
+      13,
+      14,
+      4,
+      14,
+      7,
+      10,
+      11,
+      5,
+      15,
+      16,
+      8,
+      1,
+      12,
+      2,
+      9,
+      12,
+      3
+     ]
+    },
+    "rank": 32,
+    "triton": true,
+    "fuse_merge": true,
+    "merge": {
+     "mode": "M3",
+     "kernel": "triton_norm"
+    }
+   },
+   "group": "reference",
+   "historical_source": "results/salt_validation/augreg_s/plans.json",
+   "config_sha": "6b5affd49f80acdf",
+   "details": {
+    "token_path": [
+     {
+      "block": 0,
+      "n_in": 197,
+      "prune_keep": 197,
+      "merge_keep": 197,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "kappa": 0.0
+     },
+     {
+      "block": 1,
+      "n_in": 197,
+      "prune_keep": 105,
+      "merge_keep": 105,
+      "removed": 92,
+      "merged": 0,
+      "pruned": 92,
+      "theta": 0.0,
+      "kappa": 0.0
+     },
+     {
+      "block": 2,
+      "n_in": 105,
+      "prune_keep": 105,
+      "merge_keep": 105,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "kappa": 0.0
+     },
+     {
+      "block": 3,
+      "n_in": 105,
+      "prune_keep": 105,
+      "merge_keep": 105,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "kappa": 0.0
+     },
+     {
+      "block": 4,
+      "n_in": 105,
+      "prune_keep": 105,
+      "merge_keep": 53,
+      "removed": 52,
+      "merged": 52,
+      "pruned": 0,
+      "theta": 1.0,
+      "kappa": 2.0
+     },
+     {
+      "block": 5,
+      "n_in": 53,
+      "prune_keep": 53,
+      "merge_keep": 53,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "kappa": 0.0
+     },
+     {
+      "block": 6,
+      "n_in": 53,
+      "prune_keep": 42,
+      "merge_keep": 31,
+      "removed": 22,
+      "merged": 11,
+      "pruned": 11,
+      "theta": 0.5,
+      "kappa": 1.0
+     },
+     {
+      "block": 7,
+      "n_in": 31,
+      "prune_keep": 31,
+      "merge_keep": 31,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "kappa": 0.0
+     },
+     {
+      "block": 8,
+      "n_in": 31,
+      "prune_keep": 31,
+      "merge_keep": 31,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "kappa": 0.0
+     },
+     {
+      "block": 9,
+      "n_in": 31,
+      "prune_keep": 31,
+      "merge_keep": 31,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "kappa": 0.0
+     },
+     {
+      "block": 10,
+      "n_in": 31,
+      "prune_keep": 31,
+      "merge_keep": 31,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "kappa": 0.0
+     },
+     {
+      "block": 11,
+      "n_in": 31,
+      "prune_keep": 3,
+      "merge_keep": 3,
+      "removed": 28,
+      "merged": 0,
+      "pruned": 28,
+      "theta": 0.0,
+      "kappa": 0.0
+     }
+    ],
+    "K": 4,
+    "N_D": 2,
+    "final_tokens": 3,
+    "total_gmac": 1.6420588799999998,
+    "backbone_full_gmac": 1.6403016959999999,
+    "d_gmac": 0.001757184,
+    "station_scalar_gops_estimate": 0.000429046
+   },
+   "feature_extrapolation": {
+    "original_gmac": {
+     "value": 1.6114003199999998,
+     "historical_range": [
+      1.634409216,
+      3.923171328
+     ]
+    }
+   },
+   "prediction_main_ms": 4.672576681082775
+  },
+  "full/latency/low90": {
+   "state": {
+    "sites": [
+     1,
+     4,
+     6
+    ],
+    "counts": [
+     77,
+     53,
+     29
+    ],
+    "thetas": [
+     0.0,
+     1.0,
+     0.5
+    ],
+    "ks": [
+     0.0,
+     0.0,
+     1.0
+    ]
+   },
+   "config": {
+    "kind": "pdm",
+    "prune_keep": [
+     197,
+     77,
+     197,
+     197,
+     77,
+     197,
+     41,
+     197,
+     197,
+     197,
+     197,
+     197
+    ],
+    "merge_keep": [
+     197,
+     77,
+     197,
+     197,
+     53,
+     197,
+     29,
+     197,
+     197,
+     197,
+     197,
+     197
+    ],
+    "k": {
+     "6": 1.0
+    },
+    "groups": {
+     "6": [
+      14,
+      8,
+      13,
+      12,
+      7,
+      13,
+      6,
+      13,
+      13,
+      7,
+      13,
+      13,
+      6,
+      13,
+      14,
+      4,
+      14,
+      7,
+      10,
+      11,
+      5,
+      15,
+      16,
+      8,
+      1,
+      12,
+      2,
+      9,
+      12,
+      3
+     ]
+    },
+    "rank": 32,
+    "triton": true,
+    "fuse_merge": true,
+    "merge": {
+     "mode": "M3",
+     "kernel": "triton_norm"
+    }
+   },
+   "predicted_ms": 4.180546179879727,
+   "fhat": 0.8102158680558205,
+   "budget_ms": 4.3119,
+   "n_candidates": 5,
+   "certificate": "fixed-multiplier DP exact; constrained multiplier search and ratio projection uncertified",
+   "status": "planned",
+   "gmac": 1.4925557760000003,
+   "group": "full",
+   "axis": "latency",
+   "budget": {
+    "id": "low90",
+    "ratio": 0.9,
+    "gmac": 1.4778529919999999,
+    "latency_ms": 4.3119
+   },
+   "search_seconds": 0.4100236710073659,
+   "config_sha": "5438fae960e2e5ef",
+   "details": {
+    "token_path": [
+     {
+      "block": 0,
+      "n_in": 197,
+      "prune_keep": 197,
+      "merge_keep": 197,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "kappa": 0.0
+     },
+     {
+      "block": 1,
+      "n_in": 197,
+      "prune_keep": 77,
+      "merge_keep": 77,
+      "removed": 120,
+      "merged": 0,
+      "pruned": 120,
+      "theta": 0.0,
+      "kappa": 0.0
+     },
+     {
+      "block": 2,
+      "n_in": 77,
+      "prune_keep": 77,
+      "merge_keep": 77,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "kappa": 0.0
+     },
+     {
+      "block": 3,
+      "n_in": 77,
+      "prune_keep": 77,
+      "merge_keep": 77,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "kappa": 0.0
+     },
+     {
+      "block": 4,
+      "n_in": 77,
+      "prune_keep": 77,
+      "merge_keep": 53,
+      "removed": 24,
+      "merged": 24,
+      "pruned": 0,
+      "theta": 1.0,
+      "kappa": 0.0
+     },
+     {
+      "block": 5,
+      "n_in": 53,
+      "prune_keep": 53,
+      "merge_keep": 53,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "kappa": 0.0
+     },
+     {
+      "block": 6,
+      "n_in": 53,
+      "prune_keep": 41,
+      "merge_keep": 29,
+      "removed": 24,
+      "merged": 12,
+      "pruned": 12,
+      "theta": 0.5,
+      "kappa": 1.0
+     },
+     {
+      "block": 7,
+      "n_in": 29,
+      "prune_keep": 29,
+      "merge_keep": 29,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "kappa": 0.0
+     },
+     {
+      "block": 8,
+      "n_in": 29,
+      "prune_keep": 29,
+      "merge_keep": 29,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "kappa": 0.0
+     },
+     {
+      "block": 9,
+      "n_in": 29,
+      "prune_keep": 29,
+      "merge_keep": 29,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "kappa": 0.0
+     },
+     {
+      "block": 10,
+      "n_in": 29,
+      "prune_keep": 29,
+      "merge_keep": 29,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "kappa": 0.0
+     },
+     {
+      "block": 11,
+      "n_in": 29,
+      "prune_keep": 29,
+      "merge_keep": 29,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "kappa": 0.0
+     }
+    ],
+    "K": 3,
+    "N_D": 1,
+    "final_tokens": 29,
+    "total_gmac": 1.4925557760000003,
+    "backbone_full_gmac": 1.4918369280000003,
+    "d_gmac": 0.000718848,
+    "station_scalar_gops_estimate": 0.000189853
+   },
+   "feature_extrapolation": {
+    "original_gmac": {
+     "value": 1.4629355520000002,
+     "historical_range": [
+      1.634409216,
+      3.923171328
+     ]
+    },
+    "station_io": {
+     "value": 0.125568,
+     "historical_range": [
+      0.144384,
+      0.37132799999999994
+     ]
+    }
+   },
+   "prediction_main_ms": 4.180546179879727
+  },
+  "full/gmac/low90": {
+   "state": {
+    "sites": [
+     1,
+     4,
+     6,
+     11
+    ],
+    "counts": [
+     77,
+     53,
+     29,
+     3
+    ],
+    "thetas": [
+     0.0,
+     1.0,
+     0.5,
+     0.0
+    ],
+    "ks": [
+     0.0,
+     0.0,
+     1.0,
+     0.0
+    ]
+   },
+   "config": {
+    "kind": "pdm",
+    "prune_keep": [
+     197,
+     77,
+     197,
+     197,
+     77,
+     197,
+     41,
+     197,
+     197,
+     197,
+     197,
+     3
+    ],
+    "merge_keep": [
+     197,
+     77,
+     197,
+     197,
+     53,
+     197,
+     29,
+     197,
+     197,
+     197,
+     197,
+     3
+    ],
+    "k": {
+     "6": 1.0
+    },
+    "groups": {
+     "6": [
+      14,
+      8,
+      13,
+      12,
+      7,
+      13,
+      6,
+      13,
+      13,
+      7,
+      13,
+      13,
+      6,
+      13,
+      14,
+      4,
+      14,
+      7,
+      10,
+      11,
+      5,
+      15,
+      16,
+      8,
+      1,
+      12,
+      2,
+      9,
+      12,
+      3
+     ]
+    },
+    "rank": 32,
+    "triton": true,
+    "fuse_merge": true,
+    "merge": {
+     "mode": "M3",
+     "kernel": "triton_norm"
+    }
+   },
+   "gmac": 1.4618849280000004,
+   "fhat": 0.8102210270517389,
+   "budget": {
+    "id": "low90",
+    "ratio": 0.9,
+    "gmac": 1.4778529919999999,
+    "latency_ms": 4.3119
+   },
+   "candidates": 18,
+   "objective": "GMAC only; no latency inputs; surrogate selection only",
+   "certificate": "fixed-multiplier DP exact; constrained projection not certified globally optimal",
+   "group": "full",
+   "axis": "gmac",
+   "search_seconds": 0.6589690270047868,
+   "config_sha": "7ac325c4f94af3f0",
+   "details": {
+    "token_path": [
+     {
+      "block": 0,
+      "n_in": 197,
+      "prune_keep": 197,
+      "merge_keep": 197,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "kappa": 0.0
+     },
+     {
+      "block": 1,
+      "n_in": 197,
+      "prune_keep": 77,
+      "merge_keep": 77,
+      "removed": 120,
+      "merged": 0,
+      "pruned": 120,
+      "theta": 0.0,
+      "kappa": 0.0
+     },
+     {
+      "block": 2,
+      "n_in": 77,
+      "prune_keep": 77,
+      "merge_keep": 77,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "kappa": 0.0
+     },
+     {
+      "block": 3,
+      "n_in": 77,
+      "prune_keep": 77,
+      "merge_keep": 77,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "kappa": 0.0
+     },
+     {
+      "block": 4,
+      "n_in": 77,
+      "prune_keep": 77,
+      "merge_keep": 53,
+      "removed": 24,
+      "merged": 24,
+      "pruned": 0,
+      "theta": 1.0,
+      "kappa": 0.0
+     },
+     {
+      "block": 5,
+      "n_in": 53,
+      "prune_keep": 53,
+      "merge_keep": 53,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "kappa": 0.0
+     },
+     {
+      "block": 6,
+      "n_in": 53,
+      "prune_keep": 41,
+      "merge_keep": 29,
+      "removed": 24,
+      "merged": 12,
+      "pruned": 12,
+      "theta": 0.5,
+      "kappa": 1.0
+     },
+     {
+      "block": 7,
+      "n_in": 29,
+      "prune_keep": 29,
+      "merge_keep": 29,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "kappa": 0.0
+     },
+     {
+      "block": 8,
+      "n_in": 29,
+      "prune_keep": 29,
+      "merge_keep": 29,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "kappa": 0.0
+     },
+     {
+      "block": 9,
+      "n_in": 29,
+      "prune_keep": 29,
+      "merge_keep": 29,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "kappa": 0.0
+     },
+     {
+      "block": 10,
+      "n_in": 29,
+      "prune_keep": 29,
+      "merge_keep": 29,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "kappa": 0.0
+     },
+     {
+      "block": 11,
+      "n_in": 29,
+      "prune_keep": 3,
+      "merge_keep": 3,
+      "removed": 26,
+      "merged": 0,
+      "pruned": 26,
+      "theta": 0.0,
+      "kappa": 0.0
+     }
+    ],
+    "K": 4,
+    "N_D": 1,
+    "final_tokens": 3,
+    "total_gmac": 1.4618849280000004,
+    "backbone_full_gmac": 1.4611660800000004,
+    "d_gmac": 0.000718848,
+    "station_scalar_gops_estimate": 0.000191498
+   },
+   "feature_extrapolation": {
+    "original_gmac": {
+     "value": 1.4322647040000003,
+     "historical_range": [
+      1.634409216,
+      3.923171328
+     ]
+    },
+    "station_io": {
+     "value": 0.13670400000000002,
+     "historical_range": [
+      0.144384,
+      0.37132799999999994
+     ]
+    }
+   },
+   "prediction_main_ms": 4.209024131171359
+  },
+  "replan/low90/m0_p": {
+   "state": {
+    "sites": [
+     1,
+     4,
+     6
+    ],
+    "counts": [
+     78,
+     54,
+     30
+    ],
+    "thetas": [
+     0.0,
+     0.5,
+     0.5
+    ],
+    "ks": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "config": {
+    "kind": "pd",
+    "prune_keep": [
+     197,
+     78,
+     197,
+     197,
+     66,
+     197,
+     42,
+     197,
+     197,
+     197,
+     197,
+     197
+    ],
+    "merge_keep": [
+     197,
+     78,
+     197,
+     197,
+     54,
+     197,
+     30,
+     197,
+     197,
+     197,
+     197,
+     197
+    ],
+    "k": {},
+    "groups": {},
+    "rank": null,
+    "triton": true,
+    "fuse_merge": true
+   },
+   "predicted_ms": 4.197379723755331,
+   "fhat": 0.8978854492306709,
+   "budget_ms": 4.3119,
+   "n_candidates": 5,
+   "certificate": "fixed-multiplier DP exact; constrained multiplier search and ratio projection uncertified",
+   "status": "planned",
+   "gmac": 1.5112281600000006,
+   "group": "replan",
+   "axis": "latency",
+   "budget": {
+    "id": "low90",
+    "ratio": 0.9,
+    "gmac": 1.4778529919999999,
+    "latency_ms": 4.3119
+   },
+   "mode": "M0",
+   "use_d": false,
+   "config_sha": "b4d917ab79b1b20d",
+   "details": {
+    "token_path": [
+     {
+      "block": 0,
+      "n_in": 197,
+      "prune_keep": 197,
+      "merge_keep": 197,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "kappa": 0.0
+     },
+     {
+      "block": 1,
+      "n_in": 197,
+      "prune_keep": 78,
+      "merge_keep": 78,
+      "removed": 119,
+      "merged": 0,
+      "pruned": 119,
+      "theta": 0.0,
+      "kappa": 0.0
+     },
+     {
+      "block": 2,
+      "n_in": 78,
+      "prune_keep": 78,
+      "merge_keep": 78,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "kappa": 0.0
+     },
+     {
+      "block": 3,
+      "n_in": 78,
+      "prune_keep": 78,
+      "merge_keep": 78,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "kappa": 0.0
+     },
+     {
+      "block": 4,
+      "n_in": 78,
+      "prune_keep": 66,
+      "merge_keep": 54,
+      "removed": 24,
+      "merged": 12,
+      "pruned": 12,
+      "theta": 0.5,
+      "kappa": 0.0
+     },
+     {
+      "block": 5,
+      "n_in": 54,
+      "prune_keep": 54,
+      "merge_keep": 54,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "kappa": 0.0
+     },
+     {
+      "block": 6,
+      "n_in": 54,
+      "prune_keep": 42,
+      "merge_keep": 30,
+      "removed": 24,
+      "merged": 12,
+      "pruned": 12,
+      "theta": 0.5,
+      "kappa": 0.0
+     },
+     {
+      "block": 7,
+      "n_in": 30,
+      "prune_keep": 30,
+      "merge_keep": 30,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "kappa": 0.0
+     },
+     {
+      "block": 8,
+      "n_in": 30,
+      "prune_keep": 30,
+      "merge_keep": 30,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "kappa": 0.0
+     },
+     {
+      "block": 9,
+      "n_in": 30,
+      "prune_keep": 30,
+      "merge_keep": 30,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "kappa": 0.0
+     },
+     {
+      "block": 10,
+      "n_in": 30,
+      "prune_keep": 30,
+      "merge_keep": 30,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "kappa": 0.0
+     },
+     {
+      "block": 11,
+      "n_in": 30,
+      "prune_keep": 30,
+      "merge_keep": 30,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "kappa": 0.0
+     }
+    ],
+    "K": 3,
+    "N_D": 0,
+    "final_tokens": 30,
+    "total_gmac": 1.5112281600000006,
+    "backbone_full_gmac": 1.5112281600000006,
+    "d_gmac": 0.0,
+    "station_scalar_gops_estimate": 7.7866e-05
+   },
+   "feature_extrapolation": {
+    "original_gmac": {
+     "value": 1.4823267840000005,
+     "historical_range": [
+      1.634409216,
+      3.923171328
+     ]
+    },
+    "N_D": {
+     "value": 0.0,
+     "historical_range": [
+      1.0,
+      7.0
+     ]
+    },
+    "station_io": {
+     "value": 0.126336,
+     "historical_range": [
+      0.144384,
+      0.37132799999999994
+     ]
+    },
+    "merge_io": {
+     "value": 0.009216,
+     "historical_range": [
+      0.013056000000000002,
+      0.052224000000000007
+     ]
+    },
+    "d_token": {
+     "value": 0.0,
+     "historical_range": [
+      0.000325632,
+      0.005376000000000001
+     ]
+    }
+   },
+   "prediction_main_ms": 4.197379723755331
+  },
+  "fixed/low90/m0_p": {
+   "config": {
+    "kind": "pd",
+    "prune_keep": [
+     197,
+     77,
+     197,
+     197,
+     77,
+     197,
+     41,
+     197,
+     197,
+     197,
+     197,
+     197
+    ],
+    "merge_keep": [
+     197,
+     77,
+     197,
+     197,
+     53,
+     197,
+     29,
+     197,
+     197,
+     197,
+     197,
+     197
+    ],
+    "k": {},
+    "groups": {},
+    "rank": null,
+    "triton": true,
+    "fuse_merge": true
+   },
+   "status": "planned",
+   "group": "fixed",
+   "axis": "fixed_path",
+   "budget": {
+    "id": "low90",
+    "ratio": 0.9,
+    "gmac": 1.4778529919999999,
+    "latency_ms": 4.3119
+   },
+   "mode": "M0",
+   "use_d": false,
+   "state": {
+    "sites": [
+     1,
+     4,
+     6
+    ],
+    "counts": [
+     77,
+     53,
+     29
+    ],
+    "thetas": [
+     0.0,
+     1.0,
+     0.5
+    ],
+    "ks": [
+     0.0,
+     0.0,
+     1.0
+    ]
+   },
+   "gmac": 1.4918369280000003,
+   "note": "same full-method count path; fixed theta/counts, score/operator only",
+   "config_sha": "071e6a6ff2956c41",
+   "details": {
+    "token_path": [
+     {
+      "block": 0,
+      "n_in": 197,
+      "prune_keep": 197,
+      "merge_keep": 197,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "kappa": 0.0
+     },
+     {
+      "block": 1,
+      "n_in": 197,
+      "prune_keep": 77,
+      "merge_keep": 77,
+      "removed": 120,
+      "merged": 0,
+      "pruned": 120,
+      "theta": 0.0,
+      "kappa": 0.0
+     },
+     {
+      "block": 2,
+      "n_in": 77,
+      "prune_keep": 77,
+      "merge_keep": 77,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "kappa": 0.0
+     },
+     {
+      "block": 3,
+      "n_in": 77,
+      "prune_keep": 77,
+      "merge_keep": 77,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "kappa": 0.0
+     },
+     {
+      "block": 4,
+      "n_in": 77,
+      "prune_keep": 77,
+      "merge_keep": 53,
+      "removed": 24,
+      "merged": 24,
+      "pruned": 0,
+      "theta": 1.0,
+      "kappa": 0.0
+     },
+     {
+      "block": 5,
+      "n_in": 53,
+      "prune_keep": 53,
+      "merge_keep": 53,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "kappa": 0.0
+     },
+     {
+      "block": 6,
+      "n_in": 53,
+      "prune_keep": 41,
+      "merge_keep": 29,
+      "removed": 24,
+      "merged": 12,
+      "pruned": 12,
+      "theta": 0.5,
+      "kappa": 0.0
+     },
+     {
+      "block": 7,
+      "n_in": 29,
+      "prune_keep": 29,
+      "merge_keep": 29,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "kappa": 0.0
+     },
+     {
+      "block": 8,
+      "n_in": 29,
+      "prune_keep": 29,
+      "merge_keep": 29,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "kappa": 0.0
+     },
+     {
+      "block": 9,
+      "n_in": 29,
+      "prune_keep": 29,
+      "merge_keep": 29,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "kappa": 0.0
+     },
+     {
+      "block": 10,
+      "n_in": 29,
+      "prune_keep": 29,
+      "merge_keep": 29,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "kappa": 0.0
+     },
+     {
+      "block": 11,
+      "n_in": 29,
+      "prune_keep": 29,
+      "merge_keep": 29,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "kappa": 0.0
+     }
+    ],
+    "K": 3,
+    "N_D": 0,
+    "final_tokens": 29,
+    "total_gmac": 1.4918369280000003,
+    "backbone_full_gmac": 1.4918369280000003,
+    "d_gmac": 0.0,
+    "station_scalar_gops_estimate": 8.1309e-05
+   },
+   "feature_extrapolation": {
+    "original_gmac": {
+     "value": 1.4629355520000002,
+     "historical_range": [
+      1.634409216,
+      3.923171328
+     ]
+    },
+    "N_D": {
+     "value": 0.0,
+     "historical_range": [
+      1.0,
+      7.0
+     ]
+    },
+    "station_io": {
+     "value": 0.125568,
+     "historical_range": [
+      0.144384,
+      0.37132799999999994
+     ]
+    },
+    "d_token": {
+     "value": 0.0,
+     "historical_range": [
+      0.000325632,
+      0.005376000000000001
+     ]
+    }
+   },
+   "prediction_main_ms": 4.149185429987973
+  },
+  "replan/low90/m0_pd": {
+   "state": {
+    "sites": [
+     1,
+     4,
+     6
+    ],
+    "counts": [
+     78,
+     54,
+     30
+    ],
+    "thetas": [
+     0.0,
+     0.5,
+     0.5
+    ],
+    "ks": [
+     0.0,
+     0.0,
+     1.0
+    ]
+   },
+   "config": {
+    "kind": "pd",
+    "prune_keep": [
+     197,
+     78,
+     197,
+     197,
+     66,
+     197,
+     42,
+     197,
+     197,
+     197,
+     197,
+     197
+    ],
+    "merge_keep": [
+     197,
+     78,
+     197,
+     197,
+     54,
+     197,
+     30,
+     197,
+     197,
+     197,
+     197,
+     197
+    ],
+    "k": {
+     "6": 1.0
+    },
+    "groups": {
+     "6": [
+      14,
+      8,
+      13,
+      12,
+      7,
+      13,
+      6,
+      13,
+      13,
+      7,
+      13,
+      13,
+      6,
+      13,
+      14,
+      4,
+      14,
+      7,
+      10,
+      11,
+      5,
+      15,
+      16,
+      8,
+      1,
+      12,
+      2,
+      9,
+      12,
+      3
+     ]
+    },
+    "rank": 32,
+    "triton": true,
+    "fuse_merge": true
+   },
+   "predicted_ms": 4.206045926672884,
+   "fhat": 0.8736142983349662,
+   "budget_ms": 4.3119,
+   "n_candidates": 5,
+   "certificate": "fixed-multiplier DP exact; constrained multiplier search and ratio projection uncertified",
+   "status": "planned",
+   "gmac": 1.5119531520000007,
+   "group": "replan",
+   "axis": "latency",
+   "budget": {
+    "id": "low90",
+    "ratio": 0.9,
+    "gmac": 1.4778529919999999,
+    "latency_ms": 4.3119
+   },
+   "mode": "M0",
+   "use_d": true,
+   "config_sha": "ac12149cc281eb44",
+   "details": {
+    "token_path": [
+     {
+      "block": 0,
+      "n_in": 197,
+      "prune_keep": 197,
+      "merge_keep": 197,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "kappa": 0.0
+     },
+     {
+      "block": 1,
+      "n_in": 197,
+      "prune_keep": 78,
+      "merge_keep": 78,
+      "removed": 119,
+      "merged": 0,
+      "pruned": 119,
+      "theta": 0.0,
+      "kappa": 0.0
+     },
+     {
+      "block": 2,
+      "n_in": 78,
+      "prune_keep": 78,
+      "merge_keep": 78,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "kappa": 0.0
+     },
+     {
+      "block": 3,
+      "n_in": 78,
+      "prune_keep": 78,
+      "merge_keep": 78,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "kappa": 0.0
+     },
+     {
+      "block": 4,
+      "n_in": 78,
+      "prune_keep": 66,
+      "merge_keep": 54,
+      "removed": 24,
+      "merged": 12,
+      "pruned": 12,
+      "theta": 0.5,
+      "kappa": 0.0
+     },
+     {
+      "block": 5,
+      "n_in": 54,
+      "prune_keep": 54,
+      "merge_keep": 54,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "kappa": 0.0
+     },
+     {
+      "block": 6,
+      "n_in": 54,
+      "prune_keep": 42,
+      "merge_keep": 30,
+      "removed": 24,
+      "merged": 12,
+      "pruned": 12,
+      "theta": 0.5,
+      "kappa": 1.0
+     },
+     {
+      "block": 7,
+      "n_in": 30,
+      "prune_keep": 30,
+      "merge_keep": 30,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "kappa": 0.0
+     },
+     {
+      "block": 8,
+      "n_in": 30,
+      "prune_keep": 30,
+      "merge_keep": 30,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "kappa": 0.0
+     },
+     {
+      "block": 9,
+      "n_in": 30,
+      "prune_keep": 30,
+      "merge_keep": 30,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "kappa": 0.0
+     },
+     {
+      "block": 10,
+      "n_in": 30,
+      "prune_keep": 30,
+      "merge_keep": 30,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "kappa": 0.0
+     },
+     {
+      "block": 11,
+      "n_in": 30,
+      "prune_keep": 30,
+      "merge_keep": 30,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "kappa": 0.0
+     }
+    ],
+    "K": 3,
+    "N_D": 1,
+    "final_tokens": 30,
+    "total_gmac": 1.5119531520000007,
+    "backbone_full_gmac": 1.5112281600000006,
+    "d_gmac": 0.000724992,
+    "station_scalar_gops_estimate": 0.000188458
+   },
+   "feature_extrapolation": {
+    "original_gmac": {
+     "value": 1.4823267840000005,
+     "historical_range": [
+      1.634409216,
+      3.923171328
+     ]
+    },
+    "station_io": {
+     "value": 0.126336,
+     "historical_range": [
+      0.144384,
+      0.37132799999999994
+     ]
+    },
+    "merge_io": {
+     "value": 0.009216,
+     "historical_range": [
+      0.013056000000000002,
+      0.052224000000000007
+     ]
+    }
+   },
+   "prediction_main_ms": 4.206045926672884
+  },
+  "fixed/low90/m0_pd": {
+   "config": {
+    "kind": "pd",
+    "prune_keep": [
+     197,
+     77,
+     197,
+     197,
+     77,
+     197,
+     41,
+     197,
+     197,
+     197,
+     197,
+     197
+    ],
+    "merge_keep": [
+     197,
+     77,
+     197,
+     197,
+     53,
+     197,
+     29,
+     197,
+     197,
+     197,
+     197,
+     197
+    ],
+    "k": {
+     "6": 1.0
+    },
+    "groups": {
+     "6": [
+      14,
+      8,
+      13,
+      12,
+      7,
+      13,
+      6,
+      13,
+      13,
+      7,
+      13,
+      13,
+      6,
+      13,
+      14,
+      4,
+      14,
+      7,
+      10,
+      11,
+      5,
+      15,
+      16,
+      8,
+      1,
+      12,
+      2,
+      9,
+      12,
+      3
+     ]
+    },
+    "rank": 32,
+    "triton": true,
+    "fuse_merge": true
+   },
+   "status": "planned",
+   "group": "fixed",
+   "axis": "fixed_path",
+   "budget": {
+    "id": "low90",
+    "ratio": 0.9,
+    "gmac": 1.4778529919999999,
+    "latency_ms": 4.3119
+   },
+   "mode": "M0",
+   "use_d": true,
+   "state": {
+    "sites": [
+     1,
+     4,
+     6
+    ],
+    "counts": [
+     77,
+     53,
+     29
+    ],
+    "thetas": [
+     0.0,
+     1.0,
+     0.5
+    ],
+    "ks": [
+     0.0,
+     0.0,
+     1.0
+    ]
+   },
+   "gmac": 1.4925557760000003,
+   "note": "same full-method count path; fixed theta/counts, score/operator only",
+   "config_sha": "115c0ff066ed8451",
+   "details": {
+    "token_path": [
+     {
+      "block": 0,
+      "n_in": 197,
+      "prune_keep": 197,
+      "merge_keep": 197,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "kappa": 0.0
+     },
+     {
+      "block": 1,
+      "n_in": 197,
+      "prune_keep": 77,
+      "merge_keep": 77,
+      "removed": 120,
+      "merged": 0,
+      "pruned": 120,
+      "theta": 0.0,
+      "kappa": 0.0
+     },
+     {
+      "block": 2,
+      "n_in": 77,
+      "prune_keep": 77,
+      "merge_keep": 77,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "kappa": 0.0
+     },
+     {
+      "block": 3,
+      "n_in": 77,
+      "prune_keep": 77,
+      "merge_keep": 77,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "kappa": 0.0
+     },
+     {
+      "block": 4,
+      "n_in": 77,
+      "prune_keep": 77,
+      "merge_keep": 53,
+      "removed": 24,
+      "merged": 24,
+      "pruned": 0,
+      "theta": 1.0,
+      "kappa": 0.0
+     },
+     {
+      "block": 5,
+      "n_in": 53,
+      "prune_keep": 53,
+      "merge_keep": 53,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "kappa": 0.0
+     },
+     {
+      "block": 6,
+      "n_in": 53,
+      "prune_keep": 41,
+      "merge_keep": 29,
+      "removed": 24,
+      "merged": 12,
+      "pruned": 12,
+      "theta": 0.5,
+      "kappa": 1.0
+     },
+     {
+      "block": 7,
+      "n_in": 29,
+      "prune_keep": 29,
+      "merge_keep": 29,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "kappa": 0.0
+     },
+     {
+      "block": 8,
+      "n_in": 29,
+      "prune_keep": 29,
+      "merge_keep": 29,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "kappa": 0.0
+     },
+     {
+      "block": 9,
+      "n_in": 29,
+      "prune_keep": 29,
+      "merge_keep": 29,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "kappa": 0.0
+     },
+     {
+      "block": 10,
+      "n_in": 29,
+      "prune_keep": 29,
+      "merge_keep": 29,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "kappa": 0.0
+     },
+     {
+      "block": 11,
+      "n_in": 29,
+      "prune_keep": 29,
+      "merge_keep": 29,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "kappa": 0.0
+     }
+    ],
+    "K": 3,
+    "N_D": 1,
+    "final_tokens": 29,
+    "total_gmac": 1.4925557760000003,
+    "backbone_full_gmac": 1.4918369280000003,
+    "d_gmac": 0.000718848,
+    "station_scalar_gops_estimate": 0.000189853
+   },
+   "feature_extrapolation": {
+    "original_gmac": {
+     "value": 1.4629355520000002,
+     "historical_range": [
+      1.634409216,
+      3.923171328
+     ]
+    },
+    "station_io": {
+     "value": 0.125568,
+     "historical_range": [
+      0.144384,
+      0.37132799999999994
+     ]
+    }
+   },
+   "prediction_main_ms": 4.157691147666313
+  },
+  "replan/low90/m3_p": {
+   "state": {
+    "sites": [
+     1,
+     4,
+     6
+    ],
+    "counts": [
+     77,
+     53,
+     29
+    ],
+    "thetas": [
+     0.0,
+     1.0,
+     1.0
+    ],
+    "ks": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "config": {
+    "kind": "pdm",
+    "prune_keep": [
+     197,
+     77,
+     197,
+     197,
+     77,
+     197,
+     53,
+     197,
+     197,
+     197,
+     197,
+     197
+    ],
+    "merge_keep": [
+     197,
+     77,
+     197,
+     197,
+     53,
+     197,
+     29,
+     197,
+     197,
+     197,
+     197,
+     197
+    ],
+    "k": {},
+    "groups": {},
+    "rank": null,
+    "triton": true,
+    "fuse_merge": true,
+    "merge": {
+     "mode": "M3",
+     "kernel": "triton_norm"
+    }
+   },
+   "predicted_ms": 4.172947103345763,
+   "fhat": 0.8237866163253784,
+   "budget_ms": 4.3119,
+   "n_candidates": 5,
+   "certificate": "fixed-multiplier DP exact; constrained multiplier search and ratio projection uncertified",
+   "status": "planned",
+   "gmac": 1.4919705600000004,
+   "group": "replan",
+   "axis": "latency",
+   "budget": {
+    "id": "low90",
+    "ratio": 0.9,
+    "gmac": 1.4778529919999999,
+    "latency_ms": 4.3119
+   },
+   "mode": "M3",
+   "use_d": false,
+   "config_sha": "af86057ab353cca3",
+   "details": {
+    "token_path": [
+     {
+      "block": 0,
+      "n_in": 197,
+      "prune_keep": 197,
+      "merge_keep": 197,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "kappa": 0.0
+     },
+     {
+      "block": 1,
+      "n_in": 197,
+      "prune_keep": 77,
+      "merge_keep": 77,
+      "removed": 120,
+      "merged": 0,
+      "pruned": 120,
+      "theta": 0.0,
+      "kappa": 0.0
+     },
+     {
+      "block": 2,
+      "n_in": 77,
+      "prune_keep": 77,
+      "merge_keep": 77,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "kappa": 0.0
+     },
+     {
+      "block": 3,
+      "n_in": 77,
+      "prune_keep": 77,
+      "merge_keep": 77,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "kappa": 0.0
+     },
+     {
+      "block": 4,
+      "n_in": 77,
+      "prune_keep": 77,
+      "merge_keep": 53,
+      "removed": 24,
+      "merged": 24,
+      "pruned": 0,
+      "theta": 1.0,
+      "kappa": 0.0
+     },
+     {
+      "block": 5,
+      "n_in": 53,
+      "prune_keep": 53,
+      "merge_keep": 53,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "kappa": 0.0
+     },
+     {
+      "block": 6,
+      "n_in": 53,
+      "prune_keep": 53,
+      "merge_keep": 29,
+      "removed": 24,
+      "merged": 24,
+      "pruned": 0,
+      "theta": 1.0,
+      "kappa": 0.0
+     },
+     {
+      "block": 7,
+      "n_in": 29,
+      "prune_keep": 29,
+      "merge_keep": 29,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "kappa": 0.0
+     },
+     {
+      "block": 8,
+      "n_in": 29,
+      "prune_keep": 29,
+      "merge_keep": 29,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "kappa": 0.0
+     },
+     {
+      "block": 9,
+      "n_in": 29,
+      "prune_keep": 29,
+      "merge_keep": 29,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "kappa": 0.0
+     },
+     {
+      "block": 10,
+      "n_in": 29,
+      "prune_keep": 29,
+      "merge_keep": 29,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "kappa": 0.0
+     },
+     {
+      "block": 11,
+      "n_in": 29,
+      "prune_keep": 29,
+      "merge_keep": 29,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "kappa": 0.0
+     }
+    ],
+    "K": 3,
+    "N_D": 0,
+    "final_tokens": 29,
+    "total_gmac": 1.4919705600000004,
+    "backbone_full_gmac": 1.4919705600000004,
+    "d_gmac": 0.0,
+    "station_scalar_gops_estimate": 8.5941e-05
+   },
+   "feature_extrapolation": {
+    "original_gmac": {
+     "value": 1.4630691840000003,
+     "historical_range": [
+      1.634409216,
+      3.923171328
+     ]
+    },
+    "N_D": {
+     "value": 0.0,
+     "historical_range": [
+      1.0,
+      7.0
+     ]
+    },
+    "station_io": {
+     "value": 0.125568,
+     "historical_range": [
+      0.144384,
+      0.37132799999999994
+     ]
+    },
+    "d_token": {
+     "value": 0.0,
+     "historical_range": [
+      0.000325632,
+      0.005376000000000001
+     ]
+    }
+   },
+   "prediction_main_ms": 4.172947103345763
+  },
+  "fixed/low90/m3_p": {
+   "config": {
+    "kind": "pdm",
+    "prune_keep": [
+     197,
+     77,
+     197,
+     197,
+     77,
+     197,
+     41,
+     197,
+     197,
+     197,
+     197,
+     197
+    ],
+    "merge_keep": [
+     197,
+     77,
+     197,
+     197,
+     53,
+     197,
+     29,
+     197,
+     197,
+     197,
+     197,
+     197
+    ],
+    "k": {},
+    "groups": {},
+    "rank": null,
+    "triton": true,
+    "fuse_merge": true,
+    "merge": {
+     "mode": "M3",
+     "kernel": "triton_norm"
+    }
+   },
+   "status": "planned",
+   "group": "fixed",
+   "axis": "fixed_path",
+   "budget": {
+    "id": "low90",
+    "ratio": 0.9,
+    "gmac": 1.4778529919999999,
+    "latency_ms": 4.3119
+   },
+   "mode": "M3",
+   "use_d": false,
+   "state": {
+    "sites": [
+     1,
+     4,
+     6
+    ],
+    "counts": [
+     77,
+     53,
+     29
+    ],
+    "thetas": [
+     0.0,
+     1.0,
+     0.5
+    ],
+    "ks": [
+     0.0,
+     0.0,
+     1.0
+    ]
+   },
+   "gmac": 1.4918369280000003,
+   "note": "same full-method count path; fixed theta/counts, score/operator only",
+   "config_sha": "680118eb1120701f",
+   "details": {
+    "token_path": [
+     {
+      "block": 0,
+      "n_in": 197,
+      "prune_keep": 197,
+      "merge_keep": 197,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "kappa": 0.0
+     },
+     {
+      "block": 1,
+      "n_in": 197,
+      "prune_keep": 77,
+      "merge_keep": 77,
+      "removed": 120,
+      "merged": 0,
+      "pruned": 120,
+      "theta": 0.0,
+      "kappa": 0.0
+     },
+     {
+      "block": 2,
+      "n_in": 77,
+      "prune_keep": 77,
+      "merge_keep": 77,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "kappa": 0.0
+     },
+     {
+      "block": 3,
+      "n_in": 77,
+      "prune_keep": 77,
+      "merge_keep": 77,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "kappa": 0.0
+     },
+     {
+      "block": 4,
+      "n_in": 77,
+      "prune_keep": 77,
+      "merge_keep": 53,
+      "removed": 24,
+      "merged": 24,
+      "pruned": 0,
+      "theta": 1.0,
+      "kappa": 0.0
+     },
+     {
+      "block": 5,
+      "n_in": 53,
+      "prune_keep": 53,
+      "merge_keep": 53,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "kappa": 0.0
+     },
+     {
+      "block": 6,
+      "n_in": 53,
+      "prune_keep": 41,
+      "merge_keep": 29,
+      "removed": 24,
+      "merged": 12,
+      "pruned": 12,
+      "theta": 0.5,
+      "kappa": 0.0
+     },
+     {
+      "block": 7,
+      "n_in": 29,
+      "prune_keep": 29,
+      "merge_keep": 29,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "kappa": 0.0
+     },
+     {
+      "block": 8,
+      "n_in": 29,
+      "prune_keep": 29,
+      "merge_keep": 29,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "kappa": 0.0
+     },
+     {
+      "block": 9,
+      "n_in": 29,
+      "prune_keep": 29,
+      "merge_keep": 29,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "kappa": 0.0
+     },
+     {
+      "block": 10,
+      "n_in": 29,
+      "prune_keep": 29,
+      "merge_keep": 29,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "kappa": 0.0
+     },
+     {
+      "block": 11,
+      "n_in": 29,
+      "prune_keep": 29,
+      "merge_keep": 29,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "kappa": 0.0
+     }
+    ],
+    "K": 3,
+    "N_D": 0,
+    "final_tokens": 29,
+    "total_gmac": 1.4918369280000003,
+    "backbone_full_gmac": 1.4918369280000003,
+    "d_gmac": 0.0,
+    "station_scalar_gops_estimate": 8.1309e-05
+   },
+   "feature_extrapolation": {
+    "original_gmac": {
+     "value": 1.4629355520000002,
+     "historical_range": [
+      1.634409216,
+      3.923171328
+     ]
+    },
+    "N_D": {
+     "value": 0.0,
+     "historical_range": [
+      1.0,
+      7.0
+     ]
+    },
+    "station_io": {
+     "value": 0.125568,
+     "historical_range": [
+      0.144384,
+      0.37132799999999994
+     ]
+    },
+    "d_token": {
+     "value": 0.0,
+     "historical_range": [
+      0.000325632,
+      0.005376000000000001
+     ]
+    }
+   },
+   "prediction_main_ms": 4.172040462201388
+  },
+  "pricing/low90/no_overhead": {
+   "state": {
+    "sites": [
+     1,
+     4,
+     5,
+     11
+    ],
+    "counts": [
+     84,
+     60,
+     35,
+     5
+    ],
+    "thetas": [
+     0.0,
+     1.0,
+     1.0,
+     0.0
+    ],
+    "ks": [
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "config": {
+    "kind": "pdm",
+    "prune_keep": [
+     197,
+     84,
+     197,
+     197,
+     84,
+     60,
+     197,
+     197,
+     197,
+     197,
+     197,
+     5
+    ],
+    "merge_keep": [
+     197,
+     84,
+     197,
+     197,
+     60,
+     35,
+     197,
+     197,
+     197,
+     197,
+     197,
+     5
+    ],
+    "k": {},
+    "groups": {},
+    "rank": null,
+    "triton": true,
+    "fuse_merge": true,
+    "merge": {
+     "mode": "M3",
+     "kernel": "triton_norm"
+    }
+   },
+   "predicted_ms": 4.199586208249099,
+   "fhat": 0.7964883895153597,
+   "budget_ms": 4.3119,
+   "n_candidates": 4,
+   "certificate": "fixed-multiplier DP exact; constrained multiplier search and ratio projection uncertified",
+   "status": "planned",
+   "gmac": 1.5380486399999997,
+   "group": "pricing",
+   "axis": "latency",
+   "budget": {
+    "id": "low90",
+    "ratio": 0.9,
+    "gmac": 1.4778529919999999,
+    "latency_ms": 4.3119
+   },
+   "config_sha": "3837812665ca50b3",
+   "details": {
+    "token_path": [
+     {
+      "block": 0,
+      "n_in": 197,
+      "prune_keep": 197,
+      "merge_keep": 197,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "kappa": 0.0
+     },
+     {
+      "block": 1,
+      "n_in": 197,
+      "prune_keep": 84,
+      "merge_keep": 84,
+      "removed": 113,
+      "merged": 0,
+      "pruned": 113,
+      "theta": 0.0,
+      "kappa": 0.0
+     },
+     {
+      "block": 2,
+      "n_in": 84,
+      "prune_keep": 84,
+      "merge_keep": 84,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "kappa": 0.0
+     },
+     {
+      "block": 3,
+      "n_in": 84,
+      "prune_keep": 84,
+      "merge_keep": 84,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "kappa": 0.0
+     },
+     {
+      "block": 4,
+      "n_in": 84,
+      "prune_keep": 84,
+      "merge_keep": 60,
+      "removed": 24,
+      "merged": 24,
+      "pruned": 0,
+      "theta": 1.0,
+      "kappa": 0.0
+     },
+     {
+      "block": 5,
+      "n_in": 60,
+      "prune_keep": 60,
+      "merge_keep": 35,
+      "removed": 25,
+      "merged": 25,
+      "pruned": 0,
+      "theta": 1.0,
+      "kappa": 0.0
+     },
+     {
+      "block": 6,
+      "n_in": 35,
+      "prune_keep": 35,
+      "merge_keep": 35,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "kappa": 0.0
+     },
+     {
+      "block": 7,
+      "n_in": 35,
+      "prune_keep": 35,
+      "merge_keep": 35,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "kappa": 0.0
+     },
+     {
+      "block": 8,
+      "n_in": 35,
+      "prune_keep": 35,
+      "merge_keep": 35,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "kappa": 0.0
+     },
+     {
+      "block": 9,
+      "n_in": 35,
+      "prune_keep": 35,
+      "merge_keep": 35,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "kappa": 0.0
+     },
+     {
+      "block": 10,
+      "n_in": 35,
+      "prune_keep": 35,
+      "merge_keep": 35,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "kappa": 0.0
+     },
+     {
+      "block": 11,
+      "n_in": 35,
+      "prune_keep": 5,
+      "merge_keep": 5,
+      "removed": 30,
+      "merged": 0,
+      "pruned": 30,
+      "theta": 0.0,
+      "kappa": 0.0
+     }
+    ],
+    "K": 4,
+    "N_D": 0,
+    "final_tokens": 5,
+    "total_gmac": 1.5380486399999997,
+    "backbone_full_gmac": 1.5380486399999997,
+    "d_gmac": 0.0,
+    "station_scalar_gops_estimate": 9.6816e-05
+   },
+   "feature_extrapolation": {
+    "original_gmac": {
+     "value": 1.5091472639999997,
+     "historical_range": [
+      1.634409216,
+      3.923171328
+     ]
+    },
+    "N_D": {
+     "value": 0.0,
+     "historical_range": [
+      1.0,
+      7.0
+     ]
+    },
+    "d_token": {
+     "value": 0.0,
+     "historical_range": [
+      0.000325632,
+      0.005376000000000001
+     ]
+    }
+   },
+   "prediction_main_ms": 4.3934668345202565
+  },
+  "full/latency/low80": {
+   "state": {
+    "sites": [
+     1,
+     4
+    ],
+    "counts": [
+     71,
+     28
+    ],
+    "thetas": [
+     0.0,
+     1.0
+    ],
+    "ks": [
+     0.0,
+     2.0
+    ]
+   },
+   "config": {
+    "kind": "pdm",
+    "prune_keep": [
+     197,
+     71,
+     197,
+     197,
+     71,
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     197
+    ],
+    "merge_keep": [
+     197,
+     71,
+     197,
+     197,
+     28,
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     197
+    ],
+    "k": {
+     "4": 2.0
+    },
+    "groups": {
+     "4": [
+      3,
+      5,
+      4,
+      3,
+      6,
+      3,
+      3,
+      8,
+      8,
+      3,
+      3,
+      3,
+      13,
+      8,
+      12,
+      7,
+      8,
+      13,
+      11,
+      12,
+      12,
+      11,
+      12,
+      12,
+      11,
+      10,
+      11,
+      7,
+      9,
+      11,
+      14,
+      14,
+      15,
+      9,
+      16,
+      15,
+      1,
+      15,
+      1,
+      15,
+      15,
+      2
+     ]
+    },
+    "rank": 32,
+    "triton": true,
+    "fuse_merge": true,
+    "merge": {
+     "mode": "M3",
+     "kernel": "triton_norm"
+    }
+   },
+   "predicted_ms": 3.729457103066524,
+   "fhat": 1.503432004354321,
+   "budget_ms": 3.8327999999999998,
+   "n_candidates": 5,
+   "certificate": "fixed-multiplier DP exact; constrained multiplier search and ratio projection uncertified",
+   "status": "planned",
+   "gmac": 1.356752256000001,
+   "group": "full",
+   "axis": "latency",
+   "budget": {
+    "id": "low80",
+    "ratio": 0.8,
+    "gmac": 1.313647104,
+    "latency_ms": 3.8327999999999998
+   },
+   "search_seconds": 0.394742189993849,
+   "config_sha": "788fa27f2fa793f4",
+   "details": {
+    "token_path": [
+     {
+      "block": 0,
+      "n_in": 197,
+      "prune_keep": 197,
+      "merge_keep": 197,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "kappa": 0.0
+     },
+     {
+      "block": 1,
+      "n_in": 197,
+      "prune_keep": 71,
+      "merge_keep": 71,
+      "removed": 126,
+      "merged": 0,
+      "pruned": 126,
+      "theta": 0.0,
+      "kappa": 0.0
+     },
+     {
+      "block": 2,
+      "n_in": 71,
+      "prune_keep": 71,
+      "merge_keep": 71,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "kappa": 0.0
+     },
+     {
+      "block": 3,
+      "n_in": 71,
+      "prune_keep": 71,
+      "merge_keep": 71,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "kappa": 0.0
+     },
+     {
+      "block": 4,
+      "n_in": 71,
+      "prune_keep": 71,
+      "merge_keep": 28,
+      "removed": 43,
+      "merged": 43,
+      "pruned": 0,
+      "theta": 1.0,
+      "kappa": 2.0
+     },
+     {
+      "block": 5,
+      "n_in": 28,
+      "prune_keep": 28,
+      "merge_keep": 28,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "kappa": 0.0
+     },
+     {
+      "block": 6,
+      "n_in": 28,
+      "prune_keep": 28,
+      "merge_keep": 28,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "kappa": 0.0
+     },
+     {
+      "block": 7,
+      "n_in": 28,
+      "prune_keep": 28,
+      "merge_keep": 28,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "kappa": 0.0
+     },
+     {
+      "block": 8,
+      "n_in": 28,
+      "prune_keep": 28,
+      "merge_keep": 28,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "kappa": 0.0
+     },
+     {
+      "block": 9,
+      "n_in": 28,
+      "prune_keep": 28,
+      "merge_keep": 28,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "kappa": 0.0
+     },
+     {
+      "block": 10,
+      "n_in": 28,
+      "prune_keep": 28,
+      "merge_keep": 28,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "kappa": 0.0
+     },
+     {
+      "block": 11,
+      "n_in": 28,
+      "prune_keep": 28,
+      "merge_keep": 28,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "kappa": 0.0
+     }
+    ],
+    "K": 2,
+    "N_D": 1,
+    "final_tokens": 28,
+    "total_gmac": 1.356752256000001,
+    "backbone_full_gmac": 1.355922816000001,
+    "d_gmac": 0.00082944,
+    "station_scalar_gops_estimate": 0.000205311
+   },
+   "feature_extrapolation": {
+    "original_gmac": {
+     "value": 1.3270214400000009,
+     "historical_range": [
+      1.634409216,
+      3.923171328
+     ]
+    },
+    "K": {
+     "value": 2.0,
+     "historical_range": [
+      3.0,
+      8.0
+     ]
+    },
+    "station_io": {
+     "value": 0.102912,
+     "historical_range": [
+      0.144384,
+      0.37132799999999994
+     ]
+    }
+   },
+   "prediction_main_ms": 3.729457103066524
+  },
+  "full/gmac/low80": {
+   "state": {
+    "sites": [
+     1,
+     3,
+     4,
+     11
+    ],
+    "counts": [
+     76,
+     52,
+     28,
+     3
+    ],
+    "thetas": [
+     0.0,
+     1.0,
+     0.5,
+     0.0
+    ],
+    "ks": [
+     0.0,
+     3.0,
+     1.0,
+     0.0
+    ]
+   },
+   "config": {
+    "kind": "pdm",
+    "prune_keep": [
+     197,
+     76,
+     197,
+     76,
+     40,
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     3
+    ],
+    "merge_keep": [
+     197,
+     76,
+     197,
+     52,
+     28,
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     3
+    ],
+    "k": {
+     "3": 3.0,
+     "4": 1.0
+    },
+    "groups": {
+     "3": [
+      10,
+      13,
+      14,
+      13,
+      12,
+      10,
+      13,
+      10,
+      13,
+      13,
+      11,
+      13,
+      13,
+      15,
+      15,
+      13,
+      13,
+      12,
+      5,
+      15,
+      5,
+      15,
+      15,
+      4,
+      5,
+      5,
+      5,
+      6,
+      5,
+      5,
+      4,
+      3,
+      3,
+      16,
+      3,
+      4,
+      7,
+      7,
+      9,
+      3,
+      5,
+      4,
+      1,
+      8,
+      1,
+      8,
+      8,
+      2
+     ],
+     "4": [
+      3,
+      5,
+      4,
+      3,
+      6,
+      3,
+      3,
+      8,
+      8,
+      3,
+      3,
+      3,
+      13,
+      8,
+      12,
+      7,
+      8,
+      13,
+      11,
+      12,
+      12,
+      11,
+      12,
+      12,
+      11,
+      10,
+      11,
+      7,
+      9,
+      11,
+      14,
+      14,
+      15,
+      9,
+      16,
+      15,
+      1,
+      15,
+      1,
+      15,
+      15,
+      2
+     ]
+    },
+    "rank": 32,
+    "triton": true,
+    "fuse_merge": true,
+    "merge": {
+     "mode": "M3",
+     "kernel": "triton_norm"
+    }
+   },
+   "gmac": 1.3115558400000007,
+   "fhat": 1.5066017543518124,
+   "budget": {
+    "id": "low80",
+    "ratio": 0.8,
+    "gmac": 1.313647104,
+    "latency_ms": 3.8327999999999998
+   },
+   "candidates": 17,
+   "objective": "GMAC only; no latency inputs; surrogate selection only",
+   "certificate": "fixed-multiplier DP exact; constrained projection not certified globally optimal",
+   "group": "full",
+   "axis": "gmac",
+   "search_seconds": 0.6365804240049329,
+   "config_sha": "9768fd37deb8f73c",
+   "details": {
+    "token_path": [
+     {
+      "block": 0,
+      "n_in": 197,
+      "prune_keep": 197,
+      "merge_keep": 197,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "kappa": 0.0
+     },
+     {
+      "block": 1,
+      "n_in": 197,
+      "prune_keep": 76,
+      "merge_keep": 76,
+      "removed": 121,
+      "merged": 0,
+      "pruned": 121,
+      "theta": 0.0,
+      "kappa": 0.0
+     },
+     {
+      "block": 2,
+      "n_in": 76,
+      "prune_keep": 76,
+      "merge_keep": 76,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "kappa": 0.0
+     },
+     {
+      "block": 3,
+      "n_in": 76,
+      "prune_keep": 76,
+      "merge_keep": 52,
+      "removed": 24,
+      "merged": 24,
+      "pruned": 0,
+      "theta": 1.0,
+      "kappa": 3.0
+     },
+     {
+      "block": 4,
+      "n_in": 52,
+      "prune_keep": 40,
+      "merge_keep": 28,
+      "removed": 24,
+      "merged": 12,
+      "pruned": 12,
+      "theta": 0.5,
+      "kappa": 1.0
+     },
+     {
+      "block": 5,
+      "n_in": 28,
+      "prune_keep": 28,
+      "merge_keep": 28,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "kappa": 0.0
+     },
+     {
+      "block": 6,
+      "n_in": 28,
+      "prune_keep": 28,
+      "merge_keep": 28,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "kappa": 0.0
+     },
+     {
+      "block": 7,
+      "n_in": 28,
+      "prune_keep": 28,
+      "merge_keep": 28,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "kappa": 0.0
+     },
+     {
+      "block": 8,
+      "n_in": 28,
+      "prune_keep": 28,
+      "merge_keep": 28,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "kappa": 0.0
+     },
+     {
+      "block": 9,
+      "n_in": 28,
+      "prune_keep": 28,
+      "merge_keep": 28,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "kappa": 0.0
+     },
+     {
+      "block": 10,
+      "n_in": 28,
+      "prune_keep": 28,
+      "merge_keep": 28,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "kappa": 0.0
+     },
+     {
+      "block": 11,
+      "n_in": 28,
+      "prune_keep": 3,
+      "merge_keep": 3,
+      "removed": 25,
+      "merged": 0,
+      "pruned": 25,
+      "theta": 0.0,
+      "kappa": 0.0
+     }
+    ],
+    "K": 4,
+    "N_D": 2,
+    "final_tokens": 3,
+    "total_gmac": 1.3115558400000007,
+    "backbone_full_gmac": 1.3099829760000008,
+    "d_gmac": 0.001572864,
+    "station_scalar_gops_estimate": 0.000343892
+   },
+   "feature_extrapolation": {
+    "original_gmac": {
+     "value": 1.2810816000000007,
+     "historical_range": [
+      1.634409216,
+      3.923171328
+     ]
+    },
+    "station_io": {
+     "value": 0.135552,
+     "historical_range": [
+      0.144384,
+      0.37132799999999994
+     ]
+    }
+   },
+   "prediction_main_ms": 3.845123788557271
+  },
+  "replan/low80/m0_p": {
+   "state": {
+    "sites": [
+     1,
+     6
+    ],
+    "counts": [
+     53,
+     29
+    ],
+    "thetas": [
+     0.0,
+     0.5
+    ],
+    "ks": [
+     0.0,
+     0.0
+    ]
+   },
+   "config": {
+    "kind": "pd",
+    "prune_keep": [
+     197,
+     53,
+     197,
+     197,
+     197,
+     197,
+     41,
+     197,
+     197,
+     197,
+     197,
+     197
+    ],
+    "merge_keep": [
+     197,
+     53,
+     197,
+     197,
+     197,
+     197,
+     29,
+     197,
+     197,
+     197,
+     197,
+     197
+    ],
+    "k": {},
+    "groups": {},
+    "rank": null,
+    "triton": true,
+    "fuse_merge": true
+   },
+   "predicted_ms": 3.7086900730388335,
+   "fhat": 1.4960164427757263,
+   "budget_ms": 3.8327999999999998,
+   "n_candidates": 4,
+   "certificate": "fixed-multiplier DP exact; constrained multiplier search and ratio projection uncertified",
+   "status": "planned",
+   "gmac": 1.3567303680000002,
+   "group": "replan",
+   "axis": "latency",
+   "budget": {
+    "id": "low80",
+    "ratio": 0.8,
+    "gmac": 1.313647104,
+    "latency_ms": 3.8327999999999998
+   },
+   "mode": "M0",
+   "use_d": false,
+   "config_sha": "a0562d355596d9b9",
+   "details": {
+    "token_path": [
+     {
+      "block": 0,
+      "n_in": 197,
+      "prune_keep": 197,
+      "merge_keep": 197,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "kappa": 0.0
+     },
+     {
+      "block": 1,
+      "n_in": 197,
+      "prune_keep": 53,
+      "merge_keep": 53,
+      "removed": 144,
+      "merged": 0,
+      "pruned": 144,
+      "theta": 0.0,
+      "kappa": 0.0
+     },
+     {
+      "block": 2,
+      "n_in": 53,
+      "prune_keep": 53,
+      "merge_keep": 53,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "kappa": 0.0
+     },
+     {
+      "block": 3,
+      "n_in": 53,
+      "prune_keep": 53,
+      "merge_keep": 53,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "kappa": 0.0
+     },
+     {
+      "block": 4,
+      "n_in": 53,
+      "prune_keep": 53,
+      "merge_keep": 53,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "kappa": 0.0
+     },
+     {
+      "block": 5,
+      "n_in": 53,
+      "prune_keep": 53,
+      "merge_keep": 53,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "kappa": 0.0
+     },
+     {
+      "block": 6,
+      "n_in": 53,
+      "prune_keep": 41,
+      "merge_keep": 29,
+      "removed": 24,
+      "merged": 12,
+      "pruned": 12,
+      "theta": 0.5,
+      "kappa": 0.0
+     },
+     {
+      "block": 7,
+      "n_in": 29,
+      "prune_keep": 29,
+      "merge_keep": 29,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "kappa": 0.0
+     },
+     {
+      "block": 8,
+      "n_in": 29,
+      "prune_keep": 29,
+      "merge_keep": 29,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "kappa": 0.0
+     },
+     {
+      "block": 9,
+      "n_in": 29,
+      "prune_keep": 29,
+      "merge_keep": 29,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "kappa": 0.0
+     },
+     {
+      "block": 10,
+      "n_in": 29,
+      "prune_keep": 29,
+      "merge_keep": 29,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "kappa": 0.0
+     },
+     {
+      "block": 11,
+      "n_in": 29,
+      "prune_keep": 29,
+      "merge_keep": 29,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "kappa": 0.0
+     }
+    ],
+    "K": 2,
+    "N_D": 0,
+    "final_tokens": 29,
+    "total_gmac": 1.3567303680000002,
+    "backbone_full_gmac": 1.3567303680000002,
+    "d_gmac": 0.0,
+    "station_scalar_gops_estimate": 4.1014e-05
+   },
+   "feature_extrapolation": {
+    "original_gmac": {
+     "value": 1.3278289920000002,
+     "historical_range": [
+      1.634409216,
+      3.923171328
+     ]
+    },
+    "K": {
+     "value": 2.0,
+     "historical_range": [
+      3.0,
+      8.0
+     ]
+    },
+    "N_D": {
+     "value": 0.0,
+     "historical_range": [
+      1.0,
+      7.0
+     ]
+    },
+    "station_io": {
+     "value": 0.096,
+     "historical_range": [
+      0.144384,
+      0.37132799999999994
+     ]
+    },
+    "merge_io": {
+     "value": 0.004608,
+     "historical_range": [
+      0.013056000000000002,
+      0.052224000000000007
+     ]
+    },
+    "d_token": {
+     "value": 0.0,
+     "historical_range": [
+      0.000325632,
+      0.005376000000000001
+     ]
+    }
+   },
+   "prediction_main_ms": 3.7086900730388335
+  },
+  "fixed/low80/m0_p": {
+   "config": {
+    "kind": "pd",
+    "prune_keep": [
+     197,
+     71,
+     197,
+     197,
+     71,
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     197
+    ],
+    "merge_keep": [
+     197,
+     71,
+     197,
+     197,
+     28,
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     197
+    ],
+    "k": {},
+    "groups": {},
+    "rank": null,
+    "triton": true,
+    "fuse_merge": true
+   },
+   "status": "planned",
+   "group": "fixed",
+   "axis": "fixed_path",
+   "budget": {
+    "id": "low80",
+    "ratio": 0.8,
+    "gmac": 1.313647104,
+    "latency_ms": 3.8327999999999998
+   },
+   "mode": "M0",
+   "use_d": false,
+   "state": {
+    "sites": [
+     1,
+     4
+    ],
+    "counts": [
+     71,
+     28
+    ],
+    "thetas": [
+     0.0,
+     1.0
+    ],
+    "ks": [
+     0.0,
+     2.0
+    ]
+   },
+   "gmac": 1.355922816000001,
+   "note": "same full-method count path; fixed theta/counts, score/operator only",
+   "config_sha": "2418d287514f7216",
+   "details": {
+    "token_path": [
+     {
+      "block": 0,
+      "n_in": 197,
+      "prune_keep": 197,
+      "merge_keep": 197,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "kappa": 0.0
+     },
+     {
+      "block": 1,
+      "n_in": 197,
+      "prune_keep": 71,
+      "merge_keep": 71,
+      "removed": 126,
+      "merged": 0,
+      "pruned": 126,
+      "theta": 0.0,
+      "kappa": 0.0
+     },
+     {
+      "block": 2,
+      "n_in": 71,
+      "prune_keep": 71,
+      "merge_keep": 71,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "kappa": 0.0
+     },
+     {
+      "block": 3,
+      "n_in": 71,
+      "prune_keep": 71,
+      "merge_keep": 71,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "kappa": 0.0
+     },
+     {
+      "block": 4,
+      "n_in": 71,
+      "prune_keep": 71,
+      "merge_keep": 28,
+      "removed": 43,
+      "merged": 43,
+      "pruned": 0,
+      "theta": 1.0,
+      "kappa": 0.0
+     },
+     {
+      "block": 5,
+      "n_in": 28,
+      "prune_keep": 28,
+      "merge_keep": 28,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "kappa": 0.0
+     },
+     {
+      "block": 6,
+      "n_in": 28,
+      "prune_keep": 28,
+      "merge_keep": 28,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "kappa": 0.0
+     },
+     {
+      "block": 7,
+      "n_in": 28,
+      "prune_keep": 28,
+      "merge_keep": 28,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "kappa": 0.0
+     },
+     {
+      "block": 8,
+      "n_in": 28,
+      "prune_keep": 28,
+      "merge_keep": 28,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "kappa": 0.0
+     },
+     {
+      "block": 9,
+      "n_in": 28,
+      "prune_keep": 28,
+      "merge_keep": 28,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "kappa": 0.0
+     },
+     {
+      "block": 10,
+      "n_in": 28,
+      "prune_keep": 28,
+      "merge_keep": 28,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "kappa": 0.0
+     },
+     {
+      "block": 11,
+      "n_in": 28,
+      "prune_keep": 28,
+      "merge_keep": 28,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "kappa": 0.0
+     }
+    ],
+    "K": 2,
+    "N_D": 0,
+    "final_tokens": 28,
+    "total_gmac": 1.355922816000001,
+    "backbone_full_gmac": 1.355922816000001,
+    "d_gmac": 0.0,
+    "station_scalar_gops_estimate": 5.9903e-05
+   },
+   "feature_extrapolation": {
+    "original_gmac": {
+     "value": 1.3270214400000009,
+     "historical_range": [
+      1.634409216,
+      3.923171328
+     ]
+    },
+    "K": {
+     "value": 2.0,
+     "historical_range": [
+      3.0,
+      8.0
+     ]
+    },
+    "N_D": {
+     "value": 0.0,
+     "historical_range": [
+      1.0,
+      7.0
+     ]
+    },
+    "station_io": {
+     "value": 0.102912,
+     "historical_range": [
+      0.144384,
+      0.37132799999999994
+     ]
+    },
+    "d_token": {
+     "value": 0.0,
+     "historical_range": [
+      0.000325632,
+      0.005376000000000001
+     ]
+    }
+   },
+   "prediction_main_ms": 3.7066830113771307
+  },
+  "replan/low80/m0_pd": {
+   "state": {
+    "sites": [
+     1,
+     6
+    ],
+    "counts": [
+     53,
+     29
+    ],
+    "thetas": [
+     0.0,
+     0.5
+    ],
+    "ks": [
+     0.0,
+     1.0
+    ]
+   },
+   "config": {
+    "kind": "pd",
+    "prune_keep": [
+     197,
+     53,
+     197,
+     197,
+     197,
+     197,
+     41,
+     197,
+     197,
+     197,
+     197,
+     197
+    ],
+    "merge_keep": [
+     197,
+     53,
+     197,
+     197,
+     197,
+     197,
+     29,
+     197,
+     197,
+     197,
+     197,
+     197
+    ],
+    "k": {
+     "6": 1.0
+    },
+    "groups": {
+     "6": [
+      14,
+      8,
+      13,
+      12,
+      7,
+      13,
+      6,
+      13,
+      13,
+      7,
+      13,
+      13,
+      6,
+      13,
+      14,
+      4,
+      14,
+      7,
+      10,
+      11,
+      5,
+      15,
+      16,
+      8,
+      1,
+      12,
+      2,
+      9,
+      12,
+      3
+     ]
+    },
+    "rank": 32,
+    "triton": true,
+    "fuse_merge": true
+   },
+   "predicted_ms": 3.7171957907171724,
+   "fhat": 1.4709806218743324,
+   "budget_ms": 3.8327999999999998,
+   "n_candidates": 4,
+   "certificate": "fixed-multiplier DP exact; constrained multiplier search and ratio projection uncertified",
+   "status": "planned",
+   "gmac": 1.3574492160000002,
+   "group": "replan",
+   "axis": "latency",
+   "budget": {
+    "id": "low80",
+    "ratio": 0.8,
+    "gmac": 1.313647104,
+    "latency_ms": 3.8327999999999998
+   },
+   "mode": "M0",
+   "use_d": true,
+   "config_sha": "c53c690e6affe320",
+   "details": {
+    "token_path": [
+     {
+      "block": 0,
+      "n_in": 197,
+      "prune_keep": 197,
+      "merge_keep": 197,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "kappa": 0.0
+     },
+     {
+      "block": 1,
+      "n_in": 197,
+      "prune_keep": 53,
+      "merge_keep": 53,
+      "removed": 144,
+      "merged": 0,
+      "pruned": 144,
+      "theta": 0.0,
+      "kappa": 0.0
+     },
+     {
+      "block": 2,
+      "n_in": 53,
+      "prune_keep": 53,
+      "merge_keep": 53,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "kappa": 0.0
+     },
+     {
+      "block": 3,
+      "n_in": 53,
+      "prune_keep": 53,
+      "merge_keep": 53,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "kappa": 0.0
+     },
+     {
+      "block": 4,
+      "n_in": 53,
+      "prune_keep": 53,
+      "merge_keep": 53,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "kappa": 0.0
+     },
+     {
+      "block": 5,
+      "n_in": 53,
+      "prune_keep": 53,
+      "merge_keep": 53,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "kappa": 0.0
+     },
+     {
+      "block": 6,
+      "n_in": 53,
+      "prune_keep": 41,
+      "merge_keep": 29,
+      "removed": 24,
+      "merged": 12,
+      "pruned": 12,
+      "theta": 0.5,
+      "kappa": 1.0
+     },
+     {
+      "block": 7,
+      "n_in": 29,
+      "prune_keep": 29,
+      "merge_keep": 29,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "kappa": 0.0
+     },
+     {
+      "block": 8,
+      "n_in": 29,
+      "prune_keep": 29,
+      "merge_keep": 29,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "kappa": 0.0
+     },
+     {
+      "block": 9,
+      "n_in": 29,
+      "prune_keep": 29,
+      "merge_keep": 29,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "kappa": 0.0
+     },
+     {
+      "block": 10,
+      "n_in": 29,
+      "prune_keep": 29,
+      "merge_keep": 29,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "kappa": 0.0
+     },
+     {
+      "block": 11,
+      "n_in": 29,
+      "prune_keep": 29,
+      "merge_keep": 29,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "kappa": 0.0
+     }
+    ],
+    "K": 2,
+    "N_D": 1,
+    "final_tokens": 29,
+    "total_gmac": 1.3574492160000002,
+    "backbone_full_gmac": 1.3567303680000002,
+    "d_gmac": 0.000718848,
+    "station_scalar_gops_estimate": 0.000149558
+   },
+   "feature_extrapolation": {
+    "original_gmac": {
+     "value": 1.3278289920000002,
+     "historical_range": [
+      1.634409216,
+      3.923171328
+     ]
+    },
+    "K": {
+     "value": 2.0,
+     "historical_range": [
+      3.0,
+      8.0
+     ]
+    },
+    "station_io": {
+     "value": 0.096,
+     "historical_range": [
+      0.144384,
+      0.37132799999999994
+     ]
+    },
+    "merge_io": {
+     "value": 0.004608,
+     "historical_range": [
+      0.013056000000000002,
+      0.052224000000000007
+     ]
+    }
+   },
+   "prediction_main_ms": 3.7171957907171724
+  },
+  "fixed/low80/m0_pd": {
+   "config": {
+    "kind": "pd",
+    "prune_keep": [
+     197,
+     71,
+     197,
+     197,
+     71,
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     197
+    ],
+    "merge_keep": [
+     197,
+     71,
+     197,
+     197,
+     28,
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     197
+    ],
+    "k": {
+     "4": 2.0
+    },
+    "groups": {
+     "4": [
+      3,
+      5,
+      4,
+      3,
+      6,
+      3,
+      3,
+      8,
+      8,
+      3,
+      3,
+      3,
+      13,
+      8,
+      12,
+      7,
+      8,
+      13,
+      11,
+      12,
+      12,
+      11,
+      12,
+      12,
+      11,
+      10,
+      11,
+      7,
+      9,
+      11,
+      14,
+      14,
+      15,
+      9,
+      16,
+      15,
+      1,
+      15,
+      1,
+      15,
+      15,
+      2
+     ]
+    },
+    "rank": 32,
+    "triton": true,
+    "fuse_merge": true
+   },
+   "status": "planned",
+   "group": "fixed",
+   "axis": "fixed_path",
+   "budget": {
+    "id": "low80",
+    "ratio": 0.8,
+    "gmac": 1.313647104,
+    "latency_ms": 3.8327999999999998
+   },
+   "mode": "M0",
+   "use_d": true,
+   "state": {
+    "sites": [
+     1,
+     4
+    ],
+    "counts": [
+     71,
+     28
+    ],
+    "thetas": [
+     0.0,
+     1.0
+    ],
+    "ks": [
+     0.0,
+     2.0
+    ]
+   },
+   "gmac": 1.356752256000001,
+   "note": "same full-method count path; fixed theta/counts, score/operator only",
+   "config_sha": "f657e4fc2306cbb1",
+   "details": {
+    "token_path": [
+     {
+      "block": 0,
+      "n_in": 197,
+      "prune_keep": 197,
+      "merge_keep": 197,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "kappa": 0.0
+     },
+     {
+      "block": 1,
+      "n_in": 197,
+      "prune_keep": 71,
+      "merge_keep": 71,
+      "removed": 126,
+      "merged": 0,
+      "pruned": 126,
+      "theta": 0.0,
+      "kappa": 0.0
+     },
+     {
+      "block": 2,
+      "n_in": 71,
+      "prune_keep": 71,
+      "merge_keep": 71,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "kappa": 0.0
+     },
+     {
+      "block": 3,
+      "n_in": 71,
+      "prune_keep": 71,
+      "merge_keep": 71,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "kappa": 0.0
+     },
+     {
+      "block": 4,
+      "n_in": 71,
+      "prune_keep": 71,
+      "merge_keep": 28,
+      "removed": 43,
+      "merged": 43,
+      "pruned": 0,
+      "theta": 1.0,
+      "kappa": 2.0
+     },
+     {
+      "block": 5,
+      "n_in": 28,
+      "prune_keep": 28,
+      "merge_keep": 28,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "kappa": 0.0
+     },
+     {
+      "block": 6,
+      "n_in": 28,
+      "prune_keep": 28,
+      "merge_keep": 28,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "kappa": 0.0
+     },
+     {
+      "block": 7,
+      "n_in": 28,
+      "prune_keep": 28,
+      "merge_keep": 28,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "kappa": 0.0
+     },
+     {
+      "block": 8,
+      "n_in": 28,
+      "prune_keep": 28,
+      "merge_keep": 28,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "kappa": 0.0
+     },
+     {
+      "block": 9,
+      "n_in": 28,
+      "prune_keep": 28,
+      "merge_keep": 28,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "kappa": 0.0
+     },
+     {
+      "block": 10,
+      "n_in": 28,
+      "prune_keep": 28,
+      "merge_keep": 28,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "kappa": 0.0
+     },
+     {
+      "block": 11,
+      "n_in": 28,
+      "prune_keep": 28,
+      "merge_keep": 28,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "kappa": 0.0
+     }
+    ],
+    "K": 2,
+    "N_D": 1,
+    "final_tokens": 28,
+    "total_gmac": 1.356752256000001,
+    "backbone_full_gmac": 1.355922816000001,
+    "d_gmac": 0.00082944,
+    "station_scalar_gops_estimate": 0.000205311
+   },
+   "feature_extrapolation": {
+    "original_gmac": {
+     "value": 1.3270214400000009,
+     "historical_range": [
+      1.634409216,
+      3.923171328
+     ]
+    },
+    "K": {
+     "value": 2.0,
+     "historical_range": [
+      3.0,
+      8.0
+     ]
+    },
+    "station_io": {
+     "value": 0.102912,
+     "historical_range": [
+      0.144384,
+      0.37132799999999994
+     ]
+    }
+   },
+   "prediction_main_ms": 3.7180774633613205
+  },
+  "replan/low80/m3_p": {
+   "state": {
+    "sites": [
+     1,
+     4
+    ],
+    "counts": [
+     72,
+     28
+    ],
+    "thetas": [
+     0.0,
+     0.5
+    ],
+    "ks": [
+     0.0,
+     0.0
+    ]
+   },
+   "config": {
+    "kind": "pdm",
+    "prune_keep": [
+     197,
+     72,
+     197,
+     197,
+     50,
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     197
+    ],
+    "merge_keep": [
+     197,
+     72,
+     197,
+     197,
+     28,
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     197
+    ],
+    "k": {},
+    "groups": {},
+    "rank": null,
+    "triton": true,
+    "fuse_merge": true,
+    "merge": {
+     "mode": "M3",
+     "kernel": "triton_norm"
+    }
+   },
+   "predicted_ms": 3.7305111450078865,
+   "fhat": 1.487293635518887,
+   "budget_ms": 3.8327999999999998,
+   "n_candidates": 5,
+   "certificate": "fixed-multiplier DP exact; constrained multiplier search and ratio projection uncertified",
+   "status": "planned",
+   "gmac": 1.3613360640000007,
+   "group": "replan",
+   "axis": "latency",
+   "budget": {
+    "id": "low80",
+    "ratio": 0.8,
+    "gmac": 1.313647104,
+    "latency_ms": 3.8327999999999998
+   },
+   "mode": "M3",
+   "use_d": false,
+   "config_sha": "5679b103165613b7",
+   "details": {
+    "token_path": [
+     {
+      "block": 0,
+      "n_in": 197,
+      "prune_keep": 197,
+      "merge_keep": 197,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "kappa": 0.0
+     },
+     {
+      "block": 1,
+      "n_in": 197,
+      "prune_keep": 72,
+      "merge_keep": 72,
+      "removed": 125,
+      "merged": 0,
+      "pruned": 125,
+      "theta": 0.0,
+      "kappa": 0.0
+     },
+     {
+      "block": 2,
+      "n_in": 72,
+      "prune_keep": 72,
+      "merge_keep": 72,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "kappa": 0.0
+     },
+     {
+      "block": 3,
+      "n_in": 72,
+      "prune_keep": 72,
+      "merge_keep": 72,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "kappa": 0.0
+     },
+     {
+      "block": 4,
+      "n_in": 72,
+      "prune_keep": 50,
+      "merge_keep": 28,
+      "removed": 44,
+      "merged": 22,
+      "pruned": 22,
+      "theta": 0.5,
+      "kappa": 0.0
+     },
+     {
+      "block": 5,
+      "n_in": 28,
+      "prune_keep": 28,
+      "merge_keep": 28,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "kappa": 0.0
+     },
+     {
+      "block": 6,
+      "n_in": 28,
+      "prune_keep": 28,
+      "merge_keep": 28,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "kappa": 0.0
+     },
+     {
+      "block": 7,
+      "n_in": 28,
+      "prune_keep": 28,
+      "merge_keep": 28,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "kappa": 0.0
+     },
+     {
+      "block": 8,
+      "n_in": 28,
+      "prune_keep": 28,
+      "merge_keep": 28,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "kappa": 0.0
+     },
+     {
+      "block": 9,
+      "n_in": 28,
+      "prune_keep": 28,
+      "merge_keep": 28,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "kappa": 0.0
+     },
+     {
+      "block": 10,
+      "n_in": 28,
+      "prune_keep": 28,
+      "merge_keep": 28,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "kappa": 0.0
+     },
+     {
+      "block": 11,
+      "n_in": 28,
+      "prune_keep": 28,
+      "merge_keep": 28,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "kappa": 0.0
+     }
+    ],
+    "K": 2,
+    "N_D": 0,
+    "final_tokens": 28,
+    "total_gmac": 1.3613360640000007,
+    "backbone_full_gmac": 1.3613360640000007,
+    "d_gmac": 0.0,
+    "station_scalar_gops_estimate": 5.22e-05
+   },
+   "feature_extrapolation": {
+    "original_gmac": {
+     "value": 1.3324346880000006,
+     "historical_range": [
+      1.634409216,
+      3.923171328
+     ]
+    },
+    "K": {
+     "value": 2.0,
+     "historical_range": [
+      3.0,
+      8.0
+     ]
+    },
+    "N_D": {
+     "value": 0.0,
+     "historical_range": [
+      1.0,
+      7.0
+     ]
+    },
+    "station_io": {
+     "value": 0.103296,
+     "historical_range": [
+      0.144384,
+      0.37132799999999994
+     ]
+    },
+    "merge_io": {
+     "value": 0.008448,
+     "historical_range": [
+      0.013056000000000002,
+      0.052224000000000007
+     ]
+    },
+    "d_token": {
+     "value": 0.0,
+     "historical_range": [
+      0.000325632,
+      0.005376000000000001
+     ]
+    }
+   },
+   "prediction_main_ms": 3.7305111450078865
+  },
+  "fixed/low80/m3_p": {
+   "config": {
+    "kind": "pdm",
+    "prune_keep": [
+     197,
+     71,
+     197,
+     197,
+     71,
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     197
+    ],
+    "merge_keep": [
+     197,
+     71,
+     197,
+     197,
+     28,
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     197
+    ],
+    "k": {},
+    "groups": {},
+    "rank": null,
+    "triton": true,
+    "fuse_merge": true,
+    "merge": {
+     "mode": "M3",
+     "kernel": "triton_norm"
+    }
+   },
+   "status": "planned",
+   "group": "fixed",
+   "axis": "fixed_path",
+   "budget": {
+    "id": "low80",
+    "ratio": 0.8,
+    "gmac": 1.313647104,
+    "latency_ms": 3.8327999999999998
+   },
+   "mode": "M3",
+   "use_d": false,
+   "state": {
+    "sites": [
+     1,
+     4
+    ],
+    "counts": [
+     71,
+     28
+    ],
+    "thetas": [
+     0.0,
+     1.0
+    ],
+    "ks": [
+     0.0,
+     2.0
+    ]
+   },
+   "gmac": 1.355922816000001,
+   "note": "same full-method count path; fixed theta/counts, score/operator only",
+   "config_sha": "4915aabfa73c44dd",
+   "details": {
+    "token_path": [
+     {
+      "block": 0,
+      "n_in": 197,
+      "prune_keep": 197,
+      "merge_keep": 197,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "kappa": 0.0
+     },
+     {
+      "block": 1,
+      "n_in": 197,
+      "prune_keep": 71,
+      "merge_keep": 71,
+      "removed": 126,
+      "merged": 0,
+      "pruned": 126,
+      "theta": 0.0,
+      "kappa": 0.0
+     },
+     {
+      "block": 2,
+      "n_in": 71,
+      "prune_keep": 71,
+      "merge_keep": 71,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "kappa": 0.0
+     },
+     {
+      "block": 3,
+      "n_in": 71,
+      "prune_keep": 71,
+      "merge_keep": 71,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "kappa": 0.0
+     },
+     {
+      "block": 4,
+      "n_in": 71,
+      "prune_keep": 71,
+      "merge_keep": 28,
+      "removed": 43,
+      "merged": 43,
+      "pruned": 0,
+      "theta": 1.0,
+      "kappa": 0.0
+     },
+     {
+      "block": 5,
+      "n_in": 28,
+      "prune_keep": 28,
+      "merge_keep": 28,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "kappa": 0.0
+     },
+     {
+      "block": 6,
+      "n_in": 28,
+      "prune_keep": 28,
+      "merge_keep": 28,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "kappa": 0.0
+     },
+     {
+      "block": 7,
+      "n_in": 28,
+      "prune_keep": 28,
+      "merge_keep": 28,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "kappa": 0.0
+     },
+     {
+      "block": 8,
+      "n_in": 28,
+      "prune_keep": 28,
+      "merge_keep": 28,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "kappa": 0.0
+     },
+     {
+      "block": 9,
+      "n_in": 28,
+      "prune_keep": 28,
+      "merge_keep": 28,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "kappa": 0.0
+     },
+     {
+      "block": 10,
+      "n_in": 28,
+      "prune_keep": 28,
+      "merge_keep": 28,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "kappa": 0.0
+     },
+     {
+      "block": 11,
+      "n_in": 28,
+      "prune_keep": 28,
+      "merge_keep": 28,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "kappa": 0.0
+     }
+    ],
+    "K": 2,
+    "N_D": 0,
+    "final_tokens": 28,
+    "total_gmac": 1.355922816000001,
+    "backbone_full_gmac": 1.355922816000001,
+    "d_gmac": 0.0,
+    "station_scalar_gops_estimate": 5.9903e-05
+   },
+   "feature_extrapolation": {
+    "original_gmac": {
+     "value": 1.3270214400000009,
+     "historical_range": [
+      1.634409216,
+      3.923171328
+     ]
+    },
+    "K": {
+     "value": 2.0,
+     "historical_range": [
+      3.0,
+      8.0
+     ]
+    },
+    "N_D": {
+     "value": 0.0,
+     "historical_range": [
+      1.0,
+      7.0
+     ]
+    },
+    "station_io": {
+     "value": 0.102912,
+     "historical_range": [
+      0.144384,
+      0.37132799999999994
+     ]
+    },
+    "d_token": {
+     "value": 0.0,
+     "historical_range": [
+      0.000325632,
+      0.005376000000000001
+     ]
+    }
+   },
+   "prediction_main_ms": 3.718062651082334
+  },
+  "pricing/low80/no_overhead": {
+   "state": {
+    "sites": [
+     1,
+     5,
+     11
+    ],
+    "counts": [
+     57,
+     32,
+     4
+    ],
+    "thetas": [
+     0.0,
+     1.0,
+     0.0
+    ],
+    "ks": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "config": {
+    "kind": "pdm",
+    "prune_keep": [
+     197,
+     57,
+     197,
+     197,
+     197,
+     57,
+     197,
+     197,
+     197,
+     197,
+     197,
+     4
+    ],
+    "merge_keep": [
+     197,
+     57,
+     197,
+     197,
+     197,
+     32,
+     197,
+     197,
+     197,
+     197,
+     197,
+     4
+    ],
+    "k": {},
+    "groups": {},
+    "rank": null,
+    "triton": true,
+    "fuse_merge": true,
+    "merge": {
+     "mode": "M3",
+     "kernel": "triton_norm"
+    }
+   },
+   "predicted_ms": 3.7100640556907307,
+   "fhat": 1.4262961866719335,
+   "budget_ms": 3.8327999999999998,
+   "n_candidates": 4,
+   "certificate": "fixed-multiplier DP exact; constrained multiplier search and ratio projection uncertified",
+   "status": "planned",
+   "gmac": 1.345794816,
+   "group": "pricing",
+   "axis": "latency",
+   "budget": {
+    "id": "low80",
+    "ratio": 0.8,
+    "gmac": 1.313647104,
+    "latency_ms": 3.8327999999999998
+   },
+   "config_sha": "f3beeed742a304db",
+   "details": {
+    "token_path": [
+     {
+      "block": 0,
+      "n_in": 197,
+      "prune_keep": 197,
+      "merge_keep": 197,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "kappa": 0.0
+     },
+     {
+      "block": 1,
+      "n_in": 197,
+      "prune_keep": 57,
+      "merge_keep": 57,
+      "removed": 140,
+      "merged": 0,
+      "pruned": 140,
+      "theta": 0.0,
+      "kappa": 0.0
+     },
+     {
+      "block": 2,
+      "n_in": 57,
+      "prune_keep": 57,
+      "merge_keep": 57,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "kappa": 0.0
+     },
+     {
+      "block": 3,
+      "n_in": 57,
+      "prune_keep": 57,
+      "merge_keep": 57,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "kappa": 0.0
+     },
+     {
+      "block": 4,
+      "n_in": 57,
+      "prune_keep": 57,
+      "merge_keep": 57,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "kappa": 0.0
+     },
+     {
+      "block": 5,
+      "n_in": 57,
+      "prune_keep": 57,
+      "merge_keep": 32,
+      "removed": 25,
+      "merged": 25,
+      "pruned": 0,
+      "theta": 1.0,
+      "kappa": 0.0
+     },
+     {
+      "block": 6,
+      "n_in": 32,
+      "prune_keep": 32,
+      "merge_keep": 32,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "kappa": 0.0
+     },
+     {
+      "block": 7,
+      "n_in": 32,
+      "prune_keep": 32,
+      "merge_keep": 32,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "kappa": 0.0
+     },
+     {
+      "block": 8,
+      "n_in": 32,
+      "prune_keep": 32,
+      "merge_keep": 32,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "kappa": 0.0
+     },
+     {
+      "block": 9,
+      "n_in": 32,
+      "prune_keep": 32,
+      "merge_keep": 32,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "kappa": 0.0
+     },
+     {
+      "block": 10,
+      "n_in": 32,
+      "prune_keep": 32,
+      "merge_keep": 32,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "kappa": 0.0
+     },
+     {
+      "block": 11,
+      "n_in": 32,
+      "prune_keep": 4,
+      "merge_keep": 4,
+      "removed": 28,
+      "merged": 0,
+      "pruned": 28,
+      "theta": 0.0,
+      "kappa": 0.0
+     }
+    ],
+    "K": 3,
+    "N_D": 0,
+    "final_tokens": 4,
+    "total_gmac": 1.345794816,
+    "backbone_full_gmac": 1.345794816,
+    "d_gmac": 0.0,
+    "station_scalar_gops_estimate": 5.0872e-05
+   },
+   "feature_extrapolation": {
+    "original_gmac": {
+     "value": 1.3168934399999999,
+     "historical_range": [
+      1.634409216,
+      3.923171328
+     ]
+    },
+    "N_D": {
+     "value": 0.0,
+     "historical_range": [
+      1.0,
+      7.0
+     ]
+    },
+    "station_io": {
+     "value": 0.109824,
+     "historical_range": [
+      0.144384,
+      0.37132799999999994
+     ]
+    },
+    "merge_io": {
+     "value": 0.0096,
+     "historical_range": [
+      0.013056000000000002,
+      0.052224000000000007
+     ]
+    },
+    "d_token": {
+     "value": 0.0,
+     "historical_range": [
+      0.000325632,
+      0.005376000000000001
+     ]
+    }
+   },
+   "prediction_main_ms": 3.7971183184902637
+  },
+  "full/latency/low70": {
+   "state": {
+    "sites": [
+     1
+    ],
+    "counts": [
+     33
+    ],
+    "thetas": [
+     0.0
+    ],
+    "ks": [
+     0.0
+    ]
+   },
+   "config": {
+    "kind": "pdm",
+    "prune_keep": [
+     197,
+     33,
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     197
+    ],
+    "merge_keep": [
+     197,
+     33,
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     197
+    ],
+    "k": {},
+    "groups": {},
+    "rank": null,
+    "triton": true,
+    "fuse_merge": true,
+    "merge": {
+     "mode": "M3",
+     "kernel": "triton_norm"
+    }
+   },
+   "predicted_ms": 3.2494316004125126,
+   "fhat": 2.726283232371012,
+   "budget_ms": 3.3536999999999995,
+   "n_candidates": 3,
+   "certificate": "fixed-multiplier DP exact; constrained multiplier search and ratio projection uncertified",
+   "status": "planned",
+   "gmac": 1.2140743680000001,
+   "group": "full",
+   "axis": "latency",
+   "budget": {
+    "id": "low70",
+    "ratio": 0.7,
+    "gmac": 1.1494412159999998,
+    "latency_ms": 3.3536999999999995
+   },
+   "search_seconds": 0.38613468800031114,
+   "config_sha": "3c53edf3b6f93f11",
+   "details": {
+    "token_path": [
+     {
+      "block": 0,
+      "n_in": 197,
+      "prune_keep": 197,
+      "merge_keep": 197,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "kappa": 0.0
+     },
+     {
+      "block": 1,
+      "n_in": 197,
+      "prune_keep": 33,
+      "merge_keep": 33,
+      "removed": 164,
+      "merged": 0,
+      "pruned": 164,
+      "theta": 0.0,
+      "kappa": 0.0
+     },
+     {
+      "block": 2,
+      "n_in": 33,
+      "prune_keep": 33,
+      "merge_keep": 33,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "kappa": 0.0
+     },
+     {
+      "block": 3,
+      "n_in": 33,
+      "prune_keep": 33,
+      "merge_keep": 33,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "kappa": 0.0
+     },
+     {
+      "block": 4,
+      "n_in": 33,
+      "prune_keep": 33,
+      "merge_keep": 33,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "kappa": 0.0
+     },
+     {
+      "block": 5,
+      "n_in": 33,
+      "prune_keep": 33,
+      "merge_keep": 33,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "kappa": 0.0
+     },
+     {
+      "block": 6,
+      "n_in": 33,
+      "prune_keep": 33,
+      "merge_keep": 33,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "kappa": 0.0
+     },
+     {
+      "block": 7,
+      "n_in": 33,
+      "prune_keep": 33,
+      "merge_keep": 33,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "kappa": 0.0
+     },
+     {
+      "block": 8,
+      "n_in": 33,
+      "prune_keep": 33,
+      "merge_keep": 33,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "kappa": 0.0
+     },
+     {
+      "block": 9,
+      "n_in": 33,
+      "prune_keep": 33,
+      "merge_keep": 33,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "kappa": 0.0
+     },
+     {
+      "block": 10,
+      "n_in": 33,
+      "prune_keep": 33,
+      "merge_keep": 33,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "kappa": 0.0
+     },
+     {
+      "block": 11,
+      "n_in": 33,
+      "prune_keep": 33,
+      "merge_keep": 33,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "kappa": 0.0
+     }
+    ],
+    "K": 1,
+    "N_D": 0,
+    "final_tokens": 33,
+    "total_gmac": 1.2140743680000001,
+    "backbone_full_gmac": 1.2140743680000001,
+    "d_gmac": 0.0,
+    "station_scalar_gops_estimate": 1.6612e-05
+   },
+   "feature_extrapolation": {
+    "original_gmac": {
+     "value": 1.185172992,
+     "historical_range": [
+      1.634409216,
+      3.923171328
+     ]
+    },
+    "K": {
+     "value": 1.0,
+     "historical_range": [
+      3.0,
+      8.0
+     ]
+    },
+    "N_D": {
+     "value": 0.0,
+     "historical_range": [
+      1.0,
+      7.0
+     ]
+    },
+    "station_io": {
+     "value": 0.075648,
+     "historical_range": [
+      0.144384,
+      0.37132799999999994
+     ]
+    },
+    "merge_io": {
+     "value": 0.0,
+     "historical_range": [
+      0.013056000000000002,
+      0.052224000000000007
+     ]
+    },
+    "d_token": {
+     "value": 0.0,
+     "historical_range": [
+      0.000325632,
+      0.005376000000000001
+     ]
+    }
+   },
+   "prediction_main_ms": 3.2494316004125126
+  },
+  "full/gmac/low70": {
+   "state": {
+    "sites": [
+     1,
+     4,
+     10
+    ],
+    "counts": [
+     49,
+     26,
+     3
+    ],
+    "thetas": [
+     0.0,
+     1.0,
+     0.5
+    ],
+    "ks": [
+     0.0,
+     2.0,
+     0.0
+    ]
+   },
+   "config": {
+    "kind": "pdm",
+    "prune_keep": [
+     197,
+     49,
+     197,
+     197,
+     49,
+     197,
+     197,
+     197,
+     197,
+     197,
+     15,
+     197
+    ],
+    "merge_keep": [
+     197,
+     49,
+     197,
+     197,
+     26,
+     197,
+     197,
+     197,
+     197,
+     197,
+     3,
+     197
+    ],
+    "k": {
+     "4": 2.0
+    },
+    "groups": {
+     "4": [
+      3,
+      5,
+      4,
+      3,
+      6,
+      3,
+      3,
+      8,
+      8,
+      3,
+      3,
+      3,
+      13,
+      8,
+      12,
+      7,
+      8,
+      13,
+      11,
+      12,
+      12,
+      11,
+      12,
+      12,
+      11,
+      10,
+      11,
+      7,
+      9,
+      11,
+      14,
+      14,
+      15,
+      9,
+      16,
+      15,
+      1,
+      15,
+      1,
+      15,
+      15,
+      2
+     ]
+    },
+    "rank": 32,
+    "triton": true,
+    "fuse_merge": true,
+    "merge": {
+     "mode": "M3",
+     "kernel": "triton_norm"
+    }
+   },
+   "gmac": 1.1374364160000003,
+   "fhat": 2.8188061157050424,
+   "budget": {
+    "id": "low70",
+    "ratio": 0.7,
+    "gmac": 1.1494412159999998,
+    "latency_ms": 3.3536999999999995
+   },
+   "candidates": 12,
+   "objective": "GMAC only; no latency inputs; surrogate selection only",
+   "certificate": "fixed-multiplier DP exact; constrained projection not certified globally optimal",
+   "group": "full",
+   "axis": "gmac",
+   "search_seconds": 0.5856025770044653,
+   "config_sha": "0f6c1ca6c1f1d375",
+   "details": {
+    "token_path": [
+     {
+      "block": 0,
+      "n_in": 197,
+      "prune_keep": 197,
+      "merge_keep": 197,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "kappa": 0.0
+     },
+     {
+      "block": 1,
+      "n_in": 197,
+      "prune_keep": 49,
+      "merge_keep": 49,
+      "removed": 148,
+      "merged": 0,
+      "pruned": 148,
+      "theta": 0.0,
+      "kappa": 0.0
+     },
+     {
+      "block": 2,
+      "n_in": 49,
+      "prune_keep": 49,
+      "merge_keep": 49,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "kappa": 0.0
+     },
+     {
+      "block": 3,
+      "n_in": 49,
+      "prune_keep": 49,
+      "merge_keep": 49,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "kappa": 0.0
+     },
+     {
+      "block": 4,
+      "n_in": 49,
+      "prune_keep": 49,
+      "merge_keep": 26,
+      "removed": 23,
+      "merged": 23,
+      "pruned": 0,
+      "theta": 1.0,
+      "kappa": 2.0
+     },
+     {
+      "block": 5,
+      "n_in": 26,
+      "prune_keep": 26,
+      "merge_keep": 26,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "kappa": 0.0
+     },
+     {
+      "block": 6,
+      "n_in": 26,
+      "prune_keep": 26,
+      "merge_keep": 26,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "kappa": 0.0
+     },
+     {
+      "block": 7,
+      "n_in": 26,
+      "prune_keep": 26,
+      "merge_keep": 26,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "kappa": 0.0
+     },
+     {
+      "block": 8,
+      "n_in": 26,
+      "prune_keep": 26,
+      "merge_keep": 26,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "kappa": 0.0
+     },
+     {
+      "block": 9,
+      "n_in": 26,
+      "prune_keep": 26,
+      "merge_keep": 26,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "kappa": 0.0
+     },
+     {
+      "block": 10,
+      "n_in": 26,
+      "prune_keep": 15,
+      "merge_keep": 3,
+      "removed": 23,
+      "merged": 12,
+      "pruned": 11,
+      "theta": 0.5217391304347826,
+      "kappa": 0.0
+     },
+     {
+      "block": 11,
+      "n_in": 3,
+      "prune_keep": 3,
+      "merge_keep": 3,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "kappa": 0.0
+     }
+    ],
+    "K": 3,
+    "N_D": 1,
+    "final_tokens": 3,
+    "total_gmac": 1.1374364160000003,
+    "backbone_full_gmac": 1.1367421440000003,
+    "d_gmac": 0.000694272,
+    "station_scalar_gops_estimate": 0.000149078
+   },
+   "feature_extrapolation": {
+    "original_gmac": {
+     "value": 1.1078407680000002,
+     "historical_range": [
+      1.634409216,
+      3.923171328
+     ]
+    },
+    "station_io": {
+     "value": 0.10444800000000001,
+     "historical_range": [
+      0.144384,
+      0.37132799999999994
+     ]
+    },
+    "d_token": {
+     "value": 0.000301056,
+     "historical_range": [
+      0.000325632,
+      0.005376000000000001
+     ]
+    }
+   },
+   "prediction_main_ms": 3.2922412346793855
+  },
+  "replan/low70/m0_p": {
+   "state": {
+    "sites": [
+     1,
+     2
+    ],
+    "counts": [
+     77,
+     26
+    ],
+    "thetas": [
+     0.0,
+     0.0
+    ],
+    "ks": [
+     0.0,
+     0.0
+    ]
+   },
+   "config": {
+    "kind": "pd",
+    "prune_keep": [
+     197,
+     77,
+     26,
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     197
+    ],
+    "merge_keep": [
+     197,
+     77,
+     26,
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     197
+    ],
+    "k": {},
+    "groups": {},
+    "rank": null,
+    "triton": true,
+    "fuse_merge": true
+   },
+   "predicted_ms": 3.252182323356753,
+   "fhat": 3.0476097212387967,
+   "budget_ms": 3.3536999999999995,
+   "n_candidates": 4,
+   "certificate": "fixed-multiplier DP exact; constrained multiplier search and ratio projection uncertified",
+   "status": "planned",
+   "gmac": 1.173052032,
+   "group": "replan",
+   "axis": "latency",
+   "budget": {
+    "id": "low70",
+    "ratio": 0.7,
+    "gmac": 1.1494412159999998,
+    "latency_ms": 3.3536999999999995
+   },
+   "mode": "M0",
+   "use_d": false,
+   "config_sha": "f4321a2d019893bc",
+   "details": {
+    "token_path": [
+     {
+      "block": 0,
+      "n_in": 197,
+      "prune_keep": 197,
+      "merge_keep": 197,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "kappa": 0.0
+     },
+     {
+      "block": 1,
+      "n_in": 197,
+      "prune_keep": 77,
+      "merge_keep": 77,
+      "removed": 120,
+      "merged": 0,
+      "pruned": 120,
+      "theta": 0.0,
+      "kappa": 0.0
+     },
+     {
+      "block": 2,
+      "n_in": 77,
+      "prune_keep": 26,
+      "merge_keep": 26,
+      "removed": 51,
+      "merged": 0,
+      "pruned": 51,
+      "theta": 0.0,
+      "kappa": 0.0
+     },
+     {
+      "block": 3,
+      "n_in": 26,
+      "prune_keep": 26,
+      "merge_keep": 26,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "kappa": 0.0
+     },
+     {
+      "block": 4,
+      "n_in": 26,
+      "prune_keep": 26,
+      "merge_keep": 26,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "kappa": 0.0
+     },
+     {
+      "block": 5,
+      "n_in": 26,
+      "prune_keep": 26,
+      "merge_keep": 26,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "kappa": 0.0
+     },
+     {
+      "block": 6,
+      "n_in": 26,
+      "prune_keep": 26,
+      "merge_keep": 26,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "kappa": 0.0
+     },
+     {
+      "block": 7,
+      "n_in": 26,
+      "prune_keep": 26,
+      "merge_keep": 26,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "kappa": 0.0
+     },
+     {
+      "block": 8,
+      "n_in": 26,
+      "prune_keep": 26,
+      "merge_keep": 26,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "kappa": 0.0
+     },
+     {
+      "block": 9,
+      "n_in": 26,
+      "prune_keep": 26,
+      "merge_keep": 26,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "kappa": 0.0
+     },
+     {
+      "block": 10,
+      "n_in": 26,
+      "prune_keep": 26,
+      "merge_keep": 26,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "kappa": 0.0
+     },
+     {
+      "block": 11,
+      "n_in": 26,
+      "prune_keep": 26,
+      "merge_keep": 26,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "kappa": 0.0
+     }
+    ],
+    "K": 2,
+    "N_D": 0,
+    "final_tokens": 26,
+    "total_gmac": 1.173052032,
+    "backbone_full_gmac": 1.173052032,
+    "d_gmac": 0.0,
+    "station_scalar_gops_estimate": 4.4955e-05
+   },
+   "feature_extrapolation": {
+    "original_gmac": {
+     "value": 1.1441506559999999,
+     "historical_range": [
+      1.634409216,
+      3.923171328
+     ]
+    },
+    "K": {
+     "value": 2.0,
+     "historical_range": [
+      3.0,
+      8.0
+     ]
+    },
+    "N_D": {
+     "value": 0.0,
+     "historical_range": [
+      1.0,
+      7.0
+     ]
+    },
+    "station_io": {
+     "value": 0.105216,
+     "historical_range": [
+      0.144384,
+      0.37132799999999994
+     ]
+    },
+    "merge_io": {
+     "value": 0.0,
+     "historical_range": [
+      0.013056000000000002,
+      0.052224000000000007
+     ]
+    },
+    "d_token": {
+     "value": 0.0,
+     "historical_range": [
+      0.000325632,
+      0.005376000000000001
+     ]
+    }
+   },
+   "prediction_main_ms": 3.252182323356753
+  },
+  "fixed/low70/m0_p": {
+   "config": {
+    "kind": "pd",
+    "prune_keep": [
+     197,
+     33,
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     197
+    ],
+    "merge_keep": [
+     197,
+     33,
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     197
+    ],
+    "k": {},
+    "groups": {},
+    "rank": null,
+    "triton": true,
+    "fuse_merge": true
+   },
+   "status": "planned",
+   "group": "fixed",
+   "axis": "fixed_path",
+   "budget": {
+    "id": "low70",
+    "ratio": 0.7,
+    "gmac": 1.1494412159999998,
+    "latency_ms": 3.3536999999999995
+   },
+   "mode": "M0",
+   "use_d": false,
+   "state": {
+    "sites": [
+     1
+    ],
+    "counts": [
+     33
+    ],
+    "thetas": [
+     0.0
+    ],
+    "ks": [
+     0.0
+    ]
+   },
+   "gmac": 1.2140743680000001,
+   "note": "same full-method count path; fixed theta/counts, score/operator only",
+   "config_sha": "2aa3efab5803b939",
+   "details": {
+    "token_path": [
+     {
+      "block": 0,
+      "n_in": 197,
+      "prune_keep": 197,
+      "merge_keep": 197,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "kappa": 0.0
+     },
+     {
+      "block": 1,
+      "n_in": 197,
+      "prune_keep": 33,
+      "merge_keep": 33,
+      "removed": 164,
+      "merged": 0,
+      "pruned": 164,
+      "theta": 0.0,
+      "kappa": 0.0
+     },
+     {
+      "block": 2,
+      "n_in": 33,
+      "prune_keep": 33,
+      "merge_keep": 33,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "kappa": 0.0
+     },
+     {
+      "block": 3,
+      "n_in": 33,
+      "prune_keep": 33,
+      "merge_keep": 33,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "kappa": 0.0
+     },
+     {
+      "block": 4,
+      "n_in": 33,
+      "prune_keep": 33,
+      "merge_keep": 33,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "kappa": 0.0
+     },
+     {
+      "block": 5,
+      "n_in": 33,
+      "prune_keep": 33,
+      "merge_keep": 33,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "kappa": 0.0
+     },
+     {
+      "block": 6,
+      "n_in": 33,
+      "prune_keep": 33,
+      "merge_keep": 33,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "kappa": 0.0
+     },
+     {
+      "block": 7,
+      "n_in": 33,
+      "prune_keep": 33,
+      "merge_keep": 33,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "kappa": 0.0
+     },
+     {
+      "block": 8,
+      "n_in": 33,
+      "prune_keep": 33,
+      "merge_keep": 33,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "kappa": 0.0
+     },
+     {
+      "block": 9,
+      "n_in": 33,
+      "prune_keep": 33,
+      "merge_keep": 33,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "kappa": 0.0
+     },
+     {
+      "block": 10,
+      "n_in": 33,
+      "prune_keep": 33,
+      "merge_keep": 33,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "kappa": 0.0
+     },
+     {
+      "block": 11,
+      "n_in": 33,
+      "prune_keep": 33,
+      "merge_keep": 33,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "kappa": 0.0
+     }
+    ],
+    "K": 1,
+    "N_D": 0,
+    "final_tokens": 33,
+    "total_gmac": 1.2140743680000001,
+    "backbone_full_gmac": 1.2140743680000001,
+    "d_gmac": 0.0,
+    "station_scalar_gops_estimate": 1.6612e-05
+   },
+   "feature_extrapolation": {
+    "original_gmac": {
+     "value": 1.185172992,
+     "historical_range": [
+      1.634409216,
+      3.923171328
+     ]
+    },
+    "K": {
+     "value": 1.0,
+     "historical_range": [
+      3.0,
+      8.0
+     ]
+    },
+    "N_D": {
+     "value": 0.0,
+     "historical_range": [
+      1.0,
+      7.0
+     ]
+    },
+    "station_io": {
+     "value": 0.075648,
+     "historical_range": [
+      0.144384,
+      0.37132799999999994
+     ]
+    },
+    "merge_io": {
+     "value": 0.0,
+     "historical_range": [
+      0.013056000000000002,
+      0.052224000000000007
+     ]
+    },
+    "d_token": {
+     "value": 0.0,
+     "historical_range": [
+      0.000325632,
+      0.005376000000000001
+     ]
+    }
+   },
+   "prediction_main_ms": 3.2494316004125126
+  },
+  "replan/low70/m0_pd": {
+   "state": {
+    "sites": [
+     1,
+     2
+    ],
+    "counts": [
+     77,
+     25
+    ],
+    "thetas": [
+     0.0,
+     0.0
+    ],
+    "ks": [
+     0.0,
+     3.0
+    ]
+   },
+   "config": {
+    "kind": "pd",
+    "prune_keep": [
+     197,
+     77,
+     25,
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     197
+    ],
+    "merge_keep": [
+     197,
+     77,
+     25,
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     197
+    ],
+    "k": {
+     "2": 3.0
+    },
+    "groups": {
+     "2": [
+      10,
+      10,
+      10,
+      10,
+      10,
+      10,
+      8,
+      13,
+      12,
+      10,
+      10,
+      11,
+      13,
+      8,
+      6,
+      10,
+      9,
+      10,
+      10,
+      6,
+      6,
+      10,
+      13,
+      10,
+      13,
+      6,
+      15,
+      13,
+      13,
+      13,
+      15,
+      15,
+      15,
+      16,
+      15,
+      15,
+      14,
+      14,
+      15,
+      7,
+      15,
+      13,
+      2,
+      2,
+      3,
+      5,
+      15,
+      5,
+      1,
+      4,
+      1,
+      4,
+      4,
+      1
+     ]
+    },
+    "rank": 32,
+    "triton": true,
+    "fuse_merge": true
+   },
+   "predicted_ms": 3.221143062515951,
+   "fhat": 3.1208140827142277,
+   "budget_ms": 3.3536999999999995,
+   "n_candidates": 4,
+   "certificate": "fixed-multiplier DP exact; constrained multiplier search and ratio projection uncertified",
+   "status": "planned",
+   "gmac": 1.1564574720000007,
+   "group": "replan",
+   "axis": "latency",
+   "budget": {
+    "id": "low70",
+    "ratio": 0.7,
+    "gmac": 1.1494412159999998,
+    "latency_ms": 3.3536999999999995
+   },
+   "mode": "M0",
+   "use_d": true,
+   "config_sha": "9e9a1ff80b3ed8ad",
+   "details": {
+    "token_path": [
+     {
+      "block": 0,
+      "n_in": 197,
+      "prune_keep": 197,
+      "merge_keep": 197,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "kappa": 0.0
+     },
+     {
+      "block": 1,
+      "n_in": 197,
+      "prune_keep": 77,
+      "merge_keep": 77,
+      "removed": 120,
+      "merged": 0,
+      "pruned": 120,
+      "theta": 0.0,
+      "kappa": 0.0
+     },
+     {
+      "block": 2,
+      "n_in": 77,
+      "prune_keep": 25,
+      "merge_keep": 25,
+      "removed": 52,
+      "merged": 0,
+      "pruned": 52,
+      "theta": 0.0,
+      "kappa": 3.0
+     },
+     {
+      "block": 3,
+      "n_in": 25,
+      "prune_keep": 25,
+      "merge_keep": 25,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "kappa": 0.0
+     },
+     {
+      "block": 4,
+      "n_in": 25,
+      "prune_keep": 25,
+      "merge_keep": 25,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "kappa": 0.0
+     },
+     {
+      "block": 5,
+      "n_in": 25,
+      "prune_keep": 25,
+      "merge_keep": 25,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "kappa": 0.0
+     },
+     {
+      "block": 6,
+      "n_in": 25,
+      "prune_keep": 25,
+      "merge_keep": 25,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "kappa": 0.0
+     },
+     {
+      "block": 7,
+      "n_in": 25,
+      "prune_keep": 25,
+      "merge_keep": 25,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "kappa": 0.0
+     },
+     {
+      "block": 8,
+      "n_in": 25,
+      "prune_keep": 25,
+      "merge_keep": 25,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "kappa": 0.0
+     },
+     {
+      "block": 9,
+      "n_in": 25,
+      "prune_keep": 25,
+      "merge_keep": 25,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "kappa": 0.0
+     },
+     {
+      "block": 10,
+      "n_in": 25,
+      "prune_keep": 25,
+      "merge_keep": 25,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "kappa": 0.0
+     },
+     {
+      "block": 11,
+      "n_in": 25,
+      "prune_keep": 25,
+      "merge_keep": 25,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "kappa": 0.0
+     }
+    ],
+    "K": 2,
+    "N_D": 1,
+    "final_tokens": 25,
+    "total_gmac": 1.1564574720000007,
+    "backbone_full_gmac": 1.1555911680000006,
+    "d_gmac": 0.000866304,
+    "station_scalar_gops_estimate": 0.000202267
+   },
+   "feature_extrapolation": {
+    "original_gmac": {
+     "value": 1.1266897920000005,
+     "historical_range": [
+      1.634409216,
+      3.923171328
+     ]
+    },
+    "K": {
+     "value": 2.0,
+     "historical_range": [
+      3.0,
+      8.0
+     ]
+    },
+    "station_io": {
+     "value": 0.105216,
+     "historical_range": [
+      0.144384,
+      0.37132799999999994
+     ]
+    },
+    "merge_io": {
+     "value": 0.0,
+     "historical_range": [
+      0.013056000000000002,
+      0.052224000000000007
+     ]
+    }
+   },
+   "prediction_main_ms": 3.221143062515951
+  },
+  "fixed/low70/m0_pd": {
+   "config": {
+    "kind": "pd",
+    "prune_keep": [
+     197,
+     33,
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     197
+    ],
+    "merge_keep": [
+     197,
+     33,
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     197
+    ],
+    "k": {},
+    "groups": {},
+    "rank": null,
+    "triton": true,
+    "fuse_merge": true
+   },
+   "status": "planned",
+   "group": "fixed",
+   "axis": "fixed_path",
+   "budget": {
+    "id": "low70",
+    "ratio": 0.7,
+    "gmac": 1.1494412159999998,
+    "latency_ms": 3.3536999999999995
+   },
+   "mode": "M0",
+   "use_d": true,
+   "state": {
+    "sites": [
+     1
+    ],
+    "counts": [
+     33
+    ],
+    "thetas": [
+     0.0
+    ],
+    "ks": [
+     0.0
+    ]
+   },
+   "gmac": 1.2140743680000001,
+   "note": "same full-method count path; fixed theta/counts, score/operator only",
+   "config_sha": "2aa3efab5803b939",
+   "details": {
+    "token_path": [
+     {
+      "block": 0,
+      "n_in": 197,
+      "prune_keep": 197,
+      "merge_keep": 197,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "kappa": 0.0
+     },
+     {
+      "block": 1,
+      "n_in": 197,
+      "prune_keep": 33,
+      "merge_keep": 33,
+      "removed": 164,
+      "merged": 0,
+      "pruned": 164,
+      "theta": 0.0,
+      "kappa": 0.0
+     },
+     {
+      "block": 2,
+      "n_in": 33,
+      "prune_keep": 33,
+      "merge_keep": 33,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "kappa": 0.0
+     },
+     {
+      "block": 3,
+      "n_in": 33,
+      "prune_keep": 33,
+      "merge_keep": 33,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "kappa": 0.0
+     },
+     {
+      "block": 4,
+      "n_in": 33,
+      "prune_keep": 33,
+      "merge_keep": 33,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "kappa": 0.0
+     },
+     {
+      "block": 5,
+      "n_in": 33,
+      "prune_keep": 33,
+      "merge_keep": 33,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "kappa": 0.0
+     },
+     {
+      "block": 6,
+      "n_in": 33,
+      "prune_keep": 33,
+      "merge_keep": 33,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "kappa": 0.0
+     },
+     {
+      "block": 7,
+      "n_in": 33,
+      "prune_keep": 33,
+      "merge_keep": 33,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "kappa": 0.0
+     },
+     {
+      "block": 8,
+      "n_in": 33,
+      "prune_keep": 33,
+      "merge_keep": 33,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "kappa": 0.0
+     },
+     {
+      "block": 9,
+      "n_in": 33,
+      "prune_keep": 33,
+      "merge_keep": 33,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "kappa": 0.0
+     },
+     {
+      "block": 10,
+      "n_in": 33,
+      "prune_keep": 33,
+      "merge_keep": 33,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "kappa": 0.0
+     },
+     {
+      "block": 11,
+      "n_in": 33,
+      "prune_keep": 33,
+      "merge_keep": 33,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "kappa": 0.0
+     }
+    ],
+    "K": 1,
+    "N_D": 0,
+    "final_tokens": 33,
+    "total_gmac": 1.2140743680000001,
+    "backbone_full_gmac": 1.2140743680000001,
+    "d_gmac": 0.0,
+    "station_scalar_gops_estimate": 1.6612e-05
+   },
+   "feature_extrapolation": {
+    "original_gmac": {
+     "value": 1.185172992,
+     "historical_range": [
+      1.634409216,
+      3.923171328
+     ]
+    },
+    "K": {
+     "value": 1.0,
+     "historical_range": [
+      3.0,
+      8.0
+     ]
+    },
+    "N_D": {
+     "value": 0.0,
+     "historical_range": [
+      1.0,
+      7.0
+     ]
+    },
+    "station_io": {
+     "value": 0.075648,
+     "historical_range": [
+      0.144384,
+      0.37132799999999994
+     ]
+    },
+    "merge_io": {
+     "value": 0.0,
+     "historical_range": [
+      0.013056000000000002,
+      0.052224000000000007
+     ]
+    },
+    "d_token": {
+     "value": 0.0,
+     "historical_range": [
+      0.000325632,
+      0.005376000000000001
+     ]
+    }
+   },
+   "prediction_main_ms": 3.2494316004125126
+  },
+  "replan/low70/m3_p": {
+   "state": {
+    "sites": [
+     1
+    ],
+    "counts": [
+     33
+    ],
+    "thetas": [
+     0.0
+    ],
+    "ks": [
+     0.0
+    ]
+   },
+   "config": {
+    "kind": "pdm",
+    "prune_keep": [
+     197,
+     33,
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     197
+    ],
+    "merge_keep": [
+     197,
+     33,
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     197
+    ],
+    "k": {},
+    "groups": {},
+    "rank": null,
+    "triton": true,
+    "fuse_merge": true,
+    "merge": {
+     "mode": "M3",
+     "kernel": "triton_norm"
+    }
+   },
+   "predicted_ms": 3.2494316004125126,
+   "fhat": 2.726283232371012,
+   "budget_ms": 3.3536999999999995,
+   "n_candidates": 4,
+   "certificate": "fixed-multiplier DP exact; constrained multiplier search and ratio projection uncertified",
+   "status": "planned",
+   "gmac": 1.2140743680000001,
+   "group": "replan",
+   "axis": "latency",
+   "budget": {
+    "id": "low70",
+    "ratio": 0.7,
+    "gmac": 1.1494412159999998,
+    "latency_ms": 3.3536999999999995
+   },
+   "mode": "M3",
+   "use_d": false,
+   "config_sha": "3c53edf3b6f93f11",
+   "details": {
+    "token_path": [
+     {
+      "block": 0,
+      "n_in": 197,
+      "prune_keep": 197,
+      "merge_keep": 197,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "kappa": 0.0
+     },
+     {
+      "block": 1,
+      "n_in": 197,
+      "prune_keep": 33,
+      "merge_keep": 33,
+      "removed": 164,
+      "merged": 0,
+      "pruned": 164,
+      "theta": 0.0,
+      "kappa": 0.0
+     },
+     {
+      "block": 2,
+      "n_in": 33,
+      "prune_keep": 33,
+      "merge_keep": 33,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "kappa": 0.0
+     },
+     {
+      "block": 3,
+      "n_in": 33,
+      "prune_keep": 33,
+      "merge_keep": 33,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "kappa": 0.0
+     },
+     {
+      "block": 4,
+      "n_in": 33,
+      "prune_keep": 33,
+      "merge_keep": 33,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "kappa": 0.0
+     },
+     {
+      "block": 5,
+      "n_in": 33,
+      "prune_keep": 33,
+      "merge_keep": 33,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "kappa": 0.0
+     },
+     {
+      "block": 6,
+      "n_in": 33,
+      "prune_keep": 33,
+      "merge_keep": 33,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "kappa": 0.0
+     },
+     {
+      "block": 7,
+      "n_in": 33,
+      "prune_keep": 33,
+      "merge_keep": 33,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "kappa": 0.0
+     },
+     {
+      "block": 8,
+      "n_in": 33,
+      "prune_keep": 33,
+      "merge_keep": 33,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "kappa": 0.0
+     },
+     {
+      "block": 9,
+      "n_in": 33,
+      "prune_keep": 33,
+      "merge_keep": 33,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "kappa": 0.0
+     },
+     {
+      "block": 10,
+      "n_in": 33,
+      "prune_keep": 33,
+      "merge_keep": 33,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "kappa": 0.0
+     },
+     {
+      "block": 11,
+      "n_in": 33,
+      "prune_keep": 33,
+      "merge_keep": 33,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "kappa": 0.0
+     }
+    ],
+    "K": 1,
+    "N_D": 0,
+    "final_tokens": 33,
+    "total_gmac": 1.2140743680000001,
+    "backbone_full_gmac": 1.2140743680000001,
+    "d_gmac": 0.0,
+    "station_scalar_gops_estimate": 1.6612e-05
+   },
+   "feature_extrapolation": {
+    "original_gmac": {
+     "value": 1.185172992,
+     "historical_range": [
+      1.634409216,
+      3.923171328
+     ]
+    },
+    "K": {
+     "value": 1.0,
+     "historical_range": [
+      3.0,
+      8.0
+     ]
+    },
+    "N_D": {
+     "value": 0.0,
+     "historical_range": [
+      1.0,
+      7.0
+     ]
+    },
+    "station_io": {
+     "value": 0.075648,
+     "historical_range": [
+      0.144384,
+      0.37132799999999994
+     ]
+    },
+    "merge_io": {
+     "value": 0.0,
+     "historical_range": [
+      0.013056000000000002,
+      0.052224000000000007
+     ]
+    },
+    "d_token": {
+     "value": 0.0,
+     "historical_range": [
+      0.000325632,
+      0.005376000000000001
+     ]
+    }
+   },
+   "prediction_main_ms": 3.2494316004125126
+  },
+  "fixed/low70/m3_p": {
+   "config": {
+    "kind": "pdm",
+    "prune_keep": [
+     197,
+     33,
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     197
+    ],
+    "merge_keep": [
+     197,
+     33,
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     197
+    ],
+    "k": {},
+    "groups": {},
+    "rank": null,
+    "triton": true,
+    "fuse_merge": true,
+    "merge": {
+     "mode": "M3",
+     "kernel": "triton_norm"
+    }
+   },
+   "status": "planned",
+   "group": "fixed",
+   "axis": "fixed_path",
+   "budget": {
+    "id": "low70",
+    "ratio": 0.7,
+    "gmac": 1.1494412159999998,
+    "latency_ms": 3.3536999999999995
+   },
+   "mode": "M3",
+   "use_d": false,
+   "state": {
+    "sites": [
+     1
+    ],
+    "counts": [
+     33
+    ],
+    "thetas": [
+     0.0
+    ],
+    "ks": [
+     0.0
+    ]
+   },
+   "gmac": 1.2140743680000001,
+   "note": "same full-method count path; fixed theta/counts, score/operator only",
+   "config_sha": "3c53edf3b6f93f11",
+   "details": {
+    "token_path": [
+     {
+      "block": 0,
+      "n_in": 197,
+      "prune_keep": 197,
+      "merge_keep": 197,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "kappa": 0.0
+     },
+     {
+      "block": 1,
+      "n_in": 197,
+      "prune_keep": 33,
+      "merge_keep": 33,
+      "removed": 164,
+      "merged": 0,
+      "pruned": 164,
+      "theta": 0.0,
+      "kappa": 0.0
+     },
+     {
+      "block": 2,
+      "n_in": 33,
+      "prune_keep": 33,
+      "merge_keep": 33,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "kappa": 0.0
+     },
+     {
+      "block": 3,
+      "n_in": 33,
+      "prune_keep": 33,
+      "merge_keep": 33,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "kappa": 0.0
+     },
+     {
+      "block": 4,
+      "n_in": 33,
+      "prune_keep": 33,
+      "merge_keep": 33,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "kappa": 0.0
+     },
+     {
+      "block": 5,
+      "n_in": 33,
+      "prune_keep": 33,
+      "merge_keep": 33,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "kappa": 0.0
+     },
+     {
+      "block": 6,
+      "n_in": 33,
+      "prune_keep": 33,
+      "merge_keep": 33,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "kappa": 0.0
+     },
+     {
+      "block": 7,
+      "n_in": 33,
+      "prune_keep": 33,
+      "merge_keep": 33,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "kappa": 0.0
+     },
+     {
+      "block": 8,
+      "n_in": 33,
+      "prune_keep": 33,
+      "merge_keep": 33,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "kappa": 0.0
+     },
+     {
+      "block": 9,
+      "n_in": 33,
+      "prune_keep": 33,
+      "merge_keep": 33,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "kappa": 0.0
+     },
+     {
+      "block": 10,
+      "n_in": 33,
+      "prune_keep": 33,
+      "merge_keep": 33,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "kappa": 0.0
+     },
+     {
+      "block": 11,
+      "n_in": 33,
+      "prune_keep": 33,
+      "merge_keep": 33,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "kappa": 0.0
+     }
+    ],
+    "K": 1,
+    "N_D": 0,
+    "final_tokens": 33,
+    "total_gmac": 1.2140743680000001,
+    "backbone_full_gmac": 1.2140743680000001,
+    "d_gmac": 0.0,
+    "station_scalar_gops_estimate": 1.6612e-05
+   },
+   "feature_extrapolation": {
+    "original_gmac": {
+     "value": 1.185172992,
+     "historical_range": [
+      1.634409216,
+      3.923171328
+     ]
+    },
+    "K": {
+     "value": 1.0,
+     "historical_range": [
+      3.0,
+      8.0
+     ]
+    },
+    "N_D": {
+     "value": 0.0,
+     "historical_range": [
+      1.0,
+      7.0
+     ]
+    },
+    "station_io": {
+     "value": 0.075648,
+     "historical_range": [
+      0.144384,
+      0.37132799999999994
+     ]
+    },
+    "merge_io": {
+     "value": 0.0,
+     "historical_range": [
+      0.013056000000000002,
+      0.052224000000000007
+     ]
+    },
+    "d_token": {
+     "value": 0.0,
+     "historical_range": [
+      0.000325632,
+      0.005376000000000001
+     ]
+    }
+   },
+   "prediction_main_ms": 3.2494316004125126
+  },
+  "pricing/low70/no_overhead": {
+   "state": {
+    "sites": [
+     1,
+     5,
+     10
+    ],
+    "counts": [
+     48,
+     25,
+     3
+    ],
+    "thetas": [
+     0.0,
+     1.0,
+     0.5
+    ],
+    "ks": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "config": {
+    "kind": "pdm",
+    "prune_keep": [
+     197,
+     48,
+     197,
+     197,
+     197,
+     48,
+     197,
+     197,
+     197,
+     197,
+     14,
+     197
+    ],
+    "merge_keep": [
+     197,
+     48,
+     197,
+     197,
+     197,
+     25,
+     197,
+     197,
+     197,
+     197,
+     3,
+     197
+    ],
+    "k": {},
+    "groups": {},
+    "rank": null,
+    "triton": true,
+    "fuse_merge": true,
+    "merge": {
+     "mode": "M3",
+     "kernel": "triton_norm"
+    }
+   },
+   "predicted_ms": 3.242949039238791,
+   "fhat": 2.864423214147488,
+   "budget_ms": 3.3536999999999995,
+   "n_candidates": 5,
+   "certificate": "fixed-multiplier DP exact; constrained multiplier search and ratio projection uncertified",
+   "status": "planned",
+   "gmac": 1.1623411200000004,
+   "group": "pricing",
+   "axis": "latency",
+   "budget": {
+    "id": "low70",
+    "ratio": 0.7,
+    "gmac": 1.1494412159999998,
+    "latency_ms": 3.3536999999999995
+   },
+   "config_sha": "f633ba229b465a55",
+   "details": {
+    "token_path": [
+     {
+      "block": 0,
+      "n_in": 197,
+      "prune_keep": 197,
+      "merge_keep": 197,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "kappa": 0.0
+     },
+     {
+      "block": 1,
+      "n_in": 197,
+      "prune_keep": 48,
+      "merge_keep": 48,
+      "removed": 149,
+      "merged": 0,
+      "pruned": 149,
+      "theta": 0.0,
+      "kappa": 0.0
+     },
+     {
+      "block": 2,
+      "n_in": 48,
+      "prune_keep": 48,
+      "merge_keep": 48,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "kappa": 0.0
+     },
+     {
+      "block": 3,
+      "n_in": 48,
+      "prune_keep": 48,
+      "merge_keep": 48,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "kappa": 0.0
+     },
+     {
+      "block": 4,
+      "n_in": 48,
+      "prune_keep": 48,
+      "merge_keep": 48,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "kappa": 0.0
+     },
+     {
+      "block": 5,
+      "n_in": 48,
+      "prune_keep": 48,
+      "merge_keep": 25,
+      "removed": 23,
+      "merged": 23,
+      "pruned": 0,
+      "theta": 1.0,
+      "kappa": 0.0
+     },
+     {
+      "block": 6,
+      "n_in": 25,
+      "prune_keep": 25,
+      "merge_keep": 25,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "kappa": 0.0
+     },
+     {
+      "block": 7,
+      "n_in": 25,
+      "prune_keep": 25,
+      "merge_keep": 25,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "kappa": 0.0
+     },
+     {
+      "block": 8,
+      "n_in": 25,
+      "prune_keep": 25,
+      "merge_keep": 25,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "kappa": 0.0
+     },
+     {
+      "block": 9,
+      "n_in": 25,
+      "prune_keep": 25,
+      "merge_keep": 25,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "kappa": 0.0
+     },
+     {
+      "block": 10,
+      "n_in": 25,
+      "prune_keep": 14,
+      "merge_keep": 3,
+      "removed": 22,
+      "merged": 11,
+      "pruned": 11,
+      "theta": 0.5,
+      "kappa": 0.0
+     },
+     {
+      "block": 11,
+      "n_in": 3,
+      "prune_keep": 3,
+      "merge_keep": 3,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "kappa": 0.0
+     }
+    ],
+    "K": 3,
+    "N_D": 0,
+    "final_tokens": 3,
+    "total_gmac": 1.1623411200000004,
+    "backbone_full_gmac": 1.1623411200000004,
+    "d_gmac": 0.0,
+    "station_scalar_gops_estimate": 4.7537e-05
+   },
+   "feature_extrapolation": {
+    "original_gmac": {
+     "value": 1.1334397440000004,
+     "historical_range": [
+      1.634409216,
+      3.923171328
+     ]
+    },
+    "N_D": {
+     "value": 0.0,
+     "historical_range": [
+      1.0,
+      7.0
+     ]
+    },
+    "station_io": {
+     "value": 0.10368000000000001,
+     "historical_range": [
+      0.144384,
+      0.37132799999999994
+     ]
+    },
+    "d_token": {
+     "value": 0.0,
+     "historical_range": [
+      0.000325632,
+      0.005376000000000001
+     ]
+    }
+   },
+   "prediction_main_ms": 3.347856633611149
+  }
+ },
+ "sha": "b971d1917d4b969636413fdac16ef349498dedaa1ef049db7763031dbd1b9a58"
+}

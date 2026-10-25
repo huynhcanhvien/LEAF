@@ -1,0 +1,58 @@
+{
+ "intercept": -4.248152255673531,
+ "coef": [
+  1.9192857835065622,
+  0.11052926710735766,
+  0.0,
+  0.0,
+  1.1947642615640106,
+  4.490802111437636,
+  0.0,
+  0.22917537031888222
+ ],
+ "alpha": 0.1,
+ "formula": "station_rich",
+ "feature_names": [
+  "original_gmac",
+  "K",
+  "N_D",
+  "K_m3",
+  "station_io",
+  "merge_io",
+  "d_token",
+  "m3_io"
+ ],
+ "n": 38,
+ "groups": 31,
+ "tuning": [
+  {
+   "alpha": 0.0,
+   "mape": 0.8169219380804134
+  },
+  {
+   "alpha": 0.01,
+   "mape": 0.8162258770486024
+  },
+  {
+   "alpha": 0.1,
+   "mape": 0.8115350648527137
+  },
+  {
+   "alpha": 1.0,
+   "mape": 1.3278620006576953
+  },
+  {
+   "alpha": 10.0,
+   "mape": 6.138741855125968
+  },
+  {
+   "alpha": 100.0,
+   "mape": 16.491256758719732
+  }
+ ],
+ "backbone": "mae_l",
+ "timm_id": "vit_large_patch16_224",
+ "batch": 32,
+ "device": "NVIDIA RTX 5060 Ti, BF16, CUDA graph",
+ "source": "results/salt_fit/cv/mae_l/station_rich.json"
+}

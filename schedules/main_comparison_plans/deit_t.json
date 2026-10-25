@@ -1,0 +1,9355 @@
+{
+ "backbone": "deit_t",
+ "jobs": {
+  "ref/dense": {
+   "config": {
+    "kind": "dense"
+   },
+   "group": "reference",
+   "config_sha": "7ae560d3b3fdeea9"
+  },
+  "ref/history/baseline/dense": {
+   "config": {
+    "kind": "dense"
+   },
+   "group": "baseline",
+   "config_sha": "7ae560d3b3fdeea9"
+  },
+  "ref/history/baseline/DR0.6": {
+   "config": {
+    "kind": "pda",
+    "prune_keep": [
+     197,
+     196,
+     180,
+     157,
+     130,
+     107,
+     86,
+     73,
+     63,
+     51,
+     40,
+     3
+    ],
+    "merge_keep": [
+     197,
+     187,
+     167,
+     139,
+     114,
+     90,
+     76,
+     66,
+     57,
+     45,
+     37,
+     3
+    ],
+    "groups": {},
+    "rank": null,
+    "triton": true,
+    "fuse_merge": true,
+    "base": "pd",
+    "alpha": {}
+   },
+   "group": "baseline",
+   "config_sha": "ed18a08d4b4e1db1",
+   "details": {
+    "token_path": [
+     {
+      "block": 0,
+      "n_in": 197,
+      "prune_keep": 197,
+      "merge_keep": 197,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "alpha": 0.0
+     },
+     {
+      "block": 1,
+      "n_in": 197,
+      "prune_keep": 196,
+      "merge_keep": 187,
+      "removed": 10,
+      "merged": 9,
+      "pruned": 1,
+      "theta": 0.9,
+      "alpha": 0.0
+     },
+     {
+      "block": 2,
+      "n_in": 187,
+      "prune_keep": 180,
+      "merge_keep": 167,
+      "removed": 20,
+      "merged": 13,
+      "pruned": 7,
+      "theta": 0.65,
+      "alpha": 0.0
+     },
+     {
+      "block": 3,
+      "n_in": 167,
+      "prune_keep": 157,
+      "merge_keep": 139,
+      "removed": 28,
+      "merged": 18,
+      "pruned": 10,
+      "theta": 0.6428571428571429,
+      "alpha": 0.0
+     },
+     {
+      "block": 4,
+      "n_in": 139,
+      "prune_keep": 130,
+      "merge_keep": 114,
+      "removed": 25,
+      "merged": 16,
+      "pruned": 9,
+      "theta": 0.64,
+      "alpha": 0.0
+     },
+     {
+      "block": 5,
+      "n_in": 114,
+      "prune_keep": 107,
+      "merge_keep": 90,
+      "removed": 24,
+      "merged": 17,
+      "pruned": 7,
+      "theta": 0.7083333333333334,
+      "alpha": 0.0
+     },
+     {
+      "block": 6,
+      "n_in": 90,
+      "prune_keep": 86,
+      "merge_keep": 76,
+      "removed": 14,
+      "merged": 10,
+      "pruned": 4,
+      "theta": 0.7142857142857143,
+      "alpha": 0.0
+     },
+     {
+      "block": 7,
+      "n_in": 76,
+      "prune_keep": 73,
+      "merge_keep": 66,
+      "removed": 10,
+      "merged": 7,
+      "pruned": 3,
+      "theta": 0.7,
+      "alpha": 0.0
+     },
+     {
+      "block": 8,
+      "n_in": 66,
+      "prune_keep": 63,
+      "merge_keep": 57,
+      "removed": 9,
+      "merged": 6,
+      "pruned": 3,
+      "theta": 0.6666666666666666,
+      "alpha": 0.0
+     },
+     {
+      "block": 9,
+      "n_in": 57,
+      "prune_keep": 51,
+      "merge_keep": 45,
+      "removed": 12,
+      "merged": 6,
+      "pruned": 6,
+      "theta": 0.5,
+      "alpha": 0.0
+     },
+     {
+      "block": 10,
+      "n_in": 45,
+      "prune_keep": 40,
+      "merge_keep": 37,
+      "removed": 8,
+      "merged": 3,
+      "pruned": 5,
+      "theta": 0.375,
+      "alpha": 0.0
+     },
+     {
+      "block": 11,
+      "n_in": 37,
+      "prune_keep": 3,
+      "merge_keep": 3,
+      "removed": 34,
+      "merged": 0,
+      "pruned": 34,
+      "theta": 0.0,
+      "alpha": 0.0
+     }
+    ],
+    "K": 11,
+    "N_D": 0,
+    "final_tokens": 3,
+    "total_gmac": 0.65721504,
+    "backbone_full_gmac": 0.65721504,
+    "d_gmac": 0.0,
+    "station_scalar_gops_estimate": 0.000231598
+   },
+   "gmac": 0.65721504,
+   "source_config_sha": "ed67bf56e56a9073"
+  },
+  "ref/history/baseline/DR0.7": {
+   "config": {
+    "kind": "pda",
+    "prune_keep": [
+     197,
+     196,
+     194,
+     180,
+     150,
+     123,
+     98,
+     82,
+     68,
+     60,
+     52,
+     3
+    ],
+    "merge_keep": [
+     197,
+     196,
+     192,
+     158,
+     133,
+     103,
+     88,
+     72,
+     64,
+     58,
+     49,
+     3
+    ],
+    "groups": {},
+    "rank": null,
+    "triton": true,
+    "fuse_merge": true,
+    "base": "pd",
+    "alpha": {}
+   },
+   "group": "baseline",
+   "config_sha": "775de78fa3ee4d88",
+   "details": {
+    "token_path": [
+     {
+      "block": 0,
+      "n_in": 197,
+      "prune_keep": 197,
+      "merge_keep": 197,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "alpha": 0.0
+     },
+     {
+      "block": 1,
+      "n_in": 197,
+      "prune_keep": 196,
+      "merge_keep": 196,
+      "removed": 1,
+      "merged": 0,
+      "pruned": 1,
+      "theta": 0.0,
+      "alpha": 0.0
+     },
+     {
+      "block": 2,
+      "n_in": 196,
+      "prune_keep": 194,
+      "merge_keep": 192,
+      "removed": 4,
+      "merged": 2,
+      "pruned": 2,
+      "theta": 0.5,
+      "alpha": 0.0
+     },
+     {
+      "block": 3,
+      "n_in": 192,
+      "prune_keep": 180,
+      "merge_keep": 158,
+      "removed": 34,
+      "merged": 22,
+      "pruned": 12,
+      "theta": 0.6470588235294118,
+      "alpha": 0.0
+     },
+     {
+      "block": 4,
+      "n_in": 158,
+      "prune_keep": 150,
+      "merge_keep": 133,
+      "removed": 25,
+      "merged": 17,
+      "pruned": 8,
+      "theta": 0.68,
+      "alpha": 0.0
+     },
+     {
+      "block": 5,
+      "n_in": 133,
+      "prune_keep": 123,
+      "merge_keep": 103,
+      "removed": 30,
+      "merged": 20,
+      "pruned": 10,
+      "theta": 0.6666666666666666,
+      "alpha": 0.0
+     },
+     {
+      "block": 6,
+      "n_in": 103,
+      "prune_keep": 98,
+      "merge_keep": 88,
+      "removed": 15,
+      "merged": 10,
+      "pruned": 5,
+      "theta": 0.6666666666666666,
+      "alpha": 0.0
+     },
+     {
+      "block": 7,
+      "n_in": 88,
+      "prune_keep": 82,
+      "merge_keep": 72,
+      "removed": 16,
+      "merged": 10,
+      "pruned": 6,
+      "theta": 0.625,
+      "alpha": 0.0
+     },
+     {
+      "block": 8,
+      "n_in": 72,
+      "prune_keep": 68,
+      "merge_keep": 64,
+      "removed": 8,
+      "merged": 4,
+      "pruned": 4,
+      "theta": 0.5,
+      "alpha": 0.0
+     },
+     {
+      "block": 9,
+      "n_in": 64,
+      "prune_keep": 60,
+      "merge_keep": 58,
+      "removed": 6,
+      "merged": 2,
+      "pruned": 4,
+      "theta": 0.3333333333333333,
+      "alpha": 0.0
+     },
+     {
+      "block": 10,
+      "n_in": 58,
+      "prune_keep": 52,
+      "merge_keep": 49,
+      "removed": 9,
+      "merged": 3,
+      "pruned": 6,
+      "theta": 0.3333333333333333,
+      "alpha": 0.0
+     },
+     {
+      "block": 11,
+      "n_in": 49,
+      "prune_keep": 3,
+      "merge_keep": 3,
+      "removed": 46,
+      "merged": 0,
+      "pruned": 46,
+      "theta": 0.0,
+      "alpha": 0.0
+     }
+    ],
+    "K": 11,
+    "N_D": 0,
+    "final_tokens": 3,
+    "total_gmac": 0.728712384,
+    "backbone_full_gmac": 0.728712384,
+    "d_gmac": 0.0,
+    "station_scalar_gops_estimate": 0.000257327
+   },
+   "gmac": 0.728712384,
+   "source_config_sha": "ff3ad10d6ac40fe8"
+  },
+  "ref/history/baseline/DR0.8": {
+   "config": {
+    "kind": "pda",
+    "prune_keep": [
+     197,
+     197,
+     196,
+     186,
+     166,
+     147,
+     117,
+     103,
+     92,
+     80,
+     74,
+     3
+    ],
+    "merge_keep": [
+     197,
+     196,
+     190,
+     172,
+     154,
+     125,
+     107,
+     96,
+     84,
+     78,
+     70,
+     3
+    ],
+    "groups": {},
+    "rank": null,
+    "triton": true,
+    "fuse_merge": true,
+    "base": "pd",
+    "alpha": {}
+   },
+   "group": "baseline",
+   "config_sha": "41c7a711a0b32875",
+   "details": {
+    "token_path": [
+     {
+      "block": 0,
+      "n_in": 197,
+      "prune_keep": 197,
+      "merge_keep": 197,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "alpha": 0.0
+     },
+     {
+      "block": 1,
+      "n_in": 197,
+      "prune_keep": 197,
+      "merge_keep": 196,
+      "removed": 1,
+      "merged": 1,
+      "pruned": 0,
+      "theta": 1.0,
+      "alpha": 0.0
+     },
+     {
+      "block": 2,
+      "n_in": 196,
+      "prune_keep": 196,
+      "merge_keep": 190,
+      "removed": 6,
+      "merged": 6,
+      "pruned": 0,
+      "theta": 1.0,
+      "alpha": 0.0
+     },
+     {
+      "block": 3,
+      "n_in": 190,
+      "prune_keep": 186,
+      "merge_keep": 172,
+      "removed": 18,
+      "merged": 14,
+      "pruned": 4,
+      "theta": 0.7777777777777778,
+      "alpha": 0.0
+     },
+     {
+      "block": 4,
+      "n_in": 172,
+      "prune_keep": 166,
+      "merge_keep": 154,
+      "removed": 18,
+      "merged": 12,
+      "pruned": 6,
+      "theta": 0.6666666666666666,
+      "alpha": 0.0
+     },
+     {
+      "block": 5,
+      "n_in": 154,
+      "prune_keep": 147,
+      "merge_keep": 125,
+      "removed": 29,
+      "merged": 22,
+      "pruned": 7,
+      "theta": 0.7586206896551724,
+      "alpha": 0.0
+     },
+     {
+      "block": 6,
+      "n_in": 125,
+      "prune_keep": 117,
+      "merge_keep": 107,
+      "removed": 18,
+      "merged": 10,
+      "pruned": 8,
+      "theta": 0.5555555555555556,
+      "alpha": 0.0
+     },
+     {
+      "block": 7,
+      "n_in": 107,
+      "prune_keep": 103,
+      "merge_keep": 96,
+      "removed": 11,
+      "merged": 7,
+      "pruned": 4,
+      "theta": 0.6363636363636364,
+      "alpha": 0.0
+     },
+     {
+      "block": 8,
+      "n_in": 96,
+      "prune_keep": 92,
+      "merge_keep": 84,
+      "removed": 12,
+      "merged": 8,
+      "pruned": 4,
+      "theta": 0.6666666666666666,
+      "alpha": 0.0
+     },
+     {
+      "block": 9,
+      "n_in": 84,
+      "prune_keep": 80,
+      "merge_keep": 78,
+      "removed": 6,
+      "merged": 2,
+      "pruned": 4,
+      "theta": 0.3333333333333333,
+      "alpha": 0.0
+     },
+     {
+      "block": 10,
+      "n_in": 78,
+      "prune_keep": 74,
+      "merge_keep": 70,
+      "removed": 8,
+      "merged": 4,
+      "pruned": 4,
+      "theta": 0.5,
+      "alpha": 0.0
+     },
+     {
+      "block": 11,
+      "n_in": 70,
+      "prune_keep": 3,
+      "merge_keep": 3,
+      "removed": 67,
+      "merged": 0,
+      "pruned": 67,
+      "theta": 0.0,
+      "alpha": 0.0
+     }
+    ],
+    "K": 11,
+    "N_D": 0,
+    "final_tokens": 3,
+    "total_gmac": 0.811083648,
+    "backbone_full_gmac": 0.811083648,
+    "d_gmac": 0.0,
+    "station_scalar_gops_estimate": 0.000290304
+   },
+   "gmac": 0.811083648,
+   "source_config_sha": "48d7e2784b3a154f"
+  },
+  "ref/history/baseline/DR0.9": {
+   "config": {
+    "kind": "pda",
+    "prune_keep": [
+     197,
+     197,
+     196,
+     190,
+     182,
+     166,
+     141,
+     125,
+     113,
+     105,
+     99,
+     3
+    ],
+    "merge_keep": [
+     197,
+     196,
+     194,
+     188,
+     172,
+     147,
+     129,
+     115,
+     107,
+     103,
+     96,
+     3
+    ],
+    "groups": {},
+    "rank": null,
+    "triton": true,
+    "fuse_merge": true,
+    "base": "pd",
+    "alpha": {}
+   },
+   "group": "baseline",
+   "config_sha": "ff0bff777f353f01",
+   "details": {
+    "token_path": [
+     {
+      "block": 0,
+      "n_in": 197,
+      "prune_keep": 197,
+      "merge_keep": 197,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "alpha": 0.0
+     },
+     {
+      "block": 1,
+      "n_in": 197,
+      "prune_keep": 197,
+      "merge_keep": 196,
+      "removed": 1,
+      "merged": 1,
+      "pruned": 0,
+      "theta": 1.0,
+      "alpha": 0.0
+     },
+     {
+      "block": 2,
+      "n_in": 196,
+      "prune_keep": 196,
+      "merge_keep": 194,
+      "removed": 2,
+      "merged": 2,
+      "pruned": 0,
+      "theta": 1.0,
+      "alpha": 0.0
+     },
+     {
+      "block": 3,
+      "n_in": 194,
+      "prune_keep": 190,
+      "merge_keep": 188,
+      "removed": 6,
+      "merged": 2,
+      "pruned": 4,
+      "theta": 0.3333333333333333,
+      "alpha": 0.0
+     },
+     {
+      "block": 4,
+      "n_in": 188,
+      "prune_keep": 182,
+      "merge_keep": 172,
+      "removed": 16,
+      "merged": 10,
+      "pruned": 6,
+      "theta": 0.625,
+      "alpha": 0.0
+     },
+     {
+      "block": 5,
+      "n_in": 172,
+      "prune_keep": 166,
+      "merge_keep": 147,
+      "removed": 25,
+      "merged": 19,
+      "pruned": 6,
+      "theta": 0.76,
+      "alpha": 0.0
+     },
+     {
+      "block": 6,
+      "n_in": 147,
+      "prune_keep": 141,
+      "merge_keep": 129,
+      "removed": 18,
+      "merged": 12,
+      "pruned": 6,
+      "theta": 0.6666666666666666,
+      "alpha": 0.0
+     },
+     {
+      "block": 7,
+      "n_in": 129,
+      "prune_keep": 125,
+      "merge_keep": 115,
+      "removed": 14,
+      "merged": 10,
+      "pruned": 4,
+      "theta": 0.7142857142857143,
+      "alpha": 0.0
+     },
+     {
+      "block": 8,
+      "n_in": 115,
+      "prune_keep": 113,
+      "merge_keep": 107,
+      "removed": 8,
+      "merged": 6,
+      "pruned": 2,
+      "theta": 0.75,
+      "alpha": 0.0
+     },
+     {
+      "block": 9,
+      "n_in": 107,
+      "prune_keep": 105,
+      "merge_keep": 103,
+      "removed": 4,
+      "merged": 2,
+      "pruned": 2,
+      "theta": 0.5,
+      "alpha": 0.0
+     },
+     {
+      "block": 10,
+      "n_in": 103,
+      "prune_keep": 99,
+      "merge_keep": 96,
+      "removed": 7,
+      "merged": 3,
+      "pruned": 4,
+      "theta": 0.42857142857142855,
+      "alpha": 0.0
+     },
+     {
+      "block": 11,
+      "n_in": 96,
+      "prune_keep": 3,
+      "merge_keep": 3,
+      "removed": 93,
+      "merged": 0,
+      "pruned": 93,
+      "theta": 0.0,
+      "alpha": 0.0
+     }
+    ],
+    "K": 11,
+    "N_D": 0,
+    "final_tokens": 3,
+    "total_gmac": 0.9041376000000001,
+    "backbone_full_gmac": 0.9041376000000001,
+    "d_gmac": 0.0,
+    "station_scalar_gops_estimate": 0.000323857
+   },
+   "gmac": 0.9041376000000001,
+   "source_config_sha": "c9ffd3a27b637432"
+  },
+  "ref/history/baseline/DR1.0": {
+   "config": {
+    "kind": "pda",
+    "prune_keep": [
+     197,
+     197,
+     196,
+     194,
+     188,
+     184,
+     154,
+     197,
+     148,
+     137,
+     129,
+     21
+    ],
+    "merge_keep": [
+     197,
+     197,
+     196,
+     190,
+     186,
+     154,
+     148,
+     197,
+     145,
+     135,
+     125,
+     21
+    ],
+    "groups": {},
+    "rank": null,
+    "triton": true,
+    "fuse_merge": true,
+    "base": "pd",
+    "alpha": {}
+   },
+   "group": "baseline",
+   "config_sha": "c4f78ee32feff459",
+   "details": {
+    "token_path": [
+     {
+      "block": 0,
+      "n_in": 197,
+      "prune_keep": 197,
+      "merge_keep": 197,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "alpha": 0.0
+     },
+     {
+      "block": 1,
+      "n_in": 197,
+      "prune_keep": 197,
+      "merge_keep": 197,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "alpha": 0.0
+     },
+     {
+      "block": 2,
+      "n_in": 197,
+      "prune_keep": 196,
+      "merge_keep": 196,
+      "removed": 1,
+      "merged": 0,
+      "pruned": 1,
+      "theta": 0.0,
+      "alpha": 0.0
+     },
+     {
+      "block": 3,
+      "n_in": 196,
+      "prune_keep": 194,
+      "merge_keep": 190,
+      "removed": 6,
+      "merged": 4,
+      "pruned": 2,
+      "theta": 0.6666666666666666,
+      "alpha": 0.0
+     },
+     {
+      "block": 4,
+      "n_in": 190,
+      "prune_keep": 188,
+      "merge_keep": 186,
+      "removed": 4,
+      "merged": 2,
+      "pruned": 2,
+      "theta": 0.5,
+      "alpha": 0.0
+     },
+     {
+      "block": 5,
+      "n_in": 186,
+      "prune_keep": 184,
+      "merge_keep": 154,
+      "removed": 32,
+      "merged": 30,
+      "pruned": 2,
+      "theta": 0.9375,
+      "alpha": 0.0
+     },
+     {
+      "block": 6,
+      "n_in": 154,
+      "prune_keep": 154,
+      "merge_keep": 148,
+      "removed": 6,
+      "merged": 6,
+      "pruned": 0,
+      "theta": 1.0,
+      "alpha": 0.0
+     },
+     {
+      "block": 7,
+      "n_in": 148,
+      "prune_keep": 148,
+      "merge_keep": 148,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "alpha": 0.0
+     },
+     {
+      "block": 8,
+      "n_in": 148,
+      "prune_keep": 148,
+      "merge_keep": 145,
+      "removed": 3,
+      "merged": 3,
+      "pruned": 0,
+      "theta": 1.0,
+      "alpha": 0.0
+     },
+     {
+      "block": 9,
+      "n_in": 145,
+      "prune_keep": 137,
+      "merge_keep": 135,
+      "removed": 10,
+      "merged": 2,
+      "pruned": 8,
+      "theta": 0.2,
+      "alpha": 0.0
+     },
+     {
+      "block": 10,
+      "n_in": 135,
+      "prune_keep": 129,
+      "merge_keep": 125,
+      "removed": 10,
+      "merged": 4,
+      "pruned": 6,
+      "theta": 0.4,
+      "alpha": 0.0
+     },
+     {
+      "block": 11,
+      "n_in": 125,
+      "prune_keep": 21,
+      "merge_keep": 21,
+      "removed": 104,
+      "merged": 0,
+      "pruned": 104,
+      "theta": 0.0,
+      "alpha": 0.0
+     }
+    ],
+    "K": 9,
+    "N_D": 0,
+    "final_tokens": 21,
+    "total_gmac": 1.005389376,
+    "backbone_full_gmac": 1.005389376,
+    "d_gmac": 0.0,
+    "station_scalar_gops_estimate": 0.000288889
+   },
+   "gmac": 1.005389376,
+   "source_config_sha": "acc37661ac85d307"
+  },
+  "ref/history/baseline/tome/r4": {
+   "config": {
+    "kind": "tome",
+    "r": 4
+   },
+   "group": "baseline",
+   "config_sha": "6b8ebea9900c7068"
+  },
+  "ref/history/tome_m3/r4": {
+   "config": {
+    "kind": "tome_m3",
+    "r": 4
+   },
+   "group": "baseline",
+   "config_sha": "5b7330d8de36b864"
+  },
+  "ref/history/baseline/tome/r6": {
+   "config": {
+    "kind": "tome",
+    "r": 6
+   },
+   "group": "baseline",
+   "config_sha": "84bca71893a69d24"
+  },
+  "ref/history/tome_m3/r6": {
+   "config": {
+    "kind": "tome_m3",
+    "r": 6
+   },
+   "group": "baseline",
+   "config_sha": "5b048872848c209a"
+  },
+  "ref/history/baseline/tome/r8": {
+   "config": {
+    "kind": "tome",
+    "r": 8
+   },
+   "group": "baseline",
+   "config_sha": "7ffe90e82917a07e"
+  },
+  "ref/history/tome_m3/r8": {
+   "config": {
+    "kind": "tome_m3",
+    "r": 8
+   },
+   "group": "baseline",
+   "config_sha": "d63c747e588f7981"
+  },
+  "ref/history/baseline/tome/r10": {
+   "config": {
+    "kind": "tome",
+    "r": 10
+   },
+   "group": "baseline",
+   "config_sha": "ef24fc3b90a0a83f"
+  },
+  "ref/history/tome_m3/r10": {
+   "config": {
+    "kind": "tome_m3",
+    "r": 10
+   },
+   "group": "baseline",
+   "config_sha": "2fd9add1615c1abc"
+  },
+  "ref/history/baseline/tome/r12": {
+   "config": {
+    "kind": "tome",
+    "r": 12
+   },
+   "group": "baseline",
+   "config_sha": "26e28e39bfa02120"
+  },
+  "ref/history/tome_m3/r12": {
+   "config": {
+    "kind": "tome_m3",
+    "r": 12
+   },
+   "group": "baseline",
+   "config_sha": "4321b0a1d5921e7f"
+  },
+  "ref/history/baseline/tome/r13": {
+   "config": {
+    "kind": "tome",
+    "r": 13
+   },
+   "group": "baseline",
+   "config_sha": "e8eac18a4d4ef26a"
+  },
+  "ref/history/tome_m3/r13": {
+   "config": {
+    "kind": "tome_m3",
+    "r": 13
+   },
+   "group": "baseline",
+   "config_sha": "1181396fade71f87"
+  },
+  "ref/history/baseline/tome/r14": {
+   "config": {
+    "kind": "tome",
+    "r": 14
+   },
+   "group": "baseline",
+   "config_sha": "983c3b06d60c6159"
+  },
+  "ref/history/tome_m3/r14": {
+   "config": {
+    "kind": "tome_m3",
+    "r": 14
+   },
+   "group": "baseline",
+   "config_sha": "bc290dcc16280b72"
+  },
+  "ref/history/baseline/tome/r16": {
+   "config": {
+    "kind": "tome",
+    "r": 16
+   },
+   "group": "baseline",
+   "config_sha": "92cf875e1526cefc"
+  },
+  "ref/history/tome_m3/r16": {
+   "config": {
+    "kind": "tome_m3",
+    "r": 16
+   },
+   "group": "baseline",
+   "config_sha": "7b0ab2aa54735741"
+  },
+  "ref/history/baseline/pitome/ratio0.95": {
+   "config": {
+    "kind": "pitome",
+    "ratio": 0.95
+   },
+   "group": "baseline",
+   "config_sha": "a2a05ad5bf654de7"
+  },
+  "ref/history/baseline/pitome/ratio0.925": {
+   "config": {
+    "kind": "pitome",
+    "ratio": 0.925
+   },
+   "group": "baseline",
+   "config_sha": "d9492e5dde03b8f1"
+  },
+  "ref/history/baseline/pitome/ratio0.9": {
+   "config": {
+    "kind": "pitome",
+    "ratio": 0.9
+   },
+   "group": "baseline",
+   "config_sha": "fa7f77bca3b31851"
+  },
+  "ref/history/baseline/pitome/ratio0.875": {
+   "config": {
+    "kind": "pitome",
+    "ratio": 0.875
+   },
+   "group": "baseline",
+   "config_sha": "ccc073b722de2170"
+  },
+  "ref/history/baseline/pitome/ratio0.85": {
+   "config": {
+    "kind": "pitome",
+    "ratio": 0.85
+   },
+   "group": "baseline",
+   "config_sha": "41837b7de603c064"
+  },
+  "ref/history/baseline/pitome/ratio0.825": {
+   "config": {
+    "kind": "pitome",
+    "ratio": 0.825
+   },
+   "group": "baseline",
+   "config_sha": "19016e9788a7082a"
+  },
+  "ref/history/baseline/pitome/ratio0.8": {
+   "config": {
+    "kind": "pitome",
+    "ratio": 0.8
+   },
+   "group": "baseline",
+   "config_sha": "f0a1c18fefd91bd4"
+  },
+  "ref/history/baseline/evit/keep_rate0.9": {
+   "config": {
+    "kind": "evit",
+    "keep_rate": 0.9
+   },
+   "group": "baseline",
+   "config_sha": "837aff05d062fbb8"
+  },
+  "ref/history/baseline/evit/keep_rate0.8": {
+   "config": {
+    "kind": "evit",
+    "keep_rate": 0.8
+   },
+   "group": "baseline",
+   "config_sha": "e24918cea1950d2c"
+  },
+  "ref/history/baseline/evit/keep_rate0.7": {
+   "config": {
+    "kind": "evit",
+    "keep_rate": 0.7
+   },
+   "group": "baseline",
+   "config_sha": "caf9fdfe64c142f8"
+  },
+  "ref/history/baseline/evit/keep_rate0.6": {
+   "config": {
+    "kind": "evit",
+    "keep_rate": 0.6
+   },
+   "group": "baseline",
+   "config_sha": "b497a15a21b436c5"
+  },
+  "ref/history/baseline/evit/keep_rate0.5": {
+   "config": {
+    "kind": "evit",
+    "keep_rate": 0.5
+   },
+   "group": "baseline",
+   "config_sha": "df22f4a9f36937b4"
+  },
+  "ref/history/baseline/evit/keep_rate0.4": {
+   "config": {
+    "kind": "evit",
+    "keep_rate": 0.4
+   },
+   "group": "baseline",
+   "config_sha": "9792f52f51f2fdf7"
+  },
+  "ref/history/baseline/mctf/r4": {
+   "config": {
+    "kind": "mctf",
+    "r": 4
+   },
+   "group": "baseline",
+   "config_sha": "2773c636130e5db8"
+  },
+  "ref/history/baseline/mctf/r6": {
+   "config": {
+    "kind": "mctf",
+    "r": 6
+   },
+   "group": "baseline",
+   "config_sha": "9e4f64e55a695bbf"
+  },
+  "ref/history/baseline/mctf/r8": {
+   "config": {
+    "kind": "mctf",
+    "r": 8
+   },
+   "group": "baseline",
+   "config_sha": "a3b031ab0138ba8f"
+  },
+  "ref/history/baseline/mctf/r10": {
+   "config": {
+    "kind": "mctf",
+    "r": 10
+   },
+   "group": "baseline",
+   "config_sha": "dd56ef4a95fec3ff"
+  },
+  "ref/history/baseline/mctf/r12": {
+   "config": {
+    "kind": "mctf",
+    "r": 12
+   },
+   "group": "baseline",
+   "config_sha": "c5928a4b7ecfc0a8"
+  },
+  "ref/history/baseline/mctf/r14": {
+   "config": {
+    "kind": "mctf",
+    "r": 14
+   },
+   "group": "baseline",
+   "config_sha": "cddaf6600b1fd4b4"
+  },
+  "ref/history/baseline/mctf/r16": {
+   "config": {
+    "kind": "mctf",
+    "r": 16
+   },
+   "group": "baseline",
+   "config_sha": "63ad9e41371c522a"
+  },
+  "ref/history/baseline/ppt/r20": {
+   "config": {
+    "kind": "ppt",
+    "r": 20,
+    "threshold": 7e-05
+   },
+   "group": "baseline",
+   "config_sha": "b6f3643e8ca2aa71"
+  },
+  "ref/history/baseline/ppt/r30": {
+   "config": {
+    "kind": "ppt",
+    "r": 30,
+    "threshold": 7e-05
+   },
+   "group": "baseline",
+   "config_sha": "80245d557151d3ff"
+  },
+  "ref/history/baseline/ppt/r40": {
+   "config": {
+    "kind": "ppt",
+    "r": 40,
+    "threshold": 7e-05
+   },
+   "group": "baseline",
+   "config_sha": "ab071b4c6ebffa98"
+  },
+  "ref/history/baseline/ppt/r50": {
+   "config": {
+    "kind": "ppt",
+    "r": 50,
+    "threshold": 7e-05
+   },
+   "group": "baseline",
+   "config_sha": "5646b987898c6fc8"
+  },
+  "ref/history/baseline/ppt/r60": {
+   "config": {
+    "kind": "ppt",
+    "r": 60,
+    "threshold": 7e-05
+   },
+   "group": "baseline",
+   "config_sha": "2e36ed426419db74"
+  },
+  "ref/baseline/tome/r16": {
+   "config": {
+    "kind": "tome",
+    "r": 16
+   },
+   "group": "baseline",
+   "config_sha": "92cf875e1526cefc"
+  },
+  "ref/baseline/tome/r20": {
+   "config": {
+    "kind": "tome",
+    "r": 20
+   },
+   "group": "baseline",
+   "config_sha": "9bf27b2529aa8fbb"
+  },
+  "ref/baseline/tome/r24": {
+   "config": {
+    "kind": "tome",
+    "r": 24
+   },
+   "group": "baseline",
+   "config_sha": "a06ca7ddd2858b2a"
+  },
+  "ref/baseline/tome/r32": {
+   "config": {
+    "kind": "tome",
+    "r": 32
+   },
+   "group": "baseline",
+   "config_sha": "94ff2603241a2967"
+  },
+  "ref/baseline/tome/r48": {
+   "config": {
+    "kind": "tome",
+    "r": 48
+   },
+   "group": "baseline",
+   "config_sha": "e3318f07a737e060"
+  },
+  "ref/baseline/tome_m3/r16": {
+   "config": {
+    "kind": "tome_m3",
+    "r": 16
+   },
+   "group": "baseline",
+   "config_sha": "7b0ab2aa54735741"
+  },
+  "ref/baseline/tome_m3/r20": {
+   "config": {
+    "kind": "tome_m3",
+    "r": 20
+   },
+   "group": "baseline",
+   "config_sha": "e6a338f13c33f45f"
+  },
+  "ref/baseline/tome_m3/r24": {
+   "config": {
+    "kind": "tome_m3",
+    "r": 24
+   },
+   "group": "baseline",
+   "config_sha": "c984ef24f61cbf04"
+  },
+  "ref/baseline/tome_m3/r32": {
+   "config": {
+    "kind": "tome_m3",
+    "r": 32
+   },
+   "group": "baseline",
+   "config_sha": "88b9e04dd2bbeaba"
+  },
+  "ref/baseline/tome_m3/r48": {
+   "config": {
+    "kind": "tome_m3",
+    "r": 48
+   },
+   "group": "baseline",
+   "config_sha": "a017dd1be57c5940"
+  },
+  "ref/baseline/tofu/r16": {
+   "config": {
+    "kind": "tofu",
+    "r": 16
+   },
+   "group": "baseline",
+   "config_sha": "d249a50564c5e569"
+  },
+  "ref/baseline/tofu/r20": {
+   "config": {
+    "kind": "tofu",
+    "r": 20
+   },
+   "group": "baseline",
+   "config_sha": "726184f274ee8426"
+  },
+  "ref/baseline/tofu/r24": {
+   "config": {
+    "kind": "tofu",
+    "r": 24
+   },
+   "group": "baseline",
+   "config_sha": "76a69dfed799a7b4"
+  },
+  "ref/baseline/tofu/r32": {
+   "config": {
+    "kind": "tofu",
+    "r": 32
+   },
+   "group": "baseline",
+   "config_sha": "c74b4276bcc30788"
+  },
+  "ref/baseline/tofu/r48": {
+   "config": {
+    "kind": "tofu",
+    "r": 48
+   },
+   "group": "baseline",
+   "config_sha": "14800acfada7b9c8"
+  },
+  "ref/baseline/rapid/r16": {
+   "config": {
+    "kind": "rapid",
+    "r": 16
+   },
+   "group": "baseline",
+   "config_sha": "c7a4a926b1a95bf1"
+  },
+  "ref/baseline/rapid/r20": {
+   "config": {
+    "kind": "rapid",
+    "r": 20
+   },
+   "group": "baseline",
+   "config_sha": "7c2923d81a906181"
+  },
+  "ref/baseline/rapid/r24": {
+   "config": {
+    "kind": "rapid",
+    "r": 24
+   },
+   "group": "baseline",
+   "config_sha": "262d3575f325e76c"
+  },
+  "ref/baseline/rapid/r32": {
+   "config": {
+    "kind": "rapid",
+    "r": 32
+   },
+   "group": "baseline",
+   "config_sha": "25a6d198d2eb7061"
+  },
+  "ref/baseline/rapid/r48": {
+   "config": {
+    "kind": "rapid",
+    "r": 48
+   },
+   "group": "baseline",
+   "config_sha": "cf562611345fe22c"
+  },
+  "ref/baseline/evit/kr0.15": {
+   "config": {
+    "kind": "evit",
+    "keep_rate": 0.15
+   },
+   "group": "baseline",
+   "config_sha": "ad2a2b5200f5360e"
+  },
+  "ref/baseline/evit/kr0.25": {
+   "config": {
+    "kind": "evit",
+    "keep_rate": 0.25
+   },
+   "group": "baseline",
+   "config_sha": "ec628b54691432a9"
+  },
+  "ref/baseline/evit/kr0.35": {
+   "config": {
+    "kind": "evit",
+    "keep_rate": 0.35
+   },
+   "group": "baseline",
+   "config_sha": "b12113b02f8f40f3"
+  },
+  "ref/baseline/evit/kr0.45": {
+   "config": {
+    "kind": "evit",
+    "keep_rate": 0.45
+   },
+   "group": "baseline",
+   "config_sha": "226b94a4d7126f12"
+  },
+  "ref/baseline/tofu/r4": {
+   "config": {
+    "kind": "tofu",
+    "r": 4
+   },
+   "group": "baseline",
+   "grid": "q1_main_v2",
+   "config_sha": "265a675d72be2c7e"
+  },
+  "ref/baseline/tofu/r6": {
+   "config": {
+    "kind": "tofu",
+    "r": 6
+   },
+   "group": "baseline",
+   "grid": "q1_main_v2",
+   "config_sha": "120a72c401fbeac9"
+  },
+  "ref/baseline/tofu/r8": {
+   "config": {
+    "kind": "tofu",
+    "r": 8
+   },
+   "group": "baseline",
+   "grid": "q1_main_v2",
+   "config_sha": "550fb42b57887229"
+  },
+  "ref/baseline/tofu/r10": {
+   "config": {
+    "kind": "tofu",
+    "r": 10
+   },
+   "group": "baseline",
+   "grid": "q1_main_v2",
+   "config_sha": "2af65551079fc40f"
+  },
+  "ref/baseline/tofu/r12": {
+   "config": {
+    "kind": "tofu",
+    "r": 12
+   },
+   "group": "baseline",
+   "grid": "q1_main_v2",
+   "config_sha": "60d177c24b81e290"
+  },
+  "ref/baseline/tofu/r14": {
+   "config": {
+    "kind": "tofu",
+    "r": 14
+   },
+   "group": "baseline",
+   "grid": "q1_main_v2",
+   "config_sha": "6a2fcd65968cb8c7"
+  },
+  "ref/baseline/rapid/r4": {
+   "config": {
+    "kind": "rapid",
+    "r": 4
+   },
+   "group": "baseline",
+   "grid": "q1_main_v2",
+   "config_sha": "1db0430ba1767547"
+  },
+  "ref/baseline/rapid/r6": {
+   "config": {
+    "kind": "rapid",
+    "r": 6
+   },
+   "group": "baseline",
+   "grid": "q1_main_v2",
+   "config_sha": "1b483167947460f3"
+  },
+  "ref/baseline/rapid/r8": {
+   "config": {
+    "kind": "rapid",
+    "r": 8
+   },
+   "group": "baseline",
+   "grid": "q1_main_v2",
+   "config_sha": "a3b3a2a8c438a1f9"
+  },
+  "ref/baseline/rapid/r10": {
+   "config": {
+    "kind": "rapid",
+    "r": 10
+   },
+   "group": "baseline",
+   "grid": "q1_main_v2",
+   "config_sha": "f9d1a6f516f58612"
+  },
+  "ref/baseline/rapid/r12": {
+   "config": {
+    "kind": "rapid",
+    "r": 12
+   },
+   "group": "baseline",
+   "grid": "q1_main_v2",
+   "config_sha": "ea53d2da19b8bfc3"
+  },
+  "ref/baseline/rapid/r14": {
+   "config": {
+    "kind": "rapid",
+    "r": 14
+   },
+   "group": "baseline",
+   "grid": "q1_main_v2",
+   "config_sha": "e879a331f165d222"
+  },
+  "ref/baseline/onemore/n40": {
+   "config": {
+    "kind": "onemore",
+    "n": 40
+   },
+   "group": "baseline",
+   "grid": "q1_main_v2",
+   "config_sha": "c8311c33844cb5d3"
+  },
+  "ref/baseline/onemore/n70": {
+   "config": {
+    "kind": "onemore",
+    "n": 70
+   },
+   "group": "baseline",
+   "grid": "q1_main_v2",
+   "config_sha": "f818671e2a084d71"
+  },
+  "ref/baseline/onemore/n100": {
+   "config": {
+    "kind": "onemore",
+    "n": 100
+   },
+   "group": "baseline",
+   "grid": "q1_main_v2",
+   "config_sha": "2b1c8ab0a2e1132f"
+  },
+  "ref/baseline/onemore/n130": {
+   "config": {
+    "kind": "onemore",
+    "n": 130
+   },
+   "group": "baseline",
+   "grid": "q1_main_v2",
+   "config_sha": "20a27195d5599ab4"
+  },
+  "ref/baseline/onemore/n160": {
+   "config": {
+    "kind": "onemore",
+    "n": 160
+   },
+   "group": "baseline",
+   "grid": "q1_main_v2",
+   "config_sha": "c39f3a03063eda54"
+  },
+  "ref/baseline/onemore/n190": {
+   "config": {
+    "kind": "onemore",
+    "n": 190
+   },
+   "group": "baseline",
+   "grid": "q1_main_v2",
+   "config_sha": "1e0f5d5d13ec9b86"
+  },
+  "ref/paper/latency/extra2": {
+   "config": {
+    "kind": "pda",
+    "prune_keep": [
+     197,
+     149,
+     197,
+     197,
+     149,
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     197
+    ],
+    "merge_keep": [
+     197,
+     149,
+     197,
+     197,
+     52,
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     197
+    ],
+    "groups": {
+     "1": [
+      7,
+      7,
+      7,
+      7,
+      7,
+      7,
+      6,
+      6,
+      7,
+      5,
+      5,
+      7,
+      7,
+      3,
+      7,
+      7,
+      15,
+      13,
+      1,
+      2,
+      16,
+      11,
+      8,
+      4,
+      12,
+      14,
+      9,
+      14,
+      14,
+      10
+     ]
+    },
+    "rank": 32,
+    "triton": true,
+    "fuse_merge": true,
+    "base": "pd",
+    "alpha": {
+     "1": 0.6666666666666666
+    }
+   },
+   "group": "reference",
+   "config_sha": "9ccced0ee8950806",
+   "details": {
+    "token_path": [
+     {
+      "block": 0,
+      "n_in": 197,
+      "prune_keep": 197,
+      "merge_keep": 197,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "alpha": 0.0
+     },
+     {
+      "block": 1,
+      "n_in": 197,
+      "prune_keep": 149,
+      "merge_keep": 149,
+      "removed": 48,
+      "merged": 0,
+      "pruned": 48,
+      "theta": 0.0,
+      "alpha": 0.6666666666666666
+     },
+     {
+      "block": 2,
+      "n_in": 149,
+      "prune_keep": 149,
+      "merge_keep": 149,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "alpha": 0.0
+     },
+     {
+      "block": 3,
+      "n_in": 149,
+      "prune_keep": 149,
+      "merge_keep": 149,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "alpha": 0.0
+     },
+     {
+      "block": 4,
+      "n_in": 149,
+      "prune_keep": 149,
+      "merge_keep": 52,
+      "removed": 97,
+      "merged": 97,
+      "pruned": 0,
+      "theta": 1.0,
+      "alpha": 0.0
+     },
+     {
+      "block": 5,
+      "n_in": 52,
+      "prune_keep": 52,
+      "merge_keep": 52,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "alpha": 0.0
+     },
+     {
+      "block": 6,
+      "n_in": 52,
+      "prune_keep": 52,
+      "merge_keep": 52,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "alpha": 0.0
+     },
+     {
+      "block": 7,
+      "n_in": 52,
+      "prune_keep": 52,
+      "merge_keep": 52,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "alpha": 0.0
+     },
+     {
+      "block": 8,
+      "n_in": 52,
+      "prune_keep": 52,
+      "merge_keep": 52,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "alpha": 0.0
+     },
+     {
+      "block": 9,
+      "n_in": 52,
+      "prune_keep": 52,
+      "merge_keep": 52,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "alpha": 0.0
+     },
+     {
+      "block": 10,
+      "n_in": 52,
+      "prune_keep": 52,
+      "merge_keep": 52,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "alpha": 0.0
+     },
+     {
+      "block": 11,
+      "n_in": 52,
+      "prune_keep": 52,
+      "merge_keep": 52,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "alpha": 0.0
+     }
+    ],
+    "K": 2,
+    "N_D": 1,
+    "final_tokens": 52,
+    "total_gmac": 0.5840353920000001,
+    "backbone_full_gmac": 0.5832336000000001,
+    "d_gmac": 0.000801792,
+    "station_scalar_gops_estimate": 0.000278666
+   },
+   "gmac": 0.5840353920000001,
+   "source_config_sha": "fdcd136c1a343786"
+  },
+  "ref/paper/latency/extra1": {
+   "config": {
+    "kind": "pda",
+    "prune_keep": [
+     197,
+     158,
+     197,
+     197,
+     158,
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     3
+    ],
+    "merge_keep": [
+     197,
+     158,
+     197,
+     197,
+     71,
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     3
+    ],
+    "groups": {
+     "1": [
+      7,
+      7,
+      7,
+      7,
+      7,
+      7,
+      6,
+      6,
+      7,
+      5,
+      5,
+      7,
+      7,
+      3,
+      7,
+      7,
+      15,
+      13,
+      1,
+      2,
+      16,
+      11,
+      8,
+      4,
+      12,
+      14,
+      9,
+      14,
+      14,
+      10
+     ]
+    },
+    "rank": 32,
+    "triton": true,
+    "fuse_merge": true,
+    "base": "pd",
+    "alpha": {
+     "1": 0.6666666666666666
+    }
+   },
+   "group": "reference",
+   "config_sha": "7abc757dd2527ba7",
+   "details": {
+    "token_path": [
+     {
+      "block": 0,
+      "n_in": 197,
+      "prune_keep": 197,
+      "merge_keep": 197,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "alpha": 0.0
+     },
+     {
+      "block": 1,
+      "n_in": 197,
+      "prune_keep": 158,
+      "merge_keep": 158,
+      "removed": 39,
+      "merged": 0,
+      "pruned": 39,
+      "theta": 0.0,
+      "alpha": 0.6666666666666666
+     },
+     {
+      "block": 2,
+      "n_in": 158,
+      "prune_keep": 158,
+      "merge_keep": 158,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "alpha": 0.0
+     },
+     {
+      "block": 3,
+      "n_in": 158,
+      "prune_keep": 158,
+      "merge_keep": 158,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "alpha": 0.0
+     },
+     {
+      "block": 4,
+      "n_in": 158,
+      "prune_keep": 158,
+      "merge_keep": 71,
+      "removed": 87,
+      "merged": 87,
+      "pruned": 0,
+      "theta": 1.0,
+      "alpha": 0.0
+     },
+     {
+      "block": 5,
+      "n_in": 71,
+      "prune_keep": 71,
+      "merge_keep": 71,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "alpha": 0.0
+     },
+     {
+      "block": 6,
+      "n_in": 71,
+      "prune_keep": 71,
+      "merge_keep": 71,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "alpha": 0.0
+     },
+     {
+      "block": 7,
+      "n_in": 71,
+      "prune_keep": 71,
+      "merge_keep": 71,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "alpha": 0.0
+     },
+     {
+      "block": 8,
+      "n_in": 71,
+      "prune_keep": 71,
+      "merge_keep": 71,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "alpha": 0.0
+     },
+     {
+      "block": 9,
+      "n_in": 71,
+      "prune_keep": 71,
+      "merge_keep": 71,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "alpha": 0.0
+     },
+     {
+      "block": 10,
+      "n_in": 71,
+      "prune_keep": 71,
+      "merge_keep": 71,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "alpha": 0.0
+     },
+     {
+      "block": 11,
+      "n_in": 71,
+      "prune_keep": 3,
+      "merge_keep": 3,
+      "removed": 68,
+      "merged": 0,
+      "pruned": 68,
+      "theta": 0.0,
+      "alpha": 0.0
+     }
+    ],
+    "K": 3,
+    "N_D": 1,
+    "final_tokens": 3,
+    "total_gmac": 0.6500766720000002,
+    "backbone_full_gmac": 0.6492748800000002,
+    "d_gmac": 0.000801792,
+    "station_scalar_gops_estimate": 0.000284207
+   },
+   "gmac": 0.6500766720000002,
+   "source_config_sha": "bcde46ff240690b5"
+  },
+  "ref/paper/latency/DR0.6": {
+   "config": {
+    "kind": "pda",
+    "prune_keep": [
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     4
+    ],
+    "merge_keep": [
+     197,
+     197,
+     197,
+     197,
+     82,
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     4
+    ],
+    "groups": {},
+    "rank": null,
+    "triton": true,
+    "fuse_merge": true,
+    "base": "pd",
+    "alpha": {}
+   },
+   "group": "reference",
+   "config_sha": "bf54f622bfdd0f1c",
+   "details": {
+    "token_path": [
+     {
+      "block": 0,
+      "n_in": 197,
+      "prune_keep": 197,
+      "merge_keep": 197,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "alpha": 0.0
+     },
+     {
+      "block": 1,
+      "n_in": 197,
+      "prune_keep": 197,
+      "merge_keep": 197,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "alpha": 0.0
+     },
+     {
+      "block": 2,
+      "n_in": 197,
+      "prune_keep": 197,
+      "merge_keep": 197,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "alpha": 0.0
+     },
+     {
+      "block": 3,
+      "n_in": 197,
+      "prune_keep": 197,
+      "merge_keep": 197,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "alpha": 0.0
+     },
+     {
+      "block": 4,
+      "n_in": 197,
+      "prune_keep": 197,
+      "merge_keep": 82,
+      "removed": 115,
+      "merged": 115,
+      "pruned": 0,
+      "theta": 1.0,
+      "alpha": 0.0
+     },
+     {
+      "block": 5,
+      "n_in": 82,
+      "prune_keep": 82,
+      "merge_keep": 82,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "alpha": 0.0
+     },
+     {
+      "block": 6,
+      "n_in": 82,
+      "prune_keep": 82,
+      "merge_keep": 82,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "alpha": 0.0
+     },
+     {
+      "block": 7,
+      "n_in": 82,
+      "prune_keep": 82,
+      "merge_keep": 82,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "alpha": 0.0
+     },
+     {
+      "block": 8,
+      "n_in": 82,
+      "prune_keep": 82,
+      "merge_keep": 82,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "alpha": 0.0
+     },
+     {
+      "block": 9,
+      "n_in": 82,
+      "prune_keep": 82,
+      "merge_keep": 82,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "alpha": 0.0
+     },
+     {
+      "block": 10,
+      "n_in": 82,
+      "prune_keep": 82,
+      "merge_keep": 82,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "alpha": 0.0
+     },
+     {
+      "block": 11,
+      "n_in": 82,
+      "prune_keep": 4,
+      "merge_keep": 4,
+      "removed": 78,
+      "merged": 0,
+      "pruned": 78,
+      "theta": 0.0,
+      "alpha": 0.0
+     }
+    ],
+    "K": 2,
+    "N_D": 0,
+    "final_tokens": 4,
+    "total_gmac": 0.7565243520000003,
+    "backbone_full_gmac": 0.7565243520000003,
+    "d_gmac": 0.0,
+    "station_scalar_gops_estimate": 4.432e-05
+   },
+   "gmac": 0.7565243520000003,
+   "source_config_sha": "c4637ac38f25c500"
+  },
+  "ref/paper/latency_gmac/DR0.6": {
+   "config": {
+    "kind": "pda",
+    "prune_keep": [
+     197,
+     184,
+     197,
+     172,
+     148,
+     99,
+     197,
+     197,
+     63,
+     197,
+     197,
+     3
+    ],
+    "merge_keep": [
+     197,
+     172,
+     197,
+     148,
+     99,
+     75,
+     197,
+     197,
+     51,
+     197,
+     197,
+     3
+    ],
+    "groups": {
+     "1": [
+      7,
+      7,
+      7,
+      7,
+      7,
+      7,
+      6,
+      6,
+      7,
+      5,
+      5,
+      7,
+      7,
+      3,
+      7,
+      7,
+      15,
+      13,
+      1,
+      2,
+      16,
+      11,
+      8,
+      4,
+      12,
+      14,
+      9,
+      14,
+      14,
+      10
+     ],
+     "3": [
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      6,
+      5,
+      12,
+      3,
+      15,
+      1,
+      2,
+      16,
+      8,
+      7,
+      13,
+      9,
+      4,
+      10,
+      12,
+      14,
+      11
+     ],
+     "8": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+     ]
+    },
+    "rank": 32,
+    "triton": true,
+    "fuse_merge": true,
+    "base": "pd",
+    "alpha": {
+     "1": 0.75,
+     "3": 0.5,
+     "8": 0.75
+    }
+   },
+   "group": "reference",
+   "config_sha": "c873ea0269479278",
+   "details": {
+    "token_path": [
+     {
+      "block": 0,
+      "n_in": 197,
+      "prune_keep": 197,
+      "merge_keep": 197,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "alpha": 0.0
+     },
+     {
+      "block": 1,
+      "n_in": 197,
+      "prune_keep": 184,
+      "merge_keep": 172,
+      "removed": 25,
+      "merged": 12,
+      "pruned": 13,
+      "theta": 0.48,
+      "alpha": 0.75
+     },
+     {
+      "block": 2,
+      "n_in": 172,
+      "prune_keep": 172,
+      "merge_keep": 172,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "alpha": 0.0
+     },
+     {
+      "block": 3,
+      "n_in": 172,
+      "prune_keep": 172,
+      "merge_keep": 148,
+      "removed": 24,
+      "merged": 24,
+      "pruned": 0,
+      "theta": 1.0,
+      "alpha": 0.5
+     },
+     {
+      "block": 4,
+      "n_in": 148,
+      "prune_keep": 148,
+      "merge_keep": 99,
+      "removed": 49,
+      "merged": 49,
+      "pruned": 0,
+      "theta": 1.0,
+      "alpha": 0.0
+     },
+     {
+      "block": 5,
+      "n_in": 99,
+      "prune_keep": 99,
+      "merge_keep": 75,
+      "removed": 24,
+      "merged": 24,
+      "pruned": 0,
+      "theta": 1.0,
+      "alpha": 0.0
+     },
+     {
+      "block": 6,
+      "n_in": 75,
+      "prune_keep": 75,
+      "merge_keep": 75,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "alpha": 0.0
+     },
+     {
+      "block": 7,
+      "n_in": 75,
+      "prune_keep": 75,
+      "merge_keep": 75,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "alpha": 0.0
+     },
+     {
+      "block": 8,
+      "n_in": 75,
+      "prune_keep": 63,
+      "merge_keep": 51,
+      "removed": 24,
+      "merged": 12,
+      "pruned": 12,
+      "theta": 0.5,
+      "alpha": 0.75
+     },
+     {
+      "block": 9,
+      "n_in": 51,
+      "prune_keep": 51,
+      "merge_keep": 51,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "alpha": 0.0
+     },
+     {
+      "block": 10,
+      "n_in": 51,
+      "prune_keep": 51,
+      "merge_keep": 51,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "alpha": 0.0
+     },
+     {
+      "block": 11,
+      "n_in": 51,
+      "prune_keep": 3,
+      "merge_keep": 3,
+      "removed": 48,
+      "merged": 0,
+      "pruned": 48,
+      "theta": 0.0,
+      "alpha": 0.0
+     }
+    ],
+    "K": 6,
+    "N_D": 3,
+    "final_tokens": 3,
+    "total_gmac": 0.6535063680000001,
+    "backbone_full_gmac": 0.6517393920000001,
+    "d_gmac": 0.001766976,
+    "station_scalar_gops_estimate": 0.000622126
+   },
+   "gmac": 0.6535063680000001,
+   "source_config_sha": "8760f732dcc50e99"
+  },
+  "ref/paper/latency/DR0.7": {
+   "config": {
+    "kind": "pda",
+    "prune_keep": [
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     3
+    ],
+    "merge_keep": [
+     197,
+     197,
+     197,
+     197,
+     97,
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     3
+    ],
+    "groups": {},
+    "rank": null,
+    "triton": true,
+    "fuse_merge": true,
+    "base": "pd",
+    "alpha": {}
+   },
+   "group": "reference",
+   "config_sha": "452d0ad8943d6a21",
+   "details": {
+    "token_path": [
+     {
+      "block": 0,
+      "n_in": 197,
+      "prune_keep": 197,
+      "merge_keep": 197,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "alpha": 0.0
+     },
+     {
+      "block": 1,
+      "n_in": 197,
+      "prune_keep": 197,
+      "merge_keep": 197,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "alpha": 0.0
+     },
+     {
+      "block": 2,
+      "n_in": 197,
+      "prune_keep": 197,
+      "merge_keep": 197,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "alpha": 0.0
+     },
+     {
+      "block": 3,
+      "n_in": 197,
+      "prune_keep": 197,
+      "merge_keep": 197,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "alpha": 0.0
+     },
+     {
+      "block": 4,
+      "n_in": 197,
+      "prune_keep": 197,
+      "merge_keep": 97,
+      "removed": 100,
+      "merged": 100,
+      "pruned": 0,
+      "theta": 1.0,
+      "alpha": 0.0
+     },
+     {
+      "block": 5,
+      "n_in": 97,
+      "prune_keep": 97,
+      "merge_keep": 97,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "alpha": 0.0
+     },
+     {
+      "block": 6,
+      "n_in": 97,
+      "prune_keep": 97,
+      "merge_keep": 97,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "alpha": 0.0
+     },
+     {
+      "block": 7,
+      "n_in": 97,
+      "prune_keep": 97,
+      "merge_keep": 97,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "alpha": 0.0
+     },
+     {
+      "block": 8,
+      "n_in": 97,
+      "prune_keep": 97,
+      "merge_keep": 97,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "alpha": 0.0
+     },
+     {
+      "block": 9,
+      "n_in": 97,
+      "prune_keep": 97,
+      "merge_keep": 97,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "alpha": 0.0
+     },
+     {
+      "block": 10,
+      "n_in": 97,
+      "prune_keep": 97,
+      "merge_keep": 97,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "alpha": 0.0
+     },
+     {
+      "block": 11,
+      "n_in": 97,
+      "prune_keep": 3,
+      "merge_keep": 3,
+      "removed": 94,
+      "merged": 0,
+      "pruned": 94,
+      "theta": 0.0,
+      "alpha": 0.0
+     }
+    ],
+    "K": 2,
+    "N_D": 0,
+    "final_tokens": 3,
+    "total_gmac": 0.8099673599999998,
+    "backbone_full_gmac": 0.8099673599999998,
+    "d_gmac": 0.0,
+    "station_scalar_gops_estimate": 4.4383e-05
+   },
+   "gmac": 0.8099673599999998,
+   "source_config_sha": "aad2dd2f64b4cfd5"
+  },
+  "ref/paper/latency_gmac/DR0.7": {
+   "config": {
+    "kind": "pda",
+    "prune_keep": [
+     197,
+     187,
+     197,
+     177,
+     157,
+     115,
+     197,
+     197,
+     81,
+     197,
+     197,
+     7
+    ],
+    "merge_keep": [
+     197,
+     177,
+     197,
+     157,
+     115,
+     93,
+     197,
+     197,
+     69,
+     197,
+     197,
+     7
+    ],
+    "groups": {
+     "1": [
+      7,
+      7,
+      7,
+      7,
+      7,
+      7,
+      6,
+      6,
+      7,
+      5,
+      5,
+      7,
+      7,
+      3,
+      7,
+      7,
+      15,
+      13,
+      1,
+      2,
+      16,
+      11,
+      8,
+      4,
+      12,
+      14,
+      9,
+      14,
+      14,
+      10
+     ],
+     "4": [
+      2,
+      2,
+      2,
+      2,
+      1,
+      1,
+      5,
+      13,
+      3,
+      16,
+      14,
+      7,
+      10,
+      4,
+      11,
+      10,
+      15,
+      8,
+      6,
+      12,
+      9
+     ],
+     "5": [
+      2,
+      1,
+      1,
+      3,
+      13,
+      4,
+      16,
+      15,
+      9,
+      6,
+      5,
+      12,
+      6,
+      14,
+      11,
+      10,
+      7,
+      8
+     ],
+     "8": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+     ]
+    },
+    "rank": 32,
+    "triton": true,
+    "fuse_merge": true,
+    "base": "pd",
+    "alpha": {
+     "1": 0.75,
+     "4": 0.5,
+     "5": 0.5,
+     "8": 0.6666666666666666
+    }
+   },
+   "group": "reference",
+   "config_sha": "2cdde8bfb01aeba1",
+   "details": {
+    "token_path": [
+     {
+      "block": 0,
+      "n_in": 197,
+      "prune_keep": 197,
+      "merge_keep": 197,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "alpha": 0.0
+     },
+     {
+      "block": 1,
+      "n_in": 197,
+      "prune_keep": 187,
+      "merge_keep": 177,
+      "removed": 20,
+      "merged": 10,
+      "pruned": 10,
+      "theta": 0.5,
+      "alpha": 0.75
+     },
+     {
+      "block": 2,
+      "n_in": 177,
+      "prune_keep": 177,
+      "merge_keep": 177,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "alpha": 0.0
+     },
+     {
+      "block": 3,
+      "n_in": 177,
+      "prune_keep": 177,
+      "merge_keep": 157,
+      "removed": 20,
+      "merged": 20,
+      "pruned": 0,
+      "theta": 1.0,
+      "alpha": 0.0
+     },
+     {
+      "block": 4,
+      "n_in": 157,
+      "prune_keep": 157,
+      "merge_keep": 115,
+      "removed": 42,
+      "merged": 42,
+      "pruned": 0,
+      "theta": 1.0,
+      "alpha": 0.5
+     },
+     {
+      "block": 5,
+      "n_in": 115,
+      "prune_keep": 115,
+      "merge_keep": 93,
+      "removed": 22,
+      "merged": 22,
+      "pruned": 0,
+      "theta": 1.0,
+      "alpha": 0.5
+     },
+     {
+      "block": 6,
+      "n_in": 93,
+      "prune_keep": 93,
+      "merge_keep": 93,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "alpha": 0.0
+     },
+     {
+      "block": 7,
+      "n_in": 93,
+      "prune_keep": 93,
+      "merge_keep": 93,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "alpha": 0.0
+     },
+     {
+      "block": 8,
+      "n_in": 93,
+      "prune_keep": 81,
+      "merge_keep": 69,
+      "removed": 24,
+      "merged": 12,
+      "pruned": 12,
+      "theta": 0.5,
+      "alpha": 0.6666666666666666
+     },
+     {
+      "block": 9,
+      "n_in": 69,
+      "prune_keep": 69,
+      "merge_keep": 69,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "alpha": 0.0
+     },
+     {
+      "block": 10,
+      "n_in": 69,
+      "prune_keep": 69,
+      "merge_keep": 69,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "alpha": 0.0
+     },
+     {
+      "block": 11,
+      "n_in": 69,
+      "prune_keep": 7,
+      "merge_keep": 7,
+      "removed": 62,
+      "merged": 0,
+      "pruned": 62,
+      "theta": 0.0,
+      "alpha": 0.0
+     }
+    ],
+    "K": 6,
+    "N_D": 4,
+    "final_tokens": 7,
+    "total_gmac": 0.7281371520000002,
+    "backbone_full_gmac": 0.7258352640000002,
+    "d_gmac": 0.0023018879999999998,
+    "station_scalar_gops_estimate": 0.000761351
+   },
+   "gmac": 0.7281371520000002,
+   "source_config_sha": "1828295af717b976"
+  },
+  "ref/paper/latency/DR0.8": {
+   "config": {
+    "kind": "pda",
+    "prune_keep": [
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     153,
+     197,
+     197,
+     197,
+     197,
+     5
+    ],
+    "merge_keep": [
+     197,
+     197,
+     197,
+     197,
+     153,
+     197,
+     108,
+     197,
+     197,
+     197,
+     197,
+     5
+    ],
+    "groups": {
+     "6": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+     ]
+    },
+    "rank": 32,
+    "triton": true,
+    "fuse_merge": true,
+    "base": "pd",
+    "alpha": {
+     "6": 0.75
+    }
+   },
+   "group": "reference",
+   "config_sha": "9b756d95465f3936",
+   "details": {
+    "token_path": [
+     {
+      "block": 0,
+      "n_in": 197,
+      "prune_keep": 197,
+      "merge_keep": 197,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "alpha": 0.0
+     },
+     {
+      "block": 1,
+      "n_in": 197,
+      "prune_keep": 197,
+      "merge_keep": 197,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "alpha": 0.0
+     },
+     {
+      "block": 2,
+      "n_in": 197,
+      "prune_keep": 197,
+      "merge_keep": 197,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "alpha": 0.0
+     },
+     {
+      "block": 3,
+      "n_in": 197,
+      "prune_keep": 197,
+      "merge_keep": 197,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "alpha": 0.0
+     },
+     {
+      "block": 4,
+      "n_in": 197,
+      "prune_keep": 197,
+      "merge_keep": 153,
+      "removed": 44,
+      "merged": 44,
+      "pruned": 0,
+      "theta": 1.0,
+      "alpha": 0.0
+     },
+     {
+      "block": 5,
+      "n_in": 153,
+      "prune_keep": 153,
+      "merge_keep": 153,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "alpha": 0.0
+     },
+     {
+      "block": 6,
+      "n_in": 153,
+      "prune_keep": 153,
+      "merge_keep": 108,
+      "removed": 45,
+      "merged": 45,
+      "pruned": 0,
+      "theta": 1.0,
+      "alpha": 0.75
+     },
+     {
+      "block": 7,
+      "n_in": 108,
+      "prune_keep": 108,
+      "merge_keep": 108,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "alpha": 0.0
+     },
+     {
+      "block": 8,
+      "n_in": 108,
+      "prune_keep": 108,
+      "merge_keep": 108,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "alpha": 0.0
+     },
+     {
+      "block": 9,
+      "n_in": 108,
+      "prune_keep": 108,
+      "merge_keep": 108,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "alpha": 0.0
+     },
+     {
+      "block": 10,
+      "n_in": 108,
+      "prune_keep": 108,
+      "merge_keep": 108,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "alpha": 0.0
+     },
+     {
+      "block": 11,
+      "n_in": 108,
+      "prune_keep": 5,
+      "merge_keep": 5,
+      "removed": 103,
+      "merged": 0,
+      "pruned": 103,
+      "theta": 0.0,
+      "alpha": 0.0
+     }
+    ],
+    "K": 3,
+    "N_D": 1,
+    "final_tokens": 5,
+    "total_gmac": 0.9005345280000001,
+    "backbone_full_gmac": 0.8999095680000001,
+    "d_gmac": 0.00062496,
+    "station_scalar_gops_estimate": 0.00024263
+   },
+   "gmac": 0.9005345280000001,
+   "source_config_sha": "da27f6ef45d958f9"
+  },
+  "ref/paper/latency_gmac/DR0.8": {
+   "config": {
+    "kind": "pda",
+    "prune_keep": [
+     197,
+     197,
+     197,
+     197,
+     187,
+     197,
+     137,
+     197,
+     197,
+     197,
+     197,
+     3
+    ],
+    "merge_keep": [
+     197,
+     197,
+     197,
+     187,
+     137,
+     197,
+     82,
+     197,
+     197,
+     197,
+     197,
+     3
+    ],
+    "groups": {
+     "4": [
+      2,
+      2,
+      2,
+      2,
+      1,
+      1,
+      5,
+      13,
+      3,
+      16,
+      14,
+      7,
+      10,
+      4,
+      11,
+      10,
+      15,
+      8,
+      6,
+      12,
+      9
+     ],
+     "6": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+     ]
+    },
+    "rank": 32,
+    "triton": true,
+    "fuse_merge": true,
+    "base": "pd",
+    "alpha": {
+     "4": 0.5,
+     "6": 0.5
+    }
+   },
+   "group": "reference",
+   "config_sha": "d2235a33b45225b0",
+   "details": {
+    "token_path": [
+     {
+      "block": 0,
+      "n_in": 197,
+      "prune_keep": 197,
+      "merge_keep": 197,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "alpha": 0.0
+     },
+     {
+      "block": 1,
+      "n_in": 197,
+      "prune_keep": 197,
+      "merge_keep": 197,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "alpha": 0.0
+     },
+     {
+      "block": 2,
+      "n_in": 197,
+      "prune_keep": 197,
+      "merge_keep": 197,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "alpha": 0.0
+     },
+     {
+      "block": 3,
+      "n_in": 197,
+      "prune_keep": 197,
+      "merge_keep": 187,
+      "removed": 10,
+      "merged": 10,
+      "pruned": 0,
+      "theta": 1.0,
+      "alpha": 0.0
+     },
+     {
+      "block": 4,
+      "n_in": 187,
+      "prune_keep": 187,
+      "merge_keep": 137,
+      "removed": 50,
+      "merged": 50,
+      "pruned": 0,
+      "theta": 1.0,
+      "alpha": 0.5
+     },
+     {
+      "block": 5,
+      "n_in": 137,
+      "prune_keep": 137,
+      "merge_keep": 137,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "alpha": 0.0
+     },
+     {
+      "block": 6,
+      "n_in": 137,
+      "prune_keep": 137,
+      "merge_keep": 82,
+      "removed": 55,
+      "merged": 55,
+      "pruned": 0,
+      "theta": 1.0,
+      "alpha": 0.5
+     },
+     {
+      "block": 7,
+      "n_in": 82,
+      "prune_keep": 82,
+      "merge_keep": 82,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "alpha": 0.0
+     },
+     {
+      "block": 8,
+      "n_in": 82,
+      "prune_keep": 82,
+      "merge_keep": 82,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "alpha": 0.0
+     },
+     {
+      "block": 9,
+      "n_in": 82,
+      "prune_keep": 82,
+      "merge_keep": 82,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "alpha": 0.0
+     },
+     {
+      "block": 10,
+      "n_in": 82,
+      "prune_keep": 82,
+      "merge_keep": 82,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "alpha": 0.0
+     },
+     {
+      "block": 11,
+      "n_in": 82,
+      "prune_keep": 3,
+      "merge_keep": 3,
+      "removed": 79,
+      "merged": 0,
+      "pruned": 79,
+      "theta": 0.0,
+      "alpha": 0.0
+     }
+    ],
+    "K": 4,
+    "N_D": 2,
+    "final_tokens": 3,
+    "total_gmac": 0.8103409920000002,
+    "backbone_full_gmac": 0.8089910400000002,
+    "d_gmac": 0.0013499520000000002,
+    "station_scalar_gops_estimate": 0.000464232
+   },
+   "gmac": 0.8103409920000002,
+   "source_config_sha": "df5981bbfa1e15a3"
+  },
+  "ref/paper/latency/DR0.9": {
+   "config": {
+    "kind": "pda",
+    "prune_keep": [
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     6
+    ],
+    "merge_keep": [
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     135,
+     197,
+     197,
+     197,
+     197,
+     6
+    ],
+    "groups": {
+     "6": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+     ]
+    },
+    "rank": 32,
+    "triton": true,
+    "fuse_merge": true,
+    "base": "pd",
+    "alpha": {
+     "6": 0.6666666666666666
+    }
+   },
+   "group": "reference",
+   "config_sha": "92118866097e2bdf",
+   "details": {
+    "token_path": [
+     {
+      "block": 0,
+      "n_in": 197,
+      "prune_keep": 197,
+      "merge_keep": 197,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "alpha": 0.0
+     },
+     {
+      "block": 1,
+      "n_in": 197,
+      "prune_keep": 197,
+      "merge_keep": 197,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "alpha": 0.0
+     },
+     {
+      "block": 2,
+      "n_in": 197,
+      "prune_keep": 197,
+      "merge_keep": 197,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "alpha": 0.0
+     },
+     {
+      "block": 3,
+      "n_in": 197,
+      "prune_keep": 197,
+      "merge_keep": 197,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "alpha": 0.0
+     },
+     {
+      "block": 4,
+      "n_in": 197,
+      "prune_keep": 197,
+      "merge_keep": 197,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "alpha": 0.0
+     },
+     {
+      "block": 5,
+      "n_in": 197,
+      "prune_keep": 197,
+      "merge_keep": 197,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "alpha": 0.0
+     },
+     {
+      "block": 6,
+      "n_in": 197,
+      "prune_keep": 197,
+      "merge_keep": 135,
+      "removed": 62,
+      "merged": 62,
+      "pruned": 0,
+      "theta": 1.0,
+      "alpha": 0.6666666666666666
+     },
+     {
+      "block": 7,
+      "n_in": 135,
+      "prune_keep": 135,
+      "merge_keep": 135,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "alpha": 0.0
+     },
+     {
+      "block": 8,
+      "n_in": 135,
+      "prune_keep": 135,
+      "merge_keep": 135,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "alpha": 0.0
+     },
+     {
+      "block": 9,
+      "n_in": 135,
+      "prune_keep": 135,
+      "merge_keep": 135,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "alpha": 0.0
+     },
+     {
+      "block": 10,
+      "n_in": 135,
+      "prune_keep": 135,
+      "merge_keep": 135,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "alpha": 0.0
+     },
+     {
+      "block": 11,
+      "n_in": 135,
+      "prune_keep": 6,
+      "merge_keep": 6,
+      "removed": 129,
+      "merged": 0,
+      "pruned": 129,
+      "theta": 0.0,
+      "alpha": 0.0
+     }
+    ],
+    "K": 2,
+    "N_D": 1,
+    "final_tokens": 6,
+    "total_gmac": 1.023452736,
+    "backbone_full_gmac": 1.022701056,
+    "d_gmac": 0.00075168,
+    "station_scalar_gops_estimate": 0.0002585
+   },
+   "gmac": 1.023452736,
+   "source_config_sha": "f4c36506c7077ab4"
+  },
+  "ref/paper/latency_gmac/DR0.9": {
+   "config": {
+    "kind": "pda",
+    "prune_keep": [
+     197,
+     197,
+     197,
+     197,
+     190,
+     197,
+     154,
+     197,
+     197,
+     197,
+     197,
+     5
+    ],
+    "merge_keep": [
+     197,
+     197,
+     197,
+     190,
+     154,
+     197,
+     110,
+     197,
+     197,
+     197,
+     197,
+     5
+    ],
+    "groups": {
+     "6": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+     ]
+    },
+    "rank": 32,
+    "triton": true,
+    "fuse_merge": true,
+    "base": "pd",
+    "alpha": {
+     "6": 0.75
+    }
+   },
+   "group": "reference",
+   "config_sha": "94d49dcd3d4fa630",
+   "details": {
+    "token_path": [
+     {
+      "block": 0,
+      "n_in": 197,
+      "prune_keep": 197,
+      "merge_keep": 197,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "alpha": 0.0
+     },
+     {
+      "block": 1,
+      "n_in": 197,
+      "prune_keep": 197,
+      "merge_keep": 197,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "alpha": 0.0
+     },
+     {
+      "block": 2,
+      "n_in": 197,
+      "prune_keep": 197,
+      "merge_keep": 197,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "alpha": 0.0
+     },
+     {
+      "block": 3,
+      "n_in": 197,
+      "prune_keep": 197,
+      "merge_keep": 190,
+      "removed": 7,
+      "merged": 7,
+      "pruned": 0,
+      "theta": 1.0,
+      "alpha": 0.0
+     },
+     {
+      "block": 4,
+      "n_in": 190,
+      "prune_keep": 190,
+      "merge_keep": 154,
+      "removed": 36,
+      "merged": 36,
+      "pruned": 0,
+      "theta": 1.0,
+      "alpha": 0.0
+     },
+     {
+      "block": 5,
+      "n_in": 154,
+      "prune_keep": 154,
+      "merge_keep": 154,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "alpha": 0.0
+     },
+     {
+      "block": 6,
+      "n_in": 154,
+      "prune_keep": 154,
+      "merge_keep": 110,
+      "removed": 44,
+      "merged": 44,
+      "pruned": 0,
+      "theta": 1.0,
+      "alpha": 0.75
+     },
+     {
+      "block": 7,
+      "n_in": 110,
+      "prune_keep": 110,
+      "merge_keep": 110,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "alpha": 0.0
+     },
+     {
+      "block": 8,
+      "n_in": 110,
+      "prune_keep": 110,
+      "merge_keep": 110,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "alpha": 0.0
+     },
+     {
+      "block": 9,
+      "n_in": 110,
+      "prune_keep": 110,
+      "merge_keep": 110,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "alpha": 0.0
+     },
+     {
+      "block": 10,
+      "n_in": 110,
+      "prune_keep": 110,
+      "merge_keep": 110,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "alpha": 0.0
+     },
+     {
+      "block": 11,
+      "n_in": 110,
+      "prune_keep": 5,
+      "merge_keep": 5,
+      "removed": 105,
+      "merged": 0,
+      "pruned": 105,
+      "theta": 0.0,
+      "alpha": 0.0
+     }
+    ],
+    "K": 4,
+    "N_D": 1,
+    "final_tokens": 5,
+    "total_gmac": 0.9028062720000003,
+    "backbone_full_gmac": 0.9021784320000003,
+    "d_gmac": 0.00062784,
+    "station_scalar_gops_estimate": 0.000284236
+   },
+   "gmac": 0.9028062720000003,
+   "source_config_sha": "cece01775cbaff7d"
+  },
+  "ref/paper/latency/DR1.0": {
+   "config": {
+    "kind": "pda",
+    "prune_keep": [
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     3
+    ],
+    "merge_keep": [
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     150,
+     197,
+     197,
+     197,
+     3
+    ],
+    "groups": {
+     "7": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+     ]
+    },
+    "rank": 32,
+    "triton": true,
+    "fuse_merge": true,
+    "base": "pd",
+    "alpha": {
+     "7": 0.75
+    }
+   },
+   "group": "reference",
+   "config_sha": "1a7f8ac5e6e9894b",
+   "details": {
+    "token_path": [
+     {
+      "block": 0,
+      "n_in": 197,
+      "prune_keep": 197,
+      "merge_keep": 197,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "alpha": 0.0
+     },
+     {
+      "block": 1,
+      "n_in": 197,
+      "prune_keep": 197,
+      "merge_keep": 197,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "alpha": 0.0
+     },
+     {
+      "block": 2,
+      "n_in": 197,
+      "prune_keep": 197,
+      "merge_keep": 197,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "alpha": 0.0
+     },
+     {
+      "block": 3,
+      "n_in": 197,
+      "prune_keep": 197,
+      "merge_keep": 197,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "alpha": 0.0
+     },
+     {
+      "block": 4,
+      "n_in": 197,
+      "prune_keep": 197,
+      "merge_keep": 197,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "alpha": 0.0
+     },
+     {
+      "block": 5,
+      "n_in": 197,
+      "prune_keep": 197,
+      "merge_keep": 197,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "alpha": 0.0
+     },
+     {
+      "block": 6,
+      "n_in": 197,
+      "prune_keep": 197,
+      "merge_keep": 197,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "alpha": 0.0
+     },
+     {
+      "block": 7,
+      "n_in": 197,
+      "prune_keep": 197,
+      "merge_keep": 150,
+      "removed": 47,
+      "merged": 47,
+      "pruned": 0,
+      "theta": 1.0,
+      "alpha": 0.75
+     },
+     {
+      "block": 8,
+      "n_in": 150,
+      "prune_keep": 150,
+      "merge_keep": 150,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "alpha": 0.0
+     },
+     {
+      "block": 9,
+      "n_in": 150,
+      "prune_keep": 150,
+      "merge_keep": 150,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "alpha": 0.0
+     },
+     {
+      "block": 10,
+      "n_in": 150,
+      "prune_keep": 150,
+      "merge_keep": 150,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "alpha": 0.0
+     },
+     {
+      "block": 11,
+      "n_in": 150,
+      "prune_keep": 3,
+      "merge_keep": 3,
+      "removed": 147,
+      "merged": 0,
+      "pruned": 147,
+      "theta": 0.0,
+      "alpha": 0.0
+     }
+    ],
+    "K": 2,
+    "N_D": 1,
+    "final_tokens": 3,
+    "total_gmac": 1.0906272,
+    "backbone_full_gmac": 1.090025856,
+    "d_gmac": 0.000601344,
+    "station_scalar_gops_estimate": 0.000253466
+   },
+   "gmac": 1.0906272,
+   "source_config_sha": "cd67176b0ea99f3a"
+  },
+  "ref/paper/latency_gmac/DR1.0": {
+   "config": {
+    "kind": "pda",
+    "prune_keep": [
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     184,
+     160,
+     197,
+     197,
+     197,
+     3
+    ],
+    "merge_keep": [
+     197,
+     197,
+     197,
+     197,
+     184,
+     197,
+     160,
+     126,
+     197,
+     197,
+     197,
+     3
+    ],
+    "groups": {
+     "6": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+     ],
+     "7": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+     ]
+    },
+    "rank": 32,
+    "triton": true,
+    "fuse_merge": true,
+    "base": "pd",
+    "alpha": {
+     "6": 0.5,
+     "7": 0.6666666666666666
+    }
+   },
+   "group": "reference",
+   "config_sha": "b8bf78de626ea63e",
+   "details": {
+    "token_path": [
+     {
+      "block": 0,
+      "n_in": 197,
+      "prune_keep": 197,
+      "merge_keep": 197,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "alpha": 0.0
+     },
+     {
+      "block": 1,
+      "n_in": 197,
+      "prune_keep": 197,
+      "merge_keep": 197,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "alpha": 0.0
+     },
+     {
+      "block": 2,
+      "n_in": 197,
+      "prune_keep": 197,
+      "merge_keep": 197,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "alpha": 0.0
+     },
+     {
+      "block": 3,
+      "n_in": 197,
+      "prune_keep": 197,
+      "merge_keep": 197,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "alpha": 0.0
+     },
+     {
+      "block": 4,
+      "n_in": 197,
+      "prune_keep": 197,
+      "merge_keep": 184,
+      "removed": 13,
+      "merged": 13,
+      "pruned": 0,
+      "theta": 1.0,
+      "alpha": 0.0
+     },
+     {
+      "block": 5,
+      "n_in": 184,
+      "prune_keep": 184,
+      "merge_keep": 184,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "alpha": 0.0
+     },
+     {
+      "block": 6,
+      "n_in": 184,
+      "prune_keep": 184,
+      "merge_keep": 160,
+      "removed": 24,
+      "merged": 24,
+      "pruned": 0,
+      "theta": 1.0,
+      "alpha": 0.5
+     },
+     {
+      "block": 7,
+      "n_in": 160,
+      "prune_keep": 160,
+      "merge_keep": 126,
+      "removed": 34,
+      "merged": 34,
+      "pruned": 0,
+      "theta": 1.0,
+      "alpha": 0.6666666666666666
+     },
+     {
+      "block": 8,
+      "n_in": 126,
+      "prune_keep": 126,
+      "merge_keep": 126,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "alpha": 0.0
+     },
+     {
+      "block": 9,
+      "n_in": 126,
+      "prune_keep": 126,
+      "merge_keep": 126,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "alpha": 0.0
+     },
+     {
+      "block": 10,
+      "n_in": 126,
+      "prune_keep": 126,
+      "merge_keep": 126,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "alpha": 0.0
+     },
+     {
+      "block": 11,
+      "n_in": 126,
+      "prune_keep": 3,
+      "merge_keep": 3,
+      "removed": 123,
+      "merged": 0,
+      "pruned": 123,
+      "theta": 0.0,
+      "alpha": 0.0
+     }
+    ],
+    "K": 4,
+    "N_D": 2,
+    "final_tokens": 3,
+    "total_gmac": 1.002504,
+    "backbone_full_gmac": 1.001273664,
+    "d_gmac": 0.0012303359999999998,
+    "station_scalar_gops_estimate": 0.000485484
+   },
+   "gmac": 1.002504,
+   "source_config_sha": "bdd048fdf2aae49d"
+  },
+  "ref/M0/gmac/extra2": {
+   "config": {
+    "kind": "pda",
+    "prune_keep": [
+     197,
+     125,
+     197,
+     113,
+     101,
+     65,
+     197,
+     41,
+     197,
+     197,
+     197,
+     3
+    ],
+    "merge_keep": [
+     197,
+     125,
+     197,
+     101,
+     65,
+     53,
+     197,
+     29,
+     197,
+     197,
+     197,
+     3
+    ],
+    "groups": {
+     "1": [
+      7,
+      7,
+      7,
+      7,
+      7,
+      7,
+      6,
+      6,
+      7,
+      5,
+      5,
+      7,
+      7,
+      3,
+      7,
+      7,
+      15,
+      13,
+      1,
+      2,
+      16,
+      11,
+      8,
+      4,
+      12,
+      14,
+      9,
+      14,
+      14,
+      10
+     ],
+     "3": [
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      6,
+      5,
+      12,
+      3,
+      15,
+      1,
+      2,
+      16,
+      8,
+      7,
+      13,
+      9,
+      4,
+      10,
+      12,
+      14,
+      11
+     ],
+     "7": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+     ]
+    },
+    "rank": 32,
+    "triton": true,
+    "fuse_merge": true,
+    "base": "pd",
+    "alpha": {
+     "1": 0.5,
+     "3": 0.5,
+     "7": 0.75
+    }
+   },
+   "group": "reference",
+   "config_sha": "b2a4607be41b5111",
+   "details": {
+    "token_path": [
+     {
+      "block": 0,
+      "n_in": 197,
+      "prune_keep": 197,
+      "merge_keep": 197,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "alpha": 0.0
+     },
+     {
+      "block": 1,
+      "n_in": 197,
+      "prune_keep": 125,
+      "merge_keep": 125,
+      "removed": 72,
+      "merged": 0,
+      "pruned": 72,
+      "theta": 0.0,
+      "alpha": 0.5
+     },
+     {
+      "block": 2,
+      "n_in": 125,
+      "prune_keep": 125,
+      "merge_keep": 125,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "alpha": 0.0
+     },
+     {
+      "block": 3,
+      "n_in": 125,
+      "prune_keep": 113,
+      "merge_keep": 101,
+      "removed": 24,
+      "merged": 12,
+      "pruned": 12,
+      "theta": 0.5,
+      "alpha": 0.5
+     },
+     {
+      "block": 4,
+      "n_in": 101,
+      "prune_keep": 101,
+      "merge_keep": 65,
+      "removed": 36,
+      "merged": 36,
+      "pruned": 0,
+      "theta": 1.0,
+      "alpha": 0.0
+     },
+     {
+      "block": 5,
+      "n_in": 65,
+      "prune_keep": 65,
+      "merge_keep": 53,
+      "removed": 12,
+      "merged": 12,
+      "pruned": 0,
+      "theta": 1.0,
+      "alpha": 0.0
+     },
+     {
+      "block": 6,
+      "n_in": 53,
+      "prune_keep": 53,
+      "merge_keep": 53,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "alpha": 0.0
+     },
+     {
+      "block": 7,
+      "n_in": 53,
+      "prune_keep": 41,
+      "merge_keep": 29,
+      "removed": 24,
+      "merged": 12,
+      "pruned": 12,
+      "theta": 0.5,
+      "alpha": 0.75
+     },
+     {
+      "block": 8,
+      "n_in": 29,
+      "prune_keep": 29,
+      "merge_keep": 29,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "alpha": 0.0
+     },
+     {
+      "block": 9,
+      "n_in": 29,
+      "prune_keep": 29,
+      "merge_keep": 29,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "alpha": 0.0
+     },
+     {
+      "block": 10,
+      "n_in": 29,
+      "prune_keep": 29,
+      "merge_keep": 29,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "alpha": 0.0
+     },
+     {
+      "block": 11,
+      "n_in": 29,
+      "prune_keep": 3,
+      "merge_keep": 3,
+      "removed": 26,
+      "merged": 0,
+      "pruned": 26,
+      "theta": 0.0,
+      "alpha": 0.0
+     }
+    ],
+    "K": 6,
+    "N_D": 3,
+    "final_tokens": 3,
+    "total_gmac": 0.4819192319999999,
+    "backbone_full_gmac": 0.4802672639999999,
+    "d_gmac": 0.001651968,
+    "station_scalar_gops_estimate": 0.00050338
+   },
+   "gmac": 0.4819192319999999,
+   "source_config_sha": "644040474b3a0a5a"
+  },
+  "ref/M0/gmac/extra1": {
+   "config": {
+    "kind": "pda",
+    "prune_keep": [
+     197,
+     148,
+     197,
+     148,
+     124,
+     76,
+     197,
+     197,
+     197,
+     197,
+     197,
+     3
+    ],
+    "merge_keep": [
+     197,
+     148,
+     197,
+     124,
+     76,
+     52,
+     197,
+     197,
+     197,
+     197,
+     197,
+     3
+    ],
+    "groups": {
+     "1": [
+      7,
+      7,
+      7,
+      7,
+      7,
+      7,
+      6,
+      6,
+      7,
+      5,
+      5,
+      7,
+      7,
+      3,
+      7,
+      7,
+      15,
+      13,
+      1,
+      2,
+      16,
+      11,
+      8,
+      4,
+      12,
+      14,
+      9,
+      14,
+      14,
+      10
+     ],
+     "3": [
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      6,
+      5,
+      12,
+      3,
+      15,
+      1,
+      2,
+      16,
+      8,
+      7,
+      13,
+      9,
+      4,
+      10,
+      12,
+      14,
+      11
+     ]
+    },
+    "rank": 32,
+    "triton": true,
+    "fuse_merge": true,
+    "base": "pd",
+    "alpha": {
+     "1": 0.6666666666666666,
+     "3": 0.5
+    }
+   },
+   "group": "reference",
+   "config_sha": "f4197abd4056e9e4",
+   "details": {
+    "token_path": [
+     {
+      "block": 0,
+      "n_in": 197,
+      "prune_keep": 197,
+      "merge_keep": 197,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "alpha": 0.0
+     },
+     {
+      "block": 1,
+      "n_in": 197,
+      "prune_keep": 148,
+      "merge_keep": 148,
+      "removed": 49,
+      "merged": 0,
+      "pruned": 49,
+      "theta": 0.0,
+      "alpha": 0.6666666666666666
+     },
+     {
+      "block": 2,
+      "n_in": 148,
+      "prune_keep": 148,
+      "merge_keep": 148,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "alpha": 0.0
+     },
+     {
+      "block": 3,
+      "n_in": 148,
+      "prune_keep": 148,
+      "merge_keep": 124,
+      "removed": 24,
+      "merged": 24,
+      "pruned": 0,
+      "theta": 1.0,
+      "alpha": 0.5
+     },
+     {
+      "block": 4,
+      "n_in": 124,
+      "prune_keep": 124,
+      "merge_keep": 76,
+      "removed": 48,
+      "merged": 48,
+      "pruned": 0,
+      "theta": 1.0,
+      "alpha": 0.0
+     },
+     {
+      "block": 5,
+      "n_in": 76,
+      "prune_keep": 76,
+      "merge_keep": 52,
+      "removed": 24,
+      "merged": 24,
+      "pruned": 0,
+      "theta": 1.0,
+      "alpha": 0.0
+     },
+     {
+      "block": 6,
+      "n_in": 52,
+      "prune_keep": 52,
+      "merge_keep": 52,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "alpha": 0.0
+     },
+     {
+      "block": 7,
+      "n_in": 52,
+      "prune_keep": 52,
+      "merge_keep": 52,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "alpha": 0.0
+     },
+     {
+      "block": 8,
+      "n_in": 52,
+      "prune_keep": 52,
+      "merge_keep": 52,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "alpha": 0.0
+     },
+     {
+      "block": 9,
+      "n_in": 52,
+      "prune_keep": 52,
+      "merge_keep": 52,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "alpha": 0.0
+     },
+     {
+      "block": 10,
+      "n_in": 52,
+      "prune_keep": 52,
+      "merge_keep": 52,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "alpha": 0.0
+     },
+     {
+      "block": 11,
+      "n_in": 52,
+      "prune_keep": 3,
+      "merge_keep": 3,
+      "removed": 49,
+      "merged": 0,
+      "pruned": 49,
+      "theta": 0.0,
+      "alpha": 0.0
+     }
+    ],
+    "K": 5,
+    "N_D": 2,
+    "final_tokens": 3,
+    "total_gmac": 0.5677820160000001,
+    "backbone_full_gmac": 0.5663289600000001,
+    "d_gmac": 0.0014530559999999999,
+    "station_scalar_gops_estimate": 0.000482996
+   },
+   "gmac": 0.5677820160000001,
+   "source_config_sha": "0effbc0c6de07a50"
+  },
+  "ref/M0/gmac/DR0.6": {
+   "config": {
+    "kind": "pda",
+    "prune_keep": [
+     197,
+     185,
+     197,
+     173,
+     137,
+     101,
+     197,
+     197,
+     65,
+     197,
+     197,
+     3
+    ],
+    "merge_keep": [
+     197,
+     173,
+     197,
+     137,
+     101,
+     77,
+     197,
+     197,
+     53,
+     197,
+     197,
+     3
+    ],
+    "groups": {
+     "1": [
+      7,
+      7,
+      7,
+      7,
+      7,
+      7,
+      6,
+      6,
+      7,
+      5,
+      5,
+      7,
+      7,
+      3,
+      7,
+      7,
+      15,
+      13,
+      1,
+      2,
+      16,
+      11,
+      8,
+      4,
+      12,
+      14,
+      9,
+      14,
+      14,
+      10
+     ],
+     "3": [
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      6,
+      5,
+      12,
+      3,
+      15,
+      1,
+      2,
+      16,
+      8,
+      7,
+      13,
+      9,
+      4,
+      10,
+      12,
+      14,
+      11
+     ],
+     "8": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+     ]
+    },
+    "rank": 32,
+    "triton": true,
+    "fuse_merge": true,
+    "base": "pd",
+    "alpha": {
+     "1": 0.75,
+     "3": 0.5,
+     "8": 0.75
+    }
+   },
+   "group": "reference",
+   "config_sha": "db5ef452149c0f31",
+   "details": {
+    "token_path": [
+     {
+      "block": 0,
+      "n_in": 197,
+      "prune_keep": 197,
+      "merge_keep": 197,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "alpha": 0.0
+     },
+     {
+      "block": 1,
+      "n_in": 197,
+      "prune_keep": 185,
+      "merge_keep": 173,
+      "removed": 24,
+      "merged": 12,
+      "pruned": 12,
+      "theta": 0.5,
+      "alpha": 0.75
+     },
+     {
+      "block": 2,
+      "n_in": 173,
+      "prune_keep": 173,
+      "merge_keep": 173,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "alpha": 0.0
+     },
+     {
+      "block": 3,
+      "n_in": 173,
+      "prune_keep": 173,
+      "merge_keep": 137,
+      "removed": 36,
+      "merged": 36,
+      "pruned": 0,
+      "theta": 1.0,
+      "alpha": 0.5
+     },
+     {
+      "block": 4,
+      "n_in": 137,
+      "prune_keep": 137,
+      "merge_keep": 101,
+      "removed": 36,
+      "merged": 36,
+      "pruned": 0,
+      "theta": 1.0,
+      "alpha": 0.0
+     },
+     {
+      "block": 5,
+      "n_in": 101,
+      "prune_keep": 101,
+      "merge_keep": 77,
+      "removed": 24,
+      "merged": 24,
+      "pruned": 0,
+      "theta": 1.0,
+      "alpha": 0.0
+     },
+     {
+      "block": 6,
+      "n_in": 77,
+      "prune_keep": 77,
+      "merge_keep": 77,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "alpha": 0.0
+     },
+     {
+      "block": 7,
+      "n_in": 77,
+      "prune_keep": 77,
+      "merge_keep": 77,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "alpha": 0.0
+     },
+     {
+      "block": 8,
+      "n_in": 77,
+      "prune_keep": 65,
+      "merge_keep": 53,
+      "removed": 24,
+      "merged": 12,
+      "pruned": 12,
+      "theta": 0.5,
+      "alpha": 0.75
+     },
+     {
+      "block": 9,
+      "n_in": 53,
+      "prune_keep": 53,
+      "merge_keep": 53,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "alpha": 0.0
+     },
+     {
+      "block": 10,
+      "n_in": 53,
+      "prune_keep": 53,
+      "merge_keep": 53,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "alpha": 0.0
+     },
+     {
+      "block": 11,
+      "n_in": 53,
+      "prune_keep": 3,
+      "merge_keep": 3,
+      "removed": 50,
+      "merged": 0,
+      "pruned": 50,
+      "theta": 0.0,
+      "alpha": 0.0
+     }
+    ],
+    "K": 6,
+    "N_D": 3,
+    "final_tokens": 3,
+    "total_gmac": 0.6555780479999999,
+    "backbone_full_gmac": 0.6538045439999999,
+    "d_gmac": 0.001773504,
+    "station_scalar_gops_estimate": 0.000624228
+   },
+   "gmac": 0.6555780479999999,
+   "source_config_sha": "26be4c60873364ff"
+  },
+  "ref/M0/gmac/DR0.7": {
+   "config": {
+    "kind": "pda",
+    "prune_keep": [
+     197,
+     193,
+     197,
+     189,
+     153,
+     197,
+     100,
+     197,
+     197,
+     197,
+     197,
+     3
+    ],
+    "merge_keep": [
+     197,
+     189,
+     197,
+     153,
+     100,
+     197,
+     76,
+     197,
+     197,
+     197,
+     197,
+     3
+    ],
+    "groups": {
+     "1": [
+      7,
+      7,
+      7,
+      7,
+      7,
+      7,
+      6,
+      6,
+      7,
+      5,
+      5,
+      7,
+      7,
+      3,
+      7,
+      7,
+      15,
+      13,
+      1,
+      2,
+      16,
+      11,
+      8,
+      4,
+      12,
+      14,
+      9,
+      14,
+      14,
+      10
+     ],
+     "6": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+     ]
+    },
+    "rank": 32,
+    "triton": true,
+    "fuse_merge": true,
+    "base": "pd",
+    "alpha": {
+     "1": 0.6666666666666666,
+     "6": 0.5
+    }
+   },
+   "group": "reference",
+   "config_sha": "1fff5acd0067da7a",
+   "details": {
+    "token_path": [
+     {
+      "block": 0,
+      "n_in": 197,
+      "prune_keep": 197,
+      "merge_keep": 197,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "alpha": 0.0
+     },
+     {
+      "block": 1,
+      "n_in": 197,
+      "prune_keep": 193,
+      "merge_keep": 189,
+      "removed": 8,
+      "merged": 4,
+      "pruned": 4,
+      "theta": 0.5,
+      "alpha": 0.6666666666666666
+     },
+     {
+      "block": 2,
+      "n_in": 189,
+      "prune_keep": 189,
+      "merge_keep": 189,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "alpha": 0.0
+     },
+     {
+      "block": 3,
+      "n_in": 189,
+      "prune_keep": 189,
+      "merge_keep": 153,
+      "removed": 36,
+      "merged": 36,
+      "pruned": 0,
+      "theta": 1.0,
+      "alpha": 0.0
+     },
+     {
+      "block": 4,
+      "n_in": 153,
+      "prune_keep": 153,
+      "merge_keep": 100,
+      "removed": 53,
+      "merged": 53,
+      "pruned": 0,
+      "theta": 1.0,
+      "alpha": 0.0
+     },
+     {
+      "block": 5,
+      "n_in": 100,
+      "prune_keep": 100,
+      "merge_keep": 100,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "alpha": 0.0
+     },
+     {
+      "block": 6,
+      "n_in": 100,
+      "prune_keep": 100,
+      "merge_keep": 76,
+      "removed": 24,
+      "merged": 24,
+      "pruned": 0,
+      "theta": 1.0,
+      "alpha": 0.5
+     },
+     {
+      "block": 7,
+      "n_in": 76,
+      "prune_keep": 76,
+      "merge_keep": 76,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "alpha": 0.0
+     },
+     {
+      "block": 8,
+      "n_in": 76,
+      "prune_keep": 76,
+      "merge_keep": 76,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "alpha": 0.0
+     },
+     {
+      "block": 9,
+      "n_in": 76,
+      "prune_keep": 76,
+      "merge_keep": 76,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "alpha": 0.0
+     },
+     {
+      "block": 10,
+      "n_in": 76,
+      "prune_keep": 76,
+      "merge_keep": 76,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "alpha": 0.0
+     },
+     {
+      "block": 11,
+      "n_in": 76,
+      "prune_keep": 3,
+      "merge_keep": 3,
+      "removed": 73,
+      "merged": 0,
+      "pruned": 73,
+      "theta": 0.0,
+      "alpha": 0.0
+     }
+    ],
+    "K": 5,
+    "N_D": 2,
+    "final_tokens": 3,
+    "total_gmac": 0.7267758720000003,
+    "backbone_full_gmac": 0.7255017600000002,
+    "d_gmac": 0.001274112,
+    "station_scalar_gops_estimate": 0.00045919
+   },
+   "gmac": 0.7267758720000003,
+   "source_config_sha": "6a80f4e4e7064f53"
+  },
+  "ref/M0/gmac/DR0.8": {
+   "config": {
+    "kind": "pda",
+    "prune_keep": [
+     197,
+     197,
+     197,
+     197,
+     172,
+     148,
+     124,
+     197,
+     88,
+     197,
+     197,
+     3
+    ],
+    "merge_keep": [
+     197,
+     197,
+     197,
+     172,
+     148,
+     124,
+     100,
+     197,
+     76,
+     197,
+     197,
+     3
+    ],
+    "groups": {
+     "5": [
+      2,
+      1,
+      1,
+      3,
+      13,
+      4,
+      16,
+      15,
+      9,
+      6,
+      5,
+      12,
+      6,
+      14,
+      11,
+      10,
+      7,
+      8
+     ],
+     "6": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+     ],
+     "8": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+     ]
+    },
+    "rank": 32,
+    "triton": true,
+    "fuse_merge": true,
+    "base": "pd",
+    "alpha": {
+     "5": 0.5,
+     "6": 0.75,
+     "8": 0.6666666666666666
+    }
+   },
+   "group": "reference",
+   "config_sha": "ba6835de0c121309",
+   "details": {
+    "token_path": [
+     {
+      "block": 0,
+      "n_in": 197,
+      "prune_keep": 197,
+      "merge_keep": 197,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "alpha": 0.0
+     },
+     {
+      "block": 1,
+      "n_in": 197,
+      "prune_keep": 197,
+      "merge_keep": 197,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "alpha": 0.0
+     },
+     {
+      "block": 2,
+      "n_in": 197,
+      "prune_keep": 197,
+      "merge_keep": 197,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "alpha": 0.0
+     },
+     {
+      "block": 3,
+      "n_in": 197,
+      "prune_keep": 197,
+      "merge_keep": 172,
+      "removed": 25,
+      "merged": 25,
+      "pruned": 0,
+      "theta": 1.0,
+      "alpha": 0.0
+     },
+     {
+      "block": 4,
+      "n_in": 172,
+      "prune_keep": 172,
+      "merge_keep": 148,
+      "removed": 24,
+      "merged": 24,
+      "pruned": 0,
+      "theta": 1.0,
+      "alpha": 0.0
+     },
+     {
+      "block": 5,
+      "n_in": 148,
+      "prune_keep": 148,
+      "merge_keep": 124,
+      "removed": 24,
+      "merged": 24,
+      "pruned": 0,
+      "theta": 1.0,
+      "alpha": 0.5
+     },
+     {
+      "block": 6,
+      "n_in": 124,
+      "prune_keep": 124,
+      "merge_keep": 100,
+      "removed": 24,
+      "merged": 24,
+      "pruned": 0,
+      "theta": 1.0,
+      "alpha": 0.75
+     },
+     {
+      "block": 7,
+      "n_in": 100,
+      "prune_keep": 100,
+      "merge_keep": 100,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "alpha": 0.0
+     },
+     {
+      "block": 8,
+      "n_in": 100,
+      "prune_keep": 88,
+      "merge_keep": 76,
+      "removed": 24,
+      "merged": 12,
+      "pruned": 12,
+      "theta": 0.5,
+      "alpha": 0.6666666666666666
+     },
+     {
+      "block": 9,
+      "n_in": 76,
+      "prune_keep": 76,
+      "merge_keep": 76,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "alpha": 0.0
+     },
+     {
+      "block": 10,
+      "n_in": 76,
+      "prune_keep": 76,
+      "merge_keep": 76,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "alpha": 0.0
+     },
+     {
+      "block": 11,
+      "n_in": 76,
+      "prune_keep": 3,
+      "merge_keep": 3,
+      "removed": 73,
+      "merged": 0,
+      "pruned": 73,
+      "theta": 0.0,
+      "alpha": 0.0
+     }
+    ],
+    "K": 6,
+    "N_D": 3,
+    "final_tokens": 3,
+    "total_gmac": 0.8103413760000001,
+    "backbone_full_gmac": 0.8088652800000001,
+    "d_gmac": 0.001476096,
+    "station_scalar_gops_estimate": 0.000554946
+   },
+   "gmac": 0.8103413760000001,
+   "source_config_sha": "265287b211aa316d"
+  },
+  "ref/M0/gmac/DR0.9": {
+   "config": {
+    "kind": "pda",
+    "prune_keep": [
+     197,
+     197,
+     197,
+     197,
+     187,
+     167,
+     138,
+     197,
+     197,
+     197,
+     197,
+     3
+    ],
+    "merge_keep": [
+     197,
+     197,
+     197,
+     187,
+     167,
+     138,
+     111,
+     197,
+     197,
+     197,
+     197,
+     3
+    ],
+    "groups": {
+     "5": [
+      2,
+      1,
+      1,
+      3,
+      13,
+      4,
+      16,
+      15,
+      9,
+      6,
+      5,
+      12,
+      6,
+      14,
+      11,
+      10,
+      7,
+      8
+     ],
+     "6": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+     ]
+    },
+    "rank": 32,
+    "triton": true,
+    "fuse_merge": true,
+    "base": "pd",
+    "alpha": {
+     "5": 0.5,
+     "6": 0.75
+    }
+   },
+   "group": "reference",
+   "config_sha": "aee2ee29882ea619",
+   "details": {
+    "token_path": [
+     {
+      "block": 0,
+      "n_in": 197,
+      "prune_keep": 197,
+      "merge_keep": 197,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "alpha": 0.0
+     },
+     {
+      "block": 1,
+      "n_in": 197,
+      "prune_keep": 197,
+      "merge_keep": 197,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "alpha": 0.0
+     },
+     {
+      "block": 2,
+      "n_in": 197,
+      "prune_keep": 197,
+      "merge_keep": 197,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "alpha": 0.0
+     },
+     {
+      "block": 3,
+      "n_in": 197,
+      "prune_keep": 197,
+      "merge_keep": 187,
+      "removed": 10,
+      "merged": 10,
+      "pruned": 0,
+      "theta": 1.0,
+      "alpha": 0.0
+     },
+     {
+      "block": 4,
+      "n_in": 187,
+      "prune_keep": 187,
+      "merge_keep": 167,
+      "removed": 20,
+      "merged": 20,
+      "pruned": 0,
+      "theta": 1.0,
+      "alpha": 0.0
+     },
+     {
+      "block": 5,
+      "n_in": 167,
+      "prune_keep": 167,
+      "merge_keep": 138,
+      "removed": 29,
+      "merged": 29,
+      "pruned": 0,
+      "theta": 1.0,
+      "alpha": 0.5
+     },
+     {
+      "block": 6,
+      "n_in": 138,
+      "prune_keep": 138,
+      "merge_keep": 111,
+      "removed": 27,
+      "merged": 27,
+      "pruned": 0,
+      "theta": 1.0,
+      "alpha": 0.75
+     },
+     {
+      "block": 7,
+      "n_in": 111,
+      "prune_keep": 111,
+      "merge_keep": 111,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "alpha": 0.0
+     },
+     {
+      "block": 8,
+      "n_in": 111,
+      "prune_keep": 111,
+      "merge_keep": 111,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "alpha": 0.0
+     },
+     {
+      "block": 9,
+      "n_in": 111,
+      "prune_keep": 111,
+      "merge_keep": 111,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "alpha": 0.0
+     },
+     {
+      "block": 10,
+      "n_in": 111,
+      "prune_keep": 111,
+      "merge_keep": 111,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "alpha": 0.0
+     },
+     {
+      "block": 11,
+      "n_in": 111,
+      "prune_keep": 3,
+      "merge_keep": 3,
+      "removed": 108,
+      "merged": 0,
+      "pruned": 108,
+      "theta": 0.0,
+      "alpha": 0.0
+     }
+    ],
+    "K": 5,
+    "N_D": 2,
+    "final_tokens": 3,
+    "total_gmac": 0.90233088,
+    "backbone_full_gmac": 0.901039488,
+    "d_gmac": 0.001291392,
+    "station_scalar_gops_estimate": 0.000479661
+   },
+   "gmac": 0.90233088,
+   "source_config_sha": "c4f045e783722d76"
+  },
+  "ref/M0/gmac/DR1.0": {
+   "config": {
+    "kind": "pda",
+    "prune_keep": [
+     197,
+     197,
+     197,
+     197,
+     197,
+     189,
+     173,
+     149,
+     197,
+     197,
+     197,
+     3
+    ],
+    "merge_keep": [
+     197,
+     197,
+     197,
+     197,
+     189,
+     173,
+     149,
+     129,
+     197,
+     197,
+     197,
+     3
+    ],
+    "groups": {
+     "5": [
+      2,
+      1,
+      1,
+      3,
+      13,
+      4,
+      16,
+      15,
+      9,
+      6,
+      5,
+      12,
+      6,
+      14,
+      11,
+      10,
+      7,
+      8
+     ],
+     "6": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+     ],
+     "7": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+     ]
+    },
+    "rank": 32,
+    "triton": true,
+    "fuse_merge": true,
+    "base": "pd",
+    "alpha": {
+     "5": 0.5,
+     "6": 0.5,
+     "7": 0.6666666666666666
+    }
+   },
+   "group": "reference",
+   "config_sha": "d259817ae6e8ba50",
+   "details": {
+    "token_path": [
+     {
+      "block": 0,
+      "n_in": 197,
+      "prune_keep": 197,
+      "merge_keep": 197,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "alpha": 0.0
+     },
+     {
+      "block": 1,
+      "n_in": 197,
+      "prune_keep": 197,
+      "merge_keep": 197,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "alpha": 0.0
+     },
+     {
+      "block": 2,
+      "n_in": 197,
+      "prune_keep": 197,
+      "merge_keep": 197,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "alpha": 0.0
+     },
+     {
+      "block": 3,
+      "n_in": 197,
+      "prune_keep": 197,
+      "merge_keep": 197,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "alpha": 0.0
+     },
+     {
+      "block": 4,
+      "n_in": 197,
+      "prune_keep": 197,
+      "merge_keep": 189,
+      "removed": 8,
+      "merged": 8,
+      "pruned": 0,
+      "theta": 1.0,
+      "alpha": 0.0
+     },
+     {
+      "block": 5,
+      "n_in": 189,
+      "prune_keep": 189,
+      "merge_keep": 173,
+      "removed": 16,
+      "merged": 16,
+      "pruned": 0,
+      "theta": 1.0,
+      "alpha": 0.5
+     },
+     {
+      "block": 6,
+      "n_in": 173,
+      "prune_keep": 173,
+      "merge_keep": 149,
+      "removed": 24,
+      "merged": 24,
+      "pruned": 0,
+      "theta": 1.0,
+      "alpha": 0.5
+     },
+     {
+      "block": 7,
+      "n_in": 149,
+      "prune_keep": 149,
+      "merge_keep": 129,
+      "removed": 20,
+      "merged": 20,
+      "pruned": 0,
+      "theta": 1.0,
+      "alpha": 0.6666666666666666
+     },
+     {
+      "block": 8,
+      "n_in": 129,
+      "prune_keep": 129,
+      "merge_keep": 129,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "alpha": 0.0
+     },
+     {
+      "block": 9,
+      "n_in": 129,
+      "prune_keep": 129,
+      "merge_keep": 129,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "alpha": 0.0
+     },
+     {
+      "block": 10,
+      "n_in": 129,
+      "prune_keep": 129,
+      "merge_keep": 129,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "alpha": 0.0
+     },
+     {
+      "block": 11,
+      "n_in": 129,
+      "prune_keep": 3,
+      "merge_keep": 3,
+      "removed": 126,
+      "merged": 0,
+      "pruned": 126,
+      "theta": 0.0,
+      "alpha": 0.0
+     }
+    ],
+    "K": 5,
+    "N_D": 3,
+    "final_tokens": 3,
+    "total_gmac": 1.000074048,
+    "backbone_full_gmac": 0.99812352,
+    "d_gmac": 0.001950528,
+    "station_scalar_gops_estimate": 0.000703204
+   },
+   "gmac": 1.000074048,
+   "source_config_sha": "f089965609941e80"
+  },
+  "ref/M3/gmac/extra2": {
+   "config": {
+    "kind": "pda",
+    "prune_keep": [
+     197,
+     149,
+     137,
+     113,
+     101,
+     61,
+     53,
+     197,
+     197,
+     197,
+     197,
+     3
+    ],
+    "merge_keep": [
+     197,
+     149,
+     125,
+     101,
+     61,
+     53,
+     29,
+     197,
+     197,
+     197,
+     197,
+     3
+    ],
+    "groups": {
+     "1": [
+      7,
+      7,
+      7,
+      7,
+      7,
+      7,
+      6,
+      6,
+      7,
+      5,
+      5,
+      7,
+      7,
+      3,
+      7,
+      7,
+      15,
+      13,
+      1,
+      2,
+      16,
+      11,
+      8,
+      4,
+      12,
+      14,
+      9,
+      14,
+      14,
+      10
+     ],
+     "2": [
+      13,
+      13,
+      12,
+      13,
+      13,
+      13,
+      13,
+      13,
+      10,
+      10,
+      12,
+      13,
+      9,
+      1,
+      8,
+      15,
+      16,
+      14,
+      3,
+      11,
+      6,
+      5,
+      2,
+      7,
+      9,
+      5,
+      4
+     ],
+     "3": [
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      6,
+      5,
+      12,
+      3,
+      15,
+      1,
+      2,
+      16,
+      8,
+      7,
+      13,
+      9,
+      4,
+      10,
+      12,
+      14,
+      11
+     ]
+    },
+    "rank": 32,
+    "triton": true,
+    "fuse_merge": true,
+    "merge": {
+     "mode": "M3",
+     "kernel": "triton_norm"
+    },
+    "base": "pdm",
+    "alpha": {
+     "1": 0.6666666666666666,
+     "2": 0.5,
+     "3": 0.5
+    }
+   },
+   "group": "reference",
+   "config_sha": "ede518545ca9459e",
+   "details": {
+    "token_path": [
+     {
+      "block": 0,
+      "n_in": 197,
+      "prune_keep": 197,
+      "merge_keep": 197,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "alpha": 0.0
+     },
+     {
+      "block": 1,
+      "n_in": 197,
+      "prune_keep": 149,
+      "merge_keep": 149,
+      "removed": 48,
+      "merged": 0,
+      "pruned": 48,
+      "theta": 0.0,
+      "alpha": 0.6666666666666666
+     },
+     {
+      "block": 2,
+      "n_in": 149,
+      "prune_keep": 137,
+      "merge_keep": 125,
+      "removed": 24,
+      "merged": 12,
+      "pruned": 12,
+      "theta": 0.5,
+      "alpha": 0.5
+     },
+     {
+      "block": 3,
+      "n_in": 125,
+      "prune_keep": 113,
+      "merge_keep": 101,
+      "removed": 24,
+      "merged": 12,
+      "pruned": 12,
+      "theta": 0.5,
+      "alpha": 0.5
+     },
+     {
+      "block": 4,
+      "n_in": 101,
+      "prune_keep": 101,
+      "merge_keep": 61,
+      "removed": 40,
+      "merged": 40,
+      "pruned": 0,
+      "theta": 1.0,
+      "alpha": 0.0
+     },
+     {
+      "block": 5,
+      "n_in": 61,
+      "prune_keep": 61,
+      "merge_keep": 53,
+      "removed": 8,
+      "merged": 8,
+      "pruned": 0,
+      "theta": 1.0,
+      "alpha": 0.0
+     },
+     {
+      "block": 6,
+      "n_in": 53,
+      "prune_keep": 53,
+      "merge_keep": 29,
+      "removed": 24,
+      "merged": 24,
+      "pruned": 0,
+      "theta": 1.0,
+      "alpha": 0.0
+     },
+     {
+      "block": 7,
+      "n_in": 29,
+      "prune_keep": 29,
+      "merge_keep": 29,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "alpha": 0.0
+     },
+     {
+      "block": 8,
+      "n_in": 29,
+      "prune_keep": 29,
+      "merge_keep": 29,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "alpha": 0.0
+     },
+     {
+      "block": 9,
+      "n_in": 29,
+      "prune_keep": 29,
+      "merge_keep": 29,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "alpha": 0.0
+     },
+     {
+      "block": 10,
+      "n_in": 29,
+      "prune_keep": 29,
+      "merge_keep": 29,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "alpha": 0.0
+     },
+     {
+      "block": 11,
+      "n_in": 29,
+      "prune_keep": 3,
+      "merge_keep": 3,
+      "removed": 26,
+      "merged": 0,
+      "pruned": 26,
+      "theta": 0.0,
+      "alpha": 0.0
+     }
+    ],
+    "K": 7,
+    "N_D": 3,
+    "final_tokens": 3,
+    "total_gmac": 0.48244300799999995,
+    "backbone_full_gmac": 0.48040627199999997,
+    "d_gmac": 0.002036736,
+    "station_scalar_gops_estimate": 0.000644863
+   },
+   "gmac": 0.48244300799999995,
+   "source_config_sha": "de209043c1a1e521"
+  },
+  "ref/M3/gmac/extra1": {
+   "config": {
+    "kind": "pda",
+    "prune_keep": [
+     197,
+     148,
+     197,
+     148,
+     124,
+     76,
+     197,
+     197,
+     197,
+     197,
+     197,
+     3
+    ],
+    "merge_keep": [
+     197,
+     148,
+     197,
+     124,
+     76,
+     52,
+     197,
+     197,
+     197,
+     197,
+     197,
+     3
+    ],
+    "groups": {
+     "1": [
+      7,
+      7,
+      7,
+      7,
+      7,
+      7,
+      6,
+      6,
+      7,
+      5,
+      5,
+      7,
+      7,
+      3,
+      7,
+      7,
+      15,
+      13,
+      1,
+      2,
+      16,
+      11,
+      8,
+      4,
+      12,
+      14,
+      9,
+      14,
+      14,
+      10
+     ],
+     "3": [
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      6,
+      5,
+      12,
+      3,
+      15,
+      1,
+      2,
+      16,
+      8,
+      7,
+      13,
+      9,
+      4,
+      10,
+      12,
+      14,
+      11
+     ]
+    },
+    "rank": 32,
+    "triton": true,
+    "fuse_merge": true,
+    "merge": {
+     "mode": "M3",
+     "kernel": "triton_norm"
+    },
+    "base": "pdm",
+    "alpha": {
+     "1": 0.6666666666666666,
+     "3": 0.5
+    }
+   },
+   "group": "reference",
+   "config_sha": "745f3786ffc9a326",
+   "details": {
+    "token_path": [
+     {
+      "block": 0,
+      "n_in": 197,
+      "prune_keep": 197,
+      "merge_keep": 197,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "alpha": 0.0
+     },
+     {
+      "block": 1,
+      "n_in": 197,
+      "prune_keep": 148,
+      "merge_keep": 148,
+      "removed": 49,
+      "merged": 0,
+      "pruned": 49,
+      "theta": 0.0,
+      "alpha": 0.6666666666666666
+     },
+     {
+      "block": 2,
+      "n_in": 148,
+      "prune_keep": 148,
+      "merge_keep": 148,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "alpha": 0.0
+     },
+     {
+      "block": 3,
+      "n_in": 148,
+      "prune_keep": 148,
+      "merge_keep": 124,
+      "removed": 24,
+      "merged": 24,
+      "pruned": 0,
+      "theta": 1.0,
+      "alpha": 0.5
+     },
+     {
+      "block": 4,
+      "n_in": 124,
+      "prune_keep": 124,
+      "merge_keep": 76,
+      "removed": 48,
+      "merged": 48,
+      "pruned": 0,
+      "theta": 1.0,
+      "alpha": 0.0
+     },
+     {
+      "block": 5,
+      "n_in": 76,
+      "prune_keep": 76,
+      "merge_keep": 52,
+      "removed": 24,
+      "merged": 24,
+      "pruned": 0,
+      "theta": 1.0,
+      "alpha": 0.0
+     },
+     {
+      "block": 6,
+      "n_in": 52,
+      "prune_keep": 52,
+      "merge_keep": 52,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "alpha": 0.0
+     },
+     {
+      "block": 7,
+      "n_in": 52,
+      "prune_keep": 52,
+      "merge_keep": 52,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "alpha": 0.0
+     },
+     {
+      "block": 8,
+      "n_in": 52,
+      "prune_keep": 52,
+      "merge_keep": 52,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "alpha": 0.0
+     },
+     {
+      "block": 9,
+      "n_in": 52,
+      "prune_keep": 52,
+      "merge_keep": 52,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "alpha": 0.0
+     },
+     {
+      "block": 10,
+      "n_in": 52,
+      "prune_keep": 52,
+      "merge_keep": 52,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "alpha": 0.0
+     },
+     {
+      "block": 11,
+      "n_in": 52,
+      "prune_keep": 3,
+      "merge_keep": 3,
+      "removed": 49,
+      "merged": 0,
+      "pruned": 49,
+      "theta": 0.0,
+      "alpha": 0.0
+     }
+    ],
+    "K": 5,
+    "N_D": 2,
+    "final_tokens": 3,
+    "total_gmac": 0.5677820160000001,
+    "backbone_full_gmac": 0.5663289600000001,
+    "d_gmac": 0.0014530559999999999,
+    "station_scalar_gops_estimate": 0.000482996
+   },
+   "gmac": 0.5677820160000001,
+   "source_config_sha": "2650166e346e7f31"
+  },
+  "ref/M3/gmac/DR0.6": {
+   "config": {
+    "kind": "pda",
+    "prune_keep": [
+     197,
+     185,
+     197,
+     173,
+     149,
+     100,
+     76,
+     197,
+     197,
+     197,
+     197,
+     3
+    ],
+    "merge_keep": [
+     197,
+     173,
+     197,
+     149,
+     100,
+     76,
+     60,
+     197,
+     197,
+     197,
+     197,
+     3
+    ],
+    "groups": {
+     "1": [
+      7,
+      7,
+      7,
+      7,
+      7,
+      7,
+      6,
+      6,
+      7,
+      5,
+      5,
+      7,
+      7,
+      3,
+      7,
+      7,
+      15,
+      13,
+      1,
+      2,
+      16,
+      11,
+      8,
+      4,
+      12,
+      14,
+      9,
+      14,
+      14,
+      10
+     ],
+     "3": [
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      6,
+      5,
+      12,
+      3,
+      15,
+      1,
+      2,
+      16,
+      8,
+      7,
+      13,
+      9,
+      4,
+      10,
+      12,
+      14,
+      11
+     ]
+    },
+    "rank": 32,
+    "triton": true,
+    "fuse_merge": true,
+    "merge": {
+     "mode": "M3",
+     "kernel": "triton_norm"
+    },
+    "base": "pdm",
+    "alpha": {
+     "1": 0.75,
+     "3": 0.5
+    }
+   },
+   "group": "reference",
+   "config_sha": "7c1cf12d7e05fd13",
+   "details": {
+    "token_path": [
+     {
+      "block": 0,
+      "n_in": 197,
+      "prune_keep": 197,
+      "merge_keep": 197,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "alpha": 0.0
+     },
+     {
+      "block": 1,
+      "n_in": 197,
+      "prune_keep": 185,
+      "merge_keep": 173,
+      "removed": 24,
+      "merged": 12,
+      "pruned": 12,
+      "theta": 0.5,
+      "alpha": 0.75
+     },
+     {
+      "block": 2,
+      "n_in": 173,
+      "prune_keep": 173,
+      "merge_keep": 173,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "alpha": 0.0
+     },
+     {
+      "block": 3,
+      "n_in": 173,
+      "prune_keep": 173,
+      "merge_keep": 149,
+      "removed": 24,
+      "merged": 24,
+      "pruned": 0,
+      "theta": 1.0,
+      "alpha": 0.5
+     },
+     {
+      "block": 4,
+      "n_in": 149,
+      "prune_keep": 149,
+      "merge_keep": 100,
+      "removed": 49,
+      "merged": 49,
+      "pruned": 0,
+      "theta": 1.0,
+      "alpha": 0.0
+     },
+     {
+      "block": 5,
+      "n_in": 100,
+      "prune_keep": 100,
+      "merge_keep": 76,
+      "removed": 24,
+      "merged": 24,
+      "pruned": 0,
+      "theta": 1.0,
+      "alpha": 0.0
+     },
+     {
+      "block": 6,
+      "n_in": 76,
+      "prune_keep": 76,
+      "merge_keep": 60,
+      "removed": 16,
+      "merged": 16,
+      "pruned": 0,
+      "theta": 1.0,
+      "alpha": 0.0
+     },
+     {
+      "block": 7,
+      "n_in": 60,
+      "prune_keep": 60,
+      "merge_keep": 60,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "alpha": 0.0
+     },
+     {
+      "block": 8,
+      "n_in": 60,
+      "prune_keep": 60,
+      "merge_keep": 60,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "alpha": 0.0
+     },
+     {
+      "block": 9,
+      "n_in": 60,
+      "prune_keep": 60,
+      "merge_keep": 60,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "alpha": 0.0
+     },
+     {
+      "block": 10,
+      "n_in": 60,
+      "prune_keep": 60,
+      "merge_keep": 60,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "alpha": 0.0
+     },
+     {
+      "block": 11,
+      "n_in": 60,
+      "prune_keep": 3,
+      "merge_keep": 3,
+      "removed": 57,
+      "merged": 0,
+      "pruned": 57,
+      "theta": 0.0,
+      "alpha": 0.0
+     }
+    ],
+    "K": 6,
+    "N_D": 2,
+    "final_tokens": 3,
+    "total_gmac": 0.6543511679999998,
+    "backbone_full_gmac": 0.6528213119999998,
+    "d_gmac": 0.001529856,
+    "station_scalar_gops_estimate": 0.000549326
+   },
+   "gmac": 0.6543511679999998,
+   "source_config_sha": "aef1e03a82412c9d"
+  },
+  "ref/M3/gmac/DR0.7": {
+   "config": {
+    "kind": "pda",
+    "prune_keep": [
+     197,
+     193,
+     197,
+     189,
+     169,
+     101,
+     81,
+     197,
+     197,
+     197,
+     197,
+     3
+    ],
+    "merge_keep": [
+     197,
+     189,
+     197,
+     169,
+     101,
+     81,
+     77,
+     197,
+     197,
+     197,
+     197,
+     3
+    ],
+    "groups": {
+     "1": [
+      7,
+      7,
+      7,
+      7,
+      7,
+      7,
+      6,
+      6,
+      7,
+      5,
+      5,
+      7,
+      7,
+      3,
+      7,
+      7,
+      15,
+      13,
+      1,
+      2,
+      16,
+      11,
+      8,
+      4,
+      12,
+      14,
+      9,
+      14,
+      14,
+      10
+     ]
+    },
+    "rank": 32,
+    "triton": true,
+    "fuse_merge": true,
+    "merge": {
+     "mode": "M3",
+     "kernel": "triton_norm"
+    },
+    "base": "pdm",
+    "alpha": {
+     "1": 0.75
+    }
+   },
+   "group": "reference",
+   "config_sha": "7dea82b1355917c1",
+   "details": {
+    "token_path": [
+     {
+      "block": 0,
+      "n_in": 197,
+      "prune_keep": 197,
+      "merge_keep": 197,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "alpha": 0.0
+     },
+     {
+      "block": 1,
+      "n_in": 197,
+      "prune_keep": 193,
+      "merge_keep": 189,
+      "removed": 8,
+      "merged": 4,
+      "pruned": 4,
+      "theta": 0.5,
+      "alpha": 0.75
+     },
+     {
+      "block": 2,
+      "n_in": 189,
+      "prune_keep": 189,
+      "merge_keep": 189,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "alpha": 0.0
+     },
+     {
+      "block": 3,
+      "n_in": 189,
+      "prune_keep": 189,
+      "merge_keep": 169,
+      "removed": 20,
+      "merged": 20,
+      "pruned": 0,
+      "theta": 1.0,
+      "alpha": 0.0
+     },
+     {
+      "block": 4,
+      "n_in": 169,
+      "prune_keep": 169,
+      "merge_keep": 101,
+      "removed": 68,
+      "merged": 68,
+      "pruned": 0,
+      "theta": 1.0,
+      "alpha": 0.0
+     },
+     {
+      "block": 5,
+      "n_in": 101,
+      "prune_keep": 101,
+      "merge_keep": 81,
+      "removed": 20,
+      "merged": 20,
+      "pruned": 0,
+      "theta": 1.0,
+      "alpha": 0.0
+     },
+     {
+      "block": 6,
+      "n_in": 81,
+      "prune_keep": 81,
+      "merge_keep": 77,
+      "removed": 4,
+      "merged": 4,
+      "pruned": 0,
+      "theta": 1.0,
+      "alpha": 0.0
+     },
+     {
+      "block": 7,
+      "n_in": 77,
+      "prune_keep": 77,
+      "merge_keep": 77,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "alpha": 0.0
+     },
+     {
+      "block": 8,
+      "n_in": 77,
+      "prune_keep": 77,
+      "merge_keep": 77,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "alpha": 0.0
+     },
+     {
+      "block": 9,
+      "n_in": 77,
+      "prune_keep": 77,
+      "merge_keep": 77,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "alpha": 0.0
+     },
+     {
+      "block": 10,
+      "n_in": 77,
+      "prune_keep": 77,
+      "merge_keep": 77,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "alpha": 0.0
+     },
+     {
+      "block": 11,
+      "n_in": 77,
+      "prune_keep": 3,
+      "merge_keep": 3,
+      "removed": 74,
+      "merged": 0,
+      "pruned": 74,
+      "theta": 0.0,
+      "alpha": 0.0
+     }
+    ],
+    "K": 6,
+    "N_D": 1,
+    "final_tokens": 3,
+    "total_gmac": 0.7285724159999998,
+    "backbone_full_gmac": 0.7277706239999998,
+    "d_gmac": 0.000801792,
+    "station_scalar_gops_estimate": 0.000371901
+   },
+   "gmac": 0.7285724159999998,
+   "source_config_sha": "6f9ac9f96a08cc48"
+  },
+  "ref/M3/gmac/DR0.8": {
+   "config": {
+    "kind": "pda",
+    "prune_keep": [
+     197,
+     197,
+     197,
+     197,
+     173,
+     149,
+     125,
+     101,
+     197,
+     197,
+     197,
+     3
+    ],
+    "merge_keep": [
+     197,
+     197,
+     197,
+     173,
+     149,
+     125,
+     101,
+     81,
+     197,
+     197,
+     197,
+     3
+    ],
+    "groups": {
+     "6": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+     ],
+     "7": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+     ]
+    },
+    "rank": 32,
+    "triton": true,
+    "fuse_merge": true,
+    "merge": {
+     "mode": "M3",
+     "kernel": "triton_norm"
+    },
+    "base": "pdm",
+    "alpha": {
+     "6": 0.6666666666666666,
+     "7": 0.5
+    }
+   },
+   "group": "reference",
+   "config_sha": "417854253d043f7d",
+   "details": {
+    "token_path": [
+     {
+      "block": 0,
+      "n_in": 197,
+      "prune_keep": 197,
+      "merge_keep": 197,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "alpha": 0.0
+     },
+     {
+      "block": 1,
+      "n_in": 197,
+      "prune_keep": 197,
+      "merge_keep": 197,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "alpha": 0.0
+     },
+     {
+      "block": 2,
+      "n_in": 197,
+      "prune_keep": 197,
+      "merge_keep": 197,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "alpha": 0.0
+     },
+     {
+      "block": 3,
+      "n_in": 197,
+      "prune_keep": 197,
+      "merge_keep": 173,
+      "removed": 24,
+      "merged": 24,
+      "pruned": 0,
+      "theta": 1.0,
+      "alpha": 0.0
+     },
+     {
+      "block": 4,
+      "n_in": 173,
+      "prune_keep": 173,
+      "merge_keep": 149,
+      "removed": 24,
+      "merged": 24,
+      "pruned": 0,
+      "theta": 1.0,
+      "alpha": 0.0
+     },
+     {
+      "block": 5,
+      "n_in": 149,
+      "prune_keep": 149,
+      "merge_keep": 125,
+      "removed": 24,
+      "merged": 24,
+      "pruned": 0,
+      "theta": 1.0,
+      "alpha": 0.0
+     },
+     {
+      "block": 6,
+      "n_in": 125,
+      "prune_keep": 125,
+      "merge_keep": 101,
+      "removed": 24,
+      "merged": 24,
+      "pruned": 0,
+      "theta": 1.0,
+      "alpha": 0.6666666666666666
+     },
+     {
+      "block": 7,
+      "n_in": 101,
+      "prune_keep": 101,
+      "merge_keep": 81,
+      "removed": 20,
+      "merged": 20,
+      "pruned": 0,
+      "theta": 1.0,
+      "alpha": 0.5
+     },
+     {
+      "block": 8,
+      "n_in": 81,
+      "prune_keep": 81,
+      "merge_keep": 81,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "alpha": 0.0
+     },
+     {
+      "block": 9,
+      "n_in": 81,
+      "prune_keep": 81,
+      "merge_keep": 81,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "alpha": 0.0
+     },
+     {
+      "block": 10,
+      "n_in": 81,
+      "prune_keep": 81,
+      "merge_keep": 81,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "alpha": 0.0
+     },
+     {
+      "block": 11,
+      "n_in": 81,
+      "prune_keep": 3,
+      "merge_keep": 3,
+      "removed": 78,
+      "merged": 0,
+      "pruned": 78,
+      "theta": 0.0,
+      "alpha": 0.0
+     }
+    ],
+    "K": 6,
+    "N_D": 2,
+    "final_tokens": 3,
+    "total_gmac": 0.8099141760000002,
+    "backbone_full_gmac": 0.8089896960000001,
+    "d_gmac": 0.0009244800000000001,
+    "station_scalar_gops_estimate": 0.000401717
+   },
+   "gmac": 0.8099141760000002,
+   "source_config_sha": "34d13b5a1e4bf2c6"
+  },
+  "ref/M3/gmac/DR0.9": {
+   "config": {
+    "kind": "pda",
+    "prune_keep": [
+     197,
+     197,
+     197,
+     197,
+     189,
+     173,
+     148,
+     123,
+     197,
+     197,
+     197,
+     3
+    ],
+    "merge_keep": [
+     197,
+     197,
+     197,
+     189,
+     173,
+     148,
+     123,
+     103,
+     197,
+     197,
+     197,
+     3
+    ],
+    "groups": {
+     "5": [
+      2,
+      1,
+      1,
+      3,
+      13,
+      4,
+      16,
+      15,
+      9,
+      6,
+      5,
+      12,
+      6,
+      14,
+      11,
+      10,
+      7,
+      8
+     ],
+     "6": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+     ],
+     "7": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+     ]
+    },
+    "rank": 32,
+    "triton": true,
+    "fuse_merge": true,
+    "merge": {
+     "mode": "M3",
+     "kernel": "triton_norm"
+    },
+    "base": "pdm",
+    "alpha": {
+     "5": 0.5,
+     "6": 0.6666666666666666,
+     "7": 0.75
+    }
+   },
+   "group": "reference",
+   "config_sha": "e8218ef1a993d223",
+   "details": {
+    "token_path": [
+     {
+      "block": 0,
+      "n_in": 197,
+      "prune_keep": 197,
+      "merge_keep": 197,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "alpha": 0.0
+     },
+     {
+      "block": 1,
+      "n_in": 197,
+      "prune_keep": 197,
+      "merge_keep": 197,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "alpha": 0.0
+     },
+     {
+      "block": 2,
+      "n_in": 197,
+      "prune_keep": 197,
+      "merge_keep": 197,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "alpha": 0.0
+     },
+     {
+      "block": 3,
+      "n_in": 197,
+      "prune_keep": 197,
+      "merge_keep": 189,
+      "removed": 8,
+      "merged": 8,
+      "pruned": 0,
+      "theta": 1.0,
+      "alpha": 0.0
+     },
+     {
+      "block": 4,
+      "n_in": 189,
+      "prune_keep": 189,
+      "merge_keep": 173,
+      "removed": 16,
+      "merged": 16,
+      "pruned": 0,
+      "theta": 1.0,
+      "alpha": 0.0
+     },
+     {
+      "block": 5,
+      "n_in": 173,
+      "prune_keep": 173,
+      "merge_keep": 148,
+      "removed": 25,
+      "merged": 25,
+      "pruned": 0,
+      "theta": 1.0,
+      "alpha": 0.5
+     },
+     {
+      "block": 6,
+      "n_in": 148,
+      "prune_keep": 148,
+      "merge_keep": 123,
+      "removed": 25,
+      "merged": 25,
+      "pruned": 0,
+      "theta": 1.0,
+      "alpha": 0.6666666666666666
+     },
+     {
+      "block": 7,
+      "n_in": 123,
+      "prune_keep": 123,
+      "merge_keep": 103,
+      "removed": 20,
+      "merged": 20,
+      "pruned": 0,
+      "theta": 1.0,
+      "alpha": 0.75
+     },
+     {
+      "block": 8,
+      "n_in": 103,
+      "prune_keep": 103,
+      "merge_keep": 103,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "alpha": 0.0
+     },
+     {
+      "block": 9,
+      "n_in": 103,
+      "prune_keep": 103,
+      "merge_keep": 103,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "alpha": 0.0
+     },
+     {
+      "block": 10,
+      "n_in": 103,
+      "prune_keep": 103,
+      "merge_keep": 103,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "alpha": 0.0
+     },
+     {
+      "block": 11,
+      "n_in": 103,
+      "prune_keep": 3,
+      "merge_keep": 3,
+      "removed": 100,
+      "merged": 0,
+      "pruned": 100,
+      "theta": 0.0,
+      "alpha": 0.0
+     }
+    ],
+    "K": 6,
+    "N_D": 3,
+    "final_tokens": 3,
+    "total_gmac": 0.9027168,
+    "backbone_full_gmac": 0.900947328,
+    "d_gmac": 0.001769472,
+    "station_scalar_gops_estimate": 0.00065651
+   },
+   "gmac": 0.9027168,
+   "source_config_sha": "fa1cb90e9285958a"
+  },
+  "ref/M3/gmac/DR1.0": {
+   "config": {
+    "kind": "pda",
+    "prune_keep": [
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     184,
+     160,
+     197,
+     197,
+     197,
+     3
+    ],
+    "merge_keep": [
+     197,
+     197,
+     197,
+     197,
+     184,
+     197,
+     160,
+     126,
+     197,
+     197,
+     197,
+     3
+    ],
+    "groups": {
+     "6": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+     ],
+     "7": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+     ]
+    },
+    "rank": 32,
+    "triton": true,
+    "fuse_merge": true,
+    "merge": {
+     "mode": "M3",
+     "kernel": "triton_norm"
+    },
+    "base": "pdm",
+    "alpha": {
+     "6": 0.5,
+     "7": 0.6666666666666666
+    }
+   },
+   "group": "reference",
+   "config_sha": "a233bc48d192fddd",
+   "details": {
+    "token_path": [
+     {
+      "block": 0,
+      "n_in": 197,
+      "prune_keep": 197,
+      "merge_keep": 197,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "alpha": 0.0
+     },
+     {
+      "block": 1,
+      "n_in": 197,
+      "prune_keep": 197,
+      "merge_keep": 197,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "alpha": 0.0
+     },
+     {
+      "block": 2,
+      "n_in": 197,
+      "prune_keep": 197,
+      "merge_keep": 197,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "alpha": 0.0
+     },
+     {
+      "block": 3,
+      "n_in": 197,
+      "prune_keep": 197,
+      "merge_keep": 197,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "alpha": 0.0
+     },
+     {
+      "block": 4,
+      "n_in": 197,
+      "prune_keep": 197,
+      "merge_keep": 184,
+      "removed": 13,
+      "merged": 13,
+      "pruned": 0,
+      "theta": 1.0,
+      "alpha": 0.0
+     },
+     {
+      "block": 5,
+      "n_in": 184,
+      "prune_keep": 184,
+      "merge_keep": 184,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "alpha": 0.0
+     },
+     {
+      "block": 6,
+      "n_in": 184,
+      "prune_keep": 184,
+      "merge_keep": 160,
+      "removed": 24,
+      "merged": 24,
+      "pruned": 0,
+      "theta": 1.0,
+      "alpha": 0.5
+     },
+     {
+      "block": 7,
+      "n_in": 160,
+      "prune_keep": 160,
+      "merge_keep": 126,
+      "removed": 34,
+      "merged": 34,
+      "pruned": 0,
+      "theta": 1.0,
+      "alpha": 0.6666666666666666
+     },
+     {
+      "block": 8,
+      "n_in": 126,
+      "prune_keep": 126,
+      "merge_keep": 126,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "alpha": 0.0
+     },
+     {
+      "block": 9,
+      "n_in": 126,
+      "prune_keep": 126,
+      "merge_keep": 126,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "alpha": 0.0
+     },
+     {
+      "block": 10,
+      "n_in": 126,
+      "prune_keep": 126,
+      "merge_keep": 126,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "alpha": 0.0
+     },
+     {
+      "block": 11,
+      "n_in": 126,
+      "prune_keep": 3,
+      "merge_keep": 3,
+      "removed": 123,
+      "merged": 0,
+      "pruned": 123,
+      "theta": 0.0,
+      "alpha": 0.0
+     }
+    ],
+    "K": 4,
+    "N_D": 2,
+    "final_tokens": 3,
+    "total_gmac": 1.002504,
+    "backbone_full_gmac": 1.001273664,
+    "d_gmac": 0.0012303359999999998,
+    "station_scalar_gops_estimate": 0.000485484
+   },
+   "gmac": 1.002504,
+   "source_config_sha": "70ca3675677b7b7f"
+  },
+  "leaf_alpha4/extra2": {
+   "state": {
+    "sites": [
+     1,
+     4,
+     11
+    ],
+    "counts": [
+     134,
+     54,
+     3
+    ],
+    "thetas": [
+     0.0,
+     1.0,
+     0.0
+    ],
+    "ks": [
+     2.0,
+     0.0,
+     0.0
+    ]
+   },
+   "config": {
+    "kind": "pda",
+    "prune_keep": [
+     197,
+     134,
+     197,
+     197,
+     134,
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     3
+    ],
+    "merge_keep": [
+     197,
+     134,
+     197,
+     197,
+     54,
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     3
+    ],
+    "groups": {
+     "1": [
+      7,
+      7,
+      7,
+      7,
+      7,
+      7,
+      6,
+      6,
+      7,
+      5,
+      5,
+      7,
+      7,
+      3,
+      7,
+      7,
+      15,
+      13,
+      1,
+      2,
+      16,
+      11,
+      8,
+      4,
+      12,
+      14,
+      9,
+      14,
+      14,
+      10
+     ]
+    },
+    "rank": 32,
+    "triton": true,
+    "fuse_merge": true,
+    "merge": {
+     "mode": "M3",
+     "kernel": "triton_norm"
+    },
+    "base": "pdm",
+    "alpha": {
+     "1": 0.6666666666666666
+    }
+   },
+   "predicted_ms": 2.8751883852886397,
+   "fhat": 0.1612747723775101,
+   "budget_ms": 2.9892975,
+   "n_candidates": 5,
+   "certificate": "fixed-multiplier DP exact; constrained multiplier search and ratio projection uncertified",
+   "status": "planned",
+   "gmac": 0.551405952,
+   "group": "leaf_alpha4",
+   "budget": {
+    "id": "extra2",
+    "latency_ms": 2.9892975,
+    "gmac": null,
+    "anchor": null
+   },
+   "search_seconds": 0.38812472301651724,
+   "config_sha": "4889a6d97ab9819e",
+   "details": {
+    "token_path": [
+     {
+      "block": 0,
+      "n_in": 197,
+      "prune_keep": 197,
+      "merge_keep": 197,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "alpha": 0.0
+     },
+     {
+      "block": 1,
+      "n_in": 197,
+      "prune_keep": 134,
+      "merge_keep": 134,
+      "removed": 63,
+      "merged": 0,
+      "pruned": 63,
+      "theta": 0.0,
+      "alpha": 0.6666666666666666
+     },
+     {
+      "block": 2,
+      "n_in": 134,
+      "prune_keep": 134,
+      "merge_keep": 134,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "alpha": 0.0
+     },
+     {
+      "block": 3,
+      "n_in": 134,
+      "prune_keep": 134,
+      "merge_keep": 134,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "alpha": 0.0
+     },
+     {
+      "block": 4,
+      "n_in": 134,
+      "prune_keep": 134,
+      "merge_keep": 54,
+      "removed": 80,
+      "merged": 80,
+      "pruned": 0,
+      "theta": 1.0,
+      "alpha": 0.0
+     },
+     {
+      "block": 5,
+      "n_in": 54,
+      "prune_keep": 54,
+      "merge_keep": 54,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "alpha": 0.0
+     },
+     {
+      "block": 6,
+      "n_in": 54,
+      "prune_keep": 54,
+      "merge_keep": 54,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "alpha": 0.0
+     },
+     {
+      "block": 7,
+      "n_in": 54,
+      "prune_keep": 54,
+      "merge_keep": 54,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "alpha": 0.0
+     },
+     {
+      "block": 8,
+      "n_in": 54,
+      "prune_keep": 54,
+      "merge_keep": 54,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "alpha": 0.0
+     },
+     {
+      "block": 9,
+      "n_in": 54,
+      "prune_keep": 54,
+      "merge_keep": 54,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "alpha": 0.0
+     },
+     {
+      "block": 10,
+      "n_in": 54,
+      "prune_keep": 54,
+      "merge_keep": 54,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "alpha": 0.0
+     },
+     {
+      "block": 11,
+      "n_in": 54,
+      "prune_keep": 3,
+      "merge_keep": 3,
+      "removed": 51,
+      "merged": 0,
+      "pruned": 51,
+      "theta": 0.0,
+      "alpha": 0.0
+     }
+    ],
+    "K": 3,
+    "N_D": 1,
+    "final_tokens": 3,
+    "total_gmac": 0.551405952,
+    "backbone_full_gmac": 0.55060416,
+    "d_gmac": 0.000801792,
+    "station_scalar_gops_estimate": 0.00027412
+   },
+   "source_config_sha": "89f74d01afa8ad65"
+  },
+  "leaf_alpha4/extra1": {
+   "state": {
+    "sites": [
+     1,
+     4,
+     11
+    ],
+    "counts": [
+     146,
+     71,
+     3
+    ],
+    "thetas": [
+     0.0,
+     1.0,
+     0.0
+    ],
+    "ks": [
+     2.0,
+     0.0,
+     0.0
+    ]
+   },
+   "config": {
+    "kind": "pda",
+    "prune_keep": [
+     197,
+     146,
+     197,
+     197,
+     146,
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     3
+    ],
+    "merge_keep": [
+     197,
+     146,
+     197,
+     197,
+     71,
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     3
+    ],
+    "groups": {
+     "1": [
+      7,
+      7,
+      7,
+      7,
+      7,
+      7,
+      6,
+      6,
+      7,
+      5,
+      5,
+      7,
+      7,
+      3,
+      7,
+      7,
+      15,
+      13,
+      1,
+      2,
+      16,
+      11,
+      8,
+      4,
+      12,
+      14,
+      9,
+      14,
+      14,
+      10
+     ]
+    },
+    "rank": 32,
+    "triton": true,
+    "fuse_merge": true,
+    "merge": {
+     "mode": "M3",
+     "kernel": "triton_norm"
+    },
+    "base": "pdm",
+    "alpha": {
+     "1": 0.6666666666666666
+    }
+   },
+   "predicted_ms": 3.1892430786921966,
+   "fhat": 0.10284980969299795,
+   "budget_ms": 3.3010312500000003,
+   "n_candidates": 3,
+   "certificate": "fixed-multiplier DP exact; constrained multiplier search and ratio projection uncertified",
+   "status": "planned",
+   "gmac": 0.629778432,
+   "group": "leaf_alpha4",
+   "budget": {
+    "id": "extra1",
+    "latency_ms": 3.3010312500000003,
+    "gmac": null,
+    "anchor": null
+   },
+   "search_seconds": 0.3883670679933857,
+   "config_sha": "8d952c9ceb19b33f",
+   "details": {
+    "token_path": [
+     {
+      "block": 0,
+      "n_in": 197,
+      "prune_keep": 197,
+      "merge_keep": 197,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "alpha": 0.0
+     },
+     {
+      "block": 1,
+      "n_in": 197,
+      "prune_keep": 146,
+      "merge_keep": 146,
+      "removed": 51,
+      "merged": 0,
+      "pruned": 51,
+      "theta": 0.0,
+      "alpha": 0.6666666666666666
+     },
+     {
+      "block": 2,
+      "n_in": 146,
+      "prune_keep": 146,
+      "merge_keep": 146,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "alpha": 0.0
+     },
+     {
+      "block": 3,
+      "n_in": 146,
+      "prune_keep": 146,
+      "merge_keep": 146,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "alpha": 0.0
+     },
+     {
+      "block": 4,
+      "n_in": 146,
+      "prune_keep": 146,
+      "merge_keep": 71,
+      "removed": 75,
+      "merged": 75,
+      "pruned": 0,
+      "theta": 1.0,
+      "alpha": 0.0
+     },
+     {
+      "block": 5,
+      "n_in": 71,
+      "prune_keep": 71,
+      "merge_keep": 71,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "alpha": 0.0
+     },
+     {
+      "block": 6,
+      "n_in": 71,
+      "prune_keep": 71,
+      "merge_keep": 71,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "alpha": 0.0
+     },
+     {
+      "block": 7,
+      "n_in": 71,
+      "prune_keep": 71,
+      "merge_keep": 71,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "alpha": 0.0
+     },
+     {
+      "block": 8,
+      "n_in": 71,
+      "prune_keep": 71,
+      "merge_keep": 71,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "alpha": 0.0
+     },
+     {
+      "block": 9,
+      "n_in": 71,
+      "prune_keep": 71,
+      "merge_keep": 71,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "alpha": 0.0
+     },
+     {
+      "block": 10,
+      "n_in": 71,
+      "prune_keep": 71,
+      "merge_keep": 71,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "alpha": 0.0
+     },
+     {
+      "block": 11,
+      "n_in": 71,
+      "prune_keep": 3,
+      "merge_keep": 3,
+      "removed": 68,
+      "merged": 0,
+      "pruned": 68,
+      "theta": 0.0,
+      "alpha": 0.0
+     }
+    ],
+    "K": 3,
+    "N_D": 1,
+    "final_tokens": 3,
+    "total_gmac": 0.629778432,
+    "backbone_full_gmac": 0.6289766400000001,
+    "d_gmac": 0.000801792,
+    "station_scalar_gops_estimate": 0.000279335
+   },
+   "source_config_sha": "aee350fd952bdbba"
+  },
+  "leaf_alpha4/DR0.6": {
+   "state": {
+    "sites": [
+     4,
+     11
+    ],
+    "counts": [
+     70,
+     3
+    ],
+    "thetas": [
+     1.0,
+     0.0
+    ],
+    "ks": [
+     0.0,
+     0.0
+    ]
+   },
+   "config": {
+    "kind": "pda",
+    "prune_keep": [
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     3
+    ],
+    "merge_keep": [
+     197,
+     197,
+     197,
+     197,
+     70,
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     3
+    ],
+    "groups": {},
+    "rank": null,
+    "triton": true,
+    "fuse_merge": true,
+    "merge": {
+     "mode": "M3",
+     "kernel": "triton_norm"
+    },
+    "base": "pdm",
+    "alpha": {}
+   },
+   "predicted_ms": 3.5113074233314308,
+   "fhat": 0.06089358975441428,
+   "budget_ms": 3.612765,
+   "n_candidates": 1,
+   "certificate": "fixed-multiplier DP exact; constrained multiplier search and ratio projection uncertified",
+   "status": "planned",
+   "gmac": 0.7140478080000001,
+   "group": "leaf_alpha4",
+   "budget": {
+    "id": "DR0.6",
+    "latency_ms": 3.612765,
+    "gmac": 0.657446638,
+    "anchor": "DR0.6"
+   },
+   "search_seconds": 0.373214627004927,
+   "config_sha": "27904a11627bcae3",
+   "details": {
+    "token_path": [
+     {
+      "block": 0,
+      "n_in": 197,
+      "prune_keep": 197,
+      "merge_keep": 197,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "alpha": 0.0
+     },
+     {
+      "block": 1,
+      "n_in": 197,
+      "prune_keep": 197,
+      "merge_keep": 197,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "alpha": 0.0
+     },
+     {
+      "block": 2,
+      "n_in": 197,
+      "prune_keep": 197,
+      "merge_keep": 197,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "alpha": 0.0
+     },
+     {
+      "block": 3,
+      "n_in": 197,
+      "prune_keep": 197,
+      "merge_keep": 197,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "alpha": 0.0
+     },
+     {
+      "block": 4,
+      "n_in": 197,
+      "prune_keep": 197,
+      "merge_keep": 70,
+      "removed": 127,
+      "merged": 127,
+      "pruned": 0,
+      "theta": 1.0,
+      "alpha": 0.0
+     },
+     {
+      "block": 5,
+      "n_in": 70,
+      "prune_keep": 70,
+      "merge_keep": 70,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "alpha": 0.0
+     },
+     {
+      "block": 6,
+      "n_in": 70,
+      "prune_keep": 70,
+      "merge_keep": 70,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "alpha": 0.0
+     },
+     {
+      "block": 7,
+      "n_in": 70,
+      "prune_keep": 70,
+      "merge_keep": 70,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "alpha": 0.0
+     },
+     {
+      "block": 8,
+      "n_in": 70,
+      "prune_keep": 70,
+      "merge_keep": 70,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "alpha": 0.0
+     },
+     {
+      "block": 9,
+      "n_in": 70,
+      "prune_keep": 70,
+      "merge_keep": 70,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "alpha": 0.0
+     },
+     {
+      "block": 10,
+      "n_in": 70,
+      "prune_keep": 70,
+      "merge_keep": 70,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "alpha": 0.0
+     },
+     {
+      "block": 11,
+      "n_in": 70,
+      "prune_keep": 3,
+      "merge_keep": 3,
+      "removed": 67,
+      "merged": 0,
+      "pruned": 67,
+      "theta": 0.0,
+      "alpha": 0.0
+     }
+    ],
+    "K": 2,
+    "N_D": 0,
+    "final_tokens": 3,
+    "total_gmac": 0.7140478080000001,
+    "backbone_full_gmac": 0.7140478080000001,
+    "d_gmac": 0.0,
+    "station_scalar_gops_estimate": 4.3924e-05
+   },
+   "source_config_sha": "88634aad1ed5c878"
+  },
+  "leaf_alpha4/DR0.7": {
+   "state": {
+    "sites": [
+     4,
+     11
+    ],
+    "counts": [
+     85,
+     5
+    ],
+    "thetas": [
+     1.0,
+     0.0
+    ],
+    "ks": [
+     0.0,
+     0.0
+    ]
+   },
+   "config": {
+    "kind": "pda",
+    "prune_keep": [
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     5
+    ],
+    "merge_keep": [
+     197,
+     197,
+     197,
+     197,
+     85,
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     5
+    ],
+    "groups": {},
+    "rank": null,
+    "triton": true,
+    "fuse_merge": true,
+    "merge": {
+     "mode": "M3",
+     "kernel": "triton_norm"
+    },
+    "base": "pdm",
+    "alpha": {}
+   },
+   "predicted_ms": 3.7060713386197013,
+   "fhat": 0.038309266666123554,
+   "budget_ms": 3.814525,
+   "n_candidates": 2,
+   "certificate": "fixed-multiplier DP exact; constrained multiplier search and ratio projection uncertified",
+   "status": "planned",
+   "gmac": 0.7674769919999999,
+   "group": "leaf_alpha4",
+   "budget": {
+    "id": "DR0.7",
+    "latency_ms": 3.814525,
+    "gmac": 0.7289697110000001,
+    "anchor": "DR0.7"
+   },
+   "search_seconds": 0.3762912919919472,
+   "config_sha": "4dd852b82ebbdae7",
+   "details": {
+    "token_path": [
+     {
+      "block": 0,
+      "n_in": 197,
+      "prune_keep": 197,
+      "merge_keep": 197,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "alpha": 0.0
+     },
+     {
+      "block": 1,
+      "n_in": 197,
+      "prune_keep": 197,
+      "merge_keep": 197,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "alpha": 0.0
+     },
+     {
+      "block": 2,
+      "n_in": 197,
+      "prune_keep": 197,
+      "merge_keep": 197,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "alpha": 0.0
+     },
+     {
+      "block": 3,
+      "n_in": 197,
+      "prune_keep": 197,
+      "merge_keep": 197,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "alpha": 0.0
+     },
+     {
+      "block": 4,
+      "n_in": 197,
+      "prune_keep": 197,
+      "merge_keep": 85,
+      "removed": 112,
+      "merged": 112,
+      "pruned": 0,
+      "theta": 1.0,
+      "alpha": 0.0
+     },
+     {
+      "block": 5,
+      "n_in": 85,
+      "prune_keep": 85,
+      "merge_keep": 85,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "alpha": 0.0
+     },
+     {
+      "block": 6,
+      "n_in": 85,
+      "prune_keep": 85,
+      "merge_keep": 85,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "alpha": 0.0
+     },
+     {
+      "block": 7,
+      "n_in": 85,
+      "prune_keep": 85,
+      "merge_keep": 85,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "alpha": 0.0
+     },
+     {
+      "block": 8,
+      "n_in": 85,
+      "prune_keep": 85,
+      "merge_keep": 85,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "alpha": 0.0
+     },
+     {
+      "block": 9,
+      "n_in": 85,
+      "prune_keep": 85,
+      "merge_keep": 85,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "alpha": 0.0
+     },
+     {
+      "block": 10,
+      "n_in": 85,
+      "prune_keep": 85,
+      "merge_keep": 85,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "alpha": 0.0
+     },
+     {
+      "block": 11,
+      "n_in": 85,
+      "prune_keep": 5,
+      "merge_keep": 5,
+      "removed": 80,
+      "merged": 0,
+      "pruned": 80,
+      "theta": 0.0,
+      "alpha": 0.0
+     }
+    ],
+    "K": 2,
+    "N_D": 0,
+    "final_tokens": 5,
+    "total_gmac": 0.7674769919999999,
+    "backbone_full_gmac": 0.7674769919999999,
+    "d_gmac": 0.0,
+    "station_scalar_gops_estimate": 4.4563e-05
+   },
+   "source_config_sha": "c3bd107e281a038d"
+  },
+  "leaf_alpha4/DR0.8": {
+   "state": {
+    "sites": [
+     4,
+     11
+    ],
+    "counts": [
+     116,
+     3
+    ],
+    "thetas": [
+     1.0,
+     0.0
+    ],
+    "ks": [
+     0.0,
+     0.0
+    ]
+   },
+   "config": {
+    "kind": "pda",
+    "prune_keep": [
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     3
+    ],
+    "merge_keep": [
+     197,
+     197,
+     197,
+     197,
+     116,
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     3
+    ],
+    "groups": {},
+    "rank": null,
+    "triton": true,
+    "fuse_merge": true,
+    "merge": {
+     "mode": "M3",
+     "kernel": "triton_norm"
+    },
+    "base": "pdm",
+    "alpha": {}
+   },
+   "predicted_ms": 4.115607883865611,
+   "fhat": 0.015294808668841142,
+   "budget_ms": 4.218044999999999,
+   "n_candidates": 3,
+   "certificate": "fixed-multiplier DP exact; constrained multiplier search and ratio projection uncertified",
+   "status": "planned",
+   "gmac": 0.8796478079999999,
+   "group": "leaf_alpha4",
+   "budget": {
+    "id": "DR0.8",
+    "latency_ms": 4.218044999999999,
+    "gmac": 0.811373952,
+    "anchor": "DR0.8"
+   },
+   "search_seconds": 0.37897457799408585,
+   "config_sha": "d90b60ac153d3920",
+   "details": {
+    "token_path": [
+     {
+      "block": 0,
+      "n_in": 197,
+      "prune_keep": 197,
+      "merge_keep": 197,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "alpha": 0.0
+     },
+     {
+      "block": 1,
+      "n_in": 197,
+      "prune_keep": 197,
+      "merge_keep": 197,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "alpha": 0.0
+     },
+     {
+      "block": 2,
+      "n_in": 197,
+      "prune_keep": 197,
+      "merge_keep": 197,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "alpha": 0.0
+     },
+     {
+      "block": 3,
+      "n_in": 197,
+      "prune_keep": 197,
+      "merge_keep": 197,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "alpha": 0.0
+     },
+     {
+      "block": 4,
+      "n_in": 197,
+      "prune_keep": 197,
+      "merge_keep": 116,
+      "removed": 81,
+      "merged": 81,
+      "pruned": 0,
+      "theta": 1.0,
+      "alpha": 0.0
+     },
+     {
+      "block": 5,
+      "n_in": 116,
+      "prune_keep": 116,
+      "merge_keep": 116,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "alpha": 0.0
+     },
+     {
+      "block": 6,
+      "n_in": 116,
+      "prune_keep": 116,
+      "merge_keep": 116,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "alpha": 0.0
+     },
+     {
+      "block": 7,
+      "n_in": 116,
+      "prune_keep": 116,
+      "merge_keep": 116,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "alpha": 0.0
+     },
+     {
+      "block": 8,
+      "n_in": 116,
+      "prune_keep": 116,
+      "merge_keep": 116,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "alpha": 0.0
+     },
+     {
+      "block": 9,
+      "n_in": 116,
+      "prune_keep": 116,
+      "merge_keep": 116,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "alpha": 0.0
+     },
+     {
+      "block": 10,
+      "n_in": 116,
+      "prune_keep": 116,
+      "merge_keep": 116,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "alpha": 0.0
+     },
+     {
+      "block": 11,
+      "n_in": 116,
+      "prune_keep": 3,
+      "merge_keep": 3,
+      "removed": 113,
+      "merged": 0,
+      "pruned": 113,
+      "theta": 0.0,
+      "alpha": 0.0
+     }
+    ],
+    "K": 2,
+    "N_D": 0,
+    "final_tokens": 3,
+    "total_gmac": 0.8796478079999999,
+    "backbone_full_gmac": 0.8796478079999999,
+    "d_gmac": 0.0,
+    "station_scalar_gops_estimate": 4.4706e-05
+   },
+   "source_config_sha": "0fcfc60e008085ed"
+  },
+  "leaf_alpha4/DR0.9": {
+   "state": {
+    "sites": [
+     5,
+     11
+    ],
+    "counts": [
+     131,
+     5
+    ],
+    "thetas": [
+     1.0,
+     0.0
+    ],
+    "ks": [
+     1.0,
+     0.0
+    ]
+   },
+   "config": {
+    "kind": "pda",
+    "prune_keep": [
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     5
+    ],
+    "merge_keep": [
+     197,
+     197,
+     197,
+     197,
+     197,
+     131,
+     197,
+     197,
+     197,
+     197,
+     197,
+     5
+    ],
+    "groups": {
+     "5": [
+      2,
+      1,
+      1,
+      3,
+      13,
+      4,
+      16,
+      15,
+      9,
+      6,
+      5,
+      12,
+      6,
+      14,
+      11,
+      10,
+      7,
+      8
+     ]
+    },
+    "rank": 32,
+    "triton": true,
+    "fuse_merge": true,
+    "merge": {
+     "mode": "M3",
+     "kernel": "triton_norm"
+    },
+    "base": "pdm",
+    "alpha": {
+     "5": 0.5
+    }
+   },
+   "predicted_ms": 4.512590581159085,
+   "fhat": 0.00562309568004611,
+   "budget_ms": 4.614775,
+   "n_candidates": 2,
+   "certificate": "fixed-multiplier DP exact; constrained multiplier search and ratio projection uncertified",
+   "status": "planned",
+   "gmac": 0.9748450559999999,
+   "group": "leaf_alpha4",
+   "budget": {
+    "id": "DR0.9",
+    "latency_ms": 4.614775,
+    "gmac": 0.9044614570000001,
+    "anchor": "DR0.9"
+   },
+   "search_seconds": 0.3826761149975937,
+   "config_sha": "dfe840017ba3258c",
+   "details": {
+    "token_path": [
+     {
+      "block": 0,
+      "n_in": 197,
+      "prune_keep": 197,
+      "merge_keep": 197,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "alpha": 0.0
+     },
+     {
+      "block": 1,
+      "n_in": 197,
+      "prune_keep": 197,
+      "merge_keep": 197,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "alpha": 0.0
+     },
+     {
+      "block": 2,
+      "n_in": 197,
+      "prune_keep": 197,
+      "merge_keep": 197,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "alpha": 0.0
+     },
+     {
+      "block": 3,
+      "n_in": 197,
+      "prune_keep": 197,
+      "merge_keep": 197,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "alpha": 0.0
+     },
+     {
+      "block": 4,
+      "n_in": 197,
+      "prune_keep": 197,
+      "merge_keep": 197,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "alpha": 0.0
+     },
+     {
+      "block": 5,
+      "n_in": 197,
+      "prune_keep": 197,
+      "merge_keep": 131,
+      "removed": 66,
+      "merged": 66,
+      "pruned": 0,
+      "theta": 1.0,
+      "alpha": 0.5
+     },
+     {
+      "block": 6,
+      "n_in": 131,
+      "prune_keep": 131,
+      "merge_keep": 131,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "alpha": 0.0
+     },
+     {
+      "block": 7,
+      "n_in": 131,
+      "prune_keep": 131,
+      "merge_keep": 131,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "alpha": 0.0
+     },
+     {
+      "block": 8,
+      "n_in": 131,
+      "prune_keep": 131,
+      "merge_keep": 131,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "alpha": 0.0
+     },
+     {
+      "block": 9,
+      "n_in": 131,
+      "prune_keep": 131,
+      "merge_keep": 131,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "alpha": 0.0
+     },
+     {
+      "block": 10,
+      "n_in": 131,
+      "prune_keep": 131,
+      "merge_keep": 131,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "alpha": 0.0
+     },
+     {
+      "block": 11,
+      "n_in": 131,
+      "prune_keep": 5,
+      "merge_keep": 5,
+      "removed": 126,
+      "merged": 0,
+      "pruned": 126,
+      "theta": 0.0,
+      "alpha": 0.0
+     }
+    ],
+    "K": 2,
+    "N_D": 1,
+    "final_tokens": 5,
+    "total_gmac": 0.9748450559999999,
+    "backbone_full_gmac": 0.974043264,
+    "d_gmac": 0.000801792,
+    "station_scalar_gops_estimate": 0.000259812
+   },
+   "source_config_sha": "ffa0de77d1c04f10"
+  },
+  "leaf_alpha4/DR1.0": {
+   "state": {
+    "sites": [
+     6,
+     11
+    ],
+    "counts": [
+     141,
+     3
+    ],
+    "thetas": [
+     1.0,
+     0.0
+    ],
+    "ks": [
+     1.0,
+     0.0
+    ]
+   },
+   "config": {
+    "kind": "pda",
+    "prune_keep": [
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     3
+    ],
+    "merge_keep": [
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     141,
+     197,
+     197,
+     197,
+     197,
+     3
+    ],
+    "groups": {
+     "6": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+     ]
+    },
+    "rank": 32,
+    "triton": true,
+    "fuse_merge": true,
+    "merge": {
+     "mode": "M3",
+     "kernel": "triton_norm"
+    },
+    "base": "pdm",
+    "alpha": {
+     "6": 0.5
+    }
+   },
+   "predicted_ms": 4.756874494314744,
+   "fhat": 0.0021619639665004797,
+   "budget_ms": 4.859699999999999,
+   "n_candidates": 2,
+   "certificate": "fixed-multiplier DP exact; constrained multiplier search and ratio projection uncertified",
+   "status": "planned",
+   "gmac": 1.0389333120000002,
+   "group": "leaf_alpha4",
+   "budget": {
+    "id": "DR1.0",
+    "latency_ms": 4.859699999999999,
+    "gmac": 1.0056782649999998,
+    "anchor": "DR1.0"
+   },
+   "search_seconds": 0.3771362970001064,
+   "config_sha": "6cc13fe2193a2e3c",
+   "details": {
+    "token_path": [
+     {
+      "block": 0,
+      "n_in": 197,
+      "prune_keep": 197,
+      "merge_keep": 197,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "alpha": 0.0
+     },
+     {
+      "block": 1,
+      "n_in": 197,
+      "prune_keep": 197,
+      "merge_keep": 197,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "alpha": 0.0
+     },
+     {
+      "block": 2,
+      "n_in": 197,
+      "prune_keep": 197,
+      "merge_keep": 197,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "alpha": 0.0
+     },
+     {
+      "block": 3,
+      "n_in": 197,
+      "prune_keep": 197,
+      "merge_keep": 197,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "alpha": 0.0
+     },
+     {
+      "block": 4,
+      "n_in": 197,
+      "prune_keep": 197,
+      "merge_keep": 197,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "alpha": 0.0
+     },
+     {
+      "block": 5,
+      "n_in": 197,
+      "prune_keep": 197,
+      "merge_keep": 197,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "alpha": 0.0
+     },
+     {
+      "block": 6,
+      "n_in": 197,
+      "prune_keep": 197,
+      "merge_keep": 141,
+      "removed": 56,
+      "merged": 56,
+      "pruned": 0,
+      "theta": 1.0,
+      "alpha": 0.5
+     },
+     {
+      "block": 7,
+      "n_in": 141,
+      "prune_keep": 141,
+      "merge_keep": 141,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "alpha": 0.0
+     },
+     {
+      "block": 8,
+      "n_in": 141,
+      "prune_keep": 141,
+      "merge_keep": 141,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "alpha": 0.0
+     },
+     {
+      "block": 9,
+      "n_in": 141,
+      "prune_keep": 141,
+      "merge_keep": 141,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "alpha": 0.0
+     },
+     {
+      "block": 10,
+      "n_in": 141,
+      "prune_keep": 141,
+      "merge_keep": 141,
+      "removed": 0,
+      "merged": 0,
+      "pruned": 0,
+      "theta": null,
+      "alpha": 0.0
+     },
+     {
+      "block": 11,
+      "n_in": 141,
+      "prune_keep": 3,
+      "merge_keep": 3,
+      "removed": 138,
+      "merged": 0,
+      "pruned": 138,
+      "theta": 0.0,
+      "alpha": 0.0
+     }
+    ],
+    "K": 2,
+    "N_D": 1,
+    "final_tokens": 3,
+    "total_gmac": 1.0389333120000002,
+    "backbone_full_gmac": 1.0381816320000001,
+    "d_gmac": 0.00075168,
+    "station_scalar_gops_estimate": 0.000258032
+   },
+   "source_config_sha": "7ee99e215e3f9c74"
+  }
+ },
+ "sha": "f9af4d833dd4b909014644a7e6dd465c63245dfe41225edac3c463d465aea896",
+ "time": 1792297261.1095057
+}

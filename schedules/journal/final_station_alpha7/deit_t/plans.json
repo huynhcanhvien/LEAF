@@ -1,0 +1,956 @@
+{
+ "backbone": "deit_t",
+ "n_schedules": 7,
+ "jobs": {
+  "ref/leaf/extra2": {
+   "config": {
+    "kind": "pda",
+    "prune_keep": [
+     197,
+     134,
+     197,
+     197,
+     134,
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     3
+    ],
+    "merge_keep": [
+     197,
+     134,
+     197,
+     197,
+     54,
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     3
+    ],
+    "groups": {
+     "1": [
+      7,
+      7,
+      7,
+      7,
+      7,
+      7,
+      6,
+      6,
+      7,
+      5,
+      5,
+      7,
+      7,
+      3,
+      7,
+      7,
+      15,
+      13,
+      1,
+      2,
+      16,
+      11,
+      8,
+      4,
+      12,
+      14,
+      9,
+      14,
+      14,
+      10
+     ]
+    },
+    "rank": 32,
+    "triton": true,
+    "fuse_merge": true,
+    "merge": {
+     "mode": "M3",
+     "kernel": "triton_norm"
+    },
+    "base": "pdm",
+    "alpha": {
+     "1": 0.6666666666666666
+    }
+   },
+   "status": "sealed",
+   "budget": {
+    "id": "extra2",
+    "latency_ms": 2.9892975,
+    "gmac": null,
+    "anchor": null
+   },
+   "group": "reference",
+   "config_sha": "4889a6d97ab9819e"
+  },
+  "no_final/extra2": {
+   "config": {
+    "kind": "pda",
+    "prune_keep": [
+     197,
+     134,
+     197,
+     197,
+     134,
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     54
+    ],
+    "merge_keep": [
+     197,
+     134,
+     197,
+     197,
+     54,
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     54
+    ],
+    "groups": {
+     "1": [
+      7,
+      7,
+      7,
+      7,
+      7,
+      7,
+      6,
+      6,
+      7,
+      5,
+      5,
+      7,
+      7,
+      3,
+      7,
+      7,
+      15,
+      13,
+      1,
+      2,
+      16,
+      11,
+      8,
+      4,
+      12,
+      14,
+      9,
+      14,
+      14,
+      10
+     ]
+    },
+    "rank": 32,
+    "triton": true,
+    "fuse_merge": true,
+    "merge": {
+     "mode": "M3",
+     "kernel": "triton_norm"
+    },
+    "base": "pdm",
+    "alpha": {
+     "1": 0.6666666666666666
+    }
+   },
+   "status": "fixed",
+   "budget": {
+    "id": "extra2",
+    "latency_ms": 2.9892975,
+    "gmac": null,
+    "anchor": null
+   },
+   "group": "no_final",
+   "config_sha": "d3123f46dbc29894"
+  },
+  "ref/leaf/extra1": {
+   "config": {
+    "kind": "pda",
+    "prune_keep": [
+     197,
+     146,
+     197,
+     197,
+     146,
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     3
+    ],
+    "merge_keep": [
+     197,
+     146,
+     197,
+     197,
+     71,
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     3
+    ],
+    "groups": {
+     "1": [
+      7,
+      7,
+      7,
+      7,
+      7,
+      7,
+      6,
+      6,
+      7,
+      5,
+      5,
+      7,
+      7,
+      3,
+      7,
+      7,
+      15,
+      13,
+      1,
+      2,
+      16,
+      11,
+      8,
+      4,
+      12,
+      14,
+      9,
+      14,
+      14,
+      10
+     ]
+    },
+    "rank": 32,
+    "triton": true,
+    "fuse_merge": true,
+    "merge": {
+     "mode": "M3",
+     "kernel": "triton_norm"
+    },
+    "base": "pdm",
+    "alpha": {
+     "1": 0.6666666666666666
+    }
+   },
+   "status": "sealed",
+   "budget": {
+    "id": "extra1",
+    "latency_ms": 3.3010312500000003,
+    "gmac": null,
+    "anchor": null
+   },
+   "group": "reference",
+   "config_sha": "8d952c9ceb19b33f"
+  },
+  "no_final/extra1": {
+   "config": {
+    "kind": "pda",
+    "prune_keep": [
+     197,
+     146,
+     197,
+     197,
+     146,
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     71
+    ],
+    "merge_keep": [
+     197,
+     146,
+     197,
+     197,
+     71,
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     71
+    ],
+    "groups": {
+     "1": [
+      7,
+      7,
+      7,
+      7,
+      7,
+      7,
+      6,
+      6,
+      7,
+      5,
+      5,
+      7,
+      7,
+      3,
+      7,
+      7,
+      15,
+      13,
+      1,
+      2,
+      16,
+      11,
+      8,
+      4,
+      12,
+      14,
+      9,
+      14,
+      14,
+      10
+     ]
+    },
+    "rank": 32,
+    "triton": true,
+    "fuse_merge": true,
+    "merge": {
+     "mode": "M3",
+     "kernel": "triton_norm"
+    },
+    "base": "pdm",
+    "alpha": {
+     "1": 0.6666666666666666
+    }
+   },
+   "status": "fixed",
+   "budget": {
+    "id": "extra1",
+    "latency_ms": 3.3010312500000003,
+    "gmac": null,
+    "anchor": null
+   },
+   "group": "no_final",
+   "config_sha": "98636f19979c6284"
+  },
+  "ref/leaf/DR0.6": {
+   "config": {
+    "kind": "pda",
+    "prune_keep": [
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     3
+    ],
+    "merge_keep": [
+     197,
+     197,
+     197,
+     197,
+     70,
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     3
+    ],
+    "groups": {},
+    "rank": null,
+    "triton": true,
+    "fuse_merge": true,
+    "merge": {
+     "mode": "M3",
+     "kernel": "triton_norm"
+    },
+    "base": "pdm",
+    "alpha": {}
+   },
+   "status": "sealed",
+   "budget": {
+    "id": "DR0.6",
+    "latency_ms": 3.612765,
+    "gmac": 0.657446638,
+    "anchor": "DR0.6"
+   },
+   "group": "reference",
+   "config_sha": "27904a11627bcae3"
+  },
+  "no_final/DR0.6": {
+   "config": {
+    "kind": "pda",
+    "prune_keep": [
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     70
+    ],
+    "merge_keep": [
+     197,
+     197,
+     197,
+     197,
+     70,
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     70
+    ],
+    "groups": {},
+    "rank": null,
+    "triton": true,
+    "fuse_merge": true,
+    "merge": {
+     "mode": "M3",
+     "kernel": "triton_norm"
+    },
+    "base": "pdm",
+    "alpha": {}
+   },
+   "status": "fixed",
+   "budget": {
+    "id": "DR0.6",
+    "latency_ms": 3.612765,
+    "gmac": 0.657446638,
+    "anchor": "DR0.6"
+   },
+   "group": "no_final",
+   "config_sha": "b157dd3e23aec62e"
+  },
+  "ref/leaf/DR0.7": {
+   "config": {
+    "kind": "pda",
+    "prune_keep": [
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     5
+    ],
+    "merge_keep": [
+     197,
+     197,
+     197,
+     197,
+     85,
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     5
+    ],
+    "groups": {},
+    "rank": null,
+    "triton": true,
+    "fuse_merge": true,
+    "merge": {
+     "mode": "M3",
+     "kernel": "triton_norm"
+    },
+    "base": "pdm",
+    "alpha": {}
+   },
+   "status": "sealed",
+   "budget": {
+    "id": "DR0.7",
+    "latency_ms": 3.814525,
+    "gmac": 0.7289697110000001,
+    "anchor": "DR0.7"
+   },
+   "group": "reference",
+   "config_sha": "4dd852b82ebbdae7"
+  },
+  "no_final/DR0.7": {
+   "config": {
+    "kind": "pda",
+    "prune_keep": [
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     85
+    ],
+    "merge_keep": [
+     197,
+     197,
+     197,
+     197,
+     85,
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     85
+    ],
+    "groups": {},
+    "rank": null,
+    "triton": true,
+    "fuse_merge": true,
+    "merge": {
+     "mode": "M3",
+     "kernel": "triton_norm"
+    },
+    "base": "pdm",
+    "alpha": {}
+   },
+   "status": "fixed",
+   "budget": {
+    "id": "DR0.7",
+    "latency_ms": 3.814525,
+    "gmac": 0.7289697110000001,
+    "anchor": "DR0.7"
+   },
+   "group": "no_final",
+   "config_sha": "04a44a1c7e689ec1"
+  },
+  "ref/leaf/DR0.8": {
+   "config": {
+    "kind": "pda",
+    "prune_keep": [
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     3
+    ],
+    "merge_keep": [
+     197,
+     197,
+     197,
+     197,
+     116,
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     3
+    ],
+    "groups": {},
+    "rank": null,
+    "triton": true,
+    "fuse_merge": true,
+    "merge": {
+     "mode": "M3",
+     "kernel": "triton_norm"
+    },
+    "base": "pdm",
+    "alpha": {}
+   },
+   "status": "sealed",
+   "budget": {
+    "id": "DR0.8",
+    "latency_ms": 4.218044999999999,
+    "gmac": 0.811373952,
+    "anchor": "DR0.8"
+   },
+   "group": "reference",
+   "config_sha": "d90b60ac153d3920"
+  },
+  "no_final/DR0.8": {
+   "config": {
+    "kind": "pda",
+    "prune_keep": [
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     116
+    ],
+    "merge_keep": [
+     197,
+     197,
+     197,
+     197,
+     116,
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     116
+    ],
+    "groups": {},
+    "rank": null,
+    "triton": true,
+    "fuse_merge": true,
+    "merge": {
+     "mode": "M3",
+     "kernel": "triton_norm"
+    },
+    "base": "pdm",
+    "alpha": {}
+   },
+   "status": "fixed",
+   "budget": {
+    "id": "DR0.8",
+    "latency_ms": 4.218044999999999,
+    "gmac": 0.811373952,
+    "anchor": "DR0.8"
+   },
+   "group": "no_final",
+   "config_sha": "e33c816372b6430d"
+  },
+  "ref/leaf/DR0.9": {
+   "config": {
+    "kind": "pda",
+    "prune_keep": [
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     3
+    ],
+    "merge_keep": [
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     115,
+     197,
+     197,
+     197,
+     197,
+     3
+    ],
+    "groups": {
+     "6": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+     ]
+    },
+    "rank": 32,
+    "triton": true,
+    "fuse_merge": true,
+    "merge": {
+     "mode": "M3",
+     "kernel": "triton_norm"
+    },
+    "base": "pdm",
+    "alpha": {
+     "6": 0.6666666666666666
+    }
+   },
+   "status": "sealed",
+   "budget": {
+    "id": "DR0.9",
+    "latency_ms": 4.614775,
+    "gmac": 0.9044614570000001,
+    "anchor": "DR0.9"
+   },
+   "group": "reference",
+   "config_sha": "532bb769da22012c"
+  },
+  "no_final/DR0.9": {
+   "config": {
+    "kind": "pda",
+    "prune_keep": [
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     115
+    ],
+    "merge_keep": [
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     115,
+     197,
+     197,
+     197,
+     197,
+     115
+    ],
+    "groups": {
+     "6": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+     ]
+    },
+    "rank": 32,
+    "triton": true,
+    "fuse_merge": true,
+    "merge": {
+     "mode": "M3",
+     "kernel": "triton_norm"
+    },
+    "base": "pdm",
+    "alpha": {
+     "6": 0.6666666666666666
+    }
+   },
+   "status": "fixed",
+   "budget": {
+    "id": "DR0.9",
+    "latency_ms": 4.614775,
+    "gmac": 0.9044614570000001,
+    "anchor": "DR0.9"
+   },
+   "group": "no_final",
+   "config_sha": "f009a6673147a29b"
+  },
+  "ref/leaf/DR1.0": {
+   "config": {
+    "kind": "pda",
+    "prune_keep": [
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     3
+    ],
+    "merge_keep": [
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     141,
+     197,
+     197,
+     197,
+     197,
+     3
+    ],
+    "groups": {
+     "6": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+     ]
+    },
+    "rank": 32,
+    "triton": true,
+    "fuse_merge": true,
+    "merge": {
+     "mode": "M3",
+     "kernel": "triton_norm"
+    },
+    "base": "pdm",
+    "alpha": {
+     "6": 0.5
+    }
+   },
+   "status": "sealed",
+   "budget": {
+    "id": "DR1.0",
+    "latency_ms": 4.859699999999999,
+    "gmac": 1.0056782649999998,
+    "anchor": "DR1.0"
+   },
+   "group": "reference",
+   "config_sha": "6cc13fe2193a2e3c"
+  },
+  "no_final/DR1.0": {
+   "config": {
+    "kind": "pda",
+    "prune_keep": [
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     141
+    ],
+    "merge_keep": [
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     141,
+     197,
+     197,
+     197,
+     197,
+     141
+    ],
+    "groups": {
+     "6": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+     ]
+    },
+    "rank": 32,
+    "triton": true,
+    "fuse_merge": true,
+    "merge": {
+     "mode": "M3",
+     "kernel": "triton_norm"
+    },
+    "base": "pdm",
+    "alpha": {
+     "6": 0.5
+    }
+   },
+   "status": "fixed",
+   "budget": {
+    "id": "DR1.0",
+    "latency_ms": 4.859699999999999,
+    "gmac": 1.0056782649999998,
+    "anchor": "DR1.0"
+   },
+   "group": "no_final",
+   "config_sha": "0a5fda9d45b32827"
+  }
+ },
+ "sha": "0640c74925633d6a8b4cd65cfda79c9b4980e6e6c728073b5c9883ca4cbe5f4d",
+ "time": 1792652616.289053
+}

@@ -1,0 +1,3 @@
+Source: https://github.com/mlvlab/MCTF/blob/2004da0cad3231fa74cbd60b6042b0bd133aacde/utils/mctf.py (unmodified)
+License: MIT (LICENSE)
+The block logic (models/modules/blocks.py Block_DEIT.forward, one_step_ahead=1, and models/SA/MHSA.py) is re-expressed in baselines/methods.py MCTF; defaults of the released eval scripts: mctf_type [r,0,0,1,1,1,20,40,1,1,0] (prop_attn 1, one_step_ahead 1, tau_sim 1, tau_info 20, tau_size 40, bidirection 1, pooling_type 1), activate_layer 1..11.

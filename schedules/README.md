@@ -1,0 +1,94 @@
+# Schedules
+
+## `leaf/`: the paper's method
+
+One file per backbone, `leaf/<backbone>.json`, written by `leaf/reproduction/report/release.py` from `results/`.
+
+| File | Backbone | timm checkpoint | Schedules (latency + GMAC) |
+|---|---|---|---:|
+| `deit_t.json` | DeiT-T | `deit_tiny_patch16_224.fb_in1k` | 7 + 7 |
+| `deit_s.json` | DeiT-S | `deit_small_patch16_224.fb_in1k` | 7 + 7 |
+| `deit_b.json` | DeiT-B | `deit_base_patch16_224.fb_in1k` | 7 + 7 |
+| `augreg_s.json` | ViT-S (AugReg) | `vit_small_patch16_224.augreg_in21k_ft_in1k` | 7 + 7 |
+| `augreg_b.json` | ViT-B (AugReg) | `vit_base_patch16_224.augreg2_in21k_ft_in1k` | 7 + 7 |
+| `mae_b.json` | ViT-B (MAE) | official MAE fine-tuned weights | 6 + 6 |
+| `mae_l.json` | ViT-L (MAE) | official MAE fine-tuned weights | 7 + 7 |
+| `augreg_b384.json` | ViT-B/16 at 384 px (AugReg, 577 tokens) | `vit_base_patch16_384.augreg_in21k_ft_in1k` | 6 + 0 |
+
+Added for the journal revision (written by `scripts/export_release_vitb384_probe_domain.py`):
+- `augreg_b384.json`: latency budgets 0.40-0.80 x the dense batch-32 latency, token-count grid step 8; register the backbone with `LEAF_BACKBONES=leaf/reproduction/experiments/backbones_vitb384.json`. Planning inputs in `leaf/planning/augreg_b384/`.
+- `deit_b_coco_probes.json`: the seven DeiT-B latency schedules re-planned from probes on 1,000 unlabelled MS-COCO images (`leaf/planning/deit_b_coco1000/probes.json`; groups, SALT model and budgets of `deit_b`), with `same_as_released` and the paired differences to the released schedules.
+
+Use the checkpoint recorded in the file (`timm_id`); `leaf evaluate/bench --schedule ...` does this automatically. For `augreg_b` it differs from `leaf.backbones.SPECS['augreg_b']`.
+
+**Top level:**
+- `backbone`, `timm_id`;
+- `forecast` (G = 16 head groups, rank 32), `operator` (M3), `alpha_grid`, `theta_grid`, `hardware`;
+- `dense`: top-1 on ImageNet val and V2, and bs32 latency;
+- `sources`: the result files the entries come from.
+
+**Entries** of `schedules`, keyed `<budget kind>/<budget id>`:
+- **`latency/<id>`** is the paper's method: planned under the latency budget (ms, bs32) with SALT and alpha in {0, 1/4, 1/3, 1/2, 2/3, 3/4, 1}.
+- **`gmac/<id>`** is planned under a GMAC budget with alpha in {0, 1/2, 2/3, 3/4}. The paper uses these in the equal-GMAC comparison and in the comparison with published results.
+- **`DRx` budgets** are anchored at the released DiffRate schedule of x GMAC (0.97 × its measured latency, or its actual MACs).
+- **`extra1` and `extra2`** are faster than the fastest anchor; `extra2` is the faster of the two.
+- **`dense0.xx`** budgets are AugReg budgets, a fraction of the dense latency.
+
+**Fields of an entry:**
+- `stations`: `block` (0-based), `tokens_after` (including the class token), `theta` (share of the removed tokens that is merged), `alpha` (forecast weight of `(1 - alpha) z(log P) + alpha z(D)`), and `kappa = alpha / (1 - alpha)` of the equivalent score `z(log P) + kappa z(D)` (null for alpha = 1).
+- `config`: the runtime configuration (kind `pda`), for `leaf.api.build_model` / `LeafRunner.run`. The head-group labels are embedded, and the forecast matrices are recomputed from the backbone weights.
+- `planner`: surrogate distortion F̂, predicted bs32 latency (SALT), and GMAC including station and forecast operations.
+- `measured`: top-1 on ImageNet val (50k) and V2 (10k), and bs32 latency (mean of three interleaved rounds, with SD). For `latency/` entries, `latency_transfer` is the factor that carried the ablation-session timing to the main session (null: timed in the main session).
+
+**Planning inputs** are in `leaf/planning/<backbone>/`:
+- `probes.json`: probe means, in planning order;
+- `groups.json`: head groups;
+- `salt.json`: the SALT model;
+- `salt_workloads.json`: the timed workloads SALT was fitted on;
+- `budgets.json`: the paper's latency budgets;
+- `probes_m0.json`: probe means with the M0 merge (`leaf plan --operator M0`; the M0-operator ablation);
+- `probes_seed251.json`, `probes_seed351.json` (DeiT-B, MAE-B, AugReg-S): probe means on other calibration draws (the seed ablation).
+
+`probes_m0.json` and `probes_seed*.json` were probed with κ = α/(1 − α) ∈ {0, 1, 2, 3} and are written in α by `python tools/alpha_form.py probe-tables`. With `--alphas 0 1/2 2/3 3/4`, `leaf plan` gives the paper's `ablation/m0_operator/*` and `seed251|seed351/*` schedules from them exactly.
+
+`leaf plan` reproduces every released schedule from these inputs exactly (`tests/test_leaf_cli.py`).
+
+## `leaf/seg_b_ade.json`: segmentation pilot
+
+Segmenter ViT-B/16 with the mask-transformer decoder on ADE20K (MMSegmentation checkpoint; 512x512 windows, 1,025 tokens),
+written by `leaf/reproduction/experiments/seg_comparison.py release`. Same entry format as above, except:
+- `dense` and `measured` give `val_miou` (ADE20K val, single scale, slide 512/480) and `ms_bs32` (batch of 32 windows,
+  mean of three interleaved rounds, with `sd`) and `kl` (per-pixel KL to the dense decoder on val windows);
+- `latency/dense0.x` budgets are fractions of the dense latency; `gmac/<x>gmac` entries are GMAC-planned at the GMAC of
+  each latency-planned schedule (equal GMAC);
+- the probes measure the per-pixel KL on 2,000 unlabelled training windows, on the alpha grid {0, 1/2, 2/3, 3/4};
+  merged tokens carry their source patches to the decoder and pruned tokens exit with their feature (`leaf/model/dense.py`).
+
+Its planning inputs are in `leaf/planning/seg_b_ade/` (also `salt_timings.json`, the measured workloads). The comparison
+with ToMe is in `results/seg_comparison/seg_b_ade/` (`report.json`, `table.tex`, `accuracy_latency.pdf`).
+
+## Schedule exports of the other campaigns
+
+Every set below is in the α form: `pda` configs and `alpha` per station, with the same token order as the campaign's own export. `config_sha` is recomputed, and the campaign's is kept as `source_config_sha`.
+
+| Folder | Campaign (`leaf/reproduction/experiments/`) | Content |
+|---|---|---|
+| `main_comparison/` | `main_comparison` | LEAF on the four-value alpha grid (`leaf_alpha4/`), ablation and seed arms |
+| `main_comparison_plans/` | `main_comparison` | every planned job of the main campaign (sealed plans), baselines and references included |
+| `gmac_planned/` | `gmac_planning` | GMAC-planned DP with M0 / M3 |
+| `latency_pricing/` | `latency_pricing` | SALT- and GMAC-planned schedules per device regime |
+| `low_budget_and_factorial/` | `low_budget_and_factorial` | very low budgets, D × M3 factorial |
+| `horizon_norm_seed_ablation/` | `horizon_norm_seed_ablation` | horizon, norm and seed variants |
+| `merge_variants/` | `merge_variant_screening`, `merge_norm_*` | merge-variant schedules |
+| `leaf_m0/` | LEAF-M0 campaign (research repository) | the earlier variant LEAF-M0 (its own keys) |
+| `learned_theta_alpha*/` | (negative branch, Tab. S2) | schedules with (theta, alpha) learned by relaxation / straight-through |
+
+## `kappa_form/`: the campaigns' own exports
+
+These campaigns ran before the α score, so their exports hold `pd` / `pdm` configs with the forecast weight κ = α/(1 − α). `kappa_form/<set>/` keeps them byte-identical to what the campaigns wrote: their `config_sha` names the raw result files, and the experiment code reads them there.
+
+`python leaf/reproduction/experiments/alpha_kappa_conversion.py` writes the α sets above from them, and lists every file in `kappa_form/conversion_manifest.json`.
+
+## `journal/`: sealed configurations of the journal-version experiments
+
+CLIP, the T4 transfer, black-box search baselines, ViT-B/16 at 384 px, calibration-set size, out-of-domain probes, the planner-candidate check, the average-pooled-head rule, the station discount and SALT below its timing range: every evaluated arm's config with its SHA-256, the timing designs, budgets and SALT models. See `journal/README.md`.

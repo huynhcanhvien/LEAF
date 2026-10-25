@@ -1,0 +1,19 @@
+{
+ "_doc": "Extra backbone registry for the 384-px ViT-B/16 comparison (2026-10-25). Loaded through LEAF_BACKBONES so that the sealed campaigns, whose backbone sets are read from leaf/backbones.json, are unchanged. count_step 8 on 577 tokens is a relatively finer grid than step 4 on 197.",
+ "backbones": {
+  "augreg_b384": {
+   "timm_id": "vit_base_patch16_384.augreg_in21k_ft_in1k",
+   "depth": 12,
+   "dim": 768,
+   "heads": 12,
+   "normalization": "inception",
+   "n_tokens": 577,
+   "img_size": 384,
+   "count_step": 8,
+   "diffrate_key": "ViT-B-DeiT",
+   "published_top1": 86.0,
+   "source": "timm AugReg in21k->in1k at 384 px (crop 1.0, bicubic)",
+   "aliases": ["vit-b-384", "vit_b_384", "ViT-B/16-384 (AugReg)"]
+  }
+ }
+}

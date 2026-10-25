@@ -1,0 +1,3 @@
+Source: https://github.com/youweiliang/evit/blob/5ca95a7cf4a8637193284895c5bc0dd9dc365982/helpers.py (only complement_idx, verbatim)
+License: Apache-2.0 (LICENSE)
+The block logic of evit.py (Attention.forward keep-rate top-k on head-mean CLS attention, Block.forward gather + fused token) is re-expressed in baselines/methods.py (EViT), off the shelf (no fine-tuning), drop_loc (3, 6, 9).
