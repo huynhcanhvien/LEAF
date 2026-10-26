@@ -242,7 +242,7 @@ CUDA_VISIBLE_DEVICES=0 leaf benchmark --schedule assets/schedules/deit_b.json --
 
 The repository holds everything needed to re-run the experiments as set up in the paper: the released schedules with their planning inputs (`schedules/leaf/`), and the sealed configuration of every evaluated arm, baselines included (`schedules/main_comparison_plans/`, `schedules/gmac_planned/`, `schedules/latency_pricing/`, ... for the original campaigns and `schedules/journal/` for the experiments added for the journal version). Re-running a campaign evaluates exactly these arms; accuracy reproduces exactly, latency within a few percent on the same card.
 
-The raw results of the campaigns (about 9 GB: per-image predictions, timings and analysis outputs) are not part of the repository; they are available from the authors on request. The per-image correctness of every evaluated configuration, the raw timings and the analysis reports, with a script that re-checks every paired test of the paper in about a second, are deposited at Zenodo (DOI in the paper).
+The raw results of the campaigns (about 9 GB: per-image predictions, timings and analysis outputs) are not part of the repository; they are available from the authors on request. The per-image correctness of every evaluated configuration, the raw timings and the analysis reports are in [`release/LEAF_raw_results_v1.zip`](release/) (36 MB, CC BY 4.0): unzip it and run `python verify.py` (Python and NumPy only) to re-check every paired test of the paper in about a second. The repository, this archive included, is deposited at Zenodo (DOI in the paper).
 
 See [`results/README.md`](results/README.md) for the layout of `results/`. With `results/` in place (re-run or obtained from the authors):
 
@@ -335,6 +335,7 @@ schedules/                  released schedules (alpha form): leaf/ (the paper's 
                             schedules, and kappa_form/ (the campaigns' own exports, read by the experiment code)
 paper/                      created by `leaf report tables|figures` (generated tables/ and figures/); the manuscript sources are not distributed here
 results/                    raw results of the campaigns (not in git; README.md, SUMMARY.json)
+release/                    LEAF_raw_results_v1.zip: per-image results, raw timings, reports and verify.py (CC BY 4.0)
 data/real/                  ImageNet-ReaL labels; data/cache is created by `leaf data prepare`
 scripts/                    shell chains that ran the campaigns (GPU scheduling, timing windows)
 tests/                      script tests (see tests/README.md)
