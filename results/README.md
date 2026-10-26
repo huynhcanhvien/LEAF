@@ -8,7 +8,7 @@ This folder is not part of the git repository (about 7 GB in 170k files). It hol
 
 `leaf report analyze | tables | figures` read it.
 
-| Folder | Experiment (`leaf/paper/experiments/<name>.py`) | Used for |
+| Folder | Experiment (`leaf/reproduction/experiments/<name>.py`) | Used for |
 |---|---|---|
 | `main_comparison` | `main_comparison` | baselines, DiffRate, LEAF on the 4-value alpha grid, ablation and seed arms, main timing session |
 | `ablation_and_alpha_grid` | `ablation_and_alpha_grid` | **the paper's LEAF schedules** (group `leaf`), component ablations, setting grids, surrogate check |

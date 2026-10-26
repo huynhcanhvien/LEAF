@@ -242,7 +242,7 @@ CUDA_VISIBLE_DEVICES=0 leaf benchmark --schedule assets/schedules/deit_b.json --
 
 The repository holds everything needed to re-run the experiments as set up in the paper: the released schedules with their planning inputs (`schedules/leaf/`), and the sealed configuration of every evaluated arm, baselines included (`schedules/main_comparison_plans/`, `schedules/gmac_planned/`, `schedules/latency_pricing/`, ... for the original campaigns and `schedules/journal/` for the experiments added for the journal version). Re-running a campaign evaluates exactly these arms; accuracy reproduces exactly, latency within a few percent on the same card.
 
-The raw results of the campaigns (about 9 GB: per-image predictions, timings and analysis outputs) are not part of the repository; they are available from the authors on request.
+The raw results of the campaigns (about 9 GB: per-image predictions, timings and analysis outputs) are not part of the repository; they are available from the authors on request. The per-image correctness of every evaluated configuration, the raw timings and the analysis reports, with a script that re-checks every paired test of the paper in about a second, are deposited at Zenodo (DOI in the paper).
 
 See [`results/README.md`](results/README.md) for the layout of `results/`. With `results/` in place (re-run or obtained from the authors):
 

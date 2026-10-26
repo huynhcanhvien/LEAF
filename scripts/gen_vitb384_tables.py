@@ -1,6 +1,7 @@
 """Supplementary tables and figure for the ViT-B/16-384 comparison from results/vitb384_comparison/augreg_b384/report.json
-(the densified, single-session report of 2026-10-25). Writes paper/kbs_paper/tables/vitb384_schedules.tex (the LEAF
-schedules), tables/vitb384_pairs.tex (every latency pair with both members' numbers, as tables/latency_pairs_detail.tex)
+(the densified, single-session report of 2026-10-25). Writes tables/vitb384_pairs.tex (every LEAF
+schedule and every latency pair it forms, as tables/latency_pairs_detail.tex; since 2026-10-26 it also replaces the former
+tables/vitb384_schedules.tex, which schedules_table still writes but the supplementary no longer inputs)
 and figures/vitb384_frontier.pdf (val and V2 against batch-32 latency). Usage: python scripts/gen_vitb384_tables.py"""
 import json
 import re
@@ -45,24 +46,28 @@ def param(ref):
     return {'r': 'r', 'kr': 'keep', 'keep_rate': 'keep', 'ratio': 'ratio', 'n': 'n', 'k': 'k'}.get(k, k) + '=' + v
 
 
-def pairs_table(rep):
+def pairs_table(rep, plans):
     pts = {p['name']: p for p in rep['points']}; dense = pts['ref/dense']
     tests = rep['latency_pairs']
     cell = lambda x: f"{x['delta']:+.2f}" + ('$^{*}$' if x['holm'] < .05 else '')
+    sched = {name: r for name, r in zip(sorted((n for n, p in pts.items() if p['family'] == 'LEAF'), key=lambda n: pts[n]['ms']), schedules_table(rep, plans))}
+    head = r'$L$ & $K$ & GMAC & ms & Val & V2 & Family & Point & ms & Val & V2 & $\Delta$Val & $\Delta$V2 \\'
     lines = [HEAD, r'\begin{table}[t]\centering\scriptsize\setlength{\tabcolsep}{2pt}',
-             f"\\caption{{Every latency-paired comparison on \\mbox{{ViT-B/16}} at 384 pixels ({len(tests)} pairs; dense {dense['ms']:.2f}\\,ms, Val {dense['val']:.2f}, V2 {dense['v2']:.2f}): for each \\ours\\ budget, the \\ours\\ schedule (measured batch-32 latency, ImageNet val and V2 top-1) and, for every family with a point within $\\tau=\\max(0.05\\,\\mathrm{{ms}},2\\,\\mathrm{{SD}})$ after the grids were densified near the \\ours\\ latencies, that point (its parameter, latency, val, V2) and the paired differences $\\Delta$ (\\ours\\ minus the point, in points); $^{{*}}$: significant after Holm correction over the {len(tests)} pairs of a split. Families without a point within $\\tau$ of a budget are absent from that budget; DiffRate publishes no schedule for this backbone. A point $r{{=}}a\\,\\mathrm{{i}}\\,b$ is a densified point with a per-layer count that decreases or increases linearly across blocks (mean $a$, inflection $b$ as in ToMe); the other densified points have fractional ratios.}}",
+             f"\\caption{{Every \\ours\\ schedule on \\mbox{{ViT-B/16}} at 384 pixels and every latency pair it forms ({len(tests)} pairs), laid out as \\cref{{tab:s-pairs-detail}}; $L$ is $0.40$--$0.80\\times$ the dense latency measured before planning. Baseline grids were densified near the \\ours\\ latencies; $^{{*}}$: significant after Holm correction over the {len(tests)} pairs of a split. DiffRate publishes no schedule for this backbone. A point $r{{=}}a\\,\\mathrm{{i}}\\,b$ is a densified point with a per-layer count that decreases or increases linearly across blocks (mean $a$, inflection $b$ as in ToMe); the other densified points have fractional ratios.}}",
              r'\label{tab:s-vitb384-pairs}',
-             r'\begin{tabular}{l l l l r r r r r}\toprule',
-             r'Budget & \ours\ ms / Val / V2 & Family & Point & ms & Val & V2 & $\Delta$Val & $\Delta$V2 \\ \midrule']
+             r'\begin{tabular}{rrrrrr l l rrrrr}\toprule',
+             r'\multicolumn{6}{c}{\ours} & \multicolumn{7}{c}{Paired point} \\ \cmidrule(lr){1-6}\cmidrule(lr){7-13}',
+             head + r' \midrule',
+             f"\\multicolumn{{13}}{{l}}{{dense: {dense['ms']:.2f}\\,ms, Val {dense['val']:.2f}, V2 {dense['v2']:.2f}}} \\\\"]
     budgets = sorted({t['ours'] for t in tests}, key=lambda o: pts[o]['ms'])
     tot = dict(pairs=0, vw=0, vl=0, w2=0, l2=0); dv, d2 = [], []
     for o in budgets:
-        a = pts[o]; first = True
+        a = pts[o]; _, L, _, _, g, _, _, _, _, k = sched[o]
+        lead = f"{L:.1f} & {k if k is not None else '--'} & {g:.1f} & {a['ms']:.2f} & {a['val']:.2f} & {a['v2']:.2f}"
         for t in sorted([t for t in tests if t['ours'] == o], key=lambda t: FAM.get(t['family'], t['family'])):
             r = pts[t['ref']]
-            lead = f"{o.split('/')[-1].replace('dense', '')}$\\times$ & {a['ms']:.2f} / {a['val']:.2f} / {a['v2']:.2f}" if first else " &"
             lines.append(f"{lead} & {FAM.get(t['family'], t['family'])} & {param(t['ref'])} & {r['ms']:.2f} & {r['val']:.2f} & {r['v2']:.2f} & {cell(t['val'])} & {cell(t['v2'])} \\\\")
-            first = False; tot['pairs'] += 1
+            lead = ' & & & & &'; tot['pairs'] += 1
             tot['vw'] += t['val']['holm'] < .05 and t['val']['delta'] > 0; tot['vl'] += t['val']['holm'] < .05 and t['val']['delta'] < 0
             tot['w2'] += t['v2']['holm'] < .05 and t['v2']['delta'] > 0; tot['l2'] += t['v2']['holm'] < .05 and t['v2']['delta'] < 0
             dv.append(t['val']['delta']); d2.append(t['v2']['delta'])
@@ -97,7 +102,7 @@ def figure(rep):
 
 def main():
     rep = json.loads(REP.read_text()); plans = json.loads(PLANS.read_text())
-    rows = schedules_table(rep, plans); tot, dv, d2, lo_v, lo_2 = pairs_table(rep); n_omit = figure(rep)
+    rows = schedules_table(rep, plans); tot, dv, d2, lo_v, lo_2 = pairs_table(rep, plans); n_omit = figure(rep)
     print('pairs', tot, 'mean dval', round(float(np.mean(dv)), 2), 'median', round(float(np.median(dv)), 2), 'min', round(min(dv), 2),
           '| mean dv2', round(float(np.mean(d2)), 2), 'median', round(float(np.median(d2)), 2), 'min', round(min(d2), 2),
           '| lowest CI bound val', round(lo_v, 2), 'v2', round(lo_2, 2), '| points below the plotted range', n_omit)

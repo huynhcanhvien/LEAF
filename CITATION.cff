@@ -1,13 +1,13 @@
 cff-version: 1.2.0
 message: "If you use LEAF, please cite it as below."
-title: "LEAF: Latency-Budgeted Exact Planning with Attention Forecasts for Training-Free Token Reduction"
+title: "LEAF: Latency-Budgeted Efficient Planning with Attention Forecasts for Training-Free Token Reduction"
 type: software
 version: 1.0.0
 date-released: 2026-10-21
 abstract: >-
   Training-free token reduction for frozen Vision Transformers. LEAF plans, for a given backbone, device and latency
   budget, where to reduce, how many tokens to keep, how to remove them (prune or merge) and how much the token score
-  trusts a forecast of future attention, by an exact Lagrangian dynamic program over single-station probes and a
+  trusts a forecast of future attention, by a Lagrangian dynamic program over single-station probes and a
   station-aware latency estimate.
 keywords:
   - vision transformer
@@ -21,6 +21,7 @@ authors:
     affiliation: Da Nang University of Science and Technology
   - family-names: Phan
     given-names: Minh Nhat
+    affiliation: Independent Researcher
   - family-names: Pham
     given-names: Nhat Khoa
     affiliation: Da Nang University of Science and Technology
