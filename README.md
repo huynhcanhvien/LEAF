@@ -136,7 +136,7 @@ CUDA_VISIBLE_DEVICES=0 leaf benchmark --schedule schedules/leaf/deit_b.json --ke
 CUDA_VISIBLE_DEVICES=0 leaf benchmark --backbone deit_b --dense                # reference in the same session
 ```
 
-`eval` reproduces the released accuracy exactly. On DeiT-T `latency/DR0.8` it gives the same per-image predictions on all 50,000 validation images as the paper. Latency depends on the device: the released budgets hold on an RTX 5060 Ti at batch 32.
+`leaf evaluate` reproduces the released accuracy exactly. On DeiT-T `latency/DR0.8` it gives the same per-image predictions on all 50,000 validation images as the paper. Latency depends on the device: the released budgets hold on an RTX 5060 Ti at batch 32.
 
 ```python
 from leaf.api import load_schedule, LeafRunner
