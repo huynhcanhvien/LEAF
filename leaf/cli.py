@@ -627,7 +627,7 @@ def build_parser():
                                                            '197 tokens, scaled to the backbone\'s token count)')
     p.add_argument('--G', type=int, default=16); p.add_argument('--rank', default='32', help="integer or 'full'")
     p.add_argument('--shard', default='0/1', help='i/n: this process runs every n-th probe (one process per GPU)')
-    p.add_argument('--reuse', nargs='+', help='other probe folders (--out of an earlier leaf probe, or results/probe_runs_alpha/<bb>): '
+    p.add_argument('--reuse', nargs='+', help='other probe folders (--out of an earlier leaf probe): '
                                              'their runs of the same configs are linked, not run again')
     p.add_argument('--batch', type=int, default=32); p.add_argument('--timm-id'); add_data_arguments(p)
     p.add_argument('--dry-run', action='store_true', help='only count the probes'); p.add_argument('--allow-busy', action='store_true')
@@ -705,8 +705,8 @@ def build_parser():
     g.add_argument('--G', type=int, default=16); g.add_argument('--rank', default='32')
     g.add_argument('--group-images', type=int, default=1024); g.add_argument('--groups', help='use this groups.json (skips the group step)')
     g.add_argument('--extra-probes', nargs='+', help='more probe files for workloads and plan, after the workspace probes')
-    g.add_argument('--reuse-probes', nargs='+', help='probe folders whose runs are linked instead of run again, e.g. '
-                                                    'results/probe_runs_alpha/<bb> (the paper backbones, same groups.json)')
+    g.add_argument('--reuse-probes', nargs='+', help='probe folders (--out of an earlier leaf probe, same groups.json) whose runs '
+                                                    'are linked instead of run again')
     g = p.add_argument_group('budgets (default: leaf budgets --anchors auto)')
     g.add_argument('--anchors', default='auto', choices=('auto', 'diffrate', 'gmac', 'dense', 'configs'))
     g.add_argument('--gmac-points', type=float, nargs='+', help='GMAC points of --anchors gmac')

@@ -24,21 +24,13 @@ This folder is not part of the git repository (about 7 GB in 170k files). It hol
 | `merge_variants` | `merge_variant_screening`, `merge_norm_*` | merge variants, the M3 merge |
 | `leaf_m0`, `leaf_m0_forecast_quality`, `leaf_m0_summaries` | LEAF-M0 campaign; `forecast_quality` | the earlier variant LEAF-M0 |
 | `figures`, `paper_build`, `reports`, `logs` | (outputs) | working outputs of the generators and campaigns |
-| `seg_comparison` | `seg_comparison` | segmentation pilot (Segmenter ViT-B/16, ADE20K): LEAF, GMAC-planned LEAF, ToMe with unmerging; **tracked in git:** `seg_b_ade/plans.json` (sealed arms), `report.json`, `table.tex`, `accuracy_latency.pdf` |
-| `probe_runs_alpha` | `tools/alpha_form.py probe-cache` | the paper's probe runs under their α config names (relative links to the runs above), for `leaf probe --reuse`; created locally |
-
-- `MANIFEST.json` lists every copied file with its source in the research repository and two sha256 values: the source's and the current one.
-- `SUMMARY.json` (tracked in git) gives the file count and a digest for each folder.
-- `python tools/migrate_results.py verify` checks the folder against the manifest.
 
 ## Getting the results
 
-The raw results are not distributed with the repository; they are available from the authors on request. `MANIFEST.json` and `SUMMARY.json` describe the expected content, and `python tools/migrate_results.py verify` checks a copy against the manifest (files that are absent are reported separately; only a file whose content differs is an error).
+The per-image correctness of every evaluated configuration, the raw timings and the analysis reports are released in `release/LEAF_raw_results_v1.zip` (unzip it and run `python verify.py`). The complete raw results are not distributed with the repository; they are available from the authors on request.
 
 `figures/` and `paper_build/` are working outputs; `leaf report tables` and `leaf report figures` recreate them.
 
-**From the research repository.** This repository was created from the research repository `efficient-vlm`. On a machine that has it, run `python tools/migrate_results.py <stage>` for the stages `copy`, `relocate`, `rename-keys`, `reseal` and `manifest`, in that order.
-
 **From scratch.** Re-running the campaigns from the sealed configurations in `schedules/` regenerates everything on two RTX-class GPUs: the probes take about 35 GPU-hours, and each timing session needs the machine to itself.
 
-**Note on `leaf report analyze`.** `analyze` rewrites the analysis outputs in place. Floating-point sums can then differ from the stored files in the last digits (at most about 2e-6 relative), so `verify` reports those files as differing. The tables and figures are unchanged. The tables and figures are what the paper reports.
+**Note on `leaf report analyze`.** `analyze` rewrites the analysis outputs in place. Floating-point sums can then differ from the stored files in the last digits (at most about 2e-6 relative); the tables and figures, which are what the paper reports, are unchanged.

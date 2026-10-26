@@ -18,8 +18,12 @@ Stages (results/second_device/):
   compare         (home, CPU)  SALT vs GMAC planning at equal measured latency on the device, McNemar + Holm
   pack / unpack   (both)       move the campaign's JSON files between the device and home as one .tar.gz
 
-Device run (Kaggle, GPU T4 x1):  bash scripts/run_second_device.sh device-1   ... later  device-2
-Home run:                         bash scripts/run_second_device.sh home-1     ... later  home-2
+Order (python leaf/reproduction/experiments/second_device.py <stage>; device stages with LEAF_DTYPE=float16 on a T4):
+  home:   kit (input kit from the latency-pricing campaign), pack --name second_device_kit
+  device: unpack --archive second_device_kit.tar.gz, check, time_workloads, pack --name second_device_1
+  home:   unpack --archive second_device_1.tar.gz, plan, pack --name second_device_2, worker (one process per GPU)
+  device: unpack --archive second_device_2.tar.gz, time_final, pack --name second_device_3
+  home:   unpack --archive second_device_3.tar.gz, compare
 
 Transfer mode (one device session, about an hour on a T4; no re-planning):
   time_transfer   (device)     the sealed arms of the pricing study (SALT-planned on the home GPU and CPU, the
@@ -27,7 +31,8 @@ Transfer mode (one device session, about an hour on a T4; no re-planning):
                                -> <bb>/transfer_cuda/ ; accuracy of every arm already exists at home
   compare_transfer (home, CPU) SALT-planned (home device) vs GMAC-planned at equal measured device latency,
                                McNemar + Holm on the pricing study's per-image results -> compare_transfer.json
-Device: bash scripts/run_second_device.sh device-transfer ; home: bash scripts/run_second_device.sh home-transfer <archive>
+Device: unpack --archive second_device_kit.tar.gz (see above), check, time_transfer, pack --name second_device_transfer;
+home: unpack --archive second_device_transfer.tar.gz, compare_transfer
 """
 import argparse
 import gc

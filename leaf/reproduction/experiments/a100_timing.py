@@ -65,7 +65,7 @@ def export():
                                    tasks=tasks, time=time.time()))
     shutil.copy2(PRICING / 'design.json', ROOT / 'design.json')
     with tarfile.open(KIT, 'w:gz') as tar:
-        for p in (ROOT / 'tasks.json', ROOT / 'design.json', Path(__file__), REPO / 'scripts/kaggle/second_device_kit.tar.gz'):
+        for p in (ROOT / 'tasks.json', ROOT / 'design.json', Path(__file__)):
             tar.add(p, arcname=str(p.resolve().relative_to(REPO)))
     print('kit', KIT, f'{KIT.stat().st_size / 1e6:.1f} MB;', {bb: len(r) for bb, r in tasks.items()}, 'arms')
 

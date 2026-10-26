@@ -30,7 +30,7 @@ Tests are plain scripts: `python tests/<file>.py`, run from the repository root.
 | `test_ablation_and_alpha_grid.py` | the planner copy with ablation switches equals the planner; arm construction | `results/` |
 | `test_horizon_norm_ablation.py`, `test_merge_norm_campaign.py`, `test_merge_variants.py`, `test_merge_variants_protocol.py`, `test_latency_pricing.py` | campaign logic: pairing, sealing, statistics, norm variants | CPU; some read `results/` |
 
-`test_latency_pricing.py` skips one check, which verified the campaign's source files at their old paths in the research repository (see PROVENANCE.md).
+`test_latency_pricing.py` skips one check, which verified the campaign's source files at their old paths in the research repository.
 
 ```bash
 python tests/test_leaf_cli.py                                   # DeiT-T and DeiT-B (about 1 min on CPU)

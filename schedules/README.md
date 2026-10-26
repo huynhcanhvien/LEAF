@@ -15,7 +15,7 @@ One file per backbone, `leaf/<backbone>.json`, written by `leaf/reproduction/rep
 | `mae_l.json` | ViT-L (MAE) | official MAE fine-tuned weights | 7 + 7 |
 | `augreg_b384.json` | ViT-B/16 at 384 px (AugReg, 577 tokens) | `vit_base_patch16_384.augreg_in21k_ft_in1k` | 6 + 0 |
 
-Added for the journal revision (written by `scripts/export_release_vitb384_probe_domain.py`):
+Added for the journal revision:
 - `augreg_b384.json`: latency budgets 0.40-0.80 x the dense batch-32 latency, token-count grid step 8; register the backbone with `LEAF_BACKBONES=leaf/reproduction/experiments/backbones_vitb384.json`. Planning inputs in `leaf/planning/augreg_b384/`.
 - `deit_b_coco_probes.json`: the seven DeiT-B latency schedules re-planned from probes on 1,000 unlabelled MS-COCO images (`leaf/planning/deit_b_coco1000/probes.json`; groups, SALT model and budgets of `deit_b`), with `same_as_released` and the paired differences to the released schedules.
 
@@ -49,7 +49,7 @@ Use the checkpoint recorded in the file (`timm_id`); `leaf evaluate/bench --sche
 - `probes_m0.json`: probe means with the M0 merge (`leaf plan --operator M0`; the M0-operator ablation);
 - `probes_seed251.json`, `probes_seed351.json` (DeiT-B, MAE-B, AugReg-S): probe means on other calibration draws (the seed ablation).
 
-`probes_m0.json` and `probes_seed*.json` were probed with κ = α/(1 − α) ∈ {0, 1, 2, 3} and are written in α by `python tools/alpha_form.py probe-tables`. With `--alphas 0 1/2 2/3 3/4`, `leaf plan` gives the paper's `ablation/m0_operator/*` and `seed251|seed351/*` schedules from them exactly.
+`probes_m0.json` and `probes_seed*.json` were probed with κ = α/(1 − α) ∈ {0, 1, 2, 3} and are written in α. With `--alphas 0 1/2 2/3 3/4`, `leaf plan` gives the paper's `ablation/m0_operator/*` and `seed251|seed351/*` schedules from them exactly.
 
 `leaf plan` reproduces every released schedule from these inputs exactly (`tests/test_leaf_cli.py`).
 
@@ -64,8 +64,7 @@ written by `leaf/reproduction/experiments/seg_comparison.py release`. Same entry
 - the probes measure the per-pixel KL on 2,000 unlabelled training windows, on the alpha grid {0, 1/2, 2/3, 3/4};
   merged tokens carry their source patches to the decoder and pruned tokens exit with their feature (`leaf/model/dense.py`).
 
-Its planning inputs are in `leaf/planning/seg_b_ade/` (also `salt_timings.json`, the measured workloads). The comparison
-with ToMe is in `results/seg_comparison/seg_b_ade/` (`report.json`, `table.tex`, `accuracy_latency.pdf`).
+Its planning inputs are in `leaf/planning/seg_b_ade/` (also `salt_timings.json`, the measured workloads). This pilot is not reported in the paper.
 
 ## Schedule exports of the other campaigns
 

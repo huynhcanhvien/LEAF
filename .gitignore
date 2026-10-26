@@ -25,18 +25,6 @@ data/*
 # Raw results of the paper's campaigns (about 7 GB, see results/README.md); only the summary is tracked
 results/*
 !results/README.md
-!results/SUMMARY.json
-# ... and the summary of the segmentation pilot (sealed plans, report, table, figure; raw runs stay local)
-!results/seg_comparison/
-results/seg_comparison/*
-!results/seg_comparison/seg_b_ade/
-results/seg_comparison/seg_b_ade/*
-!results/seg_comparison/seg_b_ade/plans.json
-!results/seg_comparison/seg_b_ade/report.json
-!results/seg_comparison/seg_b_ade/table.tex
-!results/seg_comparison/seg_b_ade/accuracy_latency.pdf
-!results/seg_comparison/seg_b_ade/accuracy_latency.png
-!results/seg_comparison/seg_b_ade/REPORT.md
 
 # Outputs of the command line
 runs/
@@ -52,3 +40,10 @@ paper/
 !data/real/*.npy
 /second_device*.tar.gz
 /second_device*.bin
+
+# Local only (not needed to re-run the experiments): campaign launchers, paper-writing tools, provenance notes
+/scripts/
+/tools/
+/CHANGELOG.md
+/PROVENANCE.md
+/a100_kit.tar.gz

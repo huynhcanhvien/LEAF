@@ -42,7 +42,7 @@ def test_old_sources_unchanged():
     # The campaign recorded the hashes of the research repository's source files at their old paths
     # (results/low_budget_and_factorial/original_sources.json). Those files were ported to leaf/ with new names and
     # imports, so the check cannot hold in this repository; it is kept as a record and skipped.
-    print('SKIP old_sources_unchanged: sources were ported from the research repository (see PROVENANCE.md)')
+    print('SKIP old_sources_unchanged: sources were ported from the research repository')
 
 
 if __name__ == '__main__':

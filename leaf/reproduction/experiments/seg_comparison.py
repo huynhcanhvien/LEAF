@@ -264,7 +264,7 @@ SUMMARY_FILES = ('plans.json', 'report.json', 'table.tex', 'accuracy_latency.pdf
 def release(bb=BB):
     """Tracked outputs: schedules/leaf/<bb>.json (the searched schedules with their measured mIoU and latency, the format
     of schedules/README.md), the planning inputs in schedules/leaf/planning/<bb>/, and the pilot's sealed plans and
-    report in results/seg_comparison/<bb>/ (the only files of results/ in git besides README and SUMMARY)."""
+    report in results/seg_comparison/<bb>/ (not tracked in git)."""
     import shutil
     from leaf.api import stations
     from leaf.backbones import SPECS

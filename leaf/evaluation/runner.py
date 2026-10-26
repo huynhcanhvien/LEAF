@@ -75,7 +75,7 @@ def build(vit, spec, cfg):
         from leaf.model.reduced_vit import ReductionConfig, ReducedViT
         return ReducedViT(vit, ReductionConfig(**{k: v for k, v in cfg.items() if k != 'kind'}), pool=spec.pool)
     if cfg['kind'] == 'ipd':     # experimental I roles: archived in the research repository, not part of LEAF
-        raise ValueError("kind 'ipd' (I-term roles) is not part of this repository; see PROVENANCE.md")
+        raise ValueError("kind 'ipd' (I-term roles) is not part of this repository")
     from baselines import build as build_baseline
     return build_baseline(vit, spec, cfg)
 

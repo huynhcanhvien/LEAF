@@ -70,7 +70,7 @@ RUN_BBS = ALL_BBS if CORE else P0_BBS
 # PHASE 'grid' (user, 2026-10-20): first only re-plan the main schedules of all seven backbones on wider grids --
 # R1: alpha in {0, 1/4, 1/3, 1/2, 2/3, 3/4, 1}; R3: theta in {0, 1/4, 1/2, 3/4, 1}; R2: both -- and compare with leaf_alpha4
 # on val and V2. PHASE 'core' adds the component ablations afterwards.
-PHASE = os.environ.get('ABL_PHASE', 'grid')    # 'core' for the component ablations (scripts/alpha_full_chain.sh)
+PHASE = os.environ.get('ABL_PHASE', 'grid')    # 'core' for the component ablations
 GRID_GROUPS = {'reference', 'leaf', 'grid_theta_alpha', 'grid_theta'}
 THETA_BASE, THETA_EXT = (0., .5, 1.), (.25, .75)
 DELTAS = (8, 24, 48, 72, 96, 120, 144, 168, 194)

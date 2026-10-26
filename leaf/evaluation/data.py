@@ -1,4 +1,4 @@
-"""Cached eval splits (uint8, scripts/build_eval_cache.py), dense teacher logits and paired statistics.
+"""Cached eval splits (uint8, leaf/data/build_cache.py), dense teacher logits and paired statistics.
 
 Splits in data/cache: calib_bal (10 img/class, train shards 900-999; even images = 'half' for probes and
 local search, odd images = 'odd' for choosing K), calib (first 10k of shards 1000+, grouping only),

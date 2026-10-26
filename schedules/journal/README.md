@@ -1,6 +1,6 @@
 # Sealed configurations of the journal-version experiments
 
-Written by `scripts/export_journal_configs.py` from the sealed campaign folders. Each folder holds the files that define the
+Exported from the sealed campaign folders. Each folder holds the files that define the
 evaluated arms (every arm's runtime config with its SHA-256, sealed before any evaluation), the timing design, the budgets and
 the SALT models with their workloads. Place a folder under `results/<experiment>/` (same relative paths) and run the
 `worker`, `time` and `report` stages of `leaf/reproduction/experiments/<experiment>.py` to evaluate exactly these arms;
