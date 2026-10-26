@@ -1,5 +1,5 @@
 """Download ImageNet-1k as WebDataset shards (timm/imagenet-1k-wds, about 150 GB) from the Hugging Face Hub.
-Restored from legacy/scripts/download_data.py (deleted in a8c577c).
+
 
 Accept the ImageNet licence on https://huggingface.co/datasets/timm/imagenet-1k-wds first, then put a READ token
 in .env (HF_TOKEN=...) or in the environment.

@@ -22,7 +22,7 @@ sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from common import check, finish
 
 from leaf.backbones import SPECS
-from leaf.reproduction.experiments.campaign_reports import BBS as PAPER_BBS
+PAPER_BBS = ('deit_t', 'deit_s', 'deit_b', 'augreg_s', 'augreg_b', 'mae_b', 'mae_l')   # the paper's ImageNet classifiers
 from leaf.cli import forecast_config, main, probe_jobs, load_probe_curves
 from leaf.evaluation.runner import config_hash
 

@@ -20,7 +20,6 @@ jobs:
       - name: Command line
         run: |
           leaf --help
-          leaf experiments list
           leaf schedules schedules/leaf/deit_b.json
       - name: CPU tests (no ImageNet, no raw results needed)
         env:

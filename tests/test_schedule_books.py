@@ -15,7 +15,7 @@ from common import check, finish
 
 from leaf.api import load_schedule
 from leaf.backbones import SPECS
-from leaf.reproduction.experiments.campaign_reports import BBS as PAPER_BBS
+PAPER_BBS = ('deit_t', 'deit_s', 'deit_b', 'augreg_s', 'augreg_b', 'mae_b', 'mae_l')   # the paper's ImageNet classifiers
 
 
 def main():

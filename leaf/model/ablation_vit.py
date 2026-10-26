@@ -28,7 +28,7 @@ def compress_target(x,size,scores,p,m,mode):
     metric=F.normalize(y.float(),dim=-1);sim=metric[:,m:]@metric[:,:m].transpose(1,2);sim[...,0]=-math.inf
     rho,dest=sim.max(-1);rho=rho.clamp_min(0)
     if x.is_cuda and not torch.is_grad_enabled():
-        from leaf.reproduction.ablation_models.norm_target_merge_kernel import merge_target
+        from leaf.model.kernels.norm_target_merge_kernel import merge_target
         return merge_target(y,s,dest,rho,m,mode)
     mean,os,_,_=compress(x,size,scores,p,m,fuse_merge=False)
     ids=torch.cat((torch.arange(m,device=x.device)[None].expand(b,-1),dest),1)

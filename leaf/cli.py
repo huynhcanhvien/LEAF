@@ -19,10 +19,6 @@ Search schedules for a backbone, GPU or budget:
   fit-latency      fit the station-aware latency model SALT to timed workloads
   plan             Lagrangian DP under a latency (SALT) or GMAC budget -> schedules
 
-Reproduce the paper:
-  experiments      list | run <experiment> <stage>       the paper's experiments (campaign stages)
-  report           analyze | tables | figures | assets | all   analyses, tables, figures and assets from results/
-
 Every GPU command refuses a card that another process uses (--allow-busy to override); select the card
 with CUDA_VISIBLE_DEVICES.
 """
@@ -143,7 +139,7 @@ def cmd_schedules(args):
         if 'stations' in e:
             st = '  '.join(f"{s['block']}:{s['tokens_after']},{s['theta']:.2g},{s['alpha']:.3g}" for s in e['stations'])
         else:
-            st = json.dumps({a: b for a, b in e['config'].items() if a != 'kind'}) + f"  ({e['config']['kind']})"
+            st = json.dumps({a: b for a, b in e['config'].items() if a not in ('kind', 'groups')}) + f"  ({e['config']['kind']})"
         b = e.get('budget') or {}; bv = b.get('value')
         ms = m.get('ms_bs32', (m.get('latency_gpu') or {}).get('ms_bs32'))
         val = m.get('val', m.get('val_miou'))      # segmentation schedules: mIoU on the validation set
@@ -162,14 +158,40 @@ def cmd_evaluate(args):
     if arr is None: raise SystemExit('non-finite logits: the config is infeasible in BF16')
     row = dict(backbone=backbone, schedule=label, split=args.split, batch=args.batch, **summary(arr),
                cache=str(r.path(cfg, args.split).with_suffix('.npz')))
+    gmac = schedule_gmac(backbone, cfg, timm_id)
+    if gmac is not None: row['gmac'] = round(gmac, 4)
     paper = paper_numbers(args).get(args.split)
     if paper is not None and args.batch == 32 and not args.limit: row['paper_top1'] = paper
     if 'top1' in row:
         shown = f"top-1 {row['top1']:.3f}%" + (f" (paper {paper:.3f}%)" if 'paper_top1' in row else '')
     else:                                     # segmentation: agreement with the dense argmax, mIoU on val
         shown = f"agreement with dense {row['agree']:.2f}%" + (f", mIoU {row['miou']:.2f}" if 'miou' in row else '')
-    log('evaluate', shown + f", KL {row['kl']:.4f}, {duration(time.monotonic() - t0)}")
+    log('evaluate', shown + f", KL {row['kl']:.4f}" + (f", {row['gmac']:.2f} GMAC" if 'gmac' in row else '')
+        + f", {duration(time.monotonic() - t0)}")
     print(json.dumps(row))
+
+
+def schedule_gmac(backbone, cfg, timm_id=None):
+    """GMAC per image as in the paper: the analytic count of Supplementary S2 for LEAF and dense configs, and
+    torch's FlopCounter on the built model (matrix, convolution and attention products) for the baselines."""
+    from leaf.backbones import SPECS, resolve
+    spec = SPECS[resolve(backbone)]
+    try:
+        if cfg.get('kind') == 'dense':
+            from leaf.planner.gmac import dense_cost
+            return dense_cost(spec)
+        if cfg.get('kind') in ('pd', 'pdm', 'pda'):
+            from leaf.planner.alpha import config_gmac
+            return config_gmac(cfg, spec)
+        import torch
+        from leaf.api import build_model, load_backbone
+        from leaf.latency.timing import gmacs
+        device = 'cuda' if torch.cuda.is_available() else 'cpu'
+        vit, spec = load_backbone(backbone, timm_id, device=device)
+        return gmacs(build_model(vit, spec, cfg).eval(), device=device)
+    except Exception as e:
+        log('evaluate', f'GMAC not computed ({type(e).__name__}: {e})')
+        return None
 
 
 def paper_numbers(args):
@@ -586,8 +608,6 @@ def build_parser():
 
     p = sub.add_parser('backbones', help='list the backbones and the names the CLI accepts (leaf/backbones.json)')
     p.add_argument('--json', action='store_true')
-    sub.add_parser('experiments', help="the paper's experiments: list | run <experiment> <stage>")
-    sub.add_parser('report', help="the paper's analyses, tables, figures and assets from results/: analyze | tables | figures | assets | all")
     p = sub.add_parser('schedules', help='list the schedules of a schedule file')
     p.add_argument('file'); p.add_argument('--key'); p.add_argument('--json', action='store_true', help='print the full entries')
 
@@ -730,9 +750,6 @@ def build_parser():
 def main(argv=None):
     argv = sys.argv[1:] if argv is None else argv
     ap = build_parser()
-    if argv and argv[0] in ('experiments', 'report'):   # paper reproduction (leaf/reproduction/cli.py)
-        from leaf.reproduction import cli as reproduction
-        return (reproduction.experiments if argv[0] == 'experiments' else reproduction.report)(argv[1:])
     if argv and argv[0] == 'data':                     # pass the remaining options to the data tools
         args, rest = ap.parse_known_args(argv)
         return cmd_data(args, rest)

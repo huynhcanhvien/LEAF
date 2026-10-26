@@ -95,7 +95,7 @@ def plan_with_salt(curves,spec,dcfg,cost,budget):
     """Same inner-min, multiplier sweep and ratio projection as the existing paper DP."""
     from leaf.planner.surrogate import JointTables,lookup
     from leaf.planner.lagrange import lagrange_dp
-    from leaf.reproduction.ablation_models.merge_operator_planner import norm_config
+    from leaf.planner.configs import norm_config
     jt=JointTables(curves,spec.n_tokens,spec.depth,step=getattr(spec,'count_step',4),dim=spec.dim)
     times=np.zeros_like(jt.mac)
     for l in range(spec.depth):

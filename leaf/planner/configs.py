@@ -58,3 +58,11 @@ def diffrate_config_from(spec, p, m):
     p = list(p) + [p[-1]] * (spec.depth - len(p)); m = list(m) + [m[-1]] * (spec.depth - len(m))
     g = canonical(dict(p=p, m=m), spec.n_tokens, spec.depth)
     return dict(kind='pd', prune_keep=g['p'], merge_keep=g['m'], k={}, groups={}, rank=None, triton=True, fuse_merge=True)
+
+
+def norm_config(state, spec, dcfg, mode):
+    """Config of a planner state with one fixed merge operator: M0 (mean merge) or the MLERP merge M3 (N4: its variant)."""
+    cfg = config_from_state(state, spec, dcfg)
+    if mode == 'M0': return cfg
+    if mode not in ('M3', 'N4'): raise ValueError('one fixed operator per method')
+    return dict(cfg, kind='pdm', merge=dict(mode=mode, kernel='triton_norm'))

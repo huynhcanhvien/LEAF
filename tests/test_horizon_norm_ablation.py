@@ -3,7 +3,7 @@ from pathlib import Path
 import sys
 sys.path.insert(0,str(Path(__file__).resolve().parents[1]))
 import torch
-from leaf.reproduction.ablation_models.ablation_vit import permute_d,compress_target
+from leaf.model.ablation_vit import permute_d,compress_target
 from leaf.model.mlerp_vit import compress_norm
 
 

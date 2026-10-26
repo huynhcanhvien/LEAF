@@ -31,8 +31,13 @@ SPLITS = ('half', 'odd', 'calib', 'calib_bal', 'confirm', 'val', 'v2')
 
 
 def load_schedule(path, key=None):
-    """(document, entry) of a released schedule file; key=None returns (document, None)."""
+    """(document, entry) of a schedule file; key=None returns (document, None).
+
+    Schedule files hold 'schedules' (schedules/leaf/<bb>.json, assets/schedules/<bb>.json, `leaf plan` output); the
+    sealed plans of the paper's comparisons (schedules/**/plans*.json) hold 'jobs', every arm with its config."""
     doc = json.loads(Path(path).read_text())
+    if 'schedules' not in doc and 'jobs' in doc:
+        doc = dict(doc, schedules={k: v for k, v in doc['jobs'].items() if isinstance(v, dict) and 'config' in v})
     if key is None: return doc, None
     if key not in doc['schedules']:
         raise KeyError(f'{key!r} not in {path}; available: {", ".join(sorted(doc["schedules"]))}')
@@ -56,9 +61,9 @@ def build_model(vit, spec, cfg):
 
 
 def _build_extra(vit, spec, cfg):
-    """_build_core, plus 'extra_pdm': the forecast-horizon and norm ablations of the paper (leaf/reproduction/ablation_models)."""
+    """_build_core, plus 'extra_pdm': the forecast-horizon and norm ablations of the paper (leaf/model/ablation_vit.py)."""
     if cfg['kind'] == 'extra_pdm':
-        from leaf.reproduction.ablation_models.ablation_vit import ExtraViT
+        from leaf.model.ablation_vit import ExtraViT
         return ExtraViT(vit, cfg, spec.pool)
     return _build_core(vit, spec, cfg)
 

@@ -11,7 +11,6 @@ from baselines.third_party.tome.merge import bipartite_soft_matching,merge_wavg
 from baselines.methods import ToMe
 from leaf.planner.surrogate import ProbeCurve
 from leaf.planner.gmac import GmacPlanner,config_cost,make_budgets
-from leaf.reproduction.experiments.gmac_planning import match
 
 def main():
     torch.set_num_threads(2); torch.manual_seed(151)
@@ -47,10 +46,6 @@ def main():
     row=planner.plan(budget)
     assert not row.get('infeasible') and row['gmac']<=budget+1e-9
     assert row['config']['kind']=='pdm' and 'latency' not in row['objective'].lower().replace('no latency inputs','')
-    costs=dict(a=10.,near=9.99,far=12.)
-    assert match(costs,'a',['far'],.1) is None
-    assert match(costs,'a',['near','far'],.1)=='near'
-    assert match(dict(a=10.,lo=9.9,hi=10.1),'a',['hi','lo'],.11)=='lo'
-    print('PASS: official ToMe routing/size parity, M3 norm/cancellation/CLS, zero-merge equivalence, GMAC-only DP budget, cost-only pairing without far-slower fallback')
+    print('PASS: official ToMe routing/size parity, M3 norm/cancellation/CLS, zero-merge equivalence, GMAC-only DP budget')
 
 if __name__=='__main__': main()

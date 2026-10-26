@@ -1,21 +1,15 @@
 # Assets
 
-- `figures/`: PNG renderings of the paper's figures, for the README.
-- `schedules/`: one **schedule book** per backbone, with every schedule the paper evaluated on ImageNet.
-
-Both are written by `leaf report assets`, from `paper/` and `results/`.
+- `figures/`: PNG renderings of figures of the paper, for the README.
+- `schedules/`: one **schedule book** per backbone, with every schedule the paper evaluated on ImageNet and the paper's numbers.
 
 ## Figures
 
 | | |
 |---|---|
-| ![LEAF at a glance](figures/method_overview.png) | **Method overview** (Fig. 1). `paper/figures/method_overview.tex` |
+| ![LEAF at a glance](figures/method_overview.png) | **Method overview** (Fig. 1) |
 | ![Accuracy-latency on ImageNet val](figures/accuracy_latency_imagenet_val.png) | **Accuracy vs latency, ImageNet val**, seven backbones, nine re-run families |
-| ![Accuracy-latency on ImageNet-V2](figures/accuracy_latency_imagenet_v2.png) | **Accuracy vs latency, ImageNet-V2** |
 | ![Token schedule](figures/token_schedule_deit_b_10gmac.png) | **Token schedule** of a GMAC-planned DeiT-B schedule (10 GMAC) |
-| ![Equal-GMAC residual](figures/equal_gmac_latency_residual_vs_stations.png) | **Equal GMAC**: latency residual vs number of stations |
-| ![SALT vs GMAC planning](figures/salt_vs_gmac_planning.png) | **Latency pricing**: SALT-planned vs GMAC-planned schedules |
-| ![LEAF-M0 residual](figures/m0_latency_residual_vs_stations.png) | **LEAF-M0**: latency residual vs number of stations (supplementary) |
 
 ## Schedule books
 
@@ -42,8 +36,8 @@ Checked on 43 entries, one of each config kind and section on DeiT-B: 42 give th
   - `val`, `v2`: top-1 in %;
   - `ms_bs32` and `sd`: latency in the entry's campaign session; `latency_pricing` entries have `latency_gpu` and `latency_cpu` per batch size instead;
   - `gmac`;
-- `paper`: the tables in `paper/tables/` and the figures (`fig:`) that use the entry;
-- `campaign`, `source_key` and `source_config_sha`: where it comes from in `results/` and `schedules/kappa_form/`.
+- `paper`: the tables and figures (`fig:`) of the paper that use the entry;
+- `campaign`, `source_key` and `source_config_sha`: the campaign, the arm name and the configuration hash it was evaluated under (the hashes of `release/`).
 
 **Sections** (key prefixes):
 

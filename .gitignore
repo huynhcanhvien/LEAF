@@ -23,8 +23,7 @@ data/*
 !data/real/
 
 # Raw results of the paper's campaigns (about 7 GB, see results/README.md); only the summary is tracked
-results/*
-!results/README.md
+/results/
 
 # Outputs of the command line
 runs/
@@ -47,3 +46,26 @@ paper/
 /CHANGELOG.md
 /PROVENANCE.md
 /a100_kit.tar.gz
+
+# Campaign drivers of the paper (local only); the package keeps what plans, evaluates and times schedules
+/leaf/reproduction/
+# Schedule sets not reported in the paper
+/schedules/kappa_form/
+/schedules/learned_theta_alpha*/
+/schedules/merge_variants/
+/schedules/leaf/seg_b_ade.json
+/schedules/leaf/planning/seg_b_ade/
+# Tests of the campaign drivers and of the unreported segmentation pilot
+/tests/test_ablation_and_alpha_grid.py
+/tests/test_alpha.py
+/tests/test_clip.py
+/tests/test_clip_l14.py
+/tests/test_latency_pricing.py
+/tests/test_merge_norm_campaign.py
+/tests/test_merge_variants_protocol.py
+/tests/test_segmentation.py
+# Figures not shown in the README
+/assets/figures/accuracy_latency_imagenet_v2.png
+/assets/figures/equal_gmac_latency_residual_vs_stations.png
+/assets/figures/m0_latency_residual_vs_stations.png
+/assets/figures/salt_vs_gmac_planning.png

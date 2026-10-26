@@ -6,7 +6,7 @@
   "v2": 70.95,
   "ms_bs32": 32.18
  },
- "note": "leaf report assets            -> assets/schedules/<backbone>.json and assets/figures/*.png",
+ "note": "every schedule the paper evaluated, with its numbers: leaf evaluate | benchmark --schedule assets/schedules/<backbone>.json --key <key>",
  "sections": {
   "leaf/latency": [
    "results_all_budgets",

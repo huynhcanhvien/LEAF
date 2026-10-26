@@ -7,9 +7,9 @@ For a given backbone, device and latency budget, it plans the whole token schedu
 - **how** to remove them (the share pruned rather than merged);
 - **which** tokens to remove (how much the score trusts a forecast of future attention).
 
-Planning is an exact dynamic program over measured single-station probes and a station-aware latency estimate. Once the probes exist, it takes seconds.
+Planning is a Lagrangian dynamic program over measured single-station probes and a station-aware latency estimate. Once the probes exist, it takes seconds.
 
-This repository holds the method (`leaf/`), every experiment of the paper (`leaf/reproduction/`), the released schedules (`schedules/`) and the per-image results of the paper (`release/`). The manuscript is under review at *Knowledge-Based Systems*; see [Citation](#citation).
+This repository holds the method (`leaf/`), every schedule and configuration that the paper evaluated (`schedules/`, `assets/schedules/`) and the paper's per-image results (`release/`), so that each number of the paper can be re-evaluated and the whole pipeline re-run. The manuscript is under review at *Knowledge-Based Systems*; see [Citation](#citation).
 
 ![From an image to a planned token schedule](assets/figures/token_schedule_deit_b_10gmac.png)
 
@@ -26,7 +26,6 @@ This repository holds the method (`leaf/`), every experiment of the paper (`leaf
 - [Data preparation](#data-preparation)
 - [Use a released schedule](#use-a-released-schedule)
 - [Plan schedules for a new budget, device or backbone](#plan-schedules-for-a-new-budget-device-or-backbone)
-- [Reproduce one number of the paper](#reproduce-one-number-of-the-paper)
 - [Reproduce the paper](#reproduce-the-paper)
 - [Repository layout](#repository-layout)
 - [Names used in files and results](#names-used-in-files-and-results)
@@ -96,7 +95,7 @@ The paper's schedules and their measured accuracy and latency are in two places:
 - [`schedules/leaf/`](schedules/README.md): the method's released schedules;
 - [`assets/schedules/`](assets/README.md): one book per backbone with **every schedule the paper evaluated**: LEAF, DiffRate and every re-run baseline point, ablation arms, other campaigns.
 
-Every entry runs with `leaf evaluate` / `leaf benchmark`, and prints the paper's number next to yours (see [Reproduce one number of the paper](#reproduce-one-number-of-the-paper)). More figures are in [`assets/`](assets/README.md).
+Every entry runs with `leaf evaluate` / `leaf benchmark`, and prints the paper's number next to yours (see [Reproduce the paper](#reproduce-the-paper)). More figures are in [`assets/`](assets/README.md).
 
 ## Installation
 
@@ -106,11 +105,11 @@ Tested with Python 3.12, PyTorch 2.14 (CUDA 13.0), timm 1.0.30 and Triton (bundl
 git clone https://github.com/huynhcanhvien/LEAF.git leaf && cd leaf
 python -m venv .venv && source .venv/bin/activate
 pip install torch torchvision --index-url https://download.pytorch.org/whl/cu130
-pip install -e ".[paper]"            # the `leaf` package and command; [paper] adds matplotlib for the figures
+pip install -e .                     # the `leaf` package and command
 cp .env.example .env                 # HF_TOKEN, only for downloading ImageNet
 ```
 
-Every command can be run as `leaf <command>` or as `python -m leaf <command>` from the repository root. `leaf backbones` lists the backbones and the names every `--backbone` accepts (`deit_b`, `deit-b`, `DeiT-B` or the timm id); the list is `leaf/backbones.json`, and `LEAF_BACKBONES=my_backbones.json` adds your own. Commands that read or write `data/`, `results/`, `schedules/` or `paper/` use paths relative to the repository root, so run them from there. Symbolic links are fine, for example `ln -s /big/disk/cache data/cache`.
+Every command can be run as `leaf <command>` or as `python -m leaf <command>` from the repository root. `leaf backbones` lists the backbones and the names every `--backbone` accepts (`deit_b`, `deit-b`, `DeiT-B` or the timm id); the list is `leaf/backbones.json`, and `LEAF_BACKBONES=my_backbones.json` adds your own. Commands that read `data/` and `schedules/` use paths relative to the repository root, so run them from there. Symbolic links are fine, for example `ln -s /big/disk/cache data/cache`.
 
 ## Data preparation
 
@@ -221,139 +220,105 @@ Planned with `--alphas 0 1/2 2/3 3/4`, they give the paper's M0-operator and cal
 
 Backbones are defined in `leaf/backbones.py` (`SPECS`); a timm ViT with a class token needs one line. Every command has `--help`.
 
-## Reproduce one number of the paper
-
-No raw results are needed: the schedule books in `assets/schedules/` hold every schedule the paper evaluated, with the paper's numbers. Prepare `data/cache` (val, and v2 for ImageNet-V2), then:
-
-```bash
-leaf schedules assets/schedules/deit_b.json | grep main/diffrate            # pick a key
-CUDA_VISIBLE_DEVICES=0 leaf evaluate  --schedule assets/schedules/deit_b.json --key main/diffrate/DR8.7 --split val
-# {"top1": 79.11, ..., "paper_top1": 79.11}
-CUDA_VISIBLE_DEVICES=0 leaf benchmark --schedule assets/schedules/deit_b.json --key leaf/latency/DR8.7
-# {"ms_mean": {"32": ...}, "paper_ms_bs32": 17.974}
-```
-
-- **Accuracy** reproduces exactly (BF16, batch 32, deterministic kernels).
-- **Latency** is the paper's on an RTX 5060 Ti with the machine otherwise idle; on the same card, expect it within a few percent.
-- `paper` in each entry names the tables and figures that use it. For the method's schedules, `schedules/leaf/<bb>.json` works the same way.
-
 ## Reproduce the paper
 
-The repository holds everything needed to re-run the experiments as set up in the paper: the released schedules with their planning inputs (`schedules/leaf/`), and the sealed configuration of every evaluated arm, baselines included (`schedules/main_comparison_plans/`, `schedules/gmac_planned/`, `schedules/latency_pricing/`, ... for the original campaigns and `schedules/journal/` for the experiments added for the journal version). Re-running a campaign evaluates exactly these arms; accuracy reproduces exactly, latency within a few percent on the same card.
+There are two ways to check the paper, from quick to complete. Both need the evaluation caches of [Data preparation](#data-preparation) (`val` and `v2`; CLIP also needs its text embeddings, see [CLIP](#clip-zero-shot-imagenet-and-image-text-retrieval); ViT-B/16 at 384 px needs a 384-px cache, see below).
 
-The raw results of the campaigns (about 9 GB: per-image predictions, timings and analysis outputs) are not part of the repository; they are available from the authors on request. The per-image correctness of every evaluated configuration, the raw timings and the analysis reports are in [`release/LEAF_raw_results_v1.zip`](release/) (36 MB, CC BY 4.0): unzip it and run `python verify.py` (Python and NumPy only) to re-check every paired test of the paper in about a second. The repository, this archive included, is deposited at Zenodo (DOI in the paper).
+### Option 1: re-evaluate the schedules of the paper
 
-See [`results/README.md`](results/README.md) for the layout of `results/`. With `results/` in place (re-run or obtained from the authors):
+Every configuration that the paper evaluated, LEAF and baselines alike, is in the repository with its stations, token counts, settings and head groups:
 
-```bash
-leaf report assets         # schedule books (assets/schedules) and PNG figures (assets/figures)
-leaf report analyze        # recompute every analysis (pairing, McNemar/Holm, equal GMAC, ReaL, ablations, pricing) from the raw results
-```
-
-`analyze` reproduces every stored analysis output (pairing, McNemar/Holm, equal GMAC, ReaL, ablations, pricing), whose numbers are those of the paper. The LaTeX sources of the manuscript are not part of this repository.
-
-To re-run an experiment on GPU, use `leaf experiments list` (experiments, their paper sections, stages and result folders) and `leaf experiments run <experiment> <stage>`, for example:
+| Experiments of the paper | Schedule file (`--schedule`) |
+|---|---|
+| Seven ImageNet classifiers: every arm of the main comparison, equal GMAC, ablations and pricing, with the paper's numbers | `assets/schedules/<bb>.json` (schedule books) |
+| LEAF's released schedules (Table 2) and their planning inputs | `schedules/leaf/<bb>.json`, `schedules/leaf/planning/<bb>/` |
+| Sealed arms of each campaign (baselines included) | `schedules/main_comparison_plans/`, `gmac_planned/`, `latency_pricing/`, `low_budget_and_factorial/`, `horizon_norm_seed_ablation/`, `leaf_m0/` |
+| CLIP ViT-B/16, ViT-B/16 at 384 px, and the revision experiments | `schedules/journal/<experiment>/<bb>/plans*.json` |
 
 ```bash
-leaf experiments run main_comparison plan --backbones deit_b                 # CPU: re-plan (sealed plans are not overwritten)
-CUDA_VISIBLE_DEVICES=0 leaf experiments run main_comparison worker           # GPU: confirm / val / V2 of every planned arm
-CUDA_VISIBLE_DEVICES=0 leaf experiments run main_comparison time             # GPU, nothing else on the machine: bs32 timing
-leaf experiments run ablation_and_alpha_grid plan --dry-run                  # the paper's LEAF schedules and every ablation arm
+leaf schedules assets/schedules/deit_b.json | grep main/diffrate              # list the arms and pick a key
+CUDA_VISIBLE_DEVICES=0 leaf evaluate  --schedule assets/schedules/deit_b.json --key main/diffrate/DR8.7 --split val
+# {"top1": 79.11, ..., "gmac": 8.7399, "paper_top1": 79.11}
+CUDA_VISIBLE_DEVICES=0 leaf evaluate  --schedule assets/schedules/deit_b.json --key leaf/latency/DR8.7 --split v2
+CUDA_VISIBLE_DEVICES=0 leaf benchmark --schedule assets/schedules/deit_b.json --key leaf/latency/DR8.7
+# {"ms_mean": {"32": ...}, "paper_ms_bs32": 17.974}
+CUDA_VISIBLE_DEVICES=0 leaf evaluate  --schedule schedules/journal/clip_comparison/clip_b16/plans.json --key leaf/latency/DR8.7 --split val
 ```
 
-The paper's protocol has four parts:
-- **Sealing.** All configurations, baseline grid points included, are sealed by hash before any validation or V2 evaluation.
-- **Accuracy.** Accuracy is evaluated in BF16 at batch 32 with deterministic kernels.
-- **Timing.** All configurations of a backbone are timed in one session, interleaved over three rounds with the middle round reversed, with no other job on the machine.
-- **Statistics.** Each schedule is paired with the latency-nearest point of every family, and pairs are compared with McNemar's test and Holm correction.
+- **Accuracy** reproduces exactly (BF16, batch 32, deterministic kernels); schedule books print the paper's number next to the measured one.
+- **GMAC** is printed by `leaf evaluate`: the analytic count of Supplementary S2 for LEAF and dense, and torch's FlopCounter on the built model for the baselines, as in the paper (run it on a GPU; on the CPU the attention products are not counted).
+- **Latency** is the paper's on an RTX 5060 Ti with the machine otherwise idle; on the same card, expect it within a few percent. Keep other jobs off the GPU while timing.
+- `paper` in each book entry names the tables and figures that use it. Sealed plan files (`plans*.json`) carry no numbers; their per-image results are in `release/` (below).
 
-### Further experiments of the paper
+**ViT-B/16 at 384 px** (577 tokens) is registered separately so that the 224-px campaigns are unchanged: prefix the commands with `LEAF_BACKBONES=leaf/backbones_vitb384.json`, build its cache once with `leaf data prepare --split val --side 384 --crop-pct 1.0 --out-dir data/cache384` (and `--split v2`), and pass `--data-cache data/cache384`, for example `LEAF_BACKBONES=leaf/backbones_vitb384.json leaf evaluate --schedule schedules/leaf/augreg_b384.json --key latency/dense0.48 --split val --data-cache data/cache384`.
 
-The experiments added for the journal version run as scripts with stages, `python leaf/reproduction/experiments/<name>.py --help`:
-- `search_baselines.py`: random search and regularised evolution against the dynamic program (Appendix C of the paper; `results/search_baselines/`).
-- `second_device.py`: device transfer to a Tesla T4 (its docstring lists the stages for the device and the home machine; the T4 results of the paper are in `release/`).
-- `seg_comparison` (also `leaf experiments run seg_comparison`): an exploratory segmentation pilot on Segmenter ViT-B/16 and ADE20K (not reported in the paper).
-- `station_discount.py`, `separability_check.py`, `final_station_alpha7.py`, `mctf_cost.py`, `efficiency_and_cost.py`: the supporting analyses of Appendix A, Section 6.4 and Section 7.
-- `vlm_llava.py`: an exploratory run on LLaVA-Phi-3-mini (not reported in the paper).
+**Per-image results and statistics.** `release/LEAF_raw_results_v1.zip` (36 MB, CC BY 4.0) holds the per-image correctness of every evaluated configuration (`runs_index.csv` lists top-1 per `config_sha`), the raw timings and the analysis reports. Unzip it and run `python verify.py` (Python and NumPy only): it recomputes every latency-paired McNemar/Holm test of the paper in about a second and compares it with the reports.
 
-Added for the revision (October 2026; each script lists its stages in order in its docstring, `--help`; the numbers of the paper are in each `report.json`):
-- `dp_verify.py`: the planner's candidates (seven dynamic-program solutions and local mutants) verified on the measured calibration KL (Supplementary S5.7; `results/dp_verify/`).
-- `salt_low_coverage.py`: SALT re-fitted with a few workloads below its timing range (S5.6; `results/salt_low_coverage/`).
-- `avgpool_final_station.py`: the final-block station forbidden at planning time on MAE-B/L (S5.8; `results/avgpool_final_station/`).
-- `calib_size.py`: schedules re-planned from 1,000 / 2,500 / 5,000 / 10,000 probe images (S5.5; `results/calib_size/`).
-- `probe_domain.py`: DeiT-B re-planned from probes on 1,000 unlabelled MS-COCO images (S5.5; `results/probe_domain/`).
-- `vitb384_comparison.py` with `backbones_vitb384.json` (`LEAF_BACKBONES`): the full comparison on ViT-B/16 at 384 px, 577 tokens, with cost-only densified baseline grids (Section 6.1 and S5.12; `results/vitb384_comparison/augreg_b384/`). `diffrate_vitb384_search.py` is DiffRate's own search at 384 px; it was not run to completion (about 36 GPU-hours per budget on the RTX 5060 Ti) and the paper reports no DiffRate point at 384 px.
-- `batch_sensitivity.py` and `a100_timing.py`: re-timing of the main comparison at other batch sizes and on an A100; not reported in the paper.
+### Option 2: re-run the pipeline from the probes
 
-### CLIP: zero-shot ImageNet and image–text retrieval
+For one backbone, `leaf search` runs the whole pipeline of the paper on your GPUs (see [Plan schedules](#plan-schedules-for-a-new-budget-device-or-backbone)): head groups, single-station probes on the 5,000 calibration images, budgets, SALT timing workloads and fit, and the Lagrangian dynamic program. Then evaluate and time the planned schedules:
 
-`clip_b16` is OpenAI CLIP ViT-B/16 (timm `vit_base_patch16_clip_quickgelu_224.openai`) and `clip_l14` is OpenAI CLIP ViT-L/14 at 224 px (timm `vit_large_patch14_clip_quickgelu_224.openai`: patch 14, 257 tokens, 24 blocks).
-- **Head.** Its head is the zero-shot classifier: the projection, then a scaled cosine to the ImageNet class embeddings of its own text tower (80 templates). Every method, probe and runner therefore works on it unchanged.
-- **Planning.** LEAF is planned on the KL of the zero-shot distribution over the 5,000 probe images. The same sealed schedules are then evaluated on Flickr30k (1k test) and MS-COCO (5k test) retrieval without re-planning.
-- **DiffRate.** DiffRate releases no CLIP schedules. The paper runs DiffRate's own search on CLIP with the official code (`python leaf/reproduction/experiments/diffrate_clip_search.py search --budgets 8.7`, about 6.4 GPU-hours per budget; results in `results/diffrate_clip_search/`); the transferred DeiT-B rates serve only to place the budgets.
+```bash
+P=schedules/leaf/planning/deit_b
+leaf search --backbone deit_b --workspace runs/search/deit_b --gpus 0,1 --budgets $P/budgets.json   # the paper's budgets
+leaf schedules runs/search/deit_b/schedules.json
+CUDA_VISIBLE_DEVICES=0 leaf evaluate  --schedule runs/search/deit_b/schedules.json --key latency/DR8.7 --split val
+CUDA_VISIBLE_DEVICES=0 leaf benchmark --schedule runs/search/deit_b/schedules.json --key latency/DR8.7
+```
+
+- **Cost.** Probing takes 1,917 forward passes over the 5,000 calibration images for a 12-block backbone, at most 2.7 GPU-hours on an RTX 5060 Ti, and 4,185 passes (16.5 GPU-hours) for ViT-L; 1,000 images give the same mean accuracy (Supplementary S5.7). Planning takes seconds on the CPU.
+- **Exactness.** From the released probes, head groups and SALT models, `leaf plan` reproduces every released schedule exactly without a GPU (`tests/test_leaf_cli.py`). Re-measured probes differ in the last digits, which can change nearly tied schedules; the paper reports this sensitivity (Supplementary S5.7).
+- **Latency on another device.** SALT is fitted per GPU and batch size, so a different card gives different budgets and schedules. With `--salt $P/salt.json` the planner uses the paper's RTX 5060 Ti model instead.
+- **Baselines.** They are fixed grids, not searched: evaluate their sealed configurations as in Option 1.
+
+The paper's protocol: every configuration, baseline grid points included, is sealed by hash before any validation or V2 evaluation; accuracy in BF16 at batch 32 with deterministic kernels; all configurations of a backbone timed in one session, interleaved over three rounds, with no other job on the machine; each schedule paired with the latency-nearest point of every family and compared with McNemar's test and Holm correction (`verify.py` above).
+
+### CLIP: zero-shot ImageNet and image-text retrieval
+
+`clip_b16` is OpenAI CLIP ViT-B/16 (timm `vit_base_patch16_clip_quickgelu_224.openai`). Its head is the zero-shot classifier (the projection, then a scaled cosine to the ImageNet class embeddings of its own text tower, 80 templates), so every command above works on it unchanged; LEAF is planned on the KL of the zero-shot distribution over the 5,000 calibration images.
 
 ```bash
 pip install -e '.[clip]'                                   # open_clip, for the text tower
-leaf data prepare --split flickr_test --download           # Karpathy test splits (Hugging Face, about 1 GB)
-leaf data prepare --split coco_test --download
-leaf data clip-text --backbone clip_b16                    # once: ImageNet classifier + caption embeddings (CPU by default;
-                                                           # add --device cuda on an idle card: minutes instead of ~25 min for L/14)
-E=leaf/reproduction/experiments/clip_comparison.py
-python $E search --gpus 0,1 --backbones clip_b16           # probes, budgets, SALT, dynamic program
-python $E plan   --backbones clip_b16                      # sealed plans
-python $E worker --backbones clip_b16                      # accuracy and retrieval; start one process per GPU
-LEAF_EXCLUSIVE_TIMING=1 python $E time --backbones clip_b16   # timing, with no other job on the machine
-python $E report --backbones clip_b16
-python $E densify --backbones clip_b16                     # second session: cost-only baseline points near every LEAF
-python $E worker  --backbones clip_b16                     #   latency, then worker, retime and report again
-LEAF_EXCLUSIVE_TIMING=1 python $E retime --backbones clip_b16
-python $E report  --backbones clip_b16
-# ViT-L/14: leaf data clip-text --backbone clip_l14 --device cuda, then the same commands with --backbones clip_l14
+leaf data clip-text --backbone clip_b16                    # once: ImageNet classifier embeddings (add --device cuda on an idle card)
+CUDA_VISIBLE_DEVICES=0 leaf evaluate --schedule schedules/journal/clip_comparison/clip_b16/plans.json --key leaf/latency/DR8.7 --split val
+leaf search --backbone clip_b16 --workspace runs/search/clip_b16 --gpus 0,1 --budgets schedules/leaf/planning/clip_b16/budgets.json
 ```
 
-Results go to `results/clip_comparison/<backbone>/`: `report.json`, `table.tex` and `frontier.pdf` (`*_bs8` at batch 8).
+The retrieval results of the paper (Flickr30k 1k and MS-COCO 5k test, Recall@1) are in `release/` (`correctness/clip_b16__*`).
 
 ## Repository layout
 
 ```text
-leaf/                       the method (installable package)
-  backbones.py                frozen backbones (timm; official MAE weights)
+leaf/                       the method (installable package, command `leaf`)
+  backbones.py, backbones.json  frozen backbones (timm; official MAE weights; CLIP with its zero-shot head)
   model/                      the reduced ViT: stations, prune -> merge (M0, M3), the alpha score, Triton kernels
   forecast/                   forecast D: folded query-key forms, head groups, rank-r factors, Triton kernels
-  planner/                    probes, separable surrogate, Lagrangian DP, budgets, GMAC planner, alpha planner
-  latency/                    SALT, timing as one CUDA graph or on the CPU, SALT workloads
+  planner/                    probes, separable surrogate, Lagrangian DP, budgets, GMAC planner
+  latency/                    SALT, timing as one CUDA graph, GMAC counting
   evaluation/                 cached splits, evaluation runner, determinism, GPU coordination
-  data/                       ImageNet download and cache builders
+  data/                       ImageNet download, cache builders, CLIP text embeddings
   api.py, cli.py              Python API and command line (`leaf --help`)
-  reproduction/               the paper
-    experiments/              one module per experiment (`leaf experiments list | run`)
-    runners/                  campaign runners, exclusive timing, sealed-stage protocol
-    ablation_models/          models and planners used only by ablations
-    report/                   tables, figures, schedule books and release files (`leaf report ...`)
-baselines/                  re-run baselines; official code vendored in third_party/ with its licence
-assets/                     PNG figures and the schedule books (every schedule the paper evaluated, with its numbers)
-schedules/                  released schedules (alpha form): leaf/ (the paper's method + planning inputs), every other campaign's
-                            schedules, and kappa_form/ (the campaigns' own exports, read by the experiment code)
-paper/                      created by `leaf report tables|figures` (generated tables/ and figures/); the manuscript sources are not distributed here
-results/                    raw results of the campaigns (not in git; README.md describes the layout)
+baselines/                  the re-run baselines; official code vendored in third_party/ with its licence
+schedules/                  every schedule and sealed configuration of the paper (see schedules/README.md)
+assets/                     schedule books (every schedule of the seven classifiers, with the paper's numbers) and README figures
 release/                    LEAF_raw_results_v1.zip: per-image results, raw timings, reports and verify.py (CC BY 4.0)
 data/real/                  ImageNet-ReaL labels; data/cache is created by `leaf data prepare`
-tests/                      script tests (see tests/README.md)
+tests/                      CPU and GPU checks (see tests/README.md)
 ```
 
 ## Names used in files and results
 
 - **α and κ.**
   - Everything released is in the α form. `pda` is the method (α score) on top of `pdm` (M3 merge) or `pd` (M0 merge).
-  - Campaigns run before the α score wrote `pd` / `pdm` configs with the unnormalised score `z(log P) + κ z(D)`, where κ = α/(1 − α) gives the same token order. Those configs name the raw result files (`config_sha`), so `results/` and `schedules/kappa_form/` keep them unchanged.
+  - Campaigns run before the α score wrote `pd` / `pdm` configs with the unnormalised score `z(log P) + κ z(D)`, where κ = α/(1 − α) gives the same token order.
   - Every set has an α form: `schedules/<set>/` and the probe tables in `schedules/leaf/planning/`.
-  - Re-scoring the paper's κ schedules in α on ImageNet val gives identical predictions for 194 of 196 schedules and one changed image for the other two (`leaf experiments run alpha_kappa_equivalence`).
+  - Re-scoring the paper's κ schedules in α on ImageNet val gives identical predictions for 194 of 196 schedules and one changed image for the other two.
 - **Groups and arms of the main campaign:**
   - `leaf_alpha4/<budget>`: LEAF on the four-value α grid {0, ½, ⅔, ¾}, the paper's main campaign;
   - `ablation/<arm>/<budget>`;
   - `seed251|seed351/<budget>`: other calibration samples;
   - `ref/...`: baselines and references.
-- **Ablation campaign groups** (`results/ablation_and_alpha_grid/<bb>/plans/<group>.json`):
+- **Ablation campaign groups** (the `campaign` and `source_key` fields of the schedule books):
   - `leaf` is the paper's method (all budgets on the seven-value α grid);
   - the other groups are `grid_theta`, `grid_theta_alpha`, `schedule_structure`, `shared_settings`, `forecast_only`, `alpha_grid`, `forecast_compression`, `probe_sample_size`, `theta_grid`, `final_station(_all)`, `fixed_station_count` and `surrogate_check`.
 - **Budget ids.**
@@ -373,12 +338,12 @@ The full list is in [`tests/README.md`](tests/README.md).
 
 ## Limitations
 
-- **One device class.** All latencies come from one consumer GPU and one desktop CPU. Another device needs its own SALT fit.
-- **CLIP.** Only ViT-B/16 is registered so far. ViT-L/14 (257 tokens, patch 14) still needs the patch size and the head GMAC generalised in `leaf/planner/gmac.py` and `leaf/latency/salt.py`.
+- **Devices.** All latencies come from one consumer GPU (RTX 5060 Ti), one desktop CPU and a Tesla T4. Another device needs its own SALT fit.
+- **CLIP.** The paper uses CLIP ViT-B/16; CLIP ViT-L/14 is registered (`clip_l14`) but is not part of the paper.
 - **Batch 1.** At batch 1, small models are launch-bound on this GPU, and no reduction method is faster than the dense model.
 - **Approximations.** The planner relies on two approximations, the separable distortion surrogate and SALT. Neither is certified for the measured accuracy or latency.
-- **GPU-only timing command.** `leaf time-workloads` times on CUDA only. The paper's CPU measurements are in `leaf experiments run latency_pricing cpu_time`. On the CPU, the α score uses the full-rank reference forecast.
-- **Earlier variant.** LEAF-M0, the earlier variant compared in the paper, is released as schedules (`schedules/leaf_m0/`, `leaf_m0/` in the schedule books) that `leaf evaluate` and `leaf benchmark` run; its campaign driver is not part of this repository.
+- **GPU-only timing command.** `leaf time-workloads` and `leaf benchmark` time on CUDA only; the paper's CPU measurements are in `release/`. On the CPU, the α score uses the full-rank reference forecast.
+- **Earlier variant.** LEAF-M0, the earlier variant compared in the paper, is released as schedules (`schedules/leaf_m0/`, `leaf_m0/` in the schedule books) that `leaf evaluate` and `leaf benchmark` run.
 
 ## Provenance and acknowledgements
 

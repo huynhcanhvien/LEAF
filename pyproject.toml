@@ -21,12 +21,6 @@ dependencies = [
 ]
 
 [project.optional-dependencies]
-# leaf.reproduction (experiments, figures)
-paper = [
-    "matplotlib>=3.7.0",
-    "tqdm>=4.65.0",
-    "psutil>=5.9.0",
-]
 # CLIP backbones: text embeddings of the zero-shot classifier and the retrieval captions (leaf data clip-text)
 clip = [
     "open_clip_torch>=2.24.0",

@@ -1,4 +1,4 @@
-"""LEAF: Latency-budgeted Exact planning with Attention Forecasts, training-free token reduction for frozen ViTs.
+"""LEAF: Latency-budgeted Efficient planning with Attention Forecasts, training-free token reduction for frozen ViTs.
 
 Subpackages:
   leaf.backbones     frozen timm / MAE backbones (Spec, SPECS, load)
@@ -9,7 +9,6 @@ Subpackages:
   leaf.evaluation    cached data splits, evaluation runner, determinism, GPU coordination
   leaf.data          ImageNet download and uint8 evaluation caches
   leaf.api           high-level helpers (load a schedule, build a model, evaluate)
-  leaf.reproduction  the paper: experiments (leaf experiments) and its tables, figures and assets (leaf report)
 Command line: leaf --help
 """
 __version__ = "1.0.0"

@@ -1,7 +1,6 @@
 """
 Pre-process ImageNet evaluation images once into uint8 memmaps, so that every evaluation reads tensors instead
-of decoding JPEGs. Restored from legacy/scripts/build_eval_cache.py (deleted in a8c577c); the V2 builder comes
-from phase_e6cache of legacy/scripts/pid_latency_planner.py.
+of decoding JPEGs.
 
 Transform = the standard DeiT eval pipeline: Resize(256, bicubic) -> CenterCrop(224).
 Normalization is applied later on the GPU, per backbone (leaf/evaluation/data.py).

@@ -2,7 +2,7 @@
 
 ## `leaf/`: the paper's method
 
-One file per backbone, `leaf/<backbone>.json`, written by `leaf/reproduction/report/release.py` from `results/`.
+One file per backbone, `leaf/<backbone>.json`, with the paper's numbers.
 
 | File | Backbone | timm checkpoint | Schedules (latency + GMAC) |
 |---|---|---|---:|
@@ -16,7 +16,7 @@ One file per backbone, `leaf/<backbone>.json`, written by `leaf/reproduction/rep
 | `augreg_b384.json` | ViT-B/16 at 384 px (AugReg, 577 tokens) | `vit_base_patch16_384.augreg_in21k_ft_in1k` | 6 + 0 |
 
 Added for the journal revision:
-- `augreg_b384.json`: latency budgets 0.40-0.80 x the dense batch-32 latency, token-count grid step 8; register the backbone with `LEAF_BACKBONES=leaf/reproduction/experiments/backbones_vitb384.json`. Planning inputs in `leaf/planning/augreg_b384/`.
+- `augreg_b384.json`: latency budgets 0.40-0.80 x the dense batch-32 latency, token-count grid step 8; register the backbone with `LEAF_BACKBONES=leaf/backbones_vitb384.json` and build its 384-px cache with `leaf data prepare --split val --side 384 --crop-pct 1.0 --out-dir data/cache384` (pass `--data-cache data/cache384` to `leaf evaluate`). Planning inputs in `leaf/planning/augreg_b384/`.
 - `deit_b_coco_probes.json`: the seven DeiT-B latency schedules re-planned from probes on 1,000 unlabelled MS-COCO images (`leaf/planning/deit_b_coco1000/probes.json`; groups, SALT model and budgets of `deit_b`), with `same_as_released` and the paired differences to the released schedules.
 
 Use the checkpoint recorded in the file (`timm_id`); `leaf evaluate/bench --schedule ...` does this automatically. For `augreg_b` it differs from `leaf.backbones.SPECS['augreg_b']`.
@@ -53,24 +53,11 @@ Use the checkpoint recorded in the file (`timm_id`); `leaf evaluate/bench --sche
 
 `leaf plan` reproduces every released schedule from these inputs exactly (`tests/test_leaf_cli.py`).
 
-## `leaf/seg_b_ade.json`: segmentation pilot
-
-Segmenter ViT-B/16 with the mask-transformer decoder on ADE20K (MMSegmentation checkpoint; 512x512 windows, 1,025 tokens),
-written by `leaf/reproduction/experiments/seg_comparison.py release`. Same entry format as above, except:
-- `dense` and `measured` give `val_miou` (ADE20K val, single scale, slide 512/480) and `ms_bs32` (batch of 32 windows,
-  mean of three interleaved rounds, with `sd`) and `kl` (per-pixel KL to the dense decoder on val windows);
-- `latency/dense0.x` budgets are fractions of the dense latency; `gmac/<x>gmac` entries are GMAC-planned at the GMAC of
-  each latency-planned schedule (equal GMAC);
-- the probes measure the per-pixel KL on 2,000 unlabelled training windows, on the alpha grid {0, 1/2, 2/3, 3/4};
-  merged tokens carry their source patches to the decoder and pruned tokens exit with their feature (`leaf/model/dense.py`).
-
-Its planning inputs are in `leaf/planning/seg_b_ade/` (also `salt_timings.json`, the measured workloads). This pilot is not reported in the paper.
-
 ## Schedule exports of the other campaigns
 
-Every set below is in the α form: `pda` configs and `alpha` per station, with the same token order as the campaign's own export. `config_sha` is recomputed, and the campaign's is kept as `source_config_sha`.
+Every set below is in the α form: `pda` configs and `alpha` per station, with the same token order as the campaign's own export (which used κ = α/(1 − α)). `config_sha` is recomputed, and the campaign's is kept as `source_config_sha`. Any arm of these files, and of the sealed plans in `journal/`, runs with `leaf evaluate | benchmark --schedule <file> --key <arm>` (`leaf schedules <file>` lists the arms).
 
-| Folder | Campaign (`leaf/reproduction/experiments/`) | Content |
+| Folder | Campaign | Content |
 |---|---|---|
 | `main_comparison/` | `main_comparison` | LEAF on the four-value alpha grid (`leaf_alpha4/`), ablation and seed arms |
 | `main_comparison_plans/` | `main_comparison` | every planned job of the main campaign (sealed plans), baselines and references included |
@@ -78,15 +65,7 @@ Every set below is in the α form: `pda` configs and `alpha` per station, with t
 | `latency_pricing/` | `latency_pricing` | SALT- and GMAC-planned schedules per device regime |
 | `low_budget_and_factorial/` | `low_budget_and_factorial` | very low budgets, D × M3 factorial |
 | `horizon_norm_seed_ablation/` | `horizon_norm_seed_ablation` | horizon, norm and seed variants |
-| `merge_variants/` | `merge_variant_screening`, `merge_norm_*` | merge-variant schedules |
-| `leaf_m0/` | LEAF-M0 campaign (research repository) | the earlier variant LEAF-M0 (its own keys) |
-| `learned_theta_alpha*/` | (negative branch, Tab. S2) | schedules with (theta, alpha) learned by relaxation / straight-through |
-
-## `kappa_form/`: the campaigns' own exports
-
-These campaigns ran before the α score, so their exports hold `pd` / `pdm` configs with the forecast weight κ = α/(1 − α). `kappa_form/<set>/` keeps them byte-identical to what the campaigns wrote: their `config_sha` names the raw result files, and the experiment code reads them there.
-
-`python leaf/reproduction/experiments/alpha_kappa_conversion.py` writes the α sets above from them, and lists every file in `kappa_form/conversion_manifest.json`.
+| `leaf_m0/` | LEAF-M0 campaign | the earlier variant LEAF-M0 (its own keys) |
 
 ## `journal/`: sealed configurations of the journal-version experiments
 
