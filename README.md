@@ -27,6 +27,7 @@ This repository holds the method (`leaf/`), every schedule and configuration tha
 - [Use a released schedule](#use-a-released-schedule)
 - [Plan schedules for a new budget, device or backbone](#plan-schedules-for-a-new-budget-device-or-backbone)
 - [Reproduce the paper](#reproduce-the-paper)
+- [Command reference](#command-reference)
 - [Repository layout](#repository-layout)
 - [Names used in files and results](#names-used-in-files-and-results)
 - [Tests](#tests)
@@ -273,6 +274,28 @@ CUDA_VISIBLE_DEVICES=0 leaf benchmark --schedule runs/search/deit_b/schedules.js
 
 The paper's protocol: every configuration, baseline grid points included, is sealed by hash before any validation or V2 evaluation; accuracy in BF16 at batch 32 with deterministic kernels; all configurations of a backbone timed in one session, interleaved over three rounds, with no other job on the machine; each schedule paired with the latency-nearest point of every family and compared with McNemar's test and Holm correction (`verify.py` above).
 
+### Map of the paper
+
+Where the schedules behind each result are, and how to check them (`--schedule FILE --key KEY` with `leaf evaluate | benchmark`; `leaf schedules FILE` lists the keys):
+
+| Result in the paper | Schedules and configurations | Check |
+|---|---|---|
+| Table 2 and Fig. 2: latency-paired comparison, seven classifiers, 48 budgets | `assets/schedules/<bb>.json`: `leaf/latency/<budget>` (LEAF) and `main/<family>/<point>` (every baseline point) | `leaf evaluate`, `leaf benchmark`; pairs and tests: `verify.py` in `release/` |
+| Table 3: equal GMAC | `leaf/gmac/<budget>` and `main/...` in the books; `schedules/gmac_planned/` | `leaf evaluate` prints the GMAC |
+| Table 4: latency pricing (GPU batch 4/8, CPU, T4) | `latency_pricing/...` in the books; `schedules/latency_pricing/`, `schedules/journal/second_device/` | `leaf benchmark --batches 4 8 32` |
+| Table 5: efficiency and station overhead | the DiffRate-budget schedules of the books | `leaf benchmark` |
+| Table 6: CLIP ViT-B/16 | `schedules/journal/clip_comparison/clip_b16/plans*.json`; DiffRate's searched rates in `schedules/journal/diffrate_clip_search/` | `leaf evaluate --split val|v2`; retrieval R@1 in `release/` |
+| Table 7 and Supplementary S5.6: ablations | `main_ablation/...`, `ablation/<group>/...`, `calibration_seed/...`, `horizon/...`, `low_budget/...` in the books | `leaf evaluate` |
+| Section 6.1 and S5.11: ViT-B/16 at 384 px | `schedules/leaf/augreg_b384.json`, `schedules/journal/vitb384_comparison/` | see the 384-px note above |
+| Appendix A: validity of the surrogate (180 random schedules) | `schedules/journal/surrogate_check/<bb>/plans.json` (with F, val KL, top-1) | `leaf evaluate --split half` gives F |
+| Appendix B and S5.4: black-box search | `schedules/journal/search_baselines/` | `leaf evaluate` |
+| S5.3: SALT below its timing range | `schedules/journal/salt_low_coverage/` | `leaf fit-latency`, `leaf plan` |
+| S5.7: calibration-set size, out-of-domain probes | `schedules/journal/calib_size/`, `schedules/journal/probe_domain/`, `schedules/leaf/deit_b_coco_probes.json` | `leaf plan --probes ...` |
+| S5.8: planner candidates checked on the measured KL | `schedules/journal/dp_verify/` | `leaf evaluate --split half` |
+| S5.9: final-block station on average-pooled heads | `schedules/journal/avgpool_final_station/`, `schedules/journal/final_station_alpha7/` | `leaf evaluate` |
+| Supplementary S2: per-station discount | `schedules/journal/station_discount/` | `leaf plan` |
+| LEAF-M0, the earlier variant | `schedules/leaf_m0/`, `leaf_m0/...` in the books | `leaf evaluate` |
+
 ### CLIP: zero-shot ImageNet and image-text retrieval
 
 `clip_b16` is OpenAI CLIP ViT-B/16 (timm `vit_base_patch16_clip_quickgelu_224.openai`). Its head is the zero-shot classifier (the projection, then a scaled cosine to the ImageNet class embeddings of its own text tower, 80 templates), so every command above works on it unchanged; LEAF is planned on the KL of the zero-shot distribution over the 5,000 calibration images.
@@ -285,6 +308,30 @@ leaf search --backbone clip_b16 --workspace runs/search/clip_b16 --gpus 0,1 --bu
 ```
 
 The retrieval results of the paper (Flickr30k 1k and MS-COCO 5k test, Recall@1) are in `release/` (`correctness/clip_b16__*`).
+
+## Command reference
+
+Every command is `leaf <command>` (or `python -m leaf <command>`) and has `--help`. GPU commands run on the card given by `CUDA_VISIBLE_DEVICES` and refuse a card that another process uses (`--allow-busy` overrides).
+
+| Command | What it does | Device | Main options | Output |
+|---|---|---|---|---|
+| `backbones` | lists the registered backbones and the names `--backbone` accepts | CPU | `--json` | table |
+| `data download` | ImageNet-1k WebDataset shards from Hugging Face (needs `HF_TOKEN`) | CPU | `--out` | `data/imagenet_tar/` |
+| `data prepare` | decodes a split once into a uint8 cache | CPU | `--split {val,v2,calib,calib_bal,confirm}`, `--side`, `--crop-pct`, `--out-dir`, `--v2-tar` | `data/cache/<split>_<side>_u8.npy` |
+| `data clip-text` | text embeddings of CLIP's zero-shot classifier | CPU/GPU | `--backbone clip_b16`, `--task`, `--device` | `data/cache/clip_text_*.npy` |
+| `schedules` | lists the schedules of a file: budget, latency, accuracy, stations | CPU | `FILE`, `--key`, `--json` | table or JSON |
+| `evaluate` | top-1, KL to the dense model and GMAC of one schedule on a split | GPU | `--schedule FILE --key KEY` or `--config JSON` or `--dense`; `--split`, `--batch`, `--data-cache`, `--out` | JSON line (with the paper's number when known) |
+| `benchmark` | latency as one CUDA graph, interleaved rounds | GPU | target as above; `--batches`, `--rounds`, `--iters` | JSON line (with the paper's latency when known) |
+| `search` | the whole pipeline in one workspace: group-heads → probe → budgets → workloads → time-workloads → fit-latency → plan; resumes | GPUs | `--backbone`, `--workspace`, `--gpus`, `--budgets` / `--budget-ms` / `--gmac`, `--salt`, `--thetas`, `--alphas`, `--deltas`, `--steps`, `--redo`, `--dry-run` | `<workspace>/schedules.json` and every intermediate file |
+| `group-heads` | head groups of the forecast D on 1,024 calibration images | GPU | `--backbone`, `--out`, `--n` | `groups.json` |
+| `probe` | single-station probes on the 5,000 calibration images | GPU | `--backbone`, `--groups`, `--out`, grids, `--shard i/n`, `--reuse` | `probes.json` and a run cache |
+| `budgets` | times anchor schedules on this GPU and derives latency budgets | GPU | `--anchors {auto,diffrate,dense,gmac,configs}`, `--factor`, `--extras` | `budgets.json` |
+| `workloads` | plans the timing workloads that SALT is fitted on | CPU | `--probes`, `--groups`, `--gmac-fractions` | `salt_workloads.json` |
+| `time-workloads` | times the workloads on this GPU | GPU | `--workloads`, `--batch`, `--rounds` | `salt_timings.json` |
+| `fit-latency` | fits SALT (non-negative least squares, ridge chosen by grouped cross-validation) | CPU | `--timings`, `--out` | `salt.json` |
+| `plan` | the Lagrangian dynamic program under latency (SALT) or GMAC budgets | CPU | `--probes`, `--groups`, `--salt` with `--budget-ms` or `--budgets`, or `--gmac`; `--thetas`, `--alphas`, `--operator {M3,M0}` | `schedules.json` |
+
+**Python API** (`leaf.api`): `load_schedule(file, key)` returns a schedule file and one entry (released files, schedule books and sealed plans); `load_backbone(name)` and `build_model(vit, spec, config)` build any configuration, LEAF or baseline; `LeafRunner(backbone, root).run(config, split)` evaluates it with caching (per-image `correct`, `pred` and `kl`). See [Use a released schedule](#use-a-released-schedule).
 
 ## Repository layout
 
