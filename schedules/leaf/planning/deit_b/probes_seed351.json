@@ -7,7 +7,7 @@
   "G": 16,
   "rank": 32
  },
- "note": "probed as k = alpha / (1 - alpha); the calibration-seed ablation of the paper",
+ "note": "The calibration-seed ablation of the paper",
  "records": [
   {
    "block": 1,

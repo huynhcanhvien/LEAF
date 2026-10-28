@@ -257,8 +257,8 @@ class Planner:
         fixed_K: keep exactly this K (ablations A2/A4). choose_K: 'odd' (KL on calib odd) or 'fhat'."""
         L = L_nominal - self.margin; last = self.spec.depth - 1
         if not refine:
-            Ks = [fixed_K] if fixed_K else range(3, last + 1)
-            rs = [r for r in (self.plan_K(K, L) for K in Ks) if r]
+            K_values = [fixed_K] if fixed_K else range(3, last + 1)
+            rs = [r for r in (self.plan_K(K, L) for K in K_values) if r]
             best = min(rs, key=lambda r: r['fhat']); return dict(L=L, state=best['state'], start=best['state'], path=[], history=[])
         start = self.plan_K(fixed_K or K_start or last, L)
         if start is None: raise RuntimeError(f'no feasible DP schedule at L={L:.2f}')

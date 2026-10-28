@@ -7,7 +7,7 @@
   "G": 16,
   "rank": 32
  },
- "note": "probed as k = alpha / (1 - alpha); plan with: leaf plan --operator M0 --alphas 0 1/2 2/3 3/4",
+ "note": "Plan with: leaf plan --operator M0 --alphas 0 1/2 2/3 3/4",
  "records": [
   {
    "block": 1,
