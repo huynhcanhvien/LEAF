@@ -254,7 +254,7 @@ CUDA_VISIBLE_DEVICES=0 leaf evaluate  --schedule schedules/journal/clip_comparis
 
 **ViT-B/16 at 384 px** (577 tokens) is registered separately so that the 224-px campaigns are unchanged: prefix the commands with `LEAF_BACKBONES=leaf/backbones_vitb384.json`, build its cache once with `leaf data prepare --split val --side 384 --crop-pct 1.0 --out-dir data/cache384` (and `--split v2`), and pass `--data-cache data/cache384`, for example `LEAF_BACKBONES=leaf/backbones_vitb384.json leaf evaluate --schedule schedules/leaf/augreg_b384.json --key latency/dense0.48 --split val --data-cache data/cache384`.
 
-**Per-image results and statistics.** `release/LEAF_raw_results_v1.zip` (36 MB, CC BY 4.0) holds the per-image correctness of every evaluated configuration (`runs_index.csv` lists top-1 per `config_sha`), the raw timings and the analysis reports. Unzip it and run `python verify.py` (Python and NumPy only): it recomputes every latency-paired McNemar/Holm test of the paper in about a second and compares it with the reports.
+**Per-image results and statistics.** `release/LEAF_raw_results_v2.zip` (33 MB, CC BY 4.0) holds the per-image correctness of every evaluated configuration (`runs_index.csv` lists top-1 per `config_sha`), the raw timings and the analysis reports. Unzip it and run `python verify.py` (Python and NumPy only): it recomputes every latency-paired McNemar/Holm test of the paper in about a second and compares it with the reports.
 
 ### Option 2: re-run the pipeline from the probes
 
@@ -349,7 +349,7 @@ leaf/                       the method (installable package, command `leaf`)
 baselines/                  the re-run baselines; official code vendored in third_party/ with its licence
 schedules/                  every schedule and sealed configuration of the paper (see schedules/README.md)
 assets/                     schedule books (every schedule of the seven classifiers, with the paper's numbers) and README figures
-release/                    LEAF_raw_results_v1.zip: per-image results, raw timings, reports and verify.py (CC BY 4.0)
+release/                    LEAF_raw_results_v2.zip: per-image results, raw timings, reports and verify.py (CC BY 4.0)
 data/real/                  ImageNet-ReaL labels; data/cache is created by `leaf data prepare`
 tests/                      CPU and GPU checks (see tests/README.md)
 ```
