@@ -356,11 +356,7 @@ tests/                      CPU and GPU checks (see tests/README.md)
 
 ## Names used in files and results
 
-- **α and κ.**
-  - Everything released is in the α form. `pda` is the method (α score) on top of `pdm` (M3 merge) or `pd` (M0 merge).
-  - Campaigns run before the α score wrote `pd` / `pdm` configs with the unnormalised score `z(log P) + κ z(D)`, where κ = α/(1 − α) gives the same token order.
-  - Every set has an α form: `schedules/<set>/` and the probe tables in `schedules/leaf/planning/`.
-  - Re-scoring the paper's κ schedules in α on ImageNet val gives identical predictions for 194 of 196 schedules and one changed image for the other two.
+- **Configs.** Every config of the method has kind `pda`: stations scored by `(1 − α) z(log P) + α z(D)`, on top of `base` `pdm` (M3 merge), `pd` (M0 merge) or `extra_pdm` (the forecast and norm ablations).
 - **Groups and arms of the main campaign:**
   - `leaf_alpha4/<budget>`: LEAF on the four-value α grid {0, ½, ⅔, ¾}, the paper's main campaign;
   - `ablation/<arm>/<budget>`;

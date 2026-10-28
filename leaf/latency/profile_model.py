@@ -42,7 +42,7 @@ def profile(vit, spec, batches=(1, 32, 128)):
 
 def n_d(cfg, depth):
     """Stations that compute D in a config."""
-    return sum(1 for l, k in cfg.get('k', {}).items() if int(l) < depth - 1 and float(k) > 0)
+    return sum(1 for l, a in cfg.get('alpha', {}).items() if int(l) < depth - 1 and float(a) > 0)
 
 
 def features(row, kind, prof, bs, spec):
@@ -54,7 +54,7 @@ def features(row, kind, prof, bs, spec):
     if base_kind == 'profile': base = float(sum(ta(a) + tm(b) for a, b in zip(before, after)))
     out = [1., base, len(g['sites']), row['nd']]
     if rich:
-        active = row.get('k', {})
+        active = row.get('alpha', {})
         out += [sum(before[l] for l in g['sites']) / spec.n_tokens,
                 sum(g['p'][l] - g['m'][l] for l in g['sites']) / spec.n_tokens,
                 sum(before[l] * row.get('groups', 16) for l in g['sites']
@@ -108,18 +108,18 @@ class ProfileLatencyModel:
             value += (a * n_in + b * (p - m) + c * n_in * groups / 16 * bool(active_d)) / self.spec.n_tokens
         return value
 
-    def __call__(self, p, m, nd=None, ks=None):
+    def __call__(self, p, m, nd=None, alphas=None):
         g = canonical(dict(p=list(p), m=list(m)), self.spec.n_tokens); n, t = self.spec.n_tokens, self.c0
         for l, (pp, mm) in enumerate(zip(g['p'], g['m'])):
             t += self.block(n, pp, mm)
             if self.extra and l in g['sites']:
-                active = l < self.spec.depth - 1 and (ks is None or float(ks.get(str(l), ks.get(l, 0.))) > 0)
+                active = l < self.spec.depth - 1 and (alphas is None or float(alphas.get(str(l), alphas.get(l, 0.))) > 0)
                 t += self.station(n, pp, mm, active)
             n = min(n, pp, mm)
         if self.extra: return t
         K = len(g['sites'])
         active = sum(1 for l in g['sites'] if l < self.spec.depth - 1 and
-                     (ks is None or float(ks.get(str(l), ks.get(l, 0.))) > 0))
+                     (alphas is None or float(alphas.get(str(l), alphas.get(l, 0.))) > 0))
         return t + self.cst * K + self.cd * (active if nd is None else nd)
 
 

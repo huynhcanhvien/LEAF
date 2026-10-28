@@ -50,29 +50,25 @@
      "block": 1,
      "tokens_after": 300,
      "theta": 0.0,
-     "alpha": 1.0,
-     "kappa": null
+     "alpha": 1.0
     },
     {
      "block": 4,
      "tokens_after": 156,
      "theta": 0.5,
-     "alpha": 0.25,
-     "kappa": 0.3333333333333333
+     "alpha": 0.25
     },
     {
      "block": 8,
      "tokens_after": 92,
      "theta": 0.5,
-     "alpha": 0.75,
-     "kappa": 3.0
+     "alpha": 0.75
     },
     {
      "block": 11,
      "tokens_after": 3,
      "theta": 0.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     }
    ],
    "config": {
@@ -393,29 +389,25 @@
      "block": 1,
      "tokens_after": 352,
      "theta": 0.0,
-     "alpha": 1.0,
-     "kappa": null
+     "alpha": 1.0
     },
     {
      "block": 4,
      "tokens_after": 224,
      "theta": 0.5,
-     "alpha": 0.3333333333333333,
-     "kappa": 0.5
+     "alpha": 0.3333333333333333
     },
     {
      "block": 6,
      "tokens_after": 152,
      "theta": 1.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 11,
      "tokens_after": 3,
      "theta": 0.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     }
    ],
    "config": {
@@ -697,36 +689,31 @@
      "block": 1,
      "tokens_after": 434,
      "theta": 0.0,
-     "alpha": 0.75,
-     "kappa": 3.0
+     "alpha": 0.75
     },
     {
      "block": 3,
      "tokens_after": 298,
      "theta": 0.5,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 6,
      "tokens_after": 226,
      "theta": 1.0,
-     "alpha": 0.25,
-     "kappa": 0.3333333333333333
+     "alpha": 0.25
     },
     {
      "block": 8,
      "tokens_after": 154,
      "theta": 1.0,
-     "alpha": 1.0,
-     "kappa": null
+     "alpha": 1.0
     },
     {
      "block": 11,
      "tokens_after": 3,
      "theta": 0.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     }
    ],
    "config": {
@@ -1023,29 +1010,25 @@
      "block": 1,
      "tokens_after": 501,
      "theta": 0.5,
-     "alpha": 1.0,
-     "kappa": null
+     "alpha": 1.0
     },
     {
      "block": 3,
      "tokens_after": 358,
      "theta": 0.5034965034965035,
-     "alpha": 0.3333333333333333,
-     "kappa": 0.5
+     "alpha": 0.3333333333333333
     },
     {
      "block": 6,
      "tokens_after": 211,
      "theta": 1.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 11,
      "tokens_after": 3,
      "theta": 0.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     }
    ],
    "config": {
@@ -1339,22 +1322,19 @@
      "block": 3,
      "tokens_after": 408,
      "theta": 0.4970414201183432,
-     "alpha": 0.5,
-     "kappa": 1.0
+     "alpha": 0.5
     },
     {
      "block": 6,
      "tokens_after": 258,
      "theta": 1.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 11,
      "tokens_after": 3,
      "theta": 0.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     }
    ],
    "config": {
@@ -1525,22 +1505,19 @@
      "block": 4,
      "tokens_after": 432,
      "theta": 1.0,
-     "alpha": 0.6666666666666666,
-     "kappa": 2.0
+     "alpha": 0.6666666666666666
     },
     {
      "block": 6,
      "tokens_after": 304,
      "theta": 1.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 11,
      "tokens_after": 3,
      "theta": 0.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     }
    ],
    "config": {

@@ -8,7 +8,7 @@
   {
    "name": "diffrate/DR8.7",
    "config": {
-    "kind": "pd",
+    "kind": "pda",
     "prune_keep": [
      197,
      192,
@@ -37,11 +37,12 @@
      13,
      3
     ],
-    "k": {},
     "groups": {},
     "rank": null,
     "triton": true,
-    "fuse_merge": true
+    "fuse_merge": true,
+    "base": "pd",
+    "alpha": {}
    },
    "group": null,
    "ms": 20.979,
@@ -55,7 +56,7 @@
   {
    "name": "diffrate/DR10.0",
    "config": {
-    "kind": "pd",
+    "kind": "pda",
     "prune_keep": [
      197,
      194,
@@ -84,11 +85,12 @@
      19,
      3
     ],
-    "k": {},
     "groups": {},
     "rank": null,
     "triton": true,
-    "fuse_merge": true
+    "fuse_merge": true,
+    "base": "pd",
+    "alpha": {}
    },
    "group": null,
    "ms": 24.067666666666668,
@@ -102,7 +104,7 @@
   {
    "name": "diffrate/DR10.4",
    "config": {
-    "kind": "pd",
+    "kind": "pda",
     "prune_keep": [
      197,
      196,
@@ -131,11 +133,12 @@
      21,
      3
     ],
-    "k": {},
     "groups": {},
     "rank": null,
     "triton": true,
-    "fuse_merge": true
+    "fuse_merge": true,
+    "base": "pd",
+    "alpha": {}
    },
    "group": null,
    "ms": 25.316333333333333,
@@ -149,7 +152,7 @@
   {
    "name": "diffrate/DR11.5",
    "config": {
-    "kind": "pd",
+    "kind": "pda",
     "prune_keep": [
      197,
      197,
@@ -178,11 +181,12 @@
      35,
      3
     ],
-    "k": {},
     "groups": {},
     "rank": null,
     "triton": true,
-    "fuse_merge": true
+    "fuse_merge": true,
+    "base": "pd",
+    "alpha": {}
    },
    "group": null,
    "ms": 27.499,
@@ -196,7 +200,7 @@
   {
    "name": "diffrate/DR12.5",
    "config": {
-    "kind": "pd",
+    "kind": "pda",
     "prune_keep": [
      197,
      197,
@@ -225,11 +229,12 @@
      47,
      3
     ],
-    "k": {},
     "groups": {},
     "rank": null,
     "triton": true,
-    "fuse_merge": true
+    "fuse_merge": true,
+    "base": "pd",
+    "alpha": {}
    },
    "group": null,
    "ms": 30.599999999999998,

@@ -57,7 +57,7 @@
     },
     "latency/extra2": {
      "config": {
-      "kind": "pd",
+      "kind": "pda",
       "prune_keep": [
        197,
        93,
@@ -86,10 +86,6 @@
        197,
        197
       ],
-      "k": {
-       "1": 3.0,
-       "6": 1.0
-      },
       "groups": {
        "1": [
         15,
@@ -278,7 +274,12 @@
       },
       "rank": 32,
       "triton": true,
-      "fuse_merge": true
+      "fuse_merge": true,
+      "base": "pd",
+      "alpha": {
+       "1": 0.75,
+       "6": 0.5
+      }
      },
      "state": {
       "sites": [
@@ -296,9 +297,9 @@
        1.0,
        0.5
       ],
-      "ks": [
-       3.0,
-       1.0,
+      "alphas": [
+       0.75,
+       0.5,
        0.0
       ]
      },
@@ -314,7 +315,7 @@
     },
     "latency/extra1": {
      "config": {
-      "kind": "pd",
+      "kind": "pda",
       "prune_keep": [
        197,
        112,
@@ -343,10 +344,6 @@
        197,
        4
       ],
-      "k": {
-       "1": 3.0,
-       "6": 1.0
-      },
       "groups": {
        "1": [
         15,
@@ -535,7 +532,12 @@
       },
       "rank": 32,
       "triton": true,
-      "fuse_merge": true
+      "fuse_merge": true,
+      "base": "pd",
+      "alpha": {
+       "1": 0.75,
+       "6": 0.5
+      }
      },
      "state": {
       "sites": [
@@ -553,9 +555,9 @@
        1.0,
        0.0
       ],
-      "ks": [
-       3.0,
-       1.0,
+      "alphas": [
+       0.75,
+       0.5,
        0.0
       ]
      },
@@ -571,7 +573,7 @@
     },
     "latency/DR8.7": {
      "config": {
-      "kind": "pd",
+      "kind": "pda",
       "prune_keep": [
        197,
        127,
@@ -600,11 +602,6 @@
        197,
        4
       ],
-      "k": {
-       "1": 2.0,
-       "6": 1.0,
-       "8": 1.0
-      },
       "groups": {
        "1": [
         15,
@@ -831,7 +828,13 @@
       },
       "rank": 32,
       "triton": true,
-      "fuse_merge": true
+      "fuse_merge": true,
+      "base": "pd",
+      "alpha": {
+       "1": 0.6666666666666666,
+       "6": 0.5,
+       "8": 0.5
+      }
      },
      "state": {
       "sites": [
@@ -852,10 +855,10 @@
        1.0,
        0.0
       ],
-      "ks": [
-       2.0,
-       1.0,
-       1.0,
+      "alphas": [
+       0.6666666666666666,
+       0.5,
+       0.5,
        0.0
       ]
      },
@@ -871,7 +874,7 @@
     },
     "latency_gmac/DR8.7": {
      "config": {
-      "kind": "pd",
+      "kind": "pda",
       "prune_keep": [
        197,
        123,
@@ -900,11 +903,6 @@
        197,
        3
       ],
-      "k": {
-       "1": 2.0,
-       "6": 1.0,
-       "8": 1.0
-      },
       "groups": {
        "1": [
         15,
@@ -1131,7 +1129,13 @@
       },
       "rank": 32,
       "triton": true,
-      "fuse_merge": true
+      "fuse_merge": true,
+      "base": "pd",
+      "alpha": {
+       "1": 0.6666666666666666,
+       "6": 0.5,
+       "8": 0.5
+      }
      },
      "state": {
       "sites": [
@@ -1152,10 +1156,10 @@
        0.5,
        0.0
       ],
-      "ks": [
-       2.0,
-       1.0,
-       1.0,
+      "alphas": [
+       0.6666666666666666,
+       0.5,
+       0.5,
        0.0
       ]
      },
@@ -1171,7 +1175,7 @@
     },
     "latency/DR10.0": {
      "config": {
-      "kind": "pd",
+      "kind": "pda",
       "prune_keep": [
        197,
        157,
@@ -1200,12 +1204,6 @@
        197,
        3
       ],
-      "k": {
-       "1": 3.0,
-       "5": 3.0,
-       "6": 1.0,
-       "8": 1.0
-      },
       "groups": {
        "1": [
         15,
@@ -1506,7 +1504,14 @@
       },
       "rank": 32,
       "triton": true,
-      "fuse_merge": true
+      "fuse_merge": true,
+      "base": "pd",
+      "alpha": {
+       "1": 0.75,
+       "5": 0.75,
+       "6": 0.5,
+       "8": 0.5
+      }
      },
      "state": {
       "sites": [
@@ -1530,11 +1535,11 @@
        1.0,
        0.0
       ],
-      "ks": [
-       3.0,
-       3.0,
-       1.0,
-       1.0,
+      "alphas": [
+       0.75,
+       0.75,
+       0.5,
+       0.5,
        0.0
       ]
      },
@@ -1550,7 +1555,7 @@
     },
     "latency_gmac/DR10.0": {
      "config": {
-      "kind": "pd",
+      "kind": "pda",
       "prune_keep": [
        197,
        152,
@@ -1579,12 +1584,6 @@
        197,
        4
       ],
-      "k": {
-       "1": 3.0,
-       "5": 3.0,
-       "6": 1.0,
-       "8": 1.0
-      },
       "groups": {
        "1": [
         15,
@@ -1885,7 +1884,14 @@
       },
       "rank": 32,
       "triton": true,
-      "fuse_merge": true
+      "fuse_merge": true,
+      "base": "pd",
+      "alpha": {
+       "1": 0.75,
+       "5": 0.75,
+       "6": 0.5,
+       "8": 0.5
+      }
      },
      "state": {
       "sites": [
@@ -1909,11 +1915,11 @@
        1.0,
        0.0
       ],
-      "ks": [
-       3.0,
-       3.0,
-       1.0,
-       1.0,
+      "alphas": [
+       0.75,
+       0.75,
+       0.5,
+       0.5,
        0.0
       ]
      },
@@ -1929,7 +1935,7 @@
     },
     "latency/DR10.4": {
      "config": {
-      "kind": "pd",
+      "kind": "pda",
       "prune_keep": [
        197,
        157,
@@ -1958,12 +1964,6 @@
        197,
        3
       ],
-      "k": {
-       "1": 3.0,
-       "5": 3.0,
-       "6": 1.0,
-       "8": 1.0
-      },
       "groups": {
        "1": [
         15,
@@ -2264,7 +2264,14 @@
       },
       "rank": 32,
       "triton": true,
-      "fuse_merge": true
+      "fuse_merge": true,
+      "base": "pd",
+      "alpha": {
+       "1": 0.75,
+       "5": 0.75,
+       "6": 0.5,
+       "8": 0.5
+      }
      },
      "state": {
       "sites": [
@@ -2288,11 +2295,11 @@
        1.0,
        0.0
       ],
-      "ks": [
-       3.0,
-       3.0,
-       1.0,
-       1.0,
+      "alphas": [
+       0.75,
+       0.75,
+       0.5,
+       0.5,
        0.0
       ]
      },
@@ -2308,7 +2315,7 @@
     },
     "latency_gmac/DR10.4": {
      "config": {
-      "kind": "pd",
+      "kind": "pda",
       "prune_keep": [
        197,
        157,
@@ -2337,11 +2344,6 @@
        197,
        3
       ],
-      "k": {
-       "1": 3.0,
-       "5": 3.0,
-       "6": 1.0
-      },
       "groups": {
        "1": [
         15,
@@ -2604,7 +2606,13 @@
       },
       "rank": 32,
       "triton": true,
-      "fuse_merge": true
+      "fuse_merge": true,
+      "base": "pd",
+      "alpha": {
+       "1": 0.75,
+       "5": 0.75,
+       "6": 0.5
+      }
      },
      "state": {
       "sites": [
@@ -2625,10 +2633,10 @@
        1.0,
        0.0
       ],
-      "ks": [
-       3.0,
-       3.0,
-       1.0,
+      "alphas": [
+       0.75,
+       0.75,
+       0.5,
        0.0
       ]
      },
@@ -2644,7 +2652,7 @@
     },
     "latency/DR11.5": {
      "config": {
-      "kind": "pd",
+      "kind": "pda",
       "prune_keep": [
        197,
        170,
@@ -2673,11 +2681,6 @@
        197,
        3
       ],
-      "k": {
-       "1": 3.0,
-       "6": 3.0,
-       "8": 1.0
-      },
       "groups": {
        "1": [
         15,
@@ -2904,7 +2907,13 @@
       },
       "rank": 32,
       "triton": true,
-      "fuse_merge": true
+      "fuse_merge": true,
+      "base": "pd",
+      "alpha": {
+       "1": 0.75,
+       "6": 0.75,
+       "8": 0.5
+      }
      },
      "state": {
       "sites": [
@@ -2925,10 +2934,10 @@
        1.0,
        0.0
       ],
-      "ks": [
-       3.0,
-       3.0,
-       1.0,
+      "alphas": [
+       0.75,
+       0.75,
+       0.5,
        0.0
       ]
      },
@@ -2944,7 +2953,7 @@
     },
     "latency_gmac/DR11.5": {
      "config": {
-      "kind": "pd",
+      "kind": "pda",
       "prune_keep": [
        197,
        167,
@@ -2973,11 +2982,6 @@
        197,
        3
       ],
-      "k": {
-       "1": 3.0,
-       "6": 3.0,
-       "8": 1.0
-      },
       "groups": {
        "1": [
         15,
@@ -3204,7 +3208,13 @@
       },
       "rank": 32,
       "triton": true,
-      "fuse_merge": true
+      "fuse_merge": true,
+      "base": "pd",
+      "alpha": {
+       "1": 0.75,
+       "6": 0.75,
+       "8": 0.5
+      }
      },
      "state": {
       "sites": [
@@ -3225,10 +3235,10 @@
        1.0,
        0.0
       ],
-      "ks": [
-       3.0,
-       3.0,
-       1.0,
+      "alphas": [
+       0.75,
+       0.75,
+       0.5,
        0.0
       ]
      },
@@ -3244,7 +3254,7 @@
     },
     "latency/DR12.5": {
      "config": {
-      "kind": "pd",
+      "kind": "pda",
       "prune_keep": [
        197,
        185,
@@ -3273,11 +3283,6 @@
        197,
        4
       ],
-      "k": {
-       "1": 3.0,
-       "6": 3.0,
-       "8": 2.0
-      },
       "groups": {
        "1": [
         15,
@@ -3504,7 +3509,13 @@
       },
       "rank": 32,
       "triton": true,
-      "fuse_merge": true
+      "fuse_merge": true,
+      "base": "pd",
+      "alpha": {
+       "1": 0.75,
+       "6": 0.75,
+       "8": 0.6666666666666666
+      }
      },
      "state": {
       "sites": [
@@ -3525,10 +3536,10 @@
        1.0,
        0.0
       ],
-      "ks": [
-       3.0,
-       3.0,
-       2.0,
+      "alphas": [
+       0.75,
+       0.75,
+       0.6666666666666666,
        0.0
       ]
      },
@@ -3544,7 +3555,7 @@
     },
     "latency_gmac/DR12.5": {
      "config": {
-      "kind": "pd",
+      "kind": "pda",
       "prune_keep": [
        197,
        174,
@@ -3573,11 +3584,6 @@
        197,
        7
       ],
-      "k": {
-       "1": 3.0,
-       "6": 3.0,
-       "8": 1.0
-      },
       "groups": {
        "1": [
         15,
@@ -3804,7 +3810,13 @@
       },
       "rank": 32,
       "triton": true,
-      "fuse_merge": true
+      "fuse_merge": true,
+      "base": "pd",
+      "alpha": {
+       "1": 0.75,
+       "6": 0.75,
+       "8": 0.5
+      }
      },
      "state": {
       "sites": [
@@ -3825,10 +3837,10 @@
        1.0,
        0.0
       ],
-      "ks": [
-       3.0,
-       3.0,
-       1.0,
+      "alphas": [
+       0.75,
+       0.75,
+       0.5,
        0.0
       ]
      },
@@ -3844,7 +3856,7 @@
     },
     "DR8.7": {
      "config": {
-      "kind": "pd",
+      "kind": "pda",
       "prune_keep": [
        197,
        192,
@@ -3873,11 +3885,12 @@
        13,
        3
       ],
-      "k": {},
       "groups": {},
       "rank": null,
       "triton": true,
-      "fuse_merge": true
+      "fuse_merge": true,
+      "base": "pd",
+      "alpha": {}
      },
      "state": null,
      "meta": {
@@ -3886,7 +3899,7 @@
     },
     "DR10.0": {
      "config": {
-      "kind": "pd",
+      "kind": "pda",
       "prune_keep": [
        197,
        194,
@@ -3915,11 +3928,12 @@
        19,
        3
       ],
-      "k": {},
       "groups": {},
       "rank": null,
       "triton": true,
-      "fuse_merge": true
+      "fuse_merge": true,
+      "base": "pd",
+      "alpha": {}
      },
      "state": null,
      "meta": {
@@ -3928,7 +3942,7 @@
     },
     "DR10.4": {
      "config": {
-      "kind": "pd",
+      "kind": "pda",
       "prune_keep": [
        197,
        196,
@@ -3957,11 +3971,12 @@
        21,
        3
       ],
-      "k": {},
       "groups": {},
       "rank": null,
       "triton": true,
-      "fuse_merge": true
+      "fuse_merge": true,
+      "base": "pd",
+      "alpha": {}
      },
      "state": null,
      "meta": {
@@ -3970,7 +3985,7 @@
     },
     "DR11.5": {
      "config": {
-      "kind": "pd",
+      "kind": "pda",
       "prune_keep": [
        197,
        197,
@@ -3999,11 +4014,12 @@
        35,
        3
       ],
-      "k": {},
       "groups": {},
       "rank": null,
       "triton": true,
-      "fuse_merge": true
+      "fuse_merge": true,
+      "base": "pd",
+      "alpha": {}
      },
      "state": null,
      "meta": {
@@ -4012,7 +4028,7 @@
     },
     "DR12.5": {
      "config": {
-      "kind": "pd",
+      "kind": "pda",
       "prune_keep": [
        197,
        197,
@@ -4041,11 +4057,12 @@
        47,
        3
       ],
-      "k": {},
       "groups": {},
       "rank": null,
       "triton": true,
-      "fuse_merge": true
+      "fuse_merge": true,
+      "base": "pd",
+      "alpha": {}
      },
      "state": null,
      "meta": {
@@ -4440,7 +4457,7 @@
     },
     "latency/extra2": {
      "config": {
-      "kind": "pd",
+      "kind": "pda",
       "prune_keep": [
        197,
        77,
@@ -4469,10 +4486,6 @@
        29,
        197
       ],
-      "k": {
-       "1": 3.0,
-       "7": 2.0
-      },
       "groups": {
        "1": [
         3,
@@ -4649,7 +4662,12 @@
       },
       "rank": 32,
       "triton": true,
-      "fuse_merge": true
+      "fuse_merge": true,
+      "base": "pd",
+      "alpha": {
+       "1": 0.75,
+       "7": 0.6666666666666666
+      }
      },
      "state": {
       "sites": [
@@ -4667,9 +4685,9 @@
        1.0,
        0.5
       ],
-      "ks": [
-       3.0,
-       2.0,
+      "alphas": [
+       0.75,
+       0.6666666666666666,
        0.0
       ]
      },
@@ -4685,7 +4703,7 @@
     },
     "latency/extra1": {
      "config": {
-      "kind": "pd",
+      "kind": "pda",
       "prune_keep": [
        197,
        101,
@@ -4714,10 +4732,6 @@
        29,
        197
       ],
-      "k": {
-       "1": 3.0,
-       "7": 2.0
-      },
       "groups": {
        "1": [
         3,
@@ -4894,7 +4908,12 @@
       },
       "rank": 32,
       "triton": true,
-      "fuse_merge": true
+      "fuse_merge": true,
+      "base": "pd",
+      "alpha": {
+       "1": 0.75,
+       "7": 0.6666666666666666
+      }
      },
      "state": {
       "sites": [
@@ -4915,10 +4934,10 @@
        1.0,
        0.5
       ],
-      "ks": [
-       3.0,
+      "alphas": [
+       0.75,
        0.0,
-       2.0,
+       0.6666666666666666,
        0.0
       ]
      },
@@ -4934,7 +4953,7 @@
     },
     "latency/DR8.7": {
      "config": {
-      "kind": "pd",
+      "kind": "pda",
       "prune_keep": [
        197,
        151,
@@ -4963,10 +4982,6 @@
        197,
        197
       ],
-      "k": {
-       "1": 3.0,
-       "2": 3.0
-      },
       "groups": {
        "1": [
         3,
@@ -5203,7 +5218,12 @@
       },
       "rank": 32,
       "triton": true,
-      "fuse_merge": true
+      "fuse_merge": true,
+      "base": "pd",
+      "alpha": {
+       "1": 0.75,
+       "2": 0.75
+      }
      },
      "state": {
       "sites": [
@@ -5221,9 +5241,9 @@
        0.0,
        1.0
       ],
-      "ks": [
-       3.0,
-       3.0,
+      "alphas": [
+       0.75,
+       0.75,
        0.0
       ]
      },
@@ -5239,7 +5259,7 @@
     },
     "latency_gmac/DR8.7": {
      "config": {
-      "kind": "pd",
+      "kind": "pda",
       "prune_keep": [
        197,
        150,
@@ -5268,11 +5288,6 @@
        197,
        197
       ],
-      "k": {
-       "1": 3.0,
-       "2": 3.0,
-       "8": 2.0
-      },
       "groups": {
        "1": [
         3,
@@ -5547,7 +5562,13 @@
       },
       "rank": 32,
       "triton": true,
-      "fuse_merge": true
+      "fuse_merge": true,
+      "base": "pd",
+      "alpha": {
+       "1": 0.75,
+       "2": 0.75,
+       "8": 0.6666666666666666
+      }
      },
      "state": {
       "sites": [
@@ -5568,11 +5589,11 @@
        0.5,
        0.5
       ],
-      "ks": [
-       3.0,
-       3.0,
+      "alphas": [
+       0.75,
+       0.75,
        0.0,
-       2.0
+       0.6666666666666666
       ]
      },
      "meta": {
@@ -5587,7 +5608,7 @@
     },
     "latency/DR10.0": {
      "config": {
-      "kind": "pd",
+      "kind": "pda",
       "prune_keep": [
        197,
        150,
@@ -5616,11 +5637,6 @@
        55,
        197
       ],
-      "k": {
-       "1": 3.0,
-       "2": 3.0,
-       "7": 1.0
-      },
       "groups": {
        "1": [
         3,
@@ -5907,7 +5923,13 @@
       },
       "rank": 32,
       "triton": true,
-      "fuse_merge": true
+      "fuse_merge": true,
+      "base": "pd",
+      "alpha": {
+       "1": 0.75,
+       "2": 0.75,
+       "7": 0.5
+      }
      },
      "state": {
       "sites": [
@@ -5931,11 +5953,11 @@
        1.0,
        1.0
       ],
-      "ks": [
-       3.0,
-       3.0,
+      "alphas": [
+       0.75,
+       0.75,
        0.0,
-       1.0,
+       0.5,
        0.0
       ]
      },
@@ -5951,7 +5973,7 @@
     },
     "latency_gmac/DR10.0": {
      "config": {
-      "kind": "pd",
+      "kind": "pda",
       "prune_keep": [
        197,
        150,
@@ -5980,11 +6002,6 @@
        55,
        197
       ],
-      "k": {
-       "1": 3.0,
-       "2": 3.0,
-       "7": 1.0
-      },
       "groups": {
        "1": [
         3,
@@ -6271,7 +6288,13 @@
       },
       "rank": 32,
       "triton": true,
-      "fuse_merge": true
+      "fuse_merge": true,
+      "base": "pd",
+      "alpha": {
+       "1": 0.75,
+       "2": 0.75,
+       "7": 0.5
+      }
      },
      "state": {
       "sites": [
@@ -6295,11 +6318,11 @@
        1.0,
        1.0
       ],
-      "ks": [
-       3.0,
-       3.0,
+      "alphas": [
+       0.75,
+       0.75,
        0.0,
-       1.0,
+       0.5,
        0.0
       ]
      },
@@ -6315,7 +6338,7 @@
     },
     "latency/DR10.4": {
      "config": {
-      "kind": "pd",
+      "kind": "pda",
       "prune_keep": [
        197,
        151,
@@ -6344,11 +6367,6 @@
        197,
        197
       ],
-      "k": {
-       "1": 3.0,
-       "2": 3.0,
-       "7": 1.0
-      },
       "groups": {
        "1": [
         3,
@@ -6635,7 +6653,13 @@
       },
       "rank": 32,
       "triton": true,
-      "fuse_merge": true
+      "fuse_merge": true,
+      "base": "pd",
+      "alpha": {
+       "1": 0.75,
+       "2": 0.75,
+       "7": 0.5
+      }
      },
      "state": {
       "sites": [
@@ -6653,10 +6677,10 @@
        0.0,
        1.0
       ],
-      "ks": [
-       3.0,
-       3.0,
-       1.0
+      "alphas": [
+       0.75,
+       0.75,
+       0.5
       ]
      },
      "meta": {
@@ -6671,7 +6695,7 @@
     },
     "latency_gmac/DR10.4": {
      "config": {
-      "kind": "pd",
+      "kind": "pda",
       "prune_keep": [
        197,
        150,
@@ -6700,11 +6724,6 @@
        197,
        197
       ],
-      "k": {
-       "1": 3.0,
-       "2": 3.0,
-       "7": 1.0
-      },
       "groups": {
        "1": [
         3,
@@ -6991,7 +7010,13 @@
       },
       "rank": 32,
       "triton": true,
-      "fuse_merge": true
+      "fuse_merge": true,
+      "base": "pd",
+      "alpha": {
+       "1": 0.75,
+       "2": 0.75,
+       "7": 0.5
+      }
      },
      "state": {
       "sites": [
@@ -7009,10 +7034,10 @@
        0.0,
        1.0
       ],
-      "ks": [
-       3.0,
-       3.0,
-       1.0
+      "alphas": [
+       0.75,
+       0.75,
+       0.5
       ]
      },
      "meta": {
@@ -7027,7 +7052,7 @@
     },
     "latency/DR11.5": {
      "config": {
-      "kind": "pd",
+      "kind": "pda",
       "prune_keep": [
        197,
        197,
@@ -7056,10 +7081,6 @@
        197,
        197
       ],
-      "k": {
-       "2": 1.0,
-       "7": 1.0
-      },
       "groups": {
        "2": [
         12,
@@ -7224,7 +7245,12 @@
       },
       "rank": 32,
       "triton": true,
-      "fuse_merge": true
+      "fuse_merge": true,
+      "base": "pd",
+      "alpha": {
+       "2": 0.5,
+       "7": 0.5
+      }
      },
      "state": {
       "sites": [
@@ -7239,9 +7265,9 @@
        0.0,
        1.0
       ],
-      "ks": [
-       1.0,
-       1.0
+      "alphas": [
+       0.5,
+       0.5
       ]
      },
      "meta": {
@@ -7256,7 +7282,7 @@
     },
     "latency_gmac/DR11.5": {
      "config": {
-      "kind": "pd",
+      "kind": "pda",
       "prune_keep": [
        197,
        197,
@@ -7285,10 +7311,6 @@
        197,
        197
       ],
-      "k": {
-       "2": 1.0,
-       "7": 1.0
-      },
       "groups": {
        "2": [
         12,
@@ -7453,7 +7475,12 @@
       },
       "rank": 32,
       "triton": true,
-      "fuse_merge": true
+      "fuse_merge": true,
+      "base": "pd",
+      "alpha": {
+       "2": 0.5,
+       "7": 0.5
+      }
      },
      "state": {
       "sites": [
@@ -7468,9 +7495,9 @@
        0.0,
        1.0
       ],
-      "ks": [
-       1.0,
-       1.0
+      "alphas": [
+       0.5,
+       0.5
       ]
      },
      "meta": {
@@ -7485,7 +7512,7 @@
     },
     "DR8.7": {
      "config": {
-      "kind": "pd",
+      "kind": "pda",
       "prune_keep": [
        197,
        192,
@@ -7514,11 +7541,12 @@
        23,
        197
       ],
-      "k": {},
       "groups": {},
       "rank": null,
       "triton": true,
-      "fuse_merge": true
+      "fuse_merge": true,
+      "base": "pd",
+      "alpha": {}
      },
      "state": null,
      "meta": {
@@ -7527,7 +7555,7 @@
     },
     "DR10.0": {
      "config": {
-      "kind": "pd",
+      "kind": "pda",
       "prune_keep": [
        197,
        194,
@@ -7556,11 +7584,12 @@
        40,
        197
       ],
-      "k": {},
       "groups": {},
       "rank": null,
       "triton": true,
-      "fuse_merge": true
+      "fuse_merge": true,
+      "base": "pd",
+      "alpha": {}
      },
      "state": null,
      "meta": {
@@ -7569,7 +7598,7 @@
     },
     "DR10.4": {
      "config": {
-      "kind": "pd",
+      "kind": "pda",
       "prune_keep": [
        197,
        195,
@@ -7598,11 +7627,12 @@
        45,
        197
       ],
-      "k": {},
       "groups": {},
       "rank": null,
       "triton": true,
-      "fuse_merge": true
+      "fuse_merge": true,
+      "base": "pd",
+      "alpha": {}
      },
      "state": null,
      "meta": {
@@ -7611,7 +7641,7 @@
     },
     "DR11.5": {
      "config": {
-      "kind": "pd",
+      "kind": "pda",
       "prune_keep": [
        197,
        196,
@@ -7640,11 +7670,12 @@
        49,
        197
       ],
-      "k": {},
       "groups": {},
       "rank": null,
       "triton": true,
-      "fuse_merge": true
+      "fuse_merge": true,
+      "base": "pd",
+      "alpha": {}
      },
      "state": null,
      "meta": {
@@ -8045,7 +8076,7 @@
     },
     "latency/extra2": {
      "config": {
-      "kind": "pd",
+      "kind": "pda",
       "prune_keep": [
        197,
        149,
@@ -8074,9 +8105,6 @@
        197,
        197
       ],
-      "k": {
-       "1": 2.0
-      },
       "groups": {
        "1": [
         7,
@@ -8113,7 +8141,11 @@
       },
       "rank": 32,
       "triton": true,
-      "fuse_merge": true
+      "fuse_merge": true,
+      "base": "pd",
+      "alpha": {
+       "1": 0.6666666666666666
+      }
      },
      "state": {
       "sites": [
@@ -8128,8 +8160,8 @@
        0.0,
        1.0
       ],
-      "ks": [
-       2.0,
+      "alphas": [
+       0.6666666666666666,
        0.0
       ]
      },
@@ -8145,7 +8177,7 @@
     },
     "latency/extra1": {
      "config": {
-      "kind": "pd",
+      "kind": "pda",
       "prune_keep": [
        197,
        158,
@@ -8174,9 +8206,6 @@
        197,
        3
       ],
-      "k": {
-       "1": 2.0
-      },
       "groups": {
        "1": [
         7,
@@ -8213,7 +8242,11 @@
       },
       "rank": 32,
       "triton": true,
-      "fuse_merge": true
+      "fuse_merge": true,
+      "base": "pd",
+      "alpha": {
+       "1": 0.6666666666666666
+      }
      },
      "state": {
       "sites": [
@@ -8231,8 +8264,8 @@
        1.0,
        0.0
       ],
-      "ks": [
-       2.0,
+      "alphas": [
+       0.6666666666666666,
        0.0,
        0.0
       ]
@@ -8249,7 +8282,7 @@
     },
     "latency/DR0.6": {
      "config": {
-      "kind": "pd",
+      "kind": "pda",
       "prune_keep": [
        197,
        197,
@@ -8278,11 +8311,12 @@
        197,
        4
       ],
-      "k": {},
       "groups": {},
       "rank": null,
       "triton": true,
-      "fuse_merge": true
+      "fuse_merge": true,
+      "base": "pd",
+      "alpha": {}
      },
      "state": {
       "sites": [
@@ -8297,7 +8331,7 @@
        1.0,
        0.0
       ],
-      "ks": [
+      "alphas": [
        0.0,
        0.0
       ]
@@ -8314,7 +8348,7 @@
     },
     "latency_gmac/DR0.6": {
      "config": {
-      "kind": "pd",
+      "kind": "pda",
       "prune_keep": [
        197,
        184,
@@ -8343,11 +8377,6 @@
        197,
        3
       ],
-      "k": {
-       "1": 3.0,
-       "3": 1.0,
-       "8": 3.0
-      },
       "groups": {
        "1": [
         7,
@@ -8421,7 +8450,13 @@
       },
       "rank": 32,
       "triton": true,
-      "fuse_merge": true
+      "fuse_merge": true,
+      "base": "pd",
+      "alpha": {
+       "1": 0.75,
+       "3": 0.5,
+       "8": 0.75
+      }
      },
      "state": {
       "sites": [
@@ -8448,12 +8483,12 @@
        0.5,
        0.0
       ],
-      "ks": [
-       3.0,
-       1.0,
+      "alphas": [
+       0.75,
+       0.5,
        0.0,
        0.0,
-       3.0,
+       0.75,
        0.0
       ]
      },
@@ -8469,7 +8504,7 @@
     },
     "latency/DR0.7": {
      "config": {
-      "kind": "pd",
+      "kind": "pda",
       "prune_keep": [
        197,
        197,
@@ -8498,11 +8533,12 @@
        197,
        3
       ],
-      "k": {},
       "groups": {},
       "rank": null,
       "triton": true,
-      "fuse_merge": true
+      "fuse_merge": true,
+      "base": "pd",
+      "alpha": {}
      },
      "state": {
       "sites": [
@@ -8517,7 +8553,7 @@
        1.0,
        0.0
       ],
-      "ks": [
+      "alphas": [
        0.0,
        0.0
       ]
@@ -8534,7 +8570,7 @@
     },
     "latency_gmac/DR0.7": {
      "config": {
-      "kind": "pd",
+      "kind": "pda",
       "prune_keep": [
        197,
        187,
@@ -8563,12 +8599,6 @@
        197,
        7
       ],
-      "k": {
-       "1": 3.0,
-       "4": 1.0,
-       "5": 1.0,
-       "8": 2.0
-      },
       "groups": {
        "1": [
         7,
@@ -8659,7 +8689,14 @@
       },
       "rank": 32,
       "triton": true,
-      "fuse_merge": true
+      "fuse_merge": true,
+      "base": "pd",
+      "alpha": {
+       "1": 0.75,
+       "4": 0.5,
+       "5": 0.5,
+       "8": 0.6666666666666666
+      }
      },
      "state": {
       "sites": [
@@ -8686,12 +8723,12 @@
        0.5,
        0.0
       ],
-      "ks": [
-       3.0,
+      "alphas": [
+       0.75,
        0.0,
-       1.0,
-       1.0,
-       2.0,
+       0.5,
+       0.5,
+       0.6666666666666666,
        0.0
       ]
      },
@@ -8707,7 +8744,7 @@
     },
     "latency/DR0.8": {
      "config": {
-      "kind": "pd",
+      "kind": "pda",
       "prune_keep": [
        197,
        197,
@@ -8736,9 +8773,6 @@
        197,
        5
       ],
-      "k": {
-       "6": 3.0
-      },
       "groups": {
        "6": [
         1,
@@ -8760,7 +8794,11 @@
       },
       "rank": 32,
       "triton": true,
-      "fuse_merge": true
+      "fuse_merge": true,
+      "base": "pd",
+      "alpha": {
+       "6": 0.75
+      }
      },
      "state": {
       "sites": [
@@ -8778,9 +8816,9 @@
        1.0,
        0.0
       ],
-      "ks": [
+      "alphas": [
        0.0,
-       3.0,
+       0.75,
        0.0
       ]
      },
@@ -8796,7 +8834,7 @@
     },
     "latency_gmac/DR0.8": {
      "config": {
-      "kind": "pd",
+      "kind": "pda",
       "prune_keep": [
        197,
        197,
@@ -8825,10 +8863,6 @@
        197,
        3
       ],
-      "k": {
-       "4": 1.0,
-       "6": 1.0
-      },
       "groups": {
        "4": [
         2,
@@ -8873,7 +8907,12 @@
       },
       "rank": 32,
       "triton": true,
-      "fuse_merge": true
+      "fuse_merge": true,
+      "base": "pd",
+      "alpha": {
+       "4": 0.5,
+       "6": 0.5
+      }
      },
      "state": {
       "sites": [
@@ -8894,10 +8933,10 @@
        1.0,
        0.0
       ],
-      "ks": [
+      "alphas": [
        0.0,
-       1.0,
-       1.0,
+       0.5,
+       0.5,
        0.0
       ]
      },
@@ -8913,7 +8952,7 @@
     },
     "latency/DR0.9": {
      "config": {
-      "kind": "pd",
+      "kind": "pda",
       "prune_keep": [
        197,
        197,
@@ -8942,9 +8981,6 @@
        197,
        6
       ],
-      "k": {
-       "6": 2.0
-      },
       "groups": {
        "6": [
         1,
@@ -8966,7 +9002,11 @@
       },
       "rank": 32,
       "triton": true,
-      "fuse_merge": true
+      "fuse_merge": true,
+      "base": "pd",
+      "alpha": {
+       "6": 0.6666666666666666
+      }
      },
      "state": {
       "sites": [
@@ -8981,8 +9021,8 @@
        1.0,
        0.0
       ],
-      "ks": [
-       2.0,
+      "alphas": [
+       0.6666666666666666,
        0.0
       ]
      },
@@ -8998,7 +9038,7 @@
     },
     "latency_gmac/DR0.9": {
      "config": {
-      "kind": "pd",
+      "kind": "pda",
       "prune_keep": [
        197,
        197,
@@ -9027,9 +9067,6 @@
        197,
        5
       ],
-      "k": {
-       "6": 3.0
-      },
       "groups": {
        "6": [
         1,
@@ -9051,7 +9088,11 @@
       },
       "rank": 32,
       "triton": true,
-      "fuse_merge": true
+      "fuse_merge": true,
+      "base": "pd",
+      "alpha": {
+       "6": 0.75
+      }
      },
      "state": {
       "sites": [
@@ -9072,10 +9113,10 @@
        1.0,
        0.0
       ],
-      "ks": [
+      "alphas": [
        0.0,
        0.0,
-       3.0,
+       0.75,
        0.0
       ]
      },
@@ -9091,7 +9132,7 @@
     },
     "latency/DR1.0": {
      "config": {
-      "kind": "pd",
+      "kind": "pda",
       "prune_keep": [
        197,
        197,
@@ -9120,9 +9161,6 @@
        197,
        3
       ],
-      "k": {
-       "7": 3.0
-      },
       "groups": {
        "7": [
         1,
@@ -9141,7 +9179,11 @@
       },
       "rank": 32,
       "triton": true,
-      "fuse_merge": true
+      "fuse_merge": true,
+      "base": "pd",
+      "alpha": {
+       "7": 0.75
+      }
      },
      "state": {
       "sites": [
@@ -9156,8 +9198,8 @@
        1.0,
        0.0
       ],
-      "ks": [
-       3.0,
+      "alphas": [
+       0.75,
        0.0
       ]
      },
@@ -9173,7 +9215,7 @@
     },
     "latency_gmac/DR1.0": {
      "config": {
-      "kind": "pd",
+      "kind": "pda",
       "prune_keep": [
        197,
        197,
@@ -9202,10 +9244,6 @@
        197,
        3
       ],
-      "k": {
-       "6": 1.0,
-       "7": 2.0
-      },
       "groups": {
        "6": [
         1,
@@ -9241,7 +9279,12 @@
       },
       "rank": 32,
       "triton": true,
-      "fuse_merge": true
+      "fuse_merge": true,
+      "base": "pd",
+      "alpha": {
+       "6": 0.5,
+       "7": 0.6666666666666666
+      }
      },
      "state": {
       "sites": [
@@ -9262,10 +9305,10 @@
        1.0,
        0.0
       ],
-      "ks": [
+      "alphas": [
        0.0,
-       1.0,
-       2.0,
+       0.5,
+       0.6666666666666666,
        0.0
       ]
      },
@@ -9281,7 +9324,7 @@
     },
     "DR0.6": {
      "config": {
-      "kind": "pd",
+      "kind": "pda",
       "prune_keep": [
        197,
        196,
@@ -9310,11 +9353,12 @@
        37,
        3
       ],
-      "k": {},
       "groups": {},
       "rank": null,
       "triton": true,
-      "fuse_merge": true
+      "fuse_merge": true,
+      "base": "pd",
+      "alpha": {}
      },
      "state": null,
      "meta": {
@@ -9323,7 +9367,7 @@
     },
     "DR0.7": {
      "config": {
-      "kind": "pd",
+      "kind": "pda",
       "prune_keep": [
        197,
        196,
@@ -9352,11 +9396,12 @@
        49,
        3
       ],
-      "k": {},
       "groups": {},
       "rank": null,
       "triton": true,
-      "fuse_merge": true
+      "fuse_merge": true,
+      "base": "pd",
+      "alpha": {}
      },
      "state": null,
      "meta": {
@@ -9365,7 +9410,7 @@
     },
     "DR0.8": {
      "config": {
-      "kind": "pd",
+      "kind": "pda",
       "prune_keep": [
        197,
        197,
@@ -9394,11 +9439,12 @@
        70,
        3
       ],
-      "k": {},
       "groups": {},
       "rank": null,
       "triton": true,
-      "fuse_merge": true
+      "fuse_merge": true,
+      "base": "pd",
+      "alpha": {}
      },
      "state": null,
      "meta": {
@@ -9407,7 +9453,7 @@
     },
     "DR0.9": {
      "config": {
-      "kind": "pd",
+      "kind": "pda",
       "prune_keep": [
        197,
        197,
@@ -9436,11 +9482,12 @@
        96,
        3
       ],
-      "k": {},
       "groups": {},
       "rank": null,
       "triton": true,
-      "fuse_merge": true
+      "fuse_merge": true,
+      "base": "pd",
+      "alpha": {}
      },
      "state": null,
      "meta": {
@@ -9449,7 +9496,7 @@
     },
     "DR1.0": {
      "config": {
-      "kind": "pd",
+      "kind": "pda",
       "prune_keep": [
        197,
        197,
@@ -9478,11 +9525,12 @@
        125,
        21
       ],
-      "k": {},
       "groups": {},
       "rank": null,
       "triton": true,
-      "fuse_merge": true
+      "fuse_merge": true,
+      "base": "pd",
+      "alpha": {}
      },
      "state": null,
      "meta": {
@@ -9883,7 +9931,7 @@
     },
     "latency/extra2": {
      "config": {
-      "kind": "pd",
+      "kind": "pda",
       "prune_keep": [
        197,
        172,
@@ -9912,10 +9960,6 @@
        197,
        3
       ],
-      "k": {
-       "1": 3.0,
-       "3": 1.0
-      },
       "groups": {
        "1": [
         9,
@@ -10032,7 +10076,12 @@
       },
       "rank": 32,
       "triton": true,
-      "fuse_merge": true
+      "fuse_merge": true,
+      "base": "pd",
+      "alpha": {
+       "1": 0.75,
+       "3": 0.5
+      }
      },
      "state": {
       "sites": [
@@ -10053,9 +10102,9 @@
        1.0,
        0.0
       ],
-      "ks": [
-       3.0,
-       1.0,
+      "alphas": [
+       0.75,
+       0.5,
        0.0,
        0.0
       ]
@@ -10072,7 +10121,7 @@
     },
     "latency/extra1": {
      "config": {
-      "kind": "pd",
+      "kind": "pda",
       "prune_keep": [
        197,
        175,
@@ -10101,9 +10150,6 @@
        197,
        4
       ],
-      "k": {
-       "1": 3.0
-      },
       "groups": {
        "1": [
         9,
@@ -10170,7 +10216,11 @@
       },
       "rank": 32,
       "triton": true,
-      "fuse_merge": true
+      "fuse_merge": true,
+      "base": "pd",
+      "alpha": {
+       "1": 0.75
+      }
      },
      "state": {
       "sites": [
@@ -10191,8 +10241,8 @@
        1.0,
        0.0
       ],
-      "ks": [
-       3.0,
+      "alphas": [
+       0.75,
        0.0,
        0.0,
        0.0
@@ -10210,7 +10260,7 @@
     },
     "latency/DR2.3": {
      "config": {
-      "kind": "pd",
+      "kind": "pda",
       "prune_keep": [
        197,
        197,
@@ -10239,10 +10289,6 @@
        197,
        4
       ],
-      "k": {
-       "2": 1.0,
-       "4": 1.0
-      },
       "groups": {
        "2": [
         10,
@@ -10347,7 +10393,12 @@
       },
       "rank": 32,
       "triton": true,
-      "fuse_merge": true
+      "fuse_merge": true,
+      "base": "pd",
+      "alpha": {
+       "2": 0.5,
+       "4": 0.5
+      }
      },
      "state": {
       "sites": [
@@ -10368,9 +10419,9 @@
        1.0,
        0.0
       ],
-      "ks": [
-       1.0,
-       1.0,
+      "alphas": [
+       0.5,
+       0.5,
        0.0,
        0.0
       ]
@@ -10387,7 +10438,7 @@
     },
     "latency_gmac/DR2.3": {
      "config": {
-      "kind": "pd",
+      "kind": "pda",
       "prune_keep": [
        197,
        174,
@@ -10416,12 +10467,6 @@
        197,
        3
       ],
-      "k": {
-       "1": 2.0,
-       "2": 1.0,
-       "4": 1.0,
-       "5": 1.0
-      },
       "groups": {
        "1": [
         9,
@@ -10626,7 +10671,14 @@
       },
       "rank": 32,
       "triton": true,
-      "fuse_merge": true
+      "fuse_merge": true,
+      "base": "pd",
+      "alpha": {
+       "1": 0.6666666666666666,
+       "2": 0.5,
+       "4": 0.5,
+       "5": 0.5
+      }
      },
      "state": {
       "sites": [
@@ -10656,12 +10708,12 @@
        1.0,
        0.0
       ],
-      "ks": [
-       2.0,
-       1.0,
+      "alphas": [
+       0.6666666666666666,
+       0.5,
        0.0,
-       1.0,
-       1.0,
+       0.5,
+       0.5,
        0.0,
        0.0
       ]
@@ -10678,7 +10730,7 @@
     },
     "latency/DR2.5": {
      "config": {
-      "kind": "pd",
+      "kind": "pda",
       "prune_keep": [
        197,
        197,
@@ -10707,9 +10759,6 @@
        197,
        3
       ],
-      "k": {
-       "5": 1.0
-      },
       "groups": {
        "5": [
         7,
@@ -10752,7 +10801,11 @@
       },
       "rank": 32,
       "triton": true,
-      "fuse_merge": true
+      "fuse_merge": true,
+      "base": "pd",
+      "alpha": {
+       "5": 0.5
+      }
      },
      "state": {
       "sites": [
@@ -10770,9 +10823,9 @@
        1.0,
        0.0
       ],
-      "ks": [
+      "alphas": [
        0.0,
-       1.0,
+       0.5,
        0.0
       ]
      },
@@ -10788,7 +10841,7 @@
     },
     "latency_gmac/DR2.5": {
      "config": {
-      "kind": "pd",
+      "kind": "pda",
       "prune_keep": [
        197,
        177,
@@ -10817,12 +10870,6 @@
        197,
        6
       ],
-      "k": {
-       "1": 2.0,
-       "2": 1.0,
-       "4": 1.0,
-       "5": 1.0
-      },
       "groups": {
        "1": [
         9,
@@ -11027,7 +11074,14 @@
       },
       "rank": 32,
       "triton": true,
-      "fuse_merge": true
+      "fuse_merge": true,
+      "base": "pd",
+      "alpha": {
+       "1": 0.6666666666666666,
+       "2": 0.5,
+       "4": 0.5,
+       "5": 0.5
+      }
      },
      "state": {
       "sites": [
@@ -11057,12 +11111,12 @@
        1.0,
        0.0
       ],
-      "ks": [
-       2.0,
-       1.0,
+      "alphas": [
+       0.6666666666666666,
+       0.5,
        0.0,
-       1.0,
-       1.0,
+       0.5,
+       0.5,
        0.0,
        0.0
       ]
@@ -11079,7 +11133,7 @@
     },
     "latency/DR2.7": {
      "config": {
-      "kind": "pd",
+      "kind": "pda",
       "prune_keep": [
        197,
        197,
@@ -11108,9 +11162,6 @@
        197,
        3
       ],
-      "k": {
-       "5": 2.0
-      },
       "groups": {
        "5": [
         7,
@@ -11153,7 +11204,11 @@
       },
       "rank": 32,
       "triton": true,
-      "fuse_merge": true
+      "fuse_merge": true,
+      "base": "pd",
+      "alpha": {
+       "5": 0.6666666666666666
+      }
      },
      "state": {
       "sites": [
@@ -11174,9 +11229,9 @@
        1.0,
        0.0
       ],
-      "ks": [
+      "alphas": [
        0.0,
-       2.0,
+       0.6666666666666666,
        0.0,
        0.0
       ]
@@ -11193,7 +11248,7 @@
     },
     "latency_gmac/DR2.7": {
      "config": {
-      "kind": "pd",
+      "kind": "pda",
       "prune_keep": [
        197,
        197,
@@ -11222,9 +11277,6 @@
        197,
        3
       ],
-      "k": {
-       "4": 1.0
-      },
       "groups": {
        "4": [
         13,
@@ -11273,7 +11325,11 @@
       },
       "rank": 32,
       "triton": true,
-      "fuse_merge": true
+      "fuse_merge": true,
+      "base": "pd",
+      "alpha": {
+       "4": 0.5
+      }
      },
      "state": {
       "sites": [
@@ -11294,9 +11350,9 @@
        1.0,
        0.0
       ],
-      "ks": [
+      "alphas": [
        0.0,
-       1.0,
+       0.5,
        0.0,
        0.0
       ]
@@ -11313,7 +11369,7 @@
     },
     "latency/DR2.9": {
      "config": {
-      "kind": "pd",
+      "kind": "pda",
       "prune_keep": [
        197,
        197,
@@ -11342,9 +11398,6 @@
        197,
        3
       ],
-      "k": {
-       "6": 3.0
-      },
       "groups": {
        "6": [
         1,
@@ -11381,7 +11434,11 @@
       },
       "rank": 32,
       "triton": true,
-      "fuse_merge": true
+      "fuse_merge": true,
+      "base": "pd",
+      "alpha": {
+       "6": 0.75
+      }
      },
      "state": {
       "sites": [
@@ -11399,9 +11456,9 @@
        1.0,
        0.0
       ],
-      "ks": [
+      "alphas": [
        0.0,
-       3.0,
+       0.75,
        0.0
       ]
      },
@@ -11417,7 +11474,7 @@
     },
     "latency_gmac/DR2.9": {
      "config": {
-      "kind": "pd",
+      "kind": "pda",
       "prune_keep": [
        197,
        197,
@@ -11446,10 +11503,6 @@
        197,
        3
       ],
-      "k": {
-       "4": 1.0,
-       "6": 3.0
-      },
       "groups": {
        "4": [
         13,
@@ -11530,7 +11583,12 @@
       },
       "rank": 32,
       "triton": true,
-      "fuse_merge": true
+      "fuse_merge": true,
+      "base": "pd",
+      "alpha": {
+       "4": 0.5,
+       "6": 0.75
+      }
      },
      "state": {
       "sites": [
@@ -11551,10 +11609,10 @@
        1.0,
        0.0
       ],
-      "ks": [
+      "alphas": [
        0.0,
-       1.0,
-       3.0,
+       0.5,
+       0.75,
        0.0
       ]
      },
@@ -11570,7 +11628,7 @@
     },
     "latency/DR3.1": {
      "config": {
-      "kind": "pd",
+      "kind": "pda",
       "prune_keep": [
        197,
        197,
@@ -11599,9 +11657,6 @@
        197,
        3
       ],
-      "k": {
-       "6": 3.0
-      },
       "groups": {
        "6": [
         1,
@@ -11638,7 +11693,11 @@
       },
       "rank": 32,
       "triton": true,
-      "fuse_merge": true
+      "fuse_merge": true,
+      "base": "pd",
+      "alpha": {
+       "6": 0.75
+      }
      },
      "state": {
       "sites": [
@@ -11656,9 +11715,9 @@
        1.0,
        0.0
       ],
-      "ks": [
+      "alphas": [
        0.0,
-       3.0,
+       0.75,
        0.0
       ]
      },
@@ -11674,7 +11733,7 @@
     },
     "latency_gmac/DR3.1": {
      "config": {
-      "kind": "pd",
+      "kind": "pda",
       "prune_keep": [
        197,
        197,
@@ -11703,9 +11762,6 @@
        197,
        3
       ],
-      "k": {
-       "6": 3.0
-      },
       "groups": {
        "6": [
         1,
@@ -11742,7 +11798,11 @@
       },
       "rank": 32,
       "triton": true,
-      "fuse_merge": true
+      "fuse_merge": true,
+      "base": "pd",
+      "alpha": {
+       "6": 0.75
+      }
      },
      "state": {
       "sites": [
@@ -11760,9 +11820,9 @@
        1.0,
        0.0
       ],
-      "ks": [
+      "alphas": [
        0.0,
-       3.0,
+       0.75,
        0.0
       ]
      },
@@ -11778,7 +11838,7 @@
     },
     "DR2.3": {
      "config": {
-      "kind": "pd",
+      "kind": "pda",
       "prune_keep": [
        197,
        192,
@@ -11807,11 +11867,12 @@
        31,
        3
       ],
-      "k": {},
       "groups": {},
       "rank": null,
       "triton": true,
-      "fuse_merge": true
+      "fuse_merge": true,
+      "base": "pd",
+      "alpha": {}
      },
      "state": null,
      "meta": {
@@ -11820,7 +11881,7 @@
     },
     "DR2.5": {
      "config": {
-      "kind": "pd",
+      "kind": "pda",
       "prune_keep": [
        197,
        192,
@@ -11849,11 +11910,12 @@
        37,
        3
       ],
-      "k": {},
       "groups": {},
       "rank": null,
       "triton": true,
-      "fuse_merge": true
+      "fuse_merge": true,
+      "base": "pd",
+      "alpha": {}
      },
      "state": null,
      "meta": {
@@ -11862,7 +11924,7 @@
     },
     "DR2.7": {
      "config": {
-      "kind": "pd",
+      "kind": "pda",
       "prune_keep": [
        197,
        196,
@@ -11891,11 +11953,12 @@
        45,
        3
       ],
-      "k": {},
       "groups": {},
       "rank": null,
       "triton": true,
-      "fuse_merge": true
+      "fuse_merge": true,
+      "base": "pd",
+      "alpha": {}
      },
      "state": null,
      "meta": {
@@ -11904,7 +11967,7 @@
     },
     "DR2.9": {
      "config": {
-      "kind": "pd",
+      "kind": "pda",
       "prune_keep": [
        197,
        196,
@@ -11933,11 +11996,12 @@
        56,
        3
       ],
-      "k": {},
       "groups": {},
       "rank": null,
       "triton": true,
-      "fuse_merge": true
+      "fuse_merge": true,
+      "base": "pd",
+      "alpha": {}
      },
      "state": null,
      "meta": {
@@ -11946,7 +12010,7 @@
     },
     "DR3.1": {
      "config": {
-      "kind": "pd",
+      "kind": "pda",
       "prune_keep": [
        197,
        197,
@@ -11975,11 +12039,12 @@
        68,
        3
       ],
-      "k": {},
       "groups": {},
       "rank": null,
       "triton": true,
-      "fuse_merge": true
+      "fuse_merge": true,
+      "base": "pd",
+      "alpha": {}
      },
      "state": null,
      "meta": {
@@ -12380,7 +12445,7 @@
     },
     "latency/dense0.5": {
      "config": {
-      "kind": "pd",
+      "kind": "pda",
       "prune_keep": [
        197,
        97,
@@ -12409,9 +12474,6 @@
        197,
        3
       ],
-      "k": {
-       "8": 2.0
-      },
       "groups": {
        "8": [
         16,
@@ -12436,7 +12498,11 @@
       },
       "rank": 32,
       "triton": true,
-      "fuse_merge": true
+      "fuse_merge": true,
+      "base": "pd",
+      "alpha": {
+       "8": 0.6666666666666666
+      }
      },
      "state": {
       "sites": [
@@ -12457,10 +12523,10 @@
        0.5,
        0.0
       ],
-      "ks": [
+      "alphas": [
        0.0,
        0.0,
-       2.0,
+       0.6666666666666666,
        0.0
       ]
      },
@@ -12476,7 +12542,7 @@
     },
     "latency/dense0.56": {
      "config": {
-      "kind": "pd",
+      "kind": "pda",
       "prune_keep": [
        197,
        126,
@@ -12505,11 +12571,6 @@
        197,
        3
       ],
-      "k": {
-       "3": 3.0,
-       "6": 1.0,
-       "9": 3.0
-      },
       "groups": {
        "3": [
         10,
@@ -12610,7 +12671,13 @@
       },
       "rank": 32,
       "triton": true,
-      "fuse_merge": true
+      "fuse_merge": true,
+      "base": "pd",
+      "alpha": {
+       "3": 0.75,
+       "6": 0.5,
+       "9": 0.75
+      }
      },
      "state": {
       "sites": [
@@ -12634,11 +12701,11 @@
        0.5,
        0.0
       ],
-      "ks": [
+      "alphas": [
        0.0,
-       3.0,
-       1.0,
-       3.0,
+       0.75,
+       0.5,
+       0.75,
        0.0
       ]
      },
@@ -12654,7 +12721,7 @@
     },
     "latency/dense0.62": {
      "config": {
-      "kind": "pd",
+      "kind": "pda",
       "prune_keep": [
        197,
        145,
@@ -12683,10 +12750,6 @@
        197,
        3
       ],
-      "k": {
-       "3": 3.0,
-       "6": 1.0
-      },
       "groups": {
        "3": [
         10,
@@ -12773,7 +12836,12 @@
       },
       "rank": 32,
       "triton": true,
-      "fuse_merge": true
+      "fuse_merge": true,
+      "base": "pd",
+      "alpha": {
+       "3": 0.75,
+       "6": 0.5
+      }
      },
      "state": {
       "sites": [
@@ -12794,10 +12862,10 @@
        1.0,
        0.0
       ],
-      "ks": [
+      "alphas": [
        0.0,
-       3.0,
-       1.0,
+       0.75,
+       0.5,
        0.0
       ]
      },
@@ -12813,7 +12881,7 @@
     },
     "latency/dense0.68": {
      "config": {
-      "kind": "pd",
+      "kind": "pda",
       "prune_keep": [
        197,
        197,
@@ -12842,12 +12910,6 @@
        197,
        3
       ],
-      "k": {
-       "2": 1.0,
-       "3": 3.0,
-       "6": 1.0,
-       "8": 3.0
-      },
       "groups": {
        "2": [
         10,
@@ -13010,7 +13072,14 @@
       },
       "rank": 32,
       "triton": true,
-      "fuse_merge": true
+      "fuse_merge": true,
+      "base": "pd",
+      "alpha": {
+       "2": 0.5,
+       "3": 0.75,
+       "6": 0.5,
+       "8": 0.75
+      }
      },
      "state": {
       "sites": [
@@ -13034,11 +13103,11 @@
        1.0,
        0.0
       ],
-      "ks": [
-       1.0,
-       3.0,
-       1.0,
-       3.0,
+      "alphas": [
+       0.5,
+       0.75,
+       0.5,
+       0.75,
        0.0
       ]
      },
@@ -13054,7 +13123,7 @@
     },
     "latency/dense0.74": {
      "config": {
-      "kind": "pd",
+      "kind": "pda",
       "prune_keep": [
        197,
        197,
@@ -13083,10 +13152,6 @@
        197,
        3
       ],
-      "k": {
-       "3": 2.0,
-       "6": 1.0
-      },
       "groups": {
        "3": [
         10,
@@ -13173,7 +13238,12 @@
       },
       "rank": 32,
       "triton": true,
-      "fuse_merge": true
+      "fuse_merge": true,
+      "base": "pd",
+      "alpha": {
+       "3": 0.6666666666666666,
+       "6": 0.5
+      }
      },
      "state": {
       "sites": [
@@ -13191,9 +13261,9 @@
        1.0,
        0.0
       ],
-      "ks": [
-       2.0,
-       1.0,
+      "alphas": [
+       0.6666666666666666,
+       0.5,
        0.0
       ]
      },
@@ -13209,7 +13279,7 @@
     },
     "latency/dense0.8": {
      "config": {
-      "kind": "pd",
+      "kind": "pda",
       "prune_keep": [
        197,
        197,
@@ -13238,11 +13308,6 @@
        197,
        3
       ],
-      "k": {
-       "3": 1.0,
-       "6": 1.0,
-       "8": 1.0
-      },
       "groups": {
        "3": [
         10,
@@ -13349,7 +13414,13 @@
       },
       "rank": 32,
       "triton": true,
-      "fuse_merge": true
+      "fuse_merge": true,
+      "base": "pd",
+      "alpha": {
+       "3": 0.5,
+       "6": 0.5,
+       "8": 0.5
+      }
      },
      "state": {
       "sites": [
@@ -13370,10 +13441,10 @@
        1.0,
        0.0
       ],
-      "ks": [
-       1.0,
-       1.0,
-       1.0,
+      "alphas": [
+       0.5,
+       0.5,
+       0.5,
        0.0
       ]
      },
@@ -13389,7 +13460,7 @@
     },
     "latency/dense0.86": {
      "config": {
-      "kind": "pd",
+      "kind": "pda",
       "prune_keep": [
        197,
        197,
@@ -13418,10 +13489,6 @@
        197,
        4
       ],
-      "k": {
-       "3": 1.0,
-       "7": 1.0
-      },
       "groups": {
        "3": [
         10,
@@ -13502,7 +13569,12 @@
       },
       "rank": 32,
       "triton": true,
-      "fuse_merge": true
+      "fuse_merge": true,
+      "base": "pd",
+      "alpha": {
+       "3": 0.5,
+       "7": 0.5
+      }
      },
      "state": {
       "sites": [
@@ -13520,9 +13592,9 @@
        1.0,
        0.0
       ],
-      "ks": [
-       1.0,
-       1.0,
+      "alphas": [
+       0.5,
+       0.5,
        0.0
       ]
      },
@@ -13930,7 +14002,7 @@
     },
     "latency/dense0.5": {
      "config": {
-      "kind": "pd",
+      "kind": "pda",
       "prune_keep": [
        197,
        123,
@@ -13959,10 +14031,6 @@
        197,
        3
       ],
-      "k": {
-       "1": 3.0,
-       "3": 2.0
-      },
       "groups": {
        "1": [
         6,
@@ -14187,7 +14255,12 @@
       },
       "rank": 32,
       "triton": true,
-      "fuse_merge": true
+      "fuse_merge": true,
+      "base": "pd",
+      "alpha": {
+       "1": 0.75,
+       "3": 0.6666666666666666
+      }
      },
      "state": {
       "sites": [
@@ -14211,9 +14284,9 @@
        0.5,
        0.0
       ],
-      "ks": [
-       3.0,
-       2.0,
+      "alphas": [
+       0.75,
+       0.6666666666666666,
        0.0,
        0.0,
        0.0
@@ -14231,7 +14304,7 @@
     },
     "latency/dense0.56": {
      "config": {
-      "kind": "pd",
+      "kind": "pda",
       "prune_keep": [
        197,
        150,
@@ -14260,10 +14333,6 @@
        197,
        3
       ],
-      "k": {
-       "1": 3.0,
-       "3": 1.0
-      },
       "groups": {
        "1": [
         6,
@@ -14488,7 +14557,12 @@
       },
       "rank": 32,
       "triton": true,
-      "fuse_merge": true
+      "fuse_merge": true,
+      "base": "pd",
+      "alpha": {
+       "1": 0.75,
+       "3": 0.5
+      }
      },
      "state": {
       "sites": [
@@ -14512,9 +14586,9 @@
        1.0,
        0.0
       ],
-      "ks": [
-       3.0,
-       1.0,
+      "alphas": [
+       0.75,
+       0.5,
        0.0,
        0.0,
        0.0
@@ -14532,7 +14606,7 @@
     },
     "latency/dense0.62": {
      "config": {
-      "kind": "pd",
+      "kind": "pda",
       "prune_keep": [
        197,
        173,
@@ -14561,10 +14635,6 @@
        197,
        3
       ],
-      "k": {
-       "1": 2.0,
-       "3": 1.0
-      },
       "groups": {
        "1": [
         6,
@@ -14789,7 +14859,12 @@
       },
       "rank": 32,
       "triton": true,
-      "fuse_merge": true
+      "fuse_merge": true,
+      "base": "pd",
+      "alpha": {
+       "1": 0.6666666666666666,
+       "3": 0.5
+      }
      },
      "state": {
       "sites": [
@@ -14810,9 +14885,9 @@
        1.0,
        0.0
       ],
-      "ks": [
-       2.0,
-       1.0,
+      "alphas": [
+       0.6666666666666666,
+       0.5,
        0.0,
        0.0
       ]
@@ -14829,7 +14904,7 @@
     },
     "latency/dense0.68": {
      "config": {
-      "kind": "pd",
+      "kind": "pda",
       "prune_keep": [
        197,
        197,
@@ -14858,10 +14933,6 @@
        197,
        3
       ],
-      "k": {
-       "2": 2.0,
-       "3": 1.0
-      },
       "groups": {
        "2": [
         9,
@@ -15074,7 +15145,12 @@
       },
       "rank": 32,
       "triton": true,
-      "fuse_merge": true
+      "fuse_merge": true,
+      "base": "pd",
+      "alpha": {
+       "2": 0.6666666666666666,
+       "3": 0.5
+      }
      },
      "state": {
       "sites": [
@@ -15098,9 +15174,9 @@
        1.0,
        0.0
       ],
-      "ks": [
-       2.0,
-       1.0,
+      "alphas": [
+       0.6666666666666666,
+       0.5,
        0.0,
        0.0,
        0.0
@@ -15118,7 +15194,7 @@
     },
     "latency/dense0.74": {
      "config": {
-      "kind": "pd",
+      "kind": "pda",
       "prune_keep": [
        197,
        197,
@@ -15147,9 +15223,6 @@
        197,
        3
       ],
-      "k": {
-       "3": 1.0
-      },
       "groups": {
        "3": [
         6,
@@ -15252,7 +15325,11 @@
       },
       "rank": 32,
       "triton": true,
-      "fuse_merge": true
+      "fuse_merge": true,
+      "base": "pd",
+      "alpha": {
+       "3": 0.5
+      }
      },
      "state": {
       "sites": [
@@ -15273,8 +15350,8 @@
        1.0,
        0.0
       ],
-      "ks": [
-       1.0,
+      "alphas": [
+       0.5,
        0.0,
        0.0,
        0.0
@@ -15292,7 +15369,7 @@
     },
     "latency/dense0.8": {
      "config": {
-      "kind": "pd",
+      "kind": "pda",
       "prune_keep": [
        197,
        197,
@@ -15321,10 +15398,6 @@
        197,
        4
       ],
-      "k": {
-       "3": 1.0,
-       "7": 1.0
-      },
       "groups": {
        "3": [
         6,
@@ -15477,7 +15550,12 @@
       },
       "rank": 32,
       "triton": true,
-      "fuse_merge": true
+      "fuse_merge": true,
+      "base": "pd",
+      "alpha": {
+       "3": 0.5,
+       "7": 0.5
+      }
      },
      "state": {
       "sites": [
@@ -15498,9 +15576,9 @@
        1.0,
        0.0
       ],
-      "ks": [
-       1.0,
-       1.0,
+      "alphas": [
+       0.5,
+       0.5,
        0.0,
        0.0
       ]
@@ -15517,7 +15595,7 @@
     },
     "latency/dense0.86": {
      "config": {
-      "kind": "pd",
+      "kind": "pda",
       "prune_keep": [
        197,
        197,
@@ -15546,11 +15624,6 @@
        197,
        3
       ],
-      "k": {
-       "4": 2.0,
-       "5": 1.0,
-       "8": 1.0
-      },
       "groups": {
        "4": [
         6,
@@ -15753,7 +15826,13 @@
       },
       "rank": 32,
       "triton": true,
-      "fuse_merge": true
+      "fuse_merge": true,
+      "base": "pd",
+      "alpha": {
+       "4": 0.6666666666666666,
+       "5": 0.5,
+       "8": 0.5
+      }
      },
      "state": {
       "sites": [
@@ -15774,10 +15853,10 @@
        1.0,
        0.0
       ],
-      "ks": [
-       2.0,
-       1.0,
-       1.0,
+      "alphas": [
+       0.6666666666666666,
+       0.5,
+       0.5,
        0.0
       ]
      },
@@ -16185,7 +16264,7 @@
     },
     "latency/extra2": {
      "config": {
-      "kind": "pd",
+      "kind": "pda",
       "prune_keep": [
        197,
        101,
@@ -16238,10 +16317,6 @@
        197,
        197
       ],
-      "k": {
-       "1": 3.0,
-       "12": 1.0
-      },
       "groups": {
        "1": [
         9,
@@ -16778,7 +16853,12 @@
       },
       "rank": 32,
       "triton": true,
-      "fuse_merge": true
+      "fuse_merge": true,
+      "base": "pd",
+      "alpha": {
+       "1": 0.75,
+       "12": 0.5
+      }
      },
      "state": {
       "sites": [
@@ -16796,9 +16876,9 @@
        1.0,
        1.0
       ],
-      "ks": [
-       3.0,
-       1.0,
+      "alphas": [
+       0.75,
+       0.5,
        0.0
       ]
      },
@@ -16814,7 +16894,7 @@
     },
     "latency/extra1": {
      "config": {
-      "kind": "pd",
+      "kind": "pda",
       "prune_keep": [
        197,
        128,
@@ -16867,12 +16947,6 @@
        197,
        197
       ],
-      "k": {
-       "1": 3.0,
-       "4": 3.0,
-       "12": 1.0,
-       "19": 2.0
-      },
       "groups": {
        "1": [
         9,
@@ -17781,7 +17855,14 @@
       },
       "rank": 32,
       "triton": true,
-      "fuse_merge": true
+      "fuse_merge": true,
+      "base": "pd",
+      "alpha": {
+       "1": 0.75,
+       "4": 0.75,
+       "12": 0.5,
+       "19": 0.6666666666666666
+      }
      },
      "state": {
       "sites": [
@@ -17805,12 +17886,12 @@
        1.0,
        1.0
       ],
-      "ks": [
-       3.0,
-       3.0,
-       1.0,
+      "alphas": [
+       0.75,
+       0.75,
+       0.5,
        0.0,
-       2.0
+       0.6666666666666666
       ]
      },
      "meta": {
@@ -17825,7 +17906,7 @@
     },
     "latency/DR31.0": {
      "config": {
-      "kind": "pd",
+      "kind": "pda",
       "prune_keep": [
        197,
        149,
@@ -17878,14 +17959,6 @@
        197,
        197
       ],
-      "k": {
-       "1": 3.0,
-       "9": 2.0,
-       "10": 2.0,
-       "12": 1.0,
-       "17": 2.0,
-       "20": 1.0
-      },
       "groups": {
        "1": [
         9,
@@ -19006,7 +19079,16 @@
       },
       "rank": 32,
       "triton": true,
-      "fuse_merge": true
+      "fuse_merge": true,
+      "base": "pd",
+      "alpha": {
+       "1": 0.75,
+       "9": 0.6666666666666666,
+       "10": 0.6666666666666666,
+       "12": 0.5,
+       "17": 0.6666666666666666,
+       "20": 0.5
+      }
      },
      "state": {
       "sites": [
@@ -19033,13 +19115,13 @@
        1.0,
        1.0
       ],
-      "ks": [
-       3.0,
-       2.0,
-       2.0,
-       1.0,
-       2.0,
-       1.0
+      "alphas": [
+       0.75,
+       0.6666666666666666,
+       0.6666666666666666,
+       0.5,
+       0.6666666666666666,
+       0.5
       ]
      },
      "meta": {
@@ -19054,7 +19136,7 @@
     },
     "latency_gmac/DR31.0": {
      "config": {
-      "kind": "pd",
+      "kind": "pda",
       "prune_keep": [
        197,
        152,
@@ -19107,14 +19189,6 @@
        197,
        197
       ],
-      "k": {
-       "1": 3.0,
-       "3": 1.0,
-       "10": 2.0,
-       "12": 1.0,
-       "17": 2.0,
-       "20": 1.0
-      },
       "groups": {
        "1": [
         9,
@@ -20331,7 +20405,16 @@
       },
       "rank": 32,
       "triton": true,
-      "fuse_merge": true
+      "fuse_merge": true,
+      "base": "pd",
+      "alpha": {
+       "1": 0.75,
+       "3": 0.5,
+       "10": 0.6666666666666666,
+       "12": 0.5,
+       "17": 0.6666666666666666,
+       "20": 0.5
+      }
      },
      "state": {
       "sites": [
@@ -20358,13 +20441,13 @@
        1.0,
        1.0
       ],
-      "ks": [
-       3.0,
-       1.0,
-       2.0,
-       1.0,
-       2.0,
-       1.0
+      "alphas": [
+       0.75,
+       0.5,
+       0.6666666666666666,
+       0.5,
+       0.6666666666666666,
+       0.5
       ]
      },
      "meta": {
@@ -20379,7 +20462,7 @@
     },
     "latency/DR34.7": {
      "config": {
-      "kind": "pd",
+      "kind": "pda",
       "prune_keep": [
        197,
        197,
@@ -20432,13 +20515,6 @@
        197,
        197
       ],
-      "k": {
-       "3": 3.0,
-       "9": 2.0,
-       "13": 3.0,
-       "16": 2.0,
-       "21": 1.0
-      },
       "groups": {
        "3": [
         11,
@@ -21301,7 +21377,15 @@
       },
       "rank": 32,
       "triton": true,
-      "fuse_merge": true
+      "fuse_merge": true,
+      "base": "pd",
+      "alpha": {
+       "3": 0.75,
+       "9": 0.6666666666666666,
+       "13": 0.75,
+       "16": 0.6666666666666666,
+       "21": 0.5
+      }
      },
      "state": {
       "sites": [
@@ -21328,13 +21412,13 @@
        1.0,
        1.0
       ],
-      "ks": [
-       3.0,
-       2.0,
-       3.0,
-       2.0,
+      "alphas": [
+       0.75,
+       0.6666666666666666,
+       0.75,
+       0.6666666666666666,
        0.0,
-       1.0
+       0.5
       ]
      },
      "meta": {
@@ -21349,7 +21433,7 @@
     },
     "latency_gmac/DR34.7": {
      "config": {
-      "kind": "pd",
+      "kind": "pda",
       "prune_keep": [
        197,
        197,
@@ -21402,14 +21486,6 @@
        197,
        197
       ],
-      "k": {
-       "2": 2.0,
-       "3": 3.0,
-       "9": 2.0,
-       "10": 2.0,
-       "12": 1.0,
-       "21": 1.0
-      },
       "groups": {
        "2": [
         13,
@@ -22722,7 +22798,16 @@
       },
       "rank": 32,
       "triton": true,
-      "fuse_merge": true
+      "fuse_merge": true,
+      "base": "pd",
+      "alpha": {
+       "2": 0.6666666666666666,
+       "3": 0.75,
+       "9": 0.6666666666666666,
+       "10": 0.6666666666666666,
+       "12": 0.5,
+       "21": 0.5
+      }
      },
      "state": {
       "sites": [
@@ -22752,14 +22837,14 @@
        1.0,
        1.0
       ],
-      "ks": [
-       2.0,
-       3.0,
-       2.0,
-       2.0,
-       1.0,
+      "alphas": [
+       0.6666666666666666,
+       0.75,
+       0.6666666666666666,
+       0.6666666666666666,
+       0.5,
        0.0,
-       1.0
+       0.5
       ]
      },
      "meta": {
@@ -22774,7 +22859,7 @@
     },
     "latency/DR38.5": {
      "config": {
-      "kind": "pd",
+      "kind": "pda",
       "prune_keep": [
        197,
        197,
@@ -22827,12 +22912,6 @@
        197,
        197
       ],
-      "k": {
-       "4": 1.0,
-       "9": 2.0,
-       "16": 2.0,
-       "19": 1.0
-      },
       "groups": {
        "4": [
         11,
@@ -23549,7 +23628,14 @@
       },
       "rank": 32,
       "triton": true,
-      "fuse_merge": true
+      "fuse_merge": true,
+      "base": "pd",
+      "alpha": {
+       "4": 0.5,
+       "9": 0.6666666666666666,
+       "16": 0.6666666666666666,
+       "19": 0.5
+      }
      },
      "state": {
       "sites": [
@@ -23573,12 +23659,12 @@
        1.0,
        1.0
       ],
-      "ks": [
-       1.0,
+      "alphas": [
+       0.5,
        0.0,
-       2.0,
-       2.0,
-       1.0
+       0.6666666666666666,
+       0.6666666666666666,
+       0.5
       ]
      },
      "meta": {
@@ -23593,7 +23679,7 @@
     },
     "latency_gmac/DR38.5": {
      "config": {
-      "kind": "pd",
+      "kind": "pda",
       "prune_keep": [
        197,
        197,
@@ -23646,14 +23732,6 @@
        197,
        197
       ],
-      "k": {
-       "4": 1.0,
-       "6": 1.0,
-       "9": 2.0,
-       "13": 3.0,
-       "16": 2.0,
-       "19": 1.0
-      },
       "groups": {
        "4": [
         11,
@@ -24806,7 +24884,16 @@
       },
       "rank": 32,
       "triton": true,
-      "fuse_merge": true
+      "fuse_merge": true,
+      "base": "pd",
+      "alpha": {
+       "4": 0.5,
+       "6": 0.5,
+       "9": 0.6666666666666666,
+       "13": 0.75,
+       "16": 0.6666666666666666,
+       "19": 0.5
+      }
      },
      "state": {
       "sites": [
@@ -24833,13 +24920,13 @@
        1.0,
        1.0
       ],
-      "ks": [
-       1.0,
-       1.0,
-       2.0,
-       3.0,
-       2.0,
-       1.0
+      "alphas": [
+       0.5,
+       0.5,
+       0.6666666666666666,
+       0.75,
+       0.6666666666666666,
+       0.5
       ]
      },
      "meta": {
@@ -24854,7 +24941,7 @@
     },
     "latency/DR42.3": {
      "config": {
-      "kind": "pd",
+      "kind": "pda",
       "prune_keep": [
        197,
        197,
@@ -24907,14 +24994,6 @@
        197,
        197
       ],
-      "k": {
-       "4": 2.0,
-       "7": 2.0,
-       "10": 1.0,
-       "14": 1.0,
-       "17": 2.0,
-       "19": 1.0
-      },
       "groups": {
        "4": [
         11,
@@ -26003,7 +26082,16 @@
       },
       "rank": 32,
       "triton": true,
-      "fuse_merge": true
+      "fuse_merge": true,
+      "base": "pd",
+      "alpha": {
+       "4": 0.6666666666666666,
+       "7": 0.6666666666666666,
+       "10": 0.5,
+       "14": 0.5,
+       "17": 0.6666666666666666,
+       "19": 0.5
+      }
      },
      "state": {
       "sites": [
@@ -26030,13 +26118,13 @@
        1.0,
        1.0
       ],
-      "ks": [
-       2.0,
-       2.0,
-       1.0,
-       1.0,
-       2.0,
-       1.0
+      "alphas": [
+       0.6666666666666666,
+       0.6666666666666666,
+       0.5,
+       0.5,
+       0.6666666666666666,
+       0.5
       ]
      },
      "meta": {
@@ -26051,7 +26139,7 @@
     },
     "latency_gmac/DR42.3": {
      "config": {
-      "kind": "pd",
+      "kind": "pda",
       "prune_keep": [
        197,
        197,
@@ -26104,14 +26192,6 @@
        197,
        197
       ],
-      "k": {
-       "4": 1.0,
-       "10": 1.0,
-       "12": 1.0,
-       "16": 3.0,
-       "18": 2.0,
-       "19": 1.0
-      },
       "groups": {
        "4": [
         11,
@@ -27072,7 +27152,16 @@
       },
       "rank": 32,
       "triton": true,
-      "fuse_merge": true
+      "fuse_merge": true,
+      "base": "pd",
+      "alpha": {
+       "4": 0.5,
+       "10": 0.5,
+       "12": 0.5,
+       "16": 0.75,
+       "18": 0.6666666666666666,
+       "19": 0.5
+      }
      },
      "state": {
       "sites": [
@@ -27099,13 +27188,13 @@
        1.0,
        1.0
       ],
-      "ks": [
-       1.0,
-       1.0,
-       1.0,
-       3.0,
-       2.0,
-       1.0
+      "alphas": [
+       0.5,
+       0.5,
+       0.5,
+       0.75,
+       0.6666666666666666,
+       0.5
       ]
      },
      "meta": {
@@ -27120,7 +27209,7 @@
     },
     "latency/DR46.1": {
      "config": {
-      "kind": "pd",
+      "kind": "pda",
       "prune_keep": [
        197,
        197,
@@ -27173,12 +27262,6 @@
        197,
        197
       ],
-      "k": {
-       "10": 2.0,
-       "14": 1.0,
-       "17": 2.0,
-       "19": 3.0
-      },
       "groups": {
        "10": [
         12,
@@ -27703,7 +27786,14 @@
       },
       "rank": 32,
       "triton": true,
-      "fuse_merge": true
+      "fuse_merge": true,
+      "base": "pd",
+      "alpha": {
+       "10": 0.6666666666666666,
+       "14": 0.5,
+       "17": 0.6666666666666666,
+       "19": 0.75
+      }
      },
      "state": {
       "sites": [
@@ -27727,12 +27817,12 @@
        1.0,
        1.0
       ],
-      "ks": [
-       2.0,
+      "alphas": [
+       0.6666666666666666,
        0.0,
-       1.0,
-       2.0,
-       3.0
+       0.5,
+       0.6666666666666666,
+       0.75
       ]
      },
      "meta": {
@@ -27747,7 +27837,7 @@
     },
     "latency_gmac/DR46.1": {
      "config": {
-      "kind": "pd",
+      "kind": "pda",
       "prune_keep": [
        197,
        197,
@@ -27800,12 +27890,6 @@
        197,
        197
       ],
-      "k": {
-       "9": 2.0,
-       "12": 2.0,
-       "17": 2.0,
-       "19": 1.0
-      },
       "groups": {
        "9": [
         10,
@@ -28378,7 +28462,14 @@
       },
       "rank": 32,
       "triton": true,
-      "fuse_merge": true
+      "fuse_merge": true,
+      "base": "pd",
+      "alpha": {
+       "9": 0.6666666666666666,
+       "12": 0.6666666666666666,
+       "17": 0.6666666666666666,
+       "19": 0.5
+      }
      },
      "state": {
       "sites": [
@@ -28402,12 +28493,12 @@
        1.0,
        1.0
       ],
-      "ks": [
-       2.0,
-       2.0,
+      "alphas": [
+       0.6666666666666666,
+       0.6666666666666666,
        0.0,
-       2.0,
-       1.0
+       0.6666666666666666,
+       0.5
       ]
      },
      "meta": {
@@ -28422,7 +28513,7 @@
     },
     "DR31.0": {
      "config": {
-      "kind": "pd",
+      "kind": "pda",
       "prune_keep": [
        197,
        195,
@@ -28475,11 +28566,12 @@
        14,
        197
       ],
-      "k": {},
       "groups": {},
       "rank": null,
       "triton": true,
-      "fuse_merge": true
+      "fuse_merge": true,
+      "base": "pd",
+      "alpha": {}
      },
      "state": null,
      "meta": {
@@ -28488,7 +28580,7 @@
     },
     "DR34.7": {
      "config": {
-      "kind": "pd",
+      "kind": "pda",
       "prune_keep": [
        197,
        195,
@@ -28541,11 +28633,12 @@
        18,
        197
       ],
-      "k": {},
       "groups": {},
       "rank": null,
       "triton": true,
-      "fuse_merge": true
+      "fuse_merge": true,
+      "base": "pd",
+      "alpha": {}
      },
      "state": null,
      "meta": {
@@ -28554,7 +28647,7 @@
     },
     "DR38.5": {
      "config": {
-      "kind": "pd",
+      "kind": "pda",
       "prune_keep": [
        197,
        197,
@@ -28607,11 +28700,12 @@
        24,
        197
       ],
-      "k": {},
       "groups": {},
       "rank": null,
       "triton": true,
-      "fuse_merge": true
+      "fuse_merge": true,
+      "base": "pd",
+      "alpha": {}
      },
      "state": null,
      "meta": {
@@ -28620,7 +28714,7 @@
     },
     "DR42.3": {
      "config": {
-      "kind": "pd",
+      "kind": "pda",
       "prune_keep": [
        197,
        197,
@@ -28673,11 +28767,12 @@
        32,
        197
       ],
-      "k": {},
       "groups": {},
       "rank": null,
       "triton": true,
-      "fuse_merge": true
+      "fuse_merge": true,
+      "base": "pd",
+      "alpha": {}
      },
      "state": null,
      "meta": {
@@ -28686,7 +28781,7 @@
     },
     "DR46.1": {
      "config": {
-      "kind": "pd",
+      "kind": "pda",
       "prune_keep": [
        197,
        197,
@@ -28739,11 +28834,12 @@
        60,
        197
       ],
-      "k": {},
       "groups": {},
       "rank": null,
       "triton": true,
-      "fuse_merge": true
+      "fuse_merge": true,
+      "base": "pd",
+      "alpha": {}
      },
      "state": null,
      "meta": {

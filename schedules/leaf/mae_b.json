@@ -45,29 +45,25 @@
      "block": 1,
      "tokens_after": 101,
      "theta": 0.0,
-     "alpha": 0.75,
-     "kappa": 3.0
+     "alpha": 0.75
     },
     {
      "block": 2,
      "tokens_after": 77,
      "theta": 0.0,
-     "alpha": 1.0,
-     "kappa": null
+     "alpha": 1.0
     },
     {
      "block": 7,
      "tokens_after": 53,
      "theta": 1.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 9,
      "tokens_after": 29,
      "theta": 1.0,
-     "alpha": 0.5,
-     "kappa": 1.0
+     "alpha": 0.5
     }
    ],
    "config": {
@@ -401,29 +397,25 @@
      "block": 1,
      "tokens_after": 101,
      "theta": 0.0,
-     "alpha": 0.75,
-     "kappa": 3.0
+     "alpha": 0.75
     },
     {
      "block": 2,
      "tokens_after": 77,
      "theta": 0.0,
-     "alpha": 0.75,
-     "kappa": 3.0
+     "alpha": 0.75
     },
     {
      "block": 7,
      "tokens_after": 53,
      "theta": 1.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 8,
      "tokens_after": 29,
      "theta": 1.0,
-     "alpha": 0.75,
-     "kappa": 3.0
+     "alpha": 0.75
     }
    ],
    "config": {
@@ -742,7 +734,7 @@
      "8": 0.75
     }
    },
-   "evaluated_config_sha": "9adeab48c28a8612",
+   "evaluated_config_sha": "93f8f09bf4966bea",
    "planner": {
     "gmac": 6.740677632000001
    },
@@ -765,22 +757,19 @@
      "block": 1,
      "tokens_after": 100,
      "theta": 0.0,
-     "alpha": 0.75,
-     "kappa": 3.0
+     "alpha": 0.75
     },
     {
      "block": 7,
      "tokens_after": 52,
      "theta": 1.0,
-     "alpha": 0.25,
-     "kappa": 0.3333333333333333
+     "alpha": 0.25
     },
     {
      "block": 10,
      "tokens_after": 28,
      "theta": 1.0,
-     "alpha": 0.25,
-     "kappa": 0.3333333333333333
+     "alpha": 0.25
     }
    ],
    "config": {
@@ -1042,36 +1031,31 @@
      "block": 1,
      "tokens_after": 131,
      "theta": 0.0,
-     "alpha": 0.75,
-     "kappa": 3.0
+     "alpha": 0.75
     },
     {
      "block": 2,
      "tokens_after": 101,
      "theta": 0.0,
-     "alpha": 0.75,
-     "kappa": 3.0
+     "alpha": 0.75
     },
     {
      "block": 6,
      "tokens_after": 74,
      "theta": 1.0,
-     "alpha": 0.5,
-     "kappa": 1.0
+     "alpha": 0.5
     },
     {
      "block": 7,
      "tokens_after": 50,
      "theta": 1.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 9,
      "tokens_after": 29,
      "theta": 1.0,
-     "alpha": 0.5,
-     "kappa": 1.0
+     "alpha": 0.5
     }
    ],
    "config": {
@@ -1441,7 +1425,7 @@
      "9": 0.5
     }
    },
-   "evaluated_config_sha": "d5eb7e0566b2b152",
+   "evaluated_config_sha": "9575e5b951c9f6cc",
    "planner": {
     "gmac": 7.780855296000001
    },
@@ -1464,22 +1448,19 @@
      "block": 1,
      "tokens_after": 152,
      "theta": 0.0,
-     "alpha": 0.75,
-     "kappa": 3.0
+     "alpha": 0.75
     },
     {
      "block": 2,
      "tokens_after": 105,
      "theta": 0.0,
-     "alpha": 0.75,
-     "kappa": 3.0
+     "alpha": 0.75
     },
     {
      "block": 7,
      "tokens_after": 57,
      "theta": 1.0,
-     "alpha": 0.25,
-     "kappa": 0.3333333333333333
+     "alpha": 0.25
     }
    ],
    "config": {
@@ -1837,43 +1818,37 @@
      "block": 1,
      "tokens_after": 149,
      "theta": 0.0,
-     "alpha": 0.75,
-     "kappa": 3.0
+     "alpha": 0.75
     },
     {
      "block": 2,
      "tokens_after": 125,
      "theta": 0.0,
-     "alpha": 0.75,
-     "kappa": 3.0
+     "alpha": 0.75
     },
     {
      "block": 5,
      "tokens_after": 101,
      "theta": 1.0,
-     "alpha": 0.6666666666666666,
-     "kappa": 2.0
+     "alpha": 0.6666666666666666
     },
     {
      "block": 6,
      "tokens_after": 77,
      "theta": 1.0,
-     "alpha": 0.5,
-     "kappa": 1.0
+     "alpha": 0.5
     },
     {
      "block": 7,
      "tokens_after": 53,
      "theta": 1.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 10,
      "tokens_after": 29,
      "theta": 1.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     }
    ],
    "config": {
@@ -2291,7 +2266,7 @@
      "6": 0.5
     }
    },
-   "evaluated_config_sha": "8a3ed78db7fd888a",
+   "evaluated_config_sha": "c0e8d83853b07da0",
    "planner": {
     "gmac": 8.691944448000001
    },
@@ -2314,29 +2289,25 @@
      "block": 1,
      "tokens_after": 151,
      "theta": 0.0,
-     "alpha": 0.75,
-     "kappa": 3.0
+     "alpha": 0.75
     },
     {
      "block": 2,
      "tokens_after": 127,
      "theta": 0.0,
-     "alpha": 0.75,
-     "kappa": 3.0
+     "alpha": 0.75
     },
     {
      "block": 7,
      "tokens_after": 80,
      "theta": 1.0,
-     "alpha": 0.3333333333333333,
-     "kappa": 0.5
+     "alpha": 0.3333333333333333
     },
     {
      "block": 9,
      "tokens_after": 56,
      "theta": 1.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     }
    ],
    "config": {
@@ -2694,29 +2665,25 @@
      "block": 1,
      "tokens_after": 149,
      "theta": 0.0,
-     "alpha": 0.75,
-     "kappa": 3.0
+     "alpha": 0.75
     },
     {
      "block": 2,
      "tokens_after": 125,
      "theta": 0.0,
-     "alpha": 0.75,
-     "kappa": 3.0
+     "alpha": 0.75
     },
     {
      "block": 7,
      "tokens_after": 77,
      "theta": 1.0,
-     "alpha": 0.5,
-     "kappa": 1.0
+     "alpha": 0.5
     },
     {
      "block": 9,
      "tokens_after": 53,
      "theta": 1.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     }
    ],
    "config": {
@@ -3047,7 +3014,7 @@
      "7": 0.5
     }
    },
-   "evaluated_config_sha": "5b776a137b06e9f4",
+   "evaluated_config_sha": "b9173705ad4c1e0a",
    "planner": {
     "gmac": 9.857344512000001
    },
@@ -3070,15 +3037,13 @@
      "block": 2,
      "tokens_after": 125,
      "theta": 0.0,
-     "alpha": 0.75,
-     "kappa": 3.0
+     "alpha": 0.75
     },
     {
      "block": 7,
      "tokens_after": 77,
      "theta": 1.0,
-     "alpha": 0.3333333333333333,
-     "kappa": 0.5
+     "alpha": 0.3333333333333333
     }
    ],
    "config": {
@@ -3313,29 +3278,25 @@
      "block": 1,
      "tokens_after": 149,
      "theta": 0.0,
-     "alpha": 0.75,
-     "kappa": 3.0
+     "alpha": 0.75
     },
     {
      "block": 5,
      "tokens_after": 125,
      "theta": 1.0,
-     "alpha": 0.75,
-     "kappa": 3.0
+     "alpha": 0.75
     },
     {
      "block": 7,
      "tokens_after": 77,
      "theta": 1.0,
-     "alpha": 0.5,
-     "kappa": 1.0
+     "alpha": 0.5
     },
     {
      "block": 9,
      "tokens_after": 53,
      "theta": 1.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     }
    ],
    "config": {
@@ -3630,7 +3591,7 @@
      "7": 0.5
     }
    },
-   "evaluated_config_sha": "b716472f82235e9b",
+   "evaluated_config_sha": "2b5653b58a883f4e",
    "planner": {
     "gmac": 10.399613952
    },
@@ -3653,15 +3614,13 @@
      "block": 2,
      "tokens_after": 151,
      "theta": 0.0,
-     "alpha": 0.3333333333333333,
-     "kappa": 0.5
+     "alpha": 0.3333333333333333
     },
     {
      "block": 7,
      "tokens_after": 81,
      "theta": 1.0,
-     "alpha": 0.3333333333333333,
-     "kappa": 0.5
+     "alpha": 0.3333333333333333
     }
    ],
    "config": {
@@ -3896,36 +3855,31 @@
      "block": 2,
      "tokens_after": 149,
      "theta": 0.0,
-     "alpha": 0.5,
-     "kappa": 1.0
+     "alpha": 0.5
     },
     {
      "block": 6,
      "tokens_after": 125,
      "theta": 1.0,
-     "alpha": 0.5,
-     "kappa": 1.0
+     "alpha": 0.5
     },
     {
      "block": 7,
      "tokens_after": 101,
      "theta": 1.0,
-     "alpha": 0.5,
-     "kappa": 1.0
+     "alpha": 0.5
     },
     {
      "block": 8,
      "tokens_after": 77,
      "theta": 1.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 10,
      "tokens_after": 69,
      "theta": 1.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     }
    ],
    "config": {
@@ -4196,7 +4150,7 @@
      "7": 0.5
     }
    },
-   "evaluated_config_sha": "3b888436ae12e010",
+   "evaluated_config_sha": "5c7191f4bd298a6c",
    "planner": {
     "gmac": 11.487661056
    },

@@ -1,4 +1,4 @@
-"""Additive experimental PD wrapper: legacy ReductionConfig and ReducedViT stay unchanged."""
+"""Merge-variant wrapper of the ablations: ReducedViT with a configurable merge operator (generic kernels)."""
 from dataclasses import dataclass, field
 
 import torch
@@ -23,7 +23,7 @@ class MergeVariantConfig(ReductionConfig):
             raise ValueError(f'unknown merge mode: {self.merge["mode"]}')
 
 
-def score_and_forecast(future, x, size, raw_p, k):
+def score_and_forecast(future, x, size, raw_p, alpha):
     """Reuse D's group token-side vectors for both ranking and N2.
 
     Scalar λ is the mean group logit weighted by group head counts. Padded
@@ -38,8 +38,8 @@ def score_and_forecast(future, x, size, raw_p, k):
         else:
             t = torch.addmm(future.A[c], cls, future.A[:c]).view(b, -1, future.rank)
             u = torch.bmm(t.transpose(0, 1), future.Bf).transpose(0, 1)
-        from leaf.forecast.kernels.kappa_score import zscored_future
-        score = zscored_future(x, size, u, future.log_count, future.H, future.eps, raw_p, k)
+        from leaf.forecast.kernels.station_score import zscored_future
+        score = zscored_future(x, size, u, future.log_count, future.H, future.eps, raw_p, alpha)
     else:
         aug = torch.cat((cls, cls.new_ones(b, 1)), -1)
         u = (aug @ future.U).view(b, -1, c)
@@ -48,21 +48,24 @@ def score_and_forecast(future, x, size, raw_p, k):
         d = (logits.log_softmax(1) + future.log_count).logsumexp(-1)
         # Constant -log H cancels under zscore, but keep the legacy operation.
         import math
-        score = k * zscore(d - math.log(future.H), 1) + zscore(raw_p.clamp_min(1e-12).log(), 1)
+        score = alpha * zscore(d - math.log(future.H), 1)
+        if alpha < 1: score = score + (1. - alpha) * zscore(raw_p.clamp_min(1e-12).log(), 1)
     counts = future.log_count.exp()
     a = (u.float() * (counts / counts.sum())[None, :, None]).sum(1)
     return score, (a, future.eps)
 
 
 class MergeVariantViT(ReducedViT):
-    def forward(self, img):
+    def forward(self, img, start=0, stop=None):
         mode = self.cfg.merge['mode']
         if mode == 'M0':
-            return super().forward(img)
+            return super().forward(img, start, stop)
         cfg = self.cfg
-        x = self.embed(img)
+        x = self.embed(img) if start == 0 else img
         size = x.new_ones(x.shape[0], x.shape[1], 1)
         for l, block in enumerate(self.blocks):
+            if l < start: continue
+            if l == stop: return x
             keys = None
             if mode.startswith('M2') and l in self.stations:
                 out, raw_p, keys = cls_attention_with_keys(block, block.norm1(x), None if l == 0 else size)
@@ -72,7 +75,7 @@ class MergeVariantViT(ReducedViT):
             if l in self.stations:
                 forecast = None
                 if 'N2' in mode and str(l) in self.future:
-                    score, forecast = score_and_forecast(self.future[str(l)], x, size, raw_p, cfg.k[str(l)])
+                    score, forecast = score_and_forecast(self.future[str(l)], x, size, raw_p, cfg.alpha[str(l)])
                 else:
                     score = self.score(l, x, size, raw_p)
                 y, size, order, destination = compress_variant(x, size, score, cfg.prune_keep[l], cfg.merge_keep[l],

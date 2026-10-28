@@ -37,7 +37,7 @@ def main():
               f'{(cx - rx).abs().max():.1e} {(cs - rs).abs().max():.1e}')
     vit, spec = load('deit_b'); img = torch.randn(4, 3, 224, 224, device='cuda')
     T, D = spec.n_tokens, spec.depth
-    keep_all = dict(kind='pd', prune_keep=[T] * D, merge_keep=[T] * D, k={}, groups={}, rank=None, triton=True, fuse_merge=True)
+    keep_all = dict(kind='pda', base='pd', prune_keep=[T] * D, merge_keep=[T] * D, alpha={}, groups={}, rank=None, triton=True, fuse_merge=True)
     with torch.no_grad():
         a, b = vit(img), build(vit, spec, keep_all)(img)
     check('keep-all ReducedViT == dense backbone', torch.allclose(a, b, atol=1e-4), f'{(a - b).abs().max():.1e}')
@@ -46,7 +46,7 @@ def main():
     p = [T, 140, T, 120, T, T, 80, T, T, T, T, 5]; m = [T, 140, T, 100, T, T, 60, T, T, T, T, 5]
     from leaf.planner.schedule_caps import canonical
     g = canonical(dict(p=p, m=m), T)
-    cfg = dict(kind='pd', prune_keep=g['p'], merge_keep=g['m'], k={'1': 3., '6': 1.}, groups={'1': labels['1']['16'], '6': labels['6']['16']},
+    cfg = dict(kind='pda', base='pd', prune_keep=g['p'], merge_keep=g['m'], alpha={'1': 3 / 4, '6': 1 / 2}, groups={'1': labels['1']['16'], '6': labels['6']['16']},
                rank=32, triton=True, fuse_merge=True)
     outs = []
     for _ in range(2):

@@ -1,4 +1,4 @@
-"""Fixed-path D-horizon/placebo and M3-norm ablations; no legacy changes."""
+"""Fixed-path D-horizon/placebo and M3-norm ablations (base 'extra_pdm')."""
 from copy import deepcopy
 import math
 import torch
@@ -42,7 +42,7 @@ def compress_target(x,size,scores,p,m,mode):
 
 class ExtraViT(MlerpViT):
     def __init__(self,vit,cfg,pool='token'):
-        cfg=deepcopy(cfg);self.ablation=cfg.pop('ablation');cfg.pop('kind',None)
+        cfg=deepcopy(cfg);self.ablation=cfg.pop('ablation');cfg.pop('kind',None);cfg.pop('base',None)
         super().__init__(vit,MlerpConfig(**cfg),pool)
         variant=self.ablation['variant'];n=self.n_tokens
         for l in range(self.n_blocks):
@@ -65,7 +65,8 @@ class ExtraViT(MlerpViT):
         if key in self.future and variant in ('shuffle','shuffle_size','identity'):
             zd=self.future[key].zscored(x,size,None,1.)
             if variant!='identity':zd=permute_d(zd,size,getattr(self,'priority_'+key),variant=='shuffle_size')
-            return zscore(raw_p.clamp_min(1e-12).log(),1)+self.cfg.k[key]*zd
+            a=self.cfg.alpha[key]
+            return a*zd if a>=1 else (1.-a)*zscore(raw_p.clamp_min(1e-12).log(),1)+a*zd
         return super().score(l,x,size,raw_p)
 
     def forward(self,img):

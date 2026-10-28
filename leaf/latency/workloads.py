@@ -16,7 +16,6 @@ Duplicates are removed. `leaf fit-latency` groups the rows for cross-validation 
 share a group).
 """
 from leaf.evaluation.runner import config_hash
-from leaf.planner.alpha import to_alpha_config
 from leaf.planner.configs import diffrate_config, diffrate_schedules
 from leaf.planner.gmac import GmacPlanner, dense_cost
 
@@ -31,13 +30,13 @@ VARIANTS = (   # (name, curve filter on (theta, alpha), merge operator)
 
 
 def make_workloads(spec, dcfg, curves, fractions=GMAC_FRACTIONS, variants=VARIANTS, diffrate=True, log=print):
-    """curves: {(theta, alpha): ProbeCurve} -> [{name, config, gmac_target}] ('pd' / 'pda' configs)."""
+    """curves: {(theta, alpha): ProbeCurve} -> [{name, config, gmac_target}] ('pda' configs)."""
     rows, seen = [], set()
 
     def add(name, cfg, target):
-        k = config_hash(cfg)
-        if k in seen: return
-        seen.add(k); rows.append(dict(name=name, config=cfg, gmac_target=target))
+        key = config_hash(cfg)
+        if key in seen: return
+        seen.add(key); rows.append(dict(name=name, config=cfg, gmac_target=target))
 
     if diffrate:
         for b in sorted(diffrate_schedules(spec), key=float):
@@ -52,5 +51,5 @@ def make_workloads(spec, dcfg, curves, fractions=GMAC_FRACTIONS, variants=VARIAN
             res = planner.plan(dense * f)
             if 'config' not in res:
                 log(f'workloads: {name} at {f:g} x dense GMAC infeasible'); continue
-            add(f'{name}/gmac{f:g}', to_alpha_config(res['config']), dense * f)
+            add(f'{name}/gmac{f:g}', res['config'], dense * f)
     return rows

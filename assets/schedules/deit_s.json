@@ -261,22 +261,19 @@
      "block": 1,
      "tokens_after": 123,
      "theta": 0.0,
-     "alpha": 0.6666666666666666,
-     "kappa": 2.0
+     "alpha": 0.6666666666666666
     },
     {
      "block": 4,
      "tokens_after": 56,
      "theta": 1.0,
-     "alpha": 0.25,
-     "kappa": 0.3333333333333333
+     "alpha": 0.25
     },
     {
      "block": 11,
      "tokens_after": 4,
      "theta": 0.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     }
    ]
   },
@@ -568,43 +565,37 @@
      "block": 1,
      "tokens_after": 146,
      "theta": 0.5098039215686274,
-     "alpha": 0.75,
-     "kappa": 3.0
+     "alpha": 0.75
     },
     {
      "block": 2,
      "tokens_after": 121,
      "theta": 0.48,
-     "alpha": 0.6666666666666666,
-     "kappa": 2.0
+     "alpha": 0.6666666666666666
     },
     {
      "block": 3,
      "tokens_after": 97,
      "theta": 1.0,
-     "alpha": 0.5,
-     "kappa": 1.0
+     "alpha": 0.5
     },
     {
      "block": 4,
      "tokens_after": 73,
      "theta": 1.0,
-     "alpha": 0.5,
-     "kappa": 1.0
+     "alpha": 0.5
     },
     {
      "block": 5,
      "tokens_after": 49,
      "theta": 1.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 11,
      "tokens_after": 3,
      "theta": 0.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     }
    ]
   },
@@ -790,22 +781,19 @@
      "block": 2,
      "tokens_after": 134,
      "theta": 0.5079365079365079,
-     "alpha": 0.75,
-     "kappa": 3.0
+     "alpha": 0.75
     },
     {
      "block": 4,
      "tokens_after": 53,
      "theta": 1.0,
-     "alpha": 0.25,
-     "kappa": 0.3333333333333333
+     "alpha": 0.25
     },
     {
      "block": 11,
      "tokens_after": 3,
      "theta": 0.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     }
    ]
   },
@@ -1046,43 +1034,37 @@
      "block": 1,
      "tokens_after": 173,
      "theta": 0.5,
-     "alpha": 0.75,
-     "kappa": 3.0
+     "alpha": 0.75
     },
     {
      "block": 2,
      "tokens_after": 149,
      "theta": 0.5,
-     "alpha": 0.5,
-     "kappa": 1.0
+     "alpha": 0.5
     },
     {
      "block": 3,
      "tokens_after": 113,
      "theta": 1.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 4,
      "tokens_after": 77,
      "theta": 1.0,
-     "alpha": 0.5,
-     "kappa": 1.0
+     "alpha": 0.5
     },
     {
      "block": 5,
      "tokens_after": 53,
      "theta": 1.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 11,
      "tokens_after": 3,
      "theta": 0.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     }
    ]
   },
@@ -1301,29 +1283,25 @@
      "block": 2,
      "tokens_after": 150,
      "theta": 0.5106382978723404,
-     "alpha": 0.5,
-     "kappa": 1.0
+     "alpha": 0.5
     },
     {
      "block": 4,
      "tokens_after": 78,
      "theta": 1.0,
-     "alpha": 0.3333333333333333,
-     "kappa": 0.5
+     "alpha": 0.3333333333333333
     },
     {
      "block": 6,
      "tokens_after": 54,
      "theta": 1.0,
-     "alpha": 0.3333333333333333,
-     "kappa": 0.5
+     "alpha": 0.3333333333333333
     },
     {
      "block": 11,
      "tokens_after": 3,
      "theta": 0.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     }
    ]
   },
@@ -1636,50 +1614,43 @@
      "block": 1,
      "tokens_after": 189,
      "theta": 0.5,
-     "alpha": 0.6666666666666666,
-     "kappa": 2.0
+     "alpha": 0.6666666666666666
     },
     {
      "block": 2,
      "tokens_after": 173,
      "theta": 0.5,
-     "alpha": 0.5,
-     "kappa": 1.0
+     "alpha": 0.5
     },
     {
      "block": 3,
      "tokens_after": 125,
      "theta": 1.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 4,
      "tokens_after": 101,
      "theta": 1.0,
-     "alpha": 0.5,
-     "kappa": 1.0
+     "alpha": 0.5
     },
     {
      "block": 5,
      "tokens_after": 77,
      "theta": 1.0,
-     "alpha": 0.5,
-     "kappa": 1.0
+     "alpha": 0.5
     },
     {
      "block": 6,
      "tokens_after": 53,
      "theta": 1.0,
-     "alpha": 0.5,
-     "kappa": 1.0
+     "alpha": 0.5
     },
     {
      "block": 11,
      "tokens_after": 3,
      "theta": 0.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     }
    ]
   },
@@ -1808,22 +1779,19 @@
      "block": 3,
      "tokens_after": 124,
      "theta": 1.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 4,
      "tokens_after": 76,
      "theta": 1.0,
-     "alpha": 0.3333333333333333,
-     "kappa": 0.5
+     "alpha": 0.3333333333333333
     },
     {
      "block": 11,
      "tokens_after": 3,
      "theta": 0.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     }
    ]
   },
@@ -2064,43 +2032,37 @@
      "block": 1,
      "tokens_after": 189,
      "theta": 0.5,
-     "alpha": 0.6666666666666666,
-     "kappa": 2.0
+     "alpha": 0.6666666666666666
     },
     {
      "block": 2,
      "tokens_after": 172,
      "theta": 0.47058823529411764,
-     "alpha": 0.5,
-     "kappa": 1.0
+     "alpha": 0.5
     },
     {
      "block": 3,
      "tokens_after": 123,
      "theta": 1.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 4,
      "tokens_after": 98,
      "theta": 1.0,
-     "alpha": 0.5,
-     "kappa": 1.0
+     "alpha": 0.5
     },
     {
      "block": 5,
      "tokens_after": 74,
      "theta": 1.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 11,
      "tokens_after": 3,
      "theta": 0.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     }
    ]
   },
@@ -2217,22 +2179,19 @@
      "block": 3,
      "tokens_after": 126,
      "theta": 1.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 6,
      "tokens_after": 78,
      "theta": 1.0,
-     "alpha": 0.25,
-     "kappa": 0.3333333333333333
+     "alpha": 0.25
     },
     {
      "block": 11,
      "tokens_after": 3,
      "theta": 0.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     }
    ]
   },
@@ -2410,36 +2369,31 @@
      "block": 2,
      "tokens_after": 189,
      "theta": 1.0,
-     "alpha": 0.5,
-     "kappa": 1.0
+     "alpha": 0.5
     },
     {
      "block": 3,
      "tokens_after": 133,
      "theta": 1.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 4,
      "tokens_after": 101,
      "theta": 1.0,
-     "alpha": 0.5,
-     "kappa": 1.0
+     "alpha": 0.5
     },
     {
      "block": 7,
      "tokens_after": 77,
      "theta": 1.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 11,
      "tokens_after": 3,
      "theta": 0.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     }
    ]
   },
@@ -2568,15 +2522,13 @@
      "block": 4,
      "tokens_after": 100,
      "theta": 1.0,
-     "alpha": 0.5,
-     "kappa": 1.0
+     "alpha": 0.5
     },
     {
      "block": 11,
      "tokens_after": 3,
      "theta": 0.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     }
    ]
   },
@@ -2787,43 +2739,37 @@
      "block": 2,
      "tokens_after": 189,
      "theta": 1.0,
-     "alpha": 0.5,
-     "kappa": 1.0
+     "alpha": 0.5
     },
     {
      "block": 3,
      "tokens_after": 173,
      "theta": 1.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 4,
      "tokens_after": 124,
      "theta": 1.0,
-     "alpha": 0.5,
-     "kappa": 1.0
+     "alpha": 0.5
     },
     {
      "block": 6,
      "tokens_after": 100,
      "theta": 1.0,
-     "alpha": 0.75,
-     "kappa": 3.0
+     "alpha": 0.75
     },
     {
      "block": 7,
      "tokens_after": 80,
      "theta": 1.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 11,
      "tokens_after": 3,
      "theta": 0.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     }
    ]
   },
@@ -2985,22 +2931,19 @@
      "block": 4,
      "tokens_after": 148,
      "theta": 1.0,
-     "alpha": 0.3333333333333333,
-     "kappa": 0.5
+     "alpha": 0.3333333333333333
     },
     {
      "block": 6,
      "tokens_after": 100,
      "theta": 1.0,
-     "alpha": 0.75,
-     "kappa": 3.0
+     "alpha": 0.75
     },
     {
      "block": 11,
      "tokens_after": 3,
      "theta": 0.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     }
    ]
   },
@@ -3250,43 +3193,37 @@
      "block": 2,
      "tokens_after": 189,
      "theta": 1.0,
-     "alpha": 0.5,
-     "kappa": 1.0
+     "alpha": 0.5
     },
     {
      "block": 3,
      "tokens_after": 173,
      "theta": 1.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 4,
      "tokens_after": 148,
      "theta": 1.0,
-     "alpha": 0.5,
-     "kappa": 1.0
+     "alpha": 0.5
     },
     {
      "block": 5,
      "tokens_after": 124,
      "theta": 1.0,
-     "alpha": 0.75,
-     "kappa": 3.0
+     "alpha": 0.75
     },
     {
      "block": 6,
      "tokens_after": 100,
      "theta": 1.0,
-     "alpha": 0.75,
-     "kappa": 3.0
+     "alpha": 0.75
     },
     {
      "block": 11,
      "tokens_after": 3,
      "theta": 0.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     }
    ]
   },
@@ -3353,78 +3290,67 @@
      "block": 1,
      "tokens_after": 180,
      "theta": 0.7058823529411765,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 2,
      "tokens_after": 156,
      "theta": 0.5,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 3,
      "tokens_after": 127,
      "theta": 0.5517241379310345,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 4,
      "tokens_after": 109,
      "theta": 0.6666666666666666,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 5,
      "tokens_after": 98,
      "theta": 0.6363636363636364,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 6,
      "tokens_after": 80,
      "theta": 0.6666666666666666,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 7,
      "tokens_after": 66,
      "theta": 0.5714285714285714,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 8,
      "tokens_after": 52,
      "theta": 0.7142857142857143,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 9,
      "tokens_after": 37,
      "theta": 0.5333333333333333,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 10,
      "tokens_after": 31,
      "theta": 0.3333333333333333,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 11,
      "tokens_after": 3,
      "theta": 0.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     }
    ]
   },
@@ -3491,78 +3417,67 @@
      "block": 1,
      "tokens_after": 186,
      "theta": 0.5454545454545454,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 2,
      "tokens_after": 160,
      "theta": 0.5384615384615384,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 3,
      "tokens_after": 133,
      "theta": 0.8518518518518519,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 4,
      "tokens_after": 119,
      "theta": 0.8571428571428571,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 5,
      "tokens_after": 107,
      "theta": 0.6666666666666666,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 6,
      "tokens_after": 96,
      "theta": 1.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 7,
      "tokens_after": 82,
      "theta": 1.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 8,
      "tokens_after": 66,
      "theta": 0.625,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 9,
      "tokens_after": 43,
      "theta": 0.30434782608695654,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 10,
      "tokens_after": 37,
      "theta": 0.3333333333333333,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 11,
      "tokens_after": 3,
      "theta": 0.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     }
    ]
   },
@@ -3629,78 +3544,67 @@
      "block": 1,
      "tokens_after": 188,
      "theta": 0.8888888888888888,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 2,
      "tokens_after": 170,
      "theta": 0.6666666666666666,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 3,
      "tokens_after": 147,
      "theta": 0.5652173913043478,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 4,
      "tokens_after": 131,
      "theta": 0.625,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 5,
      "tokens_after": 119,
      "theta": 0.6666666666666666,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 6,
      "tokens_after": 109,
      "theta": 0.6,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 7,
      "tokens_after": 96,
      "theta": 0.6923076923076923,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 8,
      "tokens_after": 76,
      "theta": 0.6,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 9,
      "tokens_after": 54,
      "theta": 0.5454545454545454,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 10,
      "tokens_after": 45,
      "theta": 0.4444444444444444,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 11,
      "tokens_after": 3,
      "theta": 0.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     }
    ]
   },
@@ -3767,78 +3671,67 @@
      "block": 1,
      "tokens_after": 194,
      "theta": 0.6666666666666666,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 2,
      "tokens_after": 176,
      "theta": 0.7777777777777778,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 3,
      "tokens_after": 156,
      "theta": 0.6,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 4,
      "tokens_after": 141,
      "theta": 0.6,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 5,
      "tokens_after": 133,
      "theta": 0.75,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 6,
      "tokens_after": 121,
      "theta": 0.6666666666666666,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 7,
      "tokens_after": 107,
      "theta": 0.7142857142857143,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 8,
      "tokens_after": 88,
      "theta": 0.5789473684210527,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 9,
      "tokens_after": 64,
      "theta": 0.5833333333333334,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 10,
      "tokens_after": 56,
      "theta": 0.25,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 11,
      "tokens_after": 3,
      "theta": 0.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     }
    ]
   },
@@ -3905,78 +3798,67 @@
      "block": 1,
      "tokens_after": 196,
      "theta": 1.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 2,
      "tokens_after": 186,
      "theta": 0.8,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 3,
      "tokens_after": 164,
      "theta": 0.7272727272727273,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 4,
      "tokens_after": 150,
      "theta": 0.7142857142857143,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 5,
      "tokens_after": 141,
      "theta": 0.6666666666666666,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 6,
      "tokens_after": 133,
      "theta": 0.5,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 7,
      "tokens_after": 121,
      "theta": 0.6666666666666666,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 8,
      "tokens_after": 103,
      "theta": 0.6666666666666666,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 9,
      "tokens_after": 78,
      "theta": 0.56,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 10,
      "tokens_after": 68,
      "theta": 0.8,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 11,
      "tokens_after": 3,
      "theta": 0.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     }
    ]
   },
@@ -5819,29 +5701,25 @@
      "block": 1,
      "tokens_after": 148,
      "theta": 0.4897959183673469,
-     "alpha": 0.75,
-     "kappa": 3.0
+     "alpha": 0.75
     },
     {
      "block": 3,
      "tokens_after": 76,
      "theta": 1.0,
-     "alpha": 0.5,
-     "kappa": 1.0
+     "alpha": 0.5
     },
     {
      "block": 5,
      "tokens_after": 52,
      "theta": 1.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 11,
      "tokens_after": 3,
      "theta": 0.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     }
    ]
   },
@@ -5973,29 +5851,25 @@
      "block": 1,
      "tokens_after": 153,
      "theta": 0.5,
-     "alpha": 0.75,
-     "kappa": 3.0
+     "alpha": 0.75
     },
     {
      "block": 3,
      "tokens_after": 108,
      "theta": 1.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 5,
      "tokens_after": 60,
      "theta": 1.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 11,
      "tokens_after": 4,
      "theta": 0.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     }
    ]
   },
@@ -6166,29 +6040,25 @@
      "block": 2,
      "tokens_after": 152,
      "theta": 0.4888888888888889,
-     "alpha": 0.5,
-     "kappa": 1.0
+     "alpha": 0.5
     },
     {
      "block": 4,
      "tokens_after": 83,
      "theta": 1.0,
-     "alpha": 0.5,
-     "kappa": 1.0
+     "alpha": 0.5
     },
     {
      "block": 7,
      "tokens_after": 59,
      "theta": 1.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 11,
      "tokens_after": 4,
      "theta": 0.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     }
    ]
   },
@@ -6296,22 +6166,19 @@
      "block": 3,
      "tokens_after": 126,
      "theta": 1.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 5,
      "tokens_after": 78,
      "theta": 1.0,
-     "alpha": 0.5,
-     "kappa": 1.0
+     "alpha": 0.5
     },
     {
      "block": 11,
      "tokens_after": 3,
      "theta": 0.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     }
    ]
   },
@@ -6419,29 +6286,25 @@
      "block": 3,
      "tokens_after": 150,
      "theta": 1.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 5,
      "tokens_after": 103,
      "theta": 1.0,
-     "alpha": 0.6666666666666666,
-     "kappa": 2.0
+     "alpha": 0.6666666666666666
     },
     {
      "block": 7,
      "tokens_after": 79,
      "theta": 1.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 11,
      "tokens_after": 3,
      "theta": 0.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     }
    ]
   },
@@ -6543,22 +6406,19 @@
      "block": 3,
      "tokens_after": 148,
      "theta": 1.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 6,
      "tokens_after": 100,
      "theta": 1.0,
-     "alpha": 0.75,
-     "kappa": 3.0
+     "alpha": 0.75
     },
     {
      "block": 11,
      "tokens_after": 3,
      "theta": 0.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     }
    ]
   },
@@ -6660,22 +6520,19 @@
      "block": 3,
      "tokens_after": 172,
      "theta": 1.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 6,
      "tokens_after": 111,
      "theta": 1.0,
-     "alpha": 0.75,
-     "kappa": 3.0
+     "alpha": 0.75
     },
     {
      "block": 11,
      "tokens_after": 3,
      "theta": 0.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     }
    ]
   },
@@ -6857,22 +6714,19 @@
      "block": 1,
      "tokens_after": 123,
      "theta": 0.0,
-     "alpha": 0.6666666666666666,
-     "kappa": 2.0
+     "alpha": 0.6666666666666666
     },
     {
      "block": 4,
      "tokens_after": 56,
      "theta": 1.0,
-     "alpha": 0.5,
-     "kappa": 1.0
+     "alpha": 0.5
     },
     {
      "block": 11,
      "tokens_after": 4,
      "theta": 0.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     }
    ]
   },
@@ -7009,29 +6863,25 @@
      "block": 1,
      "tokens_after": 149,
      "theta": 0.5,
-     "alpha": 0.75,
-     "kappa": 3.0
+     "alpha": 0.75
     },
     {
      "block": 3,
      "tokens_after": 101,
      "theta": 1.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 5,
      "tokens_after": 53,
      "theta": 1.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 11,
      "tokens_after": 3,
      "theta": 0.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     }
    ]
   },
@@ -7240,29 +7090,25 @@
      "block": 2,
      "tokens_after": 150,
      "theta": 0.5106382978723404,
-     "alpha": 0.5,
-     "kappa": 1.0
+     "alpha": 0.5
     },
     {
      "block": 4,
      "tokens_after": 78,
      "theta": 1.0,
-     "alpha": 0.5,
-     "kappa": 1.0
+     "alpha": 0.5
     },
     {
      "block": 6,
      "tokens_after": 54,
      "theta": 1.0,
-     "alpha": 0.5,
-     "kappa": 1.0
+     "alpha": 0.5
     },
     {
      "block": 11,
      "tokens_after": 3,
      "theta": 0.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     }
    ]
   },
@@ -7438,22 +7284,19 @@
      "block": 2,
      "tokens_after": 150,
      "theta": 0.5106382978723404,
-     "alpha": 0.5,
-     "kappa": 1.0
+     "alpha": 0.5
     },
     {
      "block": 4,
      "tokens_after": 79,
      "theta": 1.0,
-     "alpha": 0.5,
-     "kappa": 1.0
+     "alpha": 0.5
     },
     {
      "block": 11,
      "tokens_after": 3,
      "theta": 0.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     }
    ]
   },
@@ -7525,22 +7368,19 @@
      "block": 3,
      "tokens_after": 126,
      "theta": 1.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 6,
      "tokens_after": 78,
      "theta": 1.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 11,
      "tokens_after": 3,
      "theta": 0.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     }
    ]
   },
@@ -7659,15 +7499,13 @@
      "block": 4,
      "tokens_after": 100,
      "theta": 1.0,
-     "alpha": 0.5,
-     "kappa": 1.0
+     "alpha": 0.5
     },
     {
      "block": 11,
      "tokens_after": 3,
      "theta": 0.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     }
    ]
   },
@@ -7774,22 +7612,19 @@
      "block": 3,
      "tokens_after": 163,
      "theta": 1.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 6,
      "tokens_after": 101,
      "theta": 1.0,
-     "alpha": 0.75,
-     "kappa": 3.0
+     "alpha": 0.75
     },
     {
      "block": 11,
      "tokens_after": 3,
      "theta": 0.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     }
    ]
   },
@@ -7964,15 +7799,13 @@
      "block": 1,
      "tokens_after": 123,
      "theta": 0.0,
-     "alpha": 0.6666666666666666,
-     "kappa": 2.0
+     "alpha": 0.6666666666666666
     },
     {
      "block": 4,
      "tokens_after": 56,
      "theta": 1.0,
-     "alpha": 0.5,
-     "kappa": 1.0
+     "alpha": 0.5
     }
    ]
   },
@@ -8255,43 +8088,37 @@
      "block": 1,
      "tokens_after": 146,
      "theta": 0.5098039215686274,
-     "alpha": 0.75,
-     "kappa": 3.0
+     "alpha": 0.75
     },
     {
      "block": 2,
      "tokens_after": 121,
      "theta": 0.48,
-     "alpha": 0.6666666666666666,
-     "kappa": 2.0
+     "alpha": 0.6666666666666666
     },
     {
      "block": 3,
      "tokens_after": 97,
      "theta": 1.0,
-     "alpha": 0.5,
-     "kappa": 1.0
+     "alpha": 0.5
     },
     {
      "block": 4,
      "tokens_after": 73,
      "theta": 1.0,
-     "alpha": 0.5,
-     "kappa": 1.0
+     "alpha": 0.5
     },
     {
      "block": 5,
      "tokens_after": 49,
      "theta": 1.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 11,
      "tokens_after": 3,
      "theta": 0.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     }
    ]
   },
@@ -8574,36 +8401,31 @@
      "block": 1,
      "tokens_after": 146,
      "theta": 0.5098039215686274,
-     "alpha": 0.75,
-     "kappa": 3.0
+     "alpha": 0.75
     },
     {
      "block": 2,
      "tokens_after": 121,
      "theta": 0.48,
-     "alpha": 0.6666666666666666,
-     "kappa": 2.0
+     "alpha": 0.6666666666666666
     },
     {
      "block": 3,
      "tokens_after": 97,
      "theta": 1.0,
-     "alpha": 0.5,
-     "kappa": 1.0
+     "alpha": 0.5
     },
     {
      "block": 4,
      "tokens_after": 73,
      "theta": 1.0,
-     "alpha": 0.5,
-     "kappa": 1.0
+     "alpha": 0.5
     },
     {
      "block": 5,
      "tokens_after": 49,
      "theta": 1.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     }
    ]
   },
@@ -8733,22 +8555,19 @@
      "block": 1,
      "tokens_after": 149,
      "theta": 0.5,
-     "alpha": 0.75,
-     "kappa": 3.0
+     "alpha": 0.75
     },
     {
      "block": 3,
      "tokens_after": 101,
      "theta": 1.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 5,
      "tokens_after": 53,
      "theta": 1.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     }
    ]
   },
@@ -8980,43 +8799,37 @@
      "block": 1,
      "tokens_after": 173,
      "theta": 0.5,
-     "alpha": 0.75,
-     "kappa": 3.0
+     "alpha": 0.75
     },
     {
      "block": 2,
      "tokens_after": 149,
      "theta": 0.5,
-     "alpha": 0.5,
-     "kappa": 1.0
+     "alpha": 0.5
     },
     {
      "block": 3,
      "tokens_after": 113,
      "theta": 1.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 4,
      "tokens_after": 77,
      "theta": 1.0,
-     "alpha": 0.5,
-     "kappa": 1.0
+     "alpha": 0.5
     },
     {
      "block": 5,
      "tokens_after": 53,
      "theta": 1.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 11,
      "tokens_after": 3,
      "theta": 0.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     }
    ]
   },
@@ -9248,36 +9061,31 @@
      "block": 1,
      "tokens_after": 173,
      "theta": 0.5,
-     "alpha": 0.75,
-     "kappa": 3.0
+     "alpha": 0.75
     },
     {
      "block": 2,
      "tokens_after": 149,
      "theta": 0.5,
-     "alpha": 0.5,
-     "kappa": 1.0
+     "alpha": 0.5
     },
     {
      "block": 3,
      "tokens_after": 113,
      "theta": 1.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 4,
      "tokens_after": 77,
      "theta": 1.0,
-     "alpha": 0.5,
-     "kappa": 1.0
+     "alpha": 0.5
     },
     {
      "block": 5,
      "tokens_after": 53,
      "theta": 1.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     }
    ]
   },
@@ -9479,22 +9287,19 @@
      "block": 2,
      "tokens_after": 150,
      "theta": 0.5106382978723404,
-     "alpha": 0.5,
-     "kappa": 1.0
+     "alpha": 0.5
     },
     {
      "block": 4,
      "tokens_after": 78,
      "theta": 1.0,
-     "alpha": 0.5,
-     "kappa": 1.0
+     "alpha": 0.5
     },
     {
      "block": 6,
      "tokens_after": 54,
      "theta": 1.0,
-     "alpha": 0.5,
-     "kappa": 1.0
+     "alpha": 0.5
     }
    ]
   },
@@ -9798,50 +9603,43 @@
      "block": 1,
      "tokens_after": 189,
      "theta": 0.5,
-     "alpha": 0.6666666666666666,
-     "kappa": 2.0
+     "alpha": 0.6666666666666666
     },
     {
      "block": 2,
      "tokens_after": 173,
      "theta": 0.5,
-     "alpha": 0.5,
-     "kappa": 1.0
+     "alpha": 0.5
     },
     {
      "block": 3,
      "tokens_after": 125,
      "theta": 1.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 4,
      "tokens_after": 101,
      "theta": 1.0,
-     "alpha": 0.5,
-     "kappa": 1.0
+     "alpha": 0.5
     },
     {
      "block": 5,
      "tokens_after": 77,
      "theta": 1.0,
-     "alpha": 0.5,
-     "kappa": 1.0
+     "alpha": 0.5
     },
     {
      "block": 6,
      "tokens_after": 53,
      "theta": 1.0,
-     "alpha": 0.5,
-     "kappa": 1.0
+     "alpha": 0.5
     },
     {
      "block": 11,
      "tokens_after": 3,
      "theta": 0.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     }
    ]
   },
@@ -10145,43 +9943,37 @@
      "block": 1,
      "tokens_after": 189,
      "theta": 0.5,
-     "alpha": 0.6666666666666666,
-     "kappa": 2.0
+     "alpha": 0.6666666666666666
     },
     {
      "block": 2,
      "tokens_after": 173,
      "theta": 0.5,
-     "alpha": 0.5,
-     "kappa": 1.0
+     "alpha": 0.5
     },
     {
      "block": 3,
      "tokens_after": 125,
      "theta": 1.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 4,
      "tokens_after": 101,
      "theta": 1.0,
-     "alpha": 0.5,
-     "kappa": 1.0
+     "alpha": 0.5
     },
     {
      "block": 5,
      "tokens_after": 77,
      "theta": 1.0,
-     "alpha": 0.5,
-     "kappa": 1.0
+     "alpha": 0.5
     },
     {
      "block": 6,
      "tokens_after": 53,
      "theta": 1.0,
-     "alpha": 0.5,
-     "kappa": 1.0
+     "alpha": 0.5
     }
    ]
   },
@@ -10350,15 +10142,13 @@
      "block": 2,
      "tokens_after": 150,
      "theta": 0.5106382978723404,
-     "alpha": 0.5,
-     "kappa": 1.0
+     "alpha": 0.5
     },
     {
      "block": 4,
      "tokens_after": 79,
      "theta": 1.0,
-     "alpha": 0.5,
-     "kappa": 1.0
+     "alpha": 0.5
     }
    ]
   },
@@ -10590,43 +10380,37 @@
      "block": 1,
      "tokens_after": 189,
      "theta": 0.5,
-     "alpha": 0.6666666666666666,
-     "kappa": 2.0
+     "alpha": 0.6666666666666666
     },
     {
      "block": 2,
      "tokens_after": 172,
      "theta": 0.47058823529411764,
-     "alpha": 0.5,
-     "kappa": 1.0
+     "alpha": 0.5
     },
     {
      "block": 3,
      "tokens_after": 123,
      "theta": 1.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 4,
      "tokens_after": 98,
      "theta": 1.0,
-     "alpha": 0.5,
-     "kappa": 1.0
+     "alpha": 0.5
     },
     {
      "block": 5,
      "tokens_after": 74,
      "theta": 1.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 11,
      "tokens_after": 3,
      "theta": 0.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     }
    ]
   },
@@ -10858,36 +10642,31 @@
      "block": 1,
      "tokens_after": 189,
      "theta": 0.5,
-     "alpha": 0.6666666666666666,
-     "kappa": 2.0
+     "alpha": 0.6666666666666666
     },
     {
      "block": 2,
      "tokens_after": 172,
      "theta": 0.47058823529411764,
-     "alpha": 0.5,
-     "kappa": 1.0
+     "alpha": 0.5
     },
     {
      "block": 3,
      "tokens_after": 123,
      "theta": 1.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 4,
      "tokens_after": 98,
      "theta": 1.0,
-     "alpha": 0.5,
-     "kappa": 1.0
+     "alpha": 0.5
     },
     {
      "block": 5,
      "tokens_after": 74,
      "theta": 1.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     }
    ]
   },
@@ -10952,15 +10731,13 @@
      "block": 3,
      "tokens_after": 126,
      "theta": 1.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 6,
      "tokens_after": 78,
      "theta": 1.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     }
    ]
   },
@@ -11129,36 +10906,31 @@
      "block": 2,
      "tokens_after": 189,
      "theta": 1.0,
-     "alpha": 0.5,
-     "kappa": 1.0
+     "alpha": 0.5
     },
     {
      "block": 3,
      "tokens_after": 133,
      "theta": 1.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 4,
      "tokens_after": 101,
      "theta": 1.0,
-     "alpha": 0.5,
-     "kappa": 1.0
+     "alpha": 0.5
     },
     {
      "block": 7,
      "tokens_after": 77,
      "theta": 1.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 11,
      "tokens_after": 3,
      "theta": 0.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     }
    ]
   },
@@ -11327,29 +11099,25 @@
      "block": 2,
      "tokens_after": 189,
      "theta": 1.0,
-     "alpha": 0.5,
-     "kappa": 1.0
+     "alpha": 0.5
     },
     {
      "block": 3,
      "tokens_after": 133,
      "theta": 1.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 4,
      "tokens_after": 101,
      "theta": 1.0,
-     "alpha": 0.5,
-     "kappa": 1.0
+     "alpha": 0.5
     },
     {
      "block": 7,
      "tokens_after": 77,
      "theta": 1.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     }
    ]
   },
@@ -11461,8 +11229,7 @@
      "block": 4,
      "tokens_after": 100,
      "theta": 1.0,
-     "alpha": 0.5,
-     "kappa": 1.0
+     "alpha": 0.5
     }
    ]
   },
@@ -11664,43 +11431,37 @@
      "block": 2,
      "tokens_after": 189,
      "theta": 1.0,
-     "alpha": 0.5,
-     "kappa": 1.0
+     "alpha": 0.5
     },
     {
      "block": 3,
      "tokens_after": 173,
      "theta": 1.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 4,
      "tokens_after": 124,
      "theta": 1.0,
-     "alpha": 0.5,
-     "kappa": 1.0
+     "alpha": 0.5
     },
     {
      "block": 6,
      "tokens_after": 100,
      "theta": 1.0,
-     "alpha": 0.75,
-     "kappa": 3.0
+     "alpha": 0.75
     },
     {
      "block": 7,
      "tokens_after": 80,
      "theta": 1.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 11,
      "tokens_after": 3,
      "theta": 0.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     }
    ]
   },
@@ -11902,36 +11663,31 @@
      "block": 2,
      "tokens_after": 189,
      "theta": 1.0,
-     "alpha": 0.5,
-     "kappa": 1.0
+     "alpha": 0.5
     },
     {
      "block": 3,
      "tokens_after": 173,
      "theta": 1.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 4,
      "tokens_after": 124,
      "theta": 1.0,
-     "alpha": 0.5,
-     "kappa": 1.0
+     "alpha": 0.5
     },
     {
      "block": 6,
      "tokens_after": 100,
      "theta": 1.0,
-     "alpha": 0.75,
-     "kappa": 3.0
+     "alpha": 0.75
     },
     {
      "block": 7,
      "tokens_after": 80,
      "theta": 1.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     }
    ]
   },
@@ -12031,15 +11787,13 @@
      "block": 3,
      "tokens_after": 163,
      "theta": 1.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 6,
      "tokens_after": 101,
      "theta": 1.0,
-     "alpha": 0.75,
-     "kappa": 3.0
+     "alpha": 0.75
     }
    ]
   },
@@ -12280,43 +12034,37 @@
      "block": 2,
      "tokens_after": 189,
      "theta": 1.0,
-     "alpha": 0.5,
-     "kappa": 1.0
+     "alpha": 0.5
     },
     {
      "block": 3,
      "tokens_after": 173,
      "theta": 1.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 4,
      "tokens_after": 148,
      "theta": 1.0,
-     "alpha": 0.5,
-     "kappa": 1.0
+     "alpha": 0.5
     },
     {
      "block": 5,
      "tokens_after": 124,
      "theta": 1.0,
-     "alpha": 0.75,
-     "kappa": 3.0
+     "alpha": 0.75
     },
     {
      "block": 6,
      "tokens_after": 100,
      "theta": 1.0,
-     "alpha": 0.75,
-     "kappa": 3.0
+     "alpha": 0.75
     },
     {
      "block": 11,
      "tokens_after": 3,
      "theta": 0.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     }
    ]
   },
@@ -12557,36 +12305,31 @@
      "block": 2,
      "tokens_after": 189,
      "theta": 1.0,
-     "alpha": 0.5,
-     "kappa": 1.0
+     "alpha": 0.5
     },
     {
      "block": 3,
      "tokens_after": 173,
      "theta": 1.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 4,
      "tokens_after": 148,
      "theta": 1.0,
-     "alpha": 0.5,
-     "kappa": 1.0
+     "alpha": 0.5
     },
     {
      "block": 5,
      "tokens_after": 124,
      "theta": 1.0,
-     "alpha": 0.75,
-     "kappa": 3.0
+     "alpha": 0.75
     },
     {
      "block": 6,
      "tokens_after": 100,
      "theta": 1.0,
-     "alpha": 0.75,
-     "kappa": 3.0
+     "alpha": 0.75
     }
    ]
   },
@@ -12761,22 +12504,19 @@
      "block": 1,
      "tokens_after": 125,
      "theta": 0.25,
-     "alpha": 0.75,
-     "kappa": 3.0
+     "alpha": 0.75
     },
     {
      "block": 4,
      "tokens_after": 53,
      "theta": 0.75,
-     "alpha": 0.5,
-     "kappa": 1.0
+     "alpha": 0.5
     },
     {
      "block": 11,
      "tokens_after": 3,
      "theta": 0.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     }
    ]
   },
@@ -12906,29 +12646,25 @@
      "block": 1,
      "tokens_after": 149,
      "theta": 0.25,
-     "alpha": 0.75,
-     "kappa": 3.0
+     "alpha": 0.75
     },
     {
      "block": 3,
      "tokens_after": 101,
      "theta": 1.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 5,
      "tokens_after": 53,
      "theta": 1.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 11,
      "tokens_after": 3,
      "theta": 0.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     }
    ]
   },
@@ -13130,29 +12866,25 @@
      "block": 2,
      "tokens_after": 149,
      "theta": 0.75,
-     "alpha": 0.6666666666666666,
-     "kappa": 2.0
+     "alpha": 0.6666666666666666
     },
     {
      "block": 4,
      "tokens_after": 78,
      "theta": 1.0,
-     "alpha": 0.5,
-     "kappa": 1.0
+     "alpha": 0.5
     },
     {
      "block": 6,
      "tokens_after": 54,
      "theta": 0.75,
-     "alpha": 0.5,
-     "kappa": 1.0
+     "alpha": 0.5
     },
     {
      "block": 11,
      "tokens_after": 3,
      "theta": 0.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     }
    ]
   },
@@ -13264,22 +12996,19 @@
      "block": 3,
      "tokens_after": 124,
      "theta": 1.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 4,
      "tokens_after": 76,
      "theta": 0.75,
-     "alpha": 0.5,
-     "kappa": 1.0
+     "alpha": 0.5
     },
     {
      "block": 11,
      "tokens_after": 3,
      "theta": 0.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     }
    ]
   },
@@ -13379,22 +13108,19 @@
      "block": 3,
      "tokens_after": 126,
      "theta": 1.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 6,
      "tokens_after": 79,
      "theta": 0.7446808510638298,
-     "alpha": 0.75,
-     "kappa": 3.0
+     "alpha": 0.75
     },
     {
      "block": 11,
      "tokens_after": 3,
      "theta": 0.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     }
    ]
   },
@@ -13507,15 +13233,13 @@
      "block": 4,
      "tokens_after": 100,
      "theta": 1.0,
-     "alpha": 0.5,
-     "kappa": 1.0
+     "alpha": 0.5
     },
     {
      "block": 11,
      "tokens_after": 3,
      "theta": 0.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     }
    ]
   },
@@ -13615,22 +13339,19 @@
      "block": 3,
      "tokens_after": 163,
      "theta": 1.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 6,
      "tokens_after": 101,
      "theta": 1.0,
-     "alpha": 0.75,
-     "kappa": 3.0
+     "alpha": 0.75
     },
     {
      "block": 11,
      "tokens_after": 3,
      "theta": 0.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     }
    ]
   },
@@ -13805,22 +13526,19 @@
      "block": 1,
      "tokens_after": 125,
      "theta": 0.25,
-     "alpha": 0.75,
-     "kappa": 3.0
+     "alpha": 0.75
     },
     {
      "block": 4,
      "tokens_after": 53,
      "theta": 0.75,
-     "alpha": 0.3333333333333333,
-     "kappa": 0.5
+     "alpha": 0.3333333333333333
     },
     {
      "block": 11,
      "tokens_after": 3,
      "theta": 0.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     }
    ]
   },
@@ -13950,29 +13668,25 @@
      "block": 1,
      "tokens_after": 149,
      "theta": 0.25,
-     "alpha": 0.75,
-     "kappa": 3.0
+     "alpha": 0.75
     },
     {
      "block": 3,
      "tokens_after": 101,
      "theta": 1.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 5,
      "tokens_after": 53,
      "theta": 1.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 11,
      "tokens_after": 3,
      "theta": 0.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     }
    ]
   },
@@ -14174,29 +13888,25 @@
      "block": 2,
      "tokens_after": 149,
      "theta": 0.75,
-     "alpha": 0.6666666666666666,
-     "kappa": 2.0
+     "alpha": 0.6666666666666666
     },
     {
      "block": 4,
      "tokens_after": 77,
      "theta": 1.0,
-     "alpha": 0.3333333333333333,
-     "kappa": 0.5
+     "alpha": 0.3333333333333333
     },
     {
      "block": 6,
      "tokens_after": 53,
      "theta": 1.0,
-     "alpha": 0.3333333333333333,
-     "kappa": 0.5
+     "alpha": 0.3333333333333333
     },
     {
      "block": 11,
      "tokens_after": 3,
      "theta": 0.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     }
    ]
   },
@@ -14308,22 +14018,19 @@
      "block": 3,
      "tokens_after": 121,
      "theta": 1.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 4,
      "tokens_after": 77,
      "theta": 0.75,
-     "alpha": 0.3333333333333333,
-     "kappa": 0.5
+     "alpha": 0.3333333333333333
     },
     {
      "block": 11,
      "tokens_after": 3,
      "theta": 0.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     }
    ]
   },
@@ -14423,22 +14130,19 @@
      "block": 3,
      "tokens_after": 126,
      "theta": 1.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 6,
      "tokens_after": 79,
      "theta": 0.7446808510638298,
-     "alpha": 0.75,
-     "kappa": 3.0
+     "alpha": 0.75
     },
     {
      "block": 11,
      "tokens_after": 3,
      "theta": 0.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     }
    ]
   },
@@ -14551,15 +14255,13 @@
      "block": 4,
      "tokens_after": 100,
      "theta": 1.0,
-     "alpha": 0.5,
-     "kappa": 1.0
+     "alpha": 0.5
     },
     {
      "block": 11,
      "tokens_after": 3,
      "theta": 0.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     }
    ]
   },
@@ -14705,22 +14407,19 @@
      "block": 4,
      "tokens_after": 148,
      "theta": 1.0,
-     "alpha": 0.3333333333333333,
-     "kappa": 0.5
+     "alpha": 0.3333333333333333
     },
     {
      "block": 6,
      "tokens_after": 100,
      "theta": 1.0,
-     "alpha": 0.75,
-     "kappa": 3.0
+     "alpha": 0.75
     },
     {
      "block": 11,
      "tokens_after": 3,
      "theta": 0.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     }
    ]
   },
@@ -14782,78 +14481,67 @@
      "block": 1,
      "tokens_after": 180,
      "theta": 0.7058823529411765,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 2,
      "tokens_after": 156,
      "theta": 0.5,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 3,
      "tokens_after": 127,
      "theta": 0.5517241379310345,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 4,
      "tokens_after": 109,
      "theta": 0.6666666666666666,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 5,
      "tokens_after": 98,
      "theta": 0.6363636363636364,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 6,
      "tokens_after": 80,
      "theta": 0.6666666666666666,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 7,
      "tokens_after": 66,
      "theta": 0.5714285714285714,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 8,
      "tokens_after": 52,
      "theta": 0.7142857142857143,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 9,
      "tokens_after": 37,
      "theta": 0.5333333333333333,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 10,
      "tokens_after": 31,
      "theta": 0.3333333333333333,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 11,
      "tokens_after": 3,
      "theta": 0.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     }
    ]
   },
@@ -14915,78 +14603,67 @@
      "block": 1,
      "tokens_after": 186,
      "theta": 0.5454545454545454,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 2,
      "tokens_after": 160,
      "theta": 0.5384615384615384,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 3,
      "tokens_after": 133,
      "theta": 0.8518518518518519,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 4,
      "tokens_after": 119,
      "theta": 0.8571428571428571,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 5,
      "tokens_after": 107,
      "theta": 0.6666666666666666,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 6,
      "tokens_after": 96,
      "theta": 1.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 7,
      "tokens_after": 82,
      "theta": 1.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 8,
      "tokens_after": 66,
      "theta": 0.625,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 9,
      "tokens_after": 43,
      "theta": 0.30434782608695654,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 10,
      "tokens_after": 37,
      "theta": 0.3333333333333333,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 11,
      "tokens_after": 3,
      "theta": 0.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     }
    ]
   },
@@ -15048,78 +14725,67 @@
      "block": 1,
      "tokens_after": 188,
      "theta": 0.8888888888888888,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 2,
      "tokens_after": 170,
      "theta": 0.6666666666666666,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 3,
      "tokens_after": 147,
      "theta": 0.5652173913043478,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 4,
      "tokens_after": 131,
      "theta": 0.625,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 5,
      "tokens_after": 119,
      "theta": 0.6666666666666666,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 6,
      "tokens_after": 109,
      "theta": 0.6,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 7,
      "tokens_after": 96,
      "theta": 0.6923076923076923,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 8,
      "tokens_after": 76,
      "theta": 0.6,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 9,
      "tokens_after": 54,
      "theta": 0.5454545454545454,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 10,
      "tokens_after": 45,
      "theta": 0.4444444444444444,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 11,
      "tokens_after": 3,
      "theta": 0.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     }
    ]
   },
@@ -15181,78 +14847,67 @@
      "block": 1,
      "tokens_after": 194,
      "theta": 0.6666666666666666,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 2,
      "tokens_after": 176,
      "theta": 0.7777777777777778,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 3,
      "tokens_after": 156,
      "theta": 0.6,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 4,
      "tokens_after": 141,
      "theta": 0.6,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 5,
      "tokens_after": 133,
      "theta": 0.75,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 6,
      "tokens_after": 121,
      "theta": 0.6666666666666666,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 7,
      "tokens_after": 107,
      "theta": 0.7142857142857143,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 8,
      "tokens_after": 88,
      "theta": 0.5789473684210527,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 9,
      "tokens_after": 64,
      "theta": 0.5833333333333334,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 10,
      "tokens_after": 56,
      "theta": 0.25,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 11,
      "tokens_after": 3,
      "theta": 0.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     }
    ]
   },
@@ -15314,78 +14969,67 @@
      "block": 1,
      "tokens_after": 196,
      "theta": 1.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 2,
      "tokens_after": 186,
      "theta": 0.8,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 3,
      "tokens_after": 164,
      "theta": 0.7272727272727273,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 4,
      "tokens_after": 150,
      "theta": 0.7142857142857143,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 5,
      "tokens_after": 141,
      "theta": 0.6666666666666666,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 6,
      "tokens_after": 133,
      "theta": 0.5,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 7,
      "tokens_after": 121,
      "theta": 0.6666666666666666,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 8,
      "tokens_after": 103,
      "theta": 0.6666666666666666,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 9,
      "tokens_after": 78,
      "theta": 0.56,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 10,
      "tokens_after": 68,
      "theta": 0.8,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 11,
      "tokens_after": 3,
      "theta": 0.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     }
    ]
   },
@@ -17039,43 +16683,37 @@
      "block": 1,
      "tokens_after": 146,
      "theta": 0.5098039215686274,
-     "alpha": 0.75,
-     "kappa": 3.0
+     "alpha": 0.75
     },
     {
      "block": 2,
      "tokens_after": 121,
      "theta": 0.48,
-     "alpha": 0.6666666666666666,
-     "kappa": 2.0
+     "alpha": 0.6666666666666666
     },
     {
      "block": 3,
      "tokens_after": 97,
      "theta": 1.0,
-     "alpha": 0.5,
-     "kappa": 1.0
+     "alpha": 0.5
     },
     {
      "block": 4,
      "tokens_after": 73,
      "theta": 1.0,
-     "alpha": 0.5,
-     "kappa": 1.0
+     "alpha": 0.5
     },
     {
      "block": 5,
      "tokens_after": 49,
      "theta": 1.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 11,
      "tokens_after": 3,
      "theta": 0.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     }
    ]
   },
@@ -17359,43 +16997,37 @@
      "block": 1,
      "tokens_after": 146,
      "theta": 0.5098039215686274,
-     "alpha": 0.75,
-     "kappa": 3.0
+     "alpha": 0.75
     },
     {
      "block": 2,
      "tokens_after": 121,
      "theta": 0.48,
-     "alpha": 0.6666666666666666,
-     "kappa": 2.0
+     "alpha": 0.6666666666666666
     },
     {
      "block": 3,
      "tokens_after": 97,
      "theta": 1.0,
-     "alpha": 0.5,
-     "kappa": 1.0
+     "alpha": 0.5
     },
     {
      "block": 4,
      "tokens_after": 73,
      "theta": 1.0,
-     "alpha": 0.5,
-     "kappa": 1.0
+     "alpha": 0.5
     },
     {
      "block": 5,
      "tokens_after": 49,
      "theta": 1.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 11,
      "tokens_after": 3,
      "theta": 0.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     }
    ]
   },
@@ -17526,22 +17158,19 @@
      "block": 1,
      "tokens_after": 123,
      "theta": 0.0,
-     "alpha": 0.6666666666666666,
-     "kappa": 2.0
+     "alpha": 0.6666666666666666
     },
     {
      "block": 3,
      "tokens_after": 55,
      "theta": 1.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 11,
      "tokens_after": 3,
      "theta": 0.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     }
    ]
   },
@@ -17825,43 +17454,37 @@
      "block": 1,
      "tokens_after": 149,
      "theta": 0.5,
-     "alpha": 0.75,
-     "kappa": 3.0
+     "alpha": 0.75
     },
     {
      "block": 2,
      "tokens_after": 125,
      "theta": 0.5,
-     "alpha": 0.75,
-     "kappa": 3.0
+     "alpha": 0.75
     },
     {
      "block": 3,
      "tokens_after": 77,
      "theta": 1.0,
-     "alpha": 0.5,
-     "kappa": 1.0
+     "alpha": 0.5
     },
     {
      "block": 4,
      "tokens_after": 53,
      "theta": 1.0,
-     "alpha": 0.5,
-     "kappa": 1.0
+     "alpha": 0.5
     },
     {
      "block": 6,
      "tokens_after": 29,
      "theta": 1.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 11,
      "tokens_after": 3,
      "theta": 0.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     }
    ]
   },
@@ -17992,29 +17615,25 @@
      "block": 1,
      "tokens_after": 104,
      "theta": 0.0,
-     "alpha": 0.6666666666666666,
-     "kappa": 2.0
+     "alpha": 0.6666666666666666
     },
     {
      "block": 3,
      "tokens_after": 56,
      "theta": 1.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 6,
      "tokens_after": 32,
      "theta": 1.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 11,
      "tokens_after": 4,
      "theta": 0.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     }
    ]
   },
@@ -18241,36 +17860,31 @@
      "block": 1,
      "tokens_after": 125,
      "theta": 0.5,
-     "alpha": 0.75,
-     "kappa": 3.0
+     "alpha": 0.75
     },
     {
      "block": 2,
      "tokens_after": 101,
      "theta": 0.5,
-     "alpha": 0.5,
-     "kappa": 1.0
+     "alpha": 0.5
     },
     {
      "block": 3,
      "tokens_after": 53,
      "theta": 1.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 5,
      "tokens_after": 29,
      "theta": 0.5,
-     "alpha": 0.6666666666666666,
-     "kappa": 2.0
+     "alpha": 0.6666666666666666
     },
     {
      "block": 11,
      "tokens_after": 3,
      "theta": 0.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     }
    ]
   },
@@ -18446,22 +18060,19 @@
      "block": 1,
      "tokens_after": 77,
      "theta": 0.0,
-     "alpha": 0.75,
-     "kappa": 3.0
+     "alpha": 0.75
     },
     {
      "block": 4,
      "tokens_after": 29,
      "theta": 0.5,
-     "alpha": 0.5,
-     "kappa": 1.0
+     "alpha": 0.5
     },
     {
      "block": 11,
      "tokens_after": 3,
      "theta": 0.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     }
    ]
   },
@@ -18637,29 +18248,25 @@
      "block": 1,
      "tokens_after": 77,
      "theta": 0.0,
-     "alpha": 0.75,
-     "kappa": 3.0
+     "alpha": 0.75
     },
     {
      "block": 3,
      "tokens_after": 53,
      "theta": 1.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 4,
      "tokens_after": 29,
      "theta": 0.5,
-     "alpha": 0.5,
-     "kappa": 1.0
+     "alpha": 0.5
     },
     {
      "block": 11,
      "tokens_after": 3,
      "theta": 0.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     }
    ]
   },
@@ -18983,50 +18590,43 @@
      "block": 1,
      "tokens_after": 148,
      "theta": 0.4897959183673469,
-     "alpha": 0.75,
-     "kappa": 3.0
+     "alpha": 0.75
     },
     {
      "block": 2,
      "tokens_after": 124,
      "theta": 0.5,
-     "alpha": 0.75,
-     "kappa": 3.0
+     "alpha": 0.75
     },
     {
      "block": 3,
      "tokens_after": 100,
      "theta": 1.0,
-     "alpha": 0.5,
-     "kappa": 1.0
+     "alpha": 0.5
     },
     {
      "block": 4,
      "tokens_after": 76,
      "theta": 1.0,
-     "alpha": 0.5,
-     "kappa": 1.0
+     "alpha": 0.5
     },
     {
      "block": 5,
      "tokens_after": 52,
      "theta": 1.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 7,
      "tokens_after": 32,
      "theta": 0.5,
-     "alpha": 0.75,
-     "kappa": 3.0
+     "alpha": 0.75
     },
     {
      "block": 11,
      "tokens_after": 3,
      "theta": 0.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     }
    ]
   },
@@ -19323,43 +18923,37 @@
      "block": 1,
      "tokens_after": 148,
      "theta": 0.4897959183673469,
-     "alpha": 0.75,
-     "kappa": 3.0
+     "alpha": 0.75
     },
     {
      "block": 2,
      "tokens_after": 123,
      "theta": 0.48,
-     "alpha": 0.75,
-     "kappa": 3.0
+     "alpha": 0.75
     },
     {
      "block": 3,
      "tokens_after": 99,
      "theta": 1.0,
-     "alpha": 0.5,
-     "kappa": 1.0
+     "alpha": 0.5
     },
     {
      "block": 4,
      "tokens_after": 75,
      "theta": 1.0,
-     "alpha": 0.5,
-     "kappa": 1.0
+     "alpha": 0.5
     },
     {
      "block": 5,
      "tokens_after": 51,
      "theta": 1.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 11,
      "tokens_after": 3,
      "theta": 0.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     }
    ]
   },
@@ -19605,43 +19199,37 @@
      "block": 1,
      "tokens_after": 173,
      "theta": 0.5,
-     "alpha": 0.75,
-     "kappa": 3.0
+     "alpha": 0.75
     },
     {
      "block": 2,
      "tokens_after": 149,
      "theta": 0.5,
-     "alpha": 0.5,
-     "kappa": 1.0
+     "alpha": 0.5
     },
     {
      "block": 3,
      "tokens_after": 100,
      "theta": 1.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 4,
      "tokens_after": 76,
      "theta": 1.0,
-     "alpha": 0.5,
-     "kappa": 1.0
+     "alpha": 0.5
     },
     {
      "block": 5,
      "tokens_after": 52,
      "theta": 1.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 11,
      "tokens_after": 3,
      "theta": 0.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     }
    ]
   },
@@ -19920,43 +19508,37 @@
      "block": 1,
      "tokens_after": 173,
      "theta": 0.5,
-     "alpha": 0.75,
-     "kappa": 3.0
+     "alpha": 0.75
     },
     {
      "block": 2,
      "tokens_after": 149,
      "theta": 0.5,
-     "alpha": 0.5,
-     "kappa": 1.0
+     "alpha": 0.5
     },
     {
      "block": 3,
      "tokens_after": 125,
      "theta": 1.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 4,
      "tokens_after": 77,
      "theta": 1.0,
-     "alpha": 0.5,
-     "kappa": 1.0
+     "alpha": 0.5
     },
     {
      "block": 6,
      "tokens_after": 53,
      "theta": 1.0,
-     "alpha": 0.5,
-     "kappa": 1.0
+     "alpha": 0.5
     },
     {
      "block": 11,
      "tokens_after": 3,
      "theta": 0.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     }
    ]
   },
@@ -20274,50 +19856,43 @@
      "block": 1,
      "tokens_after": 189,
      "theta": 0.5,
-     "alpha": 0.6666666666666666,
-     "kappa": 2.0
+     "alpha": 0.6666666666666666
     },
     {
      "block": 2,
      "tokens_after": 173,
      "theta": 0.5,
-     "alpha": 0.5,
-     "kappa": 1.0
+     "alpha": 0.5
     },
     {
      "block": 3,
      "tokens_after": 125,
      "theta": 1.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 4,
      "tokens_after": 101,
      "theta": 1.0,
-     "alpha": 0.5,
-     "kappa": 1.0
+     "alpha": 0.5
     },
     {
      "block": 5,
      "tokens_after": 77,
      "theta": 1.0,
-     "alpha": 0.5,
-     "kappa": 1.0
+     "alpha": 0.5
     },
     {
      "block": 6,
      "tokens_after": 53,
      "theta": 1.0,
-     "alpha": 0.5,
-     "kappa": 1.0
+     "alpha": 0.5
     },
     {
      "block": 11,
      "tokens_after": 3,
      "theta": 0.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     }
    ]
   },
@@ -20623,50 +20198,43 @@
      "block": 1,
      "tokens_after": 189,
      "theta": 0.5,
-     "alpha": 0.6666666666666666,
-     "kappa": 2.0
+     "alpha": 0.6666666666666666
     },
     {
      "block": 2,
      "tokens_after": 173,
      "theta": 0.5,
-     "alpha": 0.5,
-     "kappa": 1.0
+     "alpha": 0.5
     },
     {
      "block": 3,
      "tokens_after": 125,
      "theta": 1.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 4,
      "tokens_after": 101,
      "theta": 1.0,
-     "alpha": 0.5,
-     "kappa": 1.0
+     "alpha": 0.5
     },
     {
      "block": 5,
      "tokens_after": 77,
      "theta": 1.0,
-     "alpha": 0.5,
-     "kappa": 1.0
+     "alpha": 0.5
     },
     {
      "block": 8,
      "tokens_after": 57,
      "theta": 0.5,
-     "alpha": 0.6666666666666666,
-     "kappa": 2.0
+     "alpha": 0.6666666666666666
     },
     {
      "block": 11,
      "tokens_after": 3,
      "theta": 0.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     }
    ]
   },
@@ -20951,43 +20519,37 @@
      "block": 1,
      "tokens_after": 189,
      "theta": 0.5,
-     "alpha": 0.6666666666666666,
-     "kappa": 2.0
+     "alpha": 0.6666666666666666
     },
     {
      "block": 2,
      "tokens_after": 173,
      "theta": 0.5,
-     "alpha": 0.5,
-     "kappa": 1.0
+     "alpha": 0.5
     },
     {
      "block": 3,
      "tokens_after": 125,
      "theta": 1.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 4,
      "tokens_after": 101,
      "theta": 1.0,
-     "alpha": 0.5,
-     "kappa": 1.0
+     "alpha": 0.5
     },
     {
      "block": 5,
      "tokens_after": 77,
      "theta": 1.0,
-     "alpha": 0.5,
-     "kappa": 1.0
+     "alpha": 0.5
     },
     {
      "block": 11,
      "tokens_after": 3,
      "theta": 0.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     }
    ]
   },
@@ -21284,43 +20846,37 @@
      "block": 1,
      "tokens_after": 148,
      "theta": 0.4897959183673469,
-     "alpha": 0.75,
-     "kappa": 3.0
+     "alpha": 0.75
     },
     {
      "block": 2,
      "tokens_after": 124,
      "theta": 0.5,
-     "alpha": 0.75,
-     "kappa": 3.0
+     "alpha": 0.75
     },
     {
      "block": 3,
      "tokens_after": 100,
      "theta": 1.0,
-     "alpha": 0.5,
-     "kappa": 1.0
+     "alpha": 0.5
     },
     {
      "block": 4,
      "tokens_after": 76,
      "theta": 1.0,
-     "alpha": 0.5,
-     "kappa": 1.0
+     "alpha": 0.5
     },
     {
      "block": 5,
      "tokens_after": 52,
      "theta": 1.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 11,
      "tokens_after": 3,
      "theta": 0.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     }
    ]
   },
@@ -21566,43 +21122,37 @@
      "block": 1,
      "tokens_after": 173,
      "theta": 0.5,
-     "alpha": 0.75,
-     "kappa": 3.0
+     "alpha": 0.75
     },
     {
      "block": 2,
      "tokens_after": 149,
      "theta": 0.5,
-     "alpha": 0.5,
-     "kappa": 1.0
+     "alpha": 0.5
     },
     {
      "block": 3,
      "tokens_after": 113,
      "theta": 1.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 4,
      "tokens_after": 77,
      "theta": 1.0,
-     "alpha": 0.5,
-     "kappa": 1.0
+     "alpha": 0.5
     },
     {
      "block": 5,
      "tokens_after": 53,
      "theta": 1.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 11,
      "tokens_after": 3,
      "theta": 0.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     }
    ]
   },
@@ -21920,50 +21470,43 @@
      "block": 1,
      "tokens_after": 173,
      "theta": 0.5,
-     "alpha": 0.75,
-     "kappa": 3.0
+     "alpha": 0.75
     },
     {
      "block": 2,
      "tokens_after": 149,
      "theta": 0.5,
-     "alpha": 0.5,
-     "kappa": 1.0
+     "alpha": 0.5
     },
     {
      "block": 3,
      "tokens_after": 125,
      "theta": 1.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 4,
      "tokens_after": 101,
      "theta": 1.0,
-     "alpha": 0.5,
-     "kappa": 1.0
+     "alpha": 0.5
     },
     {
      "block": 5,
      "tokens_after": 77,
      "theta": 1.0,
-     "alpha": 0.5,
-     "kappa": 1.0
+     "alpha": 0.5
     },
     {
      "block": 6,
      "tokens_after": 53,
      "theta": 1.0,
-     "alpha": 0.5,
-     "kappa": 1.0
+     "alpha": 0.5
     },
     {
      "block": 11,
      "tokens_after": 3,
      "theta": 0.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     }
    ]
   },
@@ -22248,50 +21791,43 @@
      "block": 1,
      "tokens_after": 189,
      "theta": 0.5,
-     "alpha": 0.6666666666666666,
-     "kappa": 2.0
+     "alpha": 0.6666666666666666
     },
     {
      "block": 2,
      "tokens_after": 173,
      "theta": 0.5,
-     "alpha": 0.5,
-     "kappa": 1.0
+     "alpha": 0.5
     },
     {
      "block": 3,
      "tokens_after": 125,
      "theta": 1.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 4,
      "tokens_after": 101,
      "theta": 1.0,
-     "alpha": 0.5,
-     "kappa": 1.0
+     "alpha": 0.5
     },
     {
      "block": 5,
      "tokens_after": 77,
      "theta": 1.0,
-     "alpha": 0.5,
-     "kappa": 1.0
+     "alpha": 0.5
     },
     {
      "block": 7,
      "tokens_after": 53,
      "theta": 1.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 11,
      "tokens_after": 3,
      "theta": 0.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     }
    ]
   },
@@ -22537,43 +22073,37 @@
      "block": 1,
      "tokens_after": 189,
      "theta": 0.5,
-     "alpha": 0.6666666666666666,
-     "kappa": 2.0
+     "alpha": 0.6666666666666666
     },
     {
      "block": 2,
      "tokens_after": 172,
      "theta": 0.47058823529411764,
-     "alpha": 0.5,
-     "kappa": 1.0
+     "alpha": 0.5
     },
     {
      "block": 3,
      "tokens_after": 123,
      "theta": 1.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 4,
      "tokens_after": 98,
      "theta": 1.0,
-     "alpha": 0.5,
-     "kappa": 1.0
+     "alpha": 0.5
     },
     {
      "block": 5,
      "tokens_after": 74,
      "theta": 1.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 11,
      "tokens_after": 3,
      "theta": 0.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     }
    ]
   },
@@ -22756,43 +22286,37 @@
      "block": 2,
      "tokens_after": 173,
      "theta": 1.0,
-     "alpha": 0.5,
-     "kappa": 1.0
+     "alpha": 0.5
     },
     {
      "block": 3,
      "tokens_after": 125,
      "theta": 1.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 4,
      "tokens_after": 101,
      "theta": 1.0,
-     "alpha": 0.5,
-     "kappa": 1.0
+     "alpha": 0.5
     },
     {
      "block": 6,
      "tokens_after": 85,
      "theta": 1.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 7,
      "tokens_after": 77,
      "theta": 1.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 11,
      "tokens_after": 3,
      "theta": 0.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     }
    ]
   },
@@ -23014,43 +22538,37 @@
      "block": 2,
      "tokens_after": 189,
      "theta": 1.0,
-     "alpha": 0.5,
-     "kappa": 1.0
+     "alpha": 0.5
     },
     {
      "block": 3,
      "tokens_after": 148,
      "theta": 1.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 4,
      "tokens_after": 123,
      "theta": 1.0,
-     "alpha": 0.5,
-     "kappa": 1.0
+     "alpha": 0.5
     },
     {
      "block": 5,
      "tokens_after": 99,
      "theta": 1.0,
-     "alpha": 0.6666666666666666,
-     "kappa": 2.0
+     "alpha": 0.6666666666666666
     },
     {
      "block": 7,
      "tokens_after": 75,
      "theta": 1.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 11,
      "tokens_after": 3,
      "theta": 0.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     }
    ]
   },
@@ -23296,43 +22814,37 @@
      "block": 1,
      "tokens_after": 173,
      "theta": 0.5,
-     "alpha": 0.75,
-     "kappa": 3.0
+     "alpha": 0.75
     },
     {
      "block": 2,
      "tokens_after": 149,
      "theta": 0.5,
-     "alpha": 0.5,
-     "kappa": 1.0
+     "alpha": 0.5
     },
     {
      "block": 3,
      "tokens_after": 125,
      "theta": 1.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 4,
      "tokens_after": 77,
      "theta": 1.0,
-     "alpha": 0.5,
-     "kappa": 1.0
+     "alpha": 0.5
     },
     {
      "block": 5,
      "tokens_after": 53,
      "theta": 1.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 11,
      "tokens_after": 3,
      "theta": 0.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     }
    ]
   },
@@ -23650,50 +23162,43 @@
      "block": 1,
      "tokens_after": 189,
      "theta": 0.5,
-     "alpha": 0.6666666666666666,
-     "kappa": 2.0
+     "alpha": 0.6666666666666666
     },
     {
      "block": 2,
      "tokens_after": 161,
      "theta": 0.5,
-     "alpha": 0.5,
-     "kappa": 1.0
+     "alpha": 0.5
     },
     {
      "block": 3,
      "tokens_after": 125,
      "theta": 1.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 4,
      "tokens_after": 101,
      "theta": 1.0,
-     "alpha": 0.5,
-     "kappa": 1.0
+     "alpha": 0.5
     },
     {
      "block": 5,
      "tokens_after": 77,
      "theta": 1.0,
-     "alpha": 0.5,
-     "kappa": 1.0
+     "alpha": 0.5
     },
     {
      "block": 6,
      "tokens_after": 53,
      "theta": 1.0,
-     "alpha": 0.5,
-     "kappa": 1.0
+     "alpha": 0.5
     },
     {
      "block": 11,
      "tokens_after": 3,
      "theta": 0.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     }
    ]
   },
@@ -23999,50 +23504,43 @@
      "block": 1,
      "tokens_after": 189,
      "theta": 0.5,
-     "alpha": 0.6666666666666666,
-     "kappa": 2.0
+     "alpha": 0.6666666666666666
     },
     {
      "block": 2,
      "tokens_after": 173,
      "theta": 0.5,
-     "alpha": 0.5,
-     "kappa": 1.0
+     "alpha": 0.5
     },
     {
      "block": 3,
      "tokens_after": 125,
      "theta": 1.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 4,
      "tokens_after": 101,
      "theta": 1.0,
-     "alpha": 0.5,
-     "kappa": 1.0
+     "alpha": 0.5
     },
     {
      "block": 5,
      "tokens_after": 77,
      "theta": 1.0,
-     "alpha": 0.5,
-     "kappa": 1.0
+     "alpha": 0.5
     },
     {
      "block": 8,
      "tokens_after": 57,
      "theta": 0.5,
-     "alpha": 0.6666666666666666,
-     "kappa": 2.0
+     "alpha": 0.6666666666666666
     },
     {
      "block": 11,
      "tokens_after": 3,
      "theta": 0.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     }
    ]
   },
@@ -24264,36 +23762,31 @@
      "block": 2,
      "tokens_after": 173,
      "theta": 1.0,
-     "alpha": 0.5,
-     "kappa": 1.0
+     "alpha": 0.5
     },
     {
      "block": 3,
      "tokens_after": 125,
      "theta": 1.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 4,
      "tokens_after": 101,
      "theta": 1.0,
-     "alpha": 0.5,
-     "kappa": 1.0
+     "alpha": 0.5
     },
     {
      "block": 5,
      "tokens_after": 77,
      "theta": 1.0,
-     "alpha": 0.5,
-     "kappa": 1.0
+     "alpha": 0.5
     },
     {
      "block": 11,
      "tokens_after": 3,
      "theta": 0.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     }
    ]
   },
@@ -24476,36 +23969,31 @@
      "block": 2,
      "tokens_after": 189,
      "theta": 1.0,
-     "alpha": 0.5,
-     "kappa": 1.0
+     "alpha": 0.5
     },
     {
      "block": 3,
      "tokens_after": 133,
      "theta": 1.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 4,
      "tokens_after": 101,
      "theta": 1.0,
-     "alpha": 0.5,
-     "kappa": 1.0
+     "alpha": 0.5
     },
     {
      "block": 7,
      "tokens_after": 77,
      "theta": 1.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 11,
      "tokens_after": 3,
      "theta": 0.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     }
    ]
   },
@@ -24727,43 +24215,37 @@
      "block": 2,
      "tokens_after": 189,
      "theta": 1.0,
-     "alpha": 0.5,
-     "kappa": 1.0
+     "alpha": 0.5
     },
     {
      "block": 3,
      "tokens_after": 173,
      "theta": 1.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 4,
      "tokens_after": 125,
      "theta": 1.0,
-     "alpha": 0.5,
-     "kappa": 1.0
+     "alpha": 0.5
     },
     {
      "block": 5,
      "tokens_after": 101,
      "theta": 1.0,
-     "alpha": 0.6666666666666666,
-     "kappa": 2.0
+     "alpha": 0.6666666666666666
     },
     {
      "block": 7,
      "tokens_after": 77,
      "theta": 1.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 11,
      "tokens_after": 3,
      "theta": 0.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     }
    ]
   },
@@ -24979,43 +24461,37 @@
      "block": 2,
      "tokens_after": 189,
      "theta": 1.0,
-     "alpha": 0.5,
-     "kappa": 1.0
+     "alpha": 0.5
     },
     {
      "block": 3,
      "tokens_after": 173,
      "theta": 1.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 4,
      "tokens_after": 124,
      "theta": 1.0,
-     "alpha": 0.5,
-     "kappa": 1.0
+     "alpha": 0.5
     },
     {
      "block": 6,
      "tokens_after": 99,
      "theta": 1.0,
-     "alpha": 0.75,
-     "kappa": 3.0
+     "alpha": 0.75
     },
     {
      "block": 7,
      "tokens_after": 91,
      "theta": 1.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 11,
      "tokens_after": 3,
      "theta": 0.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     }
    ]
   },
@@ -25333,50 +24809,43 @@
      "block": 1,
      "tokens_after": 189,
      "theta": 0.5,
-     "alpha": 0.6666666666666666,
-     "kappa": 2.0
+     "alpha": 0.6666666666666666
     },
     {
      "block": 2,
      "tokens_after": 169,
      "theta": 0.5,
-     "alpha": 0.5,
-     "kappa": 1.0
+     "alpha": 0.5
     },
     {
      "block": 3,
      "tokens_after": 125,
      "theta": 1.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 4,
      "tokens_after": 101,
      "theta": 1.0,
-     "alpha": 0.5,
-     "kappa": 1.0
+     "alpha": 0.5
     },
     {
      "block": 5,
      "tokens_after": 77,
      "theta": 1.0,
-     "alpha": 0.5,
-     "kappa": 1.0
+     "alpha": 0.5
     },
     {
      "block": 6,
      "tokens_after": 53,
      "theta": 1.0,
-     "alpha": 0.5,
-     "kappa": 1.0
+     "alpha": 0.5
     },
     {
      "block": 11,
      "tokens_after": 3,
      "theta": 0.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     }
    ]
   },
@@ -25598,43 +25067,37 @@
      "block": 2,
      "tokens_after": 186,
      "theta": 1.0,
-     "alpha": 0.5,
-     "kappa": 1.0
+     "alpha": 0.5
     },
     {
      "block": 3,
      "tokens_after": 135,
      "theta": 1.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 4,
      "tokens_after": 107,
      "theta": 1.0,
-     "alpha": 0.5,
-     "kappa": 1.0
+     "alpha": 0.5
     },
     {
      "block": 5,
      "tokens_after": 80,
      "theta": 1.0,
-     "alpha": 0.5,
-     "kappa": 1.0
+     "alpha": 0.5
     },
     {
      "block": 7,
      "tokens_after": 55,
      "theta": 1.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 11,
      "tokens_after": 3,
      "theta": 0.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     }
    ]
   },
@@ -25817,36 +25280,31 @@
      "block": 2,
      "tokens_after": 173,
      "theta": 1.0,
-     "alpha": 0.5,
-     "kappa": 1.0
+     "alpha": 0.5
     },
     {
      "block": 3,
      "tokens_after": 125,
      "theta": 1.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 4,
      "tokens_after": 101,
      "theta": 1.0,
-     "alpha": 0.5,
-     "kappa": 1.0
+     "alpha": 0.5
     },
     {
      "block": 6,
      "tokens_after": 77,
      "theta": 1.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 11,
      "tokens_after": 3,
      "theta": 0.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     }
    ]
   },
@@ -26068,43 +25526,37 @@
      "block": 2,
      "tokens_after": 189,
      "theta": 1.0,
-     "alpha": 0.5,
-     "kappa": 1.0
+     "alpha": 0.5
     },
     {
      "block": 3,
      "tokens_after": 148,
      "theta": 1.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 4,
      "tokens_after": 123,
      "theta": 1.0,
-     "alpha": 0.5,
-     "kappa": 1.0
+     "alpha": 0.5
     },
     {
      "block": 5,
      "tokens_after": 99,
      "theta": 1.0,
-     "alpha": 0.6666666666666666,
-     "kappa": 2.0
+     "alpha": 0.6666666666666666
     },
     {
      "block": 7,
      "tokens_after": 75,
      "theta": 1.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 11,
      "tokens_after": 3,
      "theta": 0.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     }
    ]
   },
@@ -26320,43 +25772,37 @@
      "block": 2,
      "tokens_after": 189,
      "theta": 1.0,
-     "alpha": 0.5,
-     "kappa": 1.0
+     "alpha": 0.5
     },
     {
      "block": 3,
      "tokens_after": 173,
      "theta": 1.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 4,
      "tokens_after": 124,
      "theta": 1.0,
-     "alpha": 0.5,
-     "kappa": 1.0
+     "alpha": 0.5
     },
     {
      "block": 6,
      "tokens_after": 100,
      "theta": 1.0,
-     "alpha": 0.75,
-     "kappa": 3.0
+     "alpha": 0.75
     },
     {
      "block": 7,
      "tokens_after": 80,
      "theta": 1.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 11,
      "tokens_after": 3,
      "theta": 0.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     }
    ]
   },
@@ -26572,36 +26018,31 @@
      "block": 2,
      "tokens_after": 189,
      "theta": 1.0,
-     "alpha": 0.5,
-     "kappa": 1.0
+     "alpha": 0.5
     },
     {
      "block": 3,
      "tokens_after": 173,
      "theta": 1.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 4,
      "tokens_after": 124,
      "theta": 1.0,
-     "alpha": 0.5,
-     "kappa": 1.0
+     "alpha": 0.5
     },
     {
      "block": 6,
      "tokens_after": 100,
      "theta": 1.0,
-     "alpha": 0.75,
-     "kappa": 3.0
+     "alpha": 0.75
     },
     {
      "block": 11,
      "tokens_after": 3,
      "theta": 0.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     }
    ]
   },
@@ -26760,29 +26201,25 @@
      "block": 3,
      "tokens_after": 173,
      "theta": 1.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 4,
      "tokens_after": 149,
      "theta": 1.0,
-     "alpha": 0.5,
-     "kappa": 1.0
+     "alpha": 0.5
     },
     {
      "block": 6,
      "tokens_after": 101,
      "theta": 1.0,
-     "alpha": 0.75,
-     "kappa": 3.0
+     "alpha": 0.75
     },
     {
      "block": 11,
      "tokens_after": 3,
      "theta": 0.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     }
    ]
   },
@@ -26965,36 +26402,31 @@
      "block": 2,
      "tokens_after": 171,
      "theta": 1.0,
-     "alpha": 0.5,
-     "kappa": 1.0
+     "alpha": 0.5
     },
     {
      "block": 3,
      "tokens_after": 121,
      "theta": 1.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 4,
      "tokens_after": 96,
      "theta": 1.0,
-     "alpha": 0.5,
-     "kappa": 1.0
+     "alpha": 0.5
     },
     {
      "block": 5,
      "tokens_after": 72,
      "theta": 1.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 11,
      "tokens_after": 3,
      "theta": 0.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     }
    ]
   },
@@ -27177,43 +26609,37 @@
      "block": 2,
      "tokens_after": 173,
      "theta": 1.0,
-     "alpha": 0.5,
-     "kappa": 1.0
+     "alpha": 0.5
     },
     {
      "block": 3,
      "tokens_after": 125,
      "theta": 1.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 4,
      "tokens_after": 101,
      "theta": 1.0,
-     "alpha": 0.5,
-     "kappa": 1.0
+     "alpha": 0.5
     },
     {
      "block": 6,
      "tokens_after": 93,
      "theta": 1.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 7,
      "tokens_after": 77,
      "theta": 1.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 11,
      "tokens_after": 3,
      "theta": 0.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     }
    ]
   },
@@ -27435,43 +26861,37 @@
      "block": 2,
      "tokens_after": 189,
      "theta": 1.0,
-     "alpha": 0.5,
-     "kappa": 1.0
+     "alpha": 0.5
     },
     {
      "block": 3,
      "tokens_after": 153,
      "theta": 1.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 4,
      "tokens_after": 125,
      "theta": 1.0,
-     "alpha": 0.5,
-     "kappa": 1.0
+     "alpha": 0.5
     },
     {
      "block": 5,
      "tokens_after": 101,
      "theta": 1.0,
-     "alpha": 0.6666666666666666,
-     "kappa": 2.0
+     "alpha": 0.6666666666666666
     },
     {
      "block": 7,
      "tokens_after": 77,
      "theta": 1.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 11,
      "tokens_after": 3,
      "theta": 0.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     }
    ]
   },
@@ -27687,43 +27107,37 @@
      "block": 2,
      "tokens_after": 189,
      "theta": 1.0,
-     "alpha": 0.5,
-     "kappa": 1.0
+     "alpha": 0.5
     },
     {
      "block": 3,
      "tokens_after": 173,
      "theta": 1.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 4,
      "tokens_after": 124,
      "theta": 1.0,
-     "alpha": 0.5,
-     "kappa": 1.0
+     "alpha": 0.5
     },
     {
      "block": 6,
      "tokens_after": 99,
      "theta": 1.0,
-     "alpha": 0.75,
-     "kappa": 3.0
+     "alpha": 0.75
     },
     {
      "block": 7,
      "tokens_after": 87,
      "theta": 1.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 11,
      "tokens_after": 3,
      "theta": 0.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     }
    ]
   },
@@ -27978,43 +27392,37 @@
      "block": 2,
      "tokens_after": 189,
      "theta": 1.0,
-     "alpha": 0.5,
-     "kappa": 1.0
+     "alpha": 0.5
     },
     {
      "block": 3,
      "tokens_after": 173,
      "theta": 1.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 4,
      "tokens_after": 148,
      "theta": 1.0,
-     "alpha": 0.5,
-     "kappa": 1.0
+     "alpha": 0.5
     },
     {
      "block": 5,
      "tokens_after": 124,
      "theta": 1.0,
-     "alpha": 0.75,
-     "kappa": 3.0
+     "alpha": 0.75
     },
     {
      "block": 6,
      "tokens_after": 100,
      "theta": 1.0,
-     "alpha": 0.75,
-     "kappa": 3.0
+     "alpha": 0.75
     },
     {
      "block": 11,
      "tokens_after": 3,
      "theta": 0.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     }
    ]
   },
@@ -28173,29 +27581,25 @@
      "block": 3,
      "tokens_after": 185,
      "theta": 1.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 4,
      "tokens_after": 163,
      "theta": 1.0,
-     "alpha": 0.5,
-     "kappa": 1.0
+     "alpha": 0.5
     },
     {
      "block": 6,
      "tokens_after": 102,
      "theta": 1.0,
-     "alpha": 0.75,
-     "kappa": 3.0
+     "alpha": 0.75
     },
     {
      "block": 11,
      "tokens_after": 3,
      "theta": 0.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     }
    ]
   },
@@ -28348,29 +27752,25 @@
      "block": 3,
      "tokens_after": 172,
      "theta": 1.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 5,
      "tokens_after": 147,
      "theta": 1.0,
-     "alpha": 0.5,
-     "kappa": 1.0
+     "alpha": 0.5
     },
     {
      "block": 6,
      "tokens_after": 122,
      "theta": 1.0,
-     "alpha": 0.75,
-     "kappa": 3.0
+     "alpha": 0.75
     },
     {
      "block": 11,
      "tokens_after": 3,
      "theta": 0.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     }
    ]
   },
@@ -28862,15 +28262,13 @@
      "block": 3,
      "tokens_after": 84,
      "theta": 1.0,
-     "alpha": 0.5,
-     "kappa": 1.0
+     "alpha": 0.5
     },
     {
      "block": 11,
      "tokens_after": 3,
      "theta": 0.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     }
    ]
   },
@@ -28949,15 +28347,13 @@
      "block": 3,
      "tokens_after": 97,
      "theta": 1.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 11,
      "tokens_after": 3,
      "theta": 0.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     }
    ]
   },
@@ -29083,15 +28479,13 @@
      "block": 4,
      "tokens_after": 94,
      "theta": 1.0,
-     "alpha": 0.5,
-     "kappa": 1.0
+     "alpha": 0.5
     },
     {
      "block": 11,
      "tokens_after": 3,
      "theta": 0.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     }
    ]
   },
@@ -29170,15 +28564,13 @@
      "block": 3,
      "tokens_after": 123,
      "theta": 1.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 11,
      "tokens_after": 3,
      "theta": 0.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     }
    ]
   },
@@ -29304,15 +28696,13 @@
      "block": 4,
      "tokens_after": 122,
      "theta": 1.0,
-     "alpha": 0.5,
-     "kappa": 1.0
+     "alpha": 0.5
     },
     {
      "block": 11,
      "tokens_after": 10,
      "theta": 0.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     }
    ]
   },
@@ -29438,8 +28828,7 @@
      "block": 4,
      "tokens_after": 83,
      "theta": 1.0,
-     "alpha": 0.5,
-     "kappa": 1.0
+     "alpha": 0.5
     }
    ]
   },
@@ -29565,8 +28954,7 @@
      "block": 4,
      "tokens_after": 87,
      "theta": 1.0,
-     "alpha": 0.5,
-     "kappa": 1.0
+     "alpha": 0.5
     }
    ]
   },
@@ -29680,8 +29068,7 @@
      "block": 6,
      "tokens_after": 88,
      "theta": 1.0,
-     "alpha": 0.75,
-     "kappa": 3.0
+     "alpha": 0.75
     }
    ]
   },
@@ -29832,15 +29219,13 @@
      "block": 3,
      "tokens_after": 124,
      "theta": 1.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 5,
      "tokens_after": 72,
      "theta": 1.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     }
    ]
   },
@@ -29919,8 +29304,7 @@
      "block": 3,
      "tokens_after": 103,
      "theta": 1.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     }
    ]
   },
@@ -30046,8 +29430,7 @@
      "block": 4,
      "tokens_after": 102,
      "theta": 1.0,
-     "alpha": 0.5,
-     "kappa": 1.0
+     "alpha": 0.5
     }
    ]
   },
@@ -30173,8 +29556,7 @@
      "block": 4,
      "tokens_after": 120,
      "theta": 1.0,
-     "alpha": 0.5,
-     "kappa": 1.0
+     "alpha": 0.5
     }
    ]
   },
@@ -30288,8 +29670,7 @@
      "block": 6,
      "tokens_after": 117,
      "theta": 1.0,
-     "alpha": 0.75,
-     "kappa": 3.0
+     "alpha": 0.75
     }
    ]
   },
@@ -30596,50 +29977,43 @@
      "block": 1,
      "tokens_after": 165,
      "theta": 0.5,
-     "alpha": 0.75,
-     "kappa": 3.0
+     "alpha": 0.75
     },
     {
      "block": 2,
      "tokens_after": 135,
      "theta": 0.5,
-     "alpha": 0.75,
-     "kappa": 3.0
+     "alpha": 0.75
     },
     {
      "block": 3,
      "tokens_after": 106,
      "theta": 1.0,
-     "alpha": 0.5,
-     "kappa": 1.0
+     "alpha": 0.5
     },
     {
      "block": 4,
      "tokens_after": 79,
      "theta": 1.0,
-     "alpha": 0.5,
-     "kappa": 1.0
+     "alpha": 0.5
     },
     {
      "block": 5,
      "tokens_after": 55,
      "theta": 1.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 7,
      "tokens_after": 33,
      "theta": 0.5,
-     "alpha": 0.5,
-     "kappa": 1.0
+     "alpha": 0.5
     },
     {
      "block": 11,
      "tokens_after": 3,
      "theta": 0.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     }
    ]
   },
@@ -30950,50 +30324,43 @@
      "block": 1,
      "tokens_after": 165,
      "theta": 0.5,
-     "alpha": 0.75,
-     "kappa": 3.0
+     "alpha": 0.75
     },
     {
      "block": 2,
      "tokens_after": 135,
      "theta": 0.5,
-     "alpha": 0.75,
-     "kappa": 3.0
+     "alpha": 0.75
     },
     {
      "block": 3,
      "tokens_after": 106,
      "theta": 1.0,
-     "alpha": 0.5,
-     "kappa": 1.0
+     "alpha": 0.5
     },
     {
      "block": 4,
      "tokens_after": 79,
      "theta": 1.0,
-     "alpha": 0.5,
-     "kappa": 1.0
+     "alpha": 0.5
     },
     {
      "block": 5,
      "tokens_after": 55,
      "theta": 1.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 7,
      "tokens_after": 33,
      "theta": 0.5,
-     "alpha": 0.5,
-     "kappa": 1.0
+     "alpha": 0.5
     },
     {
      "block": 11,
      "tokens_after": 3,
      "theta": 0.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     }
    ]
   },
@@ -31249,36 +30616,31 @@
      "block": 1,
      "tokens_after": 149,
      "theta": 0.5,
-     "alpha": 0.75,
-     "kappa": 3.0
+     "alpha": 0.75
     },
     {
      "block": 3,
      "tokens_after": 101,
      "theta": 1.0,
-     "alpha": 0.5,
-     "kappa": 1.0
+     "alpha": 0.5
     },
     {
      "block": 4,
      "tokens_after": 77,
      "theta": 1.0,
-     "alpha": 0.5,
-     "kappa": 1.0
+     "alpha": 0.5
     },
     {
      "block": 6,
      "tokens_after": 53,
      "theta": 1.0,
-     "alpha": 0.5,
-     "kappa": 1.0
+     "alpha": 0.5
     },
     {
      "block": 11,
      "tokens_after": 3,
      "theta": 0.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     }
    ]
   },
@@ -31538,36 +30900,31 @@
      "block": 1,
      "tokens_after": 149,
      "theta": 0.5,
-     "alpha": 0.75,
-     "kappa": 3.0
+     "alpha": 0.75
     },
     {
      "block": 3,
      "tokens_after": 101,
      "theta": 1.0,
-     "alpha": 0.5,
-     "kappa": 1.0
+     "alpha": 0.5
     },
     {
      "block": 4,
      "tokens_after": 77,
      "theta": 1.0,
-     "alpha": 0.5,
-     "kappa": 1.0
+     "alpha": 0.5
     },
     {
      "block": 6,
      "tokens_after": 53,
      "theta": 1.0,
-     "alpha": 0.5,
-     "kappa": 1.0
+     "alpha": 0.5
     },
     {
      "block": 11,
      "tokens_after": 3,
      "theta": 0.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     }
    ]
   },
@@ -31835,50 +31192,43 @@
      "block": 1,
      "tokens_after": 189,
      "theta": 0.5,
-     "alpha": 0.6666666666666666,
-     "kappa": 2.0
+     "alpha": 0.6666666666666666
     },
     {
      "block": 2,
      "tokens_after": 149,
      "theta": 0.5,
-     "alpha": 0.5,
-     "kappa": 1.0
+     "alpha": 0.5
     },
     {
      "block": 3,
      "tokens_after": 125,
      "theta": 1.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 4,
      "tokens_after": 101,
      "theta": 1.0,
-     "alpha": 0.5,
-     "kappa": 1.0
+     "alpha": 0.5
     },
     {
      "block": 5,
      "tokens_after": 77,
      "theta": 1.0,
-     "alpha": 0.5,
-     "kappa": 1.0
+     "alpha": 0.5
     },
     {
      "block": 7,
      "tokens_after": 53,
      "theta": 1.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 11,
      "tokens_after": 3,
      "theta": 0.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     }
    ]
   },
@@ -32150,50 +31500,43 @@
      "block": 1,
      "tokens_after": 189,
      "theta": 0.5,
-     "alpha": 0.6666666666666666,
-     "kappa": 2.0
+     "alpha": 0.6666666666666666
     },
     {
      "block": 2,
      "tokens_after": 149,
      "theta": 0.5,
-     "alpha": 0.5,
-     "kappa": 1.0
+     "alpha": 0.5
     },
     {
      "block": 3,
      "tokens_after": 125,
      "theta": 1.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 4,
      "tokens_after": 101,
      "theta": 1.0,
-     "alpha": 0.5,
-     "kappa": 1.0
+     "alpha": 0.5
     },
     {
      "block": 5,
      "tokens_after": 77,
      "theta": 1.0,
-     "alpha": 0.5,
-     "kappa": 1.0
+     "alpha": 0.5
     },
     {
      "block": 7,
      "tokens_after": 53,
      "theta": 1.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 11,
      "tokens_after": 3,
      "theta": 0.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     }
    ]
   },
@@ -32422,43 +31765,37 @@
      "block": 1,
      "tokens_after": 189,
      "theta": 0.5,
-     "alpha": 0.6666666666666666,
-     "kappa": 2.0
+     "alpha": 0.6666666666666666
     },
     {
      "block": 2,
      "tokens_after": 172,
      "theta": 0.47058823529411764,
-     "alpha": 0.5,
-     "kappa": 1.0
+     "alpha": 0.5
     },
     {
      "block": 3,
      "tokens_after": 123,
      "theta": 1.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 4,
      "tokens_after": 98,
      "theta": 1.0,
-     "alpha": 0.5,
-     "kappa": 1.0
+     "alpha": 0.5
     },
     {
      "block": 5,
      "tokens_after": 74,
      "theta": 1.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 11,
      "tokens_after": 3,
      "theta": 0.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     }
    ]
   },
@@ -32691,43 +32028,37 @@
      "block": 1,
      "tokens_after": 189,
      "theta": 0.5,
-     "alpha": 0.6666666666666666,
-     "kappa": 2.0
+     "alpha": 0.6666666666666666
     },
     {
      "block": 2,
      "tokens_after": 172,
      "theta": 0.47058823529411764,
-     "alpha": 0.5,
-     "kappa": 1.0
+     "alpha": 0.5
     },
     {
      "block": 3,
      "tokens_after": 123,
      "theta": 1.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 4,
      "tokens_after": 98,
      "theta": 1.0,
-     "alpha": 0.5,
-     "kappa": 1.0
+     "alpha": 0.5
     },
     {
      "block": 5,
      "tokens_after": 74,
      "theta": 1.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 11,
      "tokens_after": 3,
      "theta": 0.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     }
    ]
   },
@@ -32893,36 +32224,31 @@
      "block": 2,
      "tokens_after": 173,
      "theta": 0.5,
-     "alpha": 0.5,
-     "kappa": 1.0
+     "alpha": 0.5
     },
     {
      "block": 3,
      "tokens_after": 149,
      "theta": 1.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 4,
      "tokens_after": 101,
      "theta": 1.0,
-     "alpha": 0.5,
-     "kappa": 1.0
+     "alpha": 0.5
     },
     {
      "block": 7,
      "tokens_after": 77,
      "theta": 1.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 11,
      "tokens_after": 3,
      "theta": 0.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     }
    ]
   },
@@ -33092,36 +32418,31 @@
      "block": 2,
      "tokens_after": 173,
      "theta": 0.5,
-     "alpha": 0.5,
-     "kappa": 1.0
+     "alpha": 0.5
     },
     {
      "block": 3,
      "tokens_after": 149,
      "theta": 1.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 4,
      "tokens_after": 101,
      "theta": 1.0,
-     "alpha": 0.5,
-     "kappa": 1.0
+     "alpha": 0.5
     },
     {
      "block": 7,
      "tokens_after": 77,
      "theta": 1.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 11,
      "tokens_after": 3,
      "theta": 0.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     }
    ]
   },
@@ -33320,43 +32641,37 @@
      "block": 2,
      "tokens_after": 189,
      "theta": 1.0,
-     "alpha": 0.5,
-     "kappa": 1.0
+     "alpha": 0.5
     },
     {
      "block": 3,
      "tokens_after": 173,
      "theta": 1.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 4,
      "tokens_after": 124,
      "theta": 1.0,
-     "alpha": 0.5,
-     "kappa": 1.0
+     "alpha": 0.5
     },
     {
      "block": 6,
      "tokens_after": 100,
      "theta": 1.0,
-     "alpha": 0.75,
-     "kappa": 3.0
+     "alpha": 0.75
     },
     {
      "block": 7,
      "tokens_after": 80,
      "theta": 1.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 11,
      "tokens_after": 3,
      "theta": 0.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     }
    ]
   },
@@ -33559,43 +32874,37 @@
      "block": 2,
      "tokens_after": 189,
      "theta": 1.0,
-     "alpha": 0.5,
-     "kappa": 1.0
+     "alpha": 0.5
     },
     {
      "block": 3,
      "tokens_after": 173,
      "theta": 1.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 4,
      "tokens_after": 124,
      "theta": 1.0,
-     "alpha": 0.5,
-     "kappa": 1.0
+     "alpha": 0.5
     },
     {
      "block": 6,
      "tokens_after": 100,
      "theta": 1.0,
-     "alpha": 0.75,
-     "kappa": 3.0
+     "alpha": 0.75
     },
     {
      "block": 7,
      "tokens_after": 80,
      "theta": 1.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 11,
      "tokens_after": 3,
      "theta": 0.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     }
    ]
   },
@@ -33833,43 +33142,37 @@
      "block": 2,
      "tokens_after": 189,
      "theta": 1.0,
-     "alpha": 0.5,
-     "kappa": 1.0
+     "alpha": 0.5
     },
     {
      "block": 3,
      "tokens_after": 173,
      "theta": 1.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 4,
      "tokens_after": 148,
      "theta": 1.0,
-     "alpha": 0.5,
-     "kappa": 1.0
+     "alpha": 0.5
     },
     {
      "block": 5,
      "tokens_after": 124,
      "theta": 1.0,
-     "alpha": 0.75,
-     "kappa": 3.0
+     "alpha": 0.75
     },
     {
      "block": 6,
      "tokens_after": 100,
      "theta": 1.0,
-     "alpha": 0.75,
-     "kappa": 3.0
+     "alpha": 0.75
     },
     {
      "block": 11,
      "tokens_after": 3,
      "theta": 0.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     }
    ]
   },
@@ -34111,43 +33414,37 @@
      "block": 2,
      "tokens_after": 189,
      "theta": 1.0,
-     "alpha": 0.5,
-     "kappa": 1.0
+     "alpha": 0.5
     },
     {
      "block": 3,
      "tokens_after": 173,
      "theta": 1.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 4,
      "tokens_after": 148,
      "theta": 1.0,
-     "alpha": 0.5,
-     "kappa": 1.0
+     "alpha": 0.5
     },
     {
      "block": 5,
      "tokens_after": 124,
      "theta": 1.0,
-     "alpha": 0.75,
-     "kappa": 3.0
+     "alpha": 0.75
     },
     {
      "block": 6,
      "tokens_after": 100,
      "theta": 1.0,
-     "alpha": 0.75,
-     "kappa": 3.0
+     "alpha": 0.75
     },
     {
      "block": 11,
      "tokens_after": 3,
      "theta": 0.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     }
    ]
   },
@@ -34431,43 +33728,37 @@
      "block": 1,
      "tokens_after": 146,
      "theta": 0.5098039215686274,
-     "alpha": 0.75,
-     "kappa": 3.0
+     "alpha": 0.75
     },
     {
      "block": 2,
      "tokens_after": 121,
      "theta": 0.48,
-     "alpha": 0.6666666666666666,
-     "kappa": 2.0
+     "alpha": 0.6666666666666666
     },
     {
      "block": 3,
      "tokens_after": 97,
      "theta": 1.0,
-     "alpha": 0.5,
-     "kappa": 1.0
+     "alpha": 0.5
     },
     {
      "block": 4,
      "tokens_after": 73,
      "theta": 1.0,
-     "alpha": 0.5,
-     "kappa": 1.0
+     "alpha": 0.5
     },
     {
      "block": 5,
      "tokens_after": 49,
      "theta": 1.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 11,
      "tokens_after": 3,
      "theta": 0.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     }
    ]
   },
@@ -34700,43 +33991,37 @@
      "block": 1,
      "tokens_after": 173,
      "theta": 0.5,
-     "alpha": 0.75,
-     "kappa": 3.0
+     "alpha": 0.75
     },
     {
      "block": 2,
      "tokens_after": 149,
      "theta": 0.5,
-     "alpha": 0.5,
-     "kappa": 1.0
+     "alpha": 0.5
     },
     {
      "block": 3,
      "tokens_after": 113,
      "theta": 1.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 4,
      "tokens_after": 77,
      "theta": 1.0,
-     "alpha": 0.5,
-     "kappa": 1.0
+     "alpha": 0.5
     },
     {
      "block": 5,
      "tokens_after": 53,
      "theta": 1.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 11,
      "tokens_after": 3,
      "theta": 0.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     }
    ]
   },
@@ -35041,50 +34326,43 @@
      "block": 1,
      "tokens_after": 189,
      "theta": 0.5,
-     "alpha": 0.6666666666666666,
-     "kappa": 2.0
+     "alpha": 0.6666666666666666
     },
     {
      "block": 2,
      "tokens_after": 173,
      "theta": 0.5,
-     "alpha": 0.5,
-     "kappa": 1.0
+     "alpha": 0.5
     },
     {
      "block": 3,
      "tokens_after": 125,
      "theta": 1.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 4,
      "tokens_after": 101,
      "theta": 1.0,
-     "alpha": 0.5,
-     "kappa": 1.0
+     "alpha": 0.5
     },
     {
      "block": 5,
      "tokens_after": 77,
      "theta": 1.0,
-     "alpha": 0.5,
-     "kappa": 1.0
+     "alpha": 0.5
     },
     {
      "block": 6,
      "tokens_after": 53,
      "theta": 1.0,
-     "alpha": 0.5,
-     "kappa": 1.0
+     "alpha": 0.5
     },
     {
      "block": 11,
      "tokens_after": 3,
      "theta": 0.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     }
    ]
   },
@@ -35317,43 +34595,37 @@
      "block": 1,
      "tokens_after": 189,
      "theta": 0.5,
-     "alpha": 0.6666666666666666,
-     "kappa": 2.0
+     "alpha": 0.6666666666666666
     },
     {
      "block": 2,
      "tokens_after": 172,
      "theta": 0.47058823529411764,
-     "alpha": 0.5,
-     "kappa": 1.0
+     "alpha": 0.5
     },
     {
      "block": 3,
      "tokens_after": 123,
      "theta": 1.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 4,
      "tokens_after": 98,
      "theta": 1.0,
-     "alpha": 0.5,
-     "kappa": 1.0
+     "alpha": 0.5
     },
     {
      "block": 5,
      "tokens_after": 74,
      "theta": 1.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 11,
      "tokens_after": 3,
      "theta": 0.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     }
    ]
   },
@@ -35523,36 +34795,31 @@
      "block": 2,
      "tokens_after": 189,
      "theta": 1.0,
-     "alpha": 0.5,
-     "kappa": 1.0
+     "alpha": 0.5
     },
     {
      "block": 3,
      "tokens_after": 133,
      "theta": 1.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 4,
      "tokens_after": 101,
      "theta": 1.0,
-     "alpha": 0.5,
-     "kappa": 1.0
+     "alpha": 0.5
     },
     {
      "block": 7,
      "tokens_after": 77,
      "theta": 1.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 11,
      "tokens_after": 3,
      "theta": 0.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     }
    ]
   },
@@ -35755,43 +35022,37 @@
      "block": 2,
      "tokens_after": 189,
      "theta": 1.0,
-     "alpha": 0.5,
-     "kappa": 1.0
+     "alpha": 0.5
     },
     {
      "block": 3,
      "tokens_after": 173,
      "theta": 1.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 4,
      "tokens_after": 124,
      "theta": 1.0,
-     "alpha": 0.5,
-     "kappa": 1.0
+     "alpha": 0.5
     },
     {
      "block": 6,
      "tokens_after": 100,
      "theta": 1.0,
-     "alpha": 0.75,
-     "kappa": 3.0
+     "alpha": 0.75
     },
     {
      "block": 7,
      "tokens_after": 80,
      "theta": 1.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 11,
      "tokens_after": 3,
      "theta": 0.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     }
    ]
   },
@@ -36033,43 +35294,37 @@
      "block": 2,
      "tokens_after": 189,
      "theta": 1.0,
-     "alpha": 0.5,
-     "kappa": 1.0
+     "alpha": 0.5
     },
     {
      "block": 3,
      "tokens_after": 173,
      "theta": 1.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 4,
      "tokens_after": 148,
      "theta": 1.0,
-     "alpha": 0.5,
-     "kappa": 1.0
+     "alpha": 0.5
     },
     {
      "block": 5,
      "tokens_after": 124,
      "theta": 1.0,
-     "alpha": 0.75,
-     "kappa": 3.0
+     "alpha": 0.75
     },
     {
      "block": 6,
      "tokens_after": 100,
      "theta": 1.0,
-     "alpha": 0.75,
-     "kappa": 3.0
+     "alpha": 0.75
     },
     {
      "block": 11,
      "tokens_after": 3,
      "theta": 0.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     }
    ]
   },
@@ -36258,29 +35513,25 @@
      "block": 1,
      "tokens_after": 148,
      "theta": 0.4897959183673469,
-     "alpha": 0.75,
-     "kappa": 3.0
+     "alpha": 0.75
     },
     {
      "block": 3,
      "tokens_after": 76,
      "theta": 1.0,
-     "alpha": 0.5,
-     "kappa": 1.0
+     "alpha": 0.5
     },
     {
      "block": 5,
      "tokens_after": 52,
      "theta": 1.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 11,
      "tokens_after": 3,
      "theta": 0.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     }
    ]
   },
@@ -36418,29 +35669,25 @@
      "block": 1,
      "tokens_after": 153,
      "theta": 0.5,
-     "alpha": 0.75,
-     "kappa": 3.0
+     "alpha": 0.75
     },
     {
      "block": 3,
      "tokens_after": 108,
      "theta": 1.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 5,
      "tokens_after": 60,
      "theta": 1.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 11,
      "tokens_after": 4,
      "theta": 0.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     }
    ]
   },
@@ -36617,29 +35864,25 @@
      "block": 2,
      "tokens_after": 152,
      "theta": 0.4888888888888889,
-     "alpha": 0.5,
-     "kappa": 1.0
+     "alpha": 0.5
     },
     {
      "block": 4,
      "tokens_after": 83,
      "theta": 1.0,
-     "alpha": 0.5,
-     "kappa": 1.0
+     "alpha": 0.5
     },
     {
      "block": 7,
      "tokens_after": 59,
      "theta": 1.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 11,
      "tokens_after": 4,
      "theta": 0.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     }
    ]
   },
@@ -36918,50 +36161,43 @@
      "block": 1,
      "tokens_after": 174,
      "theta": 0.0,
-     "alpha": 0.6666666666666666,
-     "kappa": 2.0
+     "alpha": 0.6666666666666666
     },
     {
      "block": 2,
      "tokens_after": 150,
      "theta": 0.5,
-     "alpha": 0.5,
-     "kappa": 1.0
+     "alpha": 0.5
     },
     {
      "block": 3,
      "tokens_after": 126,
      "theta": 1.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 4,
      "tokens_after": 102,
      "theta": 1.0,
-     "alpha": 0.5,
-     "kappa": 1.0
+     "alpha": 0.5
     },
     {
      "block": 5,
      "tokens_after": 78,
      "theta": 1.0,
-     "alpha": 0.5,
-     "kappa": 1.0
+     "alpha": 0.5
     },
     {
      "block": 7,
      "tokens_after": 54,
      "theta": 1.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 11,
      "tokens_after": 3,
      "theta": 0.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     }
    ]
   },
@@ -37075,22 +36311,19 @@
      "block": 3,
      "tokens_after": 126,
      "theta": 1.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 5,
      "tokens_after": 78,
      "theta": 1.0,
-     "alpha": 0.5,
-     "kappa": 1.0
+     "alpha": 0.5
     },
     {
      "block": 11,
      "tokens_after": 3,
      "theta": 0.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     }
    ]
   },
@@ -37369,50 +36602,43 @@
      "block": 1,
      "tokens_after": 177,
      "theta": 0.0,
-     "alpha": 0.6666666666666666,
-     "kappa": 2.0
+     "alpha": 0.6666666666666666
     },
     {
      "block": 2,
      "tokens_after": 156,
      "theta": 0.47619047619047616,
-     "alpha": 0.5,
-     "kappa": 1.0
+     "alpha": 0.5
     },
     {
      "block": 3,
      "tokens_after": 135,
      "theta": 1.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 4,
      "tokens_after": 113,
      "theta": 1.0,
-     "alpha": 0.5,
-     "kappa": 1.0
+     "alpha": 0.5
     },
     {
      "block": 5,
      "tokens_after": 90,
      "theta": 1.0,
-     "alpha": 0.5,
-     "kappa": 1.0
+     "alpha": 0.5
     },
     {
      "block": 7,
      "tokens_after": 66,
      "theta": 1.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 11,
      "tokens_after": 6,
      "theta": 0.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     }
    ]
   },
@@ -37526,29 +36752,25 @@
      "block": 3,
      "tokens_after": 150,
      "theta": 1.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 5,
      "tokens_after": 103,
      "theta": 1.0,
-     "alpha": 0.6666666666666666,
-     "kappa": 2.0
+     "alpha": 0.6666666666666666
     },
     {
      "block": 7,
      "tokens_after": 79,
      "theta": 1.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 11,
      "tokens_after": 3,
      "theta": 0.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     }
    ]
   },
@@ -37668,29 +36890,25 @@
      "block": 3,
      "tokens_after": 125,
      "theta": 1.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 4,
      "tokens_after": 101,
      "theta": 1.0,
-     "alpha": 0.5,
-     "kappa": 1.0
+     "alpha": 0.5
     },
     {
      "block": 7,
      "tokens_after": 77,
      "theta": 1.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 11,
      "tokens_after": 3,
      "theta": 0.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     }
    ]
   },
@@ -37798,22 +37016,19 @@
      "block": 3,
      "tokens_after": 148,
      "theta": 1.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 6,
      "tokens_after": 100,
      "theta": 1.0,
-     "alpha": 0.75,
-     "kappa": 3.0
+     "alpha": 0.75
     },
     {
      "block": 11,
      "tokens_after": 3,
      "theta": 0.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     }
    ]
   },
@@ -37966,29 +37181,25 @@
      "block": 3,
      "tokens_after": 169,
      "theta": 1.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 4,
      "tokens_after": 114,
      "theta": 1.0,
-     "alpha": 0.5,
-     "kappa": 1.0
+     "alpha": 0.5
     },
     {
      "block": 6,
      "tokens_after": 88,
      "theta": 1.0,
-     "alpha": 0.75,
-     "kappa": 3.0
+     "alpha": 0.75
     },
     {
      "block": 11,
      "tokens_after": 3,
      "theta": 0.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     }
    ]
   },
@@ -38096,22 +37307,19 @@
      "block": 3,
      "tokens_after": 172,
      "theta": 1.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 6,
      "tokens_after": 111,
      "theta": 1.0,
-     "alpha": 0.75,
-     "kappa": 3.0
+     "alpha": 0.75
     },
     {
      "block": 11,
      "tokens_after": 3,
      "theta": 0.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     }
    ]
   },
@@ -38219,22 +37427,19 @@
      "block": 3,
      "tokens_after": 148,
      "theta": 1.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 6,
      "tokens_after": 100,
      "theta": 1.0,
-     "alpha": 0.75,
-     "kappa": 3.0
+     "alpha": 0.75
     },
     {
      "block": 11,
      "tokens_after": 3,
      "theta": 0.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     }
    ]
   }

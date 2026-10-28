@@ -72,12 +72,12 @@ def test_alpha_tables(tmp):
 
 
 def test_workloads(tmp):
-    from leaf.planner.alpha import config_gmac
+    from leaf.planner.gmac import config_cost
     bb, P = 'deit_t', 'schedules/leaf/planning/deit_t'
     run('workloads', '--backbone', bb, '--probes', f'{P}/probes.json', '--groups', f'{P}/groups.json', '--out', f'{tmp}/w.json')
     rows = json.load(open(f'{tmp}/w.json'))['rows']
     kinds = collections.Counter(r['name'].split('/')[0] for r in rows)
-    within = all(r['gmac_target'] is None or config_gmac(r['config'], SPECS[bb]) <= r['gmac_target'] + 1e-9 for r in rows)
+    within = all(r['gmac_target'] is None or config_cost(r['config'], SPECS[bb]) <= r['gmac_target'] + 1e-9 for r in rows)
     check(f'{bb}: leaf workloads plans {len(rows)} distinct workloads of every kind within their GMAC points',
           len(rows) >= 40 and len({config_hash(r['config']) for r in rows}) == len(rows) and within
           and set(kinds) == {'diffrate', 'm3', 'm0', 'no_forecast', 'prune_only', 'merge_only'}, dict(kinds))

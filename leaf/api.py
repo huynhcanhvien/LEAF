@@ -7,9 +7,9 @@
     model = runner.inference_model(entry['config'])  # BF16 module; leaf.latency.timing.measure_latency(model, 32)
 
 Configs are JSON dicts with a 'kind':
-  'pda'    the paper method: stations scored by (1 - alpha) z(log P) + alpha z(D) (leaf.model.alpha_score), on top of
-           'base' = 'pdm' (M3 merge, kernel 'triton_norm') or 'pd' (M0 merge)
-  'pd', 'pdm'                        the same wrappers with the kappa score z(log P) + k z(D)
+  'pda'    the paper method: stations scored by (1 - alpha) z(log P) + alpha z(D) (leaf.model.reduced_vit), with
+           'base' = 'pdm' (M3 merge, kernel 'triton_norm'), 'pd' (M0 merge) or 'extra_pdm' (the forecast and norm
+           ablations, leaf.model.ablation_vit)
   'dense'                            the backbone itself
   'tome', 'pitome', 'evit', 'mctf', 'ppt', 'tofu', 'rapid', 'onemore', 'tome_m3'   re-run baselines
 The paper protocol evaluates in BF16 at batch 32 with dense teacher logits computed at the same batch size.
@@ -47,24 +47,12 @@ def load_schedule(path, key=None):
 def build_model(vit, spec, cfg):
     """nn.Module of any config kind (see the module docstring); built on the fp32 backbone."""
     kind = cfg['kind']
-    if kind == 'pda':
-        from leaf.model.alpha_score import build_alpha
-        return build_alpha(vit, spec, cfg, _build_extra)
-    if kind == 'extra_pdm': return _build_extra(vit, spec, cfg)
     if kind in ('tofu', 'rapid', 'onemore'):
         from baselines.low_budget_posthoc import build_posthoc
         return build_posthoc(vit, spec, cfg)
     if kind == 'tome_m3':
         from baselines.tome_m3 import ToMeM3
         return ToMeM3(vit, spec, tuple(cfg['r']) if isinstance(cfg['r'], list) else cfg['r'])
-    return _build_core(vit, spec, cfg)
-
-
-def _build_extra(vit, spec, cfg):
-    """_build_core, plus 'extra_pdm': the forecast-horizon and norm ablations of the paper (leaf/model/ablation_vit.py)."""
-    if cfg['kind'] == 'extra_pdm':
-        from leaf.model.ablation_vit import ExtraViT
-        return ExtraViT(vit, cfg, spec.pool)
     return _build_core(vit, spec, cfg)
 
 
@@ -173,17 +161,10 @@ class LeafRunner(Runner):
 
 
 def stations(cfg, spec):
-    """Stations of a 'pda' / 'pd' / 'pdm' config: block, tokens after it, merge share theta, forecast weight alpha
-    and the equivalent kappa = alpha / (1 - alpha) of the unnormalised score (None for alpha = 1)."""
-    from leaf.model.alpha_score import alpha_to_kappa, kappa_to_alpha
-    from leaf.planner.alpha import config_details_alpha
-    out = []
-    for r in config_details_alpha(cfg, spec)['token_path']:
-        if r['removed'] <= 0: continue
-        a = float(r['alpha']) if 'alpha' in r else kappa_to_alpha(r['kappa'])
-        out.append(dict(block=r['block'], tokens_after=r['merge_keep'], theta=r['theta'], alpha=a,
-                        kappa=None if a == 1 else alpha_to_kappa(a)))
-    return out
+    """Stations of a 'pda' config: block, tokens after it, merge share theta and forecast weight alpha."""
+    from leaf.planner.plan import config_details
+    return [dict(block=r['block'], tokens_after=r['merge_keep'], theta=r['theta'], alpha=r['alpha'])
+            for r in config_details(cfg, spec)['token_path'] if r['removed'] > 0]
 
 
 def summary(arr):

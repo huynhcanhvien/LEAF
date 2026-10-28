@@ -1,13 +1,11 @@
-"""Frozen ViT with K token-reduction stations scored by P + k_t * D.
+"""Frozen ViT with K token-reduction stations scored by present and forecast attention.
 
 At each station block l (between attention and MLP), tokens are ranked by
-    score = z(log P) + k_l * z(D)
+    score = (1 - alpha_l) z(log P) + alpha_l z(D),   alpha_l in [0, 1]
 P is the head-mean CLS attention row of block l. D is the closed-form log-domain grouped forecast of
-CLS attention over every later block (models.grouped_future, rank-r, Triton). The DiffRate operator
-(models.ops.compress) then keeps prune_keep[l] tokens and merges down to merge_keep[l].
-Stations with k_l = 0 (and the last block, which has no future) rank by P alone.
-
-Spec: artifacts/method/latency-schedule-planner-2026-10-13.md and pid-methods-summary-2026-10-12.md §3.
+CLS attention over every later block (leaf.forecast.attention_forecast, rank r, Triton). The DiffRate operator
+(leaf.model.token_ops.compress) then keeps prune_keep[l] tokens and merges down to merge_keep[l].
+Stations with alpha_l = 0 (and the last block, which has no future) rank by P alone; alpha_l = 1 ranks by D alone.
 """
 from dataclasses import asdict, dataclass, field
 import json
@@ -24,7 +22,7 @@ from leaf.model.token_ops import cls_attention, compress, zscore
 class ReductionConfig:
     prune_keep: tuple                     # canonical per-block caps (planner.schedule.canonical)
     merge_keep: tuple
-    k: dict = field(default_factory=dict) # {station block: k_D}; absent or 0 -> P only at that station
+    alpha: dict = field(default_factory=dict)   # {station block: alpha in (0, 1]}; absent or 0 -> P only
     groups: dict = field(default_factory=dict)   # {station block: one group label per future (block, head)}
     rank: int | None = 32                 # low-rank D (SVD of each group's bilinear matrix)
     triton: bool = True                   # fused Triton D + score kernels on CUDA
@@ -33,10 +31,10 @@ class ReductionConfig:
     def __post_init__(self):
         self.prune_keep, self.merge_keep = tuple(int(v) for v in self.prune_keep), tuple(int(v) for v in self.merge_keep)
         if len(self.prune_keep) != len(self.merge_keep): raise ValueError('one prune/merge cap per block')
-        self.k = {str(int(l)): float(v) for l, v in self.k.items() if float(v) > 0}
-        if any(v < 0 for v in self.k.values()): raise ValueError('k must be >= 0')
-        self.groups = {str(int(l)): [int(g) for g in lab] for l, lab in self.groups.items() if str(int(l)) in self.k}
-        if set(self.groups) != set(self.k): raise ValueError('every station with k > 0 needs its group labels')
+        if any(not 0 <= float(v) <= 1 for v in self.alpha.values()): raise ValueError('alpha must lie in [0, 1]')
+        self.alpha = {str(int(l)): float(v) for l, v in self.alpha.items() if float(v) > 0}
+        self.groups = {str(int(l)): [int(g) for g in lab] for l, lab in self.groups.items() if str(int(l)) in self.alpha}
+        if set(self.groups) != set(self.alpha): raise ValueError('every station with alpha > 0 needs its group labels')
 
     def to_dict(self):
         return json.loads(json.dumps(asdict(self)))
@@ -55,9 +53,9 @@ class ReducedViT(nn.Module):
             if p < 2 or m < 2 or m > p: raise ValueError('invalid token schedule')
             if min(n, p, m) < n: self.stations.append(l)
             n = min(n, p, m)
-        if any(int(l) not in self.stations or int(l) >= self.n_blocks - 1 for l in cfg.k):
+        if any(int(l) not in self.stations or int(l) >= self.n_blocks - 1 for l in cfg.alpha):
             raise ValueError('D is defined only at stations before the last block')
-        self.use_d = bool(cfg.k)
+        self.use_d = bool(cfg.alpha)
         self.future = nn.ModuleDict()
         for l, labels in cfg.groups.items():
             if any(p.requires_grad for p in vit.parameters()): raise ValueError('closed-form D requires a frozen backbone')
@@ -94,7 +92,7 @@ class ReducedViT(nn.Module):
     def score(self, l, x, size, raw_p):
         key = str(l)
         if key in self.future:
-            return self.future[key].zscored(x, size, raw_p, self.cfg.k[key])
+            return self.future[key].zscored(x, size, raw_p, self.cfg.alpha[key])
         # P only. With D elsewhere in the model, z(log P) (same ranking up to ties of the clamp).
         return zscore(raw_p.clamp_min(1e-12).log(), 1) if self.use_d else raw_p
 

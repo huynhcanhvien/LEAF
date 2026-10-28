@@ -51,7 +51,7 @@ def analytic_gmacs(p, m, total=197, d=768, classes=1000, head=None):
     return macs
 
 
-def full_cost(p, m, ks=None, total=197, d=768, groups=16, rank=32, patch=16, head=None):
+def full_cost(p, m, alphas=None, total=197, d=768, groups=16, rank=32, patch=16, head=None):
     """Backbone+D MACs and a separate station scalar/comparison-operation estimate.
 
     Sorting is not a multiply-accumulate: report its comparison estimate separately.
@@ -64,10 +64,10 @@ def full_cost(p, m, ks=None, total=197, d=768, groups=16, rank=32, patch=16, hea
     # The historical backbone column uses d*d per patch. The actual RGB embedding
     # uses 3*patch*patch*d (equal only for patch 16 at width 768).
     patch_adjustment = (total - 1) * (3 * patch * patch * d - d * d) / 1e9
-    ks = ks or {}
+    alphas = alphas or {}
     for l in g['sites']:
         n, pp, mm = before[l], g['p'][l], after[l]
-        if l < len(p) - 1 and float(ks.get(str(l), ks.get(l, 0.))) > 0:
+        if l < len(p) - 1 and float(alphas.get(str(l), alphas.get(l, 0.))) > 0:
             G = groups.get(str(l), groups.get(l, 0)) if isinstance(groups, dict) else groups
             r = rank or d
             dmac += (d * G * r + G * r * d + n * G * d) / 1e9

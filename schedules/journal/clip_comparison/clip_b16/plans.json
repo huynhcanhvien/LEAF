@@ -4325,7 +4325,7 @@
   },
   "ref/diffrate_transfer/8.7": {
    "config": {
-    "kind": "pd",
+    "kind": "pda",
     "prune_keep": [
      197,
      192,
@@ -4354,20 +4354,22 @@
      13,
      3
     ],
-    "k": {},
     "groups": {},
     "rank": null,
     "triton": true,
-    "fuse_merge": true
+    "fuse_merge": true,
+    "base": "pd",
+    "alpha": {}
    },
    "group": "baseline",
    "source": "DiffRate rates of ViT-B-DeiT",
-   "config_sha": "75d2cdbb7a0019ff",
-   "gmac": 8.7398592
+   "config_sha": "36cf97ffb55336cf",
+   "gmac": 8.7398592,
+   "source_config_sha": "75d2cdbb7a0019ff"
   },
   "ref/diffrate_transfer/10.0": {
    "config": {
-    "kind": "pd",
+    "kind": "pda",
     "prune_keep": [
      197,
      194,
@@ -4396,20 +4398,22 @@
      19,
      3
     ],
-    "k": {},
     "groups": {},
     "rank": null,
     "triton": true,
-    "fuse_merge": true
+    "fuse_merge": true,
+    "base": "pd",
+    "alpha": {}
    },
    "group": "baseline",
    "source": "DiffRate rates of ViT-B-DeiT",
-   "config_sha": "eb6d571e9f3d3c96",
-   "gmac": 9.994799616
+   "config_sha": "14fcd3dda7878091",
+   "gmac": 9.994799616,
+   "source_config_sha": "eb6d571e9f3d3c96"
   },
   "ref/diffrate_transfer/10.4": {
    "config": {
-    "kind": "pd",
+    "kind": "pda",
     "prune_keep": [
      197,
      196,
@@ -4438,20 +4442,22 @@
      21,
      3
     ],
-    "k": {},
     "groups": {},
     "rank": null,
     "triton": true,
-    "fuse_merge": true
+    "fuse_merge": true,
+    "base": "pd",
+    "alpha": {}
    },
    "group": "baseline",
    "source": "DiffRate rates of ViT-B-DeiT",
-   "config_sha": "be0169bb352628b9",
-   "gmac": 10.443413760000002
+   "config_sha": "af767ec7a5df0409",
+   "gmac": 10.443413760000002,
+   "source_config_sha": "be0169bb352628b9"
   },
   "ref/diffrate_transfer/11.5": {
    "config": {
-    "kind": "pd",
+    "kind": "pda",
     "prune_keep": [
      197,
      197,
@@ -4480,20 +4486,22 @@
      35,
      3
     ],
-    "k": {},
     "groups": {},
     "rank": null,
     "triton": true,
-    "fuse_merge": true
+    "fuse_merge": true,
+    "base": "pd",
+    "alpha": {}
    },
    "group": "baseline",
    "source": "DiffRate rates of ViT-B-DeiT",
-   "config_sha": "c181f4b94f6367cb",
-   "gmac": 11.526695423999998
+   "config_sha": "467bc29ed83d0943",
+   "gmac": 11.526695423999998,
+   "source_config_sha": "c181f4b94f6367cb"
   },
   "ref/diffrate_transfer/12.5": {
    "config": {
-    "kind": "pd",
+    "kind": "pda",
     "prune_keep": [
      197,
      197,
@@ -4522,16 +4530,18 @@
      47,
      3
     ],
-    "k": {},
     "groups": {},
     "rank": null,
     "triton": true,
-    "fuse_merge": true
+    "fuse_merge": true,
+    "base": "pd",
+    "alpha": {}
    },
    "group": "baseline",
    "source": "DiffRate rates of ViT-B-DeiT",
-   "config_sha": "f0b02ab44a636910",
-   "gmac": 12.531505152
+   "config_sha": "21a562febbfb1706",
+   "gmac": 12.531505152,
+   "source_config_sha": "f0b02ab44a636910"
   },
   "ref/baseline/tome/r4": {
    "config": {

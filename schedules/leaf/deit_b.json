@@ -45,29 +45,25 @@
      "block": 1,
      "tokens_after": 102,
      "theta": 0.0,
-     "alpha": 0.75,
-     "kappa": 3.0
+     "alpha": 0.75
     },
     {
      "block": 6,
      "tokens_after": 54,
      "theta": 1.0,
-     "alpha": 0.25,
-     "kappa": 0.3333333333333333
+     "alpha": 0.25
     },
     {
      "block": 7,
      "tokens_after": 30,
      "theta": 0.5,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 11,
      "tokens_after": 3,
      "theta": 0.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     }
    ],
    "config": {
@@ -326,43 +322,37 @@
      "block": 1,
      "tokens_after": 101,
      "theta": 0.0,
-     "alpha": 0.75,
-     "kappa": 3.0
+     "alpha": 0.75
     },
     {
      "block": 5,
      "tokens_after": 77,
      "theta": 1.0,
-     "alpha": 0.5,
-     "kappa": 1.0
+     "alpha": 0.5
     },
     {
      "block": 6,
      "tokens_after": 53,
      "theta": 1.0,
-     "alpha": 0.5,
-     "kappa": 1.0
+     "alpha": 0.5
     },
     {
      "block": 7,
      "tokens_after": 33,
      "theta": 0.5,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 8,
      "tokens_after": 29,
      "theta": 1.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 11,
      "tokens_after": 3,
      "theta": 0.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     }
    ],
    "config": {
@@ -669,7 +659,7 @@
      "6": 0.5
     }
    },
-   "evaluated_config_sha": "87012d4952b597f6",
+   "evaluated_config_sha": "083780abba915174",
    "planner": {
     "gmac": 6.82996992
    },
@@ -692,29 +682,25 @@
      "block": 1,
      "tokens_after": 110,
      "theta": 0.0,
-     "alpha": 0.75,
-     "kappa": 3.0
+     "alpha": 0.75
     },
     {
      "block": 6,
      "tokens_after": 63,
      "theta": 1.0,
-     "alpha": 0.5,
-     "kappa": 1.0
+     "alpha": 0.5
     },
     {
      "block": 9,
      "tokens_after": 37,
      "theta": 0.5,
-     "alpha": 0.25,
-     "kappa": 0.3333333333333333
+     "alpha": 0.25
     },
     {
      "block": 11,
      "tokens_after": 5,
      "theta": 0.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     }
    ],
    "config": {
@@ -1000,36 +986,31 @@
      "block": 1,
      "tokens_after": 115,
      "theta": 0.0,
-     "alpha": 0.75,
-     "kappa": 3.0
+     "alpha": 0.75
     },
     {
      "block": 5,
      "tokens_after": 90,
      "theta": 1.0,
-     "alpha": 0.5,
-     "kappa": 1.0
+     "alpha": 0.5
     },
     {
      "block": 6,
      "tokens_after": 65,
      "theta": 1.0,
-     "alpha": 0.5,
-     "kappa": 1.0
+     "alpha": 0.5
     },
     {
      "block": 7,
      "tokens_after": 42,
      "theta": 0.5217391304347826,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     },
     {
      "block": 11,
      "tokens_after": 3,
      "theta": 0.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     }
    ],
    "config": {
@@ -1336,7 +1317,7 @@
      "6": 0.5
     }
    },
-   "evaluated_config_sha": "e9f43403108ca667",
+   "evaluated_config_sha": "956bf7a2c00c88f1",
    "planner": {
     "gmac": 7.773451775999999
    },
@@ -1359,29 +1340,25 @@
      "block": 1,
      "tokens_after": 128,
      "theta": 0.0,
-     "alpha": 1.0,
-     "kappa": null
+     "alpha": 1.0
     },
     {
      "block": 6,
      "tokens_after": 81,
      "theta": 1.0,
-     "alpha": 0.5,
-     "kappa": 1.0
+     "alpha": 0.5
     },
     {
      "block": 7,
      "tokens_after": 57,
      "theta": 1.0,
-     "alpha": 0.25,
-     "kappa": 0.3333333333333333
+     "alpha": 0.25
     },
     {
      "block": 11,
      "tokens_after": 4,
      "theta": 0.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     }
    ],
    "config": {
@@ -1691,36 +1668,31 @@
      "block": 1,
      "tokens_after": 125,
      "theta": 0.0,
-     "alpha": 0.6666666666666666,
-     "kappa": 2.0
+     "alpha": 0.6666666666666666
     },
     {
      "block": 5,
      "tokens_after": 101,
      "theta": 1.0,
-     "alpha": 0.6666666666666666,
-     "kappa": 2.0
+     "alpha": 0.6666666666666666
     },
     {
      "block": 6,
      "tokens_after": 77,
      "theta": 1.0,
-     "alpha": 0.5,
-     "kappa": 1.0
+     "alpha": 0.5
     },
     {
      "block": 7,
      "tokens_after": 53,
      "theta": 1.0,
-     "alpha": 0.5,
-     "kappa": 1.0
+     "alpha": 0.5
     },
     {
      "block": 11,
      "tokens_after": 3,
      "theta": 0.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     }
    ],
    "config": {
@@ -2078,7 +2050,7 @@
      "7": 0.5
     }
    },
-   "evaluated_config_sha": "3ec57f8234b4e37d",
+   "evaluated_config_sha": "6cbbe754da3f9782",
    "planner": {
     "gmac": 8.560763904
    },
@@ -2101,22 +2073,19 @@
      "block": 1,
      "tokens_after": 149,
      "theta": 0.0,
-     "alpha": 1.0,
-     "kappa": null
+     "alpha": 1.0
     },
     {
      "block": 6,
      "tokens_after": 76,
      "theta": 1.0,
-     "alpha": 0.5,
-     "kappa": 1.0
+     "alpha": 0.5
     },
     {
      "block": 11,
      "tokens_after": 3,
      "theta": 0.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     }
    ],
    "config": {
@@ -2375,36 +2344,31 @@
      "block": 1,
      "tokens_after": 164,
      "theta": 0.0,
-     "alpha": 0.75,
-     "kappa": 3.0
+     "alpha": 0.75
     },
     {
      "block": 5,
      "tokens_after": 104,
      "theta": 1.0,
-     "alpha": 0.6666666666666666,
-     "kappa": 2.0
+     "alpha": 0.6666666666666666
     },
     {
      "block": 6,
      "tokens_after": 77,
      "theta": 1.0,
-     "alpha": 0.5,
-     "kappa": 1.0
+     "alpha": 0.5
     },
     {
      "block": 8,
      "tokens_after": 53,
      "theta": 1.0,
-     "alpha": 0.5,
-     "kappa": 1.0
+     "alpha": 0.5
     },
     {
      "block": 11,
      "tokens_after": 3,
      "theta": 0.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     }
    ],
    "config": {
@@ -2750,7 +2714,7 @@
      "8": 0.5
     }
    },
-   "evaluated_config_sha": "8e2083c3363ab3fc",
+   "evaluated_config_sha": "b0380343fd8ecc5c",
    "planner": {
     "gmac": 9.934768128000002
    },
@@ -2773,22 +2737,19 @@
      "block": 1,
      "tokens_after": 154,
      "theta": 0.0,
-     "alpha": 1.0,
-     "kappa": null
+     "alpha": 1.0
     },
     {
      "block": 6,
      "tokens_after": 85,
      "theta": 1.0,
-     "alpha": 0.5,
-     "kappa": 1.0
+     "alpha": 0.5
     },
     {
      "block": 11,
      "tokens_after": 5,
      "theta": 0.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     }
    ],
    "config": {
@@ -3047,36 +3008,31 @@
      "block": 1,
      "tokens_after": 168,
      "theta": 0.0,
-     "alpha": 0.75,
-     "kappa": 3.0
+     "alpha": 0.75
     },
     {
      "block": 5,
      "tokens_after": 112,
      "theta": 1.0,
-     "alpha": 0.6666666666666666,
-     "kappa": 2.0
+     "alpha": 0.6666666666666666
     },
     {
      "block": 6,
      "tokens_after": 86,
      "theta": 1.0,
-     "alpha": 0.5,
-     "kappa": 1.0
+     "alpha": 0.5
     },
     {
      "block": 8,
      "tokens_after": 61,
      "theta": 1.0,
-     "alpha": 0.5,
-     "kappa": 1.0
+     "alpha": 0.5
     },
     {
      "block": 11,
      "tokens_after": 3,
      "theta": 0.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     }
    ],
    "config": {
@@ -3422,7 +3378,7 @@
      "8": 0.5
     }
    },
-   "evaluated_config_sha": "9ced20bb2c88bfc0",
+   "evaluated_config_sha": "aa8a840bb9d168cc",
    "planner": {
     "gmac": 10.422079487999998
    },
@@ -3445,29 +3401,25 @@
      "block": 1,
      "tokens_after": 173,
      "theta": 0.0,
-     "alpha": 1.0,
-     "kappa": null
+     "alpha": 1.0
     },
     {
      "block": 6,
      "tokens_after": 102,
      "theta": 1.0,
-     "alpha": 1.0,
-     "kappa": null
+     "alpha": 1.0
     },
     {
      "block": 8,
      "tokens_after": 78,
      "theta": 1.0,
-     "alpha": 0.5,
-     "kappa": 1.0
+     "alpha": 0.5
     },
     {
      "block": 11,
      "tokens_after": 3,
      "theta": 0.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     }
    ],
    "config": {
@@ -3765,43 +3717,37 @@
      "block": 1,
      "tokens_after": 172,
      "theta": 0.0,
-     "alpha": 0.75,
-     "kappa": 3.0
+     "alpha": 0.75
     },
     {
      "block": 5,
      "tokens_after": 147,
      "theta": 1.0,
-     "alpha": 0.5,
-     "kappa": 1.0
+     "alpha": 0.5
     },
     {
      "block": 6,
      "tokens_after": 123,
      "theta": 1.0,
-     "alpha": 0.75,
-     "kappa": 3.0
+     "alpha": 0.75
     },
     {
      "block": 7,
      "tokens_after": 99,
      "theta": 1.0,
-     "alpha": 0.75,
-     "kappa": 3.0
+     "alpha": 0.75
     },
     {
      "block": 8,
      "tokens_after": 75,
      "theta": 1.0,
-     "alpha": 0.5,
-     "kappa": 1.0
+     "alpha": 0.5
     },
     {
      "block": 11,
      "tokens_after": 3,
      "theta": 0.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     }
    ],
    "config": {
@@ -4198,7 +4144,7 @@
      "8": 0.5
     }
    },
-   "evaluated_config_sha": "9f4e05c0db61a19c",
+   "evaluated_config_sha": "ec1bffd6c71e200b",
    "planner": {
     "gmac": 11.484480768
    },
@@ -4221,22 +4167,19 @@
      "block": 5,
      "tokens_after": 150,
      "theta": 1.0,
-     "alpha": 0.3333333333333333,
-     "kappa": 0.5
+     "alpha": 0.3333333333333333
     },
     {
      "block": 7,
      "tokens_after": 103,
      "theta": 1.0,
-     "alpha": 1.0,
-     "kappa": null
+     "alpha": 1.0
     },
     {
      "block": 11,
      "tokens_after": 3,
      "theta": 0.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     }
    ],
    "config": {
@@ -4435,43 +4378,37 @@
      "block": 1,
      "tokens_after": 187,
      "theta": 0.0,
-     "alpha": 0.75,
-     "kappa": 3.0
+     "alpha": 0.75
     },
     {
      "block": 5,
      "tokens_after": 167,
      "theta": 1.0,
-     "alpha": 0.5,
-     "kappa": 1.0
+     "alpha": 0.5
     },
     {
      "block": 6,
      "tokens_after": 138,
      "theta": 1.0,
-     "alpha": 0.75,
-     "kappa": 3.0
+     "alpha": 0.75
     },
     {
      "block": 7,
      "tokens_after": 111,
      "theta": 1.0,
-     "alpha": 0.75,
-     "kappa": 3.0
+     "alpha": 0.75
     },
     {
      "block": 8,
      "tokens_after": 85,
      "theta": 1.0,
-     "alpha": 0.5,
-     "kappa": 1.0
+     "alpha": 0.5
     },
     {
      "block": 11,
      "tokens_after": 3,
      "theta": 0.0,
-     "alpha": 0.0,
-     "kappa": 0.0
+     "alpha": 0.0
     }
    ],
    "config": {
@@ -4868,7 +4805,7 @@
      "8": 0.5
     }
    },
-   "evaluated_config_sha": "9bea8a0623bdf708",
+   "evaluated_config_sha": "3ac68f68109180cb",
    "planner": {
     "gmac": 12.516347904000003
    },

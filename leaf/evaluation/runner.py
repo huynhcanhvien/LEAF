@@ -2,7 +2,7 @@
 
 Runner(backbone).run(cfg, split) evaluates once and stores, under <root>/<split>/runs/<key>.{json,npz},
 the per-image KL(dense || model), correctness and prediction. key = sha256(config JSON)[:16]; a config
-is a JSON dict with 'kind' ('pd' for the method, or a baseline name) and its parameters.
+is a JSON dict with 'kind' ('pda' for the method, or a baseline name) and its parameters.
 All arms of one comparison use the same batch size (BF16 KL depends on it).
 """
 import gc
@@ -63,17 +63,23 @@ def require_idle_gpu(idle=True):
 
 
 def build(vit, spec, cfg):
-    """nn.Module of a config: the method ('pd') or a baseline (baselines.build)."""
+    """nn.Module of a config: the method ('pda', on the wrapper named by 'base') or a baseline (baselines.build)."""
     if cfg['kind'] == 'dense': return vit
-    if cfg['kind'] == 'pdm':
-        if cfg.get('merge', {}).get('kernel') == 'triton_norm':
-            from leaf.model.mlerp_vit import MlerpConfig, MlerpViT
-            return MlerpViT(vit, MlerpConfig(**{k: v for k, v in cfg.items() if k != 'kind'}), pool=spec.pool)
-        from leaf.model.merge_variant_vit import MergeVariantConfig, MergeVariantViT
-        return MergeVariantViT(vit, MergeVariantConfig(**{k: v for k, v in cfg.items() if k != 'kind'}), pool=spec.pool)
-    if cfg['kind'] == 'pd':
-        from leaf.model.reduced_vit import ReductionConfig, ReducedViT
-        return ReducedViT(vit, ReductionConfig(**{k: v for k, v in cfg.items() if k != 'kind'}), pool=spec.pool)
+    if cfg['kind'] == 'pda':
+        base, fields = cfg['base'], {k: v for k, v in cfg.items() if k not in ('kind', 'base')}
+        if base == 'pd':
+            from leaf.model.reduced_vit import ReductionConfig, ReducedViT
+            return ReducedViT(vit, ReductionConfig(**fields), pool=spec.pool)
+        if base == 'pdm':
+            if cfg.get('merge', {}).get('kernel') == 'triton_norm':
+                from leaf.model.mlerp_vit import MlerpConfig, MlerpViT
+                return MlerpViT(vit, MlerpConfig(**fields), pool=spec.pool)
+            from leaf.model.merge_variant_vit import MergeVariantConfig, MergeVariantViT
+            return MergeVariantViT(vit, MergeVariantConfig(**fields), pool=spec.pool)
+        if base == 'extra_pdm':
+            from leaf.model.ablation_vit import ExtraViT
+            return ExtraViT(vit, fields, spec.pool)
+        raise ValueError(f'unknown base {base!r}')
     if cfg['kind'] == 'ipd':     # experimental I roles: archived in the research repository, not part of LEAF
         raise ValueError("kind 'ipd' (I-term roles) is not part of this repository")
     from baselines import build as build_baseline

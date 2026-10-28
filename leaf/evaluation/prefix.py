@@ -22,7 +22,7 @@ class PrefixCache:
     def dense(self):
         spec = self.runner.spec
         n = [spec.n_tokens] * spec.depth
-        return self.runner.inference_model(dict(kind='pd', prune_keep=n, merge_keep=n))
+        return self.runner.inference_model(dict(kind='pda', base='pd', prune_keep=n, merge_keep=n))
 
     @torch.no_grad()
     def at(self, block):

@@ -21,7 +21,7 @@
   },
   "ref/baseline/DR8.7": {
    "config": {
-    "kind": "pd",
+    "kind": "pda",
     "prune_keep": [
      197,
      192,
@@ -50,14 +50,15 @@
      23,
      197
     ],
-    "k": {},
     "groups": {},
     "rank": null,
     "triton": true,
-    "fuse_merge": true
+    "fuse_merge": true,
+    "base": "pd",
+    "alpha": {}
    },
    "group": "reference",
-   "config_sha": "25c74158da743bb0",
+   "config_sha": "8f9bacdd87612378",
    "details": {
     "token_path": [
      {
@@ -69,7 +70,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 1,
@@ -80,7 +81,7 @@
       "merged": 16,
       "pruned": 5,
       "theta": 0.7619047619047619,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 2,
@@ -91,7 +92,7 @@
       "merged": 16,
       "pruned": 10,
       "theta": 0.6153846153846154,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 3,
@@ -102,7 +103,7 @@
       "merged": 16,
       "pruned": 7,
       "theta": 0.6956521739130435,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 4,
@@ -113,7 +114,7 @@
       "merged": 12,
       "pruned": 8,
       "theta": 0.6,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 5,
@@ -124,7 +125,7 @@
       "merged": 11,
       "pruned": 4,
       "theta": 0.7333333333333333,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 6,
@@ -135,7 +136,7 @@
       "merged": 10,
       "pruned": 6,
       "theta": 0.625,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 7,
@@ -146,7 +147,7 @@
       "merged": 14,
       "pruned": 4,
       "theta": 0.7777777777777778,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 8,
@@ -157,7 +158,7 @@
       "merged": 7,
       "pruned": 4,
       "theta": 0.6363636363636364,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 9,
@@ -168,7 +169,7 @@
       "merged": 2,
       "pruned": 4,
       "theta": 0.3333333333333333,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 10,
@@ -179,7 +180,7 @@
       "merged": 14,
       "pruned": 4,
       "theta": 0.7777777777777778,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 11,
@@ -190,7 +191,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      }
     ],
     "K": 10,
@@ -201,11 +202,12 @@
     "d_gmac": 0.0,
     "station_scalar_gops_estimate": 0.000800482
    },
-   "gmac": 8.720530943999998
+   "gmac": 8.720530943999998,
+   "source_config_sha": "25c74158da743bb0"
   },
   "ref/baseline/DR10.0": {
    "config": {
-    "kind": "pd",
+    "kind": "pda",
     "prune_keep": [
      197,
      194,
@@ -234,14 +236,15 @@
      40,
      197
     ],
-    "k": {},
     "groups": {},
     "rank": null,
     "triton": true,
-    "fuse_merge": true
+    "fuse_merge": true,
+    "base": "pd",
+    "alpha": {}
    },
    "group": "reference",
-   "config_sha": "18fe82ca14bf23af",
+   "config_sha": "477fca98eed963fe",
    "details": {
     "token_path": [
      {
@@ -253,7 +256,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 1,
@@ -264,7 +267,7 @@
       "merged": 13,
       "pruned": 3,
       "theta": 0.8125,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 2,
@@ -275,7 +278,7 @@
       "merged": 13,
       "pruned": 8,
       "theta": 0.6190476190476191,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 3,
@@ -286,7 +289,7 @@
       "merged": 13,
       "pruned": 6,
       "theta": 0.6842105263157895,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 4,
@@ -297,7 +300,7 @@
       "merged": 13,
       "pruned": 6,
       "theta": 0.6842105263157895,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 5,
@@ -308,7 +311,7 @@
       "merged": 4,
       "pruned": 2,
       "theta": 0.6666666666666666,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 6,
@@ -319,7 +322,7 @@
       "merged": 13,
       "pruned": 8,
       "theta": 0.6190476190476191,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 7,
@@ -330,7 +333,7 @@
       "merged": 12,
       "pruned": 3,
       "theta": 0.8,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 8,
@@ -341,7 +344,7 @@
       "merged": 9,
       "pruned": 4,
       "theta": 0.6923076923076923,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 9,
@@ -352,7 +355,7 @@
       "merged": 4,
       "pruned": 3,
       "theta": 0.5714285714285714,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 10,
@@ -363,7 +366,7 @@
       "merged": 12,
       "pruned": 8,
       "theta": 0.6,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 11,
@@ -374,7 +377,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      }
     ],
     "K": 10,
@@ -385,11 +388,12 @@
     "d_gmac": 0.0,
     "station_scalar_gops_estimate": 0.000921016
    },
-   "gmac": 10.012672512
+   "gmac": 10.012672512,
+   "source_config_sha": "18fe82ca14bf23af"
   },
   "ref/baseline/DR10.4": {
    "config": {
-    "kind": "pd",
+    "kind": "pda",
     "prune_keep": [
      197,
      195,
@@ -418,14 +422,15 @@
      45,
      197
     ],
-    "k": {},
     "groups": {},
     "rank": null,
     "triton": true,
-    "fuse_merge": true
+    "fuse_merge": true,
+    "base": "pd",
+    "alpha": {}
    },
    "group": "reference",
-   "config_sha": "4e7142899bfd7cba",
+   "config_sha": "0c463f8b170b6622",
    "details": {
     "token_path": [
      {
@@ -437,7 +442,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 1,
@@ -448,7 +453,7 @@
       "merged": 8,
       "pruned": 2,
       "theta": 0.8,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 2,
@@ -459,7 +464,7 @@
       "merged": 13,
       "pruned": 8,
       "theta": 0.6190476190476191,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 3,
@@ -470,7 +475,7 @@
       "merged": 14,
       "pruned": 7,
       "theta": 0.6666666666666666,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 4,
@@ -481,7 +486,7 @@
       "merged": 15,
       "pruned": 5,
       "theta": 0.75,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 5,
@@ -492,7 +497,7 @@
       "merged": 13,
       "pruned": 3,
       "theta": 0.8125,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 6,
@@ -503,7 +508,7 @@
       "merged": 3,
       "pruned": 4,
       "theta": 0.42857142857142855,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 7,
@@ -514,7 +519,7 @@
       "merged": 3,
       "pruned": 2,
       "theta": 0.6,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 8,
@@ -525,7 +530,7 @@
       "merged": 14,
       "pruned": 8,
       "theta": 0.6363636363636364,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 9,
@@ -536,7 +541,7 @@
       "merged": 7,
       "pruned": 4,
       "theta": 0.6363636363636364,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 10,
@@ -547,7 +552,7 @@
       "merged": 11,
       "pruned": 8,
       "theta": 0.5789473684210527,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 11,
@@ -558,7 +563,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      }
     ],
     "K": 10,
@@ -569,11 +574,12 @@
     "d_gmac": 0.0,
     "station_scalar_gops_estimate": 0.000958794
    },
-   "gmac": 10.428
+   "gmac": 10.428,
+   "source_config_sha": "4e7142899bfd7cba"
   },
   "ref/baseline/DR11.5": {
    "config": {
-    "kind": "pd",
+    "kind": "pda",
     "prune_keep": [
      197,
      196,
@@ -602,14 +608,15 @@
      49,
      197
     ],
-    "k": {},
     "groups": {},
     "rank": null,
     "triton": true,
-    "fuse_merge": true
+    "fuse_merge": true,
+    "base": "pd",
+    "alpha": {}
    },
    "group": "reference",
-   "config_sha": "b8ec163360409365",
+   "config_sha": "616f25e2618ef0c3",
    "details": {
     "token_path": [
      {
@@ -621,7 +628,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 1,
@@ -632,7 +639,7 @@
       "merged": 4,
       "pruned": 1,
       "theta": 0.8,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 2,
@@ -643,7 +650,7 @@
       "merged": 4,
       "pruned": 10,
       "theta": 0.2857142857142857,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 3,
@@ -654,7 +661,7 @@
       "merged": 8,
       "pruned": 6,
       "theta": 0.5714285714285714,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 4,
@@ -665,7 +672,7 @@
       "merged": 12,
       "pruned": 2,
       "theta": 0.8571428571428571,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 5,
@@ -676,7 +683,7 @@
       "merged": 14,
       "pruned": 3,
       "theta": 0.8235294117647058,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 6,
@@ -687,7 +694,7 @@
       "merged": 16,
       "pruned": 2,
       "theta": 0.8888888888888888,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 7,
@@ -698,7 +705,7 @@
       "merged": 8,
       "pruned": 6,
       "theta": 0.5714285714285714,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 8,
@@ -709,7 +716,7 @@
       "merged": 5,
       "pruned": 0,
       "theta": 1.0,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 9,
@@ -720,7 +727,7 @@
       "merged": 12,
       "pruned": 2,
       "theta": 0.8571428571428571,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 10,
@@ -731,7 +738,7 @@
       "merged": 21,
       "pruned": 12,
       "theta": 0.6363636363636364,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 11,
@@ -742,7 +749,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      }
     ],
     "K": 10,
@@ -753,7 +760,8 @@
     "d_gmac": 0.0,
     "station_scalar_gops_estimate": 0.001075526
    },
-   "gmac": 11.52673152
+   "gmac": 11.52673152,
+   "source_config_sha": "b8ec163360409365"
   },
   "ref/baseline/tome/r4": {
    "config": {
@@ -1047,16 +1055,16 @@
      1.0,
      1.0
     ],
-    "ks": [
-     3.0,
-     3.0,
-     1.0,
+    "alphas": [
+     0.75,
+     0.75,
+     0.5,
      0.0,
-     1.0
+     0.5
     ]
    },
    "config": {
-    "kind": "pdm",
+    "kind": "pda",
     "prune_keep": [
      197,
      149,
@@ -1085,12 +1093,6 @@
      197,
      197
     ],
-    "k": {
-     "1": 3.0,
-     "2": 3.0,
-     "6": 1.0,
-     "9": 1.0
-    },
     "groups": {
      "1": [
       3,
@@ -1419,6 +1421,13 @@
     "merge": {
      "mode": "M3",
      "kernel": "triton_norm"
+    },
+    "base": "pdm",
+    "alpha": {
+     "1": 0.75,
+     "2": 0.75,
+     "6": 0.5,
+     "9": 0.5
     }
    },
    "gmac": 7.981630464,
@@ -1430,7 +1439,7 @@
    "group": "gmac",
    "cap": 8.0101380096,
    "anchor": "baseline/DR10.0",
-   "config_sha": "888982b3819bc296",
+   "config_sha": "fd0704f555beb31d",
    "details": {
     "token_path": [
      {
@@ -1442,7 +1451,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 1,
@@ -1453,7 +1462,7 @@
       "merged": 0,
       "pruned": 48,
       "theta": 0.0,
-      "kappa": 3.0
+      "alpha": 0.75
      },
      {
       "block": 2,
@@ -1464,7 +1473,7 @@
       "merged": 0,
       "pruned": 48,
       "theta": 0.0,
-      "kappa": 3.0
+      "alpha": 0.75
      },
      {
       "block": 3,
@@ -1475,7 +1484,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 4,
@@ -1486,7 +1495,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 5,
@@ -1497,7 +1506,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 6,
@@ -1508,7 +1517,7 @@
       "merged": 24,
       "pruned": 0,
       "theta": 1.0,
-      "kappa": 1.0
+      "alpha": 0.5
      },
      {
       "block": 7,
@@ -1519,7 +1528,7 @@
       "merged": 24,
       "pruned": 0,
       "theta": 1.0,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 8,
@@ -1530,7 +1539,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 9,
@@ -1541,7 +1550,7 @@
       "merged": 24,
       "pruned": 0,
       "theta": 1.0,
-      "kappa": 1.0
+      "alpha": 0.5
      },
      {
       "block": 10,
@@ -1552,7 +1561,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 11,
@@ -1563,7 +1572,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      }
     ],
     "K": 5,
@@ -1573,7 +1582,8 @@
     "backbone_full_gmac": 7.9723407360000005,
     "d_gmac": 0.009289728,
     "station_scalar_gops_estimate": 0.002364808
-   }
+   },
+   "source_config_sha": "888982b3819bc296"
   },
   "gmac/DR10.0/x0.85": {
    "state": {
@@ -1598,16 +1608,16 @@
      1.0,
      1.0
     ],
-    "ks": [
-     3.0,
-     3.0,
-     1.0,
+    "alphas": [
+     0.75,
+     0.75,
+     0.5,
      0.0,
-     1.0
+     0.5
     ]
    },
    "config": {
-    "kind": "pdm",
+    "kind": "pda",
     "prune_keep": [
      197,
      138,
@@ -1636,12 +1646,6 @@
      197,
      197
     ],
-    "k": {
-     "1": 3.0,
-     "2": 3.0,
-     "6": 1.0,
-     "9": 1.0
-    },
     "groups": {
      "1": [
       3,
@@ -1970,6 +1974,13 @@
     "merge": {
      "mode": "M3",
      "kernel": "triton_norm"
+    },
+    "base": "pdm",
+    "alpha": {
+     "1": 0.75,
+     "2": 0.75,
+     "6": 0.5,
+     "9": 0.5
     }
    },
    "gmac": 8.508513791999999,
@@ -1981,7 +1992,7 @@
    "group": "gmac",
    "cap": 8.5107716352,
    "anchor": "baseline/DR10.0",
-   "config_sha": "b86de46f7f2a4bf9",
+   "config_sha": "ce0e7a94878426ea",
    "details": {
     "token_path": [
      {
@@ -1993,7 +2004,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 1,
@@ -2004,7 +2015,7 @@
       "merged": 0,
       "pruned": 59,
       "theta": 0.0,
-      "kappa": 3.0
+      "alpha": 0.75
      },
      {
       "block": 2,
@@ -2015,7 +2026,7 @@
       "merged": 0,
       "pruned": 27,
       "theta": 0.0,
-      "kappa": 3.0
+      "alpha": 0.75
      },
      {
       "block": 3,
@@ -2026,7 +2037,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 4,
@@ -2037,7 +2048,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 5,
@@ -2048,7 +2059,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 6,
@@ -2059,7 +2070,7 @@
       "merged": 26,
       "pruned": 0,
       "theta": 1.0,
-      "kappa": 1.0
+      "alpha": 0.5
      },
      {
       "block": 7,
@@ -2070,7 +2081,7 @@
       "merged": 25,
       "pruned": 0,
       "theta": 1.0,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 8,
@@ -2081,7 +2092,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 9,
@@ -2092,7 +2103,7 @@
       "merged": 23,
       "pruned": 0,
       "theta": 1.0,
-      "kappa": 1.0
+      "alpha": 0.5
      },
      {
       "block": 10,
@@ -2103,7 +2114,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 11,
@@ -2114,7 +2125,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      }
     ],
     "K": 5,
@@ -2124,7 +2135,8 @@
     "backbone_full_gmac": 8.499150335999998,
     "d_gmac": 0.009363456,
     "station_scalar_gops_estimate": 0.0024073
-   }
+   },
+   "source_config_sha": "b86de46f7f2a4bf9"
   },
   "gmac/DR10.0/x0.90": {
    "state": {
@@ -2149,16 +2161,16 @@
      1.0,
      1.0
     ],
-    "ks": [
-     3.0,
-     3.0,
-     2.0,
+    "alphas": [
+     0.75,
+     0.75,
+     0.6666666666666666,
      0.0,
      0.0
     ]
    },
    "config": {
-    "kind": "pdm",
+    "kind": "pda",
     "prune_keep": [
      197,
      149,
@@ -2187,11 +2199,6 @@
      29,
      197
     ],
-    "k": {
-     "1": 3.0,
-     "2": 3.0,
-     "5": 2.0
-    },
     "groups": {
      "1": [
       3,
@@ -2506,6 +2513,12 @@
     "merge": {
      "mode": "M3",
      "kernel": "triton_norm"
+    },
+    "base": "pdm",
+    "alpha": {
+     "1": 0.75,
+     "2": 0.75,
+     "5": 0.6666666666666666
     }
    },
    "gmac": 8.865924096,
@@ -2517,7 +2530,7 @@
    "group": "gmac",
    "cap": 9.0114052608,
    "anchor": "baseline/DR10.0",
-   "config_sha": "f2b7101fc4f6322c",
+   "config_sha": "020345b604148781",
    "details": {
     "token_path": [
      {
@@ -2529,7 +2542,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 1,
@@ -2540,7 +2553,7 @@
       "merged": 0,
       "pruned": 48,
       "theta": 0.0,
-      "kappa": 3.0
+      "alpha": 0.75
      },
      {
       "block": 2,
@@ -2551,7 +2564,7 @@
       "merged": 0,
       "pruned": 24,
       "theta": 0.0,
-      "kappa": 3.0
+      "alpha": 0.75
      },
      {
       "block": 3,
@@ -2562,7 +2575,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 4,
@@ -2573,7 +2586,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 5,
@@ -2584,7 +2597,7 @@
       "merged": 24,
       "pruned": 0,
       "theta": 1.0,
-      "kappa": 2.0
+      "alpha": 0.6666666666666666
      },
      {
       "block": 6,
@@ -2595,7 +2608,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 7,
@@ -2606,7 +2619,7 @@
       "merged": 48,
       "pruned": 0,
       "theta": 1.0,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 8,
@@ -2617,7 +2630,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 9,
@@ -2628,7 +2641,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 10,
@@ -2639,7 +2652,7 @@
       "merged": 24,
       "pruned": 0,
       "theta": 1.0,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 11,
@@ -2650,7 +2663,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      }
     ],
     "K": 5,
@@ -2660,7 +2673,8 @@
     "backbone_full_gmac": 8.857777152,
     "d_gmac": 0.008146944,
     "station_scalar_gops_estimate": 0.002305992
-   }
+   },
+   "source_config_sha": "f2b7101fc4f6322c"
   },
   "gmac/DR10.0/x0.95": {
    "state": {
@@ -2688,17 +2702,17 @@
      1.0,
      1.0
     ],
-    "ks": [
-     3.0,
-     3.0,
-     3.0,
-     1.0,
+    "alphas": [
+     0.75,
+     0.75,
+     0.75,
+     0.5,
      0.0,
      0.0
     ]
    },
    "config": {
-    "kind": "pdm",
+    "kind": "pda",
     "prune_keep": [
      197,
      149,
@@ -2727,12 +2741,6 @@
      37,
      197
     ],
-    "k": {
-     "1": 3.0,
-     "2": 3.0,
-     "6": 3.0,
-     "7": 1.0
-    },
     "groups": {
      "1": [
       3,
@@ -3085,6 +3093,13 @@
     "merge": {
      "mode": "M3",
      "kernel": "triton_norm"
+    },
+    "base": "pdm",
+    "alpha": {
+     "1": 0.75,
+     "2": 0.75,
+     "6": 0.75,
+     "7": 0.5
     }
    },
    "gmac": 9.49108224,
@@ -3096,7 +3111,7 @@
    "group": "gmac",
    "cap": 9.5120388864,
    "anchor": "baseline/DR10.0",
-   "config_sha": "252e942c16827ed9",
+   "config_sha": "f1dbf0baba580f52",
    "details": {
     "token_path": [
      {
@@ -3108,7 +3123,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 1,
@@ -3119,7 +3134,7 @@
       "merged": 0,
       "pruned": 48,
       "theta": 0.0,
-      "kappa": 3.0
+      "alpha": 0.75
      },
      {
       "block": 2,
@@ -3130,7 +3145,7 @@
       "merged": 0,
       "pruned": 24,
       "theta": 0.0,
-      "kappa": 3.0
+      "alpha": 0.75
      },
      {
       "block": 3,
@@ -3141,7 +3156,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 4,
@@ -3152,7 +3167,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 5,
@@ -3163,7 +3178,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 6,
@@ -3174,7 +3189,7 @@
       "merged": 24,
       "pruned": 0,
       "theta": 1.0,
-      "kappa": 3.0
+      "alpha": 0.75
      },
      {
       "block": 7,
@@ -3185,7 +3200,7 @@
       "merged": 24,
       "pruned": 0,
       "theta": 1.0,
-      "kappa": 1.0
+      "alpha": 0.5
      },
      {
       "block": 8,
@@ -3196,7 +3211,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 9,
@@ -3207,7 +3222,7 @@
       "merged": 24,
       "pruned": 0,
       "theta": 1.0,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 10,
@@ -3218,7 +3233,7 @@
       "merged": 16,
       "pruned": 0,
       "theta": 1.0,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 11,
@@ -3229,7 +3244,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      }
     ],
     "K": 6,
@@ -3239,7 +3254,8 @@
     "backbone_full_gmac": 9.480907776,
     "d_gmac": 0.010174464,
     "station_scalar_gops_estimate": 0.002767343
-   }
+   },
+   "source_config_sha": "252e942c16827ed9"
   },
   "gmac/DR10.0/x1.00": {
    "state": {
@@ -3261,15 +3277,15 @@
      1.0,
      1.0
     ],
-    "ks": [
-     3.0,
-     3.0,
-     1.0,
+    "alphas": [
+     0.75,
+     0.75,
+     0.5,
      0.0
     ]
    },
    "config": {
-    "kind": "pdm",
+    "kind": "pda",
     "prune_keep": [
      197,
      149,
@@ -3298,11 +3314,6 @@
      197,
      197
     ],
-    "k": {
-     "1": 3.0,
-     "2": 3.0,
-     "7": 1.0
-    },
     "groups": {
      "1": [
       3,
@@ -3593,6 +3604,12 @@
     "merge": {
      "mode": "M3",
      "kernel": "triton_norm"
+    },
+    "base": "pdm",
+    "alpha": {
+     "1": 0.75,
+     "2": 0.75,
+     "7": 0.5
     }
    },
    "gmac": 9.857344512000001,
@@ -3604,7 +3621,7 @@
    "group": "gmac",
    "cap": 10.012672512,
    "anchor": "baseline/DR10.0",
-   "config_sha": "5b776a137b06e9f4",
+   "config_sha": "b9173705ad4c1e0a",
    "details": {
     "token_path": [
      {
@@ -3616,7 +3633,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 1,
@@ -3627,7 +3644,7 @@
       "merged": 0,
       "pruned": 48,
       "theta": 0.0,
-      "kappa": 3.0
+      "alpha": 0.75
      },
      {
       "block": 2,
@@ -3638,7 +3655,7 @@
       "merged": 0,
       "pruned": 24,
       "theta": 0.0,
-      "kappa": 3.0
+      "alpha": 0.75
      },
      {
       "block": 3,
@@ -3649,7 +3666,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 4,
@@ -3660,7 +3677,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 5,
@@ -3671,7 +3688,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 6,
@@ -3682,7 +3699,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 7,
@@ -3693,7 +3710,7 @@
       "merged": 48,
       "pruned": 0,
       "theta": 1.0,
-      "kappa": 1.0
+      "alpha": 0.5
      },
      {
       "block": 8,
@@ -3704,7 +3721,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 9,
@@ -3715,7 +3732,7 @@
       "merged": 24,
       "pruned": 0,
       "theta": 1.0,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 10,
@@ -3726,7 +3743,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 11,
@@ -3737,7 +3754,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      }
     ],
     "K": 4,
@@ -3747,7 +3764,8 @@
     "backbone_full_gmac": 9.849197568000001,
     "d_gmac": 0.008146944,
     "station_scalar_gops_estimate": 0.002245398
-   }
+   },
+   "source_config_sha": "5b776a137b06e9f4"
   },
   "gmac/DR10.0/x1.05": {
    "state": {
@@ -3769,15 +3787,15 @@
      1.0,
      1.0
     ],
-    "ks": [
-     3.0,
-     1.0,
-     1.0,
+    "alphas": [
+     0.75,
+     0.5,
+     0.5,
      0.0
     ]
    },
    "config": {
-    "kind": "pdm",
+    "kind": "pda",
     "prune_keep": [
      197,
      148,
@@ -3806,11 +3824,6 @@
      197,
      197
     ],
-    "k": {
-     "1": 3.0,
-     "6": 1.0,
-     "7": 1.0
-    },
     "groups": {
      "1": [
       3,
@@ -4053,6 +4066,12 @@
     "merge": {
      "mode": "M3",
      "kernel": "triton_norm"
+    },
+    "base": "pdm",
+    "alpha": {
+     "1": 0.75,
+     "6": 0.5,
+     "7": 0.5
     }
    },
    "gmac": 10.500542976,
@@ -4064,7 +4083,7 @@
    "group": "gmac",
    "cap": 10.5133061376,
    "anchor": "baseline/DR10.0",
-   "config_sha": "91f82e31a72bc116",
+   "config_sha": "f7988d73b5a2736e",
    "details": {
     "token_path": [
      {
@@ -4076,7 +4095,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 1,
@@ -4087,7 +4106,7 @@
       "merged": 0,
       "pruned": 49,
       "theta": 0.0,
-      "kappa": 3.0
+      "alpha": 0.75
      },
      {
       "block": 2,
@@ -4098,7 +4117,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 3,
@@ -4109,7 +4128,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 4,
@@ -4120,7 +4139,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 5,
@@ -4131,7 +4150,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 6,
@@ -4142,7 +4161,7 @@
       "merged": 24,
       "pruned": 0,
       "theta": 1.0,
-      "kappa": 1.0
+      "alpha": 0.5
      },
      {
       "block": 7,
@@ -4153,7 +4172,7 @@
       "merged": 48,
       "pruned": 0,
       "theta": 1.0,
-      "kappa": 1.0
+      "alpha": 0.5
      },
      {
       "block": 8,
@@ -4164,7 +4183,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 9,
@@ -4175,7 +4194,7 @@
       "merged": 24,
       "pruned": 0,
       "theta": 1.0,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 10,
@@ -4186,7 +4205,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 11,
@@ -4197,7 +4216,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      }
     ],
     "K": 4,
@@ -4207,7 +4226,8 @@
     "backbone_full_gmac": 10.492420608,
     "d_gmac": 0.008122368,
     "station_scalar_gops_estimate": 0.002252812
-   }
+   },
+   "source_config_sha": "91f82e31a72bc116"
   },
   "gmac/DR10.0/x1.10": {
    "state": {
@@ -4232,16 +4252,16 @@
      1.0,
      1.0
     ],
-    "ks": [
-     1.0,
-     1.0,
-     1.0,
+    "alphas": [
+     0.5,
+     0.5,
+     0.5,
      0.0,
      0.0
     ]
    },
    "config": {
-    "kind": "pdm",
+    "kind": "pda",
     "prune_keep": [
      197,
      197,
@@ -4270,11 +4290,6 @@
      53,
      197
     ],
-    "k": {
-     "2": 1.0,
-     "6": 1.0,
-     "7": 1.0
-    },
     "groups": {
      "2": [
       12,
@@ -4505,6 +4520,12 @@
     "merge": {
      "mode": "M3",
      "kernel": "triton_norm"
+    },
+    "base": "pdm",
+    "alpha": {
+     "2": 0.5,
+     "6": 0.5,
+     "7": 0.5
     }
    },
    "gmac": 11.003016191999999,
@@ -4516,7 +4537,7 @@
    "group": "gmac",
    "cap": 11.013939763200002,
    "anchor": "baseline/DR10.0",
-   "config_sha": "9c11c985115133e7",
+   "config_sha": "289ba68c51ea2642",
    "details": {
     "token_path": [
      {
@@ -4528,7 +4549,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 1,
@@ -4539,7 +4560,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 2,
@@ -4550,7 +4571,7 @@
       "merged": 0,
       "pruned": 48,
       "theta": 0.0,
-      "kappa": 1.0
+      "alpha": 0.5
      },
      {
       "block": 3,
@@ -4561,7 +4582,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 4,
@@ -4572,7 +4593,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 5,
@@ -4583,7 +4604,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 6,
@@ -4594,7 +4615,7 @@
       "merged": 24,
       "pruned": 0,
       "theta": 1.0,
-      "kappa": 1.0
+      "alpha": 0.5
      },
      {
       "block": 7,
@@ -4605,7 +4626,7 @@
       "merged": 48,
       "pruned": 0,
       "theta": 1.0,
-      "kappa": 1.0
+      "alpha": 0.5
      },
      {
       "block": 8,
@@ -4616,7 +4637,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 9,
@@ -4627,7 +4648,7 @@
       "merged": 16,
       "pruned": 0,
       "theta": 1.0,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 10,
@@ -4638,7 +4659,7 @@
       "merged": 8,
       "pruned": 0,
       "theta": 1.0,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 11,
@@ -4649,7 +4670,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      }
     ],
     "K": 5,
@@ -4659,7 +4680,8 @@
     "backbone_full_gmac": 10.994869247999999,
     "d_gmac": 0.008146944,
     "station_scalar_gops_estimate": 0.002311824
-   }
+   },
+   "source_config_sha": "9c11c985115133e7"
   },
   "gmac/DR10.4/x0.80": {
    "state": {
@@ -4684,16 +4706,16 @@
      1.0,
      1.0
     ],
-    "ks": [
-     3.0,
-     3.0,
-     1.0,
+    "alphas": [
+     0.75,
+     0.75,
+     0.5,
      0.0,
      0.0
     ]
    },
    "config": {
-    "kind": "pdm",
+    "kind": "pda",
     "prune_keep": [
      197,
      149,
@@ -4722,11 +4744,6 @@
      29,
      197
     ],
-    "k": {
-     "1": 3.0,
-     "2": 3.0,
-     "6": 1.0
-    },
     "groups": {
      "1": [
       3,
@@ -5029,6 +5046,12 @@
     "merge": {
      "mode": "M3",
      "kernel": "triton_norm"
+    },
+    "base": "pdm",
+    "alpha": {
+     "1": 0.75,
+     "2": 0.75,
+     "6": 0.5
     }
    },
    "gmac": 8.153103360000001,
@@ -5040,7 +5063,7 @@
    "group": "gmac",
    "cap": 8.342400000000001,
    "anchor": "baseline/DR10.4",
-   "config_sha": "92c26b04869ed08d",
+   "config_sha": "19441777ca0e55b3",
    "details": {
     "token_path": [
      {
@@ -5052,7 +5075,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 1,
@@ -5063,7 +5086,7 @@
       "merged": 0,
       "pruned": 48,
       "theta": 0.0,
-      "kappa": 3.0
+      "alpha": 0.75
      },
      {
       "block": 2,
@@ -5074,7 +5097,7 @@
       "merged": 0,
       "pruned": 48,
       "theta": 0.0,
-      "kappa": 3.0
+      "alpha": 0.75
      },
      {
       "block": 3,
@@ -5085,7 +5108,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 4,
@@ -5096,7 +5119,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 5,
@@ -5107,7 +5130,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 6,
@@ -5118,7 +5141,7 @@
       "merged": 24,
       "pruned": 0,
       "theta": 1.0,
-      "kappa": 1.0
+      "alpha": 0.5
      },
      {
       "block": 7,
@@ -5129,7 +5152,7 @@
       "merged": 24,
       "pruned": 0,
       "theta": 1.0,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 8,
@@ -5140,7 +5163,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 9,
@@ -5151,7 +5174,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 10,
@@ -5162,7 +5185,7 @@
       "merged": 24,
       "pruned": 0,
       "theta": 1.0,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 11,
@@ -5173,7 +5196,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      }
     ],
     "K": 5,
@@ -5183,7 +5206,8 @@
     "backbone_full_gmac": 8.145251328,
     "d_gmac": 0.007852032,
     "station_scalar_gops_estimate": 0.002154504
-   }
+   },
+   "source_config_sha": "92c26b04869ed08d"
   },
   "gmac/DR10.4/x0.85": {
    "state": {
@@ -5211,17 +5235,17 @@
      1.0,
      1.0
     ],
-    "ks": [
-     3.0,
-     3.0,
-     2.0,
-     1.0,
+    "alphas": [
+     0.75,
+     0.75,
+     0.6666666666666666,
+     0.5,
      0.0,
      0.0
     ]
    },
    "config": {
-    "kind": "pdm",
+    "kind": "pda",
     "prune_keep": [
      197,
      149,
@@ -5250,12 +5274,6 @@
      29,
      197
     ],
-    "k": {
-     "1": 3.0,
-     "2": 3.0,
-     "5": 2.0,
-     "6": 1.0
-    },
     "groups": {
      "1": [
       3,
@@ -5632,6 +5650,13 @@
     "merge": {
      "mode": "M3",
      "kernel": "triton_norm"
+    },
+    "base": "pdm",
+    "alpha": {
+     "1": 0.75,
+     "2": 0.75,
+     "5": 0.6666666666666666,
+     "6": 0.5
     }
    },
    "gmac": 8.691944448000001,
@@ -5643,7 +5668,7 @@
    "group": "gmac",
    "cap": 8.863800000000001,
    "anchor": "baseline/DR10.4",
-   "config_sha": "8a3ed78db7fd888a",
+   "config_sha": "c0e8d83853b07da0",
    "details": {
     "token_path": [
      {
@@ -5655,7 +5680,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 1,
@@ -5666,7 +5691,7 @@
       "merged": 0,
       "pruned": 48,
       "theta": 0.0,
-      "kappa": 3.0
+      "alpha": 0.75
      },
      {
       "block": 2,
@@ -5677,7 +5702,7 @@
       "merged": 0,
       "pruned": 24,
       "theta": 0.0,
-      "kappa": 3.0
+      "alpha": 0.75
      },
      {
       "block": 3,
@@ -5688,7 +5713,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 4,
@@ -5699,7 +5724,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 5,
@@ -5710,7 +5735,7 @@
       "merged": 24,
       "pruned": 0,
       "theta": 1.0,
-      "kappa": 2.0
+      "alpha": 0.6666666666666666
      },
      {
       "block": 6,
@@ -5721,7 +5746,7 @@
       "merged": 24,
       "pruned": 0,
       "theta": 1.0,
-      "kappa": 1.0
+      "alpha": 0.5
      },
      {
       "block": 7,
@@ -5732,7 +5757,7 @@
       "merged": 24,
       "pruned": 0,
       "theta": 1.0,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 8,
@@ -5743,7 +5768,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 9,
@@ -5754,7 +5779,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 10,
@@ -5765,7 +5790,7 @@
       "merged": 24,
       "pruned": 0,
       "theta": 1.0,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 11,
@@ -5776,7 +5801,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      }
     ],
     "K": 6,
@@ -5786,7 +5811,8 @@
     "backbone_full_gmac": 8.681769984,
     "d_gmac": 0.010174464,
     "station_scalar_gops_estimate": 0.002767359
-   }
+   },
+   "source_config_sha": "8a3ed78db7fd888a"
   },
   "gmac/DR10.4/x0.90": {
    "state": {
@@ -5811,16 +5837,16 @@
      1.0,
      1.0
     ],
-    "ks": [
-     3.0,
-     3.0,
-     2.0,
+    "alphas": [
+     0.75,
+     0.75,
+     0.6666666666666666,
      0.0,
      0.0
     ]
    },
    "config": {
-    "kind": "pdm",
+    "kind": "pda",
     "prune_keep": [
      197,
      146,
@@ -5849,11 +5875,6 @@
      197,
      197
     ],
-    "k": {
-     "1": 3.0,
-     "2": 3.0,
-     "6": 2.0
-    },
     "groups": {
      "1": [
       3,
@@ -6156,6 +6177,12 @@
     "merge": {
      "mode": "M3",
      "kernel": "triton_norm"
+    },
+    "base": "pdm",
+    "alpha": {
+     "1": 0.75,
+     "2": 0.75,
+     "6": 0.6666666666666666
     }
    },
    "gmac": 9.372600576000002,
@@ -6167,7 +6194,7 @@
    "group": "gmac",
    "cap": 9.385200000000001,
    "anchor": "baseline/DR10.4",
-   "config_sha": "974d6eb929c696dd",
+   "config_sha": "a3803f9e3517e72c",
    "details": {
     "token_path": [
      {
@@ -6179,7 +6206,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 1,
@@ -6190,7 +6217,7 @@
       "merged": 0,
       "pruned": 51,
       "theta": 0.0,
-      "kappa": 3.0
+      "alpha": 0.75
      },
      {
       "block": 2,
@@ -6201,7 +6228,7 @@
       "merged": 0,
       "pruned": 25,
       "theta": 0.0,
-      "kappa": 3.0
+      "alpha": 0.75
      },
      {
       "block": 3,
@@ -6212,7 +6239,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 4,
@@ -6223,7 +6250,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 5,
@@ -6234,7 +6261,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 6,
@@ -6245,7 +6272,7 @@
       "merged": 24,
       "pruned": 0,
       "theta": 1.0,
-      "kappa": 2.0
+      "alpha": 0.6666666666666666
      },
      {
       "block": 7,
@@ -6256,7 +6283,7 @@
       "merged": 24,
       "pruned": 0,
       "theta": 1.0,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 8,
@@ -6267,7 +6294,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 9,
@@ -6278,7 +6305,7 @@
       "merged": 24,
       "pruned": 0,
       "theta": 1.0,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 10,
@@ -6289,7 +6316,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 11,
@@ -6300,7 +6327,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      }
     ],
     "K": 5,
@@ -6310,7 +6337,8 @@
     "backbone_full_gmac": 9.364539648000001,
     "d_gmac": 0.008060927999999998,
     "station_scalar_gops_estimate": 0.002282229
-   }
+   },
+   "source_config_sha": "974d6eb929c696dd"
   },
   "gmac/DR10.4/x0.95": {
    "state": {
@@ -6332,15 +6360,15 @@
      1.0,
      1.0
     ],
-    "ks": [
-     3.0,
-     3.0,
-     1.0,
+    "alphas": [
+     0.75,
+     0.75,
+     0.5,
      0.0
     ]
    },
    "config": {
-    "kind": "pdm",
+    "kind": "pda",
     "prune_keep": [
      197,
      149,
@@ -6369,11 +6397,6 @@
      197,
      197
     ],
-    "k": {
-     "1": 3.0,
-     "2": 3.0,
-     "7": 1.0
-    },
     "groups": {
      "1": [
       3,
@@ -6664,6 +6687,12 @@
     "merge": {
      "mode": "M3",
      "kernel": "triton_norm"
+    },
+    "base": "pdm",
+    "alpha": {
+     "1": 0.75,
+     "2": 0.75,
+     "7": 0.5
     }
    },
    "gmac": 9.857344512000001,
@@ -6675,7 +6704,7 @@
    "group": "gmac",
    "cap": 9.906600000000001,
    "anchor": "baseline/DR10.4",
-   "config_sha": "5b776a137b06e9f4",
+   "config_sha": "b9173705ad4c1e0a",
    "details": {
     "token_path": [
      {
@@ -6687,7 +6716,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 1,
@@ -6698,7 +6727,7 @@
       "merged": 0,
       "pruned": 48,
       "theta": 0.0,
-      "kappa": 3.0
+      "alpha": 0.75
      },
      {
       "block": 2,
@@ -6709,7 +6738,7 @@
       "merged": 0,
       "pruned": 24,
       "theta": 0.0,
-      "kappa": 3.0
+      "alpha": 0.75
      },
      {
       "block": 3,
@@ -6720,7 +6749,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 4,
@@ -6731,7 +6760,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 5,
@@ -6742,7 +6771,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 6,
@@ -6753,7 +6782,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 7,
@@ -6764,7 +6793,7 @@
       "merged": 48,
       "pruned": 0,
       "theta": 1.0,
-      "kappa": 1.0
+      "alpha": 0.5
      },
      {
       "block": 8,
@@ -6775,7 +6804,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 9,
@@ -6786,7 +6815,7 @@
       "merged": 24,
       "pruned": 0,
       "theta": 1.0,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 10,
@@ -6797,7 +6826,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 11,
@@ -6808,7 +6837,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      }
     ],
     "K": 4,
@@ -6818,7 +6847,8 @@
     "backbone_full_gmac": 9.849197568000001,
     "d_gmac": 0.008146944,
     "station_scalar_gops_estimate": 0.002245398
-   }
+   },
+   "source_config_sha": "5b776a137b06e9f4"
   },
   "gmac/DR10.4/x1.00": {
    "state": {
@@ -6840,15 +6870,15 @@
      1.0,
      1.0
     ],
-    "ks": [
-     3.0,
-     3.0,
-     1.0,
+    "alphas": [
+     0.75,
+     0.75,
+     0.5,
      0.0
     ]
    },
    "config": {
-    "kind": "pdm",
+    "kind": "pda",
     "prune_keep": [
      197,
      149,
@@ -6877,11 +6907,6 @@
      197,
      197
     ],
-    "k": {
-     "1": 3.0,
-     "5": 3.0,
-     "7": 1.0
-    },
     "groups": {
      "1": [
       3,
@@ -7136,6 +7161,12 @@
     "merge": {
      "mode": "M3",
      "kernel": "triton_norm"
+    },
+    "base": "pdm",
+    "alpha": {
+     "1": 0.75,
+     "5": 0.75,
+     "7": 0.5
     }
    },
    "gmac": 10.399613952,
@@ -7147,7 +7178,7 @@
    "group": "gmac",
    "cap": 10.428,
    "anchor": "baseline/DR10.4",
-   "config_sha": "b716472f82235e9b",
+   "config_sha": "2b5653b58a883f4e",
    "details": {
     "token_path": [
      {
@@ -7159,7 +7190,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 1,
@@ -7170,7 +7201,7 @@
       "merged": 0,
       "pruned": 48,
       "theta": 0.0,
-      "kappa": 3.0
+      "alpha": 0.75
      },
      {
       "block": 2,
@@ -7181,7 +7212,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 3,
@@ -7192,7 +7223,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 4,
@@ -7203,7 +7234,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 5,
@@ -7214,7 +7245,7 @@
       "merged": 24,
       "pruned": 0,
       "theta": 1.0,
-      "kappa": 3.0
+      "alpha": 0.75
      },
      {
       "block": 6,
@@ -7225,7 +7256,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 7,
@@ -7236,7 +7267,7 @@
       "merged": 48,
       "pruned": 0,
       "theta": 1.0,
-      "kappa": 1.0
+      "alpha": 0.5
      },
      {
       "block": 8,
@@ -7247,7 +7278,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 9,
@@ -7258,7 +7289,7 @@
       "merged": 24,
       "pruned": 0,
       "theta": 1.0,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 10,
@@ -7269,7 +7300,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 11,
@@ -7280,7 +7311,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      }
     ],
     "K": 4,
@@ -7290,7 +7321,8 @@
     "backbone_full_gmac": 10.391467008,
     "d_gmac": 0.008146944,
     "station_scalar_gops_estimate": 0.002263878
-   }
+   },
+   "source_config_sha": "b716472f82235e9b"
   },
   "gmac/DR10.4/x1.05": {
    "state": {
@@ -7312,15 +7344,15 @@
      1.0,
      1.0
     ],
-    "ks": [
-     1.0,
-     1.0,
-     1.0,
+    "alphas": [
+     0.5,
+     0.5,
+     0.5,
      0.0
     ]
    },
    "config": {
-    "kind": "pdm",
+    "kind": "pda",
     "prune_keep": [
      197,
      197,
@@ -7349,11 +7381,6 @@
      197,
      197
     ],
-    "k": {
-     "2": 1.0,
-     "6": 1.0,
-     "7": 1.0
-    },
     "groups": {
      "2": [
       12,
@@ -7584,6 +7611,12 @@
     "merge": {
      "mode": "M3",
      "kernel": "triton_norm"
+    },
+    "base": "pdm",
+    "alpha": {
+     "2": 0.5,
+     "6": 0.5,
+     "7": 0.5
     }
    },
    "gmac": 10.944887807999997,
@@ -7595,7 +7628,7 @@
    "group": "gmac",
    "cap": 10.9494,
    "anchor": "baseline/DR10.4",
-   "config_sha": "f0a68a4fc9421f46",
+   "config_sha": "5b616efe02c37b54",
    "details": {
     "token_path": [
      {
@@ -7607,7 +7640,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 1,
@@ -7618,7 +7651,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 2,
@@ -7629,7 +7662,7 @@
       "merged": 0,
       "pruned": 48,
       "theta": 0.0,
-      "kappa": 1.0
+      "alpha": 0.5
      },
      {
       "block": 3,
@@ -7640,7 +7673,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 4,
@@ -7651,7 +7684,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 5,
@@ -7662,7 +7695,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 6,
@@ -7673,7 +7706,7 @@
       "merged": 24,
       "pruned": 0,
       "theta": 1.0,
-      "kappa": 1.0
+      "alpha": 0.5
      },
      {
       "block": 7,
@@ -7684,7 +7717,7 @@
       "merged": 48,
       "pruned": 0,
       "theta": 1.0,
-      "kappa": 1.0
+      "alpha": 0.5
      },
      {
       "block": 8,
@@ -7695,7 +7728,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 9,
@@ -7706,7 +7739,7 @@
       "merged": 24,
       "pruned": 0,
       "theta": 1.0,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 10,
@@ -7717,7 +7750,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 11,
@@ -7728,7 +7761,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      }
     ],
     "K": 4,
@@ -7738,7 +7771,8 @@
     "backbone_full_gmac": 10.936740863999997,
     "d_gmac": 0.008146944,
     "station_scalar_gops_estimate": 0.002263878
-   }
+   },
+   "source_config_sha": "f0a68a4fc9421f46"
   },
   "gmac/DR10.4/x1.10": {
    "state": {
@@ -7763,16 +7797,16 @@
      1.0,
      1.0
     ],
-    "ks": [
-     1.0,
-     1.0,
-     1.0,
+    "alphas": [
+     0.5,
+     0.5,
+     0.5,
      0.0,
      0.0
     ]
    },
    "config": {
-    "kind": "pdm",
+    "kind": "pda",
     "prune_keep": [
      197,
      197,
@@ -7801,11 +7835,6 @@
      65,
      197
     ],
-    "k": {
-     "2": 1.0,
-     "6": 1.0,
-     "7": 1.0
-    },
     "groups": {
      "2": [
       12,
@@ -8036,6 +8065,12 @@
     "merge": {
      "mode": "M3",
      "kernel": "triton_norm"
+    },
+    "base": "pdm",
+    "alpha": {
+     "2": 0.5,
+     "6": 0.5,
+     "7": 0.5
     }
    },
    "gmac": 11.439823872,
@@ -8047,7 +8082,7 @@
    "group": "gmac",
    "cap": 11.470800000000002,
    "anchor": "baseline/DR10.4",
-   "config_sha": "b17b92a943262438",
+   "config_sha": "0b20b9b25a9033df",
    "details": {
     "token_path": [
      {
@@ -8059,7 +8094,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 1,
@@ -8070,7 +8105,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 2,
@@ -8081,7 +8116,7 @@
       "merged": 0,
       "pruned": 48,
       "theta": 0.0,
-      "kappa": 1.0
+      "alpha": 0.5
      },
      {
       "block": 3,
@@ -8092,7 +8127,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 4,
@@ -8103,7 +8138,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 5,
@@ -8114,7 +8149,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 6,
@@ -8125,7 +8160,7 @@
       "merged": 24,
       "pruned": 0,
       "theta": 1.0,
-      "kappa": 1.0
+      "alpha": 0.5
      },
      {
       "block": 7,
@@ -8136,7 +8171,7 @@
       "merged": 24,
       "pruned": 0,
       "theta": 1.0,
-      "kappa": 1.0
+      "alpha": 0.5
      },
      {
       "block": 8,
@@ -8147,7 +8182,7 @@
       "merged": 24,
       "pruned": 0,
       "theta": 1.0,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 9,
@@ -8158,7 +8193,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 10,
@@ -8169,7 +8204,7 @@
       "merged": 12,
       "pruned": 0,
       "theta": 1.0,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 11,
@@ -8180,7 +8215,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      }
     ],
     "K": 5,
@@ -8190,7 +8225,8 @@
     "backbone_full_gmac": 11.431676928,
     "d_gmac": 0.008146944,
     "station_scalar_gops_estimate": 0.002343341
-   }
+   },
+   "source_config_sha": "b17b92a943262438"
   },
   "gmac/DR11.5/x0.80": {
    "state": {
@@ -8218,17 +8254,17 @@
      1.0,
      1.0
     ],
-    "ks": [
-     3.0,
-     3.0,
-     2.0,
-     1.0,
+    "alphas": [
+     0.75,
+     0.75,
+     0.6666666666666666,
+     0.5,
      0.0,
      0.0
     ]
    },
    "config": {
-    "kind": "pdm",
+    "kind": "pda",
     "prune_keep": [
      197,
      149,
@@ -8257,12 +8293,6 @@
      29,
      197
     ],
-    "k": {
-     "1": 3.0,
-     "2": 3.0,
-     "5": 2.0,
-     "7": 1.0
-    },
     "groups": {
      "1": [
       3,
@@ -8627,6 +8657,13 @@
     "merge": {
      "mode": "M3",
      "kernel": "triton_norm"
+    },
+    "base": "pdm",
+    "alpha": {
+     "1": 0.75,
+     "2": 0.75,
+     "5": 0.6666666666666666,
+     "7": 0.5
     }
    },
    "gmac": 9.217754112000001,
@@ -8638,7 +8675,7 @@
    "group": "gmac",
    "cap": 9.221385216,
    "anchor": "baseline/DR11.5",
-   "config_sha": "1920e756e30191e6",
+   "config_sha": "5698c53d2e6f6b8e",
    "details": {
     "token_path": [
      {
@@ -8650,7 +8687,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 1,
@@ -8661,7 +8698,7 @@
       "merged": 0,
       "pruned": 48,
       "theta": 0.0,
-      "kappa": 3.0
+      "alpha": 0.75
      },
      {
       "block": 2,
@@ -8672,7 +8709,7 @@
       "merged": 0,
       "pruned": 24,
       "theta": 0.0,
-      "kappa": 3.0
+      "alpha": 0.75
      },
      {
       "block": 3,
@@ -8683,7 +8720,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 4,
@@ -8694,7 +8731,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 5,
@@ -8705,7 +8742,7 @@
       "merged": 24,
       "pruned": 0,
       "theta": 1.0,
-      "kappa": 2.0
+      "alpha": 0.6666666666666666
      },
      {
       "block": 6,
@@ -8716,7 +8753,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 7,
@@ -8727,7 +8764,7 @@
       "merged": 24,
       "pruned": 0,
       "theta": 1.0,
-      "kappa": 1.0
+      "alpha": 0.5
      },
      {
       "block": 8,
@@ -8738,7 +8775,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 9,
@@ -8749,7 +8786,7 @@
       "merged": 24,
       "pruned": 0,
       "theta": 1.0,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 10,
@@ -8760,7 +8797,7 @@
       "merged": 24,
       "pruned": 0,
       "theta": 1.0,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 11,
@@ -8771,7 +8808,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      }
     ],
     "K": 6,
@@ -8781,7 +8818,8 @@
     "backbone_full_gmac": 9.207579648000001,
     "d_gmac": 0.010174464,
     "station_scalar_gops_estimate": 0.002767359
-   }
+   },
+   "source_config_sha": "1920e756e30191e6"
   },
   "gmac/DR11.5/x0.85": {
    "state": {
@@ -8803,15 +8841,15 @@
      1.0,
      1.0
     ],
-    "ks": [
-     3.0,
-     3.0,
-     1.0,
+    "alphas": [
+     0.75,
+     0.75,
+     0.5,
      0.0
     ]
    },
    "config": {
-    "kind": "pdm",
+    "kind": "pda",
     "prune_keep": [
      197,
      148,
@@ -8840,11 +8878,6 @@
      197,
      197
     ],
-    "k": {
-     "1": 3.0,
-     "2": 3.0,
-     "7": 1.0
-    },
     "groups": {
      "1": [
       3,
@@ -9135,6 +9168,12 @@
     "merge": {
      "mode": "M3",
      "kernel": "triton_norm"
+    },
+    "base": "pdm",
+    "alpha": {
+     "1": 0.75,
+     "2": 0.75,
+     "7": 0.5
     }
    },
    "gmac": 9.7785984,
@@ -9146,7 +9185,7 @@
    "group": "gmac",
    "cap": 9.797721792,
    "anchor": "baseline/DR11.5",
-   "config_sha": "bf6865ef30f1c73a",
+   "config_sha": "945b083661878d7a",
    "details": {
     "token_path": [
      {
@@ -9158,7 +9197,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 1,
@@ -9169,7 +9208,7 @@
       "merged": 0,
       "pruned": 49,
       "theta": 0.0,
-      "kappa": 3.0
+      "alpha": 0.75
      },
      {
       "block": 2,
@@ -9180,7 +9219,7 @@
       "merged": 0,
       "pruned": 24,
       "theta": 0.0,
-      "kappa": 3.0
+      "alpha": 0.75
      },
      {
       "block": 3,
@@ -9191,7 +9230,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 4,
@@ -9202,7 +9241,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 5,
@@ -9213,7 +9252,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 6,
@@ -9224,7 +9263,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 7,
@@ -9235,7 +9274,7 @@
       "merged": 48,
       "pruned": 0,
       "theta": 1.0,
-      "kappa": 1.0
+      "alpha": 0.5
      },
      {
       "block": 8,
@@ -9246,7 +9285,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 9,
@@ -9257,7 +9296,7 @@
       "merged": 24,
       "pruned": 0,
       "theta": 1.0,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 10,
@@ -9268,7 +9307,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 11,
@@ -9279,7 +9318,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      }
     ],
     "K": 4,
@@ -9289,7 +9328,8 @@
     "backbone_full_gmac": 9.770476032,
     "d_gmac": 0.008122368,
     "station_scalar_gops_estimate": 0.002234332
-   }
+   },
+   "source_config_sha": "bf6865ef30f1c73a"
   },
   "gmac/DR11.5/x0.90": {
    "state": {
@@ -9311,15 +9351,15 @@
      1.0,
      1.0
     ],
-    "ks": [
-     3.0,
-     3.0,
-     1.0,
+    "alphas": [
+     0.75,
+     0.75,
+     0.5,
      0.0
     ]
    },
    "config": {
-    "kind": "pdm",
+    "kind": "pda",
     "prune_keep": [
      197,
      148,
@@ -9348,11 +9388,6 @@
      197,
      197
     ],
-    "k": {
-     "1": 3.0,
-     "5": 3.0,
-     "7": 1.0
-    },
     "groups": {
      "1": [
       3,
@@ -9607,6 +9642,12 @@
     "merge": {
      "mode": "M3",
      "kernel": "triton_norm"
+    },
+    "base": "pdm",
+    "alpha": {
+     "1": 0.75,
+     "5": 0.75,
+     "7": 0.5
     }
    },
    "gmac": 10.320628224,
@@ -9618,7 +9659,7 @@
    "group": "gmac",
    "cap": 10.374058368,
    "anchor": "baseline/DR11.5",
-   "config_sha": "52109a16cbc04704",
+   "config_sha": "b0ada2d8e8e0c87b",
    "details": {
     "token_path": [
      {
@@ -9630,7 +9671,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 1,
@@ -9641,7 +9682,7 @@
       "merged": 0,
       "pruned": 49,
       "theta": 0.0,
-      "kappa": 3.0
+      "alpha": 0.75
      },
      {
       "block": 2,
@@ -9652,7 +9693,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 3,
@@ -9663,7 +9704,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 4,
@@ -9674,7 +9715,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 5,
@@ -9685,7 +9726,7 @@
       "merged": 24,
       "pruned": 0,
       "theta": 1.0,
-      "kappa": 3.0
+      "alpha": 0.75
      },
      {
       "block": 6,
@@ -9696,7 +9737,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 7,
@@ -9707,7 +9748,7 @@
       "merged": 48,
       "pruned": 0,
       "theta": 1.0,
-      "kappa": 1.0
+      "alpha": 0.5
      },
      {
       "block": 8,
@@ -9718,7 +9759,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 9,
@@ -9729,7 +9770,7 @@
       "merged": 24,
       "pruned": 0,
       "theta": 1.0,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 10,
@@ -9740,7 +9781,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 11,
@@ -9751,7 +9792,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      }
     ],
     "K": 4,
@@ -9761,7 +9802,8 @@
     "backbone_full_gmac": 10.312505856,
     "d_gmac": 0.008122368,
     "station_scalar_gops_estimate": 0.002252812
-   }
+   },
+   "source_config_sha": "52109a16cbc04704"
   },
   "gmac/DR11.5/x0.95": {
    "state": {
@@ -9783,15 +9825,15 @@
      1.0,
      1.0
     ],
-    "ks": [
-     1.0,
-     1.0,
-     1.0,
+    "alphas": [
+     0.5,
+     0.5,
+     0.5,
      0.0
     ]
    },
    "config": {
-    "kind": "pdm",
+    "kind": "pda",
     "prune_keep": [
      197,
      197,
@@ -9820,11 +9862,6 @@
      197,
      197
     ],
-    "k": {
-     "2": 1.0,
-     "6": 1.0,
-     "7": 1.0
-    },
     "groups": {
      "2": [
       12,
@@ -10055,6 +10092,12 @@
     "merge": {
      "mode": "M3",
      "kernel": "triton_norm"
+    },
+    "base": "pdm",
+    "alpha": {
+     "2": 0.5,
+     "6": 0.5,
+     "7": 0.5
     }
    },
    "gmac": 10.944887807999997,
@@ -10066,7 +10109,7 @@
    "group": "gmac",
    "cap": 10.950394944,
    "anchor": "baseline/DR11.5",
-   "config_sha": "f0a68a4fc9421f46",
+   "config_sha": "5b616efe02c37b54",
    "details": {
     "token_path": [
      {
@@ -10078,7 +10121,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 1,
@@ -10089,7 +10132,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 2,
@@ -10100,7 +10143,7 @@
       "merged": 0,
       "pruned": 48,
       "theta": 0.0,
-      "kappa": 1.0
+      "alpha": 0.5
      },
      {
       "block": 3,
@@ -10111,7 +10154,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 4,
@@ -10122,7 +10165,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 5,
@@ -10133,7 +10176,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 6,
@@ -10144,7 +10187,7 @@
       "merged": 24,
       "pruned": 0,
       "theta": 1.0,
-      "kappa": 1.0
+      "alpha": 0.5
      },
      {
       "block": 7,
@@ -10155,7 +10198,7 @@
       "merged": 48,
       "pruned": 0,
       "theta": 1.0,
-      "kappa": 1.0
+      "alpha": 0.5
      },
      {
       "block": 8,
@@ -10166,7 +10209,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 9,
@@ -10177,7 +10220,7 @@
       "merged": 24,
       "pruned": 0,
       "theta": 1.0,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 10,
@@ -10188,7 +10231,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 11,
@@ -10199,7 +10242,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      }
     ],
     "K": 4,
@@ -10209,7 +10252,8 @@
     "backbone_full_gmac": 10.936740863999997,
     "d_gmac": 0.008146944,
     "station_scalar_gops_estimate": 0.002263878
-   }
+   },
+   "source_config_sha": "f0a68a4fc9421f46"
   },
   "gmac/DR11.5/x1.00": {
    "state": {
@@ -10234,16 +10278,16 @@
      1.0,
      1.0
     ],
-    "ks": [
-     1.0,
-     1.0,
-     1.0,
+    "alphas": [
+     0.5,
+     0.5,
+     0.5,
      0.0,
      0.0
     ]
    },
    "config": {
-    "kind": "pdm",
+    "kind": "pda",
     "prune_keep": [
      197,
      197,
@@ -10272,11 +10316,6 @@
      69,
      197
     ],
-    "k": {
-     "2": 1.0,
-     "6": 1.0,
-     "7": 1.0
-    },
     "groups": {
      "2": [
       12,
@@ -10507,6 +10546,12 @@
     "merge": {
      "mode": "M3",
      "kernel": "triton_norm"
+    },
+    "base": "pdm",
+    "alpha": {
+     "2": 0.5,
+     "6": 0.5,
+     "7": 0.5
     }
    },
    "gmac": 11.487661056,
@@ -10518,7 +10563,7 @@
    "group": "gmac",
    "cap": 11.52673152,
    "anchor": "baseline/DR11.5",
-   "config_sha": "3b888436ae12e010",
+   "config_sha": "5c7191f4bd298a6c",
    "details": {
     "token_path": [
      {
@@ -10530,7 +10575,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 1,
@@ -10541,7 +10586,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 2,
@@ -10552,7 +10597,7 @@
       "merged": 0,
       "pruned": 48,
       "theta": 0.0,
-      "kappa": 1.0
+      "alpha": 0.5
      },
      {
       "block": 3,
@@ -10563,7 +10608,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 4,
@@ -10574,7 +10619,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 5,
@@ -10585,7 +10630,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 6,
@@ -10596,7 +10641,7 @@
       "merged": 24,
       "pruned": 0,
       "theta": 1.0,
-      "kappa": 1.0
+      "alpha": 0.5
      },
      {
       "block": 7,
@@ -10607,7 +10652,7 @@
       "merged": 24,
       "pruned": 0,
       "theta": 1.0,
-      "kappa": 1.0
+      "alpha": 0.5
      },
      {
       "block": 8,
@@ -10618,7 +10663,7 @@
       "merged": 24,
       "pruned": 0,
       "theta": 1.0,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 9,
@@ -10629,7 +10674,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 10,
@@ -10640,7 +10685,7 @@
       "merged": 8,
       "pruned": 0,
       "theta": 1.0,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 11,
@@ -10651,7 +10696,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      }
     ],
     "K": 5,
@@ -10661,7 +10706,8 @@
     "backbone_full_gmac": 11.479514112,
     "d_gmac": 0.008146944,
     "station_scalar_gops_estimate": 0.002343333
-   }
+   },
+   "source_config_sha": "3b888436ae12e010"
   },
   "gmac/DR11.5/x1.05": {
    "state": {
@@ -10686,16 +10732,16 @@
      1.0,
      1.0
     ],
-    "ks": [
-     1.0,
-     1.0,
-     1.0,
-     1.0,
-     1.0
+    "alphas": [
+     0.5,
+     0.5,
+     0.5,
+     0.5,
+     0.5
     ]
    },
    "config": {
-    "kind": "pdm",
+    "kind": "pda",
     "prune_keep": [
      197,
      197,
@@ -10724,13 +10770,6 @@
      197,
      197
     ],
-    "k": {
-     "2": 1.0,
-     "4": 1.0,
-     "6": 1.0,
-     "7": 1.0,
-     "9": 1.0
-    },
     "groups": {
      "2": [
       12,
@@ -11073,6 +11112,14 @@
     "merge": {
      "mode": "M3",
      "kernel": "triton_norm"
+    },
+    "base": "pdm",
+    "alpha": {
+     "2": 0.5,
+     "4": 0.5,
+     "6": 0.5,
+     "7": 0.5,
+     "9": 0.5
     }
    },
    "gmac": 12.057705215999997,
@@ -11084,7 +11131,7 @@
    "group": "gmac",
    "cap": 12.103068096000001,
    "anchor": "baseline/DR11.5",
-   "config_sha": "5f24ac7f1c7d532c",
+   "config_sha": "18caf9f115a97a4c",
    "details": {
     "token_path": [
      {
@@ -11096,7 +11143,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 1,
@@ -11107,7 +11154,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 2,
@@ -11118,7 +11165,7 @@
       "merged": 0,
       "pruned": 25,
       "theta": 0.0,
-      "kappa": 1.0
+      "alpha": 0.5
      },
      {
       "block": 3,
@@ -11129,7 +11176,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 4,
@@ -11140,7 +11187,7 @@
       "merged": 12,
       "pruned": 12,
       "theta": 0.5,
-      "kappa": 1.0
+      "alpha": 0.5
      },
      {
       "block": 5,
@@ -11151,7 +11198,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 6,
@@ -11162,7 +11209,7 @@
       "merged": 24,
       "pruned": 0,
       "theta": 1.0,
-      "kappa": 1.0
+      "alpha": 0.5
      },
      {
       "block": 7,
@@ -11173,7 +11220,7 @@
       "merged": 24,
       "pruned": 0,
       "theta": 1.0,
-      "kappa": 1.0
+      "alpha": 0.5
      },
      {
       "block": 8,
@@ -11184,7 +11231,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 9,
@@ -11195,7 +11242,7 @@
       "merged": 24,
       "pruned": 0,
       "theta": 1.0,
-      "kappa": 1.0
+      "alpha": 0.5
      },
      {
       "block": 10,
@@ -11206,7 +11253,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 11,
@@ -11217,7 +11264,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      }
     ],
     "K": 5,
@@ -11227,7 +11274,8 @@
     "backbone_full_gmac": 12.044667647999997,
     "d_gmac": 0.013037568000000001,
     "station_scalar_gops_estimate": 0.003495724
-   }
+   },
+   "source_config_sha": "5f24ac7f1c7d532c"
   },
   "gmac/DR11.5/x1.10": {
    "state": {
@@ -11249,15 +11297,15 @@
      1.0,
      1.0
     ],
-    "ks": [
-     1.0,
+    "alphas": [
+     0.5,
      0.0,
-     1.0,
-     1.0
+     0.5,
+     0.5
     ]
    },
    "config": {
-    "kind": "pdm",
+    "kind": "pda",
     "prune_keep": [
      197,
      197,
@@ -11286,11 +11334,6 @@
      197,
      197
     ],
-    "k": {
-     "2": 1.0,
-     "7": 1.0,
-     "9": 1.0
-    },
     "groups": {
      "2": [
       12,
@@ -11485,6 +11528,12 @@
     "merge": {
      "mode": "M3",
      "kernel": "triton_norm"
+    },
+    "base": "pdm",
+    "alpha": {
+     "2": 0.5,
+     "7": 0.5,
+     "9": 0.5
     }
    },
    "gmac": 12.668888063999999,
@@ -11496,7 +11545,7 @@
    "group": "gmac",
    "cap": 12.679404672,
    "anchor": "baseline/DR11.5",
-   "config_sha": "5b85111bf2f27b60",
+   "config_sha": "3c96c38ef55b9119",
    "details": {
     "token_path": [
      {
@@ -11508,7 +11557,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 1,
@@ -11519,7 +11568,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 2,
@@ -11530,7 +11579,7 @@
       "merged": 0,
       "pruned": 24,
       "theta": 0.0,
-      "kappa": 1.0
+      "alpha": 0.5
      },
      {
       "block": 3,
@@ -11541,7 +11590,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 4,
@@ -11552,7 +11601,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 5,
@@ -11563,7 +11612,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 6,
@@ -11574,7 +11623,7 @@
       "merged": 24,
       "pruned": 0,
       "theta": 1.0,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 7,
@@ -11585,7 +11634,7 @@
       "merged": 48,
       "pruned": 0,
       "theta": 1.0,
-      "kappa": 1.0
+      "alpha": 0.5
      },
      {
       "block": 8,
@@ -11596,7 +11645,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 9,
@@ -11607,7 +11656,7 @@
       "merged": 24,
       "pruned": 0,
       "theta": 1.0,
-      "kappa": 1.0
+      "alpha": 0.5
      },
      {
       "block": 10,
@@ -11618,7 +11667,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 11,
@@ -11629,7 +11678,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      }
     ],
     "K": 4,
@@ -11639,7 +11688,8 @@
     "backbone_full_gmac": 12.661036031999998,
     "d_gmac": 0.007852032,
     "station_scalar_gops_estimate": 0.002243915
-   }
+   },
+   "source_config_sha": "5b85111bf2f27b60"
   },
   "gmac/DR8.7/x0.80": {
    "state": {
@@ -11661,15 +11711,15 @@
      1.0,
      1.0
     ],
-    "ks": [
-     3.0,
-     3.0,
+    "alphas": [
+     0.75,
+     0.75,
      0.0,
-     1.0
+     0.5
     ]
    },
    "config": {
-    "kind": "pdm",
+    "kind": "pda",
     "prune_keep": [
      197,
      101,
@@ -11698,11 +11748,6 @@
      197,
      197
     ],
-    "k": {
-     "1": 3.0,
-     "2": 3.0,
-     "9": 1.0
-    },
     "groups": {
      "1": [
       3,
@@ -11969,6 +12014,12 @@
     "merge": {
      "mode": "M3",
      "kernel": "triton_norm"
+    },
+    "base": "pdm",
+    "alpha": {
+     "1": 0.75,
+     "2": 0.75,
+     "9": 0.5
     }
    },
    "gmac": 6.913588224000001,
@@ -11980,7 +12031,7 @@
    "group": "gmac",
    "cap": 6.976424755199999,
    "anchor": "baseline/DR8.7",
-   "config_sha": "2bc2e972875dd4c8",
+   "config_sha": "efd45d69828bf598",
    "details": {
     "token_path": [
      {
@@ -11992,7 +12043,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 1,
@@ -12003,7 +12054,7 @@
       "merged": 0,
       "pruned": 96,
       "theta": 0.0,
-      "kappa": 3.0
+      "alpha": 0.75
      },
      {
       "block": 2,
@@ -12014,7 +12065,7 @@
       "merged": 0,
       "pruned": 24,
       "theta": 0.0,
-      "kappa": 3.0
+      "alpha": 0.75
      },
      {
       "block": 3,
@@ -12025,7 +12076,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 4,
@@ -12036,7 +12087,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 5,
@@ -12047,7 +12098,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 6,
@@ -12058,7 +12109,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 7,
@@ -12069,7 +12120,7 @@
       "merged": 24,
       "pruned": 0,
       "theta": 1.0,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 8,
@@ -12080,7 +12131,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 9,
@@ -12091,7 +12142,7 @@
       "merged": 24,
       "pruned": 0,
       "theta": 1.0,
-      "kappa": 1.0
+      "alpha": 0.5
      },
      {
       "block": 10,
@@ -12102,7 +12153,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 11,
@@ -12113,7 +12164,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      }
     ],
     "K": 4,
@@ -12123,7 +12174,8 @@
     "backbone_full_gmac": 6.906915840000001,
     "d_gmac": 0.006672384,
     "station_scalar_gops_estimate": 0.001637684
-   }
+   },
+   "source_config_sha": "2bc2e972875dd4c8"
   },
   "gmac/DR8.7/x0.85": {
    "state": {
@@ -12145,15 +12197,15 @@
      1.0,
      0.5
     ],
-    "ks": [
-     3.0,
-     3.0,
+    "alphas": [
+     0.75,
+     0.75,
      0.0,
-     2.0
+     0.6666666666666666
     ]
    },
    "config": {
-    "kind": "pdm",
+    "kind": "pda",
     "prune_keep": [
      197,
      100,
@@ -12182,11 +12234,6 @@
      197,
      197
     ],
-    "k": {
-     "1": 3.0,
-     "5": 3.0,
-     "9": 2.0
-    },
     "groups": {
      "1": [
       3,
@@ -12417,6 +12464,12 @@
     "merge": {
      "mode": "M3",
      "kernel": "triton_norm"
+    },
+    "base": "pdm",
+    "alpha": {
+     "1": 0.75,
+     "5": 0.75,
+     "9": 0.6666666666666666
     }
    },
    "gmac": 7.365609984,
@@ -12428,7 +12481,7 @@
    "group": "gmac",
    "cap": 7.412451302399998,
    "anchor": "baseline/DR8.7",
-   "config_sha": "362498d692ce0e14",
+   "config_sha": "d635ef51bcb7d5aa",
    "details": {
     "token_path": [
      {
@@ -12440,7 +12493,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 1,
@@ -12451,7 +12504,7 @@
       "merged": 0,
       "pruned": 97,
       "theta": 0.0,
-      "kappa": 3.0
+      "alpha": 0.75
      },
      {
       "block": 2,
@@ -12462,7 +12515,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 3,
@@ -12473,7 +12526,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 4,
@@ -12484,7 +12537,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 5,
@@ -12495,7 +12548,7 @@
       "merged": 12,
       "pruned": 12,
       "theta": 0.5,
-      "kappa": 3.0
+      "alpha": 0.75
      },
      {
       "block": 6,
@@ -12506,7 +12559,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 7,
@@ -12517,7 +12570,7 @@
       "merged": 24,
       "pruned": 0,
       "theta": 1.0,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 8,
@@ -12528,7 +12581,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 9,
@@ -12539,7 +12592,7 @@
       "merged": 12,
       "pruned": 12,
       "theta": 0.5,
-      "kappa": 2.0
+      "alpha": 0.6666666666666666
      },
      {
       "block": 10,
@@ -12550,7 +12603,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 11,
@@ -12561,7 +12614,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      }
     ],
     "K": 4,
@@ -12571,7 +12624,8 @@
     "backbone_full_gmac": 7.3589621759999995,
     "d_gmac": 0.006647808,
     "station_scalar_gops_estimate": 0.00162662
-   }
+   },
+   "source_config_sha": "362498d692ce0e14"
   },
   "gmac/DR8.7/x0.90": {
    "state": {
@@ -12596,16 +12650,16 @@
      1.0,
      1.0
     ],
-    "ks": [
-     3.0,
-     1.0,
-     1.0,
+    "alphas": [
+     0.75,
+     0.5,
+     0.5,
      0.0,
-     1.0
+     0.5
     ]
    },
    "config": {
-    "kind": "pdm",
+    "kind": "pda",
     "prune_keep": [
      197,
      125,
@@ -12634,12 +12688,6 @@
      197,
      197
     ],
-    "k": {
-     "1": 3.0,
-     "2": 1.0,
-     "6": 1.0,
-     "9": 1.0
-    },
     "groups": {
      "1": [
       3,
@@ -12968,6 +13016,13 @@
     "merge": {
      "mode": "M3",
      "kernel": "triton_norm"
+    },
+    "base": "pdm",
+    "alpha": {
+     "1": 0.75,
+     "2": 0.5,
+     "6": 0.5,
+     "9": 0.5
     }
    },
    "gmac": 7.801347072,
@@ -12979,7 +13034,7 @@
    "group": "gmac",
    "cap": 7.848477849599998,
    "anchor": "baseline/DR8.7",
-   "config_sha": "ae419e4fe7dbbeae",
+   "config_sha": "98655ee3cc2a0c66",
    "details": {
     "token_path": [
      {
@@ -12991,7 +13046,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 1,
@@ -13002,7 +13057,7 @@
       "merged": 0,
       "pruned": 72,
       "theta": 0.0,
-      "kappa": 3.0
+      "alpha": 0.75
      },
      {
       "block": 2,
@@ -13013,7 +13068,7 @@
       "merged": 0,
       "pruned": 24,
       "theta": 0.0,
-      "kappa": 1.0
+      "alpha": 0.5
      },
      {
       "block": 3,
@@ -13024,7 +13079,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 4,
@@ -13035,7 +13090,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 5,
@@ -13046,7 +13101,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 6,
@@ -13057,7 +13112,7 @@
       "merged": 24,
       "pruned": 0,
       "theta": 1.0,
-      "kappa": 1.0
+      "alpha": 0.5
      },
      {
       "block": 7,
@@ -13068,7 +13123,7 @@
       "merged": 24,
       "pruned": 0,
       "theta": 1.0,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 8,
@@ -13079,7 +13134,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 9,
@@ -13090,7 +13145,7 @@
       "merged": 24,
       "pruned": 0,
       "theta": 1.0,
-      "kappa": 1.0
+      "alpha": 0.5
      },
      {
       "block": 10,
@@ -13101,7 +13156,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 11,
@@ -13112,7 +13167,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      }
     ],
     "K": 5,
@@ -13122,7 +13177,8 @@
     "backbone_full_gmac": 7.792352256,
     "d_gmac": 0.008994816000000001,
     "station_scalar_gops_estimate": 0.002250539
-   }
+   },
+   "source_config_sha": "ae419e4fe7dbbeae"
   },
   "gmac/DR8.7/x0.95": {
    "state": {
@@ -13147,16 +13203,16 @@
      1.0,
      1.0
     ],
-    "ks": [
-     3.0,
-     3.0,
-     1.0,
+    "alphas": [
+     0.75,
+     0.75,
+     0.5,
      0.0,
      0.0
     ]
    },
    "config": {
-    "kind": "pdm",
+    "kind": "pda",
     "prune_keep": [
      197,
      149,
@@ -13185,11 +13241,6 @@
      29,
      197
     ],
-    "k": {
-     "1": 3.0,
-     "2": 3.0,
-     "6": 1.0
-    },
     "groups": {
      "1": [
       3,
@@ -13492,6 +13543,12 @@
     "merge": {
      "mode": "M3",
      "kernel": "triton_norm"
+    },
+    "base": "pdm",
+    "alpha": {
+     "1": 0.75,
+     "2": 0.75,
+     "6": 0.5
     }
    },
    "gmac": 8.153103360000001,
@@ -13503,7 +13560,7 @@
    "group": "gmac",
    "cap": 8.284504396799997,
    "anchor": "baseline/DR8.7",
-   "config_sha": "92c26b04869ed08d",
+   "config_sha": "19441777ca0e55b3",
    "details": {
     "token_path": [
      {
@@ -13515,7 +13572,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 1,
@@ -13526,7 +13583,7 @@
       "merged": 0,
       "pruned": 48,
       "theta": 0.0,
-      "kappa": 3.0
+      "alpha": 0.75
      },
      {
       "block": 2,
@@ -13537,7 +13594,7 @@
       "merged": 0,
       "pruned": 48,
       "theta": 0.0,
-      "kappa": 3.0
+      "alpha": 0.75
      },
      {
       "block": 3,
@@ -13548,7 +13605,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 4,
@@ -13559,7 +13616,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 5,
@@ -13570,7 +13627,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 6,
@@ -13581,7 +13638,7 @@
       "merged": 24,
       "pruned": 0,
       "theta": 1.0,
-      "kappa": 1.0
+      "alpha": 0.5
      },
      {
       "block": 7,
@@ -13592,7 +13649,7 @@
       "merged": 24,
       "pruned": 0,
       "theta": 1.0,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 8,
@@ -13603,7 +13660,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 9,
@@ -13614,7 +13671,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 10,
@@ -13625,7 +13682,7 @@
       "merged": 24,
       "pruned": 0,
       "theta": 1.0,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 11,
@@ -13636,7 +13693,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      }
     ],
     "K": 5,
@@ -13646,7 +13703,8 @@
     "backbone_full_gmac": 8.145251328,
     "d_gmac": 0.007852032,
     "station_scalar_gops_estimate": 0.002154504
-   }
+   },
+   "source_config_sha": "92c26b04869ed08d"
   },
   "gmac/DR8.7/x1.00": {
    "state": {
@@ -13674,17 +13732,17 @@
      1.0,
      1.0
     ],
-    "ks": [
-     3.0,
-     3.0,
-     2.0,
-     1.0,
+    "alphas": [
+     0.75,
+     0.75,
+     0.6666666666666666,
+     0.5,
      0.0,
      0.0
     ]
    },
    "config": {
-    "kind": "pdm",
+    "kind": "pda",
     "prune_keep": [
      197,
      149,
@@ -13713,12 +13771,6 @@
      29,
      197
     ],
-    "k": {
-     "1": 3.0,
-     "2": 3.0,
-     "5": 2.0,
-     "6": 1.0
-    },
     "groups": {
      "1": [
       3,
@@ -14095,6 +14147,13 @@
     "merge": {
      "mode": "M3",
      "kernel": "triton_norm"
+    },
+    "base": "pdm",
+    "alpha": {
+     "1": 0.75,
+     "2": 0.75,
+     "5": 0.6666666666666666,
+     "6": 0.5
     }
    },
    "gmac": 8.691944448000001,
@@ -14106,7 +14165,7 @@
    "group": "gmac",
    "cap": 8.720530943999998,
    "anchor": "baseline/DR8.7",
-   "config_sha": "8a3ed78db7fd888a",
+   "config_sha": "c0e8d83853b07da0",
    "details": {
     "token_path": [
      {
@@ -14118,7 +14177,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 1,
@@ -14129,7 +14188,7 @@
       "merged": 0,
       "pruned": 48,
       "theta": 0.0,
-      "kappa": 3.0
+      "alpha": 0.75
      },
      {
       "block": 2,
@@ -14140,7 +14199,7 @@
       "merged": 0,
       "pruned": 24,
       "theta": 0.0,
-      "kappa": 3.0
+      "alpha": 0.75
      },
      {
       "block": 3,
@@ -14151,7 +14210,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 4,
@@ -14162,7 +14221,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 5,
@@ -14173,7 +14232,7 @@
       "merged": 24,
       "pruned": 0,
       "theta": 1.0,
-      "kappa": 2.0
+      "alpha": 0.6666666666666666
      },
      {
       "block": 6,
@@ -14184,7 +14243,7 @@
       "merged": 24,
       "pruned": 0,
       "theta": 1.0,
-      "kappa": 1.0
+      "alpha": 0.5
      },
      {
       "block": 7,
@@ -14195,7 +14254,7 @@
       "merged": 24,
       "pruned": 0,
       "theta": 1.0,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 8,
@@ -14206,7 +14265,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 9,
@@ -14217,7 +14276,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 10,
@@ -14228,7 +14287,7 @@
       "merged": 24,
       "pruned": 0,
       "theta": 1.0,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 11,
@@ -14239,7 +14298,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      }
     ],
     "K": 6,
@@ -14249,7 +14308,8 @@
     "backbone_full_gmac": 8.681769984,
     "d_gmac": 0.010174464,
     "station_scalar_gops_estimate": 0.002767359
-   }
+   },
+   "source_config_sha": "8a3ed78db7fd888a"
   },
   "gmac/DR8.7/x1.05": {
    "state": {
@@ -14277,17 +14337,17 @@
      1.0,
      1.0
     ],
-    "ks": [
-     3.0,
-     3.0,
-     2.0,
-     1.0,
-     2.0,
+    "alphas": [
+     0.75,
+     0.75,
+     0.6666666666666666,
+     0.5,
+     0.6666666666666666,
      0.0
     ]
    },
    "config": {
-    "kind": "pdm",
+    "kind": "pda",
     "prune_keep": [
      197,
      149,
@@ -14316,13 +14376,6 @@
      29,
      197
     ],
-    "k": {
-     "1": 3.0,
-     "2": 3.0,
-     "5": 2.0,
-     "7": 1.0,
-     "8": 2.0
-    },
     "groups": {
      "1": [
       3,
@@ -14725,6 +14778,14 @@
     "merge": {
      "mode": "M3",
      "kernel": "triton_norm"
+    },
+    "base": "pdm",
+    "alpha": {
+     "1": 0.75,
+     "2": 0.75,
+     "5": 0.6666666666666666,
+     "7": 0.5,
+     "8": 0.6666666666666666
     }
    },
    "gmac": 9.044806656,
@@ -14736,7 +14797,7 @@
    "group": "gmac",
    "cap": 9.1565574912,
    "anchor": "baseline/DR8.7",
-   "config_sha": "0207413b7c6eb802",
+   "config_sha": "98dadf6d2a0de0c6",
    "details": {
     "token_path": [
      {
@@ -14748,7 +14809,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 1,
@@ -14759,7 +14820,7 @@
       "merged": 0,
       "pruned": 48,
       "theta": 0.0,
-      "kappa": 3.0
+      "alpha": 0.75
      },
      {
       "block": 2,
@@ -14770,7 +14831,7 @@
       "merged": 0,
       "pruned": 24,
       "theta": 0.0,
-      "kappa": 3.0
+      "alpha": 0.75
      },
      {
       "block": 3,
@@ -14781,7 +14842,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 4,
@@ -14792,7 +14853,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 5,
@@ -14803,7 +14864,7 @@
       "merged": 24,
       "pruned": 0,
       "theta": 1.0,
-      "kappa": 2.0
+      "alpha": 0.6666666666666666
      },
      {
       "block": 6,
@@ -14814,7 +14875,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 7,
@@ -14825,7 +14886,7 @@
       "merged": 24,
       "pruned": 0,
       "theta": 1.0,
-      "kappa": 1.0
+      "alpha": 0.5
      },
      {
       "block": 8,
@@ -14836,7 +14897,7 @@
       "merged": 24,
       "pruned": 0,
       "theta": 1.0,
-      "kappa": 2.0
+      "alpha": 0.6666666666666666
      },
      {
       "block": 9,
@@ -14847,7 +14908,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 10,
@@ -14858,7 +14919,7 @@
       "merged": 24,
       "pruned": 0,
       "theta": 1.0,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 11,
@@ -14869,7 +14930,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      }
     ],
     "K": 6,
@@ -14879,7 +14940,8 @@
     "backbone_full_gmac": 9.032899584,
     "d_gmac": 0.011907072,
     "station_scalar_gops_estimate": 0.003072895
-   }
+   },
+   "source_config_sha": "0207413b7c6eb802"
   },
   "gmac/DR8.7/x1.10": {
    "state": {
@@ -14907,17 +14969,17 @@
      1.0,
      1.0
     ],
-    "ks": [
-     3.0,
-     3.0,
-     3.0,
-     1.0,
+    "alphas": [
+     0.75,
+     0.75,
+     0.75,
+     0.5,
      0.0,
      0.0
     ]
    },
    "config": {
-    "kind": "pdm",
+    "kind": "pda",
     "prune_keep": [
      197,
      149,
@@ -14946,12 +15008,6 @@
      45,
      197
     ],
-    "k": {
-     "1": 3.0,
-     "2": 3.0,
-     "6": 3.0,
-     "7": 1.0
-    },
     "groups": {
      "1": [
       3,
@@ -15304,6 +15360,13 @@
     "merge": {
      "mode": "M3",
      "kernel": "triton_norm"
+    },
+    "base": "pdm",
+    "alpha": {
+     "1": 0.75,
+     "2": 0.75,
+     "6": 0.75,
+     "7": 0.5
     }
    },
    "gmac": 9.586289664000002,
@@ -15315,7 +15378,7 @@
    "group": "gmac",
    "cap": 9.592584038399998,
    "anchor": "baseline/DR8.7",
-   "config_sha": "54d5c828069885a7",
+   "config_sha": "65f4d8d707ebe227",
    "details": {
     "token_path": [
      {
@@ -15327,7 +15390,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 1,
@@ -15338,7 +15401,7 @@
       "merged": 0,
       "pruned": 48,
       "theta": 0.0,
-      "kappa": 3.0
+      "alpha": 0.75
      },
      {
       "block": 2,
@@ -15349,7 +15412,7 @@
       "merged": 0,
       "pruned": 24,
       "theta": 0.0,
-      "kappa": 3.0
+      "alpha": 0.75
      },
      {
       "block": 3,
@@ -15360,7 +15423,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 4,
@@ -15371,7 +15434,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 5,
@@ -15382,7 +15445,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 6,
@@ -15393,7 +15456,7 @@
       "merged": 24,
       "pruned": 0,
       "theta": 1.0,
-      "kappa": 3.0
+      "alpha": 0.75
      },
      {
       "block": 7,
@@ -15404,7 +15467,7 @@
       "merged": 24,
       "pruned": 0,
       "theta": 1.0,
-      "kappa": 1.0
+      "alpha": 0.5
      },
      {
       "block": 8,
@@ -15415,7 +15478,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 9,
@@ -15426,7 +15489,7 @@
       "merged": 24,
       "pruned": 0,
       "theta": 1.0,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 10,
@@ -15437,7 +15500,7 @@
       "merged": 8,
       "pruned": 0,
       "theta": 1.0,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 11,
@@ -15448,7 +15511,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      }
     ],
     "K": 6,
@@ -15458,7 +15521,8 @@
     "backbone_full_gmac": 9.576115200000002,
     "d_gmac": 0.010174464,
     "station_scalar_gops_estimate": 0.002767327
-   }
+   },
+   "source_config_sha": "54d5c828069885a7"
   },
   "salt/dev_bs32/DR10.0": {
    "state": {
@@ -15474,13 +15538,13 @@
      0.0,
      1.0
     ],
-    "ks": [
-     3.0,
+    "alphas": [
+     0.75,
      0.0
     ]
    },
    "config": {
-    "kind": "pdm",
+    "kind": "pda",
     "prune_keep": [
      197,
      197,
@@ -15509,9 +15573,6 @@
      197,
      197
     ],
-    "k": {
-     "2": 3.0
-    },
     "groups": {
      "2": [
       12,
@@ -15630,6 +15691,10 @@
     "merge": {
      "mode": "M3",
      "kernel": "triton_norm"
+    },
+    "base": "pdm",
+    "alpha": {
+     "2": 0.75
     }
    },
    "predicted_ms": 59.669531728479015,
@@ -15644,7 +15709,7 @@
    "formula": "station_rich",
    "anchor": "baseline/DR10.0",
    "search_seconds": 0.4031801979872398,
-   "config_sha": "bd5a1629002d1181",
+   "config_sha": "727240abc1cfea44",
    "details": {
     "token_path": [
      {
@@ -15656,7 +15721,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 1,
@@ -15667,7 +15732,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 2,
@@ -15678,7 +15743,7 @@
       "merged": 0,
       "pruned": 83,
       "theta": 0.0,
-      "kappa": 3.0
+      "alpha": 0.75
      },
      {
       "block": 3,
@@ -15689,7 +15754,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 4,
@@ -15700,7 +15765,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 5,
@@ -15711,7 +15776,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 6,
@@ -15722,7 +15787,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 7,
@@ -15733,7 +15798,7 @@
       "merged": 60,
       "pruned": 0,
       "theta": 1.0,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 8,
@@ -15744,7 +15809,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 9,
@@ -15755,7 +15820,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 10,
@@ -15766,7 +15831,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 11,
@@ -15777,7 +15842,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      }
     ],
     "K": 2,
@@ -15787,7 +15852,8 @@
     "backbone_full_gmac": 9.487969536000003,
     "d_gmac": 0.003207168,
     "station_scalar_gops_estimate": 0.000963026
-   }
+   },
+   "source_config_sha": "bd5a1629002d1181"
   },
   "salt/dev_bs32/DR10.4": {
    "state": {
@@ -15803,13 +15869,13 @@
      0.0,
      1.0
     ],
-    "ks": [
-     3.0,
+    "alphas": [
+     0.75,
      0.0
     ]
    },
    "config": {
-    "kind": "pdm",
+    "kind": "pda",
     "prune_keep": [
      197,
      197,
@@ -15838,9 +15904,6 @@
      197,
      197
     ],
-    "k": {
-     "2": 3.0
-    },
     "groups": {
      "2": [
       12,
@@ -15959,6 +16022,10 @@
     "merge": {
      "mode": "M3",
      "kernel": "triton_norm"
+    },
+    "base": "pdm",
+    "alpha": {
+     "2": 0.75
     }
    },
    "predicted_ms": 62.59814773896921,
@@ -15973,7 +16040,7 @@
    "formula": "station_rich",
    "anchor": "baseline/DR10.4",
    "search_seconds": 0.4054301730066072,
-   "config_sha": "eb806fdd94c834e3",
+   "config_sha": "dcdbcc7bd9ab7625",
    "details": {
     "token_path": [
      {
@@ -15985,7 +16052,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 1,
@@ -15996,7 +16063,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 2,
@@ -16007,7 +16074,7 @@
       "merged": 0,
       "pruned": 72,
       "theta": 0.0,
-      "kappa": 3.0
+      "alpha": 0.75
      },
      {
       "block": 3,
@@ -16018,7 +16085,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 4,
@@ -16029,7 +16096,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 5,
@@ -16040,7 +16107,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 6,
@@ -16051,7 +16118,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 7,
@@ -16062,7 +16129,7 @@
       "merged": 68,
       "pruned": 0,
       "theta": 1.0,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 8,
@@ -16073,7 +16140,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 9,
@@ -16084,7 +16151,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 10,
@@ -16095,7 +16162,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 11,
@@ -16106,7 +16173,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      }
     ],
     "K": 2,
@@ -16116,7 +16183,8 @@
     "backbone_full_gmac": 9.999120384000003,
     "d_gmac": 0.003207168,
     "station_scalar_gops_estimate": 0.000980147
-   }
+   },
+   "source_config_sha": "eb806fdd94c834e3"
   },
   "salt/dev_bs32/DR11.5": {
    "state": {
@@ -16132,13 +16200,13 @@
      0.0,
      1.0
     ],
-    "ks": [
-     3.0,
+    "alphas": [
+     0.75,
      0.0
     ]
    },
    "config": {
-    "kind": "pdm",
+    "kind": "pda",
     "prune_keep": [
      197,
      197,
@@ -16167,9 +16235,6 @@
      197,
      197
     ],
-    "k": {
-     "2": 3.0
-    },
     "groups": {
      "2": [
       12,
@@ -16288,6 +16353,10 @@
     "merge": {
      "mode": "M3",
      "kernel": "triton_norm"
+    },
+    "base": "pdm",
+    "alpha": {
+     "2": 0.75
     }
    },
    "predicted_ms": 69.83257933470944,
@@ -16302,7 +16371,7 @@
    "formula": "station_rich",
    "anchor": "baseline/DR11.5",
    "search_seconds": 0.4130115699954331,
-   "config_sha": "79e6b8896aa34966",
+   "config_sha": "d9088ff9fc8d511b",
    "details": {
     "token_path": [
      {
@@ -16314,7 +16383,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 1,
@@ -16325,7 +16394,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 2,
@@ -16336,7 +16405,7 @@
       "merged": 0,
       "pruned": 68,
       "theta": 0.0,
-      "kappa": 3.0
+      "alpha": 0.75
      },
      {
       "block": 3,
@@ -16347,7 +16416,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 4,
@@ -16358,7 +16427,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 5,
@@ -16369,7 +16438,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 6,
@@ -16380,7 +16449,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 7,
@@ -16391,7 +16460,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 8,
@@ -16402,7 +16471,7 @@
       "merged": 46,
       "pruned": 0,
       "theta": 1.0,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 9,
@@ -16413,7 +16482,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 10,
@@ -16424,7 +16493,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 11,
@@ -16435,7 +16504,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      }
     ],
     "K": 2,
@@ -16445,7 +16514,8 @@
     "backbone_full_gmac": 11.370276863999997,
     "d_gmac": 0.003207168,
     "station_scalar_gops_estimate": 0.000986452
-   }
+   },
+   "source_config_sha": "79e6b8896aa34966"
   },
   "salt/dev_bs32/DR8.7": {
    "state": {
@@ -16464,14 +16534,14 @@
      1.0,
      1.0
     ],
-    "ks": [
-     3.0,
+    "alphas": [
+     0.75,
      0.0,
      0.0
     ]
    },
    "config": {
-    "kind": "pdm",
+    "kind": "pda",
     "prune_keep": [
      197,
      103,
@@ -16500,9 +16570,6 @@
      31,
      197
     ],
-    "k": {
-     "1": 3.0
-    },
     "groups": {
      "1": [
       3,
@@ -16633,6 +16700,10 @@
     "merge": {
      "mode": "M3",
      "kernel": "triton_norm"
+    },
+    "base": "pdm",
+    "alpha": {
+     "1": 0.75
     }
    },
    "predicted_ms": 52.589132055074714,
@@ -16647,7 +16718,7 @@
    "formula": "station_rich",
    "anchor": "baseline/DR8.7",
    "search_seconds": 0.411400123994099,
-   "config_sha": "756de2eaf19be9a4",
+   "config_sha": "fd5cac625b03a751",
    "details": {
     "token_path": [
      {
@@ -16659,7 +16730,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 1,
@@ -16670,7 +16741,7 @@
       "merged": 0,
       "pruned": 94,
       "theta": 0.0,
-      "kappa": 3.0
+      "alpha": 0.75
      },
      {
       "block": 2,
@@ -16681,7 +16752,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 3,
@@ -16692,7 +16763,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 4,
@@ -16703,7 +16774,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 5,
@@ -16714,7 +16785,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 6,
@@ -16725,7 +16796,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 7,
@@ -16736,7 +16807,7 @@
       "merged": 48,
       "pruned": 0,
       "theta": 1.0,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 8,
@@ -16747,7 +16818,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 9,
@@ -16758,7 +16829,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 10,
@@ -16769,7 +16840,7 @@
       "merged": 24,
       "pruned": 0,
       "theta": 1.0,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 11,
@@ -16780,7 +16851,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      }
     ],
     "K": 3,
@@ -16790,7 +16861,8 @@
     "backbone_full_gmac": 8.119111680000001,
     "d_gmac": 0.003207168,
     "station_scalar_gops_estimate": 0.000989175
-   }
+   },
+   "source_config_sha": "756de2eaf19be9a4"
   },
   "salt/dev_bs4/DR10.0": {
    "state": {
@@ -16806,13 +16878,13 @@
      0.0,
      1.0
     ],
-    "ks": [
-     3.0,
+    "alphas": [
+     0.75,
      0.0
     ]
    },
    "config": {
-    "kind": "pdm",
+    "kind": "pda",
     "prune_keep": [
      197,
      128,
@@ -16841,9 +16913,6 @@
      197,
      197
     ],
-    "k": {
-     "1": 3.0
-    },
     "groups": {
      "1": [
       3,
@@ -16974,6 +17043,10 @@
     "merge": {
      "mode": "M3",
      "kernel": "triton_norm"
+    },
+    "base": "pdm",
+    "alpha": {
+     "1": 0.75
     }
    },
    "predicted_ms": 8.116454394232562,
@@ -16988,7 +17061,7 @@
    "formula": "split_tile32",
    "anchor": "baseline/DR10.0",
    "search_seconds": 0.4131626040034462,
-   "config_sha": "d6abb0429b9c0229",
+   "config_sha": "36f1a453c44d5ad5",
    "details": {
     "token_path": [
      {
@@ -17000,7 +17073,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 1,
@@ -17011,7 +17084,7 @@
       "merged": 0,
       "pruned": 69,
       "theta": 0.0,
-      "kappa": 3.0
+      "alpha": 0.75
      },
      {
       "block": 2,
@@ -17022,7 +17095,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 3,
@@ -17033,7 +17106,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 4,
@@ -17044,7 +17117,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 5,
@@ -17055,7 +17128,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 6,
@@ -17066,7 +17139,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 7,
@@ -17077,7 +17150,7 @@
       "merged": 64,
       "pruned": 0,
       "theta": 1.0,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 8,
@@ -17088,7 +17161,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 9,
@@ -17099,7 +17172,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 10,
@@ -17110,7 +17183,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 11,
@@ -17121,7 +17194,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      }
     ],
     "K": 2,
@@ -17131,7 +17204,8 @@
     "backbone_full_gmac": 9.824862720000002,
     "d_gmac": 0.003207168,
     "station_scalar_gops_estimate": 0.000984804
-   }
+   },
+   "source_config_sha": "d6abb0429b9c0229"
   },
   "salt/dev_bs4/DR10.4": {
    "state": {
@@ -17147,13 +17221,13 @@
      0.0,
      1.0
     ],
-    "ks": [
-     3.0,
+    "alphas": [
+     0.75,
      0.0
     ]
    },
    "config": {
-    "kind": "pdm",
+    "kind": "pda",
     "prune_keep": [
      197,
      197,
@@ -17182,9 +17256,6 @@
      197,
      197
     ],
-    "k": {
-     "2": 3.0
-    },
     "groups": {
      "2": [
       12,
@@ -17303,6 +17374,10 @@
     "merge": {
      "mode": "M3",
      "kernel": "triton_norm"
+    },
+    "base": "pdm",
+    "alpha": {
+     "2": 0.75
     }
    },
    "predicted_ms": 8.502625794649203,
@@ -17317,7 +17392,7 @@
    "formula": "split_tile32",
    "anchor": "baseline/DR10.4",
    "search_seconds": 0.4181394189945422,
-   "config_sha": "08c8392031147441",
+   "config_sha": "8a62905a1676361d",
    "details": {
     "token_path": [
      {
@@ -17329,7 +17404,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 1,
@@ -17340,7 +17415,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 2,
@@ -17351,7 +17426,7 @@
       "merged": 0,
       "pruned": 69,
       "theta": 0.0,
-      "kappa": 3.0
+      "alpha": 0.75
      },
      {
       "block": 3,
@@ -17362,7 +17437,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 4,
@@ -17373,7 +17448,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 5,
@@ -17384,7 +17459,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 6,
@@ -17395,7 +17470,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 7,
@@ -17406,7 +17481,7 @@
       "merged": 64,
       "pruned": 0,
       "theta": 1.0,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 8,
@@ -17417,7 +17492,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 9,
@@ -17428,7 +17503,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 10,
@@ -17439,7 +17514,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 11,
@@ -17450,7 +17525,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      }
     ],
     "K": 2,
@@ -17460,7 +17535,8 @@
     "backbone_full_gmac": 10.347734784000005,
     "d_gmac": 0.003207168,
     "station_scalar_gops_estimate": 0.000984804
-   }
+   },
+   "source_config_sha": "08c8392031147441"
   },
   "salt/dev_bs4/DR11.5": {
    "state": {
@@ -17476,13 +17552,13 @@
      0.0,
      1.0
     ],
-    "ks": [
-     3.0,
+    "alphas": [
+     0.75,
      0.0
     ]
    },
    "config": {
-    "kind": "pdm",
+    "kind": "pda",
     "prune_keep": [
      197,
      197,
@@ -17511,9 +17587,6 @@
      197,
      197
     ],
-    "k": {
-     "2": 3.0
-    },
     "groups": {
      "2": [
       12,
@@ -17632,6 +17705,10 @@
     "merge": {
      "mode": "M3",
      "kernel": "triton_norm"
+    },
+    "base": "pdm",
+    "alpha": {
+     "2": 0.75
     }
    },
    "predicted_ms": 9.201215292080198,
@@ -17646,7 +17723,7 @@
    "formula": "split_tile32",
    "anchor": "baseline/DR11.5",
    "search_seconds": 0.4156208799977321,
-   "config_sha": "b81818054258ea0c",
+   "config_sha": "8495617a8089b341",
    "details": {
     "token_path": [
      {
@@ -17658,7 +17735,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 1,
@@ -17669,7 +17746,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 2,
@@ -17680,7 +17757,7 @@
       "merged": 0,
       "pruned": 69,
       "theta": 0.0,
-      "kappa": 3.0
+      "alpha": 0.75
      },
      {
       "block": 3,
@@ -17691,7 +17768,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 4,
@@ -17702,7 +17779,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 5,
@@ -17713,7 +17790,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 6,
@@ -17724,7 +17801,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 7,
@@ -17735,7 +17812,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 8,
@@ -17746,7 +17823,7 @@
       "merged": 32,
       "pruned": 0,
       "theta": 1.0,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 9,
@@ -17757,7 +17834,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 10,
@@ -17768,7 +17845,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 11,
@@ -17779,7 +17856,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      }
     ],
     "K": 2,
@@ -17789,7 +17866,8 @@
     "backbone_full_gmac": 11.672995584000004,
     "d_gmac": 0.003207168,
     "station_scalar_gops_estimate": 0.00098474
-   }
+   },
+   "source_config_sha": "b81818054258ea0c"
   },
   "salt/dev_bs4/DR8.7": {
    "state": {
@@ -17805,13 +17883,13 @@
      0.0,
      1.0
     ],
-    "ks": [
-     3.0,
+    "alphas": [
+     0.75,
      0.0
     ]
    },
    "config": {
-    "kind": "pdm",
+    "kind": "pda",
     "prune_keep": [
      197,
      101,
@@ -17840,9 +17918,6 @@
      197,
      197
     ],
-    "k": {
-     "1": 3.0
-    },
     "groups": {
      "1": [
       3,
@@ -17973,6 +18048,10 @@
     "merge": {
      "mode": "M3",
      "kernel": "triton_norm"
+    },
+    "base": "pdm",
+    "alpha": {
+     "1": 0.75
     }
    },
    "predicted_ms": 7.632211010104028,
@@ -17987,7 +18066,7 @@
    "formula": "split_tile32",
    "anchor": "baseline/DR8.7",
    "search_seconds": 0.4109610290033743,
-   "config_sha": "b62c300cef929736",
+   "config_sha": "aaef36e7e5ecb07a",
    "details": {
     "token_path": [
      {
@@ -17999,7 +18078,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 1,
@@ -18010,7 +18089,7 @@
       "merged": 0,
       "pruned": 96,
       "theta": 0.0,
-      "kappa": 3.0
+      "alpha": 0.75
      },
      {
       "block": 2,
@@ -18021,7 +18100,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 3,
@@ -18032,7 +18111,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 4,
@@ -18043,7 +18122,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 5,
@@ -18054,7 +18133,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 6,
@@ -18065,7 +18144,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 7,
@@ -18076,7 +18155,7 @@
       "merged": 40,
       "pruned": 0,
       "theta": 1.0,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 8,
@@ -18087,7 +18166,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 9,
@@ -18098,7 +18177,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 10,
@@ -18109,7 +18188,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      },
      {
       "block": 11,
@@ -18120,7 +18199,7 @@
       "merged": 0,
       "pruned": 0,
       "theta": null,
-      "kappa": 0.0
+      "alpha": 0.0
      }
     ],
     "K": 2,
@@ -18130,7 +18209,8 @@
     "backbone_full_gmac": 8.518462463999999,
     "d_gmac": 0.003207168,
     "station_scalar_gops_estimate": 0.000942771
-   }
+   },
+   "source_config_sha": "b62c300cef929736"
   }
  },
  "sha": "e40eb71d80826bae9a3451e1d3e523e43ea5f84b3e22083aa16e676ddd76206e",

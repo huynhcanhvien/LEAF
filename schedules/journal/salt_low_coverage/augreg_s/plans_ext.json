@@ -5,28 +5,7 @@
    "budget_ms": 3.3536999999999995,
    "certificate": "fixed-multiplier DP exact; constrained multiplier search and ratio projection uncertified",
    "config": {
-    "fuse_merge": true,
-    "groups": {},
-    "k": {},
-    "kind": "pdm",
-    "merge": {
-     "kernel": "triton_norm",
-     "mode": "M3"
-    },
-    "merge_keep": [
-     197,
-     23,
-     197,
-     197,
-     197,
-     197,
-     197,
-     197,
-     197,
-     197,
-     197,
-     197
-    ],
+    "kind": "pda",
     "prune_keep": [
      197,
      23,
@@ -41,37 +20,88 @@
      197,
      197
     ],
+    "merge_keep": [
+     197,
+     23,
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     197
+    ],
+    "groups": {},
     "rank": null,
-    "triton": true
+    "triton": true,
+    "fuse_merge": true,
+    "merge": {
+     "kernel": "triton_norm",
+     "mode": "M3"
+    },
+    "base": "pdm",
+    "alpha": {}
    },
-   "config_sha": "0f8146080b3d4b41",
+   "config_sha": "0135f1cffa2bb166",
    "fhat": 3.7388181319603553,
    "gmac": 1.0209914879999997,
    "n_candidates": 4,
    "original": "full/latency/low70",
-   "original_config_sha": "3c53edf3b6f93f11",
+   "original_config_sha": "b27e91375dd4fd10",
    "predicted_ms": 3.2304703574188345,
    "state": {
     "counts": [
      23
-    ],
-    "ks": [
-     0.0
     ],
     "sites": [
      1
     ],
     "thetas": [
      0.0
+    ],
+    "alphas": [
+     0.0
     ]
    },
-   "status": "planned"
+   "status": "planned",
+   "source_config_sha": "0f8146080b3d4b41"
   },
   "ext/low80": {
    "budget_ms": 3.8327999999999998,
    "certificate": "fixed-multiplier DP exact; constrained multiplier search and ratio projection uncertified",
    "config": {
-    "fuse_merge": true,
+    "kind": "pda",
+    "prune_keep": [
+     197,
+     51,
+     197,
+     197,
+     51,
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     3
+    ],
+    "merge_keep": [
+     197,
+     51,
+     197,
+     197,
+     27,
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     3
+    ],
     "groups": {
      "4": [
       3,
@@ -118,62 +148,30 @@
       2
      ]
     },
-    "k": {
-     "4": 2.0
-    },
-    "kind": "pdm",
+    "rank": 32,
+    "triton": true,
+    "fuse_merge": true,
     "merge": {
      "kernel": "triton_norm",
      "mode": "M3"
     },
-    "merge_keep": [
-     197,
-     51,
-     197,
-     197,
-     27,
-     197,
-     197,
-     197,
-     197,
-     197,
-     197,
-     3
-    ],
-    "prune_keep": [
-     197,
-     51,
-     197,
-     197,
-     51,
-     197,
-     197,
-     197,
-     197,
-     197,
-     197,
-     3
-    ],
-    "rank": 32,
-    "triton": true
+    "base": "pdm",
+    "alpha": {
+     "4": 0.6666666666666666
+    }
    },
-   "config_sha": "872263dc62b001a0",
+   "config_sha": "d574773fbf19dfd4",
    "fhat": 2.268912882746335,
    "gmac": 1.2024268800000002,
    "n_candidates": 3,
    "original": "full/latency/low80",
-   "original_config_sha": "788fa27f2fa793f4",
+   "original_config_sha": "98975bc3fe537fa1",
    "predicted_ms": 3.7299227488419984,
    "state": {
     "counts": [
      51,
      27,
      3
-    ],
-    "ks": [
-     0.0,
-     2.0,
-     0.0
     ],
     "sites": [
      1,
@@ -184,83 +182,21 @@
      0.0,
      1.0,
      0.0
+    ],
+    "alphas": [
+     0.0,
+     0.6666666666666666,
+     0.0
     ]
    },
-   "status": "planned"
+   "status": "planned",
+   "source_config_sha": "872263dc62b001a0"
   },
   "ext/low90": {
    "budget_ms": 4.3119,
    "certificate": "fixed-multiplier DP exact; constrained multiplier search and ratio projection uncertified",
    "config": {
-    "fuse_merge": true,
-    "groups": {
-     "4": [
-      3,
-      5,
-      4,
-      3,
-      6,
-      3,
-      3,
-      8,
-      8,
-      3,
-      3,
-      3,
-      13,
-      8,
-      12,
-      7,
-      8,
-      13,
-      11,
-      12,
-      12,
-      11,
-      12,
-      12,
-      11,
-      10,
-      11,
-      7,
-      9,
-      11,
-      14,
-      14,
-      15,
-      9,
-      16,
-      15,
-      1,
-      15,
-      1,
-      15,
-      15,
-      2
-     ]
-    },
-    "k": {
-     "4": 1.0
-    },
-    "kind": "pdm",
-    "merge": {
-     "kernel": "triton_norm",
-     "mode": "M3"
-    },
-    "merge_keep": [
-     197,
-     79,
-     197,
-     197,
-     30,
-     197,
-     197,
-     197,
-     197,
-     197,
-     197,
-     3
-    ],
+    "kind": "pda",
     "prune_keep": [
      197,
      79,
@@ -275,91 +211,20 @@
      197,
      3
     ],
-    "rank": 32,
-    "triton": true
-   },
-   "config_sha": "9c5fcca534a0f703",
-   "fhat": 1.108740306859545,
-   "gmac": 1.3977672960000007,
-   "n_candidates": 4,
-   "original": "full/latency/low90",
-   "original_config_sha": "5438fae960e2e5ef",
-   "predicted_ms": 4.204497083533217,
-   "state": {
-    "counts": [
-     79,
-     30,
-     3
-    ],
-    "ks": [
-     0.0,
-     1.0,
-     0.0
-    ],
-    "sites": [
-     1,
-     4,
-     11
-    ],
-    "thetas": [
-     0.0,
-     0.5,
-     0.0
-    ]
-   },
-   "status": "planned"
-  },
-  "full/latency/low70": {
-   "budget_ms": 3.3536999999999995,
-   "config": {
-    "fuse_merge": true,
-    "groups": {},
-    "k": {},
-    "kind": "pdm",
-    "merge": {
-     "kernel": "triton_norm",
-     "mode": "M3"
-    },
     "merge_keep": [
      197,
-     33,
+     79,
+     197,
+     197,
+     30,
      197,
      197,
      197,
      197,
      197,
      197,
-     197,
-     197,
-     197,
-     197
+     3
     ],
-    "prune_keep": [
-     197,
-     33,
-     197,
-     197,
-     197,
-     197,
-     197,
-     197,
-     197,
-     197,
-     197,
-     197
-    ],
-    "rank": null,
-    "triton": true
-   },
-   "config_sha": "3c53edf3b6f93f11",
-   "group": "original",
-   "measured_ms_low_session": 3.595,
-   "predicted_frozen": 3.2494316004125126
-  },
-  "full/latency/low80": {
-   "budget_ms": 3.8327999999999998,
-   "config": {
-    "fuse_merge": true,
     "groups": {
      "4": [
       3,
@@ -406,20 +271,60 @@
       2
      ]
     },
-    "k": {
-     "4": 2.0
-    },
-    "kind": "pdm",
+    "rank": 32,
+    "triton": true,
+    "fuse_merge": true,
     "merge": {
      "kernel": "triton_norm",
      "mode": "M3"
     },
-    "merge_keep": [
+    "base": "pdm",
+    "alpha": {
+     "4": 0.5
+    }
+   },
+   "config_sha": "3a0fdce514fd533f",
+   "fhat": 1.108740306859545,
+   "gmac": 1.3977672960000007,
+   "n_candidates": 4,
+   "original": "full/latency/low90",
+   "original_config_sha": "599d0b247fc3c03f",
+   "predicted_ms": 4.204497083533217,
+   "state": {
+    "counts": [
+     79,
+     30,
+     3
+    ],
+    "sites": [
+     1,
+     4,
+     11
+    ],
+    "thetas": [
+     0.0,
+     0.5,
+     0.0
+    ],
+    "alphas": [
+     0.0,
+     0.5,
+     0.0
+    ]
+   },
+   "status": "planned",
+   "source_config_sha": "9c5fcca534a0f703"
+  },
+  "full/latency/low70": {
+   "budget_ms": 3.3536999999999995,
+   "config": {
+    "kind": "pda",
+    "prune_keep": [
      197,
-     71,
+     33,
      197,
      197,
-     28,
+     197,
      197,
      197,
      197,
@@ -428,6 +333,41 @@
      197,
      197
     ],
+    "merge_keep": [
+     197,
+     33,
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     197
+    ],
+    "groups": {},
+    "rank": null,
+    "triton": true,
+    "fuse_merge": true,
+    "merge": {
+     "kernel": "triton_norm",
+     "mode": "M3"
+    },
+    "base": "pdm",
+    "alpha": {}
+   },
+   "config_sha": "b27e91375dd4fd10",
+   "group": "original",
+   "measured_ms_low_session": 3.595,
+   "predicted_frozen": 3.2494316004125126,
+   "source_config_sha": "3c53edf3b6f93f11"
+  },
+  "full/latency/low80": {
+   "budget_ms": 3.8327999999999998,
+   "config": {
+    "kind": "pda",
     "prune_keep": [
      197,
      71,
@@ -442,18 +382,116 @@
      197,
      197
     ],
+    "merge_keep": [
+     197,
+     71,
+     197,
+     197,
+     28,
+     197,
+     197,
+     197,
+     197,
+     197,
+     197,
+     197
+    ],
+    "groups": {
+     "4": [
+      3,
+      5,
+      4,
+      3,
+      6,
+      3,
+      3,
+      8,
+      8,
+      3,
+      3,
+      3,
+      13,
+      8,
+      12,
+      7,
+      8,
+      13,
+      11,
+      12,
+      12,
+      11,
+      12,
+      12,
+      11,
+      10,
+      11,
+      7,
+      9,
+      11,
+      14,
+      14,
+      15,
+      9,
+      16,
+      15,
+      1,
+      15,
+      1,
+      15,
+      15,
+      2
+     ]
+    },
     "rank": 32,
-    "triton": true
+    "triton": true,
+    "fuse_merge": true,
+    "merge": {
+     "kernel": "triton_norm",
+     "mode": "M3"
+    },
+    "base": "pdm",
+    "alpha": {
+     "4": 0.6666666666666666
+    }
    },
-   "config_sha": "788fa27f2fa793f4",
+   "config_sha": "98975bc3fe537fa1",
    "group": "original",
    "measured_ms_low_session": 4.02,
-   "predicted_frozen": 3.729457103066524
+   "predicted_frozen": 3.729457103066524,
+   "source_config_sha": "788fa27f2fa793f4"
   },
   "full/latency/low90": {
    "budget_ms": 4.3119,
    "config": {
-    "fuse_merge": true,
+    "kind": "pda",
+    "prune_keep": [
+     197,
+     77,
+     197,
+     197,
+     77,
+     197,
+     41,
+     197,
+     197,
+     197,
+     197,
+     197
+    ],
+    "merge_keep": [
+     197,
+     77,
+     197,
+     197,
+     53,
+     197,
+     29,
+     197,
+     197,
+     197,
+     197,
+     197
+    ],
     "groups": {
      "6": [
       14,
@@ -488,49 +526,23 @@
       3
      ]
     },
-    "k": {
-     "6": 1.0
-    },
-    "kind": "pdm",
+    "rank": 32,
+    "triton": true,
+    "fuse_merge": true,
     "merge": {
      "kernel": "triton_norm",
      "mode": "M3"
     },
-    "merge_keep": [
-     197,
-     77,
-     197,
-     197,
-     53,
-     197,
-     29,
-     197,
-     197,
-     197,
-     197,
-     197
-    ],
-    "prune_keep": [
-     197,
-     77,
-     197,
-     197,
-     77,
-     197,
-     41,
-     197,
-     197,
-     197,
-     197,
-     197
-    ],
-    "rank": 32,
-    "triton": true
+    "base": "pdm",
+    "alpha": {
+     "6": 0.5
+    }
    },
-   "config_sha": "5438fae960e2e5ef",
+   "config_sha": "599d0b247fc3c03f",
    "group": "original",
    "measured_ms_low_session": 4.379666666666666,
-   "predicted_frozen": 4.180546179879727
+   "predicted_frozen": 4.180546179879727,
+   "source_config_sha": "5438fae960e2e5ef"
   }
  },
  "time": 1792840763.3775544

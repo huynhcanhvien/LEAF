@@ -3,7 +3,7 @@
  "jobs": {
   "ref/diffrate_search/11.5": {
    "config": {
-    "kind": "pd",
+    "kind": "pda",
     "prune_keep": [
      197,
      123,
@@ -32,20 +32,22 @@
      197,
      197
     ],
-    "k": {},
     "groups": {},
     "rank": null,
     "triton": true,
-    "fuse_merge": true
+    "fuse_merge": true,
+    "base": "pd",
+    "alpha": {}
    },
    "group": "baseline",
    "source": "DiffRate search on clip_b16 (https://github.com/OpenGVLab/DiffRate.git @ 91ae3e376e9c3f9f1e69f580fd902b61de5dfe0e)",
    "gmac": 11.500752384,
-   "config_sha": "4b324a364ee65f2f"
+   "config_sha": "8b8e1db966cd465b",
+   "source_config_sha": "4b324a364ee65f2f"
   },
   "ref/diffrate_search/12.5": {
    "config": {
-    "kind": "pd",
+    "kind": "pda",
     "prune_keep": [
      197,
      157,
@@ -74,16 +76,18 @@
      197,
      197
     ],
-    "k": {},
     "groups": {},
     "rank": null,
     "triton": true,
-    "fuse_merge": true
+    "fuse_merge": true,
+    "base": "pd",
+    "alpha": {}
    },
    "group": "baseline",
    "source": "DiffRate search on clip_b16 (https://github.com/OpenGVLab/DiffRate.git @ 91ae3e376e9c3f9f1e69f580fd902b61de5dfe0e)",
    "gmac": 12.49624704,
-   "config_sha": "55c2aa1ea26e7693"
+   "config_sha": "44bc23e30cbd5a14",
+   "source_config_sha": "55c2aa1ea26e7693"
   },
   "leaf/gmac/11.5008gmac": {
    "config": {

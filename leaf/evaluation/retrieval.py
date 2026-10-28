@@ -20,7 +20,7 @@ from leaf.evaluation.data import iterate, load_split
 from leaf.evaluation.runner import config_hash, save, load_json
 
 SPLITS = ('flickr_test', 'coco_test')
-KS = (1, 5, 10)
+RANKS = (1, 5, 10)
 
 
 def captions(split, cache_dir='data/cache'):
@@ -44,11 +44,11 @@ def ranks(sim, owner):
     return i2t.numpy().astype(np.int32), t2i.numpy().astype(np.int32)
 
 
-def recall(i2t, t2i, ks=KS):
+def recall(i2t, t2i, ranks=RANKS):
     """Recall@k (%) in both directions and their sum (Rsum, as in PiToMe and CLIP benchmarks)."""
-    out = {f'i2t_r{k}': 100 * float(np.mean(np.asarray(i2t) < k)) for k in ks}
-    out.update({f't2i_r{k}': 100 * float(np.mean(np.asarray(t2i) < k)) for k in ks})
-    out['rsum'] = sum(out[f'{d}_r{k}'] for d in ('i2t', 't2i') for k in ks)
+    out = {f'i2t_r{r}': 100 * float(np.mean(np.asarray(i2t) < r)) for r in ranks}
+    out.update({f't2i_r{r}': 100 * float(np.mean(np.asarray(t2i) < r)) for r in ranks})
+    out['rsum'] = sum(out[f'{d}_r{r}'] for d in ('i2t', 't2i') for r in ranks)
     return out
 
 

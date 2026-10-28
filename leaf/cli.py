@@ -180,9 +180,9 @@ def schedule_gmac(backbone, cfg, timm_id=None):
         if cfg.get('kind') == 'dense':
             from leaf.planner.gmac import dense_cost
             return dense_cost(spec)
-        if cfg.get('kind') in ('pd', 'pdm', 'pda'):
-            from leaf.planner.alpha import config_gmac
-            return config_gmac(cfg, spec)
+        if cfg.get('kind') == 'pda':
+            from leaf.planner.gmac import config_cost
+            return config_cost(cfg, spec)
         import torch
         from leaf.api import build_model, load_backbone
         from leaf.latency.timing import gmacs
@@ -258,7 +258,6 @@ def cmd_group_heads(args):
 
 def probe_jobs(spec, dcfg, thetas, alphas, deltas):
     """Single-station 'pda' configs, built like the paper's probes (pure pruning keeps the plain operator)."""
-    from leaf.planner.alpha import to_alpha_config
     from leaf.planner.configs import config_from_state
     from leaf.planner.plan import operator_config
     from leaf.planner.probes import probe_state
@@ -269,9 +268,9 @@ def probe_jobs(spec, dcfg, thetas, alphas, deltas):
             for th in thetas:
                 for a in alphas:
                     if l == spec.depth - 1 and a > 0: continue          # no later block, no forecast
-                    cfg = config_from_state(probe_state(l, n, th, a), spec, dcfg)   # 'k' field holds alpha
+                    cfg = config_from_state(probe_state(l, n, th, a), spec, dcfg)
                     if th != 0: cfg = operator_config(cfg, 'M3')
-                    yield dict(block=l, count=n, theta=th, alpha=a, config=to_alpha_config(cfg))
+                    yield dict(block=l, count=n, theta=th, alpha=a, config=cfg)
 
 
 def cmd_probe(args):
@@ -370,8 +369,8 @@ def cmd_time_workloads(args):
 def cmd_budgets(args):
     import torch
     from leaf.backbones import SPECS
-    from leaf.planner.alpha import config_gmac, to_alpha_config
     from leaf.planner.budgets import anchor_budgets, dense_budgets
+    from leaf.planner.gmac import config_cost
     from leaf.planner.configs import diffrate_config, diffrate_schedules
     spec = SPECS[args.backbone]
     kind = args.anchors
@@ -388,7 +387,7 @@ def cmd_budgets(args):
         for g in args.gmac_points:
             res = planner.plan(g)
             if 'config' not in res: raise SystemExit(f'no schedule within {g:g} GMAC')
-            anchors[f'gmac{g:g}'] = to_alpha_config(res['config'])
+            anchors[f'gmac{g:g}'] = res['config']
     elif kind == 'configs':
         if not args.anchor_configs: raise SystemExit('--anchors configs needs --anchor-configs FILE ({id: config})')
         anchors = load_json(args.anchor_configs)
@@ -396,7 +395,7 @@ def cmd_budgets(args):
     r = make_runner(args, args.backbone, args.timm_id, Path('runs') / args.backbone)
     ids = ['dense'] + list(anchors)
     timed = dict(zip(ids, time_configs(r, [dict(kind='dense')] + list(anchors.values()), args.batch, args.rounds, args.iters)))
-    measured = {i: dict(timed[i], gmac=config_gmac(anchors[i], spec) if i in anchors else None,
+    measured = {i: dict(timed[i], gmac=config_cost(anchors[i], spec) if i in anchors else None,
                         config=anchors.get(i, dict(kind='dense'))) for i in ids}
     if kind == 'dense':
         budgets = dense_budgets(timed['dense']['ms'], args.dense_fractions)
@@ -429,13 +428,13 @@ def cmd_fit_latency(args):
     from leaf.backbones import SPECS
     from leaf.evaluation.runner import config_hash
     from leaf.latency.salt import FORMULAS, features, fit_salt
-    from leaf.planner.alpha import kappa_view
     spec = SPECS[args.backbone]
     doc = load_json(args.timings); rows = doc['rows'] if isinstance(doc, dict) else doc
     data = []
     for row in rows:
-        cfg = kappa_view(row['config'])
-        group = row.get('group') or config_hash({k: v for k, v in cfg.items() if k not in ('kind', 'merge')})
+        cfg = row['config']
+        # Cross-validation folds: workloads of the same token path share a fold.
+        group = row.get('group') or config_hash(dict(prune_keep=cfg['prune_keep'], merge_keep=cfg['merge_keep']))
         data.append(dict(config=cfg, ms=row['ms'], group=group, features=features(cfg, spec)))
     model = fit_salt(data, args.formula)
     model.update(backbone=args.backbone, source=str(args.timings),
@@ -465,7 +464,8 @@ def cmd_plan(args):
     from leaf.api import stations
     from leaf.backbones import SPECS
     from leaf.evaluation.runner import config_hash
-    from leaf.planner.alpha import config_gmac, to_alpha_config, plan_under_latency
+    from leaf.planner.gmac import config_cost
+    from leaf.planner.plan import plan_latency
     spec = SPECS[args.backbone]
     close = lambda grid: None if grid is None else [float(v) for v in grid]
     curves = load_probe_curves(args.probes, spec, close(args.thetas), close(args.alphas))
@@ -486,12 +486,11 @@ def cmd_plan(args):
         t0 = time.monotonic()
         if b['kind'] == 'latency':
             if salt is None: raise SystemExit('a latency budget needs --salt')
-            res = plan_under_latency(curves, spec, d, salt, b['value'], args.operator, True)
+            res = plan_latency(curves, spec, d, salt, b['value'], args.operator, True)
             key = f"latency/{b['id']}"
         else:
             from leaf.planner.gmac import GmacPlanner
             res = GmacPlanner(spec, d, curves, args.operator).plan(b['value'])
-            if 'config' in res: res = dict(res, config=to_alpha_config(res['config']))
             key = f"gmac/{b['id']}"
         if 'config' not in res:
             out['schedules'][key] = dict(budget=b, status='no_feasible_candidate'); log('plan', f'{key}: no feasible schedule'); continue
@@ -499,7 +498,7 @@ def cmd_plan(args):
         out['schedules'][key] = dict(budget=dict(kind=b['kind'], value=b['value'], id=b['id']), stations=stations(cfg, spec),
                                      config=cfg, config_sha=config_hash(cfg),
                                      planner=dict(fhat=res.get('fhat'), predicted_ms=res.get('predicted_ms'),
-                                                  gmac=config_gmac(cfg, spec), seconds=round(time.monotonic() - t0, 2)))
+                                                  gmac=config_cost(cfg, spec), seconds=round(time.monotonic() - t0, 2)))
         st = ' '.join(f"{s['block']}:{s['tokens_after']}" for s in out['schedules'][key]['stations'])
         pred = res.get('predicted_ms')
         log('plan', f"{key:20s} K={len(out['schedules'][key]['stations'])} {st:40s} F^={res['fhat']:.4f}"

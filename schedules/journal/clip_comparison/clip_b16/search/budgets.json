@@ -30,7 +30,7 @@
    ],
    "gmac": 8.7398592,
    "config": {
-    "kind": "pd",
+    "kind": "pda",
     "prune_keep": [
      197,
      192,
@@ -59,11 +59,12 @@
      13,
      3
     ],
-    "k": {},
     "groups": {},
     "rank": null,
     "triton": true,
-    "fuse_merge": true
+    "fuse_merge": true,
+    "base": "pd",
+    "alpha": {}
    }
   },
   "DR10.0": {
@@ -76,7 +77,7 @@
    ],
    "gmac": 9.994799616,
    "config": {
-    "kind": "pd",
+    "kind": "pda",
     "prune_keep": [
      197,
      194,
@@ -105,11 +106,12 @@
      19,
      3
     ],
-    "k": {},
     "groups": {},
     "rank": null,
     "triton": true,
-    "fuse_merge": true
+    "fuse_merge": true,
+    "base": "pd",
+    "alpha": {}
    }
   },
   "DR10.4": {
@@ -122,7 +124,7 @@
    ],
    "gmac": 10.443413760000002,
    "config": {
-    "kind": "pd",
+    "kind": "pda",
     "prune_keep": [
      197,
      196,
@@ -151,11 +153,12 @@
      21,
      3
     ],
-    "k": {},
     "groups": {},
     "rank": null,
     "triton": true,
-    "fuse_merge": true
+    "fuse_merge": true,
+    "base": "pd",
+    "alpha": {}
    }
   },
   "DR11.5": {
@@ -168,7 +171,7 @@
    ],
    "gmac": 11.526695423999998,
    "config": {
-    "kind": "pd",
+    "kind": "pda",
     "prune_keep": [
      197,
      197,
@@ -197,11 +200,12 @@
      35,
      3
     ],
-    "k": {},
     "groups": {},
     "rank": null,
     "triton": true,
-    "fuse_merge": true
+    "fuse_merge": true,
+    "base": "pd",
+    "alpha": {}
    }
   },
   "DR12.5": {
@@ -214,7 +218,7 @@
    ],
    "gmac": 12.531505152,
    "config": {
-    "kind": "pd",
+    "kind": "pda",
     "prune_keep": [
      197,
      197,
@@ -243,11 +247,12 @@
      47,
      3
     ],
-    "k": {},
     "groups": {},
     "rank": null,
     "triton": true,
-    "fuse_merge": true
+    "fuse_merge": true,
+    "base": "pd",
+    "alpha": {}
    }
   }
  },

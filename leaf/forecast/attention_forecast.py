@@ -87,13 +87,13 @@ class AttentionForecast(nn.Module):
                 self.Bf = torch.cat((self.Bf, self.Bf.new_zeros(Gp - G, self.rank, C)), 0)
         self.triton = True
 
-    def zscored(self, x, size, raw_p=None, k_d=1.):
-        """[B,N] k_d*z(D) [+ z(log raw_p)], CLS -> 0 (models.ops.zscore)."""
+    def zscored(self, x, size, raw_p=None, alpha=1.):
+        """[B,N] alpha*z(D) [+ (1-alpha)*z(log raw_p)], CLS -> 0 (leaf.model.token_ops.zscore); alpha = 1: z(D) alone."""
         if not (getattr(self, 'triton', False) and x.is_cuda):
-            out = k_d * zscore(self(x, size), 1)
-            if raw_p is not None: out = out + zscore(raw_p.clamp_min(1e-12).log(), 1)
+            out = alpha * zscore(self(x, size), 1)
+            if raw_p is not None and alpha < 1: out = out + (1. - alpha) * zscore(raw_p.clamp_min(1e-12).log(), 1)
             return out
-        from leaf.forecast.kernels.kappa_score import zscored_future
+        from leaf.forecast.kernels.station_score import zscored_future
         B, N, C = x.shape
         cls = F.layer_norm(x[:, 0].float(), (C,), eps=self.eps).to(self.U.dtype)
         # Bias row split off: a K = C+1 (odd) GEMM falls back to an unaligned cutlass kernel (~5x slower).
@@ -102,7 +102,7 @@ class AttentionForecast(nn.Module):
         else:
             t = torch.addmm(self.A[C], cls, self.A[:C]).view(B, -1, self.rank)            # [B,G,r]
             u = torch.bmm(t.transpose(0, 1), self.Bf).transpose(0, 1)                      # [B,G,C]
-        return zscored_future(x, size, u, self.log_count, self.H, self.eps, raw_p, k_d)
+        return zscored_future(x, size, u, self.log_count, self.H, self.eps, raw_p, alpha)
 
     def forward(self, x, size):
         """[B,N] log of the group mixture (before z-scoring)."""

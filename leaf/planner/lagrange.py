@@ -3,7 +3,7 @@
 
 For fixed multipliers the grid DP is exact. Searching multipliers and adjusting
 integer counts does not certify optimality at an arbitrary requested budget.
-No measured latency projection, k-best or true-KL candidate selection is used.
+No measured latency projection, best-path list or true-KL candidate selection is used.
 """
 import numpy as np
 from leaf.planner.surrogate import lookup
@@ -11,11 +11,11 @@ from leaf.planner.schedule_caps import full_cost
 from leaf.backbones import head_gmac
 
 
-def lagrange_dp(jt, times, gmac, mu_t, mu_g=0., fixed_k=None):
+def lagrange_dp(jt, times, gmac, mu_t, mu_g=0., fixed_K=None):
     """Exact DP of Fhat + mu_T*T + mu_G*G, K free unless explicitly constrained."""
     if mu_t < 0 or mu_g < 0: raise ValueError('multipliers must be nonnegative')
     depth, width = jt.depth, len(jt.counts)
-    if fixed_k is None:
+    if fixed_K is None:
         cost=np.full(width,np.inf); cost[0]=0.; back=[]
         allowed=np.triu(np.ones((width,width),bool))
         for l in range(depth):
@@ -34,29 +34,29 @@ def lagrange_dp(jt, times, gmac, mu_t, mu_g=0., fixed_k=None):
         path.reverse()
         return dict(sites=[l for l,_ in path],counts=[n for _,n in path],value=value,
                     mu_t=float(mu_t),mu_g=float(mu_g))
-    kmax = depth - 1 if fixed_k is None else fixed_k
-    if not 0 <= kmax < depth: raise ValueError('invalid K')
-    cost = np.full((width,kmax+1), np.inf); cost[0,0] = 0.; back=[]
+    K_max = depth - 1 if fixed_K is None else fixed_K
+    if not 0 <= K_max < depth: raise ValueError('invalid K')
+    cost = np.full((width,K_max+1), np.inf); cost[0,0] = 0.; back=[]
     for l in range(depth):
-        new = np.full_like(cost,np.inf); arg = np.full((width,kmax+1,2),-1,int)
+        new = np.full_like(cost,np.inf); arg = np.full((width,K_max+1,2),-1,int)
         for i in range(width):
             for j in range(i,width):
                 cut = int(j>i)
                 if cut and l==0: continue
                 edge = jt.kl[l,i,j] + mu_t*times[l,i,j] + mu_g*gmac[l,i,j]
                 if not np.isfinite(edge): continue
-                for k in range(cut,kmax+1):
-                    v = cost[i,k-cut] + edge
-                    if v < new[j,k]: new[j,k] = v; arg[j,k] = (i,k-cut)
+                for K in range(cut,K_max+1):
+                    v = cost[i,K-cut] + edge
+                    if v < new[j,K]: new[j,K] = v; arg[j,K] = (i,K-cut)
         cost=new; back.append(arg)
-    if fixed_k is None: j,k = np.unravel_index(cost.argmin(),cost.shape)
-    else: k=fixed_k; j=int(cost[:,k].argmin())
-    if not np.isfinite(cost[j,k]): return None
-    value=float(cost[j,k]); path=[]
+    if fixed_K is None: j,K = np.unravel_index(cost.argmin(),cost.shape)
+    else: K=fixed_K; j=int(cost[:,K].argmin())
+    if not np.isfinite(cost[j,K]): return None
+    value=float(cost[j,K]); path=[]
     for l in reversed(range(depth)):
-        i,prev_k=back[l][j,k]
+        i,prev_K=back[l][j,K]
         if j>i: path.append((l,int(jt.counts[j])))
-        j,k=int(i),int(prev_k)
+        j,K=int(i),int(prev_K)
     path.reverse()
     return dict(sites=[l for l,_ in path],counts=[n for _,n in path],value=value,
                 mu_t=float(mu_t),mu_g=float(mu_g))
@@ -64,8 +64,8 @@ def lagrange_dp(jt, times, gmac, mu_t, mu_g=0., fixed_k=None):
 
 def metrics(p, st):
     cfg=p.cfg(st)
-    return dict(latency_ms=float(p.lat(cfg['prune_keep'],cfg['merge_keep'],ks=cfg['k'])),
-                full_gmac=full_cost(cfg['prune_keep'],cfg['merge_keep'],cfg['k'],p.spec.n_tokens,
+    return dict(latency_ms=float(p.lat(cfg['prune_keep'],cfg['merge_keep'],alphas=cfg['alpha'])),
+                full_gmac=full_cost(cfg['prune_keep'],cfg['merge_keep'],cfg['alpha'],p.spec.n_tokens,
                                     p.spec.dim,{l:len(set(v)) for l,v in cfg['groups'].items()},p.dcfg.rank,getattr(p.spec,'patch',16),
                                     head_gmac(p.spec))['full'])
 
@@ -82,8 +82,8 @@ def project(p, raw, budget, gmac_cap=None, margin=.1):
             c=max(3,min(n-1,round(n*r**eta)))
             if c>=n: return None
             out.append(c); n=c
-        th,ks=lookup(p.jt,sites,out)
-        st=dict(sites=list(sites),counts=out,thetas=th,ks=ks)
+        th,alphas=lookup(p.jt,sites,out)
+        st=dict(sites=list(sites),counts=out,thetas=th,alphas=alphas)
         ms=metrics(p,st)
         if not all(np.isfinite(v) for v in ms.values()): return None
         return st,ms
@@ -102,16 +102,16 @@ def project(p, raw, budget, gmac_cap=None, margin=.1):
     return dict(state=best[0],**best[1],fhat=float(p.fhat(best[0])))
 
 
-def plan(p, latency_budget, gmac_cap=None, fixed_k=None):
+def plan(p, latency_budget, gmac_cap=None, fixed_K=None):
     if latency_budget<=0 or (gmac_cap is not None and gmac_cap<=0): raise ValueError('invalid budget')
-    # These tables use the same inner-min (theta,k) choices as the error tables.
+    # These tables use the same inner-min (theta,alpha) choices as the error tables.
     times,gm=transition_costs(p)
     candidates=[]; seen=set()
     # mu_G=0 is exactly the latency-only case. A finite multiplier sweep is not
     # a certificate of a constrained optimum; every fixed pair is solved exactly.
     for mu_g in ((0.,.02,.1,.5,2.,10.) if gmac_cap is not None else (0.,)):
         lo,hi=0.,1.
-        def solve(mu): return lagrange_dp(p.jt,times,gm,mu,mu_g,fixed_k)
+        def solve(mu): return lagrange_dp(p.jt,times,gm,mu,mu_g,fixed_K)
         for _ in range(24):
             r=solve(hi)
             if r is None: break
@@ -148,7 +148,7 @@ def transition_costs(p):
             for j in range(i,len(jt.counts)):
                 nj=int(jt.counts[j]); cut=j>i
                 pp=nj+round((ni-nj)*jt.th[l,i,j]) if cut else ni
-                active=cut and jt.kk[l,i,j]>0 and l<jt.depth-1
+                active=cut and jt.alpha[l,i,j]>0 and l<jt.depth-1
                 G=len(set(p.dcfg.at(l))) if active else 0
                 times[l,i,j]=p.lat.block(ni,pp,nj)
                 gm[l,i,j]=block_gmacs(ni,pp,nj,p.spec.dim)

@@ -9,7 +9,7 @@
   {
    "name": "diffrate/DR8.7",
    "config": {
-    "kind": "pd",
+    "kind": "pda",
     "prune_keep": [
      197,
      192,
@@ -38,18 +38,20 @@
      13,
      3
     ],
-    "k": {},
     "groups": {},
     "rank": null,
     "triton": true,
-    "fuse_merge": true
+    "fuse_merge": true,
+    "base": "pd",
+    "alpha": {}
    },
-   "gmac_target": null
+   "gmac_target": null,
+   "group": "7cb60bf92fee0f23"
   },
   {
    "name": "diffrate/DR10.0",
    "config": {
-    "kind": "pd",
+    "kind": "pda",
     "prune_keep": [
      197,
      194,
@@ -78,18 +80,20 @@
      19,
      3
     ],
-    "k": {},
     "groups": {},
     "rank": null,
     "triton": true,
-    "fuse_merge": true
+    "fuse_merge": true,
+    "base": "pd",
+    "alpha": {}
    },
-   "gmac_target": null
+   "gmac_target": null,
+   "group": "03f431f58f11a0b1"
   },
   {
    "name": "diffrate/DR10.4",
    "config": {
-    "kind": "pd",
+    "kind": "pda",
     "prune_keep": [
      197,
      196,
@@ -118,18 +122,20 @@
      21,
      3
     ],
-    "k": {},
     "groups": {},
     "rank": null,
     "triton": true,
-    "fuse_merge": true
+    "fuse_merge": true,
+    "base": "pd",
+    "alpha": {}
    },
-   "gmac_target": null
+   "gmac_target": null,
+   "group": "0c52b0f76c2eb266"
   },
   {
    "name": "diffrate/DR11.5",
    "config": {
-    "kind": "pd",
+    "kind": "pda",
     "prune_keep": [
      197,
      197,
@@ -158,18 +164,20 @@
      35,
      3
     ],
-    "k": {},
     "groups": {},
     "rank": null,
     "triton": true,
-    "fuse_merge": true
+    "fuse_merge": true,
+    "base": "pd",
+    "alpha": {}
    },
-   "gmac_target": null
+   "gmac_target": null,
+   "group": "9666d6928e217069"
   },
   {
    "name": "diffrate/DR12.5",
    "config": {
-    "kind": "pd",
+    "kind": "pda",
     "prune_keep": [
      197,
      197,
@@ -198,13 +206,15 @@
      47,
      3
     ],
-    "k": {},
     "groups": {},
     "rank": null,
     "triton": true,
-    "fuse_merge": true
+    "fuse_merge": true,
+    "base": "pd",
+    "alpha": {}
    },
-   "gmac_target": null
+   "gmac_target": null,
+   "group": "896bcd07f06b7c93"
   },
   {
    "name": "m3/gmac0.35",
@@ -599,7 +609,8 @@
      "6": 1.0
     }
    },
-   "gmac_target": 6.1473398784
+   "gmac_target": 6.1473398784,
+   "group": "e63083388f2d0113"
   },
   {
    "name": "m3/gmac0.42",
@@ -907,7 +918,8 @@
      "6": 0.5
     }
    },
-   "gmac_target": 7.376807854080001
+   "gmac_target": 7.376807854080001,
+   "group": "06bd66d23b9bdceb"
   },
   {
    "name": "m3/gmac0.49",
@@ -1413,7 +1425,8 @@
      "6": 0.5
     }
    },
-   "gmac_target": 8.606275829760001
+   "gmac_target": 8.606275829760001,
+   "group": "de26ae7448b88c8f"
   },
   {
    "name": "m3/gmac0.56",
@@ -1919,7 +1932,8 @@
      "6": 0.6666666666666666
     }
    },
-   "gmac_target": 9.835743805440002
+   "gmac_target": 9.835743805440002,
+   "group": "3fadcdca5129ad5e"
   },
   {
    "name": "m3/gmac0.63",
@@ -2353,7 +2367,8 @@
      "7": 0.6666666666666666
     }
    },
-   "gmac_target": 11.06521178112
+   "gmac_target": 11.06521178112,
+   "group": "d49192c393fd9991"
   },
   {
    "name": "m3/gmac0.7",
@@ -2787,7 +2802,8 @@
      "7": 0.6666666666666666
     }
    },
-   "gmac_target": 12.2946797568
+   "gmac_target": 12.2946797568,
+   "group": "d3d3bfbc67696a2f"
   },
   {
    "name": "m3/gmac0.77",
@@ -2984,7 +3000,8 @@
      "6": 0.75
     }
    },
-   "gmac_target": 13.524147732480001
+   "gmac_target": 13.524147732480001,
+   "group": "1bd52276c6574cb9"
   },
   {
    "name": "m3/gmac0.84",
@@ -3232,7 +3249,8 @@
      "7": 1.0
     }
    },
-   "gmac_target": 14.753615708160002
+   "gmac_target": 14.753615708160002,
+   "group": "4253c91b1ec5fd12"
   },
   {
    "name": "m0/gmac0.35",
@@ -3623,7 +3641,8 @@
      "6": 1.0
     }
    },
-   "gmac_target": 6.1473398784
+   "gmac_target": 6.1473398784,
+   "group": "e63083388f2d0113"
   },
   {
    "name": "m0/gmac0.42",
@@ -3927,7 +3946,8 @@
      "6": 0.5
     }
    },
-   "gmac_target": 7.376807854080001
+   "gmac_target": 7.376807854080001,
+   "group": "06bd66d23b9bdceb"
   },
   {
    "name": "m0/gmac0.49",
@@ -4429,7 +4449,8 @@
      "6": 0.5
     }
    },
-   "gmac_target": 8.606275829760001
+   "gmac_target": 8.606275829760001,
+   "group": "de26ae7448b88c8f"
   },
   {
    "name": "m0/gmac0.56",
@@ -4931,7 +4952,8 @@
      "6": 0.6666666666666666
     }
    },
-   "gmac_target": 9.835743805440002
+   "gmac_target": 9.835743805440002,
+   "group": "3fadcdca5129ad5e"
   },
   {
    "name": "m0/gmac0.63",
@@ -5361,7 +5383,8 @@
      "7": 0.6666666666666666
     }
    },
-   "gmac_target": 11.06521178112
+   "gmac_target": 11.06521178112,
+   "group": "d49192c393fd9991"
   },
   {
    "name": "m0/gmac0.7",
@@ -5791,7 +5814,8 @@
      "7": 0.6666666666666666
     }
    },
-   "gmac_target": 12.2946797568
+   "gmac_target": 12.2946797568,
+   "group": "d3d3bfbc67696a2f"
   },
   {
    "name": "m0/gmac0.77",
@@ -5984,7 +6008,8 @@
      "6": 0.75
     }
    },
-   "gmac_target": 13.524147732480001
+   "gmac_target": 13.524147732480001,
+   "group": "1bd52276c6574cb9"
   },
   {
    "name": "m0/gmac0.84",
@@ -6228,7 +6253,8 @@
      "7": 1.0
     }
    },
-   "gmac_target": 14.753615708160002
+   "gmac_target": 14.753615708160002,
+   "group": "4253c91b1ec5fd12"
   },
   {
    "name": "no_forecast/gmac0.35",
@@ -6273,7 +6299,8 @@
     "base": "pdm",
     "alpha": {}
    },
-   "gmac_target": 6.1473398784
+   "gmac_target": 6.1473398784,
+   "group": "58447e33d4d93f22"
   },
   {
    "name": "no_forecast/gmac0.42",
@@ -6318,7 +6345,8 @@
     "base": "pdm",
     "alpha": {}
    },
-   "gmac_target": 7.376807854080001
+   "gmac_target": 7.376807854080001,
+   "group": "1439ddf08f22c032"
   },
   {
    "name": "no_forecast/gmac0.49",
@@ -6363,7 +6391,8 @@
     "base": "pdm",
     "alpha": {}
    },
-   "gmac_target": 8.606275829760001
+   "gmac_target": 8.606275829760001,
+   "group": "3e66ec847a094a77"
   },
   {
    "name": "no_forecast/gmac0.56",
@@ -6408,7 +6437,8 @@
     "base": "pdm",
     "alpha": {}
    },
-   "gmac_target": 9.835743805440002
+   "gmac_target": 9.835743805440002,
+   "group": "8552949103fd3244"
   },
   {
    "name": "no_forecast/gmac0.63",
@@ -6453,7 +6483,8 @@
     "base": "pdm",
     "alpha": {}
    },
-   "gmac_target": 11.06521178112
+   "gmac_target": 11.06521178112,
+   "group": "3aefef72102a54c0"
   },
   {
    "name": "no_forecast/gmac0.7",
@@ -6498,7 +6529,8 @@
     "base": "pdm",
     "alpha": {}
    },
-   "gmac_target": 12.2946797568
+   "gmac_target": 12.2946797568,
+   "group": "3ecea944f838d69e"
   },
   {
    "name": "no_forecast/gmac0.77",
@@ -6543,7 +6575,8 @@
     "base": "pdm",
     "alpha": {}
    },
-   "gmac_target": 13.524147732480001
+   "gmac_target": 13.524147732480001,
+   "group": "7dfd92b2da4fb072"
   },
   {
    "name": "no_forecast/gmac0.84",
@@ -6588,7 +6621,8 @@
     "base": "pdm",
     "alpha": {}
    },
-   "gmac_target": 14.753615708160002
+   "gmac_target": 14.753615708160002,
+   "group": "299b78906a4b4c01"
   },
   {
    "name": "prune_only/gmac0.35",
@@ -6833,7 +6867,8 @@
      "5": 1.0
     }
    },
-   "gmac_target": 6.1473398784
+   "gmac_target": 6.1473398784,
+   "group": "b925b21633b403d3"
   },
   {
    "name": "prune_only/gmac0.42",
@@ -7078,7 +7113,8 @@
      "5": 1.0
     }
    },
-   "gmac_target": 7.376807854080001
+   "gmac_target": 7.376807854080001,
+   "group": "2dae344778854bd5"
   },
   {
    "name": "prune_only/gmac0.49",
@@ -7323,7 +7359,8 @@
      "5": 1.0
     }
    },
-   "gmac_target": 8.606275829760001
+   "gmac_target": 8.606275829760001,
+   "group": "4df5c1efa2f6dd06"
   },
   {
    "name": "prune_only/gmac0.56",
@@ -7568,7 +7605,8 @@
      "5": 1.0
     }
    },
-   "gmac_target": 9.835743805440002
+   "gmac_target": 9.835743805440002,
+   "group": "455fa180b5e4146a"
   },
   {
    "name": "prune_only/gmac0.63",
@@ -7999,7 +8037,8 @@
      "6": 0.6666666666666666
     }
    },
-   "gmac_target": 11.06521178112
+   "gmac_target": 11.06521178112,
+   "group": "e058a0bb358bfd2e"
   },
   {
    "name": "prune_only/gmac0.7",
@@ -8343,7 +8382,8 @@
      "4": 1.0
     }
    },
-   "gmac_target": 12.2946797568
+   "gmac_target": 12.2946797568,
+   "group": "2913b5afda93bc4b"
   },
   {
    "name": "prune_only/gmac0.77",
@@ -8588,7 +8628,8 @@
      "4": 1.0
     }
    },
-   "gmac_target": 13.524147732480001
+   "gmac_target": 13.524147732480001,
+   "group": "214942f40a977cb0"
   },
   {
    "name": "prune_only/gmac0.84",
@@ -8872,7 +8913,8 @@
      "8": 0.75
     }
    },
-   "gmac_target": 14.753615708160002
+   "gmac_target": 14.753615708160002,
+   "group": "adc0979771a88a9d"
   },
   {
    "name": "merge_only/gmac0.35",
@@ -9204,7 +9246,8 @@
      "5": 0.5
     }
    },
-   "gmac_target": 6.1473398784
+   "gmac_target": 6.1473398784,
+   "group": "ca9da18816e54059"
   },
   {
    "name": "merge_only/gmac0.42",
@@ -9452,7 +9495,8 @@
      "8": 0.5
     }
    },
-   "gmac_target": 7.376807854080001
+   "gmac_target": 7.376807854080001,
+   "group": "26b65bc22af6a40c"
   },
   {
    "name": "merge_only/gmac0.49",
@@ -9847,7 +9891,8 @@
      "6": 0.5
     }
    },
-   "gmac_target": 8.606275829760001
+   "gmac_target": 8.606275829760001,
+   "group": "1c25a8db9521da22"
   },
   {
    "name": "merge_only/gmac0.56",
@@ -10329,7 +10374,8 @@
      "6": 0.5
     }
    },
-   "gmac_target": 9.835743805440002
+   "gmac_target": 9.835743805440002,
+   "group": "7f9c44503ca344f3"
   },
   {
    "name": "merge_only/gmac0.63",
@@ -10811,7 +10857,8 @@
      "6": 0.6666666666666666
     }
    },
-   "gmac_target": 11.06521178112
+   "gmac_target": 11.06521178112,
+   "group": "45fd8b4e0ab03e91"
   },
   {
    "name": "merge_only/gmac0.7",
@@ -11107,7 +11154,8 @@
      "6": 0.75
     }
    },
-   "gmac_target": 12.2946797568
+   "gmac_target": 12.2946797568,
+   "group": "8e776bd8e95878c8"
   },
   {
    "name": "merge_only/gmac0.77",
@@ -11304,7 +11352,8 @@
      "6": 0.75
     }
    },
-   "gmac_target": 13.524147732480001
+   "gmac_target": 13.524147732480001,
+   "group": "049a98ae289378eb"
   },
   {
    "name": "merge_only/gmac0.84",
@@ -11552,7 +11601,8 @@
      "7": 1.0
     }
    },
-   "gmac_target": 14.753615708160002
+   "gmac_target": 14.753615708160002,
+   "group": "795d3a7e023c88e9"
   }
  ]
 }

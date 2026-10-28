@@ -54,9 +54,9 @@ def features(cfg,spec):
     out=constants(spec);n=spec.n_tokens
     g=canonical(dict(p=cfg['prune_keep'],m=cfg['merge_keep']),n)
     for l,(p,m) in enumerate(zip(g['p'],g['m'])):
-        active=l<spec.depth-1 and float(cfg.get('k',{}).get(str(l),0))>0
+        active=l<spec.depth-1 and float(cfg.get('alpha',{}).get(str(l),0))>0
         groups=len(set(cfg.get('groups',{}).get(str(l),[]))) if active else 0
-        row=edge_features(spec,l,n,p,m,active,groups,cfg.get('rank'),cfg['kind']=='pdm')
+        row=edge_features(spec,l,n,p,m,active,groups,cfg.get('rank'),cfg.get('base')=='pdm')
         for k,v in row.items():out[k]=out.get(k,0.)+v
         n=min(n,p,m)
     return out
@@ -103,17 +103,17 @@ def plan_with_salt(curves,spec,dcfg,cost,budget):
             for j in range(i,len(jt.counts)):
                 ni,nj=int(ni),int(jt.counts[j]);cut=j>i
                 pp=nj+round((ni-nj)*jt.th[l,i,j]) if cut else ni
-                active=cut and l<spec.depth-1 and jt.kk[l,i,j]>0
+                active=cut and l<spec.depth-1 and jt.alpha[l,i,j]>0
                 groups=len(set(dcfg.at(l))) if active else 0
                 times[l,i,j]=cost.edge(l,ni,pp,nj,active,groups)
     def state(sites,counts):
-        th,ks=lookup(jt,sites,counts)
-        return dict(sites=list(sites),counts=list(counts),thetas=th,ks=ks)
+        th,alphas=lookup(jt,sites,counts)
+        return dict(sites=list(sites),counts=list(counts),thetas=th,alphas=alphas)
     def cfg(st):return norm_config(st,spec,dcfg,'M3')
     def fhat(st):
         n=spec.n_tokens;value=0.
-        for l,c,th,k in zip(st['sites'],st['counts'],st['thetas'],st['ks']):
-            value+=jt.curves[(th,k)].transition(l,n,c);n=c
+        for l,c,th,a in zip(st['sites'],st['counts'],st['thetas'],st['alphas']):
+            value+=jt.curves[(th,a)].transition(l,n,c);n=c
         return float(value)
     def project(raw):
         sites=raw['sites'];n=spec.n_tokens;ratios=[]
@@ -157,7 +157,7 @@ def plan_with_salt(curves,spec,dcfg,cost,budget):
     # Additivity on final off-grid schedule is essential to the DP interpretation.
     n=spec.n_tokens;edge_sum=cost.c0
     for l,(p,m) in enumerate(zip(best['config']['prune_keep'],best['config']['merge_keep'])):
-        active=l<spec.depth-1 and float(best['config']['k'].get(str(l),0))>0
+        active=l<spec.depth-1 and float(best['config']['alpha'].get(str(l),0))>0
         groups=len(set(best['config']['groups'].get(str(l),[]))) if active else 0
         edge_sum+=cost.edge(l,n,p,m,active,groups);n=min(n,p,m)
     assert abs(edge_sum-best['predicted_ms'])<1e-7,(edge_sum,best['predicted_ms'])

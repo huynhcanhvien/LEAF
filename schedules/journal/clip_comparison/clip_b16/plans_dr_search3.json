@@ -3,7 +3,7 @@
  "jobs": {
   "ref/diffrate_search/10.4": {
    "config": {
-    "kind": "pd",
+    "kind": "pda",
     "prune_keep": [
      197,
      144,
@@ -32,16 +32,18 @@
      197,
      197
     ],
-    "k": {},
     "groups": {},
     "rank": null,
     "triton": true,
-    "fuse_merge": true
+    "fuse_merge": true,
+    "base": "pd",
+    "alpha": {}
    },
    "group": "baseline",
    "source": "DiffRate search on clip_b16 (https://github.com/OpenGVLab/DiffRate.git @ 91ae3e376e9c3f9f1e69f580fd902b61de5dfe0e)",
    "gmac": 10.396586496,
-   "config_sha": "9091b98f642aeecf"
+   "config_sha": "4060d35cd93ab8b0",
+   "source_config_sha": "9091b98f642aeecf"
   },
   "leaf/gmac/10.3966gmac": {
    "config": {

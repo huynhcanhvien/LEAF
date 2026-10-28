@@ -35,7 +35,7 @@ Use the checkpoint recorded in the file (`timm_id`); `leaf evaluate/bench --sche
 - **`dense0.xx`** budgets are AugReg budgets, a fraction of the dense latency.
 
 **Fields of an entry:**
-- `stations`: `block` (0-based), `tokens_after` (including the class token), `theta` (share of the removed tokens that is merged), `alpha` (forecast weight of `(1 - alpha) z(log P) + alpha z(D)`), and `kappa = alpha / (1 - alpha)` of the equivalent score `z(log P) + kappa z(D)` (null for alpha = 1).
+- `stations`: `block` (0-based), `tokens_after` (including the class token), `theta` (share of the removed tokens that is merged) and `alpha` (forecast weight of `(1 - alpha) z(log P) + alpha z(D)`).
 - `config`: the runtime configuration (kind `pda`), for `leaf.api.build_model` / `LeafRunner.run`. The head-group labels are embedded, and the forecast matrices are recomputed from the backbone weights.
 - `planner`: surrogate distortion F̂, predicted bs32 latency (SALT), and GMAC including station and forecast operations.
 - `measured`: top-1 on ImageNet val (50k) and V2 (10k), and bs32 latency (mean of three interleaved rounds, with SD). For `latency/` entries, `latency_transfer` is the factor that carried the ablation-session timing to the main session (null: timed in the main session).
@@ -49,13 +49,13 @@ Use the checkpoint recorded in the file (`timm_id`); `leaf evaluate/bench --sche
 - `probes_m0.json`: probe means with the M0 merge (`leaf plan --operator M0`; the M0-operator ablation);
 - `probes_seed251.json`, `probes_seed351.json` (DeiT-B, MAE-B, AugReg-S): probe means on other calibration draws (the seed ablation).
 
-`probes_m0.json` and `probes_seed*.json` were probed with κ = α/(1 − α) ∈ {0, 1, 2, 3} and are written in α. With `--alphas 0 1/2 2/3 3/4`, `leaf plan` gives the paper's `ablation/m0_operator/*` and `seed251|seed351/*` schedules from them exactly.
+`probes_m0.json` and `probes_seed*.json` hold α ∈ {0, 1/2, 2/3, 3/4}. With `--alphas 0 1/2 2/3 3/4`, `leaf plan` gives the paper's `ablation/m0_operator/*` and `seed251|seed351/*` schedules from them exactly.
 
 `leaf plan` reproduces every released schedule from these inputs exactly (`tests/test_leaf_cli.py`).
 
 ## Schedule exports of the other campaigns
 
-Every set below is in the α form: `pda` configs and `alpha` per station, with the same token order as the campaign's own export (which used κ = α/(1 − α)). `config_sha` is recomputed, and the campaign's is kept as `source_config_sha`. Any arm of these files, and of the sealed plans in `journal/`, runs with `leaf evaluate | benchmark --schedule <file> --key <arm>` (`leaf schedules <file>` lists the arms).
+Every set below holds `pda` configs and `alpha` per station. `config_sha` is the hash of the config as released; `source_config_sha`, where present, is the hash the campaign recorded for the same schedule. Any arm of these files, and of the sealed plans in `journal/`, runs with `leaf evaluate | benchmark --schedule <file> --key <arm>` (`leaf schedules <file>` lists the arms).
 
 | Folder | Campaign | Content |
 |---|---|---|

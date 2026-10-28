@@ -49,7 +49,7 @@ Checked on 43 entries, one of each config kind and section on DeiT-B: 42 give th
 | `main_ablation/<arm>/<budget>`, `calibration_seed/<seed>/<budget>`, `leaf_alpha4/<budget>` | component ablations, other calibration draws, LEAF on the four-value alpha grid | Tab. ablation |
 | `ablation/<group>/...` | schedule structure, shared settings, forecast only, setting grids, forecast compression, probe sample size, final station, fixed station count | Tabs. ablation structure, grid sensitivity |
 | `low_budget/...` | very low budgets and the D × M3 factorial | Tabs. LEAF vs LEAF-M0, negative variants |
-| `horizon/...` | forecast horizon, norm variants, D placebos (kappa form) | ablation, negative variants |
+| `horizon/...` | forecast horizon, norm variants, D placebos | ablation, negative variants |
 | `latency_pricing/...` | SALT- and GMAC-planned per device regime (GPU bs4/8/32, CPU bs1/8) | Tab. latency pricing, Fig. SALT vs GMAC |
 | `merge_variants/...` | the M3 and N4 merges planned and evaluated | negative variants |
 | `gmac_planned/...` | GMAC-planned DP with M0 / M3 | equal GMAC, Fig. token schedule |

@@ -17,15 +17,15 @@ def cpu_tests():
         b = compress_norm(x, size, scores, 15, 8, mode)
         check(mode + ' CPU fallback bitwise', all(torch.equal(v, w) for v, w in zip(a, b)))
     vit = VisionTransformer(img_size=16, patch_size=4, embed_dim=24, depth=3, num_heads=3, num_classes=7).eval().requires_grad_(False)
-    cfg = dict(kind='pd', prune_keep=[17, 14, 8], merge_keep=[17, 10, 6], triton=False)
+    cfg = dict(kind='pda', base='pd', prune_keep=[17, 14, 8], merge_keep=[17, 10, 6], triton=False)
     img = torch.randn(2, 3, 16, 16); spec = SimpleNamespace(pool='token')
     with torch.no_grad():
         a = build(vit, spec, cfg)(img)
-        b = build(vit, spec, dict(cfg, kind='pdm', merge=dict(mode='M0', kernel='triton_norm')))(img)
+        b = build(vit, spec, dict(cfg, base='pdm', merge=dict(mode='M0', kernel='triton_norm')))(img)
         check('optimized wrapper M0 bitwise', torch.equal(a, b) and torch.equal(per_image_kl(a, a), per_image_kl(b, a)))
         for mode in ('M3', 'N4'):
-            ref = build(vit, spec, dict(cfg, kind='pdm', merge=dict(mode=mode)))(img)
-            out = build(vit, spec, dict(cfg, kind='pdm', merge=dict(mode=mode, kernel='triton_norm')))(img)
+            ref = build(vit, spec, dict(cfg, base='pdm', merge=dict(mode=mode)))(img)
+            out = build(vit, spec, dict(cfg, base='pdm', merge=dict(mode=mode, kernel='triton_norm')))(img)
             check(mode + ' CPU wrapper bitwise reference', torch.equal(ref, out))
 
 

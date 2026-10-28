@@ -1,8 +1,9 @@
 """Planner state <-> evaluable config.
 
-A state is dict(sites, counts, thetas, ks): station blocks, tokens after each station, merged share of
-the removed tokens, and D weight per station (k = 0: P only). `config_from_state` turns it into the JSON config
-of models.pd_vit.ReducedViT (kind 'pd'); D group labels come from planner.grouping (G groups per station).
+A state is dict(sites, counts, thetas, alphas): station blocks, tokens after each station, merged share of
+the removed tokens, and forecast weight per station (alpha = 0: P only). `config_from_state` turns it into the JSON
+config of leaf.model.reduced_vit.ReducedViT (kind 'pda', base 'pd'); D group labels come from
+leaf.forecast.head_groups (G groups per station).
 """
 import json
 from pathlib import Path
@@ -26,12 +27,21 @@ def state_caps(st, spec):
     return schedule(st['sites'], st['counts'], st['thetas'], spec.n_tokens, spec.depth)
 
 
+KEYS = ('kind', 'prune_keep', 'merge_keep', 'groups', 'rank', 'triton', 'fuse_merge', 'merge', 'base', 'alpha')
+
+
+def ordered(cfg):
+    """The config with its keys in the order of the released files (the config hash does not depend on it)."""
+    return {**{k: cfg[k] for k in KEYS if k in cfg}, **{k: v for k, v in cfg.items() if k not in KEYS}}
+
+
 def config_from_state(st, spec, dcfg):
     g = state_caps(st, spec)
-    ks = {int(l): float(k) for l, k in zip(st['sites'], st['ks']) if int(l) in g['sites'] and int(l) < spec.depth - 1 and float(k) > 0}
-    return dict(kind='pd', prune_keep=g['p'], merge_keep=g['m'], k={str(l): k for l, k in ks.items()},
-                groups={str(l): dcfg.at(l) for l in ks}, rank=dcfg.rank if ks else None, triton=dcfg.triton if ks else True,
-                fuse_merge=True)
+    alpha = {int(l): float(a) for l, a in zip(st['sites'], st['alphas'])
+             if int(l) in g['sites'] and int(l) < spec.depth - 1 and float(a) > 0}
+    return ordered(dict(kind='pda', base='pd', prune_keep=g['p'], merge_keep=g['m'], alpha={str(l): a for l, a in alpha.items()},
+                        groups={str(l): dcfg.at(l) for l in alpha}, rank=dcfg.rank if alpha else None,
+                        triton=dcfg.triton if alpha else True, fuse_merge=True))
 
 
 def diffrate_schedules(spec):
@@ -49,7 +59,7 @@ def diffrate_schedules(spec):
 
 
 def diffrate_config(spec, budget):
-    """DiffRate's published schedule with its own P ranking (k = 0 everywhere): the DR baseline."""
+    """DiffRate's published schedule with its own P ranking (alpha = 0 everywhere): the DR baseline."""
     return diffrate_config_from(spec, *diffrate_schedules(spec)[budget])
 
 
@@ -57,7 +67,8 @@ def diffrate_config_from(spec, p, m):
     """DR baseline config of given DiffRate kept counts per block (prune, merge), e.g. rates searched on a new backbone."""
     p = list(p) + [p[-1]] * (spec.depth - len(p)); m = list(m) + [m[-1]] * (spec.depth - len(m))
     g = canonical(dict(p=p, m=m), spec.n_tokens, spec.depth)
-    return dict(kind='pd', prune_keep=g['p'], merge_keep=g['m'], k={}, groups={}, rank=None, triton=True, fuse_merge=True)
+    return ordered(dict(kind='pda', base='pd', prune_keep=g['p'], merge_keep=g['m'], alpha={}, groups={}, rank=None,
+                        triton=True, fuse_merge=True))
 
 
 def norm_config(state, spec, dcfg, mode):
@@ -65,4 +76,4 @@ def norm_config(state, spec, dcfg, mode):
     cfg = config_from_state(state, spec, dcfg)
     if mode == 'M0': return cfg
     if mode not in ('M3', 'N4'): raise ValueError('one fixed operator per method')
-    return dict(cfg, kind='pdm', merge=dict(mode=mode, kernel='triton_norm'))
+    return ordered(dict(cfg, base='pdm', merge=dict(mode=mode, kernel='triton_norm')))

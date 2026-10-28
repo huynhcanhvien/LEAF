@@ -2,13 +2,13 @@
 import numpy as np
 from leaf.planner.surrogate import JointTables,lookup,ProbeCurve
 from leaf.planner.lagrange import lagrange_dp
-from leaf.planner.configs import config_from_state
+from leaf.planner.configs import config_from_state,ordered
 from leaf.planner.schedule_caps import full_cost,block_gmacs
 from leaf.backbones import head_gmac
 
 def config_cost(cfg,spec):
     groups={k:len(set(v)) for k,v in cfg.get('groups',{}).items()}
-    row=full_cost(cfg['prune_keep'],cfg['merge_keep'],cfg.get('k'),spec.n_tokens,spec.dim,groups,cfg.get('rank'),getattr(spec,'patch',16),head_gmac(spec))
+    row=full_cost(cfg['prune_keep'],cfg['merge_keep'],cfg.get('alpha'),spec.n_tokens,spec.dim,groups,cfg.get('rank'),getattr(spec,'patch',16),head_gmac(spec))
     # Same convention for all arms: matrix/conv MACs + grouped D, not scalar/comparison equivalents.
     return float(row['backbone_full']+row['d_gmac'])
 
@@ -35,21 +35,21 @@ class GmacPlanner:
                     ni,nj=int(ni),int(self.jt.counts[j]); cut=j>i
                     pp=nj+round((ni-nj)*self.jt.th[l,i,j]) if cut else ni
                     value=block_gmacs(ni,pp,nj,spec.dim)
-                    if cut and l<spec.depth-1 and self.jt.kk[l,i,j]>0:
+                    if cut and l<spec.depth-1 and self.jt.alpha[l,i,j]>0:
                         G=len(set(dcfg.at(l))); rank=dcfg.rank or spec.dim
                         value+=(2*spec.dim*G*rank+ni*G*spec.dim)/1e9
                     self.mac[l,i,j]=value
         self.constant=((spec.n_tokens-1)*3*getattr(spec,'patch',16)**2*spec.dim)/1e9+head_gmac(spec)
     def cfg(self,state):
         cfg=config_from_state(state,self.spec,self.dcfg)
-        return cfg if self.mode=='M0' else dict(cfg,kind='pdm',merge=dict(mode='M3',kernel='triton_norm'))
+        return cfg if self.mode=='M0' else ordered(dict(cfg,base='pdm',merge=dict(mode='M3',kernel='triton_norm')))
     def state(self,sites,counts):
-        th,ks=lookup(self.jt,sites,counts)
-        return dict(sites=list(sites),counts=list(counts),thetas=list(th),ks=list(ks))
+        th,alphas=lookup(self.jt,sites,counts)
+        return dict(sites=list(sites),counts=list(counts),thetas=list(th),alphas=list(alphas))
     def fhat(self,state):
         n=self.spec.n_tokens; value=0.
-        for l,c,t,k in zip(state['sites'],state['counts'],state['thetas'],state['ks']):
-            value+=self.jt.curves[(t,k)].transition(l,n,c); n=c
+        for l,c,t,a in zip(state['sites'],state['counts'],state['thetas'],state['alphas']):
+            value+=self.jt.curves[(t,a)].transition(l,n,c); n=c
         return float(value)
     def plan(self,budget):
         candidates=[]; seen=set()

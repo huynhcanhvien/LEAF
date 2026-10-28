@@ -78,19 +78,19 @@ def main():
     vit = VisionTransformer(img_size=16, patch_size=4, embed_dim=24, depth=3,
                             num_heads=3, num_classes=7).eval().requires_grad_(False)
     spec = SimpleNamespace(pool='token')
-    cfg = dict(kind='pd', prune_keep=[14, 8, 6], merge_keep=[10, 7, 4],
-               k={'0': 1.}, groups={'0': [0, 0, 0, 1, 1, 1]}, rank=4, triton=False)
+    cfg = dict(kind='pda', base='pd', prune_keep=[14, 8, 6], merge_keep=[10, 7, 4],
+               alpha={'0': .5}, groups={'0': [0, 0, 0, 1, 1, 1]}, rank=4, triton=False)
     img = torch.randn(2, 3, 16, 16)
     pd = build(vit, spec, cfg)
     original_key = config_hash(cfg)
     with torch.no_grad():
         logits = pd(img)
-        m0 = build(vit, spec, dict(cfg, kind='pdm', merge={'mode': 'M0'}))(img)
+        m0 = build(vit, spec, dict(cfg, base='pdm', merge={'mode': 'M0'}))(img)
         teacher = vit(img)
         check('PDM M0 logits/predictions/KL bit-identical', torch.equal(logits, m0) and
               torch.equal(per_image_kl(logits, teacher), per_image_kl(m0, teacher)))
         for mode in MODES[1:]:
-            model = build(vit, spec, dict(cfg, kind='pdm', merge={'mode': mode}))
+            model = build(vit, spec, dict(cfg, base='pdm', merge={'mode': mode}))
             a, b = model(img), model(img)
             check(mode + ': CPU wrapper repeat/finite', torch.equal(a, b) and torch.isfinite(a).all())
         x0 = pd.embed(img); sz = torch.ones(2, 17, 1)
@@ -98,9 +98,9 @@ def main():
         b = cls_attention_with_keys(vit.blocks[0], vit.blocks[0].norm1(x0), sz)
         check('attention with keys matches original bitwise', torch.equal(a[0], b[0]) and torch.equal(a[1], b[1]))
         score0 = pd.score(0, x0, sz, a[1])
-        score1, _ = score_and_forecast(pd.future['0'], x0, sz, a[1], 1.)
+        score1, _ = score_and_forecast(pd.future['0'], x0, sz, a[1], .5)
         check('N2 reuses D vectors with identical score', torch.equal(score0, score1))
-    check('legacy config/cache key unchanged', original_key == config_hash(cfg) and 'merge' not in cfg)
+    check('config/cache key unchanged', original_key == config_hash(cfg) and 'merge' not in cfg)
 
 
 if __name__ == '__main__':

@@ -41,11 +41,11 @@ def main():
     dc=SimpleNamespace(rank=4,triton=False,at=lambda l:[0,0])
     cv={(th,k):ProbeCurve({l:{4:.01,8:.04,14:.2} for l in (1,2)},17) for th in (0.,.5,1.) for k in (0.,1.)}
     planner=GmacPlanner(spec,dc,cv,'M3')
-    dense_cfg=dict(prune_keep=[17]*3,merge_keep=[17]*3,k={},groups={},rank=None)
+    dense_cfg=dict(prune_keep=[17]*3,merge_keep=[17]*3,alpha={},groups={},rank=None)
     budget=config_cost(dense_cfg,spec)*.8
     row=planner.plan(budget)
     assert not row.get('infeasible') and row['gmac']<=budget+1e-9
-    assert row['config']['kind']=='pdm' and 'latency' not in row['objective'].lower().replace('no latency inputs','')
+    assert row['config']['base']=='pdm' and 'latency' not in row['objective'].lower().replace('no latency inputs','')
     print('PASS: official ToMe routing/size parity, M3 norm/cancellation/CLS, zero-merge equivalence, GMAC-only DP budget')
 
 if __name__=='__main__': main()

@@ -50,7 +50,6 @@ paper/
 # Campaign drivers of the paper (local only); the package keeps what plans, evaluates and times schedules
 /leaf/reproduction/
 # Schedule sets not reported in the paper
-/schedules/kappa_form/
 /schedules/learned_theta_alpha*/
 /schedules/merge_variants/
 /schedules/leaf/seg_b_ade.json

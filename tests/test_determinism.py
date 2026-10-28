@@ -6,7 +6,7 @@ from common import check, finish
 import hashlib, json, os, subprocess, sys
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-STATE = dict(sites=[1, 4, 7, 11], counts=[120, 80, 40, 5], thetas=[0., .5, 1., 0.], ks=[3., 1., 2., 0.])
+STATE = dict(sites=[1, 4, 7, 11], counts=[120, 80, 40, 5], thetas=[0., .5, 1., 0.], alphas=[3 / 4, 1 / 2, 2 / 3, 0.])
 
 
 def worker(mode):
@@ -20,7 +20,7 @@ def worker(mode):
     from leaf.planner.configs import ForecastConfig, config_from_state
     r = Runner('deit_s', root='/tmp/pd_determinism_test', limit=256); r.spec = SPECS['deit_s']
     d = ForecastConfig('schedules/leaf/planning/deit_s/groups.json'); base = config_from_state(STATE, r.spec, d)
-    cfgs = {'pd_D': base, 'pd_P': config_from_state(dict(STATE, ks=[0.] * 4), r.spec, d), 'tome': dict(kind='tome', r=13),
+    cfgs = {'pd_D': base, 'pd_P': config_from_state(dict(STATE, alphas=[0.] * 4), r.spec, d), 'tome': dict(kind='tome', r=13),
             'pitome': dict(kind='pitome', ratio=.9), 'evit': dict(kind='evit', keep_rate=.7), 'mctf': dict(kind='mctf', r=16),
             'ppt': dict(kind='ppt', r=50, threshold=7e-5)}
     images, labels, _ = r.data('half'); out = {}

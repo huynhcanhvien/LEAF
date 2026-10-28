@@ -1,7 +1,7 @@
 """Operator-aware adapters for the unchanged paper DP and frozen latency features."""
 from copy import deepcopy
 import numpy as np
-from leaf.planner.configs import config_from_state
+from leaf.planner.configs import config_from_state, ordered
 from leaf.planner.gmac import config_cost
 from leaf.backbones import head_gmac
 from leaf.latency.salt import features, edge_features, constants, plan_with_salt
@@ -10,15 +10,15 @@ from leaf.latency.salt import features, edge_features, constants, plan_with_salt
 def operator_config(cfg, mode='M3', use_d=True):
     out = deepcopy(cfg)
     if mode == 'M0':
-        out['kind'] = 'pd'
+        out['base'] = 'pd'
         out.pop('merge', None)
     elif mode == 'M3':
-        out.update(kind='pdm', merge=dict(mode='M3', kernel='triton_norm'))
+        out.update(base='pdm', merge=dict(mode='M3', kernel='triton_norm'))
     else:
         raise ValueError(mode)
     if not use_d:
-        out.update(k={}, groups={}, rank=None, triton=True)
-    return out
+        out.update(alpha={}, groups={}, rank=None, triton=True)
+    return ordered(out)
 
 
 class OperatorCost:
@@ -48,13 +48,13 @@ def plan_latency(curves, spec, dcfg, model, budget, mode='M3', use_d=True):
     result['config'] = operator_config(result['config'], mode, use_d)
     assert abs(cost(result['config']) - result['predicted_ms']) < 1e-7
     if not use_d:
-        assert not result['config']['k']
+        assert not result['config']['alpha']
     result.update(status='planned', gmac=config_cost(result['config'], spec))
     return result
 
 
 def config_details(cfg, spec):
-    if cfg['kind'] not in ('pd', 'pdm'):
+    if cfg['kind'] != 'pda':
         return {}
     from leaf.planner.schedule_caps import full_cost
     n, path = spec.n_tokens, []
@@ -63,12 +63,12 @@ def config_details(cfg, spec):
         path.append(dict(block=l, n_in=n, prune_keep=p, merge_keep=m,
                          removed=n-m, merged=p-m, pruned=n-p,
                          theta=(p-m)/(n-m) if n>m else None,
-                         kappa=float(cfg['k'].get(str(l), 0))))
+                         alpha=float(cfg['alpha'].get(str(l), 0))))
         n = m
-    mac = full_cost(cfg['prune_keep'], cfg['merge_keep'], cfg['k'], spec.n_tokens,
+    mac = full_cost(cfg['prune_keep'], cfg['merge_keep'], cfg['alpha'], spec.n_tokens,
                     spec.dim, {k: len(set(v)) for k, v in cfg['groups'].items()}, cfg['rank'], getattr(spec, 'patch', 16),
                     head_gmac(spec))
     return dict(token_path=path, K=sum(r['removed'] > 0 for r in path),
-                N_D=len(cfg['k']), final_tokens=n, total_gmac=config_cost(cfg, spec),
+                N_D=len(cfg['alpha']), final_tokens=n, total_gmac=config_cost(cfg, spec),
                 backbone_full_gmac=mac['backbone_full'], d_gmac=mac['d_gmac'],
                 station_scalar_gops_estimate=mac['station_gops'])
