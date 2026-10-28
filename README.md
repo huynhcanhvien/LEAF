@@ -191,6 +191,7 @@ A step whose output exists is skipped, so an interrupted search resumes where it
 **Custom grids.**
 - `--thetas` and `--alphas` set the planning grid (fractions such as `1/3` are allowed), and `--deltas` sets the probed token cuts.
 - Probes are cached one by one in the workspace: rerunning with a larger grid probes only the new points.
+- `leaf probe --prefix-cache` runs the blocks before the station once per block and reuses them for every probe at that block: the same results bit for bit (`tests/test_prefix_cache.py`), about 2.5–3× faster on a 24-block model; it keeps the tokens of the 5,000 images on the GPU (5.3 GB for CLIP ViT-L/14).
 - `probes.json` keeps every grid probed in that workspace; the planner uses the grid of the current call.
 
 **Budgets.** `leaf budgets` measures anchor schedules on this GPU (bs32, three interleaved rounds, each run warmed up) and derives the budgets as in the paper. `--anchors` chooses the anchors:

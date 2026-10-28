@@ -120,17 +120,24 @@ class Runner:
         return dict(np.load(p)) if p.exists() else None
 
     @torch.no_grad()
-    def _evaluate(self, cfg, split):
+    def _evaluate(self, cfg, split, prefix=None):
         with gpu_work():
             images, labels, teacher = self.data(split)
             model = self.inference_model(cfg)
         kls, correct, preds, seen = [], [], [], 0
-        batches = iter(iterate(images, labels, self.batch, 'cuda', self.spec.mean, self.spec.std))
+        start = 0
+        if prefix is not None:              # resume after the shared dense prefix (leaf.evaluation.prefix)
+            start = prefix.block
+            if prefix.split != split or min(getattr(model, 'stations', [-1]) or [-1]) < start or model.pool == 'dense':
+                raise ValueError('the prefix must end at or before the first station, on the same split, without a dense head')
+            batches = prefix.batches(labels)
+        else:
+            batches = iter(iterate(images, labels, self.batch, 'cuda', self.spec.mean, self.spec.std))
         while True:
             with gpu_work():
                 try: x, y = next(batches)
                 except StopIteration: break
-                with torch.autocast('cuda', dtype=torch.bfloat16): logits = model(x).float()
+                with torch.autocast('cuda', dtype=torch.bfloat16): logits = (model(x, start=start) if start else model(x)).float()
                 if not bool(torch.isfinite(logits).all()): raise RuntimeError('nonfinite logits')
                 pred = logits.argmax(-1); preds.append(pred.cpu().numpy()); correct.append(pred.eq(y).cpu().numpy())
                 kls.append(per_image_kl(logits, teacher[seen:seen + len(y)].cuda()).cpu().numpy()); seen += len(y)
@@ -140,7 +147,7 @@ class Runner:
         return dict(correct=np.concatenate(correct), pred=np.concatenate(preds).astype(np.int16),
                     kl=np.concatenate(kls).astype(np.float32))
 
-    def run(self, cfg, split, meta=None):
+    def run(self, cfg, split, meta=None, prefix=None):
         """Per-image arrays (cached); None for an infeasible config (non-finite BF16 logits)."""
         p = self.path(cfg, split)
         if p.with_suffix('.json').exists():
@@ -148,7 +155,7 @@ class Runner:
             return None if row.get('feasible') is False else dict(np.load(p.with_suffix('.npz')))
         start = time.monotonic()
         try:
-            arr = self._evaluate(cfg, split)
+            arr = self._evaluate(cfg, split, prefix) if prefix is not None else self._evaluate(cfg, split)
         except RuntimeError as exc:
             if 'nonfinite' not in str(exc): raise
             gc.collect(); torch.cuda.empty_cache()

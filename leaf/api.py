@@ -164,11 +164,12 @@ class LeafRunner(Runner):
                                  torch.from_numpy(np.array(teacher[sl][:n], dtype=np.float32)))
         return self._data[split]
 
-    def _evaluate(self, cfg, split):
+    def _evaluate(self, cfg, split, prefix=None):
         if self.segmentation:
+            if prefix is not None: raise ValueError('no prefix cache for segmentation')
             from leaf.evaluation.segmentation import evaluate
             return evaluate(self, cfg, split)
-        return super()._evaluate(cfg, split)
+        return super()._evaluate(cfg, split, prefix)
 
 
 def stations(cfg, spec):

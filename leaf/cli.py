@@ -299,7 +299,12 @@ def cmd_probe(args):
     if todo:
         require_idle_card(args); r = make_runner(args, args.backbone, args.timm_id, Path(args.out) / 'runs')
         progress = Progress('probe', len(todo), 'probes')
-        for job in todo: r.run(job['config'], 'half'); progress.step()
+        prefix = None
+        if args.prefix_cache:               # blocks before the station run once per block (leaf.evaluation.prefix)
+            from leaf.evaluation.prefix import PrefixCache
+            prefix = PrefixCache(r, 'half')
+        for job in todo: r.run(job['config'], 'half', prefix=prefix and prefix.at(job['block'])); progress.step()
+        if prefix: log('probe', f'shared prefix: {duration(prefix.seconds)}')
     # Write probes.json once every probe is done (by any shard).
     records = []
     for job in jobs:
@@ -649,6 +654,8 @@ def build_parser():
     p.add_argument('--shard', default='0/1', help='i/n: this process runs every n-th probe (one process per GPU)')
     p.add_argument('--reuse', nargs='+', help='other probe folders (--out of an earlier leaf probe): '
                                              'their runs of the same configs are linked, not run again')
+    p.add_argument('--prefix-cache', action='store_true', help='run the blocks before the station once per block and reuse '
+                                                               'them (same results, fewer forward passes; leaf.evaluation.prefix)')
     p.add_argument('--batch', type=int, default=32); p.add_argument('--timm-id'); add_data_arguments(p)
     p.add_argument('--dry-run', action='store_true', help='only count the probes'); p.add_argument('--allow-busy', action='store_true')
 

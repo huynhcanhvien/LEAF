@@ -98,11 +98,15 @@ class ReducedViT(nn.Module):
         # P only. With D elsewhere in the model, z(log P) (same ranking up to ties of the clamp).
         return zscore(raw_p.clamp_min(1e-12).log(), 1) if self.use_d else raw_p
 
-    def forward(self, img):
+    def forward(self, img, start=0, stop=None):
+        """start > 0: img holds the tokens entering block start, as this loop computes them without a station before
+        it (leaf.evaluation.prefix); stop: return the tokens entering block stop instead of the logits."""
         cfg = self.cfg
-        x = self.embed(img)
+        x = self.embed(img) if start == 0 else img
         size = x.new_ones(x.shape[0], x.shape[1], 1)
         for l, block in enumerate(self.blocks):
+            if l < start: continue
+            if l == stop: return x
             out, raw_p = cls_attention(block, block.norm1(x), None if l == 0 else size)
             x = x + block.drop_path1(block.ls1(out))
             if l in self.stations:

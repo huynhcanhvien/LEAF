@@ -42,13 +42,15 @@ def compress_norm(x, size, scores, n_prune, n_merge, mode, fuse_merge=True):
 
 
 class MlerpViT(ReducedViT):
-    def forward(self, img):
+    def forward(self, img, start=0, stop=None):
         if self.cfg.merge['mode'] == 'M0':
-            return super().forward(img)
-        x = self.embed(img)
+            return super().forward(img, start, stop)
+        x = self.embed(img) if start == 0 else img
         size = x.new_ones(x.shape[0], x.shape[1], 1)
         cfg = self.cfg
         for l, block in enumerate(self.blocks):
+            if l < start: continue
+            if l == stop: return x
             out, raw_p = cls_attention(block, block.norm1(x), None if l == 0 else size)
             x = x + block.drop_path1(block.ls1(out))
             if l in self.stations:

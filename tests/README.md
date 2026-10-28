@@ -15,6 +15,7 @@ Tests are plain scripts: `python tests/<file>.py`, run from the repository root.
 | `test_merge_norm.py` | M3 (MLERP) merge against the reference | CPU |
 | `test_gpu_coordination.py` | GPU lock and exclusive timing | CPU |
 | `test_reduced_vit.py` | keeping all tokens reproduces the dense model; fused merge kernel = scatter path | GPU |
+| `test_prefix_cache.py` | `leaf probe --prefix-cache` gives bit-identical probes to the full forward | GPU |
 | `test_attention_forecast.py` | forecast D: folding, grouping and low rank against the reference | GPU |
 | `test_determinism.py` | bit-identical predictions across runs and processes | GPU |
 | `test_baselines.py` | baseline adapters against the official code (`official_compare.py`) | `OFFICIAL_REPOS=<dir>`, otherwise skipped |
