@@ -397,7 +397,7 @@ This code builds on timm and on the official implementations of ToMe, PiToMe, EV
 
 ## Citation
 
-If you use this code or the released schedules, please cite the manuscript (under review at *Knowledge-Based Systems*):
+If you use this code or the released schedules, please cite the manuscript
 
 ```bibtex
 @unpublished{huynh2026leaf,
