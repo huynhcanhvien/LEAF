@@ -403,7 +403,7 @@ If you use this code or the released schedules, please cite the manuscript
 @unpublished{huynh2026leaf,
   title  = {{LEAF}: Latency-Budgeted Efficient Planning with Attention Forecasts for Training-Free Token Reduction},
   author = {Huynh, Canh Vien and Phan, Minh Nhat and Pham, Nhat Khoa and Nguyen, Van Hieu},
-  note   = {Manuscript submitted to Knowledge-Based Systems; code at \url{https://github.com/huynhcanhvien/LEAF}},
+  note   = {code at \url{https://github.com/huynhcanhvien/LEAF}},
   year   = {2026}
 }
 ```
